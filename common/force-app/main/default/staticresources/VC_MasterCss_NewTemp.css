@@ -1,0 +1,559 @@
+/* to make the checkbox text white */
+.body.isPageWidthFixed-true {
+    margin: unset !important;
+}
+
+/* New Suisse fonts */
+@font-face {
+    font-family: 'SuisseIntl-Medium';
+    src: url(../resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-Medium.woff) forma ('woff');
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Black';
+    src: url(../resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-Black.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Book';
+    src: url(../resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-Book.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Thin';
+    src: url(../resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-Thin.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SuisseIntl-UltraLight';
+    src: url(../resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-UltraLight.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SuisseIntl-SemiBold';
+    src: url(../resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-SemiBold.woff) format('woff');
+}
+
+/*Font Family Reusable Classes*/
+.vc-font-caxtonRegular {
+    font-family: 'Caxton-Regular', 'Montserrat' !important;
+}
+
+.vc-font-caxton1 {
+    font-family: 'Caxton-1', 'Montserrat' !important;
+}
+
+.vc-font-caxton2 {
+    font-family: 'Caxton-2', 'Montserrat' !important;
+}
+
+.vc-font-caxton3 {
+    font-family: 'Caxton-3', 'Montserrat' !important;
+}
+
+.vc-font-caxton4 {
+    font-family: 'Caxton-4', 'Montserrat' !important;
+}
+
+.vc-font-caxton5 {
+    font-family: 'Caxton-5', 'Montserrat' !important;
+}
+
+.vc-font-caxton6 {
+    font-family: 'Caxton-6', 'Montserrat' !important;
+}
+
+.vc-font-caxton7 {
+    font-family: 'Caxton-7', 'Montserrat' !important;
+}
+
+.vc-font-caxton8 {
+    font-family: 'Caxton-8', 'Montserrat' !important;
+}
+
+.vc-font-caxton9 {
+    font-family: 'Caxton-9', 'Montserrat' !important;
+}
+
+.vc-font-caxton10 {
+    font-family: 'Caxton-10', 'Montserrat' !important;
+}
+
+.vc-font-caxton11 {
+    font-family: 'Caxton-11', 'Montserrat' !important;
+}
+
+.vc-font-caxtonLight {
+    font-family: 'Caxton-Light', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlRegular {
+    font-family: 'SuisseIntl-Regular', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlBold {
+    font-family: 'SuisseIntl-Bold', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlLight {
+    font-family: 'SuisseIntl-Light', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlMedium {
+    font-family: 'SuisseIntl-Medium', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlBook {
+    font-family: 'SuisseIntl-Book', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlThin {
+    font-family: 'SuisseIntl-Thin', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlBlack {
+    font-family: 'SuisseIntl-Black', 'Montserrat' !important;
+}
+
+.vc-font-suisseIntlUltraLight {
+    font-family: 'SuisseIntl-UltraLight', 'Montserrat' !important;
+}
+
+/** Various Font Sizes starts here **/
+
+.vc_masterHeading,
+.vc-font-size_80 {
+    font-size: 80px;
+}
+
+.vc-font-size_64 {
+    font-size: 64px;
+}
+
+.vc-font-size_48 {
+    font-size: 48px;
+}
+
+.vc_subHeading,
+.vc-font-size_36 {
+    font-size: 36px;
+}
+
+.vc-font-size_32 {
+    font-size: 32px;
+}
+
+.vc-font-size_25 {
+    font-size: 25px;
+}
+.vc-font-size_22 {
+    font-size: 24px;
+}
+.vc-font-size_23 {
+    font-size: 23px;
+}
+.vc-font-size_22 {
+    font-size: 22px;
+}
+.vc-font-size_21 {
+    font-size: 21px;
+}
+
+.vc-font-size_18 {
+    font-size: 18px;
+}
+
+.vc-font-size_16 {
+    font-size: 16px;
+}
+
+.vc_subHeading2,
+.vc-font-size_20 {
+    font-size: 20px;
+}
+
+.vc_body1 {
+    font-size: 17px;
+}
+
+.vc_subHeading3 {
+    font-size: 15px;
+}
+
+.vc_body2 {
+    font-size: 14px;
+}
+
+.vc_inputField .slds-form-element__label,
+.vc_inputAddress .slds-form-element__label,
+.vc_combobox .slds-form-element__label {
+    font-family: 'SuisseIntl-Regular', 'Montserrat' !important;
+    font-size: 17px;
+    color: #FFFFFF;
+    display: none;
+}
+
+
+.vc_combobox .slds-listbox {
+    font-family: 'SuisseIntl-Regular', 'Montserrat' !important;
+    color: #000;
+}
+
+.vc_registrationComponent input,
+.vc_registrationComponent textarea,
+.vc_inputField .slds-input,
+.vc_inputAddress .slds-input,
+.vc_inputAddress .slds-textarea,
+.vc_combobox .slds-combobox__input {
+    background: #F6F6F6;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px !important;
+    /* min-height: 71px; */
+}
+
+.vc_checkbox .slds-checkbox_faux {
+    /* width: 34px;
+    height: 34px; */
+    width: 24px;
+    height: 24px;
+    border-color: white;
+}
+
+
+.vc_checkbox .slds-checkbox .slds-checkbox__label .slds-form-element__label,
+.vc_checkbox-label {
+    padding-left: 16px;
+    padding-top: 0;
+    font-family: 'SuisseIntl-Regular', 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: white;
+}
+
+.slds-required {
+    visibility: inherit;
+    border: none;
+    text-decoration: none;
+    display: none;
+}
+
+.vc_combobox .slds-combobox__input {
+    height: 56px;
+    align-items: center;
+    align-content: center;
+}
+
+.vc_btn-back button {
+    border-color: #000;
+}
+
+.vc_btn-back {
+    position: absolute;
+    right: 24px;
+    top: 60px;
+}
+
+.vc_btn-primary .slds-button {
+    padding: 16px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #06C5D1;
+    background: none !important;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    font-family: 'Caxton-Regular', 'Montserrat' !important;
+}
+
+.vc_btn-primary .slds-button:hover {
+    background: var(--c-secondaryColorBubblegum) !important;
+    border: 1px solid var(--c-secondaryColorBubblegum) !important;
+}
+
+
+.vc_inputAddress .slds-form-element__row {
+    margin-bottom: 16px;
+}
+
+.vc_inputAddress legend+lightning-helptext {
+    position: absolute;
+    left: 170px;
+    top: 5px;
+}
+
+.vc_inputAddress .slds-form-element__control lightning-lookup-address .slds-form-element__label {
+    display: none;
+}
+
+.vc_inputAddress .slds-form-element__row {
+    margin-bottom: 8px;
+}
+
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:nth-child(3),
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:last-child {
+    display: block;
+}
+
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:nth-child(3) .slds-form-element,
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:last-child .slds-form-element {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+}
+            
+.vc_text-color_white {
+    color: white !important;
+}
+            
+.vc_btn-primary .slds-button {
+    width: 100%;
+}
+
+
+.slds-has-error .slds-form-element__help {
+    float: unset;
+}
+
+/**Registration Page CSS **/
+.vc_blurBox {
+    /* border-top-right-radius: 13px; */
+    /* border-bottom-right-radius: 13px; */
+    background: #000;
+    /* padding-top: 126px; */
+    padding-top: 64px;
+}
+
+.bg {
+    background: #F6F6F6;
+}
+
+.vc-grid-wrap {
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.vc-align_absolute-center-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.vc-align_absolute-center-horizontal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.vc_blurBox2 {
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+}
+
+.vc_blackBg {
+    background: #000000;
+}
+
+.vc_black-border {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.vc_RegistrationPageLogo img {
+    width: 72px;
+    height: auto;
+}
+
+/*! Not using at the moment handles page -2 */
+/* .vc_buttonLabelWidth {
+    width: 50%;
+} */
+
+.vc-button-box-container {
+    padding-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vc_checkbox .slds-checkbox_faux::after {
+    border-bottom: 3px solid var(--dxp-g-brand-1) !important;
+    border-left: 3px solid var(--dxp-g-brand-1) !important;
+}
+
+@media only screen and (max-width: 1023.5px) {
+
+    .vc_checkbox .slds-checkbox_faux::after {
+        border-bottom: 2px solid var(--dxp-g-brand-1) !important;
+        border-left: 2px solid var(--dxp-g-brand-1) !important;
+    }
+
+    .vc_masterHeading,
+    .vc-font-size_80,
+    .vc-font-size_64 {
+        font-size: 36px;
+    }
+
+    .vc-font-size-mob_23 {
+        font-size: 23px;
+    }
+
+    .vc-font-size-mob_15 {
+        font-size: 15px;
+    }
+
+    .vc-font-size-mob_13 {
+        font-size: 13px;
+    }
+
+    .vc-font-size-mob_10 {
+        font-size: 10px;
+    }
+
+    .vc-hideFor-desktop {
+        display: block;
+    }
+
+    .vc-hideFor-mobile {
+        display: none;
+    }
+
+
+
+    .vc_registrationComponent input,
+    .vc_registrationComponent textarea,
+    .vc_inputField .slds-form-element__label,
+    .vc_inputAddress .slds-form-element__label,
+    .vc_combobox .slds-form-element__label {
+        font-size: 11px;
+    }
+
+    .vc_registrationComponent input,
+    .vc_registrationComponent textarea,
+    .vc_inputField .slds-input,
+    .vc_inputAddress .slds-input,
+    .vc_inputAddress .slds-textarea,
+    .vc_combobox .slds-combobox__input {
+        height: 39px;
+        min-height: 39px;
+        border-radius: 5px;
+    }
+
+    .vc_checkbox .slds-checkbox_faux {
+        width: 20px;
+        height: 20px;
+        border-color: white;
+    }
+
+    .vc_btn-primary .slds-button {
+        font-size: 15px;
+    }
+
+    .vc_blurBox {
+        border-radius: 0px !important;
+    }
+
+    .vc_btn-back button {
+        border-color: #fff;
+    }
+
+    .vc_btn-back {
+        top: 20px;
+    }
+
+    .vc_forwardBtnIcon {
+        display: none;
+    }
+
+    .vc_buttonLabelWidth {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .vc_registrationComponent textarea {
+        padding: 12px;
+        height: 56px;
+    }
+
+    .vc_checkbox .slds-checkbox_faux::after {
+        height: 0.5rem !important;
+        width: 1rem !important;
+    }
+
+    .vc-hideFor-desktop {
+        display: none;
+    }
+
+    .vc-hideFor-mobile {
+        display: block;
+    }
+}
+
+.vc_registrationComponent div:first-child>div:first-child {
+    width: 100%;
+}
+
+.vc_registrationComponent label {
+    display: none;
+}
+
+.vc_registrationComponent lightning-input,
+.vc_registrationComponent lightning-textarea,
+.vc_registrationComponent c-search-combobox input {
+    margin-bottom: 24px;
+}
+                                    
+.vc-combobox-2 .slds-combobox__form-element .slds-combobox__input{
+    padding: 12px;
+    font-size: 13px !important;
+}
+                                    
+/*VEN-282 - Gil start*/
+.slds-combobox__form-element .slds-combobox__input.slds-input_faux.slds-combobox__input-value{
+    margin-bottom: 24px;
+}
+.slds-combobox__form-element.slds-input-has-icon.slds-input-has-icon_right .slds-input__icon-group.slds-input__icon-group_right{
+    /* ? Where this belongs to?  */
+    /* top: 35% !important;  */
+    top: 2em !important; 
+    right: 1em !important; 
+
+}
+
+
+.slds-input_faux{
+    color: black !important;
+}
+                                    
+.slds-combobox__input.slds-input_faux.slds-combobox__input-value{
+    color: black !important;
+}                                            
+                                    
+/*VEN-282 - Gil end*/
+                                    
+                                    
+                                    
+                                    
+/* @media screen and (max-width:480px) {
+    .vc_forwardBtnIcon {
+        display: none;
+    }
+
+    .vc_buttonLabelWidth {
+        width: 1000%;
+    }
+} */
+
+/*Registration Page css ends here*/

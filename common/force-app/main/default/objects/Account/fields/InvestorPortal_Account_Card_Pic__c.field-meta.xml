@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvestorPortal_Account_Card_Pic__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://venturecrowd--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&amp;versionId=0682v00000HO39C&amp;operationContext=DELIVERY&amp;contentId=05T2v00001dT1ia&amp;page=0&amp;d=/a/2v000000MHbK/rdNf4x59i4SdAsLUfIEjqWatWZ6CRrai6XGOKcw.6ks&amp;oid=00D2v000000WjFp&amp;dpt=null&amp;viewId=&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>InvestorPortal Account Card Pic</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

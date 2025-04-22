@@ -1,0 +1,209 @@
+.component-container {
+    min-height: 600px;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .component-container {
+        /* @Simplus VEN-170: New Navbar; removed margin-top: 66px; */
+        margin-top: 0;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0f141e;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.logo img {
+    max-width: 160px;
+    height: auto;
+}
+.vc-playIcon-background{
+    background: rgba(255, 255, 255, 0.13);
+    height: 106px;
+    width: 106px;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+.vc-playIcon-background:hover{
+    transform: scale(1.1)
+}
+
+/* Text Styles */
+h1 {
+    font-size: 45px;
+    line-height: 1em;
+    /* font-weight: 400; */
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+    /* font-weight: 600; */
+}
+
+p {
+    font-size: 18px;
+    /* font-weight: 400; */
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #fff;
+    transition: all 300ms ease;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+}
+
+ul li a.accent-teal {
+    background-color: #05c5d1;
+    border: 2px solid #05c5d1;
+    color: #fff;
+}
+
+ul li a.accent-teal:hover {
+    background-color: #03a8b4;
+    border: 2px solid #03a8b4;
+}
+
+ul li a.accent-purple {
+    background-color: #844CEA;
+    border: 2px solid #844CEA;
+    color: #fff;
+}
+
+ul li a.accent-purple:hover {
+    background-color: #6217ee;
+    border: 2px solid #6217ee;
+}
+
+ul li a.accent-pink {
+    background-color: #dd5cff;
+    border: 2px solid #dd5cff;
+    color: #fff;
+}
+
+ul li a.accent-pink:hover {
+    background-color: #d245f7;
+    border: 2px solid #d245f7;
+}
+
+ul li a.accent-ghost {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #fff;
+    font-family: "Caxton Bk Bt";
+}
+
+ul li a.accent-ghost:hover {
+    /* background-color: #844CEA; */
+    border: 2px solid #D95BAA;
+    color: #D95BAA;
+}
+
+ul li a.accent-white {
+    background-color: #FFF;
+    border: 2px solid #fff;
+    color: #000000;
+    font-family: "Caxton Bk Bt";
+}
+
+ul li a.accent-white:hover {
+    background-color: #D95BAA;
+    border: 2px solid #D95BAA;
+    color: #FFF;
+}
+
+
+ul li a.accent-ghost.primary-accent-pink:hover {
+    background-color: #dd5cff;
+    border: 2px solid #dd5cff;
+    color: #FFF;
+}
+
+ul li a.accent-ghost.primary-accent-teal:hover {
+    background-color: #05c5d1;
+    border: 2px solid #05c5d1;
+    color: #FFF;
+}
+
+ul li a.accent-ghost.primary-accent-purple:hover {
+    background-color: #844CEA;
+    border: 2px solid #844CEA;
+    color: #FFF;
+}
+
+/* Secondary accent on primary button */
+ul li a.accent-ghost.secondary-accent-pink:hover {
+    background-color: #dd5cff;
+    border: 2px solid #dd5cff;
+    color: #FFF;
+}
+
+ul li a.accent-ghost.secondary-accent-teal:hover {
+    background-color: #05c5d1;
+    border: 2px solid #05c5d1;
+    color: #FFF;
+}
+
+ul li a.accent-ghost.secondary-accent-purple:hover {
+    background-color: #844CEA;
+    border: 2px solid #844CEA;
+    color: #FFF;
+}
+
+ul li a.accent-white.primary-accent-white:hover {
+    background-color: #D95BAA;
+    border: 2px solid #D95BAA;
+    color: #FFF;
+}

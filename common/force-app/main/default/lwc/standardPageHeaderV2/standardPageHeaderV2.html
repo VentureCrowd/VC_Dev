@@ -1,0 +1,130 @@
+<template>
+    <div class={background}> <!-- @Simplus VEN-170: New Navbar  , background class-->
+      <header class="container-fluid">
+        
+      <div class="align-items-center row">
+        <div class="col-8 col-lg-2 logo">
+          <a href="/">
+            <img alt="VentureCrowd" class="img-fluid" src={logo} />
+          </a>
+        </div>
+  
+        <div class="col-lg-7 d-lg-block d-none menu">
+          <ul>
+            <li class="has-sub-menu">
+              <a href={getInvestbutton} class="menu_item">Investors</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                    <span>Back</span>
+                </li>
+                <template for:each={getInvestdetails} for:item="a">
+                    <li key={a.displayName}>
+                      <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                    </li>
+                </template>
+              </ul>
+            </li>
+
+            <li>
+              <a href={getRaisebutton} class="menu_item">Founders</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                  <span>Back</span>
+                </li>
+                <template for:each={getRaisedetails} for:item="a">
+                  <li key={a.displayName}>
+                    <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                  </li>
+                </template>
+              </ul>
+            </li>
+
+
+            <li class="has-sub-menu">
+              <a href={getVenturesbutton} class="menu_item">Venture Capital</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                    <span>Back</span>
+                </li>
+                <template for:each={getVenturesDetails} for:item="a">
+                    <li key={a.displayName}>
+                      <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                    </li>
+                </template>
+            </ul>
+            </li>
+            <li class="has-sub-menu">
+              <a href={getPropertybutton} class="menu_item">Property</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                  <span>Back</span>
+                </li>
+                <template for:each={getPropertydetails} for:item="a">
+                  <li key={a.displayName}>
+                    <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                  </li>
+                </template>
+              </ul>
+            </li>
+
+            <li class="has-sub-menu">
+              <a href={getLearnbutton} class="menu_item">Learn</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                  <span>Back</span>
+                </li>
+                <template for:each={getLearndetails} for:item="a">
+                  <li key={a.displayName}>
+                    <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                  </li>
+                </template>
+              </ul>
+            </li>
+            <!-- <li>
+              <a href="/s/blog">News</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                  <span>Back</span>
+                </li>
+                <template for:each={getNewsdetails} for:item="a">
+                  <li key={a.displayName}>
+                    <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                  </li>
+                </template>
+              </ul>
+            </li> -->
+            <li class="has-sub-menu">
+              <a href={getAboutbutton} class="menu_item">About us</a>
+              <ul class="sub-menu">
+                <li class="back d-block d-lg-none">
+                  <span>Back</span>
+                </li>
+                <template for:each={getAboutdetails} for:item="a">
+                  <li key={a.displayName}>
+                    <a target="_top" href={a.displayUrl}>{a.displayName}</a>
+                  </li>
+                </template>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="actions col-lg-3 d-lg-block d-none text-end">
+          <template if:false={isGuest}>
+            <lightning-avatar src={currentUser.SmallPhotoUrl} class="profile-photo"></lightning-avatar>
+            <span class="username">Hi {username} </span>
+            <c-user-action-menu-lwc-v2></c-user-action-menu-lwc-v2>
+          </template>
+          <template if:true={isGuest}>
+            <a class="action--register" href="/s/login/SelfRegister?startURL=%2Fs%2Fportal%2Fportfolio">Join us</a>  
+            <a class="action--login" href="/s/login">Login</a>                 
+          </template>
+        </div>        
+        <!--  ##################### Burger Menu Logic  ######################### -->
+        <div class="col-4 d-block d-lg-none mobile text-end">
+          <c-vc-header-guest-mobile onshowdropdown={handleLogo}></c-vc-header-guest-mobile> <!-- @Simplus VEN-170: New Navbar  , handleLogo field-->
+        </div>
+      </div>
+    
+    </header>
+  </div>
+  </template>

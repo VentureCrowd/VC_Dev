@@ -1,0 +1,45 @@
+<template>
+        <!--* Main Banner Section-->
+        <section style={bannerStyle} class="section-banner">
+            <div class="text-container">
+                <div class="company-container">
+                    <div class="company-info-container">
+                        <!-- <template if:true={logo}> -->
+                            <img class="company-logo" src={_logoUrl}
+                            alt="Company logo"/>
+                        <!-- </template> -->
+                        <h1>{heading}</h1>
+                        <div class="company-info">
+                            <p>{subheading}</p>
+                        </div>
+                        <c-core-progress-bar-temp values={values}></c-core-progress-bar-temp>
+                        <template lwc:if={dealLive}>
+                            <div class="investment-container">
+                                    <input type="text" class="amount-input" value={investmentBoxValue}  oninput={validateInput}/>
+                                    <button class="invest-button" onclick={handleInvestClick}>Invest now</button>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="company-info-video">
+                        <!-- <template lwc:if={productDetails.videoLink}>
+                            <iframe class="raisePageVideo" width="560" height="315" src={productDetails.videoLink} frameborder="0" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                        </template> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--* Countdown and social media Section -->
+        <section class="section-countdown">
+            <div class="wrapper-small-bar">
+                <div class="countdown-container">
+                    <c-core-countdown-timer
+                        alt-text="CLOSES IN"
+                        end-text="CLOSED ON"
+                        close-date={closeDate}
+                        ondeallivechange={handleDealLiveChange}>
+                    </c-core-countdown-timer>
+                </div>
+            </div>
+        </section>
+</template>

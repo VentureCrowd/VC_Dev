@@ -1,0 +1,181 @@
+<template>
+
+    <!--New Code Starts here-->
+    <div>
+        <!-- <div class="vc_btn-back slds-is-absolute">
+            <lightning-button-icon icon-name="utility:back"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+        </div> -->
+        <div class="slds-grid vc-grid-wrap bg">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-5 vc_blurBox  slds-p-bottom_x-large">
+                <div class="vc_column-left vc_text-color_white">
+                    <div class="vc_RegistrationPageLogo slds-p-bottom_x-small">
+                        <img alt="Venture Crowd" src={mainlogo} />
+                    </div>
+                    <!-- <h1 class="vc-font-size_48 vc-font-caxton4 slds-p-bottom_medium">Hello, <br />You’re one step
+                        away!</h1> -->
+                    <h1 class="vc-font-size_48 vc-font-caxton4 slds-p-bottom_medium">Hello {userdata.firstName}, let us know a bit more about you</h1>
+                    <!-- <div class="vc_subHeading slds-p-bottom_large">
+                        To provide you with tailored investment offers, please check one of the below options.
+                    </div> -->
+                    <div class="vc-font-size_25 vc-font-size-mob_15 vc-font-suisseIntlLight slds-p-bottom_x-large">
+                        Why are you joining us today?
+                    </div>
+                    <div>
+                        <!--Retail -->
+                        <div class="slds-media vc_investorOption">
+                            <div class="slds-media__figure">
+                                <!--! If something is broken please roll back the data-id="Retail" -->
+                                <input type="radio" id="Retail" name="user-type" value="Retail" class="vc_radioInput" onchange={radiochange} />
+                            </div>
+                            <div class="slds-media__body vc_text-color_white">
+                                <div class="vc-font-size_22 vc-font-size-mob_15 slds-p-bottom_x-small vc-font-suisseIntlLight">I am a retail investor</div>
+                                <div class="vc_body1 vc-font-size-mob_10 vc-font-suisseIntlLight">Anyone residing in Australia and is 18 years
+                                    or older is a retail investor. You are either just getting started in investing, or
+                                    already have experience but do not yet reach the criteria for Wholesale Investor.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Wholesale -->
+                        <div class="slds-media vc_investorOption">
+                            <div class="slds-media__figure">
+                                <input type="radio" id="Wholesale" name="user-type" value="Wholesale" class="vc_radioInput" onchange={radiochange}>
+                                <!-- <input type="radio" name="user-type" value="Wholesale" class="vc_radioInput" onchange={radiochange} /> -->
+                            </div>
+                            <div class="slds-media__body vc_text-color_white">
+                                <div class="vc-font-size_22 vc-font-size-mob_15 slds-p-bottom_x-small vc-font-suisseIntlLight">I am a wholesale investor</div>
+                                <div class="vc_body1 vc-font-size-mob_10 vc-font-suisseIntlLight">
+                                    <div class="vc-font-suisseIntlLight">if you have any of the below:</div>
+                                    <ul class="slds-list_dotted vc-font-suisseIntlLight">
+                                        <li class="vc-font-suisseIntlLight">a wholesale investor certification,</li>
+                                        <li class="vc-font-suisseIntlLight">assets of $2.5million AUD,</li>
+                                        <li class="vc-font-suisseIntlLight">a gross income of the last 2 financial years of at least AUD$250,000 per
+                                            annum or</li>
+                                        <li class="vc-font-suisseIntlLight">multiple investments in venture capital or property.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Founder -->
+                        <div class="slds-media vc_investorOption">
+                            <div class="slds-media__figure">
+                                <input type="radio" id="Founder" name="user-type" value="Founder" class="vc_radioInput" onchange={radiochange}>
+                            </div>
+                            <div class="slds-media__body vc_text-color_white">
+                                <div class="vc-font-size_22 vc-font-size-mob_15 slds-p-bottom_x-small vc-font-suisseIntlLight">I am a founder</div>
+                                <div class="vc_body1 vc-font-size-mob_10 vc-font-suisseIntlLight">You would like to raise capital for your company.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-text-align_center slds-p-top_medium">
+                        <div class="vc_btn-primary">
+                            <button name="lead" class="slds-button" onclick={handlePage3}>
+                                <div class="vc-button-box-container">
+                                    <div class="vc-font-caxton2 vc_buttonLabelWidth">Last step</div>
+                                    <div class="slds-size_1-of-2 vc_forwardBtnIcon vc_buttonLabelWidth"> <img alt="Register"
+                                            src={BtnArrow} width="200px" height="26px" /> </div>
+                                </div>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-5 vc-align_absolute-center-vertical">
+                <div class="vc_column-right">
+                    <div class="vc_blurBox2 vc_blackBg slds-m-bottom_x-large">
+                        <div class="slds-p-bottom_x-small">
+                            <img alt="Venture Crowd" src={vc_logo} width="41px" height="26px" />
+                        </div>
+                        <div class="vc-font-size_25 vc-font-size-mob_23 vc_text-color_white">
+                            <b class="vc-font-caxton2 ">Over $300M capital raised since inception</b>
+                        </div>
+                        <!-- <div class="slds-media slds-media_center">
+                            <div class="slds-media__figure">
+                                 <img alt="Vector" src={vectorIcon} width="35px" height="35px" />
+                            </div>
+                            <div class="vc_subHeading2 vc_text-color_white slds-text-align_left">
+                                <p>Over $240M capital raised since inception</p>
+                            </div>
+                        </div> -->
+                        <div class="vc_body2 vc-font-size-mob_15 vc_text-color_white">
+                            Our expert team has helped fund over 200 purpose-driven ventures and community-focused
+                            property projects.
+                        </div>
+                    </div>
+                    <div class="vc_blurBox2 vc_black-border  slds-m-bottom_x-large">
+                        <!-- <div class="slds-media slds-media_center">
+                            <div class="slds-media__figure">
+                                 <img alt="EnGeneIC" src={engeneicIcon} width="41px" height="53px" />
+                            </div>
+                            <div class="slds-media__body vc_subHeading2 slds-text-align_left">
+                                <p>EnGeneIC: Sydney-based cancer biotech raises $5M</p>
+                            </div>
+                        </div> -->
+                        <div class="vc_boxIcon">
+                            <img alt="EnGeneIC" src={engeneicIcon} width="41px" height="53px" />
+                        </div>
+                        <div class="vc-font-size_25 vc-font-size-mob_23">
+                            <span class="vc-font-caxton2">EnGeneIC:</span> <span class="vc-font-caxton4"> Sydney-based
+                                cancer biotech raises $5M</span>
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15">
+                            Our multi-asset platform has distributed returns to investors across venture capital and
+                            property funds.
+                        </div>
+
+
+                    </div>
+                    <div class="vc_blurBox2 vc_black-border slds-m-bottom_x-large">
+                        <!-- <div class="slds-media slds-media_center">
+                            <div class="slds-media__figure">
+                                 <img alt="Nexba" src={nexbaIcon} width="46px" height="46px" />
+                            </div>
+                            <div class="slds-media__body vc_subHeading2 slds-text-align_left">
+                                <p>Nexba: 5,000,000,000 grams of sugar removed</p>
+                            </div>
+                        </div> -->
+                        <div class="vc_boxIcon">
+                            <img alt="Nexba" src={nexbaIcon} width="46px" height="46px" />
+                        </div> 
+                        <div class="vc-font-size_25 vc-font-size-mob_23">
+                            <span class="vc-font-caxton2">Nexba: </span> <span class="vc-font-caxton4">5,000,000,000
+                                grams of sugar removed</span>
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15">
+                            A true Aussie success story, Nexba has grown to a global brand with $25M, providing
+                            naturally sugar-free alternatives to consumers.
+                        </div>
+                    </div>
+                    <!-- <c-vc_radio-info-component text-color-class="vc_text-color_white" label="Invest in high-growth opportunities"></c-vc_radio-info-component>
+                    <c-vc_radio-info-component text-color-class="vc_text-color_white" label="Join over 65,000 investors"></c-vc_radio-info-component>
+                    <c-vc_radio-info-component text-color-class="vc_text-color_white" label="Over $200 million capital raised"></c-vc_radio-info-component>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <template if:true={isuseralredayexsists}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate vc-font-suisseIntlRegular" style="color:#000;">We can see that your email is
+                        already registered on our platform. Please select one of the following options.</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-align_absolute-center">
+                        <button class="slds-button slds-button_brand vc-button-neutral" aria-label="Forgot Password"
+                            onclick={forgotpassword}>Forgot
+                            Password</button>
+                        <button class="slds-button slds-button_brand vc-button-brand" aria-label="Login" onclick={login}>Login</button>
+                    </div>
+                </div>
+                <!-- <div class="slds-modal__footer">
+
+                </div> -->
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <!--New Code Ends Here-->
+</template>

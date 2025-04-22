@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Type__c</fullName>
+    <label>Agreement Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+                <label>Subscription</label>
+            </value>
+            <value>
+                <fullName>EOI Listing Fee</fullName>
+                <default>false</default>
+                <label>EOI Listing Fee</label>
+            </value>
+            <value>
+                <fullName>Retail Pro</fullName>
+                <default>false</default>
+                <label>Retail Pro</label>
+            </value>
+            <value>
+                <fullName>Wholesale Pro</fullName>
+                <default>false</default>
+                <label>Wholesale Pro</label>
+            </value>
+            <value>
+                <fullName>Retail Premium</fullName>
+                <default>false</default>
+                <label>Retail Premium</label>
+            </value>
+            <value>
+                <fullName>Wholesale Premium</fullName>
+                <default>false</default>
+                <label>Wholesale Premium</label>
+            </value>
+            <value>
+                <fullName>Friends &amp; Family</fullName>
+                <default>false</default>
+                <label>Friends &amp; Family</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

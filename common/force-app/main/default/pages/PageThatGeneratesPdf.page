@@ -1,0 +1,217 @@
+<apex:page showHeader="false" renderAs="PDF" cache="true" controller="InvestController">    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+   <style>
+        /* table {table-layout:fixed; width:310px;}
+        table td {width:100px; word-wrap:break-word;}
+        table, th, td { border: 1px solid black;  border-collapse: collapse;} */
+   </style>
+    </head>
+    <apex:image id="theImage" value="{!URLFOR($Resource.VC_NewPortalAssets, 'Assets/Logo/VentureCrowd_Logo_black.jpg')}"  height="50" style="margin-left: -11px;"/>
+    <outputText escape="false" />
+    <apex:outputpanel rendered="{!family != 'Wholesale'}">
+        
+        {!product.Investment_Contract_Text__c}
+        
+        <br/>
+        <div>
+            <span style="font-weight:bold;">Summary of Particulars:</span><br/><br/>
+        </div>
+        <apex:form >
+            <apex:pageBlock >
+                <apex:outputpanel rendered="{!product.Type__c == 'CSF Nominee'}">
+                    <table width="80%" border="1">                
+                        <tr>
+                            <th>1. Applicant</th>
+                            
+                            <td>{!investingAsName}</td>
+                        </tr>                    
+                        <tr>
+                            <th width="50%">2. Investment Amount</th>
+                            
+                            <td><apex:outputText value="${0,number, ###,###.##}">
+                                   <apex:param value="{!amount}"/>
+                            </apex:outputText></td>                        
+                        </tr>
+                        <tr>
+                            <th>3. Number of Shares </th>
+                            
+                            <td><apex:outputText value="{0,number, ###,###}">
+                                <apex:param value="{!quantity}"/>
+                                </apex:outputText>
+                            </td>             
+                        </tr>
+                        <tr>
+                            <th>4. Issuer </th>
+                            
+                            <td>{!product.Issuer__c}</td>
+                        </tr>
+                        <tr >
+                            <th>5. VentureCrowd</th>
+                            
+                            <td>{!product.VentureCrowd__c}</td>
+                        </tr>
+                        <tr >
+                            <th>6. Nominee</th>
+                            
+                            <td>{!product.Nominee__c}</td>
+                        </tr>
+                        <tr >
+                            <th>7. VentureCrowd Fee</th>
+                            
+                            <td>{!product.VentureCrowd_Fee_Text__c}</td>
+                        </tr>                                        
+                    </table>
+                </apex:outputpanel>
+                <apex:outputpanel rendered="{!product.Type__c != 'CSF Nominee'}">                
+                    <apex:outputpanel rendered="{!if(product.Type__c == 'Retail IPO',false,true)}">
+                        <table width="80%" border="1">
+                            <tr>
+                                <th>1. Applicant</th>
+                                
+                                <td>{!investingAsName}</td>
+                                
+                            </tr>                    
+                            <tr>
+                                <th width="50%">2. Investment Amount</th>
+                                
+                                <td><apex:outputText value="${0,number, ###,###.##}">
+                                    <apex:param value="{!amount}"/>
+                                </apex:outputText></td>                        
+                                
+                            </tr>
+                            <tr>
+                                <th>3. Issuer </th>
+                                
+                                <td>{!product.Issuer__c}</td>
+                                
+                            </tr>
+                            <tr >
+                                <th>4. VentureCrowd</th>
+                                
+                                <td>{!product.VentureCrowd__c}</td>
+                                
+                            </tr>
+                            <tr>
+                                <th>5. Currency </th>
+                                
+                                <td>{!product.Currency__c}</td>
+                                
+                            </tr>
+                        </table>
+                    </apex:outputpanel>
+                    <apex:outputpanel rendered="{!product.Type__c == 'Retail IPO'}">
+                        <table width="80%" border="1">
+                            <tr>
+                                <th>1. Applicant</th>
+                                
+                                <td>{!investingAsName}</td>
+                                
+                            </tr>                    
+                            <tr>
+                                <th width="50%">2. Investment Amount</th>
+                                
+                                <td><apex:outputText value="${0,number, ###,###.##}">
+                                    <apex:param value="{!amount}"/>
+                                </apex:outputText></td>                        
+                                
+                            </tr>
+                            <tr>
+                                <th>3. Issuer </th>
+                                
+                                <td>{!product.Issuer__c}</td>
+                                
+                            </tr>
+                            <tr>
+                                <th>4. Currency </th>
+                                
+                                <td>{!product.Currency__c}</td>
+                                
+                            </tr>  
+                        </table>
+                    </apex:outputpanel>   
+                </apex:outputpanel>                  
+            </apex:pageBlock>
+        </apex:form>
+    </apex:outputpanel>
+    <apex:outputpanel rendered="{!family == 'Wholesale'}">        
+        {!product.Investment_Contract_Text__c}
+        <br/>
+        <div>
+            <span style="font-weight:bold;">Summary of Particulars:</span><br/><br/>
+        </div>
+        <apex:form >
+            <apex:pageBlock >
+                <table border="1">                
+                    <tr>
+                        <th>1. Applicant </th>
+                        
+                        <td>{!investingAsName} </td>
+                    </tr>
+                    <tr>
+                        <th >2. Applicant Address </th>
+                        
+                        <td>{!address} </td>
+                    </tr>
+                    <tr>
+                        <th width="0%">3. Investment Amount </th>
+                        
+                         <td><apex:outputText value="${0,number, ###,###.##}">
+                      		 <apex:param value="{!amount}"/>
+                        </apex:outputText></td>
+                    </tr>
+                    <tr>
+                        <th>4. Company </th>
+                        
+                        <td>{!product.Company__c} </td>
+                    </tr>
+                    <tr>
+                        <th>5. Trust </th>
+                        
+                        <td>{!product.Trust_Deed_Name__c}  </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <apex:outputText rendered="{!product.Id != '01t5i00000017tGAAQ'}">6. Trust Deed</apex:outputText>
+                            <apex:outputText rendered="{!product.Id == '01t5i00000017tGAAQ'}">6. Partnership Deed</apex:outputText>
+                        </th>
+                        
+                        <td>{!product.Trust_Deed_Text__c}  </td>
+                    </tr>
+                    <tr>
+                        <th>7. Trustee </th>
+                        
+                        <td>{!product.Trustee__c}  </td>
+                    </tr>
+                    <tr>
+                        <th width="20%">8. VentureCrowd </th>
+                        
+                        <td>{!product.VentureCrowd__c} </td>
+                    </tr>
+                    <tr>
+                        <th width="20%">9. VentureCrowd Group </th>
+                        
+                        <td>{!product.VentureCrowd_Group__c}   </td>
+                    </tr>
+                     <tr>
+                        <th  width="10%">10. VentureCrowd Fee </th>
+                        
+                        <td>{!product.VentureCrowd_Fee_Text__c}   </td>
+                    </tr>
+                    <tr>
+                        <th  width="30%">11. Unitholder Proportion </th>
+                        
+                        <td >{!product.Unit_Holder_Proportion__c} </td>
+                    </tr>
+                    
+                    <tr>
+                        <th >12. Currency </th>
+                        
+                        <td>{!product.Currency__c} </td>
+                    </tr>
+                   
+                </table>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:outputpanel>    
+</apex:page>

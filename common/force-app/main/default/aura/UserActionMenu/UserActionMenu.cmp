@@ -1,0 +1,61 @@
+<aura:component Controller="CommunityUserDetailController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="currentUser" type="User"/>
+    <aura:attribute name="isUserAvailable" type="Boolean" default="false"/>
+    <aura:attribute name="showDropDown" type="Boolean" default="false"/>
+    <aura:attribute name="showspinner" type="Boolean" default="false"/>
+    <aura:attribute name="usedInVF" type="Boolean" default="false"/>
+     <aura:attribute name="vfpageMethod" type="Object"/> 
+    <aura:if isTrue="{!v.showspinner}">
+    
+    <lightning:spinner></lightning:spinner>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.isUserAvailable}">
+				<ui:menu >
+                        <ui:menuTriggerLink aura:id="trigger" >
+                            <lightning:avatar src="{!v.currentUser.SmallPhotoUrl}" />
+                            <span onmousehover="{showactionmenu}">Hi {!v.currentUser.Name}</span>
+                             <lightning:button onclick="{! c.handleSetActiveSectionC }" iconName="utility:down" />
+                        </ui:menuTriggerLink>
+                           <ui:menuList class="actionMenu menuListCSS" aura:id="actionMenu">
+                           
+                          	 <ui:actionMenuItem aura:id="my-portfolio" click="{!c.onaction}">
+                             <span><img src="{!$Resource.Portfolio}"/>
+							 My Portfolio
+                              </span>
+                           </ui:actionMenuItem>
+                            <ui:actionMenuItem aura:id="profile" click="{!c.onaction}">
+                             <span> <img src="{!$Resource.Profile}"/>
+							My Profile
+                              </span>
+                           </ui:actionMenuItem>
+                            <ui:actionMenuItem aura:id="my-entities" click="{!c.onaction}">
+                             <span><img src="{!$Resource.Entities}" />
+							  My Entity
+                              </span>
+                           </ui:actionMenuItem>
+                           
+                            <ui:actionMenuItem aura:id="Logout" click="{!c.onaction}">
+                             <lightning:button label="Logout"></lightning:button>
+                           </ui:actionMenuItem>
+                   
+                        </ui:menuList>
+                    </ui:menu>                    
+                                         
+                    
+                    
+                    <!-- ###############  User profile Ends here ##################-->
+                    <aura:set attribute="else">
+
+                      <a href="{!$Label.c.vc_cf_login_sy}" class="login">Login</a>
+                      <a href="{!$Label.c.VC_CF_Register_Symphony}"  class="register">Register</a>
+                        <!-- <a onclick="{!c.navigate}" data-url="/portal/s" class="login">Login</a> -->
+                        <!-- <a href="https://www.venturecrowd.com.au/portal/s/login/SelfRegister" class="register">Register</a> -->
+                       <!-- <a onclick="{!c.navigate}" data-url="/login/SelfRegister" class="register">Register</a> -->
+                        <!--https://www.venturecrowd.com.au/portal/s/login/SelfRegister -->
+                    </aura:set>
+                </aura:if>
+                
+                	
+</aura:component>

@@ -1,0 +1,24 @@
+<template>
+    <lightning-spinner variant="inverse" size="large" if:true={showspinner}></lightning-spinner>
+    <lightning-quick-action-panel header="Waive Fee Request">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="number" formatter="currency" label="Original Contribution Fee" value={Contribution_Fee_Original__c} disabled></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="number" formatter="currency" label="New Contribution Fee" value={Contribution_Fee__c} onchange={databinder} step="0.01"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <br/>
+                <b>You've requested to alter the Contribution fee. Please provide a reason before submitting the request for authorization.</b>
+                <lightning-textarea label="Contribution Fee Approval Comment" onchange={handchange} value={approvalcomment}  disabled={iscommentdisabled}></lightning-textarea>
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="slds-clearfix">
+            <lightning-button label="Proceed" onclick={proceed} title="Proceed" class="slds-align_absolute-center" variant="brand" disabled={isproceeddisabled}>
+            </lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

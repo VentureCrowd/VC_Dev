@@ -1,0 +1,51 @@
+h2,h3,h4,p {
+    font-family: "SuisseIntl-Light";
+}
+
+h2 {
+    font-size: var(--text-xl);
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+.comments-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: var(--space-md);
+}
+
+.input-container {
+    flex: 1;
+}
+
+.image-container {
+    width: 70px;
+}
+
+.image-container img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.information-container {
+    display: flex;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-lg);
+}
+.question-container {
+    margin-bottom: var(--space-xl);
+}
+.answer-container {
+    margin-bottom: var(--space-md);
+    border-left: 5px solid;
+    padding-left: var(--space-xl);
+    margin-left: var(--space-xl);
+}
+.container-wrapper {
+    margin-block: var(--space-xl);
+}

@@ -1,0 +1,115 @@
+<template>
+    <!--New Code Starts Here-->
+    <div>
+        <!-- <div class="vc_btn-back slds-is-absolute">
+            <lightning-button-icon icon-name="utility:back"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+        </div> -->
+        <div class="slds-grid vc-grid-wrap bg">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-5 vc_blurBox">
+                <div class="vc_column-left vc_text-color_white">
+                    <div class="vc_RegistrationPageLogo">
+                        <img alt="Venture Crowd" src={mainlogo} />
+                    </div>
+                    <h1 class="vc-font-size_48 vc-font-caxton4 slds-p-bottom_medium">Let’s finalise your details!
+                    </h1>
+
+                    <div class="vc_text-color_white vc-hideFor-desktop slds-p-bottom_large">
+                        <div class="vc_subHeading2 vc-font-size-mob_15 vc-font-suisseIntlBold">You’re just one click
+                            away,</div>
+                        <div class="vc_body1 vc-font-size-mob_15 vc-font-caxton3">you could be investing in the next
+                            unicorn!</div>
+                        <!-- <p>in the next unicorn!</p> -->
+                    </div>
+
+                    <div class="vc-font-size_25 vc-font-size-mob_13 vc-font-suisseIntlBold slds-p-bottom_medium">
+                        Mailing Address
+                    </div>
+                    <!-- <lightning-input-address class="vc_inputAddress" address-label="Mailing Address"
+                        address-lookup-placeholder="start typing for suggestions" street-label="Mailing Street"
+                        city-label="Mailing City" country-label="Mailing Country"
+                        province-label="Mailing State/Province" postal-code-label="Mailing PostalCode"
+                        show-address-lookup required>
+                    </lightning-input-address> -->
+                    <c-loqate-address label="Mailing Address" class="vc_registrationComponent"></c-loqate-address>
+                    <div
+                        class="vc-font-size_25 vc-font-size-mob_13 vc-font-suisseIntlBold slds-p-bottom_medium">
+                        Billing Details
+                        <lightning-helptext class="vc-helpText"
+                            content="By providing this information you are not submitting a payment. We will use these details to provide any future distributions or refunds.">
+                        </lightning-helptext>
+                    </div>
+                    <lightning-input class="vc_inputField slds-m-bottom_large" type="text" label="Bank Account Name" data-id="bankaccname"
+                        required placeholder="Bank Account Name*"></lightning-input>
+                    <lightning-input class="vc_inputField slds-m-bottom_large" type="text" label="BSB Number" data-id="bsbnum" max-length="6" required placeholder="BSB Number*">
+                    </lightning-input>
+                    <lightning-input class="vc_inputField slds-m-bottom_large" type="text" label="Bank Account Number" data-id="bankaccnum"
+                        required placeholder="Bank Account Number*"></lightning-input>
+                    <div class="slds-grid slds-p-bottom_small vc-align-baseline">
+                        <lightning-input class="vc_checkbox slds-m-right_small" type="checkbox" variant="label-hidden"
+                            data-id="investentity"></lightning-input>
+                        <span class="vc_body1 vc-font-size-mob_10 vc-font-suisseIntlRegular vc_text-color_white">I’m
+                            investing via an <span class="vc-font-suisseIntlBold">entity</span> (optional)</span>
+                    </div>
+                    <div class="slds-text-align_center slds-p-top_medium">
+                        <div class="vc_btn-primary">
+                            <button name="lead" class="slds-button" onclick={completeRegistration}>
+                                <div class="vc-font-caxton2 vc_buttonLabelWidth">Sign me up</div>
+                                <div class="slds-size_1-of-2 vc_forwardBtnIcon vc_buttonLabelWidth"> <img alt="Register"
+                                        src={BtnArrow} width="135px" height="26px" /> </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slds-p-top_large vc_text-color_white vc-hideFor-mobile">
+                        <div class="vc_subHeading2 vc-font-size-mob_15 vc-font-suisseIntlBold">You’re just one click
+                            away,</div>
+                        <div class="vc_body1 vc-font-size-mob_15 vc-font-caxton3">you could be investing<br />in the
+                            next unicorn!</div>
+                        <!-- <p>in the next unicorn!</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-5 vc-align_absolute-center-vertical ">
+                <div class="vc_column-right">
+                    <div class="slds-text-align_center">
+                        <div class="vc-font-size_25 vc-font-caxtonRegular">As seen on</div>
+                        <div class="slds-grid slds-grid_align-center vc_iconSetImage">
+                            <img alt="TheAustralian" src={australianIcon} />
+                            <img alt="BNA" src={bnaIcon} />
+                            <img alt="FR" src={frIcon} />
+                            <img alt="ausbiz" src={ausbizIcon} />
+                            <img alt="7" src={sevenIcon} />
+
+                            <!-- <div class="vc_blankCircle"></div>
+                            <div class="vc_blankCircle"></div>
+                            <div class="vc_blankCircle"></div>
+                            <div class="vc_blankCircle"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template if:true={isuseralredayexsists}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">We can see that your email is
+                        already registered on our platform. Please select one of the following options.</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-align_absolute-center">
+                        <button class="slds-button slds-button_brand" aria-label="Forgot Password"
+                            onclick={forgotpassword}>Forgot
+                            Password</button>
+                        <button class="slds-button slds-button_brand" aria-label="Login" onclick={login}>Login</button>
+                    </div>
+                </div>
+                <div class="slds-modal__footer">
+
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

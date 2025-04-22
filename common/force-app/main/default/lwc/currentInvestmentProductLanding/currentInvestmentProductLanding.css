@@ -1,0 +1,18 @@
+.component-container {
+    padding-top: calc(100vw * 0.1);
+    padding-bottom: calc(100vw * 0.1);
+    background: #000;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFF;
+}
+
+p {
+    color: #999999;
+    margin-bottom: 3em;
+    font-size: 16px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creator__c</fullName>
+    <description>Field to be used to create a custom list view on the product object, the list view is &quot;My Products&quot;</description>
+    <externalId>false</externalId>
+    <formula>CreatedById</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Field to be used to create a custom list view on the product object, the list view is &quot;My Products&quot;</inlineHelpText>
+    <label>Creator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

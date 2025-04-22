@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Highlights__c</fullName>
+    <inlineHelpText>This field is used to add the key investment highlights about the product.
+Is is also used to pull this information into certain Marketing Cloud emails. Please keep this field clean of errors and written in  the context of an investor reading it.</inlineHelpText>
+    <label>Key Highlights</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

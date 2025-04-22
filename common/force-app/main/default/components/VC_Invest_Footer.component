@@ -1,0 +1,221 @@
+<apex:component >
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/VC-Custom-CSS.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/frontend.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/responsive.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/styles.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/sb-instagram.min.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/svgs-attachment.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min(1).css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min2.css')}"/>    
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/svgs-attachment.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min(1).css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/style.css')}"/> 
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/rgs.css')}"/> 
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/style(1).css')}"/>  
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/magnific.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/responsive(1).css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/ascend.css')}"/>    
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/js_composer.min.css')}"/>  
+<apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/VC-Custom-CSS.css')}"/> 
+    
+<apex:stylesheet value="{!$Resource.VC_Investcss}"/>  
+    
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/jquery.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/jquery-migrate.min.js')}"/>   
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/login_menu.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/core.min.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/widget.min.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/position.min.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/menu.min.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/wp-a11y.min.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/autocomplete.min.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/wpss-search-suggest.js')}"/>    
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/frontend-min.js')}"/>    
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/sb-instagram.min.js')}"/> 
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/priority.js')}"/> 
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/modernizr.js')}"/> 
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/imagesLoaded.min.js')}"/> 
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/magnific.js')}"/> 
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/superfish.js')}"/>   
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/init.js')}"/>   
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/touchswipe.min.js')}"/>   
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/mtli-str-replace.min.js')}"/>   
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/wp-embed.min.js')}"/>  
+<apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/js_composer_front.min.js')}"/>    
+    
+    
+<style>
+div { 
+font-family: "Gilroy-Regular"; !important
+}    
+    
+@font-face{
+font-family: 'Gilroy-Regular';
+src: url('https://venturecrowd--akcelo--c.visualforce.com/resource/1607219020000/VC_Home/Fonts/Gilroy-Regular.otf');  
+ <!-- src: url("{!URLFOR($Resource.VC_Home, 'Fonts/Gilroy-Regular.otf')}"); -->   
+}   
+}
+body { font-family: Gilroy-Regular; !important }
+     
+.sf-menu a:hover{text-decoration:none;}
+ul li a:hover{text-decoration:none;}
+</style>  
+    
+<link rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' /> 
+    
+ <div id="footer-outer" data-cols="4" data-custom-color="true" data-disable-copyright="false" data-matching-section-color="false" data-copyright-line="false" data-using-bg-img="false" data-bg-img-overlay="0.8" data-full-width="false" data-using-widget-area="true">
+
+    <div id="footer-widgets" data-cols="4">
+        <div class="container">
+            <div class="row">
+                <div class="col span_3">
+                    <!-- Footer widget area 1 -->
+                   <div id="text-2" class="widget widget_text"><h4>COMPANY</h4>			
+                       <div class="textwidget">
+                           <p class="p1"><a href="#"><span class="s1">About us</span></a></p>
+                            <p class="p1"><a href="#"><span class="s1">Contact us</span></a></p>
+                            <p><a href="#">Legals</a></p>
+                              </div>
+		                       </div>
+                                </div><!--/span_3-->
+
+                <div class="col span_3">
+                    <!-- Footer widget area 2 -->
+                    <div id="text-3" class="widget widget_text">
+                        <h4>GET STARTED</h4>
+                        <div class="textwidget">
+                            <p class="p1"><a href="#"><span>Invest</span></a></p>
+                            <p class="p1"><a href="#"><span>Raise</span></a></p>
+                            <p class="p1"><a href="#"><span>Manage</span></a></p>
+                            <p><a href="#">Property</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--/span_3-->
+
+                <div class="col span_3">
+                    <!-- Footer widget area 3 -->
+                    <div id="text-4" class="widget widget_text">
+                        <h4>LEARN</h4>
+                        <div class="textwidget">
+                            <p class="p1"><a href="#"><span class="s1">How it works</span></a></p>
+                            <p class="p1"><a href="#"><span class="s1">FAQs</span></a></p>
+                            <p class="p1"><a href="#"><span class="s1">Investor education</span></a></p>
+                            <p class="p1"><a href="#"><span class="s1">Blog</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--/span_3-->
+
+                <div class="col span_3">
+                    <!-- Footer widget area 4 -->
+                    <div id="text-5" class="widget widget_text">
+                        <h4>MY ACCOUNT</h4>
+                        <div class="textwidget">
+                            <p class="p1"><a href="#"><span class="s1">Login</span></a></p>
+                            <p class="p1"><a href="#"><span class="s1">Register</span></a></p>
+                            <p class="p1"><a href="#"><span class="s1">Forgot Password</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--/span_3-->
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/footer-widgets-->
+
+
+    <div class="row" id="copyright" data-layout="default">
+
+        <div class="container">
+            <div class="col span_5">
+                <p>Copyright © 2020 VentureCrowd. All rights Reserved. </p>
+            </div>
+            <!--/span_5-->
+
+            <div class="col span_7 col_last">
+                <ul class="social">
+                    <li><a target="_blank" href="https://twitter.com/venturecrowd?lang=en"><i class="fa fa-twitter"></i> </a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/VentureCrowdAustralia/"><i class="fa fa-facebook"></i> </a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/venturecrowd-pty-ltd/"><i class="fa fa-linkedin"></i> </a></li>
+                </ul>
+            </div>
+            <!--/span_7-->
+        </div>
+        <!--/container-->
+    </div>
+    <!--/row-->
+</div>
+<!--/footer-outer-->
+
+
+<div id="slide-out-widget-area-bg" class="fullscreen-alt dark">
+    <div class="bg-inner"></div>
+</div>
+<div id="slide-out-widget-area" class="fullscreen-alt" data-dropdown-func="default" data-back-txt="Back">
+
+    <div class="inner-wrap">
+        <div class="inner" data-prepend-menu-mobile="false">
+            <a class="slide_out_area_close" href="#">
+		  	<span class="icon-salient-x icon-default-style"></span>		  </a>
+            <div class="off-canvas-menu-container mobile-only">
+                <ul class="menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15790"><a href="#">INVEST</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16824"><a href="#">High Growth Property Fund</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16667"><a href="#">Super High Yield</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15781"><a href="#">LEARN</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16920"><a href="#">What are early stage securities?</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16921"><a href="#">Why include early stage securities?</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16922"><a href="#">How to choose</a></li>
+                            <li id="menu-item-16923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16923"><a href="#">Making an investment</a></li>
+                  	     <li id="menu-item-5957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5957"><a href="#">FAQs</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15785"><a href="#">RAISE</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15788"><a href="#"> PROPERTY</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16927"><a href="#">High Growth Property Fund</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16928"><a href="#">Super High Yield</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16929"><a href="#">VC Mortgage Fund</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9431"><a href="#">ABOUT</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15927"><a href="#">About Us</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5934"><a href="#">How it works</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15768"><a href="#">Syndicates</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10529"><a href="#">Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5946"><a href="#">NEWS</a></li>
+                    <li class="menu-item menu-item-type-gs_sim menu-item-object-gs_sim button_bordered menu-item-7726">
+                        <!-- Start shortcoder -->
+                        <!-- End shortcoder v4.1.7-->
+                    </li>
+
+                </ul>
+
+                <ul class="menu secondary-header-items"> </ul>
+            </div>
+
+        </div>
+
+        <div class="bottom-meta-wrap"></div>
+        <!--/bottom-meta-wrap-->
+    </div>
+    <!--/inner-wrap-->
+</div>
+
+
+
+    
+</apex:component>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_VC__c</fullName>
+    <label>Stage VC BA</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Seed</fullName>
+                <default>false</default>
+                <label>Pre-Seed</label>
+            </value>
+            <value>
+                <fullName>Seed</fullName>
+                <default>false</default>
+                <label>Seed</label>
+            </value>
+            <value>
+                <fullName>Series A</fullName>
+                <default>false</default>
+                <label>Series A</label>
+            </value>
+            <value>
+                <fullName>Series B</fullName>
+                <default>false</default>
+                <label>Series B</label>
+            </value>
+            <value>
+                <fullName>Series C</fullName>
+                <default>false</default>
+                <label>Series C</label>
+            </value>
+            <value>
+                <fullName>Pre-IPO</fullName>
+                <default>false</default>
+                <label>Pre-IPO</label>
+            </value>
+            <value>
+                <fullName>Secondary Market</fullName>
+                <default>false</default>
+                <label>Secondary Market</label>
+            </value>
+            <value>
+                <fullName>Fixed Income</fullName>
+                <default>false</default>
+                <label>Fixed Income</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

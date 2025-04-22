@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Since_Raise_Activity_Update__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        ISPICKVAL(Status__c, &quot;Published&quot;),
+        ISPICKVAL(Status__c, &quot;Closed&quot;)
+    ),
+    &quot;&quot;,
+    IF(
+        ISBLANK(LastActivityDate),
+        &quot;&quot;,
+        TEXT(TODAY() - LastActivityDate) &amp; &quot; days&quot;
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Since Raise Activity Update</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

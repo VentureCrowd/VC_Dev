@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="HeadingText"           type="String" label="Content Heading Text" description="HeadingText"          default="Why VentureCrowd?" />
+            <property name="ParagraphText"         type="String" label="Paragraph Text"       description="ParagraphText"        default="VentureCrowd is Australia’s leading digital investment platform for alternative assets. When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so you won’t be investing alone. Here’s a snapshot of our traction so far." />
+            <property name="Totalmembers"          type="String" label="Heading Text 3"       description="Totalmembers Number"  default="61,415" />
+            <!-- <property name="TotalmembersColor"     type="String" label="TextColorMember"      datasource="Teal, Pink" description="" default="Teal" />  -->
+            <property name="TotalmembersLabel"     type="String" label="Heading Text 3"       description="TotalmembersLabel"    default="Total Members"/>
+            <property name="Totalraised"           type="String" label="Heading Text 3"       description="Totalraised Number"   default="$140,000,000"/>
+            <property name="TotalraisedsLabel"     type="String" label="Heading Text 3"       description="TotalraisedsLabel"    default="Total Raised"/>
+            <property name="portfoliosize"         type="String" label="Heading Text 3"       description="portfoliosize"        default="67"/>
+            <property name="portfoliosizeLabel"    type="String" label="Heading Text 3"       description="portfoliosizeLabel"   default="Portfolio Size"/>
+
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Gray, Black" default="White" />
+            <property name="highlightColor" type="String" label="Highlight Color" datasource="Teal, Pink, Navy, White, Black" description="This is the colour of the accents and link colours" default="Teal" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

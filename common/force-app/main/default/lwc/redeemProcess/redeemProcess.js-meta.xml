@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+    <target>lightning__FlowScreen</target>
+    <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+    <targetConfig targets="lightning__FlowScreen">
+    <property name="amount" label="amount" type="Integer"/>
+    <property name="quantity" label="quantity" type="Integer"/>
+    <property name="OriginalInvestedQuantity"  label="Original Invested Quantity" type="Integer"/>
+    <property name="OriginalInvestedAmount"  label="Original Invested Amount" type="Integer"/>
+    <property name="AppliedDate" label="Applied Date" type="Date"/>
+    <property name="totalPrice"  label="Total Price" type="Integer"/>
+    <property name="lineItemquantity"  label="Line Item Quantity" type="Integer"/>
+    <property name="opportunityId" label="Opportunity Id" type="String"/>
+    <property name="oppProdId" label="Opportunity Prod Id" type="String"/>
+    <property name="itemUnitPrice" label="iten Unit Price" type="Integer"/>
+    <property name="itemListPrice" label="iten List Price" type="Integer"/>
+    </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

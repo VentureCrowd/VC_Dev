@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Failed</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Attended</fullName>
+        <default>false</default>
+        <label>Not Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Passed</fullName>
+        <default>false</default>
+        <label>Passed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered</fullName>
+        <default>false</default>
+        <label>Registered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Test</fullName>
+        <default>false</default>
+        <label>Test</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Testing</fullName>
+        <default>false</default>
+        <label>Testing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>To be sent</fullName>
+        <default>false</default>
+        <label>To be sent</label>
+    </standardValue>
+</StandardValueSet>

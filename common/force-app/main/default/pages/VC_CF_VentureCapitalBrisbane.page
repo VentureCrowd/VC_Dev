@@ -1,0 +1,235 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+      <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+            <div class="col-md-12 headline">
+             <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+              <h1 class="mt-4"> Venture Capital Brisbane </h1>
+            <p class="mt-4">
+                Interested in venture capital Brisbane? VentureCrowd provides investors with access to venture capital co-investment opportunities with the potential for high returns.
+                </p>
+                <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Register Today </a>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/VC-Brisbane-Ventures.jpg')"></div>
+      </section>
+
+      <!-- Post Body -->
+      <section class="post-body py-5">
+        <div class="container">
+         
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Venture Capital Brisbane </h3>
+                <p><span style="font-weight: 400;">Investing in privately held companies that are in the startup or expansion phase, called venture capital investing, can help investors get significantly higher returns than they would earn from investing in traditional assets such as </span><a href="https://www.venturecrowd.com.au/s/property/brisbane"><span style="font-weight: 400;">Brisbane property investment</span></a><span style="font-weight: 400;"> or listed shares. Startups have a lot of growth potential and therefore there is great scope for capital gain. If you are looking for </span><a href="https://www.venturecrowd.com.au/s/high-return-investments"><span style="font-weight: 400;">high return investments</span></a><span style="font-weight: 400;">, investing in venture capital in Brisbane provides an alternative investment opportunity that has the potential to be very lucrative for the investor. From the business owners’ perspective, it is a great way for a startup to obtain the funding they need to grow or scale their business. Whether you’re an investor or you are looking to raise capital for new business ventures, the team at VentureCrowd has the knowledge and experience to assist you, and they also have a proven track record.&nbsp;&nbsp;</span></p>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How do I invest in venture capital in Brisbane? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">If you are interested in investing in up and coming businesses that are purpose-driven, VentureCrowd offers both retail and wholesale opportunities. VentureCrowd finds the best and brightest startups in Brisbane. In fact, VentureCrowd provides opportunities for investing in </span><a href="https://www.venturecrowd.com.au/s/venture-capital/sydney"><span style="font-weight: 400;">venture capital in Sydney</span></a><span style="font-weight: 400;"> or </span><a href="https://www.venturecrowd.com.au/s/venture-capital/melbourne"><span style="font-weight: 400;">venture capital in Melbourne</span></a><span style="font-weight: 400;"> too. By joining the VentureCrowd community, you’ll be able to learn more about their great investment opportunities. Through VentureCrowd you can get convenient </span></p>
+
+        </div>
+    </div>
+
+        </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                  
+                  <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">equity opportunities on the same terms as professional lead investors. VentureCrowd’s online platform simplifies the process of investing in venture capital in Brisbane and ensures the process runs smoothly. You’ll receive a private and secure registration for your investment and the communications from the company you are investing in will be delivered clearly and uniformly. Through your VentureCrowd account, you can easily view your investment and update any personal details anytime via the user-friendly online platform.</span></p>
+        </div>
+    </div>
+
+        </div>
+
+              </div>
+            </div> 
+          </div>
+            
+
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How much do venture capitalists in Brisbane really earn? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">How much money a venture capitalist will earn can vary significantly between different investment opportunities. What they earn will depend on how well the business they invest in does, but there are also other factors to consider such as the management fees. Venture Capitalists usually make their money on ‘exit’ which is typically when the company or property development is sold, or through an initial public offering (IPO) on the stock market. The returns from early-stage investments can be very high if there is a successful exit, but they also carry risk. This is why you should typically have no more than 10% of your assets in early-stage investments and you should adopt a portfolio approach which means investing in several different early-stage companies to spread the risk.&nbsp;</span></p>
+
+        </div>
+    </div>
+
+        </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                  
+                  <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;"><strong>At VentureCrowd, we help drive portfolio diversification.</strong> And now, thanks to changes to Australian legislation in 2017, investment opportunities that had previously only been available to sophisticated investors or high net worth individuals are now available to retail investors as well. If retail investors meet certain criteria, they are now able to invest up to $10,000 in private companies. These changes mean that startup investment is no longer just for venture capitalists and limited to </span><a href="https://www.venturecrowd.com.au/s/angel-investing/"><span style="font-weight: 400;">angel investing</span></a><span style="font-weight: 400;">, but is much more accessible to the everyday investor. Retail investors are now able to co-invest on the same economic terms alongside experienced lead investors.&nbsp;</span></p>
+        </div>
+    </div>
+
+        </div>
+
+              </div>
+            </div> 
+          </div>
+            
+
+            
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How do I approach a venture capital in Brisbane for funding? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Rather than wanting to invest in a startup, if you are looking for funding for your business, VentureCrowd can help you raise and secure capital from thousands of investors so that you can deliver on your plan. By using the VentureCrowd platform and working collaboratively with our team, launching a crowdfunding campaign is easier than you might think, and it will give you access to a big pool of investors. To help launch your deal, you can also choose from a range of campaign services including digital marketing and PR. VentureCrowd’s private syndicate platform (PSP) provides companies with an online platform, aggregated investment vehicle, and private registry service when raising capital. And to make things more streamlined, the relevant legal documentation and associated records for both companies and investors are generated via the platform and can be accessed online.&nbsp;</span></p>
+
+        </div>
+    </div>
+
+        </div>
+                  
+              </div>
+            </div>
+
+          </div>
+
+
+
+            <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How long does it take to get VC funding in Brisbane? </h3>
+                  <div class="wpb_wrapper">
+                      
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                              <p><span style="font-weight: 400;">Raising venture capital funding in Brisbane can be a time-consuming process and will depend on the stage the business is at and the sector it is in, as well as who is raising the money. Although there are different options for raising funds, one way to speed up the process is to use a </span><a href="https://www.venturecrowd.com.au/"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> platform such as VentureCrowd. With VentureCrowd a funding round usually runs for 6 weeks. Once it has finished and the investments have been received, we will transfer the funds to you (minus our raise fee).</span></p>
+                                <p><span style="font-weight: 400;">Whether you are thinking about raising capital for a new business or property development project or looking for a great new venture investment or </span><a href="https://www.venturecrowd.com.au/property/"><span style="font-weight: 400;">property investing</span></a><span style="font-weight: 400;"> opportunity,<a href="https://investor.venturecrowd.com.au/registration/initial_registration"> contact VentureCrowd today</a> for a confidential chat. We’d love to help you explore which investment or capital fundraising opportunities will be best suited to you.&nbsp;&nbsp;</span></p>                
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <div class="social-share-container">
+        <div class="share-links mb-4">
+          <div class="link-container">
+            <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- ./Body -->
+
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verification_Token__c</fullName>
+    <description>A token or code sent to the mobile number for verification purposes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field stores the verification token sent to the user. The user will need to provide this token to complete the verification process.</inlineHelpText>
+    <label>Verification Token</label>
+    <length>255</length>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,38 @@
+<aura:component extends="forceCommunity:navigationMenuBase" implements="forceCommunity:availableForAllPageTypes" access="global" controller="SuggestedInvestmentController">
+    <aura:attribute name="isMobile" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="successfulDealList" type="List"  />
+    <div class="container-fluid g-0">
+        <div class="row">
+            <aura:iteration items="{!v.successfulDealList}" var="pl" indexVar="index">
+                <div class="col-lg-4 investment-card mb-3 mb-lg-0">
+                    <div class="inner-container">
+                        <aura:set attribute="title">
+                        </aura:set>
+                        <p class="text-center investment-title slds-p-around_medium slds-m-around_none vc-font-caxton4">{!pl.Tile_Heading__c}</p>
+                        <div class="featured-image-wrapper px-0">
+                            <img class="featured-image" src="{!pl.Tile_Banner__c}" alt="product Banner"></img>
+                        </div>
+                        <aura:set attribute="else">
+                            <div class="featured-image-wrapper p-0">
+                                <img class="featured-image" src="{!pl.Tile_Banner__c}" alt="product Banner"></img>
+                            </div>
+                        </aura:set>
+                        <aura:if isTrue="{! pl.Button_Text__c}">
+                            <div style="background-color:#000;">
+                                <p class="text-center call-to-action slds-p-around_medium slds-m-around_none" onclick="{!c.onSuggestedPClick}" id ="{!index}" >
+                                    <a>{!pl.Button_Text__c}</a>
+                                </p>
+                            </div>
+                        </aura:if>
+                    </div>
+                </div>
+            </aura:iteration>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <lightning:button variant="brand" label="Browse All Investments" class="view-more"  onclick="{! c.handleClickInvestMents }" />
+            </div>
+        </div>
+    </div>
+</aura:component>

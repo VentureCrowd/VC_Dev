@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>This workflow will trigger when Opportunity: First Investment? EQUALS True and update the field Referral Commission with the following formula Referral_Agreement_Application__r.First_Investment_commission__c&quot;</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity: First investment % Sub Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: First investment % Sub Flow</label>
+    <migratedFromWorkflowRuleName>First investment %</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Error_message</name>
+        <label>Log Error message</label>
+        <locationX>440</locationX>
+        <locationY>242</locationY>
+        <inputAssignments>
+            <field>Record_details__c</field>
+            <value>
+                <elementReference>Input_Opportunity.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Update First investment % on opportunity</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source__c</field>
+            <value>
+                <stringValue>Opportunity: First investment % Sub Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_Commission_amount</name>
+        <label>Update Commission amount</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <faultConnector>
+            <targetReference>Log_Error_message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Input_Opportunity.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Referral_Commission__c</field>
+            <value>
+                <elementReference>Input_Opportunity.Referral_Agreement__r.First_Investment_Commission__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Commission_amount</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Input_Opportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="showPersonalInvestments" label="showPersonalInvestments"  />
+    <design:attribute name="showEntitiesInvestments" label="showEntitiesInvestments" />
+    <design:attribute name="showTotalInvestments" label="showTotalInvestments" />
+    <design:attribute name="isHomePage" label="isHomePage" />
+    <design:attribute name="description" label="Description" description="Content block below greeting after stefen in above image" />
+    <design:attribute name="recordId" label="recordId" />
+</design:component>

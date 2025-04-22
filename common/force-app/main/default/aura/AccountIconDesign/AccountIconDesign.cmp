@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="accountRecord" type="Object"/>
+    <aura:attribute name="showcmp" type="boolean" default="false"/>
+    <aura:attribute name="iconName" type="String" default="standard:account"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"></aura:handler>
+    <aura:if isTrue="{!v.showcmp}">
+        <div class="slds-grid slds-grid_align-spread">
+            <div class="slds-col">
+                <force:recordData aura:id="record"
+                                fields="Name,Profile_Image__c"
+                                recordId="{!v.recordId}"
+                                targetError="{!v.recordError}"
+                                targetRecord="{!v.record}"
+                                targetFields ="{!v.accountRecord}"
+                                mode="VIEW"/>
+                <!-- AGAIN WITH THIS LIGHTING:CARD STUFF. ITS NOT NECESSARY FOR SOMETHING SO SIMPLE!-->        
+                <aura:if isTrue="{!v.accountRecord.Profile_Image__c != null}">
+                    <div> 
+                        <img src="{!v.accountRecord.Profile_Image__c}"/>
+                        <div class="description">
+                            <h3>{!v.accountRecord.Name}</h3>
+                        </div>
+                    </div> 
+                    <aura:set attribute="else">
+                        <div> 
+                            <!--<img src="{!$Resource.Gradient_Image}"/>-->
+                            <span class="vc-circle"></span>
+                            <div class="description">
+                                <h3>{!v.accountRecord.Name} </h3>
+                            </div>
+                        </div> 
+                    </aura:set>
+                </aura:if>
+            </div>
+            <div class="slds-col">
+                <c:adressEntity recordId="{!v.recordId}" />
+            </div>
+        </div>
+    </aura:if>
+</aura:component>

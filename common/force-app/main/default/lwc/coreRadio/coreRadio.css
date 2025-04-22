@@ -1,0 +1,148 @@
+/* .input-wrapper{
+    padding: var(--space-md)
+} */
+
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+
+
+.input-label {
+    font-size: var(--text-md);
+    font-weight: 400;
+}
+
+.input-label p {
+    display: inline;
+    margin-right: 5px;
+    font-family: 'SuisseIntl-Medium';
+}
+
+
+.help-text{
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-Light";
+}
+
+.subtext{
+    color: var(--gray-4);
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-light";
+    font-size: var(--text-sm);
+  }
+  
+/* Handles the style between the label and the input */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+    gap: var(--space-xs); 
+}
+
+input[type="radio"] {
+    position: relative;
+    accent-color: var(--primary-accent);
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px #D9D9D9;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    appearance: none;
+    background: #FFF;
+
+}
+
+input[type="radio"]:checked:invalid
+input[type="radio"]:required:valid {
+    border-color: red;
+    box-shadow: 0 0 2px 1px red;
+    background: red;
+}
+
+/* Change the default icon the tick icon */
+input[type="radio"]:checked {
+    accent-color: var(--primary-accent);
+    box-shadow: 0 0 2px 1px var(--primary-accent);
+    background: var(--primary-accent);
+}
+
+ 
+
+.horizontal-alignment {
+    display: flex;
+    gap: var(--space-md);
+}
+
+
+.vertical-alignment {
+    display: block;
+    gap: var(--space-md);
+}
+
+.horizontal-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** Handle the size of radio button */
+
+.box{
+    height: var(--text-lg);
+    width: var(--text-lg);
+}
+
+.box.xsmall{
+    height: var(--text-xs);
+    width: var(--text-xs);
+}
+
+.box.small{
+    height: var(--text-sm);
+    width: var(--text-sm);
+}
+
+.box.medium{
+    height: var(--text-md);
+    width: var(--text-md);
+}
+
+.box.large{
+    height: var(--text-lg);
+    width: var(--text-lg);
+}
+
+.box.xlarge{
+    height: var(--text-xl);
+    width: var(--text-xl);
+}
+
+.box.xxlarge{
+    height: var(--text-xxl);
+    width: var(--text-xxl);
+}
+
+
+.box.xxxlarge{
+    height: var(--text-xxxl);
+    width: var(--text-xxxl);
+}
+
+/* error message styling */
+
+.error-message {
+    color: var(--error-color, #D8000C); /* Providing a default red color if --error-color is not defined */
+    font-size: var(--text-sm); /* Smaller text to not overpower the main content */
+    margin-bottom: var(--space-xs); /* Consistent vertical spacing */
+    font-family: "SuisseIntl-light"; /* Keeping the font consistent with the rest of the form */
+}
+
+
+
+.required-indicator {
+    color:var(--error-color, #D8000C); /* Visually distinct color for required fields */
+}

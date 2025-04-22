@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Listing_Authority__c</fullName>
+    <label>Listing Authority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Exclusive</fullName>
+                <default>false</default>
+                <label>Exclusive</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Conjunctional</fullName>
+                <default>false</default>
+                <label>Conjunctional</label>
+            </value>
+            <value>
+                <fullName>Multi List</fullName>
+                <default>false</default>
+                <label>Multi List</label>
+            </value>
+            <value>
+                <fullName>Sale by Negotiation</fullName>
+                <default>false</default>
+                <label>Sale by Negotiation</label>
+            </value>
+            <value>
+                <fullName>Set Sale</fullName>
+                <default>false</default>
+                <label>Set Sale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

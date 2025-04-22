@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIC_EIC_Approved_Date_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>(NOT(Wholesale__pc) || NOT(EIC_Property__pc) ||NOT(EIC_Startup__pc))
+&amp;&amp; ISBLANK(SIC_EIC_Approved_Date__pc)</errorConditionFormula>
+    <errorMessage>Please update SIC EIC Approved Date.Thank You</errorMessage>
+</ValidationRule>

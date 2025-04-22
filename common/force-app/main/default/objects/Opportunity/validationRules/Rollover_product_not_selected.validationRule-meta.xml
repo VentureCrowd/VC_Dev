@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rollover_product_not_selected</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(RecordType.Name  = &apos;VC&apos;, AND(Rollover_Investment__c = True, ISBLANK(Product_rolling_from__c)), false)</errorConditionFormula>
+    <errorMessage>If the rollover checkbox is checked please also select the product rolled over from.</errorMessage>
+</ValidationRule>

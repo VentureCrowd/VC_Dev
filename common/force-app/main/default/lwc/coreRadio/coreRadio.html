@@ -1,0 +1,76 @@
+<template>
+    <div class={textPositionClass}>
+         <!-- Input Label -->
+         <div class="input-details">
+            <template if:true={label}>
+                <div class="input-header">
+                    <div class="input-label">
+                        <p>{label}<template if:true={required}> *</template></p>
+                    </div>
+                    
+                    <!-- <div class="tooltip">i
+                        <span class="tooltip-text">Help Text....</span>
+                    </div> -->
+                </div>
+            </template>
+            
+            <!-- Help Text -->
+            <template lwc:if={help}>
+                <div class="help-text">{help}</div>
+            </template> 
+              <!-- Help Text slot -->
+              <template lwc:else>
+                <div class="help-text">
+                    <slot name="helptext">
+                    </slot>
+                </div>
+            </template>
+            </div>
+           
+
+        <template if:true={vertical}>
+            <div class="vertical-alignment input-wrapper">
+                <div key={item.id} for:each={values} for:item="item" class="checkbox-container">
+                    <input type="radio"
+                            name={name}
+                            value={item.value}
+                            checked={item.checked}
+                            class={boxSize}
+                            onchange={handleOnChange}/>
+                    <label for={item.id}>{item.label}</label>
+                </div>
+            </div>
+        </template>
+        
+        <template if:true={horizontal}>
+            <div class="horizontal-alignment input-wrapper">
+                <div key={item.id} for:each={values} for:item="item" class="checkbox-container">
+                    <input type="radio"
+                            name={name}
+                            value={item.value}
+                            checked={item.checked}
+                            class={boxSize}
+                            onchange={handleOnChange}/>
+                    <label for={item.id}>{item.label}</label>
+                </div>
+            </div>
+        </template>
+    </div>
+    
+    <template if:true={subtext}>
+        <div class="subtext">
+            {subtext}
+        </div>
+    </template>
+
+      <!-- Error message -->
+      <template if:true={displayErr}>
+        <template for:each={errorMessage} for:item="message">
+            <div class="error-message" key={message}>
+                {message}
+            </div>
+        </template>
+        
+    </template>
+
+</template>

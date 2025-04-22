@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TimeTrade_SF1__TimetradeCalendarLastSync__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Shows the last date time when the Calendar was synced for the User.</description>
+    <label>Timetrade Calendar Last Sync</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>DateTime</type>
+</CustomField>

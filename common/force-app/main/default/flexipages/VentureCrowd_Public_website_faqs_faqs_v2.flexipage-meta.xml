@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1aa975b6-966e-4388-9a69-b1767e945c85</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-0116fe10-4a91-4340-9df8-2cffb41eb36a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-FAQs.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pg&amp;oid=00D2v000000WjFp&amp;lastMod=1629794440000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Frequently Asked Questions</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1aa975b6-966e-4388-9a69-b1767e945c85</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>219ad7b8-cc99-42db-a950-5799d435e343</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-56a4163a-7bc4-4e7a-b3bc-7ceb0d0c9f96</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3&gt;What is Equity based crowdfunding?&lt;/h3&gt; 
+    &lt;p&gt;Equity based crowdfunding allows investors to take equity in a business in exchange for a cash investment. As a registered VentureCrowd investor, you can invest in our pre-screened deals directly or via a trust managed by VentureCrowd.&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;How is VentureCrowd different to other crowdfunding platforms?&lt;/h3&gt;
+    &lt;p&gt;VentureCrowd is an equity crowdfunding platform which means rather than receiving a product or making a donation the investor receives equity, or ownership, in the company raising capital or the underlying property development.&lt;/p&gt;
+    &lt;br&gt;
+	&lt;p&gt;&lt;h3&gt;Who can invest through VentureCrowd?&lt;/h3&gt;
+    &lt;p&gt;Opportunites on VentureCrowd are generally available to wholesale sophisticated investors, meaning individuals who have a gross income of at least $250,000 per annum over the last two financial years, or have net assets of at least $2.5 million.&lt;/p&gt;
+	&lt;p&gt;Just like the US, Europe, Asia and across the ditch in NZ, Australia has now passed the framework to allow retail investors, you, to also participate. Under this new Crowd-Sourced Funding (CSF) regime, anyone residing in Australia, 18 years of age or older can invest in CSF offers.&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;How does VentureCrowd make money (what fees are charged)?&lt;/h3&gt;
+	&lt;p&gt;It’s free to register on VentureCrowd.&lt;/p&gt;
+	&lt;p&gt;Investors can generally choose how they invest, either;/&lt;p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;0% transaction fee &amp; 20% performance fee on exit (excluding GST)&lt;/li&gt;
+		&lt;li&gt;Performance fees are not incurred against the principal investment and occur only on a successful exit&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;Companies&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;6% on capital raised (excluding GST)&lt;/li&gt;
+		&lt;li&gt;$4,000 campaign fee (excluding GST)&lt;/li&gt;
+	&lt;/ul&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;What are early stage securities?&lt;/h3&gt;
+	&lt;p&gt;The term ‘early-stage securities’ generally refers to shares, or securities that are convertible into shares, in companies that are at an early stage of their development.&lt;/p&gt;
+	&lt;p&gt;This usually means the company has developed a new product or business idea, but has little (or no) revenue.&lt;/p&gt;
+	&lt;p&gt;Early stage securities are a high-risk high-return growth asset. The benefit of investing in companies at this early stage is that the price of the shares will be low (relative to more mature companies), allowing early investors to benefit from high levels of growth if the company is successful.&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;What are early stage securities?&lt;/h3&gt;
+	&lt;p&gt;Investing at an early stage is where the greatest risk resides. For example, the technology may need further development, the management team need to capable of executing the business plan and the market may not be ready to for the new product or service being developed.&lt;/p&gt;
+	&lt;p&gt;To understand the opportunity represented by investing in early stage securities it is important to understand:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;the stages of growth of a typical early stage business&lt;/li&gt;
+		&lt;li&gt;why companies seek equity finance&lt;/li&gt;
+		&lt;li&gt;how companies use the funding to accelerate growth&lt;/li&gt;
+		&lt;li&gt;how you realise a return on your investment&lt;/li&gt;
+	&lt;/ul&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;How much can I raise for my business/development project on VentureCrowd?&lt;/h3&gt;
+	&lt;p&gt;There is no minimum or maximum amount you can raise through VentureCrowd. You will need to disclose the total amount of the current raise and allocate a set amount to VentureCrowd investors.&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;What happens after I invest?&lt;/h3&gt;
+	&lt;p&gt;You can monitor the progress of your investments via your investor dashboard. Regular investor communications are also managed via the platform.&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;h3&gt;Where can I access the investment due diligence documents?&lt;/h3&gt;
+	&lt;p&gt;Full disclosure and due diligence documents for each opportunity are available on the VentureCrowd website, listed under the specific deal.&lt;/p&gt;
+	&lt;p&gt;You will be required to complete identity verification via the platform to access sensitive documents.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>219ad7b8-cc99-42db-a950-5799d435e343</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6b3f69b0-043b-4fed-b236-959fd6f7e980</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-a2fae498-be53-467c-af27-2b6456fc133d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Gray</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonName</name>
+                    <value>Contact Us</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonRedirectUrl</name>
+                    <value>https://cm-vc-internal.cs74.force.com/s/about?contactus=true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>subTitle</name>
+                    <value>Get in touch and we’ll get back to you as soon as we can.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Can&apos;t find what you are looking for?</value>
+                </componentInstanceProperties>
+                <componentName>registerNowProductLanding</componentName>
+                <identifier>registerNowProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6b3f69b0-043b-4fed-b236-959fd6f7e980</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-0116fe10-4a91-4340-9df8-2cffb41eb36a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;0116fe10-4a91-4340-9df8-2cffb41eb36a&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1aa975b6-966e-4388-9a69-b1767e945c85&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(255, 255, 255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>87</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-56a4163a-7bc4-4e7a-b3bc-7ceb0d0c9f96</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;56a4163a-7bc4-4e7a-b3bc-7ceb0d0c9f96&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;219ad7b8-cc99-42db-a950-5799d435e343&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-a2fae498-be53-467c-af27-2b6456fc133d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;a2fae498-be53-467c-af27-2b6456fc133d&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;6b3f69b0-043b-4fed-b236-959fd6f7e980&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Frequently asked questions about investing in startups and alternative assets like high-growth private companies, property development &amp;amp; alternative credit</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Answers about crowdfunding and equity investing in alternative assets</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>faqs_faqs_v2</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>This flow updates the Close Date on the related Raise when the Close Date on a Product is updated</description>
+    <environments>Default</environments>
+    <interviewLabel>Sync Close Date from Product to Raise {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Product:Sync Close Date from Product to Raise</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Message</name>
+        <label>Log Message</label>
+        <locationX>704</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Record_details__c</field>
+            <value>
+                <elementReference>$Record.Raise__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Raise Offer Close Date Sync</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source__c</field>
+            <value>
+                <stringValue>Product: Sync Close Date from Product to Raise</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Fetch the Raise linked to the Product that triggered the flow.</description>
+        <name>Fetch_Related_Raise</name>
+        <label>Fetch Related Raise</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Raise</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Log_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Raise__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Raise__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Close Date of the Raise linked to the triggering Product.</description>
+        <name>Update_Raise</name>
+        <label>Update Raise</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Log_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Fetch_Related_Raise.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Form_Offer_close_date__c</field>
+            <value>
+                <elementReference>$Record.Offer_Close_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Raise__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Fetch_Related_Raise</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Offer_Close_Date__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Product2</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

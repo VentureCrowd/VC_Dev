@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Platinum_Partners_Initial_Eligibility__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is utilized to trigger the process to create platinum partners membership record.</description>
+    <inlineHelpText>This field is utilized to trigger the process to create platinum partners membership record.</inlineHelpText>
+    <label>Platinum Partners Initial Eligibility</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

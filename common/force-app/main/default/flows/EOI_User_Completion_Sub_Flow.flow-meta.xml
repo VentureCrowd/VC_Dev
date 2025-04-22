@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Updates the completio % field of an EOI to see how much the user has filled up.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Completion_Percentage</name>
+        <dataType>Number</dataType>
+        <expression>(
+ IF(NOT(ISBLANK({!Get_Triggering_Record.EOI_Title__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.One_liner_about_business__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Youtube_Video_Link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Offer_Overview__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Problem_or_opportunity__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Solution__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Differentiation__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Intellectual_Property__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Total_addressable_market__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Progress__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Growth_plan__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Facebook_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Instagram_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Linkedin_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Twitter_X_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Youtube_link__c})), 4.76, 0) +
+ IF(NOT(ISPICKVAL({!Get_Triggering_Record.Company_Stage__c}, &quot;&quot;)), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Target_Raise_Amount__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Minimum_Investment_amount__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Raise_Contact_email__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!Get_Triggering_Record.Planned_used_of_funds__c})), 4.76, 0)
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>EOI - User Completion Sub Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EOI - User Completion Sub Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Triggering_Record</name>
+        <label>Get Triggering Record</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Completion</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EOI__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Completion</name>
+        <label>Update Completion %</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Completion__c</field>
+            <value>
+                <elementReference>Completion_Percentage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>EOI__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Triggering_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

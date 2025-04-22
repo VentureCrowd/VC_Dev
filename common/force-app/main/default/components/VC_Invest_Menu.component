@@ -1,0 +1,236 @@
+<apex:component controller="ProductController">
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/VC-Custom-CSS.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/frontend.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/responsive.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/styles.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/sb-instagram.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/svgs-attachment.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min(1).css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min2.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/svgs-attachment.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/font-awesome.min(1).css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/style.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/rgs.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/style(1).css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/magnific.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/responsive(1).css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/ascend.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/js_composer.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_Home, 'CSS/VC-Custom-CSS.css')}" />
+
+    <apex:stylesheet value="{!$Resource.VC_Investcss}" />
+
+
+    <apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/jquery.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/jquery-migrate.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.VC_Home, 'JS/login_menu.js')}" />
+
+    <style>
+        div {
+            font-family: "Gilroy-Regular";
+            !important
+        }
+
+        @font-face {
+            font-family: 'Gilroy-Regular';
+            src: url('https://venturecrowd--akcelo--c.visualforce.com/resource/1607219020000/VC_Home/Fonts/Gilroy-Regular.otf');
+            <!-- src: url("{!URLFOR($Resource.VC_Home, 'Fonts/Gilroy-Regular.otf')}");
+            -->
+        }
+
+        }
+
+        body {
+            font-family: Gilroy-Regular;
+            !important
+        }
+
+        .sf-menu a:hover {
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: none;
+        }
+    </style>
+    <div data-box-shadow="none" data-cart="false" data-condense="false" data-format="centered-menu" data-full-width="true" data-has-buttons="no"
+        data-has-menu="true" data-header-resize="0" data-lhe="animated_underline" data-logo-height="30" data-m-logo-height="25"
+        data-megamenu-rt="1" data-mobile-fixed="1" data-padding="20" data-permanent-transparent="false" data-ptnm="false" data-remove-fixed="0"
+        data-shrink-num="4" data-transparency-option="1" data-user-set-bg="#0f141e" data-using-logo="1" data-using-pr-menu="true"
+        data-using-secondary="0" id="header-outer">
+
+
+        <header id="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col span_3">
+                        <a id="logo" href="https://www.venturecrowd.com.au" data-supplied-ml="false">
+                            <img class="stnd default-logo" alt="VentureCrowd" src="https://venturecrowd--akcelo--c.visualforce.com/resource/1607219020000/VC_Home/Images/VC_newLogo.png"
+                                srcset="https://venturecrowd--akcelo--c.visualforce.com/resource/1607219020000/VC_Home/Images/VC_newLogo.png 1x, https://assets.venturecrowd.vc/uploads/2020/04/VC_newLogo.png 2x"
+                            />
+                            <img class="starting-logo default-logo" alt="VentureCrowd" src="https://assets.venturecrowd.vc/uploads/2019/08/VC-logo-coloured-01.png"
+                                srcset="https://assets.venturecrowd.vc/uploads/2019/08/VC-logo-coloured-01.png 1x, https://assets.venturecrowd.vc/uploads/2019/08/VC-logo-coloured-01_2x.png 2x"
+                            />
+                            <img class="starting-logo dark-version default-logo" alt="VentureCrowd" src="https://assets.venturecrowd.vc/uploads/2019/08/VC-logo-coloured-01.png"
+                                srcset="https://assets.venturecrowd.vc/uploads/2019/08/VC-logo-coloured-01.png 1x, https://assets.venturecrowd.vc/uploads/2019/08/VC-logo-coloured-01_2x.png 2x"
+                            />
+                        </a>
+
+                    </div>
+                    <!--/span_3-->
+
+                    <div class="col span_9 col_last">
+                        <div class="slide-out-widget-area-toggle mobile-icon fullscreen-alt" data-icon-animation="simple-transform">
+                            <div>
+                                <a href="#sidewidgetarea" class="closed">
+                                    <span>
+                                        <i class="lines-button x2">
+                                            <i class="lines"></i>
+                                        </i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <nav>
+                                <ul class="buttons" data-user-set-ocm="off">
+                                    <li id="menu-item-7726" class="menu-item menu-item-type-gs_sim menu-item-object-gs_sim button_bordered menu-item-7726">
+                                        <!-- Start shortcoder -->
+                                        <!-- End shortcoder v4.1.7-->
+                                    </li>
+                                </ul>
+                                <ul class="sf-menu">
+                                    <li id="menu-item-15790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15790">
+                                        <a href="#">
+                                            <span style="font-family:Gilroy-Regular">INVEST</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-16824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1682">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">High Growth Property Fund</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-16667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16667">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Super High Yield</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-16668" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16668">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Curae Health</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-17499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17499">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Wave Swell Energy</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-15781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15781">
+                                        <a href="#">
+                                            <span style="font-family:Gilroy-Regular">LEARN</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-16920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16920">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">What are early stage securities?</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-16921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16921">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Why include early stage securities?</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-16922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16922">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">How to choos</span>></a>
+                                            </li>
+                                            <li id="menu-item-16923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16923">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Making an investment</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-5957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5957">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">FAQs</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-15785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15785">
+                                        <a href="#">
+                                            <span style="font-family:Gilroy-Regular">RAISE</span>
+                                        </a>
+                                    </li>
+                                    <li id="menu-item-15788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15788">
+                                        <a href="#">
+                                            <span style="font-family:Gilroy-Regular">PROPERTY</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-16927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16927">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">High Growth Property Fund</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-16928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16928">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Super High Yield</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-16929" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16929">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">VC Mortgage Fund</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-9431" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9431">
+                                        <a href="#">
+                                            <span style="font-family:Gilroy-Regular">ABOUT</span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-15927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15927">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">About Us</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-5934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5934">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">How it work</span>s</a>
+                                            </li>
+                                            <li id="menu-item-15768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15768">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Syndicates</span>
+                                                </a>
+                                            </li>
+                                            <li id="menu-item-10529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10529">
+                                                <a href="#">
+                                                    <span style="font-family:Gilroy-Regular">Partners</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-5946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5946">
+                                        <a href="{!baseUrl}/apex/VC_NewsBlog">
+                                            <span style="font-family:Gilroy-Regular">NEWS</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+                        <!--test-->
+                    </div>
+                    <!--/span_9-->
+                </div>
+                <!--/row-->
+            </div>
+            <!--/container-->
+        </header>
+    </div>
+    <!--/header-outer-->
+
+</apex:component>

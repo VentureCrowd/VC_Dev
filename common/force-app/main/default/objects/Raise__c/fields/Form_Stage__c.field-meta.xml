@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Stage__c</fullName>
+    <description>This field indicates the current stage of the company.</description>
+    <inlineHelpText>Specify the current stage of your company, such as startup, growth, or established.</inlineHelpText>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Seed</fullName>
+                <default>false</default>
+                <label>Pre-Seed</label>
+            </value>
+            <value>
+                <fullName>Seed</fullName>
+                <default>false</default>
+                <label>Seed</label>
+            </value>
+            <value>
+                <fullName>Post-Seed</fullName>
+                <default>false</default>
+                <label>Post-Seed</label>
+            </value>
+            <value>
+                <fullName>Series A</fullName>
+                <default>false</default>
+                <label>Series A</label>
+            </value>
+            <value>
+                <fullName>Series B+</fullName>
+                <default>false</default>
+                <label>Series B+</label>
+            </value>
+            <value>
+                <fullName>Pre-IPO</fullName>
+                <default>false</default>
+                <label>Pre-IPO</label>
+            </value>
+            <value>
+                <fullName>IPO</fullName>
+                <default>false</default>
+                <label>IPO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

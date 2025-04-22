@@ -1,0 +1,28 @@
+.three-up-text{
+    padding-bottom:5%;
+}
+
+@media screen and (max-width: 992px) {
+    .slds-size_1-of-3 {
+        height: auto;
+        margin:auto;
+        width: 100%;
+    }  
+    img {
+        display:block;
+        height: auto;
+        margin:auto;
+        max-width: 62px;
+        padding-bottom:2%;
+        width: 100%;
+    }  
+    .three-up-text{
+        display:block;
+        margin:auto;
+        text-align:center;
+    }
+    .slds-grid{
+        display:block;
+        padding:2%;
+    }
+}

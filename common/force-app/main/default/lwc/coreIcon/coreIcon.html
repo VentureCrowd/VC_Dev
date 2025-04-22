@@ -1,0 +1,23 @@
+<template>
+    <div class="icon-wrapper">
+        <div lwc:if={linkUrl}>
+            <a href={linkUrl} target="_blank">
+                <svg class={iconClass}>
+                    <use href={svgLink} x="0" y="0" />
+                </svg>
+            </a>
+        </div>
+
+        <div lwc:elseif={customSize}>
+            <svg class={iconClass} style={style}>
+                <use href={svgLink} x="0" y="0" />
+            </svg>
+        </div>
+
+        <div lwc:else>
+            <svg class={iconClass} >
+                <use href={svgLink} x="0" y="0" />
+            </svg>
+        </div>
+    </div>
+</template>

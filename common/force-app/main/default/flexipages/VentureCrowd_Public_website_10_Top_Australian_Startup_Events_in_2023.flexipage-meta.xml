@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a13a75f3-dc88-45b2-865d-0fd307a28f66</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-7d009fe2-3d97-4b3d-bfe1-f32f2cc88da8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000009e1JB&amp;d=%2Fa%2F5i000000PeaF%2FaUmogf04U6gQb5fgTbDqG3sLc6m.Fveou3Q0xBqHLzM&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>10 Top Australian Startup Events in 2023</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a13a75f3-dc88-45b2-865d-0fd307a28f66</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>12674a88-91a6-42fa-abfb-d4d44d0933b7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5860a2e7-3cf2-4378-af00-0e66ea57b167</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>d9c69</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-736e4272-e55c-4f36-ad2d-234e6556641f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+	&lt;p&gt;One of the most important aspects of startup life is attending industry and startup events to network with potential investors, partners and customers. Whether you’re just at the ideas stage or you’re going after a Series A raise, attending the right events is crucial.&lt;/p&gt;
+	&lt;p&gt;Not only can you raise awareness about your venture, but you can gain mentors, start developing relationships with potential investors, connect with synergistic companies for partnerships, and, at some events, win cash prizes at pitch events to boost your runway.&lt;/p&gt;
+	&lt;p&gt;So, if you&apos;re looking to ramp up your startup, add these innovative startup events to your calendar in 2023 (in chronological order).&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&amp;nbsp;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property/carrara-tranche-2&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.LearnImpact_investingIMG1.1}&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>12674a88-91a6-42fa-abfb-d4d44d0933b7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>eachLinkTextColor</name>
+                    <value>Pink</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectText</name>
+                    <value>How to invest in the property market without buying a property</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectURL</name>
+                    <value>https://www.google.com/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Recent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleTextColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentName>blogSidebarNavigation</componentName>
+                <identifier>blogSidebarNavigation</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5860a2e7-3cf2-4378-af00-0e66ea57b167</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f7ad8945-ab95-446b-9865-15172a6159b7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-45d3251b-7ccc-4356-88ac-0f0a7e1ff390</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#1&lt;/b&gt; &lt;a href=&quot;https://evokeag.com/the-40-agrifood-tech-startups-to-watch-in-2&quot; target=&quot;_blank&quot;&gt;evokeAG Startup Program&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 21 to 22 February 2023&lt;/li&gt;
+        &lt;li&gt;Price: From $430&lt;/li&gt;
+        &lt;li&gt;Location: Adelaide, SA&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;evokeAG - Asia Pacific’s agrifood tech community is hosting a startup program catering to early-stage startups right through to successful scale-ups both in Australia and internationally. VentureCrowd will be there, and the program includes an investor pitch dinner as a standalone event on the eve of evokeAG. The Investor event will facilitate curated conversations and connections between international and local investors, and Australian and New Zealand companies. Startups will pitch directly to an investor-only audience on Monday, 20 February 2023.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f7ad8945-ab95-446b-9865-15172a6159b7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>169b1c20-458a-41bf-96e7-9d22f0256f0c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-0d9d584c-fc08-481d-8800-5316bb3cfef4</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#2&lt;/b&gt; &lt;a href=&quot;https://vcworldsummit.com/sydney-2023/&quot; target=&quot;_blank&quot;&gt;Sydney 2023 Venture Capital World Summit&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 23 February 2023&lt;/li&gt;
+        &lt;li&gt;Price: From $623&lt;/li&gt;
+        &lt;li&gt;Location: Spaces Martin Place, 60 Martin Place Levels 1,2 &amp; 3, Sydney, NSW&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;Venture Capital World Summit 2023 in Sydney, Australia will feature scale-up companies, presenting investors, entrepreneurs and innovation from around Asia and the World. The summit aims to help businesses get more capital and expertise as they need to scale up and grow internationally with the support of a trusted network of investors.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>169b1c20-458a-41bf-96e7-9d22f0256f0c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6ac1296c-ffcb-4ad4-b7cb-e9bba0902f82</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9ac6dd9f-ed1f-4846-af96-039ded7ef216</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#3&lt;/b&gt; &lt;a href=&quot;https://www.southstart.co/program/odyssey/&quot; target=&quot;_blank&quot;&gt;Southstart - Odyssey Program&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 7 to 10 March 2023&lt;/li&gt;
+        &lt;li&gt;Price: from $399&lt;/li&gt;
+        &lt;li&gt;Location: Adelaide, SA&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;Southstart - Odyssey will take place from March 7 to 10 in Adelaide, South Australia. This event brings together passionate, curious, and tenacious creators, founders, investors and corporate partners to connect with like-minded people. It is one of the biggest startup events in Australia and attracts ecosystem heavyweights from around the world.&lt;/p&gt;
+	&lt;p&gt;Featuring a multi-day, multi-dimensional program of conversations, off-site adventures, and immersive experiences, Southstart supports both current and future founders and is spread across unique locations in Adelaide, the Garden of Unearthly Delights and incredible winery locations, making it an adventure for the mind, heart and palette. To get maximum value out of the program, they encourage attendees to immerse themselves in the multi-day experience. It kicks off with an intensive founder workshop which segways into the conference.
+&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6ac1296c-ffcb-4ad4-b7cb-e9bba0902f82</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ae698564-5751-4e71-a007-02445511f865</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fdad0e63-d95e-4209-af5c-5cf71c69b666</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#4&lt;/b&gt; &lt;a href=&quot;https://genaustralia.org/&quot; target=&quot;_blank&quot;&gt;Global Entrepreneurship Congress 2023&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 1 to 4 May 2023&lt;/li&gt;
+        &lt;li&gt;Price: from $725&lt;/li&gt;
+        &lt;li&gt;Location: Melbourne Convention and Exhibition Centre, Melbourne, VIC&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;This massive event features over 4,000 entrepreneurs, investors and policymakers from 200 nations, all focused on transforming the world. GEC2023 is four days of intelligence, collaboration and collective action. This year, the Congress is kick-starting a new era of vision-casting to solve global challenges, to create long-lasting growth and make people’s daily lives better.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ae698564-5751-4e71-a007-02445511f865</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ab0768ee-df3b-43b8-992f-b1eeb3b7d2ca</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8de87226-3c93-4cc7-a2e1-3ed528c11ef6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#5&lt;/b&gt; &lt;a href=&quot;https://www.proptechsummit.com.au/&quot; target=&quot;_blank&quot;&gt;PropTech Summit&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 2 to 4 May 2023&lt;/li&gt;
+        &lt;li&gt;Price: from $995&lt;/li&gt;
+        &lt;li&gt;Location: Luna Park, Sydney, NSW&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;Back for its 5th year, Australia’s original PropTech event is the meeting place for everyone with a stake in property tech, from property owners and managers, start-ups, tenants agents and everyone in between. With every major commercial real estate company in attendance, as well as investors, tenants and technology providers, the Summit is the perfect opportunity to network. Virtual packages are also available. &lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ab0768ee-df3b-43b8-992f-b1eeb3b7d2ca</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5af52dd2-2dd7-42b4-9531-37287e7dd926</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-5a47dfd7-51c4-426f-8ffb-2a1b8413799b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.learnhealthtechAI.1}&quot; style=&quot;width: 297.821px; height: 287.405px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#6&lt;/b&gt; &lt;a href=&quot;https://digitalhealthfest.com.au/&quot; target=&quot;_blank&quot;&gt;Digital Health Festival&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 6 to 7 June 2023&lt;/li&gt;
+        &lt;li&gt;Price: from $795 (early bird ends March 4)&lt;/li&gt;
+        &lt;li&gt;Location: Melbourne Convention &amp; Exhibition Centre, Melbourne, VIC&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;This is Australia’s biggest digital health transformation event, attracting 4000 attendees and featuring the most innovative healthcare and healthtech leaders, pitch events, and a startup village. If you’re developing health technology, you will be in good company. Digital Health Festival attracts leaders from the entire health ecosystem–hospitals, clinicians, allied health professionals, researchers, entrepreneurs, investors and more. This will definitely be the place for you if you want to be part of and lead the healthtech revolution.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5af52dd2-2dd7-42b4-9531-37287e7dd926</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f04dd50c-7b64-4271-87b5-eea0e947bdac</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b36aa94a-2f51-485f-87f4-f28095015651</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#7&lt;/b&gt; &lt;a href=&quot;https://www.terrapinn.com/exhibition/edutech-australia/&quot; target=&quot;_blank&quot;&gt;EduTECH 2023&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 24 to 25 August 2023&lt;/li&gt;
+        &lt;li&gt;Price: from $665. Exhibition entry is free&lt;/li&gt;
+        &lt;li&gt;Location: Melbourne Convention and Exhibition Centre, Melbourne, VIC&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;EduTECH is the biggest conference/tradeshow covering every aspect of education in Australia. Founders in the edtech space can network with industry professionals, attend a global 2-day conference and listen to over 445 speakers covering the latest trends, market disruptors and technologies shaping the education industry. There will also be a free multi-brand exhibition featuring hundreds of international exhibitors showcasing cutting-edge edtech solutions.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f04dd50c-7b64-4271-87b5-eea0e947bdac</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>209941f9-9858-4d88-861c-94588ad27897</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-abaee383-2240-4614-8e95-a403a1067dcf</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#8&lt;/b&gt; &lt;a href=&quot;https://sparkfestival.co/&quot; target=&quot;_blank&quot;&gt;Spark Festival 2023&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 16-30 August 2023&lt;/li&gt;
+        &lt;li&gt;Price: Session prices vary, some are free&lt;/li&gt;
+        &lt;li&gt;Location: Sydney CBD&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;The Spark Collective is an initiative aimed at bringing together individuals and organisations that support the Australian startup ecosystem. It is a platform for those in the business of helping startups to network, share their events and activities, and participate in the Spark Festival. The Spark Collective is a grassroots and independent network that aims to foster growth and collaboration in the startup community.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>209941f9-9858-4d88-861c-94588ad27897</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2a9ad5a9-b081-4d4e-886c-fb174b6c2d66</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-4c3acc22-96c0-446a-93ea-09b54bae733e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#9&lt;/b&gt; &lt;a href=&quot;https://fishburners.org/opportunities/sydney-public-events/&quot; target=&quot;_blank&quot;&gt;Optus x Fishburners Pitch Night&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: Ongoing (Pitch Nights are held Monthly)&lt;/li&gt;
+        &lt;li&gt;Price: $15. Online livestream is free&lt;/li&gt;
+        &lt;li&gt;Location: Fishburners, 2/11 York St, Sydney, NSW&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;Fishburners and Optus are hosting a pitch night that will be showcasing emerging technology enabled by 5G and Edge. Topics will include 5G-led innovations including IoT, drones, AI and Machine Learning, and VR/AR. The Shark Tank-style Pitch sessions will feature emerging startups and industry professionals for a valuable networking opportunity for current entrepreneurs or anyone interested in entrepreneurship but not sure where to start.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2a9ad5a9-b081-4d4e-886c-fb174b6c2d66</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>4271a1c7-efd0-400d-bee5-cac4e5811bdb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-cedf3736-88ea-4776-832b-0c1ed7a027c6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;&lt;b&gt;#10&lt;/b&gt; &lt;a href=&quot;https://sxswsydney.com/&quot; target=&quot;_blank&quot;&gt;SXSW SYDNEY 2023, An Event for Creative Discovery&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 15 to 22 October 2023&lt;/li&gt;
+        &lt;li&gt;Price: TBA&lt;/li&gt;
+        &lt;li&gt;Location: Sydney&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;SXSW, a highly-anticipated event that combines innovation, music, screen, technology, and gaming, is making its debut outside of North America by coming to Sydney.&lt;/p&gt;
+	&lt;p&gt;This city, known for its stunning natural beauty, thriving innovation hub, and tech-savvy culture, will host a week-long celebration of creativity and culture, attracting change makers from both near and far. As the gateway to the Asia-Pacific region, SXSW Sydney promises to showcase the city&apos;s brilliant people, cutting-edge ideas, and dynamic community, making it a hub of progress and innovation.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>4271a1c7-efd0-400d-bee5-cac4e5811bdb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d06958ae-e040-4147-bc6e-ee88964c9453</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-12cde9ca-021c-4afa-b470-1fd5653aeccf</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Learn2023IMG1.1}&quot; style=&quot;width: 645.642px; height: 428.056px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;h1&gt;#Bonus Event: &lt;a href=&quot;https://www.startupandangels.com/&quot; target=&quot;_blank&quot;&gt;Startup&amp;Angels&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: various and ongoing throughout the year&lt;/li&gt;
+        &lt;li&gt;Price: $33-$55&lt;/li&gt;
+        &lt;li&gt;Location: Tank Stream Labs, Sydney Startup Hub, 8 31/11 York St, Sydney, NSW&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;Startup&amp;Angels presents its Startup Pitch and Investors Panel so entrepreneurs can pitch their ideas to a live audience of investors as well as give them a chance to expand their business by connecting with game-changers in the startup community. &lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d06958ae-e040-4147-bc6e-ee88964c9453</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6c460bba-ae51-4b9e-ac66-080cf5035a7d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b4376fa2-5a2b-4fe0-9314-5e5ca8ac7efe</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+    &lt;br&gt;
+    &lt;h1&gt;Notable Virtual Events for Founders&lt;/h1&gt;
+    &lt;br&gt;&lt;br&gt;
+    
+    &lt;h1&gt;&lt;b&gt;#1&lt;/b&gt; &lt;a href=&quot;https://www.eventbrite.com.au/e/global-hacks-hackathon-2022-2023-tickets-442533037227?aff=ebdssbonlinesearch&amp;keep_tld=1&quot; target=&quot;_blank&quot;&gt;Global Hacks Hackathon (virtual)&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: Multiple dates&lt;/li&gt;
+        &lt;li&gt;Price: FREE&lt;/li&gt;
+        &lt;li&gt;Location: Online&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;Global Hacks is hosting an online hackathon aimed at promoting a higher level of education and diversity in STEM. Participants will use a range of APIs and tools to launch their own ideas and projects that tackle global problems. Prizes on offer include amazon gift cards, apple products, and more.&lt;/p&gt;
+
+    &lt;br&gt;
+    
+    &lt;h1&gt;&lt;b&gt;#2&lt;/b&gt; &lt;a href=&quot;https://www.eventbrite.com.au/e/fintech-virtual-hybrid-hackathon-2023-tickets-350757604437?aff=ebdssbonlinesearch&amp;keep_tld=1&quot; target=&quot;_blank&quot;&gt;FinTech Virtual &amp; Hybrid Hackathon (virtual)&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;
+	&lt;ul&gt;
+        &lt;li&gt;Date: 21 to 23 April 2023&lt;/li&gt;
+        &lt;li&gt;Price: Free and paid packages available&lt;/li&gt;
+        &lt;li&gt;Location: Online&lt;/li&gt;
+    &lt;/ul&gt;
+    
+	&lt;p&gt;This year’s FinTech Hackathon will look at ecosystems of financial applications that are built on top of blockchain networks.&lt;/p&gt;
+	&lt;p&gt;The primary goal is to create an open-source, permissionless, and transparent financial service ecosystem that is available to everyone and operates with no central authority.&lt;/p&gt;
+	&lt;p&gt;Keynote speakers, excellent mentors and awesome NFTs and token rewards are all up for grabs in this hybrid event. Also, the top 3 winning teams will automatically qualify for the invite-only Champions of Champions Hackathon on 1st December 2023.&lt;/p&gt;
+
+
+    &lt;br&gt;
+    
+    &lt;h1&gt;&lt;b&gt;#3&lt;/b&gt; &lt;a href=&quot;https://www.eventbrite.com.au/e/developerweek-europe-2023-hackathon-registration-480161795857?aff=ebdssbonlinesearch&amp;keep_tld=1&quot; target=&quot;_blank&quot;&gt;DeveloperWeek Europe 2023 Hackathon (virtual)&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;    
+	&lt;p&gt;The world’s largest European enterprise challenge-driven based hackathon invites participants to build any app and compete for $25,000+ in cash, products and prizes.&lt;/p&gt;
+
+&lt;br&gt;
+    
+    &lt;h1&gt;&lt;b&gt;#4&lt;/b&gt; &lt;a href=&quot;https://registration.experientevent.com/ShowCES231/wizard/landing&quot; target=&quot;_blank&quot;&gt;CES 2023&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;    
+	&lt;p&gt;CES is pegged as the most influential tech event in the world. Held in Las Vegas, this is where the world&apos;s biggest brands do business and meet new partners, and the sharpest innovators hit the stage. &lt;/p&gt;
+    
+    
+&lt;br&gt;
+    
+    &lt;h1&gt;&lt;b&gt;#5&lt;/b&gt; &lt;a href=&quot;https://startupgrind.tech/conference/?utm_source=website&amp;utm_medium=navigation&quot; target=&quot;_blank&quot;&gt;Startup Grind Global (virtual)&lt;/a&gt;&lt;/h1&gt;&lt;br&gt;    
+	&lt;p&gt;Global 2023 is the ultimate Startup Grind experience: an annual gathering of startup teams from around the world who are building the next big thing.&lt;/p&gt;
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6c460bba-ae51-4b9e-ac66-080cf5035a7d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d9e72fd7-3de2-4a05-a033-c93620734df8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-d6cf8e68-e08c-40b9-9c6a-856d06a7a495</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+
+    &lt;h1&gt;Which events will you attend?&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Attending innovation events in your niche is a fantastic opportunity to take your startup and professional network to the next level! With a blend of both in-person and virtual events available in 2023, there&apos;s no reason not to take part.&lt;/p&gt;
+	&lt;p&gt;Whether you&apos;re looking to grow and scale your business or expand your network, these startup events offer a unique chance to learn from industry leaders, connect with like-minded individuals, and take your business to new heights. Don&apos;t miss out on golden opportunities to accelerate your startup–register for an event near you today and invest in your future success!&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d9e72fd7-3de2-4a05-a033-c93620734df8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>65a66106-c8d5-4a70-ac2c-41f90eb15752</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-af9e8612-ddfa-4f77-ad6a-54c2e72c59f0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>currentBlogSeqNumber</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>nextPostButtonLabel</name>
+                    <value>Next Post</value>
+                </componentInstanceProperties>
+                <componentName>blogNextPost</componentName>
+                <identifier>blogNextPost</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>65a66106-c8d5-4a70-ac2c-41f90eb15752</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-7d009fe2-3d97-4b3d-bfe1-f32f2cc88da8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;7d009fe2-3d97-4b3d-bfe1-f32f2cc88da8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a13a75f3-dc88-45b2-865d-0fd307a28f66&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-736e4272-e55c-4f36-ad2d-234e6556641f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;736e4272-e55c-4f36-ad2d-234e6556641f&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;12674a88-91a6-42fa-abfb-d4d44d0933b7&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;5860a2e7-3cf2-4378-af00-0e66ea57b167&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;d9c69&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-45d3251b-7ccc-4356-88ac-0f0a7e1ff390</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;45d3251b-7ccc-4356-88ac-0f0a7e1ff390&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f7ad8945-ab95-446b-9865-15172a6159b7&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-0d9d584c-fc08-481d-8800-5316bb3cfef4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;0d9d584c-fc08-481d-8800-5316bb3cfef4&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;169b1c20-458a-41bf-96e7-9d22f0256f0c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9ac6dd9f-ed1f-4846-af96-039ded7ef216</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9ac6dd9f-ed1f-4846-af96-039ded7ef216&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;6ac1296c-ffcb-4ad4-b7cb-e9bba0902f82&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fdad0e63-d95e-4209-af5c-5cf71c69b666</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fdad0e63-d95e-4209-af5c-5cf71c69b666&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ae698564-5751-4e71-a007-02445511f865&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8de87226-3c93-4cc7-a2e1-3ed528c11ef6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8de87226-3c93-4cc7-a2e1-3ed528c11ef6&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ab0768ee-df3b-43b8-992f-b1eeb3b7d2ca&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-5a47dfd7-51c4-426f-8ffb-2a1b8413799b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;5a47dfd7-51c4-426f-8ffb-2a1b8413799b&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5af52dd2-2dd7-42b4-9531-37287e7dd926&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b36aa94a-2f51-485f-87f4-f28095015651</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b36aa94a-2f51-485f-87f4-f28095015651&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f04dd50c-7b64-4271-87b5-eea0e947bdac&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-abaee383-2240-4614-8e95-a403a1067dcf</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;abaee383-2240-4614-8e95-a403a1067dcf&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;209941f9-9858-4d88-861c-94588ad27897&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-4c3acc22-96c0-446a-93ea-09b54bae733e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;4c3acc22-96c0-446a-93ea-09b54bae733e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2a9ad5a9-b081-4d4e-886c-fb174b6c2d66&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-cedf3736-88ea-4776-832b-0c1ed7a027c6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;cedf3736-88ea-4776-832b-0c1ed7a027c6&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;4271a1c7-efd0-400d-bee5-cac4e5811bdb&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-12cde9ca-021c-4afa-b470-1fd5653aeccf</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;12cde9ca-021c-4afa-b470-1fd5653aeccf&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;d06958ae-e040-4147-bc6e-ee88964c9453&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b4376fa2-5a2b-4fe0-9314-5e5ca8ac7efe</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b4376fa2-5a2b-4fe0-9314-5e5ca8ac7efe&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;6c460bba-ae51-4b9e-ac66-080cf5035a7d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-d6cf8e68-e08c-40b9-9c6a-856d06a7a495</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;d6cf8e68-e08c-40b9-9c6a-856d06a7a495&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;d9e72fd7-3de2-4a05-a033-c93620734df8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-af9e8612-ddfa-4f77-ad6a-54c2e72c59f0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;af9e8612-ddfa-4f77-ad6a-54c2e72c59f0&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;65a66106-c8d5-4a70-ac2c-41f90eb15752&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>VentureCrowd has put together a list of the best startup events in Australia (including virtual events) to scale your business in 2023.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>10 Top Australian Startup Events in 2023 | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>10 Top Australian Startup Events in 2023</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

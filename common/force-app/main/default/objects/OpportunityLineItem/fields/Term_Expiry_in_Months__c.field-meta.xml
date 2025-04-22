@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Expiry_in_Months__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  PricebookEntry.Product2.Term_Expiry__c  ,&apos;3 Months&apos;,3,
+&apos;Undefined&apos;,0,
+&apos;6 Months&apos;,6,
+&apos;8 Months&apos;,8,
+&apos;12 Months&apos;, 12,
+&apos;18 Months&apos;,18,
+&apos;24 Months&apos;,24,
+&apos;36 Months&apos;,36,
+&apos;4 Years&apos;, 48,
+&apos;5 Years&apos;, 60, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Term/Expiry in Months</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Business_Entities</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Bank_Account_Name__c</columns>
+    <columns>BSB_Number__c</columns>
+    <columns>Bank_Account_Number__c</columns>
+    <columns>Type__pc</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Business_Account</value>
+    </filters>
+    <label>Personal Business Entities</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

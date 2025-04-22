@@ -1,0 +1,77 @@
+.component-container {
+    padding-top: calc(100vw * 0.1);
+    padding-bottom: calc(100vw * 0.1);
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 1em;
+    font-size: 46px;
+}
+
+@media screen and (max-width: 992px) {
+    h3 {
+        font-size: 28px;
+    }
+}
+
+p {
+    color: #999999;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.counter-wrapper {
+    margin-top: 50px;
+}
+
+.cell .counter {
+    color: #05c5d1;
+    font-size: 44px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    .cell .counter {
+        font-size: 36px;
+    }
+}
+
+.cell .label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+/* Background Colors */
+.component-container.bg-white {
+    background-color: #FFF;
+}
+
+.component-container.bg-black {
+    background-color: #000;
+}
+
+.component-container.bg-gray {
+    background-color: rgb(247 247 247);
+}
+
+/* Accent Colors */
+.accent-teal .cell .counter  {
+    color: #02c8c8;
+}
+
+.accent-pink .cell .counter  {
+    color: #dd5cff;
+}
+
+.accent-navy .cell .counter  {
+    color: #0F141E;
+}
+.accent-black .cell .counter  {
+    color: #000;
+}
+.accent-white .cell .counter  {
+    color: #fff;
+}

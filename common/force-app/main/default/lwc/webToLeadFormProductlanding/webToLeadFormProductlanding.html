@@ -1,0 +1,36 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <section class={getComponentStyleClasses} >
+    <div class="container" id="sendEmail">
+      <div class="row justify-content-center px-3 px-lg-0">
+        <div class="col-md-6 text-center" >
+          <h3>{titleTextOutput}</h3>
+          <p>{titleSubTextOutput}</p>
+
+          <lightning-input type="text" placeholder="First Name" data-item="firstName" onchange={handleFieldChange}  value={leadFirstName} required > </lightning-input>
+          <lightning-input type="text" placeholder="Last Name" data-item="lastName" onchange={handleFieldChange} value={leadLastName} required >    </lightning-input>
+          <lightning-input type="email" placeholder="Email" data-item="email" onchange={handleFieldChange} value={leadEmail} required >             </lightning-input>
+          <div class="row1">
+          <div  style="width:20%; background-color='Grey';  float:left; margin-top: .95%;">
+            <lightning-input type="tel" placeholder="+61"  disabled > </lightning-input>
+          </div>
+          
+          <div style="width:87%; float:right; padding-left: 10px;">
+          <lightning-input type="tel" placeholder="Mobile" data-item="mobile" onchange={handleFieldChange} value={leadMobile} max-length="9" min-length="9" 
+          pattern="[0-9]{9}"
+          message-when-too-short = "Please enter at least 9 digits."
+          message-when-pattern-mismatch = "Please enter at least 9 digits. No alphabetical characters or symbols"
+          required >            </lightning-input>
+        </div>
+      </div>
+          <c-google-re-captcha onverifycapthca={handleVerifyCapthca} usedincomunity={usedinComunity}  ></c-google-re-captcha>
+          
+          <button label={registerBtnLabel} type="button" onclick={handleLeadCreation} disabled={isDisableRegBtn}
+                  class={getRegBtnStyling}>
+            {registerBtnLabel}
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

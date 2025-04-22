@@ -1,0 +1,91 @@
+<template>
+    <div class="wrapper">
+        <div class="header">
+            <div class="text">
+                <p class="title">{sectionTitle} <template if:true={required}> *</template></p>
+                <template lwc:if={helptext}>
+                    <p class="help-text">{helptext}</p>
+                </template>
+                <template lwc:else>
+                    <slot class="help-text" name="helptext">
+
+                    </slot>
+                </template>
+                <p class="subtext">{subtext}</p>
+            </div>
+            <div class="actions">
+                <c-raise-add-team-member-modal
+                record-id={raiseId}
+                variation="secondary"
+                label="Add Profile"
+                name="Add Profile"
+                category={category}
+                onsaved={handleRefreshList}
+                ></c-raise-add-team-member-modal>
+            </div>
+        </div>  
+        <slot name="body">
+        </slot>
+        <template lwc:if={isLoading}>
+            <div class="file-loading-spinner">
+                <lightning-spinner variant="brand" size="large"> </lightning-spinner>
+            </div>
+        </template>
+        <div lwc:else class="body">
+            <div class="cards">
+                <template for:each={values} for:item="member">
+                    <c-core-card 
+                    mode="light" 
+                    shadow
+                    key={member.id}>
+                        <div slot="title">
+                            <div class="title-wrapper">
+                                <div class="profile-image">
+                                    <img src={member.imageUrl} alt="Member profile image" />
+                                </div>
+                                <div class="header-text">
+                                    <div class="top">
+                                        <p class="name">{member.name}</p>
+                                        <p class="role">{member.role}</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <template lwc:if={member.linkedIn}>
+                                            <a class="linkedin-link" href={member.linkedIn} target="_blank">View LinkedIn Profile</a>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div slot="body">
+                            <p class="description">{member.description}</p>
+                        </div>
+                        <div slot="footer">
+                            <div class="actions">
+                                <c-raise-add-team-member-modal
+                                record-id={raiseId}
+                                member-id={member.id}
+                                variation="tertiary"
+                                label="Edit"
+                                name="Edit Profile"
+                                category={category}
+                                onsaved={handleRefreshList}
+                                ></c-raise-add-team-member-modal>
+                                <c-core-button label="Remove" variation="tertiary" onbuttonclick={handleRemoveLink} data-id={member.id}></c-core-button>
+                            </div>
+                        </div>
+                    </c-core-card>
+                </template>
+            </div>
+            <!-- Error message -->
+            <template if:true={displayErr}>
+                <template for:each={errorMessage} for:item="message">
+                    <div class="error-message" key={message}>
+                        {message}
+                    </div>
+                </template>
+            </template>
+        </div>
+          
+    </div>
+</template>

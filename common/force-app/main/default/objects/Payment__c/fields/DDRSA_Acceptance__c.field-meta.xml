@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DDRSA_Acceptance__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the Direct Debit Request Service Agreement has been accepted by the user</description>
+    <inlineHelpText>Use this to indicate if the Direct Debit Request Service Agreement has been accepted by the user</inlineHelpText>
+    <label>DDRSA Acceptance</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,39 @@
+:host {
+    --lwc-brandAccessible : #5D3796;
+    --lwc-buttonBorderRadius : 30px;
+}
+
+.verification--container * {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.header1{
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0F141E
+}
+
+.paragraph{
+    font-family: Montserrat;
+    padding-left: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0F141E
+}
+
+.button123{
+    --sds-c-button-spacing-block-start: .5rem;
+    --sds-c-button-spacing-block-end: .5rem; 
+    --sds-c-button-brand-color-background:#844CEA;
+    --sds-c-button-brand-color-background-hover: #8700B8;
+    
+}

@@ -1,0 +1,111 @@
+.component-container {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0f141e;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: 1;
+} 
+
+/* Text Styles */
+@media screen and (max-width: 992px) {
+
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+a {
+    background: #844CEA;
+    border: 2px solid #844CEA;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 300ms ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.accent-teal {
+    background-color: #05c5d1;
+    border: 2px solid #05c5d1;
+    color: #fff;
+}
+
+a.accent-teal:hover {
+    background-color: #03a8b4;
+    border: 2px solid #03a8b4;
+}
+a.accent-purple {
+    background-color: #844CEA;
+    border: 2px solid #844CEA;
+    color: #fff;
+}
+
+a.accent-purple:hover {
+    background-color: #6217ee;
+    border: 2px solid #6217ee;
+}
+
+a.accent-pink {
+    background-color: #dd5cff;
+    border: 2px solid #dd5cff;
+    color: #fff;
+}
+
+a.accent-pink:hover {
+    background-color: #d245f7;
+    border: 2px solid #d245f7;
+}
+
+a.accent-ghost {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+a.accent-ghost:hover {
+    background-color: #844CEA;
+    border: 2px solid #844CEA;
+    color: #FFF;
+}

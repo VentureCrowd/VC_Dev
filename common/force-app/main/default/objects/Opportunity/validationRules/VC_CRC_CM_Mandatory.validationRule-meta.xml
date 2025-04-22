@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VC_CRC_CM_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ ($RecordType.Name= &apos;VC&apos;),
+ ISPICKVAL(StageName,&apos;Application Received&apos;), 
+ OR(ISBLANK( CM_Assigned__c ) ,  ISBLANK( CRC_Assigned__c )),
+ NOT(Web_Source__c =&apos;ZEGA-CSF&apos;),
+NOT(Web_Source__c =&apos;The form url with paramenters&apos;),
+NOT(Web_Source__c =&apos;Invest Now Form&apos;)
+  
+   )</errorConditionFormula>
+    <errorMessage>Please Assign the CM &amp; CRC</errorMessage>
+</ValidationRule>

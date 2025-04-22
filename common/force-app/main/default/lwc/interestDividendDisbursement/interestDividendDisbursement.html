@@ -1,0 +1,30 @@
+<template>
+    <div class="container">
+        <div class="slds-grid slds-gutters slds-wrap slds-p-around_small">
+            <div class="slds-col slds-size_1-of-4">
+                <lightning-combobox label="Select Product" value={value} placeholder="Select Product" options={prodOptns} onchange={handleChange}>                
+                </lightning-combobox>
+            </div>
+            <template if:true={selectedProd}>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input type="number" label="Returns Percentage" value={fixedreturns} disabled formatter="percent"></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input type="date" label="End Date" onchange={handledatechange} value={selectedenddate}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning-input type="number" label="Total Interest calculated"  value={totalinterset} formatter="currency" maximum-fraction-digits="2" disabled></lightning-input>
+                </div>
+            </template>
+        </div>
+        <div style="height:70vh">
+            <!-- <lightning-datatable key-field="oppId" data={tablerows} columns={columns} hide-checkbox-column onrowaction={handleRowAction}>
+            </lightning-datatable> -->
+            <lightning-tree-grid columns={columns} data={tablerows} key-field="oppId"  hide-checkbox-column onrowaction={handleRowAction}></lightning-tree-grid>
+        </div>
+        <div class="slds-clearfix">
+            <lightning-button variant="brand" label="Proceed" title="Proceed" onclick={proceed} class="slds-m-left_x-small slds-align_absolute-center slds-p-around_small" disabled={proccedbtndisabled}>
+            </lightning-button>
+        </div>
+    </div>
+</template>

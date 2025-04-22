@@ -1,0 +1,59 @@
+<!--
+
+-->
+<template>
+    <div class="container g-0">
+        <div class="row mb-3 mt-3">
+            <div class="col-md-12">
+                <h3 class="vc-font-caxton4">Key Documents</h3>
+            </div>
+        </div>
+        <template if:true={displayFiles}>
+            <div class="row">
+                <template for:each={productFiles} for:item="productFile">
+                    <div class="col-md-12 mb-3 file-wrapper" key={productFile.linkUrl}>
+                        <span class="file-icon"><img src="/sfsites/c/file-asset/Icon_1x?v=1" class="sfdcCbImage"></span>
+                        <template if:true={productFile.hasAccess}>
+                                <a href={productFile.linkUrl} download>{productFile.fileName}</a>
+                        </template>
+                        <template if:false={productFile.hasAccess}>
+                            <span>{productFile.fileName}</span>
+                            <span class="access-request">
+                                <a onclick={handleLogin}>(request access)</a>
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                        onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Accessing Key Documents
+                    </h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content p-4 text-center" id="modal-content-id-1">
+                    <p class="modal-title-text">Please login to view key documents.</p>
+                    <a onclick={handleLoginClick} class="modal-login-button mt-3">Login</a>
+                    <div class="register-text mt-3">If you don't have an account, <a href={registerURL}>please register here.</a></div>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

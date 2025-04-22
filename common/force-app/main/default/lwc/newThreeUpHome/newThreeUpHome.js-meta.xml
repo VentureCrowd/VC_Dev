@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="imageUrl_1" type="String" label="Image URL 1" placeholder="" />
+            <property name="heading_1" type="String" label="Heading 1" placeholder="" />
+            <property name="description_1" type="String" label="Description 1" placeholder="" />
+            <property name="imageUrl_2" type="String" label="Image URL 2" placeholder="" />
+            <property name="heading_2" type="String" label="Heading 2" placeholder="" />
+            <property name="description_2" type="String" label="Description 2" placeholder="" />
+            <property name="imageUrl_3" type="String" label="Image URL 3" placeholder="" />
+            <property name="heading_3" type="String" label="Heading 3" placeholder="" />
+            <property name="description_3" type="String" label="Description 3" placeholder="" />
+            <property name="imageUrl_4" type="String" label="Image URL 4" placeholder="" />
+            <property name="heading_4" type="String" label="Heading 4" placeholder="" />
+            <property name="description_4" type="String" label="Description 4" placeholder="" />
+            <property name="imageUrl_5" type="String" label="Image URL 5" placeholder="" />
+            <property name="heading_5" type="String" label="Heading 5" placeholder="" />
+            <property name="description_5" type="String" label="Description 5" placeholder="" />
+            <property name="imageUrl_6" type="String" label="Image URL 6" placeholder="" />
+            <property name="heading_6" type="String" label="Heading 6" placeholder="" />
+            <property name="description_6" type="String" label="Description 6" placeholder="" />
+            <property name="imageUrl_7" type="String" label="Image URL 7" placeholder="" />
+            <property name="heading_7" type="String" label="Heading 7" placeholder="" />
+            <property name="description_7" type="String" label="Description 7" placeholder="" />
+            <property name="imageUrl_8" type="String" label="Image URL 8" placeholder="" />
+            <property name="heading_8" type="String" label="Heading 8" placeholder="" />
+            <property name="description_8" type="String" label="Description 8" placeholder="" />
+            <property name="imageUrl_9" type="String" label="Image URL 9" placeholder="" />
+            <property name="heading_9" type="String" label="Heading 9" placeholder="" />
+            <property name="description_9" type="String" label="Description 9" placeholder="" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

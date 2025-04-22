@@ -1,0 +1,120 @@
+/* Global styles for the component's host */
+:host {
+    --lwc-formLabelFontSize: 1rem;
+    --slds-c-modal-color-border: #d9d9d9;
+}
+
+/* Global styles for all elements within .add-edit-founders */
+.add-edit-founders * {
+    font-family: 'SuisseIntl-Light';
+}
+
+.slds-input {
+    font-size: 13px !important;
+}
+
+/* Styles for labels within .add-edit-founders */
+.add-edit-founders label {
+    font-family: 'SuisseIntl-Regular';
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem 0 0;
+    margin-bottom: 0.125rem;
+}
+
+/* Styling for labels inside buttons inside the add-edit-founders class */
+.add-edit-founders button label {
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* Styling for edit or remove buttons inside the add-edit-founders class */
+.add-edit-founders .edit-or-remove-button {
+    border: 0;
+    color: #d95baa;
+    font-family: 'SuisseIntl-Regular';
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+/* Styling for labels inside edit or remove buttons inside the add-edit-founders class */
+.add-edit-founders .edit-or-remove-button label {
+    font-size: 13px;
+}
+
+/* Styling for textareas */
+textarea {
+    display: block;
+}
+
+/* Styling for the max length text */
+.field-max-length-text {
+    color: #b7b7b7;
+    font-size: 12px;
+}
+
+/* Styling for help links */
+.create-update-eoi-help-link {
+    color: #407fff;
+    text-decoration: underline;
+}
+
+/* Styling for textarea placeholders */
+.create-update-eoi-textarea::placeholder {
+    color: #e0e0e0;
+}
+
+/* Styling for input fields with the create-update-eoi-input class */
+.create-update-eoi-input {
+    --lwc-colorTextPlaceholder: #e0e0e0;
+}
+
+/* Styling for adjacent buttons with the same class */
+.cancel-or-save-or-update-button+.cancel-or-save-or-update-button,
+.edit-or-remove-button+.edit-or-remove-button {
+    margin-left: 1.5rem;
+}
+
+/* Styling for horizontal lines */
+hr {
+    border-image-width: 0;
+    border-top: 0;
+    color: #d9d9d9;
+    height: 2px;
+    margin: 1.5rem 0;
+    opacity: 1;
+}
+
+button.info-model {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #000;
+    border-color: inherit;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+button.create-update-eoi-button {
+    padding: 10px 30px;
+    width: auto;
+}
+
+button.create-update-eoi-button>label {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+button.create-update-eoi-button.secondary {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IM_PDS_CSF_Offer__c</fullName>
+    <description>Link to approved/Final document only</description>
+    <label>IM/PDS/CSF Offer</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0d8a9075-ec3d-46ad-8f12-d862461f4840</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-17e37ee3-fb36-4b18-bf4c-3c49dc0d0d4c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Open to Wholesale Investors</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i00000B0jwJ&amp;d=%2Fa%2F5i000000gfjL%2F6Z_AHgoEpgYip97VpYfzHfaQcXNNYR9uiyZnlSaXKzc&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fixedAmount</name>
+                    <value>5000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fixedAmountCent</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>investUrl</name>
+                    <value>/s/portal/invest-now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>minAmount</name>
+                    <value>250000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>minAmountCent</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t5i000005cqE3AAI&amp;amount=5000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i000005cqE3AAI</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i00000B0jxv&amp;d=%2Fa%2F5i000000gfjQ%2FmOC3ukUF0YAeOzwJQNFMy5rPeCm9XiilmNx7Ux15Ntw&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Book a Call</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://calendly.com/d/d34-nsh-ryd/book-a-call-from-a-customer-relationship-coordinator?month=2023-02</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>Zero-emission flights are on the horizon, thanks to Dovetail&apos;s electric-powered aircraft.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>targetAmount</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Invest in True Zero Emissions</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductWithInvestmentDetails</componentName>
+                <identifier>heroBannerProductWithInvestmentDetails</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>0d8a9075-ec3d-46ad-8f12-d862461f4840</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9ac940fa-5d82-47fb-9472-36783f82d143</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6bbd0408-180d-4963-9760-5c81cf883cbe</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>16395</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fa47a2d2-4e85-4723-9af0-bffda61449fa</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h2 class=&quot;color-purple mb-4 pt-4&quot;&gt;Key Investment Highlights&lt;/h2&gt;
+    &lt;p class=&quot;lead&quot; id=&apos;KeyInvestmentHighlights&apos;&gt;&lt;/p&gt;
+    &lt;ul&gt;
+		&lt;li&gt;$219 million in committed revenue (69 conversion customers) with a view to generate revenue in 3 years.&lt;/li&gt;
+		&lt;li&gt;Highly experienced aerospace engineer-led team with $2M in government grants and $3M in investment from lead investor Rex Airlines and other notable investors, including Sydney Seaplanes, Air Nostrom and Volotea.&lt;/li&gt;
+		&lt;li&gt;Zero emissions, first-mover, circular economy solution that reduces operating costs by 40% annually (and increasing aircraft motor life X3 and market demand X10).&lt;/li&gt;
+		&lt;li&gt;$100M in battery module and hydrogen subsystems IP optimised for airframe integration.&lt;/li&gt;
+		&lt;li&gt;With a pre-money valuation of $18M USD, Dovetail is projected to become the next fixed-wing aircraft OEM with a USD $4B+ valuation.&lt;/li&gt;
+    &lt;/ul&gt;
+    
+  
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://venturecrowd.zoom.us/webinar/register/4016830809671/WN_PjWY2v_1TKabPB8K93MMDg&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Dovetail_Webinar_DealPage.1}&quot; style=&quot;width: 737.398px; height: 387.617px;&quot;&gt;&lt;/a&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>9ac940fa-5d82-47fb-9472-36783f82d143</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columnWidth</name>
+                    <value>2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>componentBackgroundColor</name>
+                    <value>rgba(195, 205, 209, 0.2)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>featureValues</name>
+                    <value>[  {&quot;feature&quot;: &quot;Seed&quot;, &quot;value&quot;: &quot;Investment Type&quot; }, {&quot;feature&quot;: &quot;$3,600 USD&quot;, &quot;value&quot;: &quot;Company Share Price&quot; },   { &quot;feature&quot;: &quot;$250,000&quot;, &quot;value&quot;: &quot;Minimum Raise&quot; },   { &quot;feature&quot;: &quot;$1,000,000&quot;, &quot;value&quot;: &quot;Maximum Raise&quot; },   { &quot;feature&quot;: &quot;$5,000&quot;, &quot;value&quot;: &quot;Minimum Investment&quot; },   { &quot;feature&quot;: &quot;Wholesale&quot;, &quot;value&quot;: &quot;Offer Type&quot; } ]</value>
+                </componentInstanceProperties>
+                <componentName>investmentFeatures</componentName>
+                <identifier>investmentFeatures</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--page-index p-4&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#KeyInvestmentHighlights&quot;&gt;Key Investment Highlights&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#TheOffer&quot;&gt;The Offer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#GrowthStrategy&quot;&gt;Growth Strategy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#ExitStrategy&quot;&gt;Exit Strategy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhatisDovetail&quot;&gt;What is Dovetail?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#ProblemandMarket&quot;&gt;Problem and Market&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#DovetailSolution&quot;&gt;Dovetail Solution&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#CompetitiveAdvantage&quot;&gt;Competitive Advantage&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href=&quot;#ManagementTeam&quot;&gt;Management Team&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhyVentureCrowd?&quot;&gt;Why Invest Through VentureCrowd?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#Risks&quot;&gt;Fees &amp; Risks&lt;/a&gt;&lt;/li&gt;    
+
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6bbd0408-180d-4963-9760-5c81cf883cbe</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>cc171b77-0500-4c53-9e7d-1826ec3e5b9f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-24e78348-5b78-4e0f-abe4-7915714fb8bf</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;TheOffer&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;The Offer&lt;/h3&gt;
+
+        &lt;p&gt;Currently valued at USD $18 million with $5 million in investment and government grants, Dovetail Electric Aviation is raising a seed round (10% of company) to accelerate its go-to-market strategy and begin generating revenue within 3 years. Now is the time to get in on the ground floor of a company projected to be the next fixed-wing aircraft OEM with a USD $4B+ valuation. Wholesale and pre-approved investors can invest from a minimum of $5,000 AUD.&lt;/p&gt;
+    
+    &lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;The Offer for shares in Dovetail Electric Aviation is $3,600 USD per ordinary share, at a minimum investment of $5,000 AUD.&lt;/p&gt;
+	&lt;p&gt;Any investment made in Dovetail will be made via a VentureCrowd trust, with VentureCrowd Nominees as Trustee. This allows investors to invest in $AUD, with the currency conversion being done by the Trust at the time of investment into the Company. Any variances between amounts invested into the Trust and by the Trust into the company will be handled by our Funds Management team upon the close of the deal. Please ensure to have your bank account detail updated on your VentureCrowd portal for any refund once this deal is closed.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>cc171b77-0500-4c53-9e7d-1826ec3e5b9f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f49ae51b-142d-4d47-a19a-96cf0a5b6470</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-5bd44acf-2e3c-4c25-a293-875a7e0d0131</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;GrowthStrategy&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Growth Strategy&lt;/h3&gt;
+    
+    &lt;p&gt;Dovetail has an aggressive growth proposal, split into 3 phases: development, industrial and further development and servicing.&lt;/p&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h3&gt;&lt;strong&gt;Next 10 year development roadmap&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Execution plan&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.DovetailDP_Roadmap.1}&quot; alt=&quot;&quot; style=&quot;width: 904.18px; height: 361.547px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;p&gt;Industrialisation through economies of scale (reduces costs of conversions over time), partnering with aircraft lessors to sell the product on our behalf.&lt;/p&gt;
+	&lt;p&gt;Details - International conversion centres with ongoing recurring revenue (through maintenance, service, battery packs, H2 fuel cells) + increasing the market through the conversion of different aircraft. Every 10 to 15 years, electric motors need to be replaced.&lt;/p&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f49ae51b-142d-4d47-a19a-96cf0a5b6470</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1a32eac2-4805-49d1-a232-371cc64c76e4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9017ecf6-7b82-4d95-804e-cd62d05ea7d8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;ExitStrategy&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Use of Funds and Exit Strategy&lt;/h3&gt;
+    &lt;p&gt;The initial development phase for Dovetail is largely focused on research and development activities for Dovetail’s first electric propulsion system. Dovetail is committed to bringing a product to market as quickly as possible, to fulfil the committed &lt;i&gt;orders placed (a total of 69 conversions) at a value of $219 million dollars.&lt;/i&gt;&lt;/p&gt;  
+	&lt;p&gt;Activities within the development phase include bringing Dovetail’s initial battery-powered electric propulsion system to market (customised for a Cessna Caravan aircraft), including completing a first flight, numerous testing activities to validate the electric propulsion system, as well as certifying the product in Australia.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1a32eac2-4805-49d1-a232-371cc64c76e4</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>97ec339a-e99e-4a49-a277-15e31b000055</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d8badd95-4e2b-48bb-8e62-14aa304b87f9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>b19e0</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-4c95e05d-7357-434c-8e9b-5ec05e90571c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;WhatisDovetail&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;What is Dovetail Electric Aviation?&lt;/h3&gt;
+	&lt;p&gt;Dovetail’s vision is to lead the regional and general aviation industry into an exciting new, sustainable era by enabling aviation operators to fly commercially viable regional routes in nil-emission, electric-powered aircraft. Dovetail is integrating innovative electric power plant technology onto legacy aircraft to enable environmentally friendly and financially viable travel.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>fixedAmount</name>
+                    <value>5000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>investUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t2v00000DGFfOAAX</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i000005cqE3AAI</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrollNumber</name>
+                    <value>1200</value>
+                </componentInstanceProperties>
+                <componentName>dealpageSticky</componentName>
+                <identifier>dealpageSticky</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>97ec339a-e99e-4a49-a277-15e31b000055</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.DovetailDP_FeatureIMG.1}&quot; style=&quot;width: 437.117px; height: 291.406px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d8badd95-4e2b-48bb-8e62-14aa304b87f9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>96848d74-f31f-44f1-8f96-d5a186d94abc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ada3408b-d5a4-40ea-8afc-184db4c0a0e6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;ProblemandMarket&apos; class=&quot;color-purple mb-4 pt-4 &quot;&gt;Problem and Market&lt;/h3&gt;
+	&lt;p&gt;Australia relies heavily on air transport to connect remote and regional communities. The Australian government supports regional travel due to the distances involved and with road access to many communities often cut for several months during the wet season, in particular areas regular air services offer the only reliable means of transport.&lt;/p&gt;
+ 	&lt;p&gt;Australia has the fourth largest fleet of Cessna Caravans in the world, Dovetail’s initial aircraft target to retrofit. Offering a cost-efficient innovation that adds value to an aircraft, rather than forcing an operator to purchase a brand-new (expensive) aircraft, this approach enables a circular economy, providing operators with the ability to upgrade their combustion motor at the end of its life for one-fifth of the cost.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>96848d74-f31f-44f1-8f96-d5a186d94abc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>70d0ff3e-5287-4fad-8f7a-2b68aa2fb4f6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-a229b482-c54f-4836-b019-9bfd8f5a2b08</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;DovetailSolution&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Dovetail Electric Aviation Solution&lt;/h3&gt;
+
+    &lt;p&gt;Dovetail’s Electric Propulsion System reduces aviation operators’ operating costs by 40% and increases a motor life by three times the current standard. NASA published a study, noting that if regional aircraft operating costs reduce by 40%, market demand increases by a factor of 10. This will revolutionise regional transport, increasing the market significantly.&lt;/p&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/CaQgvtlLpKw&quot; src=&quot;https://www.youtube.com/embed/CaQgvtlLpKw&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>70d0ff3e-5287-4fad-8f7a-2b68aa2fb4f6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>70f29de3-04f8-4801-96eb-82b941d4aa0c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-7ab1a851-9ffc-426b-9d8e-78c29ab1acce</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;CompetitiveAdvantage&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Competitive Advantage&lt;/h3&gt;
+	&lt;p&gt;Dovetail is getting to market as quickly as possible. The company is applying for a Supplemental Type Certificate (STC) (for retrofitting an aircraft) is the quickest way to market.  It saves time and money by modifying the current aircraft to replace its motor. The value add is that the business utilises existing aircraft assets rather than forcing fleet renewal upon aircraft operators, especially given the impact COVID has had on the aviation industry. This accelerates uptake, and keeps asset ownership high by adding value to current assets. The small commuter aircraft market is our target. First, because small aircraft STCs are faster and easier to approve. But just as important or even more so, is because we are bringing to this segment a revolution and renaissance at the same time, with &lt;a href=&quot;https://calendly.com/d/d34-nsh-ryd/book-a-call-from-a-customer-relationship-coordinator?month=2023-02&quot; target=&quot;_blank&quot;&gt;demand x 10 when electrification reduces operating costs by 40%.&lt;/a&gt;&lt;/p&gt;
+	&lt;p&gt;We focus on a full electric conversion, not hybrid (internal combustion engine, more complex and less cost effective), and we will be the first ones to certify a nil emissions Cessna Caravan. Unlike competitors in the market, we believe nil emissions is the way forward. Battery-power will enable us to be first to market, but long-term, hydrogen will outperform battery technology (as it significantly outperforms in terms of range). Currently, the standards for hydrogen are yet to be identified by the aviation regulatory bodies. Instead, some preliminary standards for batteries have been published and identified, with aviation precedents in the market.&lt;/p&gt;
+	&lt;p&gt;Dovetail Electric Aviation’s team are Subject Matter Experts in the industry already with decades of experience in aviation and electric aviation. Dovetail has advanced concepts for adding battery packs to our airframe, relying on modules developed by specialised companies (they will obtain Type Certificates for them) but optimised for airframe integration by us, what will be key elements of our STC and as such, proprietary IP. We are doing the same with fuel cells, with a clear objective to develop efficient systems, because above all we are systems integrators.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>70f29de3-04f8-4801-96eb-82b941d4aa0c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5073823a-e816-4f9e-af13-3896ba3912e2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2390df8b-cbb5-433c-8cb1-67e81c3b7dd3</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;ManagementTeam&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Management Team&lt;/h3&gt;
+	
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.DovetailAero_DP_Team4.1}&quot; style=&quot;width: 375.76px; height: 367.417px;&quot;&gt; &lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.DovetailAero_DP_Team5.1}&quot; style=&quot;width: 425.677px; height: 330.125px;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.DovetailAero_DP_Team2v2.1}&quot; width=&quot;392&quot; height=&quot;442&quot; style=&quot;width: 392.375px; height: 441.531px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Board &amp;amp; Advisors&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.DovetailAero_DP_Team3.1}&quot; style=&quot;width: 754.344px; height: 660.297px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5073823a-e816-4f9e-af13-3896ba3912e2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9c757a29-a309-4df7-875b-11056a69aeee</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-920c309e-b355-4807-878e-fc557b7134d7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;Media&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Recent Media&lt;/h3&gt;
+
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.afr.com/companies/transport/rex-takes-big-stake-in-electric-air-travel-start-up-20230414-p5d0jk&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Rex takes big stake in electric air travel start-up&lt;/a&gt; - AFR&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.flightglobal.com/aerospace/dovetail-wins-australian-government-funding-for-electric-conversion-programme/151709.article&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Dovetail Wins Australian government funding for electric conversion programme&lt;/a&gt; - FlightGlobal&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.minister.industry.gov.au/ministers/husic/media-releases/propelling-australian-electric-planes&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Propelling Australian electric planes&lt;/a&gt; - Minister for Industry and Science, Ed Husic&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.swinburne.edu.au/news/2023/03/Latrobe-City-Council-and-Swinburne-University-of-Technology-collaborate-on-future-of-clean-green-air-mobility/#:~:text=Taking%20on%20Avalon%20International%20Air,Barritt%20from%20Dovetail%20Electric%20Aviation.&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Swinburne University empowers first aerospace Founder in Residence to soar at Avalon International Air Show&lt;/a&gt; - Swinburne University of Technology&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>9c757a29-a309-4df7-875b-11056a69aeee</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>018e7f38-f78e-4179-b0ce-342e01b26b6f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ea97469d-eed6-4332-b0f4-588948e0e0bd</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;WhyVentureCrowd?&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Why Invest Through VentureCrowd?&lt;/h3&gt;
+	&lt;p&gt;VentureCrowd is the leading digital investment platform for alternative assets. We find and fund the brightest and most innovative startups.&lt;/p&gt;
+
+&lt;p&gt;Our curation and due diligence is rigorous and our track record of success speaks for itself:&lt;/p&gt;
+    &lt;ul&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Only digital investment platform in Australia&lt;/b&gt; to have successfully delivered exit returns to investors through equity crowdfunding.&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;72K+ members&lt;/b&gt; and counting.&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;&lt;b&gt;Over $275,000,000&lt;/b&gt; in capital raised since inception.&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;VentureCrowd is investor-led, which means we only list deals with secured professional external lead investors. Our investors then invest on the same economic terms as professional investors. If you invest in one of our deals you will receive equity or ownership in the company that is raising the capital. Not only will your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt; &lt;a href=&quot;https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t5i000005cqE3AAI&amp;amount=5000&quot;&gt;Invest now &lt;/a&gt; &lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;If you would prefer to speak to one of our team members about this offer, please: &lt;/p&gt;
+    &lt;ul&gt;
+        &lt;p&gt;&lt;li&gt;email us at &lt;a href=&quot;mailto:hello@venturecrowd.com.au&quot; target=&quot;_blank&quot;&gt;hello@venturecrowd.com.au&lt;/a&gt; or&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;call us on 1300 039 655&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;Please note, the Fund Manager reserves the right to vary or cancel the Offer at any time, vary the amount raised under the Offer, vary or waive the Minimum Investment and close the Offer, without notice and without giving reasons.
+&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>018e7f38-f78e-4179-b0ce-342e01b26b6f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>46b019e7-ab27-424f-8d51-d7933313ac57</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-537abf34-9d31-4a4a-999b-57a5299f071a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6b9b1a96-d1c5-4964-b2da-aab2b947e60d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>4c00f</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d0277176-6e54-4bd9-9527-598755227922</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2e5137be-e23f-41fe-a4de-ef56cd9121d7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>4b984</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab18</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-23b0fcd9-c77c-4c47-bf09-d6fa1073199b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;Risks&apos; class=&quot;mb-4 mt-4&quot;&gt;Fees&lt;/h3&gt;
+	&lt;p&gt;Investors invest through a VentureCrowd Trust, which VentureCrowd manages as a single asset. We charge an annual management fee to investors, payable on exit and we only charge a performance fee where an exit delivers profit, thereby aligning ourselves with investor outcomes.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;b&gt;Contribution Fee:&lt;/b&gt; 1.1% This is the fee charged by the Trustee for establishing the Trust and the purchasing entity, structuring the overall investment and raising capital by issuing Units. Payable upon acceptance of your investment by the Trustee.&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Management Fee:&lt;/b&gt; 1.65% per annum (charged on conversion or exit).&lt;/li&gt;
+	&lt;li&gt;&lt;b&gt;Performance Fee:&lt;/b&gt; 20% of the profit. We only charge a performance fee on conversion or exit.&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6b9b1a96-d1c5-4964-b2da-aab2b947e60d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 class=&quot;mb-4 mt-4&quot;&gt;Risks&lt;/h3&gt;
+	&lt;p&gt;Investing in private companies is risky. Issuers using this facility include new or rapidly growing ventures. Investment in these types of ventures is speculative and carries high risks.
+You may lose your entire investment, and you should be in a position to bear this risk without undue hardship.
+Even if the company is successful, the value of your investment and any return on the investment could be reduced if the company issues more shares.
+Your investment is unlikely to be liquid. This means you are unlikely to be able to sell your shares quickly or at all if you need the money or decide that this investment is not right for you.
+Even though you have remedies for misleading statements in the offer document or misconduct by the company, you may have difficulty recovering your money.
+There are rules for handling your money. However, if your money is handled inappropriately or the person operating this platform becomes insolvent, you may have difficulty recovering your money.
+Ask questions, read all information given carefully, and seek independent financial advice before committing yourself to any investment.
+&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d0277176-6e54-4bd9-9527-598755227922</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i000005cqE3AAI</value>
+                </componentInstanceProperties>
+                <componentName>keyDocument</componentName>
+                <identifier>keyDocument</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2e5137be-e23f-41fe-a4de-ef56cd9121d7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-23b0fcd9-c77c-4c47-bf09-d6fa1073199b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>tabsetConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;23b0fcd9-c77c-4c47-bf09-d6fa1073199b&quot;,&quot;activeTab&quot;:&quot;&quot;,&quot;useOverflowMenu&quot;:false,&quot;tabs&quot;:[{&quot;UUID&quot;:&quot;6b9b1a96-d1c5-4964-b2da-aab2b947e60d&quot;,&quot;tabName&quot;:&quot;Fees&quot;,&quot;tabKey&quot;:&quot;4c00f&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;d0277176-6e54-4bd9-9527-598755227922&quot;,&quot;tabName&quot;:&quot;Risks&quot;,&quot;tabKey&quot;:&quot;1&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;2e5137be-e23f-41fe-a4de-ef56cd9121d7&quot;,&quot;tabName&quot;:&quot;Key Documents&quot;,&quot;tabKey&quot;:&quot;4b984&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:tabset</componentName>
+                <identifier>forceCommunity_tabset</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>46b019e7-ab27-424f-8d51-d7933313ac57</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-17e37ee3-fb36-4b18-bf4c-3c49dc0d0d4c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;17e37ee3-fb36-4b18-bf4c-3c49dc0d0d4c&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0d8a9075-ec3d-46ad-8f12-d862461f4840&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(65,65,65,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fa47a2d2-4e85-4723-9af0-bffda61449fa</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fa47a2d2-4e85-4723-9af0-bffda61449fa&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9ac940fa-5d82-47fb-9472-36783f82d143&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;6bbd0408-180d-4963-9760-5c81cf883cbe&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;16395&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>327</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0, 0, 0, 0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-24e78348-5b78-4e0f-abe4-7915714fb8bf</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;24e78348-5b78-4e0f-abe4-7915714fb8bf&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;cc171b77-0500-4c53-9e7d-1826ec3e5b9f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-5bd44acf-2e3c-4c25-a293-875a7e0d0131</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;5bd44acf-2e3c-4c25-a293-875a7e0d0131&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f49ae51b-142d-4d47-a19a-96cf0a5b6470&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9017ecf6-7b82-4d95-804e-cd62d05ea7d8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9017ecf6-7b82-4d95-804e-cd62d05ea7d8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1a32eac2-4805-49d1-a232-371cc64c76e4&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-4c95e05d-7357-434c-8e9b-5ec05e90571c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;4c95e05d-7357-434c-8e9b-5ec05e90571c&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;97ec339a-e99e-4a49-a277-15e31b000055&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;6&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;d8badd95-4e2b-48bb-8e62-14aa304b87f9&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;b19e0&quot;,&quot;columnWidth&quot;:&quot;6&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ada3408b-d5a4-40ea-8afc-184db4c0a0e6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ada3408b-d5a4-40ea-8afc-184db4c0a0e6&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;96848d74-f31f-44f1-8f96-d5a186d94abc&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(255,255,255,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-a229b482-c54f-4836-b019-9bfd8f5a2b08</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;a229b482-c54f-4836-b019-9bfd8f5a2b08&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;70d0ff3e-5287-4fad-8f7a-2b68aa2fb4f6&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-7ab1a851-9ffc-426b-9d8e-78c29ab1acce</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;7ab1a851-9ffc-426b-9d8e-78c29ab1acce&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;70f29de3-04f8-4801-96eb-82b941d4aa0c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2390df8b-cbb5-433c-8cb1-67e81c3b7dd3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2390df8b-cbb5-433c-8cb1-67e81c3b7dd3&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5073823a-e816-4f9e-af13-3896ba3912e2&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-920c309e-b355-4807-878e-fc557b7134d7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;920c309e-b355-4807-878e-fc557b7134d7&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9c757a29-a309-4df7-875b-11056a69aeee&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ea97469d-eed6-4332-b0f4-588948e0e0bd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ea97469d-eed6-4332-b0f4-588948e0e0bd&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;018e7f38-f78e-4179-b0ce-342e01b26b6f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-537abf34-9d31-4a4a-999b-57a5299f071a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;537abf34-9d31-4a4a-999b-57a5299f071a&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;46b019e7-ab27-424f-8d51-d7933313ac57&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta name=productID content=01t5i000005cqE3AAI&gt;
+&lt;meta name=category-industrySector content=ClimateTech&gt;
+&lt;meta name=category-productName content=Dovetail&gt;
+&lt;meta name=category-riskProfile content=5&gt;
+&lt;meta name=category-userType content=Wholesale&gt;
+&lt;meta name=category-persona content=WholesaleInvestor&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Become a shareholder in a fast-growth ClimateTech taking Australia and the world by storm. Take advantage of a limited offer to invest from $5k minimum through VentureCrowd.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Dovetail | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>dovetail</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

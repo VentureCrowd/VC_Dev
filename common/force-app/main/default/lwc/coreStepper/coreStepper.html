@@ -1,0 +1,31 @@
+<template>
+    <div lwc:if={vertical}>
+        <div class="wrapper">
+            <ol class="c-stepper-vertical">
+                <template for:each={steps} for:item="step">
+                    <li key={step.index} class={step.status}>
+                        <div>
+                            <h3 class="c-stepper__title">{step.name}</h3>
+                            <p class="c-stepper__desc">{step.title}</p>
+                            <p lwc:if={step.shortDesc} class="c-stepper__subdesc">{step.shortDesc}</p>
+                        </div>
+                    </li>
+                </template>
+            </ol>
+        </div>    
+    </div>
+
+    <div lwc:else>
+        <div class="wrapper">
+            <ol class="c-stepper">
+                <template for:each={steps} for:item="step">
+                    <li key={step.index} class={step.status}>
+                        <h3 class="c-stepper__title">{step.name}</h3>
+                        <p class="c-stepper__desc">{step.title}</p>
+                        <p lwc:if={step.shortDesc} class="c-stepper__subdesc">{step.shortDesc}</p>
+                    </li>
+                </template>
+            </ol>
+        </div>          
+    </div>
+</template>

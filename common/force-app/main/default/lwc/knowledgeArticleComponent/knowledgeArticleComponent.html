@@ -1,0 +1,73 @@
+<template >
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner">
+            <h1>Loading</h1>
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    <template lwc:else>
+        <div class="banner-container" style={bannerImageUrl}>
+            <div class="banner-wrapper">
+                <div lwc:if={raiseId} class="buttons-container">
+                    <c-core-icon
+                        icon-name="backButton"
+                        width="100"
+                        height="100"
+                        onclick={navigateBack}>
+                    </c-core-icon>
+                </div>
+    
+    
+                <!-- <p>Module 1</p> -->
+                <h1>{knowledgeFinalData.title}</h1>
+                <template lwc:if={knowledgeFinalData.estimatedCompletionTime}>
+                    <div class="clock-container">
+                        <c-core-icon
+                            icon-name="clock"
+                            size="xxxlarge">
+                        </c-core-icon>
+                        
+                        <p>{completionTime}</p>
+                    </div>
+            </template>
+    
+            </div>
+        </div>
+    
+    
+        
+        <div class="knowledge-container">
+            <template lwc:if={knowledgeFinalData.objective}>
+                <div class="objective-container">
+                    <div  class="objective-wrapper">
+                        <h3>Objective</h3>
+                        <!-- <p>{knowledgeFinalData.objective}</p> -->
+                        <lightning-formatted-rich-text value={knowledgeFinalData.objective}></lightning-formatted-rich-text>
+                    </div>
+                </div>
+            </template>
+            
+            
+            <div class="content-container">
+                <div lwc:dom="manual" class="answer-html-container"></div>
+                <!-- <lightning-formatted-rich-text value={knowledgeFinalData.answer}></lightning-formatted-rich-text> -->
+            </div>
+        
+            <div lwc:if={raiseId} class="buttons-wrapper">
+                <c-core-button
+                label="Back to Raise 101 Course"
+                variation="secondary"
+                mode="light"
+                onclick={navigateBack}>
+                </c-core-button>
+                <c-core-button
+                label="Save and continue"
+                variation="primary"
+                mode="light"
+                onclick={handleSave}>
+                </c-core-button>
+            </div>
+        </div>
+    </template>
+   
+</template>

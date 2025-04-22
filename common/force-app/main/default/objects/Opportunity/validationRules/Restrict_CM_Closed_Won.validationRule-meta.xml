@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_CM_Closed_Won</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+$UserRole.Name = &quot;Capital Managers&quot;, 
+ISCHANGED( StageName ), 
+ISPICKVAL(StageName,&quot;Closed Won&quot;))</errorConditionFormula>
+    <errorMessage>Capital Managers are not permitted to set the stage to Closed Won.</errorMessage>
+</ValidationRule>

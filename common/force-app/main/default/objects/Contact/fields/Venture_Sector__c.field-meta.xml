@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Venture_Sector__c</fullName>
+    <label>Venture Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FinTech</fullName>
+                <default>false</default>
+                <label>FinTech</label>
+            </value>
+            <value>
+                <fullName>EdTech</fullName>
+                <default>false</default>
+                <label>EdTech</label>
+            </value>
+            <value>
+                <fullName>MedTech</fullName>
+                <default>false</default>
+                <label>MedTech</label>
+            </value>
+            <value>
+                <fullName>AgTech</fullName>
+                <default>false</default>
+                <label>AgTech</label>
+            </value>
+            <value>
+                <fullName>FoodTech</fullName>
+                <default>false</default>
+                <label>FoodTech</label>
+            </value>
+            <value>
+                <fullName>PropTech</fullName>
+                <default>false</default>
+                <label>PropTech</label>
+            </value>
+            <value>
+                <fullName>Impact</fullName>
+                <default>false</default>
+                <label>Impact</label>
+            </value>
+            <value>
+                <fullName>Financial Funds</fullName>
+                <default>false</default>
+                <label>Financial Funds</label>
+            </value>
+            <value>
+                <fullName>Property Development</fullName>
+                <default>false</default>
+                <label>Property Development</label>
+            </value>
+            <value>
+                <fullName>Arts &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Arts &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Venture Capital</fullName>
+                <default>false</default>
+                <label>Venture Capital</label>
+            </value>
+            <value>
+                <fullName>Family Office</fullName>
+                <default>false</default>
+                <label>Family Office</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

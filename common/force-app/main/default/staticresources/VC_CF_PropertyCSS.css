@@ -1,0 +1,187 @@
+#vc_content__container section.hero {
+	min-height: 88vh
+}
+
+#vc_content__container section.hero h3 {
+	font-size: 20px
+}
+
+#vc_content__container section.hero p,
+#vc_content__container section.hero ul li {
+	font-size: 18px
+}
+
+#vc_content__container section.hero ul li a {
+	color: #02c8c8;
+	transition: all .3s ease
+}
+
+#vc_content__container section.hero ul li a:hover {
+	text-decoration: none;
+	color: #fff
+}
+
+#vc_content__container section.investing h2 {
+	color: #672c8d;
+	background: linear-gradient(to bottom right, #672c8d, #29bec1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block
+}
+
+@media (-ms-high-contrast:active),
+(-ms-high-contrast:none) {
+	#vc_content__container section.investing h2 {
+		background: none!important
+	}
+}
+
+#vc_content__container section.investing p {
+	font-size: 17px;
+	line-height: 1.85em
+}
+
+#vc_content__container section.investing .tabbed-content .tab-group ul {
+	margin: 0;
+	padding: 0
+}
+
+#vc_content__container section.investing .tabbed-content .tab-group ul li {
+	display: block;
+	margin-bottom: 10px;
+	width: 90%
+}
+
+@media screen and (max-width:768px) {
+	#vc_content__container section.investing .tabbed-content .tab-group ul li {
+		width: 100%
+	}
+}
+
+#vc_content__container section.investing .tabbed-content .tab-group ul li a {
+	display: block;
+	font-size: 24px;
+	font-family: gilroysemibold;
+	color: #add!important;
+	background-color: rgba(0, 0, 0, .04);
+	border-radius: 6px;
+	padding: 25px 20px;
+	transition: all .3s ease
+}
+
+#vc_content__container section.investing .tabbed-content .tab-group ul li a:hover {
+	text-decoration: none
+}
+
+#vc_content__container section.investing .tabbed-content .tab-group ul li a.active-tab {
+	box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+	color: #2ac4ea!important;
+	background: linear-gradient(to bottom right, #11161f, #213344)
+}
+
+#vc_content__container section.investing .tabbed-content .tab-content h3 {
+	font-family: gilroyregular;
+	font-size: 42px
+}
+
+#vc_content__container section.investing .tabbed-content .tab-content p {
+	font-size: 17px
+}
+
+#vc_content__container section.offer h4 {
+	font-family: gilroysemibold;
+	font-size: 20px
+}
+
+#vc_content__container section.offer ul li {
+	font-size: 17px
+}
+
+#vc_content__container section.offer h3 {
+	font-size: 34px;
+	font-family: gilroyregular
+}
+
+#vc_content__container section.info-grid .cell {
+	background-position: 50%;
+	background-size: cover
+}
+
+#vc_content__container section.info-grid .cell h4 {
+	font-family: gilroysemibold;
+	font-size: 19px
+}
+
+#vc_content__container section.info-grid .cell ul li {
+	font-size: 18px;
+	line-height: 1.85em
+}
+
+#vc_content__container section.info-grid .cell .margin-left {
+	padding-left: calc(50vw - 625px)
+}
+
+#vc_content__container section.info-grid .cell .margin-right {
+	padding-right: calc(50vw - 625px)
+}
+
+/* Product container CSS*/
+
+
+  #vc_content__container section.offers .offer-container .inner-container {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 300ms ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.105);
+  }
+  #vc_content__container section.offers .offer-container .inner-container:hover {
+    box-shadow: 0px 10px 38px rgba(0, 0, 0, 0.119701) !important;
+  }
+  #vc_content__container section.offers .offer-container .heading {
+    background-image: linear-gradient(to right, #5d3796, #02c8c8);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  #vc_content__container section.offers .offer-container .hero {
+    min-height: 260px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #vc_content__container section.offers .offer-container .details {
+    border-bottom: 1px solid #eaeaea;
+  }
+  #vc_content__container section.offers .offer-container .details .heading-1 {
+    font-size: 1.2em;
+  }
+  #vc_content__container section.offers .offer-container .details .heading-2 {
+    font-size: 1.15em;
+  }
+  #vc_content__container section.offers .offer-container .call-to-action .header {
+    font-size: 1.1em;
+    font-family: "gilroysemibold";
+  }
+  #vc_content__container section.offers .offer-container .call-to-action .status {
+    text-transform: uppercase;
+    font-family: "gilroysemibold";
+    letter-spacing: 1px;
+    font-size: 0.8em;
+  }
+  #vc_content__container section.offers .offer-container .call-to-action .status.status-raising {
+    color: #844cea;
+  }
+  #vc_content__container section.offers .offer-container .call-to-action .status.status-funded {
+    color: #000;
+  }
+  #vc_content__container section.offers .offer-container .call-to-action .offer-type {
+    font-size: 0.9em;
+  }
+  #vc_content__container section.offers .offer-container .call-to-action a {
+    background-color: #844cea;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11);
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-family: "gilroysemibold";
+  }

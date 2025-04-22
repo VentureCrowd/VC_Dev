@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>This field indicates the status of the record.</description>
+    <inlineHelpText>Select the current status of this record.</inlineHelpText>
+    <label>Status</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Ready for review</fullName>
+                <default>false</default>
+                <label>Ready for review</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <label>In Review</label>
+            </value>
+            <value>
+                <fullName>Waiting for payment</fullName>
+                <default>false</default>
+                <label>Waiting for payment</label>
+            </value>
+            <value>
+                <fullName>Waiting to complete learning course</fullName>
+                <default>false</default>
+                <label>Waiting to complete learning course</label>
+            </value>
+            <value>
+                <fullName>Pending final approval</fullName>
+                <default>false</default>
+                <label>Pending final approval</label>
+            </value>
+            <value>
+                <fullName>Live</fullName>
+                <default>false</default>
+                <label>Live</label>
+            </value>
+            <value>
+                <fullName>Live on VC Website</fullName>
+                <default>false</default>
+                <label>Live on VC Website</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

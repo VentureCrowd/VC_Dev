@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tags__c</fullName>
+    <label>Tags</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CR - Calendly Callback Request</fullName>
+                <default>false</default>
+                <label>CR - Calendly Callback Request</label>
+            </value>
+            <value>
+                <fullName>CR - Closing</fullName>
+                <default>false</default>
+                <label>CR - Closing</label>
+            </value>
+            <value>
+                <fullName>CRC - Portal - Access / verification issues</fullName>
+                <default>false</default>
+                <label>CRC - Portal - Access / verification issues</label>
+            </value>
+            <value>
+                <fullName>CR - CRC - CRES - Customer Relationship Enhancement Strategy</fullName>
+                <default>false</default>
+                <label>CR - CRC - CRES - Customer Relationship Enhancement Strategy</label>
+            </value>
+            <value>
+                <fullName>CR - CRC - MLI&gt;50</fullName>
+                <default>false</default>
+                <label>CR - CRC - MLI&gt;50</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Bazaa</fullName>
+                <default>false</default>
+                <label>CR - CRP - Bazaa</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Brain Vector</fullName>
+                <default>false</default>
+                <label>CR - CRP - Brain Vector</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Calceus</fullName>
+                <default>false</default>
+                <label>CR - CRP - Calceus</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Carrara</fullName>
+                <default>false</default>
+                <label>CR - CRP - Carrara</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Curae</fullName>
+                <default>false</default>
+                <label>CR - CRP - Curae</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - EnGeneIC</fullName>
+                <default>false</default>
+                <label>CR - CRP - EnGeneIC</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - GGG</fullName>
+                <default>false</default>
+                <label>CR - CRP - GGG</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Moggill Ferry Road</fullName>
+                <default>false</default>
+                <label>CR - CRP - Moggill Ferry Road</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Morningside</fullName>
+                <default>false</default>
+                <label>CR - CRP - Morningside</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Post Webinar Sprint</fullName>
+                <default>false</default>
+                <label>CR - CRP - Post Webinar Sprint</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Public Square</fullName>
+                <default>false</default>
+                <label>CR - CRP - Public Square</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - VC Con Note / Prom Note</fullName>
+                <default>false</default>
+                <label>CR - CRP - VC Con Note / Prom Note</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - Waveswell</fullName>
+                <default>false</default>
+                <label>CR - CRP - Waveswell</label>
+            </value>
+            <value>
+                <fullName>CR - DASP</fullName>
+                <default>false</default>
+                <label>CR - DASP</label>
+            </value>
+            <value>
+                <fullName>CR - Face to Face Campaign</fullName>
+                <default>false</default>
+                <label>CR - Face to Face Campaign</label>
+            </value>
+            <value>
+                <fullName>CR - Lead - Google Ad</fullName>
+                <default>false</default>
+                <label>CR - Lead - Google Ad</label>
+            </value>
+            <value>
+                <fullName>CR - New Investor Register</fullName>
+                <default>false</default>
+                <label>CR - New Investor Register</label>
+            </value>
+            <value>
+                <fullName>CR - New Lead - Qualifying</fullName>
+                <default>false</default>
+                <label>CR - New Lead - Qualifying</label>
+            </value>
+            <value>
+                <fullName>CR - Nurturing Relationship</fullName>
+                <default>false</default>
+                <label>CR - Nurturing Relationship</label>
+            </value>
+            <value>
+                <fullName>CR - Perkii</fullName>
+                <default>false</default>
+                <label>CR - Perkii</label>
+            </value>
+            <value>
+                <fullName>CR - Referral Partner</fullName>
+                <default>false</default>
+                <label>CR - Referral Partner</label>
+            </value>
+            <value>
+                <fullName>CR - RFL/RFM</fullName>
+                <default>false</default>
+                <label>CR - RFL/RFM</label>
+            </value>
+            <value>
+                <fullName>CR - SXSW</fullName>
+                <default>false</default>
+                <label>CR - SXSW</label>
+            </value>
+            <value>
+                <fullName>CR - VC Fixed Income Fund</fullName>
+                <default>false</default>
+                <label>CR - VC Fixed Income Fund</label>
+            </value>
+            <value>
+                <fullName>CR - VCH Rights Issue</fullName>
+                <default>false</default>
+                <label>CR - VCH Rights Issue</label>
+            </value>
+            <value>
+                <fullName>CR - W/S / EIC Request</fullName>
+                <default>false</default>
+                <label>CR - W/S / EIC Related</label>
+            </value>
+            <value>
+                <fullName>CR - WASP</fullName>
+                <default>false</default>
+                <label>CR - WASP</label>
+            </value>
+            <value>
+                <fullName>Founder EOI Inquiries</fullName>
+                <default>false</default>
+                <label>Founder EOI Inquiries</label>
+            </value>
+            <value>
+                <fullName>Inbound Sales Calls</fullName>
+                <default>false</default>
+                <label>Inbound Sales Calls</label>
+            </value>
+            <value>
+                <fullName>IR - Customer Complaints Call</fullName>
+                <default>false</default>
+                <label>IR - Customer Complaints Call</label>
+            </value>
+            <value>
+                <fullName>Customer Service Call</fullName>
+                <default>false</default>
+                <label>IR - Customer Service Call (Post Investment)</label>
+            </value>
+            <value>
+                <fullName>IR - General Project Updates for Timelines</fullName>
+                <default>false</default>
+                <label>IR - General Project Updates for Timelines</label>
+            </value>
+            <value>
+                <fullName>IR - GSL - Liquidity on Product</fullName>
+                <default>false</default>
+                <label>IR - GSL - Liquidity on Product</label>
+            </value>
+            <value>
+                <fullName>Portal - Access / verification issues</fullName>
+                <default>false</default>
+                <label>IR - Portal - Access / verification issues</label>
+            </value>
+            <value>
+                <fullName>Portal - Access to Investment Documents</fullName>
+                <default>false</default>
+                <label>IR - Portal - Access to Investment Documents</label>
+            </value>
+            <value>
+                <fullName>IR - VC - Liquidity on Product</fullName>
+                <default>false</default>
+                <label>IR - VC - Liquidity on Product</label>
+            </value>
+            <value>
+                <fullName>OMNI - Omni issue</fullName>
+                <default>false</default>
+                <label>OMNI - Omni issue</label>
+            </value>
+            <value>
+                <fullName>Project 5 Star</fullName>
+                <default>false</default>
+                <label>Project 5 Star</label>
+            </value>
+            <value>
+                <fullName>PSP Related Calls</fullName>
+                <default>false</default>
+                <label>PSP Related Calls</label>
+            </value>
+            <value>
+                <fullName>VC - Nurturing Call</fullName>
+                <default>false</default>
+                <label>VC - Nurturing Call</label>
+            </value>
+            <value>
+                <fullName>VCPP - Contract Admin</fullName>
+                <default>false</default>
+                <label>VCPP - Contract Admin</label>
+            </value>
+            <value>
+                <fullName>VCPP - Sales Call</fullName>
+                <default>false</default>
+                <label>VCPP - Sales Call</label>
+            </value>
+            <value>
+                <fullName>VC - VentureCapital Product Sales</fullName>
+                <default>false</default>
+                <label>VC - VentureCapital Product Sales</label>
+            </value>
+            <value>
+                <fullName>CR - CRP - VCH Equity</fullName>
+                <default>false</default>
+                <label>CR - CRP - VCH Equity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

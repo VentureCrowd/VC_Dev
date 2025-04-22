@@ -1,0 +1,97 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasSObjectName"
+                access="global" controller="commentsClass">
+    <aura:attribute name="commentObj" type="Comment__c" default="{'sobjectType':'Comment__c'}" />
+    <aura:attribute name="commentId" type="String" />
+    <aura:attribute name="pageNumber" type="Integer" default = '3'/>
+    <aura:attribute name="commentsList" type="Comment__c[]" />
+    <aura:attribute name="tempCommentsList" type="Comment__c[]" />
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="commentRecord" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    <aura:attribute name="prodId" type="String"/>
+    <aura:attribute name="displayComment" type="Boolean" description="Variable to display the Component" default="false"/>
+    <aura:attribute name="hideLoadMore" type="Boolean" description="Variable to display the Load more" default="false"/>
+    <aura:attribute name="displayLoading" type="Boolean" description="Variable to display Loading" default="true"/>
+    <force:recordData aura:id="record"
+                      fields="Name,comments__c,Response__c,Approved__c,Post_Comments__r.Name,Answer_comments__r.Name,Commented_By_Name_Investor__c"
+                      recordId="{!v.recordId}" targetError="{!v.recordError}" targetRecord="{!v.record}"
+                      targetFields="{!v.commentRecord}" mode="VIEW" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.showComments}" />
+    <aura:if isTrue="{!v.displayComment}">
+        <section>
+            <h2 class="vc-font-caxton4">Comments</h2>
+            <!-- Start: Comment Button Section -->
+            <lightning:recordEditForm objectApiName="Comment__c">
+                <div class="comment-input">
+                    <ui:inputTextArea class="textbox" value="{!v.commentObj.comments__c}" placeholder="Start a discussion...">
+                    </ui:inputTextArea>
+                    <lightning:button class="post-comment" variant="brand" label="Post" title="Post" onclick="{! c.doPost }" />
+                </div>
+            </lightning:recordEditForm>      
+            <!--END: Comment Button Section-->
+            <!--Start: Comment View -->
+            <div class="comment-view">
+                <aura:iteration items="{!v.commentsList}" var="commentRec" indexVar="index">
+
+                    <div class="investor-comment comment-container">
+                        <div class="comment-header">
+                            <div class="image">
+                                <img data-aura-rendered-by="3:99;a" src="{!commentRec.Post_Comments__r.FullPhotoUrl}" />
+                            </div>
+                            <div class="meta vc-font-suisseIntlLight">
+                                <div class="name">{!commentRec.Commented_By_Name_Investor__c}</div>             
+                                <div class="date"><lightning:formattedDateTime value="{!commentRec.Posted_Date__c}" year="2-digit" month="short" day="2-digit" time-zone="Australia/Sydney"/></div>
+                            </div>
+                        </div>
+                       
+                        <div class="question vc-font-suisseIntlLight">{!commentRec.comments__c}</div>
+                    </div>
+
+                    <div class="moderator-comment comment-container">
+                        <div class="comment-header">
+                            <div class="image">
+                                <img data-aura-rendered-by="3:99;a" src="{!commentRec.Answer_comments__r.FullPhotoUrl}" />
+                            </div>
+                            <div class="meta">
+                                <div class="name vc-font-suisseIntlLight">{!commentRec.Commented_By_Name__c} <span class="badge">Venture Crowd</span></div>
+                                <!--<div class="user-role">{!commentRec.Answer_comments__r.UserRole.Name}</div>-->
+                                <div class="user-role vc-font-suisseIntlLight">{!commentRec.Answer_comments__r.Title}</div>
+                                <div class="date vc-font-suisseIntlLight"><lightning:formattedDateTime value="{!commentRec.Reponse_Date__c}" year="2-digit" month="short" day="2-digit" time-zone="Australia/Sydney"/></div>
+                            </div>
+                        </div>
+                        <div class="question vc-font-suisseIntlLight">{!commentRec.Response__c}</div>
+                    </div>
+
+                </aura:iteration>
+            </div>
+            <!--END: Comment View--> 
+            <!--Start: Load More -->
+            <div class="load-more">
+                <lightning:button class="button-load" disabled="{!v.hideLoadMore}"  variant="brand" label="Load more" title="Loadmore" onclick="{!c.loadMore}">
+                </lightning:button>
+            </div>
+            <!--End: Load More -->
+        </section>
+    <aura:set attribute="else">
+            <div class="state-not-logged-in">
+                <h2 class="vc-font-caxton4">Comments</h2>
+                <section>
+                    <h4 class="vc-font-suisseIntlLight">Want to see more?</h4>
+                    <p class="vc-font-suisseIntlLight">You need to join VentureCrowd to view the full investment opportunity and comments.</p>
+                    <div class="actions">
+                        <lightning:button class="join-venturecrowd" variant="brand" label="Join VentureCrowd" title="Join VentureCrowd" onclick="{!c.joinVentureCrowd}">
+                        </lightning:button>
+                    </div>
+                    <p class="registered vc-font-suisseIntlLight">Already registered?</p>
+                    <div class="login-link">
+                        <a onclick="{!c.handleLoginClick}" style="margin: 47px;" class="vc-font-suisseIntlLight">Log in</a>
+                    </div>
+                </section>
+            </div>
+    </aura:set>    
+    </aura:if>
+    <aura:if isTrue="{!v.displayLoading}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </aura:if>
+</aura:component>

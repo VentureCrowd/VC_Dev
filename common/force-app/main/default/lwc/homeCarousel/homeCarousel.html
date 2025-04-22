@@ -1,0 +1,80 @@
+<template>
+    <section class={getComponentStyleClasses}>
+    <!--Slider-->
+    <div class="slider">
+
+        <div class="slide">
+            <div class="container">
+                <div class="row px-4 px-lg-0">
+                    <div class="col-lg-6">
+                        <h3 class="mb-3 vc-font-caxton4">{titleText1}</h3>
+                        <!-- <p>{DescriptionText1}</p> -->
+                        <div class="descpTextSec_1 text-container vc-font-suisseIntlLight" lwc:dom="manual"></div>
+                    </div>
+                    <div class="col-lg-6 mt-3 mt-lg-0">
+                        <img class="img-fluid" src={RightImageURL1}>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="row px-4 px-lg-0">
+                    <div class="col-lg-6">
+                        <h3 class="mb-3 vc-font-caxton4">{titleText2}</h3>
+                        <!-- <p>{DescriptionText2}</p> -->
+                        <div class="descpTextSec_2 text-container vc-font-suisseIntlLight" lwc:dom="manual"></div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img class="img-fluid" src={RightImageURL2}>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="row px-4 px-lg-0">
+                    <div class="col-lg-6">
+                        <h3 class="mb-3 vc-font-caxton4">{titleText3}</h3>
+                        <!-- <p>{DescriptionText3}</p> -->
+                        <div class="descpTextSec_3 text-container vc-font-suisseIntlLight" lwc:dom="manual"></div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img class="img-fluid" src={RightImageURL3}>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="container">
+                <div class="row px-4 px-lg-0">
+                    <div class="col-lg-6">
+                        <h3 class="mb-3 vc-font-caxton4">{titleText4}</h3>
+                        <!-- <p>{DescriptionText4}</p> -->
+                        <div class="descpTextSec_4 text-container vc-font-suisseIntlLight" lwc:dom="manual"></div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                            <img class="img-fluid" src={RightImageURL4}>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <i class="fa-solid fa-less-than"></i> -->
+        <!--Controlling arrows-->
+        <span class="controls left_arrow" onclick={prevSlide}><i class="fa fa-angle-left" aria-hidden="true"></i>
+        </span>
+        <span class="controls right_arrow" onclick={nextSlide}><i class="fa fa-angle-right" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="dots_con">
+        <span class="dot" data-id=0 onclick={gotoSlide}></span>
+        <span class="dot" data-id=1 onclick={gotoSlide}></span>
+        <span class="dot" data-id=2 onclick={gotoSlide}></span>
+        <span class="dot" data-id=3 onclick={gotoSlide}></span>
+    </div>
+    </section>
+
+</template>

@@ -1,0 +1,297 @@
+input, textarea, select{
+    border-radius: 5px;
+    padding: var(--space-unit);
+    font-size: var(--text-base-size);
+    border: 1px solid var(--Portal-Grey, #939393);
+    background: var(--White, #FFF);
+    /* font-family: 'SuisseMain'; */
+    font-family: "SuisseIntl-light";
+    width: 100%;
+    color:black;
+}
+
+input:disabled, textarea:disabled, select:disabled{
+  background: var(--Dove, #F0F1F2);
+  color: var(--Portal-Grey, #939393);
+}
+
+
+/* .input-wrapper{
+    padding: var(--space-md)
+} */
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+
+.help-text{
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-Light";
+}
+
+
+.input-label {
+    font-size: var(--text-md);
+    font-weight: 400;
+}
+
+.input-label h4{
+    margin:0;
+}
+
+.character-limit, .file-name {
+    font-size: var(--text-sm);
+    color: var(--Ash, #CFCECC);
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-light";
+}
+
+.character-limit.error{
+  color: var(--error-color, #D8000C);
+}
+
+.subtext{
+  color: var(--gray-4);
+  margin: var(--space-xs) 0;
+  font-family: "SuisseIntl-light";
+  font-size: var(--text-sm);
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    top: -1em;
+    left: 2em;
+    font-family: "SuisseIntl-light";
+  }
+
+  .tooltip-text::before {
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: #192733;
+    padding: 5px;
+    z-index: 1;
+    top: 35%;
+    left: -2%;
+  }
+
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  p{
+    margin: 0;
+    font-family: "SuisseIntl-light";
+  }
+
+  .error-message {
+    color: var(--error-color, #D8000C); /* Providing a default red color if --error-color is not defined */
+    font-size: var(--text-sm); /* Smaller text to not overpower the main content */
+    margin-bottom: var(--space-xs); /* Consistent vertical spacing */
+    font-family: "SuisseIntl-light"; /* Keeping the font consistent with the rest of the form */
+}
+
+input.input-error{
+  border-color: var(--error-color, #D8000C);
+}
+/* 
+Removed to reduce visual complexity on screen
+.error-message::before {
+    content: "⚠ ";
+    font-size: var(--text-md);
+    vertical-align: middle;
+}
+ */
+
+.required-indicator {
+    color:var(--error-color, #D8000C); /* Visually distinct color for required fields */
+}
+
+.input-label p {
+    display: inline;
+    margin-right: 5px;
+    font-family: 'SuisseIntl-Medium';
+}
+
+
+/* Hover and focus styles for select elements */
+select:hover, select:focus {
+  border-color: #666; /* Darker border color on hover/focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Styles to indicate error on select similar to input and textarea */
+.select-error {
+  border-color: var(--error-color, #D8000C);
+  background-color: var(--error-bg-color, #FFD2D2);
+}
+
+/* Currency input specific styles */
+.currency-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.currency-wrapper .currency-symbol {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+}
+
+.currency-wrapper input {
+  padding-left: 1.5rem; /* Adjust padding to make room for the currency symbol */
+}
+
+
+/* File upload styling */
+
+.file-uploaded{
+  padding: var(--space-xxs) 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-uploaded p{
+    color: var(--Portal-Grey, #939393);
+    font-size: var(--text-base-size);
+    font-style: italic;
+}
+
+input[type="file"]{
+  display: none;
+}
+
+.file-label-text {
+  pointer-events: none;
+  color: var(--Portal-Grey, #939393);
+  font-family: 'SuisseIntl-Light';
+}
+
+label.file-label {
+  border-radius: 5px;
+  padding: var(--space-unit);
+  font-size: var(--text-base-size);
+  border: 1px solid var(--Portal-Grey, #939393);
+  background: var(--White, #FFF);
+  font-family: "SuisseIntl-light";
+  width: 100%;
+  display: flex;
+  gap: var(--space-md);
+  justify-content: start;
+  align-items: center;
+}
+
+.file-loading-spinner{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+}
+
+::placeholder {
+  color: var(--Portal-Grey, #939393);
+  opacity: 1; /* Firefox */
+}
+
+.choose-button {
+  padding: var(--space-xs) var(--space-sm);
+  background: #DEDEDE;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Textarea subtext display */
+
+.text-area-subtext{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Input Container with Icon */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container.with-icon.left c-core-icon {
+  position: absolute;
+  left: 10px;
+}
+
+.input-container.with-icon.right c-core-icon {
+  position: absolute;
+  right: 10px;
+}
+
+.input-container.with-icon.left input,
+.input-container.with-icon.left textarea,
+.input-container.with-icon.left select {
+  padding-left: 35px; /* Adjust based on icon size */
+}
+
+.input-container.with-icon.right input,
+.input-container.with-icon.right textarea,
+.input-container.with-icon.right select {
+  padding-right: 35px; /* Adjust based on icon size */
+}
+
+
+/* Adjust input fields when icon is present */
+.input-container.with-icon.left input.input-error,
+.input-container.with-icon.left select.input-error,
+.input-container.with-icon.left textarea.input-error {
+  padding-left: 35px; /* Maintain padding if icon is on the left */
+}
+
+/* Additional styles to ensure consistency */
+.currency-wrapper .currency-symbol {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+}
+
+.currency-wrapper input {
+  padding-left: 1.5rem; /* Adjust padding to make room for the currency symbol */
+}
+
+/* Responsive adjustments if necessary */
+@media screen and (max-width: 600px) {
+  .input-container.with-icon.left input,
+  .input-container.with-icon.left textarea,
+  .input-container.with-icon.left select,
+  .input-container.with-icon.right input,
+  .input-container.with-icon.right textarea,
+  .input-container.with-icon.right select {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+
+  .input-icon {
+      width: 18px;
+      height: 18px;
+  }
+}

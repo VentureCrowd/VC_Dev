@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tile_Banner_for_Publishing_in_VC_Website</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    Publish_on_Community_Site__c = TRUE,
+    ISBLANK(Tile_Banner__c)
+)</errorConditionFormula>
+    <errorMessage>Hello! If you want to publish this to the VC website, you need to request Marketing to provide you with the Tile Banner URL. Please reach out to Marketing for it.</errorMessage>
+</ValidationRule>

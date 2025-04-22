@@ -1,0 +1,10 @@
+@media screen and (min-width: 1024px) {
+	.vc-tile-elementWrapper:nth-child(odd){
+		padding-right: 8px;
+	/* padding-top: 16px; */
+	}
+	.vc-tile-elementWrapper:nth-child(even){
+		padding-left: 8px ;
+		/* padding-top: 16px; */
+	}
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notify_Investor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>a notification has been sent out to the investor on response to the comment. Please do not check this box manually</inlineHelpText>
+    <label>Notified Investor</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

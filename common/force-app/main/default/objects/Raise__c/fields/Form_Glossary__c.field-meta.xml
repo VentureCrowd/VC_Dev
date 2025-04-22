@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Glossary__c</fullName>
+    <description>This field provides glossary terms and definitions related to the company or industry.</description>
+    <inlineHelpText>Include key terms and their definitions relevant to your company or industry.</inlineHelpText>
+    <label>Glossary</label>
+    <length>1400</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

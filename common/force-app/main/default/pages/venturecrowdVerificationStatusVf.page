@@ -1,0 +1,22 @@
+<!--
+
+-->
+<apex:page showHeader="false" sidebar="false">
+    <apex:includeLightning />
+    <div id="LightningComponentid" />
+<script type="text/javascript">
+console.log('here',parent.location.hash);
+    // document.addEventListener("reload",  event => window.parent.parent.location.reload());
+    document.addEventListener("navpage", event => window.parent.parent.location.assign(event.detail));
+    $Lightning.use("c:venturecrowdVerificationStatusApp", function () {
+            $Lightning.createComponent("c:venturecrowdVerificationStatus",
+                {
+                    verificationToken: sessionStorage.getItem("vc-verificationToken")
+                },
+                "LightningComponentid",
+                function (cmp) {
+                    console.log('LWC Componenet added in VF page');
+                });
+        });
+</script>
+</apex:page>

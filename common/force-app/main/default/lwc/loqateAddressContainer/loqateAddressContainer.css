@@ -1,0 +1,42 @@
+.dummy{
+	color : black;
+}
+
+.countryMargin{
+    margin-bottom: 15px;
+}
+
+.countryPicklist {
+	background: #FFFFFF !important;
+    border: 1px solid #7B868C !important;
+    box-sizing: border-box !important;
+    border-radius: 4px !important;
+    height: 34px;
+	width: 100%;
+    align-items: center;
+	display: flex;
+	/*.loqateAddressCSS > div.slds-form-element__control > lightning-basecombobox.slds-combobox_container > div.slds-combobox.slds-dropdown-trigger.slds-dropdown-trigger_click
+> div.slds-combobox__form-element.slds-input-has-icon.slds-input-has-icon_right > button*/
+}
+
+.picklistFont {
+	font-size: 16px !important;
+    font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif" !important;
+    color: black !important;
+}
+
+.picklistOptionFont{
+    font-size: 16px !important;
+    font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif" !important;
+    color: black !important;
+}
+
+.containerLabel {
+	color: black;
+	padding-left: 0px !important;
+	font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 22px;
+    font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+}

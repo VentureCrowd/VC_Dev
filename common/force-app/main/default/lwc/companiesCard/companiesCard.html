@@ -1,0 +1,164 @@
+<template>
+    <!-- Tile Companies with EOI start here -->
+    <!-- Iterating over lstCompaniesWithEOI to display each company -->
+    <template lwc:if={isLoading}>
+        <!-- loading spinner -->
+        <div class="file-loading-spinner">
+            <lightning-spinner variant="brand" size="small"> </lightning-spinner>
+        </div>
+    </template>
+
+    <template for:each={companiesData} for:item="item" for:index="index">
+        <div class="card-container" key={item.companyId}>
+            <!-- Get the logo from Raise-->
+            <template lwc:if={item.companyLogo}>
+                <div class="logo">
+                    <img src={item.companyLogo} alt="Company Logo" />
+                </div>
+            </template>
+            <!-- If there is no logo in raise return the logo from the EOI -->
+            <template lwc:elseif={item.companyLogoEOI}>
+                <div class="logo">
+                    <img src={item.companyLogoEOI} alt="Company Logo" />
+                </div>
+            </template>
+            
+            <div class="progress-containers">
+                <h3>{item.companyName}</h3>
+                <!-- Render this if an EOI Exist -->
+                <template lwc:if={item.eoiExist}>
+                    <div class="eoi-container">
+                        <div class="eoi-information-container">
+                            <div class="title-wrapper">
+                                <h4>Expression of Interest</h4>
+                                <!-- Badge of the status of the EOI -->
+                                <div><span class="status live">{item.badgeEoiStatus}</span></div>
+                            </div>
+                            <template lwc:if={item.eoiLaunchDate}>
+                                <p>Published: {item.eoiLaunchDate}</p>
+                            </template>
+
+                            <!-- Render if the EOI Status it's Unpublished or Pending -->
+                            <template lwc:if={item.eoiPublishedDate}>
+                                <p>Published: {item.eoiLaunchDate}</p>
+                            </template>
+                        </div>
+                        <div class="buttons-container">
+                            <template lwc:if={item.eoiInProgress}>
+                                <c-core-button label="Continue" variation="primary" mode="light" onclick={editEoi} data-id={item.eoiId}></c-core-button>
+                            </template>
+                                
+                            <template lwc:if={item.eoiLive}>
+                                <c-core-button label="View Page" variation="secondary" mode="light"  onclick={viewEoi} data-id={item.eoiId}></c-core-button>
+                                <c-core-button label="Manage" variation="secondary" mode="dark" onclick={manageEoi} data-id={item.eoiId}></c-core-button>
+                            </template>
+
+                            <template lwc:if={item.eoiClosed}>
+                                <c-core-button label="View Page" variation="secondary" mode="light" onclick={viewEoi} data-id={item.eoiId}></c-core-button>
+                                <c-core-button label="Manage" variation="secondary" mode="dark" onclick={manageEoi} data-id={item.eoiId}></c-core-button>
+                            </template>
+
+                            <!-- <c-core-button label="View Page" variation="secondary" mode="light" onclick={previewEoi}></c-core-button> -->
+                                <!-- TODO: Make the button works -->
+                            <!-- <c-core-button label="Edit EOI" variation="secondary" mode="dark" onclick={editEoi} data-id={item.eoiId}></c-core-button> -->
+                        </div>
+                    </div>
+
+                    <template lwc:if={item.showResumeButton}>
+                        <c-raise-preraise-modal companyid={item.companyId}></c-raise-preraise-modal>
+                    </template>
+
+                    <!-- Render Chevrons if the EOI Is Pending -->
+                    <template lwc:if={item.eoiShowChevron}>
+                        <div class="chevrons-container" slot="footer">
+                            <lightning-progress-indicator class="custom-chevron" current-step={item.eoiStatus} type="path" variant="base">
+                                <template for:each={eoiChevronStatus} for:item="step">
+                                    <lightning-progress-step label={step.value} title={step.value} value={step.value} key={step.value}></lightning-progress-step>
+                                </template>
+                            </lightning-progress-indicator>
+                        </div>
+                    </template>
+                    
+                </template>
+                <!--? Raise Template -->
+                <template lwc:if={item.raiseExist}>
+                <hr>
+                    <div class="eoi-container">
+                        <div class="eoi-information-container">
+                            <div class="title-wrapper">
+                                <h4>Capital Raise</h4>
+                                <!-- Badge of the status of the EOI -->
+                                <div><span class="status live">{item.badgeRaiseStatus}</span></div>
+                                <template lwc:if={item.awaitingPayment}>
+                                    <div><span class="status update">PENDING PAYMENT</span></div>
+                                </template>
+                                <template lwc:if={item.raiseCourseFinished}>
+                                    <div><span class="status update">PENDING FINAL APPROVAL</span></div>
+                                </template>
+
+                                <template lwc:if={item.pendingFinalApproval}>
+                                    <div><span class="status update">PENDING FINAL APPROVAL</span></div>
+                                </template>
+                            </div>
+
+                            <!-- Render if the EOI Status it's Unpublished or Pending -->
+                            <template lwc:if={item.raiseLaunchDate}>
+                                <p>Published: {item.raiseLaunchDate}</p>
+                                <p>Closing: {item.raiseEndDate}</p>
+                            </template>
+                        </div>
+
+                        <div class="buttons-container">
+                            <!-- Render which buttons to show based on the progress -->
+                            <template lwc:if={item.raiseInProgress}>
+                                <c-raise-preraise-modal companyid={item.companyId}></c-raise-preraise-modal>
+                            </template>
+
+                         
+
+                            <template lwc:if={item.courseInProgress}>
+                                <c-core-button label="Start course" data-id={item.raiseId} onclick={handlelearningCourse}></c-core-button>
+                            </template>
+
+                            <template lwc:if={item.raiseCourseUnlocked}>
+                                <c-core-button label="Resume course" data-id={item.raiseId} onclick={handlelearningCourse}></c-core-button>
+                            </template>
+                            
+                          
+
+                            <template lwc:if={item.raiseLive}>
+                                <c-core-button label="View Page" variation="secondary" mode="light" onclick={previewRaise} data-id={item.raiseId}></c-core-button>
+                                <c-core-button label="Manage" variation="secondary" mode="dark" onclick={manageRaise} data-id={item.raiseId}></c-core-button>
+                            </template>
+
+                            <template lwc:if={item.raiseClosed}>
+                                <c-core-button label="View Page" variation="secondary" mode="light" onclick={previewRaise} data-id={item.raiseId}></c-core-button>
+                                <c-core-button label="Manage" variation="secondary" mode="dark" onclick={manageRaise} data-id={item.raiseId}></c-core-button>
+                            </template>
+
+                            <!-- <c-core-button label="View Page" variation="secondary" mode="light" onclick={previewEoi}></c-core-button> -->
+                                <!-- TODO: Make the button works -->
+                            <!-- <c-core-button label="Edit EOI" variation="secondary" mode="dark" onclick={editEoi} data-id={item.eoiId}></c-core-button> -->
+                        </div>
+                    </div>
+
+                    <!-- Render Chevrons if the EOI Is Pending -->
+                    <template lwc:if={item.showProgress}>
+                        <div class="chevrons-container" slot="footer">
+                            <lightning-progress-indicator class="custom-chevron" current-step={item.chevronStatus} type="path" variant="base">
+                                <template for:each={raiseChevronStatus} for:item="step">
+                                    <lightning-progress-step label={step.label} title={step.label} value={step.label} key={step.label}></lightning-progress-step>
+                                </template>
+                            </lightning-progress-indicator>
+                        </div>
+                    </template>
+                    
+                </template>
+
+                <div class="footer">
+                    Need help? Contact our team at <a href="mailto:ventures@venturecrowd.com.au">ventures@venturecrowd.com.au</a>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

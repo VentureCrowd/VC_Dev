@@ -1,0 +1,51 @@
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px;
+    border: 1px solid var(--Ash, #CFCECC);
+}
+
+.shadow-card{
+    box-shadow: 0px 4px 8.8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.dark{
+    background-color:var(--primary-background);
+    color:var(--primary-foreground);
+}
+
+.light{
+    background-color:var(--secondary-background);
+    color:var(--secondary-foreground);
+}
+
+.gray {
+    background-color: rgba(230, 230, 230, 0.50);
+
+
+}
+
+.accent{
+    background-color:var(--primary-accent);
+    color:var(--primary-foreground);
+}
+
+.core-card-header{
+    padding: var(--space-sm) 0;
+}
+
+.core-card-body{
+    padding: var(--space-sm) 0;
+}
+
+.core-card-footer{
+    padding: var(--space-sm) 0;
+}
+
+.md {
+    padding: var(--space-md) var(--space-xl);
+}
+
+.xl {
+    padding: var(--space-xl);
+}

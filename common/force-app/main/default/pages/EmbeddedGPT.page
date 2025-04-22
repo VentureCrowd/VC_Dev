@@ -1,0 +1,10 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false">
+    <html>
+        <head>
+            <title>Embedded Chatbot</title>
+        </head>
+        <body>
+            <iframe src="https://venturecrowd.org/chatbot" frameborder="0" height="1080px" width="100%"></iframe>
+        </body>
+    </html>
+</apex:page>

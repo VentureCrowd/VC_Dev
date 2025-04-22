@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Wasp lost tags</fullName>
+                <default>false</default>
+                <label>Wasp lost tags</label>
+            </value>
+            <value>
+                <fullName>CM - Issue</fullName>
+                <default>false</default>
+                <label>CM - Issue</label>
+            </value>
+            <value>
+                <fullName>CM-wasp-Timing not quite right -but still interested.</fullName>
+                <default>false</default>
+                <label>CM-wasp-Timing not quite right -but still interested.</label>
+            </value>
+            <value>
+                <fullName>CM-wasp-Location based</fullName>
+                <default>false</default>
+                <label>CM-wasp-Location based</label>
+            </value>
+            <value>
+                <fullName>CM-wasp-No Trust - does not understand the model</fullName>
+                <default>false</default>
+                <label>CM-wasp-No Trust - does not understand the model</label>
+            </value>
+            <value>
+                <fullName>CM-wasp-time waster</fullName>
+                <default>false</default>
+                <label>CM-wasp-time waster</label>
+            </value>
+            <value>
+                <fullName>Dasp Lost tags</fullName>
+                <default>false</default>
+                <label>Dasp Lost tags</label>
+            </value>
+            <value>
+                <fullName>CM- Dasp-Didn’t like the project</fullName>
+                <default>false</default>
+                <label>CM- Dasp-Didn’t like the project</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-No Trust - does not understand the model</fullName>
+                <default>false</default>
+                <label>CM-Dasp-No Trust - does not understand the model</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Personal reasons.</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Personal reasons.</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Advisor</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Advisor</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Other</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Other</label>
+            </value>
+            <value>
+                <fullName>Awaiting other Development Results</fullName>
+                <default>false</default>
+                <label>Awaiting other Development Results</label>
+            </value>
+            <value>
+                <fullName>Does Not Qualify</fullName>
+                <default>false</default>
+                <label>Does Not Qualify</label>
+            </value>
+            <value>
+                <fullName>No Phone Number</fullName>
+                <default>false</default>
+                <label>No Phone Number</label>
+            </value>
+            <value>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Number</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Project not suitable</fullName>
+                <default>false</default>
+                <label>Project not suitable</label>
+            </value>
+            <value>
+                <fullName>Set up SMSF</fullName>
+                <default>false</default>
+                <label>Set up SMSF</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t decide</fullName>
+                <default>false</default>
+                <label>Can&apos;t decide</label>
+            </value>
+            <value>
+                <fullName>No funds</fullName>
+                <default>false</default>
+                <label>No funds</label>
+            </value>
+            <value>
+                <fullName>Timing not right</fullName>
+                <default>false</default>
+                <label>Timing not right</label>
+            </value>
+            <value>
+                <fullName>No Trust</fullName>
+                <default>false</default>
+                <label>No Trust</label>
+            </value>
+            <value>
+                <fullName>Too risky</fullName>
+                <default>false</default>
+                <label>Too risky</label>
+            </value>
+            <value>
+                <fullName>Bought another property</fullName>
+                <default>false</default>
+                <label>Bought another property</label>
+            </value>
+            <value>
+                <fullName>Invested Elsewhere</fullName>
+                <default>false</default>
+                <label>Invested Elsewhere</label>
+            </value>
+            <value>
+                <fullName>Couldn&apos;t get finance</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t get finance</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t have enough in SMSF</fullName>
+                <default>false</default>
+                <label>Don&apos;t have enough in SMSF</label>
+            </value>
+            <value>
+                <fullName>No Deposit</fullName>
+                <default>false</default>
+                <label>No Deposit</label>
+            </value>
+            <value>
+                <fullName>Not Ready</fullName>
+                <default>false</default>
+                <label>Not Ready</label>
+            </value>
+            <value>
+                <fullName>Not enough Profit</fullName>
+                <default>false</default>
+                <label>Not enough Profit</label>
+            </value>
+            <value>
+                <fullName>Time Waster</fullName>
+                <default>false</default>
+                <label>Time Waster</label>
+            </value>
+            <value>
+                <fullName>Passive Researcher</fullName>
+                <default>false</default>
+                <label>Passive Researcher</label>
+            </value>
+            <value>
+                <fullName>Overpriced</fullName>
+                <default>false</default>
+                <label>Overpriced</label>
+            </value>
+            <value>
+                <fullName>Over budget</fullName>
+                <default>false</default>
+                <label>Over budget</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Registration Delays</fullName>
+                <default>false</default>
+                <label>Registration Delays</label>
+            </value>
+            <value>
+                <fullName>Cancelled Before Appointment</fullName>
+                <default>false</default>
+                <label>Cancelled Before Appointment</label>
+            </value>
+            <value>
+                <fullName>IFS Issue</fullName>
+                <default>false</default>
+                <label>IFS Issue</label>
+            </value>
+            <value>
+                <fullName>Added to hotlist</fullName>
+                <default>false</default>
+                <label>Added to hotlist</label>
+            </value>
+            <value>
+                <fullName>Nurturing</fullName>
+                <default>false</default>
+                <label>Nurturing</label>
+            </value>
+            <value>
+                <fullName>Unsubscribed</fullName>
+                <default>false</default>
+                <label>Unsubscribed</label>
+            </value>
+            <value>
+                <fullName>Multiple Opportunities</fullName>
+                <default>false</default>
+                <label>Multiple Opportunities</label>
+            </value>
+            <value>
+                <fullName>System Error</fullName>
+                <default>false</default>
+                <label>System Error</label>
+            </value>
+            <value>
+                <fullName>COVID - 19</fullName>
+                <default>false</default>
+                <label>COVID - 19</label>
+            </value>
+            <value>
+                <fullName>Deal Cancelled (customer refunded)</fullName>
+                <default>false</default>
+                <label>Deal Cancelled (customer refunded)</label>
+            </value>
+            <value>
+                <fullName>Another real estate agent</fullName>
+                <default>false</default>
+                <label>Another real estate agent</label>
+            </value>
+            <value>
+                <fullName>Multiple Offer on Lot</fullName>
+                <default>false</default>
+                <label>Multiple Offer on Lot</label>
+            </value>
+            <value>
+                <fullName>company rejected</fullName>
+                <default>false</default>
+                <label>company rejected</label>
+            </value>
+            <value>
+                <fullName>CSF Withdrawal</fullName>
+                <default>false</default>
+                <label>CSF Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Already Invested in this product</fullName>
+                <default>false</default>
+                <label>Already Invested in this product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

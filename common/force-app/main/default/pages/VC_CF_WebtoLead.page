@@ -1,0 +1,616 @@
+<apex:page controller="LeadController" docType="html-5.0" showHeader="false">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet"></link>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NJ3GKNJ');</script>
+          <!-- End Google Tag Manager -->
+    </head>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ3GKNJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) END-->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function complete1() {
+            /* original code */
+            // window.location.href = '/s/typ';
+            
+            // VEN-152 - pass "Thank you" URL to parent instead of redirect
+            let url = '/apex/VC_CF_ThankYou';
+            window.parent.postMessage({ 'typUrl' : url }, '*');
+        }
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-family: "Caxton-2";
+            src: url("{!URLFOR($Resource.VC_NewPortalAssets, '/Assets/Fonts/Caxton/CAXTON_2.woff')}");          
+            format('woff');
+        }
+        
+        .register--header {
+            font-family: 'Caxton-2';
+            font-size: "40px";
+        }
+    </style>
+    <script>
+            function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") { var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value); elems["ts"] = JSON.stringify(new Date().getTime()); document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+            
+            function showModal() {
+                showM();
+            }
+            function hideModal() {
+                hideM();
+            }
+    </script>
+<apex:form >
+    <apex:pageBlock >
+        <div class="register--header">
+            <h1 id="VFwebtolead">Register your Interest</h1>
+            <p>Register your interest and our team will be in touch</p>
+        </div>
+        <div class="form--container">
+            <div class="input--container">
+                <apex:input label="First Name" value="{!firstName}" html-placeholder="First Name" required="true" />
+            </div>
+            
+            <div class="input--container">
+                <apex:input label="Last Name" value="{!lastname}" html-placeholder="Last Name" required="true" />
+            </div>
+            
+            <div class="input--container">
+                <apex:input label="Email" value="{!email}" html-placeholder="Email" required="true" type="email" />
+            </div>
+            
+            <div class="input--container">
+                <div style="display: flex">
+                    <div style="flex: 1;">
+                        <apex:selectList size="1" multiselect="false" value="{!cntrucode}" required="true">
+                            <apex:selectOptions value="{! countryOptions}" />
+                        </apex:selectList>
+                    </div>
+                    <div style="flex: 3;">
+                        <apex:input label="Mobile Phone" value="{!mobilephone}" html-placeholder="Mobile Phone" required="true" />
+                    </div>
+                </div>
+            </div>
+            <div class="input--container" style="margin-bottom: 0px; font-family: 'Montserrat', sans-serif; color: black;
+                                                 }" rendered="{!showinvestorType }">
+                <apex:outputText value="How much are you considering investing?" rendered="{!showinvestorType }"/>
+            </div>
+            <div class="input--container" rendered="{!showinvestorType }"> 
+                <div style="display: flex">
+                    <div style="flex: 1;">
+                        <apex:selectList style=" width: 100%; height: 58px; " size="1" multiselect="false" value="{!investorOption}" required="true" rendered="{!showinvestorType }">
+                            <apex:selectOptions value="{! investorOptions}" />
+                        </apex:selectList>
+                    </div>
+                </div>
+            </div>
+            <div class="resizeMobile">
+                <div style="flex: 2;">
+                    
+                    <apex:outputText style="font-family: 'Montserrat', sans-serif; color: black;
+                                            " value="What type of investor are you?* " />
+                    <apex:slds >
+                        <img class="more-info-button" style="height:15px;width:15px;" src="{!$Resource.iconQuestion}" alt="More Info" onclick="showModal();">
+                    </img>
+                </apex:slds>
+                
+            </div>
+            <div>
+                <apex:selectRadio style="margin-top: 7px; margin-bottom: 0px; font-family: 'Montserrat', sans-serif; color: black; align-content:flex-end;
+                                         " value="{!investor}">
+                    <apex:selectOptions value="{!typeOfinvestorOptions}" />
+                </apex:selectRadio>
+                <p/>
+            </div>
+        </div>
+        <div class="resizeMobile">
+            <div style="flex: 2;">
+                
+                <apex:outputText style="font-family: 'Montserrat', sans-serif; color: black;
+                                        " value="Are you located in Australia?" />
+                
+            </div>
+            <div>
+                <apex:selectRadio style="margin-top: 7px; margin-bottom: 0px; font-family: 'Montserrat', sans-serif; color: black; align-content:flex-end;
+                                         " value="{!country}">
+                    <apex:selectOptions value="{!items}" />
+                </apex:selectRadio>
+                <p/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="g-recaptcha" data-sitekey="{!$Label.GOOGLE_CPATCHA_SITE_KEY}"></div>
+    <div class="button--container">
+        <apex:commandButton action="{!save}" value="Register My Interest" id="theButton" oncomplete="complete1();"/>
+    </div>
+</apex:pageBlock>
+
+<!-- Ven 136 - Modal Pop for Investor  -->
+<apex:outputPanel id="tstpopup"> 
+    <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!modal}"/> 
+    <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!modal}"> 
+        <!-- Modal/Popup Box starts here-->
+        <apex:slds >
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open modal-container">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Box Header Starts here-->
+                    <header class="slds-modal__header " style="border-bottom-style: none;">
+                        <!-- WHAT IS THIS SHIT? -->
+                        <!-- <lightning:buttonIcon iconName="utility:close"
+onclick="{! c.handleCancel }"
+alternativeText="close"
+variant="border-filled"
+class="slds-modal__close"/> -->
+                        <div class="row slds-m-horizontal_xxx-small" style="border-bottom: 1px solid #c3cdd1; " >
+                            <h2 style="font-family: 'Montserrat', sans-serif; color: grey;" id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate slds-text-font_montserrat">What type of investor are you?</h2>
+                            <div class="modal-close-button" onclick="hideModal();">
+                                <i class="gg-close-o"></i>
+                            </div>
+                        </div>
+                        
+                    </header>
+                    <!--Modal/Popup Box Body Starts here-->
+                    <div class="slds-modal__content slds-p-around_medium modal-body-content" id="modal-content-id-1">
+                        <p>
+                            <div style="text-align: left!important; font-family: 'Montserrat', sans-serif;" class="slds-text-font_montserrat">
+                                <b>Retail (Anyone residing in Australia and 18 y/o or older is a retail investor)</b>
+                                <br></br>
+                        
+                        You are either just getting started in investing, or already have experience but do not yet reach the criteria for Wholesale Investor (see below). You will be guided through easy and fast verification steps after completing this form.
+                        <br></br>
+                    <br></br>
+                <b>Wholesale Investor </b>
+                <br></br>								  
+            If you have a wholesale investor certification, have assets of AUD$2.5million or, have a gross income of the last 2 financial years of at least AUD$250,000 per annum, this is probably applicable to you. Additionally, if you are an experienced investor with multiple investments in venture capital or property, you may be qualified by our team as a wholesale investor after reviewing your documentation. After completing this registration form, you will be guided through simple and secure steps to complete your wholesale investor certification.
+            <br></br>    
+        <br></br>								
+</div>
+</p>
+</div>
+</div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div> 
+</apex:slds>
+</apex:outputPanel> 
+</apex:outputPanel> 
+
+
+<apex:actionRegion >
+    <apex:actionFunction action="{!showModal}" name="showM" rerender="tstpopup">
+        
+    </apex:actionFunction>
+    <apex:actionFunction action="{!hideModal}" name="hideM" rerender="tstpopup">
+        
+    </apex:actionFunction>
+</apex:actionRegion>
+
+</apex:form>
+
+<!-- CSS -->
+<style>
+    .bPageBlock.brandSecondaryBrd.apexDefaultPageBlock.secondaryPalette {
+    background-color: #FFF !important;
+    border: 0 !important;
+    }
+    
+    html body.sfdcBody {
+    background-color: #FFF !important;
+    }
+    
+    .register--header {
+    text-align: center;
+    }
+    
+    .register--header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+    }
+    /* VEN 136 - added BEGINNING */
+    
+    .row {
+    display: flex;
+    /* -ms-flex-wrap: wrap; */
+    flex-wrap: nowrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    }
+    .apexp .bPageBlock.apexDefaultPageBlock .pbBody {
+    margin: 0px 12px 0px;
+    }
+    .cVC_CF_StandardFrontEndPageTheme.mainContentArea div[data-region-name=content]>.ui-widget:nth-child(n+2)>.cb-section>.cb-section_row {
+    background:#FFF;
+    }    
+    .pbBody td {
+    font-family: 'Montserrat', sans-serif; 
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    color: black;
+    }
+    .pbBody td label {
+    margin-right: 10px;
+    }
+    
+    .pbBody td input {
+    /* -webkit-appearance: none; */
+    margin-right: 4px;
+    }
+    input[type="radio" i] {
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    /* appearance: none; */
+    
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 12px;
+    height: 12px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    /* box-shadow: 0 0 0 0.1em white, 0 0 0 0.2em rgb(0 0 0 / 16%); */
+    background-color: rgb(255, 255, 255);
+    
+    accent-color: #D95BAA;
+    }
+    
+    input[type="radio"]:checked {
+    -webkit-appearance: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 12px;
+    height: 12px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+    box-shadow: inset 0 0 0 0.14em white, 0 0 0 0.07em #844CEA;
+    background-color: #D95BAA;
+    }
+    /* input[type="radio" i] {
+    accent-color: #844CEA;
+    } */
+    
+    .gg-close-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 40px
+    }
+    
+    .gg-close-o::after,
+    .gg-close-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 3px
+    }
+    .gg-close-o::after {
+    transform: rotate(-45deg)
+    }
+    .modal-close-button {
+    cursor: pointer;
+    color: #7B868C;
+    }
+    
+    .modal-container header {
+    border: none;
+    padding: 20px 40px;
+    position: relative;
+    margin-bottom: -1px;
+    }
+    .modal-container header h2 {
+    font-weight: 700;
+    font-family: 'Montserrat'!important;
+    color: #7b868c;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: .1px;
+    
+    padding: 14px 20px 20px 0;
+    }
+    
+    .more-info-button {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    transition: all 300ms ease;;
+    }
+    
+    .more-info-button:hover {
+    transform: scale(1.1);
+    }
+    
+    .submit-button-container {
+    text-align: center;
+    margin-top: 30px;
+    }
+    
+    
+    .custPopup{     
+    /* background-color: white; */
+    border-width: 1px;
+    /* border-style: solid; */
+    z-index: 9999;
+    left: 50%;
+    border-radius: 12px;
+    padding: 11px;
+    position: absolute;
+    width: 50%;
+    margin-left: -25%;
+    top: 100px;
+    }
+    
+    .popupBackground{ 
+    background-color:black; 
+    opacity: 0.20; 
+    filter: alpha(opacity = 20); 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index: 9998; 
+    } 
+    
+    @media only screen and (max-width : 430px) {
+    .resizeMobile{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    align-content: space-around !important;
+    }
+    }
+    
+    
+    .resizeMobile{
+    display: flex ;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+    } 
+    
+    
+    /* /* VEN 136 - added END */
+    .register--header p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #0F141E;
+    margin-top: 8px !important;
+    margin-bottom: 40px !important;
+    }
+    
+    .form--container {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    }
+    
+    .input--container {
+    margin-bottom: 16px;
+    }
+    
+    .input--container input {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #7B868C;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    }
+    .input--container select{
+    width: 95%;
+    height: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #7B868C;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    }
+    .logo {
+    float: right;
+    width: 60px;
+    margin: -65px 20px 0 0;
+    }
+    
+    .rules {
+    color: red;
+    font-size: 18px;
+    font-family: Courier;
+    margin: 10px 0 10px 30px;
+    float: left;
+    width: 100%;
+    }
+    
+    .g-recaptcha {
+    margin: 0 auto;
+    text-align: center;
+    width: 304px;
+    }
+    
+    .button--container {
+    text-align: center;
+    padding-top: 32px;
+    }
+    
+    .button--container input[type="submit"] {
+    background: #000;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    outline: 0;
+    padding: 16px 46px;
+    }
+    
+    .button--container input[type="submit"]:hover {
+    background: #D95BAA;
+    }
+    
+    @media only screen and (max-width : 480px) {
+    #recaptcha_challenge_image{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    #recaptcha_response_field{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    .recaptchatable #recaptcha_image{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    .recaptchatable .recaptcha_r1_c1, 
+    .recaptchatable .recaptcha_r3_c1, 
+    .recaptchatable .recaptcha_r3_c2, 
+    .recaptchatable .recaptcha_r7_c1, 
+    .recaptchatable .recaptcha_r8_c1, 
+    .recaptchatable .recaptcha_r3_c3, 
+    .recaptchatable .recaptcha_r2_c1, 
+    .recaptchatable .recaptcha_r4_c1, 
+    .recaptchatable .recaptcha_r4_c2, 
+    .recaptchatable .recaptcha_r4_c4, 
+    .recaptchatable .recaptcha_image_cell {    
+    margin: 0 !important;
+    width: 100% !important;
+    background: none !important;
+    height: auto !important;
+    }
+    }
+    
+    @media only screen and (max-width : 1366px) {
+    #recaptcha_challenge_image{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    #recaptcha_response_field{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    .recaptchatable #recaptcha_image{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    .recaptchatable .recaptcha_r1_c1, 
+    .recaptchatable .recaptcha_r3_c1, 
+    .recaptchatable .recaptcha_r3_c2, 
+    .recaptchatable .recaptcha_r7_c1, 
+    .recaptchatable .recaptcha_r8_c1, 
+    .recaptchatable .recaptcha_r3_c3, 
+    .recaptchatable .recaptcha_r2_c1, 
+    .recaptchatable .recaptcha_r4_c1, 
+    .recaptchatable .recaptcha_r4_c2, 
+    .recaptchatable .recaptcha_r4_c4, 
+    .recaptchatable .recaptcha_image_cell {    
+    margin: 0 !important;
+    width: 100% !important;
+    background: none !important;
+    height: auto !important;
+    }
+    }
+    
+    @media only screen and (max-width : 1920px) {
+    #recaptcha_challenge_image{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    #recaptcha_response_field{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    .recaptchatable #recaptcha_image{
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    }
+    .recaptchatable .recaptcha_r1_c1, 
+    .recaptchatable .recaptcha_r3_c1, 
+    .recaptchatable .recaptcha_r3_c2, 
+    .recaptchatable .recaptcha_r7_c1, 
+    .recaptchatable .recaptcha_r8_c1, 
+    .recaptchatable .recaptcha_r3_c3, 
+    .recaptchatable .recaptcha_r2_c1, 
+    .recaptchatable .recaptcha_r4_c1, 
+    .recaptchatable .recaptcha_r4_c2, 
+    .recaptchatable .recaptcha_r4_c4, 
+    .recaptchatable .recaptcha_image_cell {    
+    margin: 0 !important;
+    width: 100% !important;
+    background: none !important;
+    height: auto !important;
+    }
+    }
+    
+    }
+    
+</style>
+
+<!-- VEN-152 - pass height of form to parent onload and onresize -->
+<script>
+postToParent = () => {
+    let height = document.body.scrollHeight;
+    window.parent.postMessage({ 'scrollHeight' : height }, '*');
+}
+
+window.onload = () => {
+    postToParent();
+}
+    
+    window.addEventListener('resize', postToParent);
+    </script>
+</apex:page>

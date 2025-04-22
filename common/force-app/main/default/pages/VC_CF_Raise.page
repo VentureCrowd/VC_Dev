@@ -1,0 +1,168 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_RaiseCSS}"/>
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+</head>
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+<!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-raise">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container h-100">
+          <div class="row h-100 text-white mt-1 mt-lg-5 pt-1 pt-lg-5 pb-5">
+            <div class="col-md-12 animate-group">
+              <h3 class="mb-1 mt-1 mt-lg-5 pt-5 animate-item-in">CAPITAL GROWTH</h3>
+              <h1 class="animate-item-in"><strong>Launch</strong> a deal. <strong>Raise</strong> and secure capital from thousands of sophisticated investors. <strong>Deliver</strong> on your plan.</h1>
+              <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="mt-4 button-solid animate-item-in">APPLY NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/06/TeleHealth-GRAD.png')"></div>
+      </section>
+
+      <!-- Launch a Deal -->
+      <section class="info-grid pt-lg-5 pb-lg-5">
+        <div class="container pt-5 pb-5">
+          <div class="row animate-group">
+            <div class="col-lg-4 text-center">
+              <div class="icon mb-4 animate-item-in"><img src="https://assets.venturecrowd.vc/uploads/2018/01/launch-deal-icon.svg" alt="" /></div>
+              <h3 class="mb-3 animate-item-in">Launch a deal</h3>
+              <p class="pb-4 pr-5 pl-5 animate-item-in">
+                Utilising the VentureCrowd platform and collaboratively with our team, launch a crowdfunding campaign. Choose from a range of campaign services including PR and
+                Digital Marketing.
+              </p>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="icon mb-4 animate-item-in"><img src="https://assets.venturecrowd.vc/uploads/2018/01/secure-capital-icon.svg" alt="" /></div>
+              <h3 class="mb-3 animate-item-in">Secure the capital</h3>
+              <p class="pb-4 pr-5 pl-5 animate-item-in">A funding round typically runs for 6 weeks. Once closed, and investments are received, we transfer the funds minus our raise fee.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="icon mb-4 animate-item-in"><img src="https://assets.venturecrowd.vc/uploads/2018/01/deliver-plan-icon.svg" alt="" /></div>
+              <h3 class="mb-3 animate-item-in">Deliver on your plan</h3>
+              <p class="pb-4 pr-5 pl-5 animate-item-in">
+                All of the legal documentation is automatically catered for via the platform. Get on with running your business and communicate with shareholders via VentureCrowd.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Is VentureCrowd right for you? -->
+      <section class="right-for-you pt-lg-5 pb-lg-5">
+        <div class="container">
+          <div class="row justify-content-center pt-5 heading-row">
+            <div class="col-md-10 text-center">
+              <h2 class="mb-5">Is VentureCrowd right for you?</h2>
+              <p>
+                VentureCrowd is an investor-led, co-investment platform, which means our investors invest in your business on the same economic terms as the professional lead
+                investor.
+              </p>
+            </div>
+          </div>
+          <div class="row tabbed-content mt-5">
+            <div class="col-md-12 tab-group">
+              <ul>
+                <li class="pb-3"><a href="#" class="active-tab" data-tab="tab-content-1">TYPICAL CAMPAIGN</a></li>
+                <li><a href="#" data-tab="tab-content-2">WHAT WE OFFER</a></li>
+                <li><a href="#" data-tab="tab-content-3">FEES</a></li>
+              </ul>
+            </div>
+            <div class="col-12 mt-5 mb-5 tab-content text-center">
+              <div id="tab-content-1" class="offset-md-1 col-md-10 offset-lg-4 col-lg-4 tab-content-block active-tab-content">
+                <ul>
+                  <li>Campaign 6+ weeks</li>
+                  <li>Access to a large and fast-growing crowd of investors</li>
+                  <li>Average investment $35K per investor</li>
+                </ul>
+              </div>
+              <div id="tab-content-2" class="offset-md-1 col-md-10 offset-lg-4 col-lg-4 col-lg-3 tab-content-block">
+                <ul>
+                  <li>Automated self-service platform</li>
+                  <li>Comprehensive multi-channel digital campaign</li>
+                  <li>Investor communications</li>
+                  <li>Presentations/webinar</li>
+                  <li>Support</li>
+                  <li>Dedicated campaign manager</li>
+                </ul>
+              </div>
+              <div id="tab-content-3" class="tab-content-block"><p>6% of capital raised, $7.5K campaign fee (excluding GST).</p></div>
+            </div>
+          </div>
+          <div class="row text-center call-to-action mb-5 mt-5">
+            <div class="col-md-12"><a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-solid">Apply to raise</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success Stories -->
+      <section class="success has-parallax-bg">
+        <div class="container h-100">
+          <div class="row h-100 text-white pt-5 pb-5 text-center">
+            <div class="offset-md-2 col-md-8">
+              <h4 class="mb-3 mt-3 pt-5">SUCCESS STORY</h4>
+              <div class="divider mb-4"></div>
+              <h2 class="mt-5 mb-4 animate-in">Thinxtra</h2>
+              <h3 class="mb-3 animate-in">Enabled an Australia wide IoT network to be delivered</h3>
+              <div class="owner">Loic Barancourt, CEO</div>
+              <a data-fancybox="true" href="https://youtu.be/PfXKpPJ_jI0" data-width="960" data-height="540" class="mt-5 animate-in">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="600px"
+                  height="800px"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 600 800"
+                  enable-background="new 0 0 600 800"
+                  xml:space="preserve"
+                >
+                  <path fill="none" d="M0-1.79v800L600,395L0-1.79z"></path>
+                </svg>
+              </a>
+              <p class="mt-5 animate-in">Raised over $1M in one month.</p>
+              <div class="quote mt-5 mb-5">"Personally I was impressed by the efforts put into promoting the deal."</div>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/Raise_success_story4.jpg')"></div>
+      </section>
+
+      <!-- Fees -->
+      <section class="fees pt-lg-5 pb-lg-5">
+        <div class="container">
+          <div class="row justify-content-center pb-5 pt-5">
+            <div class="col-md-8 text-center">
+              <span class="mb-4 d-block">FEES</span>
+              <h3>6% on capital raised<br />$7.5K campaign fee</h3>
+              <p class="mb-4">Excludes GST.</p>
+              <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-solid">Apply to raise</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+<!-- ./Body -->
+
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

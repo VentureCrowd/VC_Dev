@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_VCPP_Open_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.EMAIL_OPT_OUT</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Web_Source__c</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Loss_Reason__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>utm_campaign__c</columns>
+    <columns>utm_content__c</columns>
+    <columns>utm_keyword__c</columns>
+    <columns>utm_medium__c</columns>
+    <columns>utm_source__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.VCPP</value>
+    </filters>
+    <filters>
+        <field>Web_Source__c</field>
+        <operation>equals</operation>
+        <value>Parqway Form</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Website</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>11/29/2023 12:00 AM</value>
+    </filters>
+    <label>All VCPP Open Leads</label>
+</ListView>

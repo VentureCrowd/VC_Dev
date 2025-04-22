@@ -1,0 +1,142 @@
+<apex:page controller="ProductController" standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    <script>
+    	function navigate(navigateurl) {
+            console.log("navigation to >>",navigateurl);
+            console.log("navigation to >>",navigateurl);
+            let encodedurl=encodeURI(navigateurl);
+             console.log("navigation encodedurl >>",encodedurl);
+            /*  if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) ) {
+            // Lightning navigation - Salesforce navigateToURL
+            sforce.one.navigateToURL(encodedurl);
+            }
+            else {
+            // Set the window's URL using a Visualforce expression
+            window.location.href =encodedurl;
+            }
+            // navigateToPage('{!$Label.VC_CF_Public_URL}'+navigateurl);
+            */
+		}
+    
+    function showcategoryPage(category){
+        console.log('category=',category);
+        
+        let  navigateurl='//category';
+        //?category='+category
+        
+        ////category
+        if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) ) {
+            console.log('navigating to url=',navigateurl);
+            // Lightning navigation - Salesforce navigateToURL
+            sforce.one.navigateToURL(navigateurl);
+        }
+        else {
+            // Set the window's URL using a Visualforce expression
+            window.location.href =navigateurl;
+        }
+        
+        
+    }
+    </script>    
+    
+    <apex:includeLightning />
+
+    <!-- /* VEN-167: The Nav Bar Headers are not aligned to the centre (Jeremy) - changes: removed manual call for header. leveraged to exp builder */	 -->
+
+    <!-- Body -->
+    
+    <apex:form id="fm" rendered="{!showall}">
+        <!-- /* VEN-124: Error Page White Spaces (Forest) - changes */	 -->
+        <div id="vc_content__container" class="position-relative page-slug-news">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="row text-white pt-5 pb-5">
+                        <div class="col-md-12 animate-group headline">
+                            <h1 class="mt-5 animate-item-in">Smart Money thinks impact first</h1>
+                            <h2 class="mb-5 animate-item-in">Invest with your heart and your head</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="static-bg-overlay"></div>
+                <div class="static-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&versionId=0685i00000889Ld&operationContext=DELIVERY&contentId=05T5i00000RYWex&page=0&d=/a/5i000000PVkz/A6ZVy3pNimGhchHLrtNDnx_NBDcIlIvdVH2WxGxQQiE&oid=00D2v000000WjFp&dpt=null&viewId=')"></div>
+            </section>
+            
+            <!-- News Articles -->
+            
+            <section class="articles py-5">
+                
+                <div class="container">
+                    <div class="row" id="row">
+                        
+                        
+                        
+                        <!-- #######  The salesforce dynamic implementation starts here ####### -->
+                        
+                        <apex:repeat value="{!newsBlogList}" var="nbl">
+                            
+                            
+                            
+                            <div class="col-lg-6 article mb-4">
+                                <div class="inner-container h-100">
+                                    
+                                    <div class="meta p-3">
+                                        
+                                       <a target="_top" href="{!$Label.VC_CF_Public_URL + '/category?category='+URLENCODE(nbl.News_Category__c)}">{!nbl.News_Category__c}</a>
+                                      
+                                    </div>
+                                    <div class="article-content text-white">
+                                        <div class="date pb-2">
+                                            <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                                <apex:param value="{!nbl.Date__c}" />
+                                            </apex:outputText>
+                                        </div>
+                                        <h1>{!nbl.News_Label__c}</h1>
+                                        <div class="excerpt">
+                                            {!nbl.News_Descriptions__c}
+                                        </div>
+                                    </div>
+                                    <div class="post-bg-overlay"></div>
+                                    <div class="post-bg" style="background-image: url('{!nbl.Newsbg_Url__c}')"></div>
+                                    <!--  <a href="{! $Label.VC_CF_Public_URL +nbl.Navigation_url__c}" class="article-link"></a> -->
+                                   <a target="_top" href="{!nbl.Navigation_url__c}" class="article-link"></a>
+                                   
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </apex:repeat>
+                        
+                        <!-- #######  The salesforce dynamic implementation Ends here ####### -->
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        
+    </apex:form>
+    
+    
+    
+    
+    <!-- ./Body -->  
+    
+    <!-- /* VEN-167: The Nav Bar Headers are not aligned to the centre (Jeremy) - changes: removed manual call for footer. leveraged to exp builder */	 -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    
+</apex:page>

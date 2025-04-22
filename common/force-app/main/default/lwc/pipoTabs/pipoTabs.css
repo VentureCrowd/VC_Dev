@@ -1,0 +1,122 @@
+.tab-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: var(--text-md);
+}
+
+.tab.active {
+    color: var(--primary-accent); /* Pink for active tab */
+    border-bottom: 2px solid var(--primary-accent); /* Pink underline for active tab */
+}
+
+.tab-label {
+    margin-right: 8px;
+}
+
+
+.badge {
+    background-color: #333; /* Default black badge */
+    color: white;
+    border-radius: 50%;
+    font-size: var(--text-xs);
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px 1px;
+    font-weight: unset;
+}
+
+.active .badge {
+    background-color: var(--primary-accent); /* Pink for Active tab badge */
+}
+
+.dropdown-container {
+    display: none;
+    padding: 10px 20px;
+    font-size: var(--text-md);
+    position: relative; /* Required for positioning the pseudo-elements */
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.dropdown-container::before,
+.dropdown-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px; /* Thickness of the "border" */
+}
+
+.dropdown-container::before {
+    left: 0;
+    width: var(--tab-width, 28%);
+    background-color: var(--primary-accent);
+}
+
+.dropdown-container::after {
+    left: var(--tab-width, 28%);
+    width: 90%; /* Remaining 90% */
+    background-color: #ccc; /* Default or secondary color */
+}
+
+
+
+.dropdown-icon {
+    margin-left: auto;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-header {
+        display: none;
+    }
+    
+    .dropdown-container {
+        display: flex;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    .active-label {
+        color: var(--primary-accent); /* Pink for active tab */
+    }
+
+    .active-badge {
+        background-color: var(--primary-accent);
+        color: var(--white);
+    }
+
+    .badge.active-label {
+        color: var(--white);
+    }
+    
+    .mobile-label-badge {
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+}

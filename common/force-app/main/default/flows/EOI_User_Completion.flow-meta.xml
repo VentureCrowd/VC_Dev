@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Completion</name>
+        <label>Assign Completion</label>
+        <locationX>490</locationX>
+        <locationY>384</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_Completion.Completion__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Completion_Percentage</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Completion</targetReference>
+        </connector>
+    </assignments>
+    <description>Updates the completio % field of an EOI to see how much the user has filled up.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Completion_Percentage</name>
+        <dataType>Number</dataType>
+        <expression>(
+ IF(NOT(ISBLANK({!$Record.EOI_Title__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.One_liner_about_business__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Youtube_Video_Link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Offer_Overview__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Problem_or_opportunity__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Solution__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Differentiation__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Intellectual_Property__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Total_addressable_market__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Progress__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Growth_plan__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Facebook_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Instagram_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Linkedin_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Twitter_X_link__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Youtube_link__c})), 4.76, 0) +
+ IF(NOT(ISPICKVAL({!$Record.Company_Stage__c}, &quot;&quot;)), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Target_Raise_Amount__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Minimum_Investment_amount__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Raise_Contact_email__c})), 4.76, 0) +
+ IF(NOT(ISBLANK({!$Record.Planned_used_of_funds__c})), 4.76, 0)
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>EOI - User Completion {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EOI - User Completion</label>
+    <loops>
+        <name>Loop_Completion</name>
+        <label>Loop Completion</label>
+        <locationX>402</locationX>
+        <locationY>276</locationY>
+        <collectionReference>Get_all_EOI_s</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Completion</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_all_EOI_s</name>
+        <label>Get all EOI&apos;s</label>
+        <locationX>50</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>EOI_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Submitted to be Published</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>EOI_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>EOI__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>100</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_all_EOI_s</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>EOI_Title__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>One_liner_about_business__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Youtube_Video_Link__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Offer_Overview__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Problem_or_opportunity__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Solution__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Differentiation__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Intellectual_Property__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Total_addressable_market__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Progress__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Growth_plan__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Facebook_link__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Instagram_link__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Linkedin_link__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Twitter_X_link__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Youtube_link__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Company_Stage__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Target_Raise_Amount__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Minimum_Investment_amount__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Target_Raise_Amount__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Minimum_Investment_amount__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Raise_Contact_email__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Planned_used_of_funds__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>EOI__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Loop_Completion</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

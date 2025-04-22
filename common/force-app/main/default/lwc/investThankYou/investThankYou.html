@@ -1,0 +1,24 @@
+<template>
+    <div class="invest--thank-you container">
+        <div class="slds-align_absolute-center thank-you-heading">
+            Thank you for your interest to invest in
+        </div>
+        <div class="slds-align_absolute-center thank-you-name">
+            <div  style="display: inline-block;">
+                <img src={displayurl} alt="productimg" style="width:150px;"/>
+            </div>
+            <div style="display: inline-block;text-align: center;">
+                {prodName}
+            </div>            
+        </div>
+        <div class="body-heading slds-align_absolute-center">What to expect next</div>
+        <div class="body-text" style="text-align: center;">
+            Keep an eye out for our emails to complete your investment process.
+        </div>
+        <br/>
+        <br/>
+        <div class="slds-align_absolute-center">
+            <button  class="slds-button slds-button_brand" title="Back to Home action" onclick={handleClickHome} >Back to My Portfolio</button>
+        </div>
+    </div>
+</template>

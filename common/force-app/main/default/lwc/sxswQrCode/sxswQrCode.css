@@ -1,0 +1,64 @@
+.sxsw-qrcode-container {
+    background: white;
+    height: 100vh;
+}
+
+.sxsw-qrcode-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-xxl);
+}
+
+.sxsw-qrcode-content h1 {
+    font-size: 80px;
+    color: black;
+    font-family: 'SuisseIntl-Bold' !important;
+}
+@media screen and (max-width: 800px){
+    .sxsw-qrcode-content h1 {
+        font-size: 40px;
+    }
+}
+
+
+.footer-section {
+    background: white;
+    margin: auto;
+    width: 100%;
+    padding: var(--space-xxl);
+    text-align: center;
+}
+
+.footer-logos img{
+    width: 450px;
+}
+@media screen and (max-width: 800px){
+    .footer-logos img {
+        width: 250px;
+    }
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+@media screen and (max-width: 800px){
+    .footer-logos {
+        flex-direction: column;
+    }
+}
+
+.footer-section p{
+    color: #797979;
+    font-size: 16px;
+    font-style: italic;
+}
+@media screen and (max-width: 800px){
+    .footer-section p{
+        font-size: 12px;
+    }
+}

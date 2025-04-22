@@ -1,0 +1,143 @@
+<template>
+    <div class="toast-msg-container">
+        <c-core-toast-message
+        title={errorTitle}
+        body={errorBody}
+        variant="error"
+        >
+            <div class="error-message" slot="body">
+                <p> Please try again or contact our Investor Relations Team: <a href="mailto:investor@venturecrowd.com.au">investor@venturecrowd.com.au</a></p>
+            </div>
+        </c-core-toast-message>
+    </div>
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner">
+            <h1>Loading</h1>
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    <template lwc:else>
+        <!-- Render pending template -->
+        <template lwc:if={isPending}>
+            <div class="wrapper-investments">
+                <!-- Breadcrumbs -->
+                <section class="breadcrumb-container">
+                    <c-core-icon icon-name="arrowLeft" size="xxlarge" onclick={handleReturnPage}></c-core-icon>
+                    <c-pipo-investment-support
+                        onrefunderror={handleErrorRefund}
+                        onrefundsucess={handleSuccessRefund}
+                        pending-investment
+                        able-to-refund={ableToRefund}
+                        investment-id={recordId}>
+                    </c-pipo-investment-support>
+                </section>
+
+                <!-- Id verification -->
+                <section lwc:if={showUserVerification}  class="verification-section">
+                <c-core-alert type="warning">
+                    <div class="verification-container" slot="body">
+                        <p>ID verification required</p>
+                        <c-core-button
+                            label="Get verified"
+                            mode="light"
+                            variation="primary"
+                            onclick={handleVerificationNav}>
+                        </c-core-button>
+                    </div>
+                </c-core-alert>
+                </section>
+
+                <!-- Company Section with Investment Button -->
+                <section class="company-section">
+                    <div class="company-information-wrapper">
+                        <div class="company-logo">
+                            <img src={productLogo} alt="">
+                        </div>
+                        <h2 class="company-name">{productName}</h2>
+                    </div>
+                    <c-core-badges lwc:if={refundRequested}
+                        value="Refund requested"
+                        background-color="#F0F1F2"
+                        text-color="var(--black)">
+                    </c-core-badges>
+                </section>
+                
+                <section class="stepper-container responsive">
+                    <section class="responsive-stepper">
+                        <c-core-stepper
+                            vertical
+                            steps={stepperData}>
+                        </c-core-stepper>
+                    </section>
+
+                </section> 
+
+                <section class="stepper-container">
+                    <section class="desktop-stepper">
+                        <c-core-stepper
+                            steps={stepperData}>
+                        </c-core-stepper>
+                    </section>
+                </section> 
+
+                <!-- Information of the product -->
+                <section class="content">
+                    <div class="investment-data-grid">
+                        <template for:each={investmentDetails} for:item="investment">
+                            <div class="investment-item" key={investment.fieldName}>
+                                <div class="field-name">
+                                    <p>{investment.fieldName}</p>
+                                    <c-core-tooltip
+                                    help-text={investment.tooltip}
+                                    size="medium">
+                                </c-core-tooltip>
+                            </div>
+                                <p class="data-point">{investment.value}</p>
+                            </div>
+                        </template>
+                    </div>
+                </section>    
+            </div>
+        <!-- End Template - Pending investment -->
+        </template>
+        <!-- Render Active  Template -->
+        <template lwc:else> 
+            <div class="wrapper-investments">
+                <section class="breadcrumb-container">
+                    <c-core-icon icon-name="arrowLeft" size="xxlarge" onclick={handleReturnPage}></c-core-icon>
+                    <c-pipo-investment-support></c-pipo-investment-support>
+                </section>
+                            
+                <section class="content">
+                        <c-pipo-yielding-view
+                        company-name={productName}
+                        product-view={productView}
+                        product-logo={productLogo}
+                        investment-id={investmentId}
+                        investment-data={investmentData}>
+                        </c-pipo-yielding-view>
+                    <div class="investment-data-grid">
+                        <template for:each={investmentDetails} for:item="investment">
+                            <div class="investment-item" key={investment.fieldName}>
+                                <div class="field-name">
+                                    <p>{investment.fieldName}</p>
+                                    <c-core-tooltip
+                                    help-text={investment.tooltip}
+                                    size="medium">
+                                </c-core-tooltip>
+                            </div>
+                                <p class="data-point">{investment.value}</p>
+                            </div>
+                        </template>
+                    </div>
+                </section>
+                <h3 class="investment-inbox">Investment Inbox</h3>        
+                <c-pipo-investment-tabs
+                    investment-id={recordId}>
+                </c-pipo-investment-tabs>
+            </div>
+        <!-- End Template - Active Investment  -->
+        </template>
+    <!-- End Template - Loading -->
+    </template>
+</template>

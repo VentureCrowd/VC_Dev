@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Company__c</fullName>
+    <label>Product Issuer (AFSL or Company)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VC</fullName>
+                <default>false</default>
+                <label>VC</label>
+            </value>
+            <value>
+                <fullName>VCPP</fullName>
+                <default>false</default>
+                <label>VCPP</label>
+            </value>
+            <value>
+                <fullName>GSL</fullName>
+                <default>false</default>
+                <label>GSL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

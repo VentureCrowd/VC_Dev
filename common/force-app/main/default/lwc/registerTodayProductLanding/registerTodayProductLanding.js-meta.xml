@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Gray, Black" description="" default="Black" />
+            <property name="highlightColor" type="String" label="Highlight Color" datasource="Teal, Pink" description="This is the colour of the accents and link colours" default="Teal" />
+            <property name="registerBtnLabel" type="String" label="Register Button Label" default="Register Now" />
+            <property name="registerBtnUrl" type="String" label="Register Button Label" default="https://investor.venturecrowd.com.au/registration/initial_registration" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

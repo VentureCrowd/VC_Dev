@@ -1,0 +1,42 @@
+.style_1 c-core-icon{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+/* Style 1 is for a rounded style and the icon in the corner of the box */
+.style_1{
+    position: relative;
+    border-radius: 25px;
+    padding: var(--space-md);
+}
+
+/* Style 2 is for square inside box */
+.style_2 {
+    display: grid;
+    grid-template-columns: 0.01fr 1fr;
+    align-items: center;
+    padding: var(--space-md);
+}
+
+.warning{
+    border: 1px solid var(--primary-accent);
+}
+
+.neutral {
+    border: 1px solid #939393;
+}
+
+.text{
+    padding-left: var(--space-lg);
+}
+
+@media (width <= 430px) {
+    .style_2 .text{
+        padding-left: var(--space-md);
+    }
+}
+
+.information{
+    background: var(--Dove, #F0F1F2);
+}

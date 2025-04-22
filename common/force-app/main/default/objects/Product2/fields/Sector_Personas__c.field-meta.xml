@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector_Personas__c</fullName>
+    <description>The personas that this product is suitable for</description>
+    <label>Sector/Personas</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Just Launchers</fullName>
+                <default>false</default>
+                <label>Just Launchers</label>
+            </value>
+            <value>
+                <fullName>Sharp Shooters</fullName>
+                <default>false</default>
+                <label>Sharp Shooters</label>
+            </value>
+            <value>
+                <fullName>Prosperity Builders</fullName>
+                <default>false</default>
+                <label>Prosperity Builders</label>
+            </value>
+            <value>
+                <fullName>Grand Designers</fullName>
+                <default>false</default>
+                <label>Grand Designers</label>
+            </value>
+            <value>
+                <fullName>Wholesale/Sophisticated Investors</fullName>
+                <default>false</default>
+                <label>Wholesale/Sophisticated Investors</label>
+            </value>
+            <value>
+                <fullName>Retail Investors</fullName>
+                <default>false</default>
+                <label>Retail Investors</label>
+            </value>
+            <value>
+                <fullName>Property Investors</fullName>
+                <default>false</default>
+                <label>Property Investors</label>
+            </value>
+            <value>
+                <fullName>ARE Auckland Real Estate Management - property and Asset managers</fullName>
+                <default>false</default>
+                <label>ARE Auckland Real Estate Management - property and Asset managers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

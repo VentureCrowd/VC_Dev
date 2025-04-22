@@ -1,0 +1,21 @@
+<template>
+
+
+        <lightning-card  title="Raise learning controls">
+            <lightning-button label="Generate learning module" slot="actions" onclick={handleCreateLearning} disabled={isLoading}></lightning-button>
+            <template lwc:if={isLoading}>
+                <p class="slds-p-horizontal_small">Loading...</p>
+            </template>
+            <template lwc:elseif={learningData}>
+                <p class="slds-p-horizontal_small">Generated learning with the following details:</p>
+                <p class="slds-p-horizontal_small">Learning ID: {learningData.learningData.learning.Id}</p>
+                <p class="slds-p-horizontal_small">Learning Name: {learningData.learningData.learning.Name}</p>
+
+            </template>
+            <template lwc:else>
+                <p class="slds-p-horizontal_small">No Learning data has been generated</p>
+            </template>
+            <!-- <p slot="footer">Card Footer</p> -->
+        </lightning-card>
+    
+</template>

@@ -1,0 +1,116 @@
+<template>
+  <template if:true={showspinner}>
+      <lightning-spinner></lightning-spinner>
+  </template>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-6 padding-tr-div">
+              <div class="padding-ml-div padding-mt-div">
+
+                  <p class="fontdisplay">First Name*</p>
+                  <lightning-input variant="label-hidden" class="inputStyle" required="true" type="text" onchange={handleFirstNameChange}></lightning-input>
+                  <br></br>
+                  <p class="fontdisplay">Last Name*</p>
+                  <lightning-input variant="label-hidden" class="inputStyle" required="true" type="text" onchange={handleLastNameChange}></lightning-input>
+                  <br></br>
+                  <p class="fontdisplay">Email*</p>
+                  <lightning-input variant="label-hidden" class="inputStyle" required="true" type="email" onchange={handleEmailChange}></lightning-input>
+                  <br></br>
+
+                  <p class="fontdisplay">What can we help you with*</p>
+
+                <div class="slds-form-element">                    
+                    <div class="slds-form-element__control">
+                      <div class="slds-combobox_container">
+                        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                          <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                            <button type="button" class="slds-input_faux slds-has-focus" onclick={handleShowOptions} aria-labelledby="combobox-label-id-136 combobox-id-2-selected-value" id="combobox-id-2-selected-value" aria-controls="listbox-id-4" aria-expanded="true" aria-haspopup="listbox">
+                              <span class="slds-truncate" id="combobox-value-id-123">{selectedOption}</span>
+                            </button>
+                            <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                <lightning-icon size="xx-small" icon-name="utility:down"></lightning-icon>
+                            </span>
+                          </div>
+                            <template if:true={showOptions}>
+                              <div id="listbox-id-4" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+
+
+                                  <template for:each={options} for:item="option">                                  
+                                    <li role="presentation" class="slds-listbox__item" key={option.id}>
+                                      <div id={option.id} data-value={option.value} onmousedown={handleOnClickOption} onclick={handleOnClickOption} class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                        <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                          <span class="slds-media__body">
+                                            <span id={option.id} data-value={option.value} onclick={handleOnClickOption} class="slds-truncate" title="Option">{option.label}</span>
+                                          </span>
+                                      </div>
+                                    </li>
+                                  </template>
+                                  
+                                </ul>
+                              </div>
+                            </template>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- <lightning-combobox variant="label-hidden" required options={options} onchange={handleHelpTextChange} class="comboboxstyle fontdisplay" ></lightning-combobox> -->
+                  <br></br>
+                  <p class="fontdisplay">Your Message*</p>
+
+                  <lightning-textarea variant="label-hidden" name="input1" required="true" class="textareastyle" onchange={handleMessageChange}></lightning-textarea>
+                  <c-google-re-captcha onverifycapthca={handleVerifyCapthca} usedincomunity={usedinComunity}></c-google-re-captcha>
+                  <template if:true={showSuccess}>
+                      <p class="fontdisplay"> Success! Thanks for your enquiry, we’ll be in touch with you soon.</p>
+                      <br></br>
+                  </template>
+                  <template if:true={showError}>
+                      <b class="fontdisplay error">Please provide all values</b>
+
+                  </template>
+
+                  <lightning-button class= "button123" type="submit" variant="brand" label="SEND MESSAGE" onclick={sendEmail} disabled={buttondisabled}></lightning-button>
+                  <br></br>
+                  <p class="fontdisplay"> *Required field</p>
+              </div>
+          </div>
+
+          <div class="col-sm-6 bg" style={getBackgroundImage}>
+              <div class="inner-container pl-2 pr-2 pt-5 pb-5 m-2 pl-md-5">
+                  <h4 class="bold">Offices</h4>
+                  <p class="fontdisplay1">Sydney / Brisbane / Melbourne</p>
+                  <h4 class="bold">Email</h4>
+
+                  <p class="mb-4">
+                      <a class="fontdisplay1" href="mailto:hello@venturecrowd.com.au" target="_blank">hello@venturecrowd.com.au</a>
+                  </p>
+
+                  <h4 class="bold">Contact Number</h4>
+
+                  <p class="fontdisplay1">1300 039 655</p>
+                  <br> </br>
+                  <h6 class="bold sm">Social Media</h6>                  
+
+                  <!-- <a class="fontdisplay2" target="_blank" href="https://www.facebook.com/VentureCrowdAustralia/"><i aria-hidden="true" class="fa fa-facebook fa-fw"></i></a> -->
+                  <a href="https://www.facebook.com/VentureCrowdAustralia/">
+                    <img alt="facebook" src={fb} />
+                  </a>
+                  &nbsp; &nbsp; &nbsp;
+
+                  <!-- <a class="fontdisplay2" target="_blank" href="https://twitter.com/venturecrowd?lang=en"><i aria-hidden="true" class="fa fa-twitter fa-fw"></i></a> -->
+                  <a href="https://au.linkedin.com/company/venturecrowd-pty-ltd">
+                    <img alt="linkedin" src={li} />
+                  </a>
+
+                  &nbsp; &nbsp; &nbsp;
+                  <!-- <a class="fontdisplay2" target="_blank" href="https://www.linkedin.com/company/venturecrowd-pty-ltd/"><i aria-hidden="true" class="fa fa-linkedin fa-fw"></i></a> -->
+                  <a href="https://www.instagram.com/vcrowd/?hl=en">
+                    <img alt="instagram" src={ig} />
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</template>

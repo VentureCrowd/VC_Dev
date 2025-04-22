@@ -1,0 +1,230 @@
+<!--
+
+-->
+<template>
+    <template if:true={showModal}>
+
+		
+
+		<!--Body END-->
+		<c-modal onclosedialog={handleDialogClose}>
+			<span slot="header">{header}</span>
+			<slot >
+
+				<lightning-layout horizontal-align="space" multiple-rows="true">
+
+					<!--Begin : Layout Item Top Component-->
+
+					<lightning-layout-item flexibility="grow" padding="around-small" size="12" small-device-size="12" medium-device-size="12"  large-device-size="12">
+						<lightning-layout multiple-rows vertical-align="stretch" horizontal-align="space">
+							<lightning-layout-item flexibility="auto" padding="horizontal-small" size="6" small-device-size="3" medium-device-size="3" large-device-size="2">
+								<div class="slds-col vc-img">
+									<img style="height: 9.5rem;" src={brandLogo}/>
+								</div>
+							</lightning-layout-item>
+
+							<lightning-layout-item flexibility="grow" padding="horizontal-small" size="6" small-device-size="12" medium-device-size="12" large-device-size="8">
+								<div class="slds-box slds-theme_shade vc-box">
+									<lightning-record-edit-form object-api-name="Masterplan__c">
+										<div class="slds-grid slds-var-p-left_x-small">
+											<div class="slds-col slds-size_10-of-12">
+												<lightning-input-field variant="label-stacked" field-name="Master_Plan__c" value={masterPlanId} onchange={handleMasterPlanIdChange}>
+												</lightning-input-field>
+												<c-lookup
+												selection={initialSelection}
+												errors={errors}
+												onsearch={handleLookupSearch}
+												onselectionchange={handleLookupSelectionChange}
+												label="Staging Plan"
+												placeholder="Search Staging Plans..."
+												is-multi-entry={isMultiEntry}
+												new-record-options={newRecordOptions}
+												required
+												>
+												</c-lookup>
+											</div>
+										</div>            
+									</lightning-record-edit-form>
+								</div>
+							</lightning-layout-item>		
+
+							<lightning-layout-item flexibility="grow" padding="horizontal-small"  size="6" small-device-size="12" medium-device-size="10" large-device-size="2">
+								<div class="slds-box slds-theme_shade vc-box">
+									<div class="slds-grid slds-grid_vertical">
+										<div class="slds-col slds-align_absolute-center">
+											<strong>Forecast Registration Date</strong>
+										</div>
+										<div class="slds-col slds-align_absolute-center">
+											<span>{registrationDate}</span>
+										</div>
+									  </div>
+								</div>
+							</lightning-layout-item>
+						</lightning-layout>
+					</lightning-layout-item>
+					<!--END : Layout Item Top Component-->
+
+					<!--Begin : Layout Item Product and Layout Component-->
+					<template if:true={showPlan}>
+						
+
+						<lightning-layout-item class="x-large" flexibility="grow"   size="12" small-device-size="12" medium-device-size="12"  large-device-size="12">
+							<lightning-layout multiple-rows class="vc-row" >
+								<lightning-layout-item padding="around-small" flexibility="auto" size="6" small-device-size="12" medium-device-size="12" large-device-size="7">
+									<div style="min-height: 35rem;max-height: 40rem" class="slds-col slds-scrollable_y">
+										<div class="slds-box slds-theme_shade ">
+											<template if:true={showProducts}>
+												<div class="slds-border_bottom slds-align_absolute-center "><strong> Products of Selected Staging Plan</Strong></div>
+												
+												<!--Search Component-->
+												<div onkeyup={handleKeyUp} class="slds-var-m-bottom_small">
+													<lightning-input
+														name="enter-search"
+														label="Search based on input"
+														variant="label-hidden"
+														placeholder="Plese Enter Number to search"
+														type="search"
+													></lightning-input>
+												</div>
+							
+												<div class="slds-grid slds-wrap">
+													<template for:each={productData} for:item="product">
+							
+														<div class="slds-col slds-size--1-of-8" key={product.Id}>
+							
+															<div class="slds-grid slds-grid_vertical">
+																<div class="slds-col">
+																	<button onclick={handleProductSelection} data-product={product.Id} data-name={product.Name}  name="Product" class="slds-button">
+																		<span  onmouseover={handleProductMouseover} onmouseout={handleProductMouseout} data-value={product.Id} onclick={handleSelection}>
+																			<template if:true={product.displayAvailable}>
+																				<button class="slds-button slds-button_icon icon-style" >
+																					<span class="slds-button__icon" aria-hidden="true">
+																						<img style="margin-left: -0.6rem;margin-top: -0.4rem" class="icon-style" src={availableImage}/>
+																					</span>
+																					<span class="slds-assistive-text">Available</span>
+																				  </button>
+																				<!-- <lightning-icon icon-name="standard:household" alternative-text="household" title="household"></lightning-icon> -->
+																			</template>
+							
+																			<template if:true={product.displayInprogress}>
+																				<button class="slds-button slds-button_icon icon-style" >
+																					<span class="slds-button__icon" aria-hidden="true">
+																						<img style="margin-left: -0.6rem;margin-top: -0.4rem"  class="icon-style" src={inProgressImage}/>
+																					</span>
+																					<span class="slds-assistive-text">In Progress</span>
+																				  </button>
+																				<!-- <lightning-icon icon-name="custom:custom107" alternative-text="custom107" title="custom107"></lightning-icon> -->
+																			</template>
+							
+																			<template if:true={product.displayClosed}>
+																				<button class="slds-button slds-button_icon icon-style" >
+																					<span class="slds-button__icon" aria-hidden="true">
+																						<img style="margin-left: -0.6rem;margin-top: -0.4rem" class="icon-style" src={closedImage}/>
+																					</span>
+																					<span class="slds-assistive-text">Closed</span>
+																				  </button>
+																				<!-- <lightning-icon icon-name="standard:home" alternative-text="home" title="home"></lightning-icon> -->
+																			</template>
+
+																			<template if:true={product.displayReserved}>
+																				<button class="slds-button slds-button_icon icon-style" >
+																					<span class="slds-button__icon" aria-hidden="true">
+																						<img style="margin-left: -0.6rem;margin-top: -0.4rem" class="icon-style" src={reservedImage}/>
+																					</span>
+																					<span class="slds-assistive-text">Reserved</span>
+																				  </button>
+																				<!-- <lightning-icon icon-name="standard:home" alternative-text="home" title="home"></lightning-icon> -->
+																			</template>
+
+																			<template if:true={product.displayReservedBHLP}>
+																				<button class="slds-button slds-button_icon icon-style" >
+																					<span class="slds-button__icon" aria-hidden="true">
+																						<img style="margin-left: -0.6rem;margin-top: -0.4rem" class="icon-style" src={reservedBHLPImage}/>
+																					</span>
+																					<span class="slds-assistive-text">reservedForBHandLP</span>
+																				  </button>
+																				<!-- <lightning-icon icon-name="standard:home" alternative-text="home" title="home"></lightning-icon> -->
+																			</template>
+							
+																			<template if:true={product.itemSelected}>
+																				<lightning-icon class="selected-icon" icon-name="action:check" size="xx-small"  alternative-text="check" title="check"></lightning-icon>
+																			</template>
+																		</span>
+																	</button>
+																	<template if:true={product.displayDetails}>
+																		<section style="position:fixed;margin-top:-8.2rem" aria-describedby="dialog-body-id-98" aria-label="Dialog Title" class="slds-popover slds-nubbin_left" role="dialog">
+																			<div class="slds-popover__body" >
+																				<lightning-record-view-form
+																				record-id={product.Id}
+																				object-api-name="Product2">
+																					<div class="slds-box">
+																						<lightning-output-field field-name="Name">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Description__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Status__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Forecast_Registration_Date__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Land_Size__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="House_Size__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Bedrooms__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Bathrooms__c">
+																						</lightning-output-field>
+																						<lightning-output-field field-name="Car_Parking_Spaces__c">
+																						</lightning-output-field>
+																					</div>
+																				</lightning-record-view-form>
+																			</div>
+																		  </section>
+																	</template>
+																</div>
+							
+																<div class="slds-col">
+																	<a href={product.link} target="_blank"><strong>{product.Product_Number__c}</strong></a>
+																</div>
+															</div>
+														</div>
+													</template>
+												</div>
+											</template>
+											<template if:false={showProducts}>
+												No Product Found!!!
+											</template>
+											
+										</div>
+									</div>
+								</lightning-layout-item>
+								<lightning-layout-item padding="around-small" flexibility="auto"  size="6" small-device-size="12" medium-device-size="12" large-device-size="5">
+									<div class="slds-box slds-theme_shade slds-col">
+										<div class="slds-border_bottom slds-align_absolute-center slds-var-m-bottom_small"><Strong>Staging Plan</Strong></div>
+										<c-zoomable-image-container image-url={planUrl}>
+										</c-zoomable-image-container>
+									</div>
+								</lightning-layout-item>
+							</lightning-layout>
+						</lightning-layout-item>
+
+						<template if:true={showLoading}>
+							<div class="backgroundInverse">
+								<lightning-spinner alternative-text="Loading" variant="inverse"></lightning-spinner>
+							</div>
+						</template>
+					</template>
+					<!--End : Layout Item Product and Layout Component-->
+				</lightning-layout>
+			</slot>
+
+			<span slot="footer" >
+				<lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={handleDialogClose} ></lightning-button>
+				<template if:true={showSubmission}>
+					<lightning-button variant="Brand" label="Proceed" title="Proceed" onclick={handleProceed} ></lightning-button>
+				</template>
+			</span>
+		</c-modal>
+
+    </template>
+</template>

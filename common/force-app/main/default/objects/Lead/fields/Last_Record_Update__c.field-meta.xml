@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Record_Update__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        ISPICKVAL(Status, &quot;CR Lost&quot;),
+        ISPICKVAL(Status, &quot;Unqualified&quot;),
+        ISPICKVAL(Status, &quot;Lost&quot;)
+    ),
+    &quot;🟢 Lost/Unqualified&quot;,
+    IF(
+        ISPICKVAL(Status, &quot;Qualified&quot;),
+        &quot;🟢 Qualified&quot;,
+        IF(
+            (TODAY() - DATEVALUE(LastModifiedDate)) &lt; 5,
+            &quot;🟢 on time&quot;,
+            IF(
+                AND(
+                    (TODAY() - DATEVALUE(LastModifiedDate)) &gt;= 5,
+                    (TODAY() - DATEVALUE(LastModifiedDate)) &lt;= 10
+                ),
+                &quot;🟠 over 5d&quot;,
+                IF(
+                    (TODAY() - DATEVALUE(LastModifiedDate)) &gt; 10,
+                    &quot;🔴 over 10d&quot;,
+                    &quot;&quot;
+                )
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Record Update</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

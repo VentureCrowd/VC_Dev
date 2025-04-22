@@ -1,0 +1,392 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+    <script type='text/javascript'>
+        window.location.hash = '#section1';
+        window.location.hash = '#section2';
+        window.location.hash = '#section3';
+        window.location.hash = '#section4';
+        window.location.hash = '#section5';
+        window.location.hash = '#section6';
+    </script>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="interview-airtasker-ipo">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container" style="padding-top: 5%;">
+
+
+                            <a href="#">Ventures</a>
+                            <a href="#">Investing</a>
+
+                        </div>
+                        <h1 class="mt-4">Alternative Finance And The Unicorn Boom</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000H2pnC&oid=00D2v000000WjFp&lastMod=1628122894000');min-height: 42vh;top:-285px !important;"></div>
+        </div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+
+
+
+                            <div class="post-body-rich-text text-left mt-5" style="margin-top: 0rem!important;">
+
+                                <h2>How Alternative Finance Can Support The Rise of Unicorns </h2>
+                            </div>
+                            <br/>
+                            <p>
+                                With COVID restrictions and lockdowns continuing to wreak havoc on traditional industries all over the world, many technology
+                                startups are thriving in a forced digital environment. The recent
+                                <strong>$39 billion acquisition of AfterPay by Square</strong> is a clear success story for an ASX
+                                listed company, but there are many other Aussie companies that are turning into unicorns
+                                through multi-million venture capital rounds in 2021:
+                                <strong>Octopus Deploy ($223M), SafetyCulture ($99M), Canva ($92M) and Athena Home Loans ($90M).</strong>
+                                <br/> 
+                            </p>
+                            <p>As Aussie tech startups continue to thrive, investors are turning to alternative assets,
+                                such as venture capital and equity crowdfunding, in the search for growth.</p>
+
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    <a href="#section1"> What are alternative assets and what is driving their popularity right now? </a>
+                                </li>
+                                <li>
+                                    <a href="#section2"> What do investors need to consider when weighing up the risk versus the return? </a>
+                                </li>
+                                <li>
+                                    <a href="#section3"> How has COVID affected the Australian startup scene? </a>
+                                </li>
+                                <li>
+                                    <a href="#section4"> What are the things investors should consider when investing in startups and how can
+                                        investors find out more?</a>
+                                </li>
+
+
+                            </ul>
+                            
+                            <div id="section1">
+                                <h4>
+                                    <strong>What are alternative assets and what is driving their popularity right now?</strong>
+                                </h4>
+                            </div>
+                            <p>
+                                <p>
+                                    Alternative assets refer to assets that don’t fall into the traditional investment categories like listed shares, bonds and
+                                    cash. Alternative assets include things like venture capital, private equity and property.
+                                    The popularity of alternative assets has been growing exponentially over the last decade
+                                    and, according to PwC, is forecast to boom over the next few years growing from AuM of
+                                    US$2.9 trillion in 2017 to $US 6.9 trillion by 2025, which is a massive CAGR of 11.7%.
+
+                                </p>
+
+                                <p>
+                                    The reasons for the rise in popularity of alternative assets is twofold:
+                                </p>
+                                <p>
+                                    1. &nbsp;&nbsp;
+                                    <strong>High Growth:</strong> Alternative assets offer the opportunity for significantly higher
+                                    returns than listed stocks, bonds or cash. And in this low return and low growth environment,
+                                    everybody is looking for upside that actually moves the needle - alternative assets can
+                                    do that, defensive assets generally do not. Of course, as with any other investment strategy,
+                                    risk needs to be taken into consideration when investing in alternative assets.
+                                    <br/><br/> 2. &nbsp;&nbsp;
+                                    <strong>Direct Access:</strong> Venture Capital and Equity Crowdfunding enable investors to connect
+                                    more directly with purpose-driven projects that make a positive contribution to the planet
+                                    in a way that traditional assets cannot. Investors are absolutely looking for growth,
+                                    but they also want to know their investment dollars are contributing to a better world.
+                                </p>
+
+                                <div id="section2">
+                                    <h4>
+                                        <strong>
+                                            What do investors need to consider when weighing up the risk versus the return?<br/>
+                                        </strong>
+                                    </h4>
+                                </div>
+                                <p>
+                                    When a new business idea is conceived, it starts from a plan on a piece of paper and a series of assumptions. For example:
+                                </p>
+                                <p>
+                                    “What if there was a platform that allowed ordinary people to rent out rooms in their houses to travellers on a short-term
+                                    basis in the same way that hotels rent out rooms.”
+                                </p>
+                                <p>
+                                    There are 3 key assumptions being made in that idea:
+
+                                    <p>
+                                        1. &nbsp;&nbsp; That homeowners would want and be prepared to rent out a room in their house to a stranger on a short-term
+                                        basis  <br/>
+                                    
+                                        2. &nbsp;&nbsp; That travellers would want to rent a room in someone else's house  <br/>
+                                    
+                                        3. &nbsp;&nbsp; That the team behind the idea could build a platform that connected those people effectively
+                                    </p>
+
+                                </p>
+                                <p>
+                                    All of those things were unknown risks when the idea of
+                                    <strong>Airbnb</strong> was first conceived in 2009. There were many high profile investors who
+                                    rejected the idea. But those who invested at the beginning ($20k) at a valuation of $2.5M
+                                    did very well, with the company listing on the NASDAQ last year at a valuation of over
+                                    $100 billion. And to think that almost all unicorns like Airbnb are born in rejection!
+                                </p>
+
+                                <p>
+                                    As a startup goes through a series of growth phases, it gradually de-risks itself by proving out the assumptions it started
+                                    with or pivoting and changing course, just like Airbnb did. So, yes, risk needs to be
+                                    considered, but nothing truly great has ever been achieved without a group of people
+                                    coming together and taking a little risk. That’s the foundation of equity crowdfunding,
+                                    enabling founders and investors to be bold and shape the future.
+                                </p>
+                                <div id="section3">
+                                    <h4>
+                                        <strong>
+                                            How has COVID affected the Australian startup scene? <br/>
+                                        </strong>
+                                    </h4>
+                                </div>
+                                <p>
+                                    Before the GFC, the Australian startup sector and the venture capital industry was almost non-existent. Last year, there
+                                    were 227 Australian venture capital investment deals done with a reported $1.6 billion
+                                    invested. In retail equity crowdfunding, the number was around $47 million.
+                                </p>
+                                <p>
+                                    Today the Australian startup ecosystem is one of the fastest-growing globally, and what has helped that growth is the success
+                                    of so many awesome Australian startups that have gone on to become massive global businesses,
+                                    including a large number that have reached unicorn status - or valuations of over $1
+                                    billion - such as
+                                    <strong> Go1, Canva, AfterPay, Judo Capital, Airwallex</strong> and
+                                    <strong>Nearmap.</strong>
+                                </p>
+                                <p>
+                                    Right now, we are seeing an even greater number of really interesting Australian startups that have the potential to be just
+                                    as big. Accounting for the fact that in 2020 the alternative finance market was valued
+                                    at over $1 billion (double that of the value in 2016), we can foresee this sector playing
+                                    a key role in supporting more and more early-stage startups in their journey towards
+                                    joining the unicorn club.
+                                </p>
+                                <p>
+                                    At VentureCrowd, we are feeling bullish and we believe this will be the biggest year ever for the Australian startup sector.
+                                </p>
+                                <div id="section4">
+                                    <h4>
+                                        <strong>
+                                            What are the things investors should consider when investing in startups and how can investors find out more? <br/>
+                                        </strong>
+                                    </h4>
+                                </div>
+                                <p>
+                                    There are a number of things to think about when considering whether to invest in a startup. At VentureCrowd, our venture
+                                    capital team focus on the following:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>Always back the jockey, not the horse: </strong> The team needs to be rock solid.
+                                        The world’s best idea in the hands of a dysfunctional team is an idea destined to
+                                        fail.
+                                    </li>
+                                    <li>
+                                        <strong>The problem:</strong> The business needs to be solving a large enough problem for
+                                        a large enough group of people so that its total addressable market is significant
+                                        and not just a small niche. Ideally, it has to have global potential.
+                                    </li>
+                                    <li>
+                                        <strong>The exit:</strong> The business must have a clearly defined exit strategy. This is
+                                        when investors realise a return from their investment, so there needs to be a reasonable
+                                        line of sight to a merger, trade sale, or a listing that makes sense for that business.
+                                    </li>
+                                    <li>
+                                        <strong> Purpose:</strong> Impact investing is here to stay and brands that will succeed in
+                                        the future are those that align with their customers through their purpose. At VentureCrowd,
+                                        we only invest in businesses that are purpose-driven. That means they must address
+                                        one or more of the UN sustainable development goals. That’s because we know our investors
+                                        want their investments to have high-growth potential but also to have a positive
+                                        impact on the planet.
+                                    </li>
+                                </ul>
+                                    <p>
+                                        So if you want exposure to these types of startup opportunities, you can head to the VentureCrowd website for more information.
+                                        <br/>
+                                        <a target="_top" href="{!$Label.VC_CF_Public_URL + '/invest'}">Explore deals</a>
+
+                                    </p>
+                                    <P><h4>To learn more about alternative finance, hear it from our CEO Steve Maarbani:</h4></P>
+                                    <div class="fluid-video-wrapper">
+                                        <iframe src="https://www.youtube.com/embed/QHC9a3_i7C4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    </div>
+                                
+                            </p>
+                            <div class="post-body-rich-text text-center mt-5">
+
+                                <h5>We find and fund the future</h5>
+
+                                <h1>Invest with VentureCrowd</h1>
+                                <p>Find out more about who is raising capital on VentureCrowd</p>
+                                <a target="_top" href="{!$Label.VC_CF_Public_URL + '/invest'}">View Offers</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Zega Webinar: Wrapped up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Zega Intelligent Cookware Webinar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">From Capital Raise to Curtain Raise: Inspired Dance Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why millennials are driven to build purpose driven businesses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contactless Ordering: Terminating Payment Terminal Providers?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">April 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">March 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">February 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">January 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <!-- <a href="{! $Label.VC_CF_Public_URL +'/blog/invest-in-property-without-buying'}"> -->
+            <a href="#">
+                <div class="container">
+                    <div class="row text-center py-5 text-white">
+                        <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                        <div class="col-md-12 pb-5 next-post-title mt-3">
+                            <h3>Contactless Ordering: Terminating Payment Terminal Providers?</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-post-bg-overlay"></div>
+                <div class="next-post-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JPx8P&d=%2Fa%2F2v000000ENzt%2FGQSt4mnNfQ.i0J8tURGvFTqYLMBOzZ8RXJUwoiRCZpg&asPdf=false')"></div>
+            </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

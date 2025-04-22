@@ -1,0 +1,116 @@
+<template>
+    <div class="add-edit-media-links">
+        <!-- Loading spinner when data is being fetched -->
+        <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+        <div>
+            <!-- Media links section header -->
+            <h4 class="vc-font-size_23 slds-var-p-bottom_medium">
+                <b class="vc-font-caxton7">Media links</b>
+            </h4>
+            <div>Share any mentions of the company in media, add a 'title' of the piece of media and the URL.</div>
+        </div>
+        <!-- Button to add new media -->
+        <button class="info-model create-update-eoi-button secondary slds-var-m-top_medium" onclick={openAddModel}>
+            <label>Add media link</label>
+        </button>
+         <!-- Add Media Modal -->
+        <template if:true={isAddModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Add media link</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+                        <div class="slds-var-p-bottom_medium">
+                            <label for="add-media-title">Media title*</label>
+                            <div class="slds-var-p-bottom_x-small">Text describing what is at the other end of the link.</div>
+                            <lightning-input id="add-media-title" data-id="Name" name="Name" type="text" label="" variant="label-hidden" required onchange={handleChange} maxlength="100" class="create-update-eoi-input"></lightning-input>
+                            <div class="field-max-length-text">Max 100 characters</div>
+                        </div>
+                        <div>
+                            <label for="add-url">URL*</label>
+                            <div class="slds-var-p-bottom_x-small">The link to the media.</div>
+                            <lightning-input id="add-url" data-id="Media_URL__c" name="Media_URL__c" type="url" label="" variant="label-hidden" required onchange={handleChange} placeholder="https://..." class="create-update-eoi-input" maxlength="255"></lightning-input>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeAddModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={addMedia} disabled={disableSaveBtn}>
+                                <label>Save</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <!-- Edit Media Modal -->
+        <template if:true={isEditModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 class="slds-modal__title slds-hyphenate">Update media</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large">
+                        <div class="slds-var-p-bottom_medium">
+                            <label for="edit-media-title">Media title*</label>
+                            <div class="slds-var-p-bottom_x-small">Text describing what is at the other end of the link.</div>
+                            <lightning-input id="edit-media-title" data-id="Name" name="Name" value={mediaToUpdate.Name} type="text" label="" variant="label-hidden" required onchange={handleChange} maxlength="100" class="create-update-eoi-input"></lightning-input>
+                            <div class="field-max-length-text">Max 100 characters</div>
+                        </div>
+                        <div>
+                            <label for="edit-url">URL*</label>
+                            <div class="slds-var-p-bottom_x-small">The link to the media.</div>
+                            <lightning-input id="edit-url" data-id="Media_URL__c" name="Media_URL__c" value={mediaToUpdate.Media_URL__c} type="url" label="" variant="label-hidden" required onchange={handleChange} placeholder="https://..." class="create-update-eoi-input" maxlength="255"></lightning-input>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeEditModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={updateMedia} disabled={disableUpdateBtn}>
+                                <label>Update</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <div if:true={showRecords} class="slds-var-m-top_small">
+            <!-- Display a spinner while loading records -->
+            <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+            <!-- Iterate over mediaLst to display each media item -->
+            <template if:true={hasMedia} for:each={mediaLst} for:item="item">
+                <div key={item.Id} class="slds-var-m-top_x-large">
+                    <div class="demo-only slds-size_2-of-4">
+                        <!-- Responsive media layout -->
+                        <div class="slds-media slds-media_responsive">
+                            <div class="slds-media__body">
+                                <div>
+                                    <b>{item.Name}</b>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <a href={item.Media_URL__c} class="slds-text-link create-update-eoi-help-link" target="_blank">{item.Media_URL__c}</a>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                      <!-- Buttons to edit or remove the media item -->
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleEditMedia}>Edit</label>
+                                    </button>
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleRemoveMedia}>Remove</label>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

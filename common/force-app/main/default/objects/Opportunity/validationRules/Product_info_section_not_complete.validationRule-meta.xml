@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_info_section_not_complete</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+($RecordType.Name= &apos;VC&apos;),
+ISPICKVAL( StageName , &apos;Receipt Issued&apos; ),
+
+OR(
+(ISBLANK( Invested_Opp_Prod_ADMIN__c)),
+(ISBLANK( Invested_Product_ADMIN_FIELD__c ))
+
+))</errorConditionFormula>
+    <errorMessage>Please fill the Invested_Opp_Prod_ADMIN and Invested_Product_ADMIN_FIELD fields before moving to Receipt Issued Stage.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,105 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="CommunityUserDetailController">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="currentUser" type="User"/>
+    <aura:attribute name="isUserAvailable" type="Boolean" default="false"/>
+    
+    <!-- Footer -->
+    <footer id="vc_footer__container" class="{! v.isUserAvailable?'state--logged-in':'state--guest' }">
+        <div class="container-fluid">
+            <div class="row pt-5 pb-5">
+                <aura:if isTrue="{!v.isUserAvailable}"> <!-- For loggedin user -->
+                    <div class="col-lg-2 d-none d-lg-block footer-contact-container">
+                        <div class="inner-container">
+                            <span class="d-block mb-4">Have a question about your portfolio? Contact us <a href="mailto: investor@venturecrowd.com.au" target="_Blank">here</a>.
+                                To know more about our latest investment options, email <a href="mailto:hello@venturecrowd.com.au" target="_Blank">hello@venturecrowd.com.au</a> or give us a call on 1300 039 655.
+                                between 9:00am to 5:00pm (AEST) Monday to Friday.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <aura:set attribute="else"> <!-- If user is not loggedIn-->
+                        <div class="col-lg-2"></div>
+                    </aura:set>
+                    
+                </aura:if>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h4>Company</h4>
+                    <ul>
+                        <!--  href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" -->
+                        <li><a onclick="{!c.navigatetopublic}" data-url="/about">About Us</a></li>
+                        <li><a onclick="{!c.navigatetopublic}" data-url="/about?contactus=true">Contact Us</a></li>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/legals">Legals</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>Get Started</h4>
+                    <ul>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/invest">Invest</a></li>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/raise">Raise</a></li>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/manage">Manage</a></li>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/property">Property</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a onclick="{!c.navigatetopublic}" data-url="/more/how-it-works-2/">How it works</a></li>
+                        <li><a onclick="{!c.navigatetopublic}" data-url="/more/faqs">FAQs</a></li>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/investor-education">Investor education</a></li>
+                        <li><a  onclick="{!c.navigatetopublic}" data-url="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>My Account </h4>
+                    <!-- Code to check whether the user is logged in or Not --> 
+                    <aura:if isTrue="{!v.isUserAvailable}"> <!-- For loggedin user -->
+                        <ul>
+                            <li><a  onclick="{!c.navigatetopublic}" data-url="/portal/portfolio/">My Portfolio</a></li>
+                            <li><a  onclick="{!c.navigatetopublic}" data-url="{!'/portal/profile/'+v.currentUser.Id}">My Profile</a></li>
+                            <li><a  onclick="{!c.navigatetopublic}" data-url="/portal/my-entities">My Entities</a></li>
+                        </ul>
+                        
+                        <aura:set attribute="else"> <!-- If user is not loggedIn-->
+                            <ul> 
+                                <li><a  onclick="{!c.navigatetopublic}" data-url="/portal">Login</a></li>
+                                <li><a  onclick="{!c.navigatetopublic}" data-url="/login/SelfRegister">Register</a></li>
+                                <li><a  onclick="{!c.navigatetopublic}" data-url="/login/ForgotPassword">Forgot Password</a></li>
+                            </ul>
+                        </aura:set>
+                        
+                    </aura:if>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center pt-4 pb-4">
+                    <div class="col-12 col-md-9 text-left mb-4 mb-md-0">
+                        <p></p>
+                        <p><a href="https://w12.safelinkbpm.com/c/FoDo0CEKbUCuOsem9IkFnQ">Legals </a>| Copyright © 2021 VentureCrowd. All Rights Reserved.</p>
+                        <p>The information on this website has been prepared and issued by VentureCrowd Nominees Pty Ltd ABN 36 166 599 140 as a corporate authorised representative (CAR No. 452052) of VentureCrowd Pty Ltd ABN 40 166 598 849 AFSL 503381 (VentureCrowd or we or us). The information contained in this website is for general information only and is not intended to provide you with financial advice or take into account your objectives, financial situation or needs. You should consider, with your professional adviser, whether the information is suitable for your circumstances.</p>
+                        <p>Please note past investment performance is not a reliable indicator of future investment performance and no guarantee of performance, the return of capital or a particular rate of return is provided. While we believe the material in this website is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which can’t be excluded.</p>
+                        <p>Crowd Funding (CSF) Offers are facilitated by VentureCrowd Pty Ltd and involve the provision of a crowdfunding service. In deciding whether to acquire securities under a CSF offer, you should first consider the CSF offer document (available at <a href="/s/invest">Crowdfunding equity investment platform in Australia - VentureCrowd</a> on this website).</p>
+                    </div>
+                    <div class="col-12 col-md-3 text-left text-md-right">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/venturecrowd?lang=en "><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/VentureCrowdAustralia/ "><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/company/venturecrowd-pty-ltd/"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+    <div id="vc_top_scroll"><a href="#"><i class="fa fa-angle-up"></i></a></div>
+    
+</aura:component>

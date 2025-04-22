@@ -1,0 +1,507 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_LegalsCSS}"/>
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+</head>
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-legals">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5">
+            <div class="col-md-12 animate-group headline py-5">
+              <h1 class="animate-item-in text-center">Legals</h1>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="static-bg" style="background-image: url(https://assets.venturecrowd.vc/uploads/2018/01/Screen-Shot-2018-01-29-at-1.23.52-PM.png)"></div>
+      </section>
+
+      <!-- Legals -->
+      <section class="legals py-5">
+        <div class="container">
+          <div class="row tabbed-content mt-3">
+            <div class="col-md-12 tab-group">
+              <ul>
+                <li class="pb-3"><a href="#" class="active-tab" data-tab="tab-content-1">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="#" data-tab="tab-content-2">PRIVACY</a></li>
+              </ul>
+            </div>
+            <div class="col-md-12 offset-lg-2 col-lg-8 mt-5 mb-5 tab-content">
+              <div id="tab-content-1" class="tab-content-block active-tab-content">
+                <h2 class="mb-3">Terms &amp; Conditions</h2>
+                <p>
+                  This legal notice is issued by VentureCrowd Pty Ltd (ABN 40 166 598 849, AFSL 503 381) (<b>VentureCrowd</b>) and applies to the entire contents of the website
+                  under the domain name “www.venturecrowd.com.au” (the <b>Website</b>), and to any correspondence by e-mail between VentureCrowd and you. Please read the following
+                  terms and conditions carefully before using the Website.&nbsp;
+                </p>
+                <h5><b>Introduction</b></h5>
+                <ol>
+                  <li>
+                    By accessing or using the Website, regardless of whether or not you are a registered user, you shall be deemed to have accepted this legal notice in full. If
+                    you do not accept this legal notice in full, you should leave the Website immediately.
+                  </li>
+                  <li>
+                    VentureCrowd may revise this legal notice at any time by updating this posting. You should check the Website from time to time to review the then current legal
+                    notice, because it is binding on you. Certain provisions of this legal notice may be superseded by expressly designated legal notices or terms located on
+                    particular pages at the Website.
+                  </li>
+                </ol>
+                <h5><b>License</b></h5>
+                <ol start="3">
+                  <li>
+                    By accessing any deal page on the Website including any information in a private data room, you recognise and acknowledge the competitive value and confidential
+                    nature of all the information in the data room and agree that:
+                  </li>
+                </ol>
+                <p>
+                  (a) all information available on the deal in the data room is confidential and should not be released/disclosed to any other party or reproduced or used in any
+                  way other than for you to assess whether the deal is an appropriate investment for you;
+                </p>
+                <p>(b) by accessing the data room, you confirm that you agree to keep the contents of the data room confidential; and</p>
+                <p>(c) you will take all reasonable steps to protect the confidential nature of the information.</p>
+                <p>
+                  Confidential information does not include information which is generally known to the public or is in the public domain other than as a result of a breach of
+                  confidentiality.
+                </p>
+                <ol start="4">
+                  <li>Subject to paragraph 3, you are permitted to print and download extracts from the Website for your own use only on the following basis:</li>
+                </ol>
+                <p>(a) no documents or related graphics on the Website are modified in any way;</p>
+                <p>(b) no graphics on the Website are used separately from the corresponding text; and</p>
+                <p>(c) VentureCrowd’s copyright and trade mark notices and this permission notice appear in all copies.</p>
+                <ol start="5">
+                  <li>
+                    Unless otherwise stated, the copyright and other intellectual property rights in all material on the Website (including without limitation photographs and
+                    graphical images) are owned by VentureCrowd (or its licensors). For the purposes of this legal notice, any use of extracts from the Website other than in
+                    accordance with paragraph 4 for any purpose is prohibited. If you breach any of the terms in this legal notice, your permission to use the Website automatically
+                    terminates and you must immediately destroy any downloaded or printed extracts from the Website.
+                  </li>
+                  <li>
+                    Subject to paragraph 4, no part of the Website may be reproduced or stored in any other website or included in any public or private electronic retrieval system
+                    or service without VentureCrowd’s prior written permission.
+                  </li>
+                  <li>Any rights not expressly granted in these terms are reserved.</li>
+                </ol>
+                <h5><b>Service access</b></h5>
+                <ol start="8">
+                  <li>
+                    While VentureCrowd endeavours to ensure that the Website is normally available 24 hours a day, VentureCrowd shall not be liable if for any reason the Website is
+                    unavailable at any time or for any period.
+                  </li>
+                  <li>
+                    Access to the Website may be suspended temporarily and without notice in the case of system failure, maintenance or repair or for reasons beyond VentureCrowd’s
+                    control.
+                  </li>
+                </ol>
+                <h5><b>Visitor material and conduct</b></h5>
+                <ol start="10">
+                  <li>
+                    Other than personally identifiable information, which is covered under our <a href="http://wordpress.venturecrowd.com.au/legals/#privacy">Privacy Policy</a>,
+                    any material you transmit or post to the Website shall be considered non-confidential and non-proprietary. VentureCrowd shall have no obligations with respect
+                    to such material. VentureCrowd and its designees shall be free to copy, disclose, distribute, incorporate and otherwise use such material and all data, images,
+                    sounds, text and other things embodied therein for any and all commercial or non-commercial purposes.
+                  </li>
+                  <li>You are prohibited from posting or transmitting to or from the Website any material:</li>
+                </ol>
+                <p>
+                  (a) that is threatening, defamatory, obscene, indecent, seditious, offensive, pornographic, abusive, liable to incite racial hatred, discriminatory, menacing,
+                  scandalous, inflammatory, blasphemous, in breach of confidence, in breach of privacy or which may cause annoyance or inconvenience; or
+                </p>
+                <p>(b) for which you have not obtained all necessary licences and/or approvals; or</p>
+                <p>
+                  (c) which constitutes or encourages conduct that would be considered a criminal offence, give rise to civil liability, or otherwise be contrary to the law of or
+                  infringe the rights of any third party, in any country in the world; or
+                </p>
+                <p>
+                  (d) which is technically harmful (including, without limitation, computer viruses, logic bombs, Trojan horses, worms, harmful components, corrupted data or other
+                  malicious software or harmful data).
+                </p>
+                <ol start="12">
+                  <li>You may not misuse the Website (including, without limitation, by hacking).</li>
+                  <li>
+                    VentureCrowd shall fully co-operate with any law enforcement authorities or court order requesting or directing VentureCrowd to disclose the identity or locate
+                    anyone posting any material in breach of paragraphs 11 or 12.
+                  </li>
+                </ol>
+                <h5><b>Links to and from other websites</b></h5>
+                <ol start="14">
+                  <li>
+                    Links to third party websites on the Website are provided solely for your convenience. If you use these links, you leave the Website. VentureCrowd has not
+                    reviewed all of these third party websites and does not control and is not responsible for these websites or their content or availability. VentureCrowd
+                    therefore does not endorse or make any representations about them, or any material found there, or any results that may be obtained from using them. If you
+                    decide to access any of the third party websites linked to the Website, you do so entirely at your own risk.
+                  </li>
+                  <li>
+                    If you would like to link to the Website, you may only do so on the basis that you link to, but do not replicate without express written permission from
+                    VentureCrowd, any part of the Website, and subject to the following conditions:
+                  </li>
+                </ol>
+                <p>(a) you do not remove, distort or otherwise alter the size or appearance of the VentureCrowd logo;</p>
+                <p>(b) you do not create a frame or any other browser or border environment around the Website;</p>
+                <p>(c) you do not in any way imply that VentureCrowd is endorsing any products or services other than its own;</p>
+                <p>(d) you do not misrepresent your relationship with VentureCrowd nor present any other false information about VentureCrowd;</p>
+                <p>(e) you do not otherwise use any VentureCrowd trade marks displayed on the Website without express written permission from VentureCrowd;</p>
+                <p>(f) you do not link from a website that is not owned by you; and</p>
+                <p>
+                  (g) your website does not contain content that is distasteful, offensive or controversial, infringes any intellectual property rights or other rights of any other
+                  person or otherwise does not comply with all applicable laws and regulations.
+                </p>
+                <ol start="16">
+                  <li>
+                    VentureCrowd expressly reserves the right to revoke the right granted in paragraph 15 for breach of these terms and to take any action it deems appropriate.
+                  </li>
+                  <li>
+                    You shall fully indemnify VentureCrowd for any loss or damage, including indirect and consequential loss or damage, suffered by VentureCrowd or any of its group
+                    companies for breach of paragraph 15.
+                  </li>
+                </ol>
+                <h5><b>Registration</b></h5>
+                <ol start="18">
+                  <li>
+                    Unless stated otherwise, all deals on the Website are only available for investment by Australian wholesale Investors who are fully registered with
+                    VentureCrowd. Full registration includes verification of your identity and confirmation of your wholesale status as required by VentureCrowd. A wholesale
+                    Investor is a person who falls within the meaning of ‘wholesale client’ under section 761G of the Corporations Act 2001 (Cth) (<b>Corporations Act</b>)
+                  </li>
+                  <li>
+                    Each registration is for a single user only. VentureCrowd does not permit you to share your user name and password with any other person nor with multiple users
+                    on a network.
+                  </li>
+                  <li>You are solely responsible for the security of any passwords associated with your registration.</li>
+                </ol>
+                <h5><b>Disclaimer</b></h5>
+                <ol start="21">
+                  <li>
+                    Any information on the Website relating to a deal is of a general nature and does not purport to be complete, nor does it contain information which would be
+                    required in a prospectus or disclosure document prepared in accordance with the requirements of the Corporations Act. The information is intended for wholesale
+                    investors and their advisors and consultants. It is not investment advice or financial product advice and does not take into account your investment objectives,
+                    financial circumstance or particular needs. Before making any investment decisions, you should consider your own personal circumstances and seek professional
+                    advice from your accountant, lawyer or other professional adviser.
+                  </li>
+                  <li>
+                    Any statements, opinions, projections, forecasts and other material (forward looking statements) are based on various assumptions. Those assumptions may or may
+                    not prove to be correct. None of VentureCrowd, its officers, employees, agents, advisers or any other person named in on the Website makes any representation as
+                    to the accuracy or likelihood of fulfilment of any forward looking statements or any of the assumptions upon which they are based.
+                  </li>
+                  <li>
+                    While VentureCrowd endeavours to ensure that the information on the Website is correct, VentureCrowd does not warrant the accuracy and completeness of the
+                    material on the Website. VentureCrowd may make changes to the material on the Website, or to the products or services and prices described in it, at any time
+                    without notice.
+                  </li>
+                  <li>
+                    The material on the Website is provided “as is”, without any conditions, warranties or other terms of any kind. Accordingly, to the maximum extent permitted by
+                    law, VentureCrowd provides you with the Website on the basis that VentureCrowd excludes all representations, warranties, conditions and other terms (including,
+                    without limitation, the conditions implied by law of satisfactory quality and fitness for purpose) which, but for this legal notice, might have effect in
+                    relation to the Website.
+                  </li>
+                </ol>
+                <h5><b>Liability</b></h5>
+                <ol start="25">
+                  <li>
+                    VentureCrowd, any other party (whether or not involved in creating, producing, maintaining or delivering the Website), and any of VentureCrowd’s group companies
+                    and the officers, directors, employees, shareholders or agents of any of them, exclude all liability and responsibility for any amount or kind of loss or damage
+                    that may result to you or a third party (including without limitation, any direct, indirect, punitive or consequential loss or damages, or any loss of income,
+                    profits, goodwill, data, contracts, use of money, or loss or damages arising from or connected in any way to business interruption, and whether in tort
+                    (including without limitation negligence), contract or otherwise) in connection with the Website in any way or in connection with the use, inability to use or
+                    the results of use of the Website, any websites linked to the Website or the material on such websites, including but not limited to loss or damage due to
+                    viruses that may infect your computer equipment, software, data or other property on account of your access to, use of, or browsing the Website or your
+                    downloading of any material from the Website or any websites linked to the Website.
+                  </li>
+                  <li>Nothing in this legal notice shall exclude or limit VentureCrowd’s liability for:</li>
+                </ol>
+                <p>(a) fraud; or</p>
+                <p>(b) any liability which cannot be excluded or limited under applicable law.</p>
+                <ol start="27">
+                  <li>
+                    If your use of material on the Website results in the need for servicing, repair or correction of equipment, software or data, you assume all costs thereof.
+                  </li>
+                </ol>
+                <h5><b>Governing law and jurisdiction</b></h5>
+                <ol start="28">
+                  <li>
+                    This legal notice shall be governed by and construed in accordance with the laws of New South Wales, Australia. Disputes arising in connection with this legal
+                    notice shall be subject to the exclusive jurisdiction of the courts of New South Wales, Australia.
+                  </li>
+                </ol>
+                <h5><b>Returns and Refund Policies (Investors)</b></h5>
+                <ol start="29">
+                  <li>
+                    Any funds received from Investors in relation to a deal on the Website constitutes an application for investment on the terms of the Investment Contract for
+                    that deal. If the deal does not proceed, or the application for investment is rejected or scaled back, VentureCrowd will return any uninvested amount back to
+                    the Investor. Successfully completed and funded deals through the Website are non-refundable and each Investor is thereafter bound by the terms of the
+                    Investment Contract for that deal, which includes but not limited to any fees payable to VentureCrowd.
+                  </li>
+                </ol>
+                <h5><b>Returns and Refund Policies (Issuers)</b></h5>
+                <ol start="30">
+                  <li>
+                    Like all Policies, VentureCrowd may change its fees policy and any fees for its services from time to time. VentureCrowd may choose to temporarily change its
+                    fees policy and the fees for its services for promotional events and such changes are effective when posted on the Website. If VentureCrowd introduces a new
+                    service, any fees for that service are effective at the launch of the service. Unless otherwise stated, any fees in relation to a deal are quoted in the
+                    currency of that deal. You are responsible for paying all fees associated with using the Website and VentureCrowd’s services, including all applicable taxes
+                    (including any goods and services or value added taxes, which will be added to amounts billed to you, if applicable). VentureCrowd’s fees are set out in the
+                    Capital Allocation Agreement that you must enter into prior to your deal being launched on the Website.
+                  </li>
+                  <li>
+                    VentureCrowd shall not be liable for the interactions with any organisations and/or individuals found on or through the VentureCrowd service. This includes, but
+                    is not limited to, delivery of goods and services, and any other terms, conditions, warranties or representations associated with listings on the Website.
+                  </li>
+                </ol>
+                <h5><b>Risk Warning</b></h5>
+                <ol start="32">
+                  <li>
+                    By accessing the Website and investing in any deal on the Website, you acknowledge that you understand and accept the risks involved in any investment and that
+                    VentureCrowd has disclosed and provided the following risk warnings:
+                  </li>
+                </ol>
+                <p>(a) Investing in early stage securities is a high risk strategy which means you can potentially lose all the money you invest;</p>
+                <p>(b) Most investors in this asset class try to diversify their allocation across many companies in order to mitigate or reduce risk;</p>
+                <p>
+                  (c) VentureCrowd makes no representation about, nor gives any guarantee of, future performance, future profitability, payment of dividends or return of capital in
+                  respect of any company listed on VentureCrowd.
+                </p>
+                <p>
+                  (d) VentureCrowd’s initial screening of companies applying for funding on the VentureCrowd platform is limited to verifying that the founders are who they say
+                  they are and that the company is eligible for VentureCrowd funding. This screening is not a recommendation to invest and should not be mistaken for due diligence.
+                </p>
+                <p>
+                  (e) VentureCrowd recommends that you assess your appetite for risk independently and consult with your tax, legal and/or financial planning advisors before making
+                  a decision to invest through VentureCrowd.
+                </p>
+                <ol start="33">
+                  <li>Some of the risks involved included, but are not limited to, the following categories:</li>
+                </ol>
+                <p>
+                  (a) <b>General economic conditions:</b> General economic conditions (including interest rates, exchange rates and underlying inflation in Australia and
+                  internationally) may affect the performance of an investment. These may impact on financing costs (both in respect of the operation of companies and to potential
+                  purchasers of the companies) and the state of the market for stock exchange floats or trade sales. Downturns in economies usually have a negative effect on the
+                  earnings of companies and the availability of suitably valued exits.
+                </p>
+                <p>
+                  (b) <b>Regulatory changes:</b> Regulatory changes have a significant influence on the outlook for companies and the returns to investors. Prospective investors
+                  should be aware that the consequences of regulatory change or additional regulation on the VentureCrowd investment structure or equity based crowd funding
+                  generally may have adverse consequences for investments made through VentureCrowd.
+                </p>
+                <p>
+                  (c) <b>Tax changes:</b> Changes to legislation or subsequent decisions of the Australian Taxation Office may impair the tax status of the VentureCrowd investment
+                  structure, the net proceeds of sale of investments or the availability of capital gains tax concessions.
+                </p>
+                <p>
+                  (d) <b>Concentration and diversification:</b> A large proportion of startups fail. A large percentage of the returns in a diversified portfolio of startups is
+                  often generated by a small percentage of those startups. Investments through VentureCrowd should only be made as part of a diversified portfolio. VentureCrowd
+                  generally recommends you assign the investment funds you wish to allocate to early stage securities across a diversified selection of companies, rather than
+                  invest it all in one or two companies. Any funds you invest in early stage securities should represent a small proportion of your total investable capital.
+                </p>
+                <p>
+                  (e) <b>No assurance of investment return:</b> Investing in early stage securities may result in the loss or some or all of your investment capital. No assurance
+                  of investment return is given to investors. The return on investment will depend on the success of the specific investments you select, which cannot accurately be
+                  forecast. Returns to investors, if any, should not be expected in the short term or at regular intervals.
+                </p>
+                <p>
+                  (f) <b>Speculative investment:</b> Investment in early stage securities through VentureCrowd should be regarded as speculative, involves a high level of risk and
+                  may be subject to a number of conflicts of interest relating to other venture capital funds managed by Artesian. Investments should be considered only by
+                  sophisticated or professional investors able to sustain a loss of all or part of the sum invested and who do not require certain or predictable income flows or
+                  liquidity in their investments.
+                </p>
+                <p>
+                  (g) <b>Conflicts of interest:</b> Artesian Venture Partners, a shareholder in VentureCrowd, and its affiliates may manage other funds that may buy or sell similar
+                  investments as those listed on VentureCrowd. In managing the investments of these funds, conflicts of interest may arise. There is nothing to prohibit Artesian or
+                  its affiliates from engaging in any other existing or future business, and Artesian and its affiliates may provide investment management services to other
+                  clients. Artesian and VentureCrowd are represented by the same legal counsel. Therefore, the terms relating to the relationship between those parties were not
+                  negotiated at arm’s length. In the event that a conflict of interest arises, Artesian and VentureCrowd will attempt to minimise or resolve such conflict, to the
+                  extent feasible, in a fair and equitable manner.
+                </p>
+                <p>
+                  (h) <b>Dilution and preferential terms:</b> Companies listed on VentureCrowd may be forced to seek extra funding in return for equity participation after you have
+                  made an investment in that company. If you are unable to participate in that further funding round your interest in the company will be diluted. The price of any
+                  new equity participation may be cheaper than the price which was paid by you, thereby favouring new investors, to the detriment of your investment. New equity may
+                  also have preferential terms favouring new investors to the detriment of your investment.
+                </p>
+                <p>
+                  (i) <b>Heavy reliance on founders:</b> The success of private enterprises of the type listed on VentureCrowd is often reliant on the efforts of the founders or a
+                  small management team. Their continued good performance and commitment to the enterprise is highly important for its future success.
+                </p>
+                <p>
+                  (j) <b>Most favoured deal terms:</b> Where a fundraising campaign is typically lead by an external investor(s), VentureCrowd investors invest on the basis of a
+                  ‘most favoured terms’ clause. This means our investors have the benefit of the most favourable terms the company negotiates with the lead external investor(s). In
+                  this situation, VentureCrowd does not negotiate those terms on your behalf. If there is no lead external investor, the VentureCrowd team will negotiate the deal
+                  terms directly with the company without consultation or the requirement for the approval of the investors.
+                </p>
+                <p>
+                  (k) <b>Investments in early stage business:</b> Early stage companies may not have consistent sales or income. They may also have difficulty attracting management
+                  and employees with the right mix of skills and expertise, especially at the various stages in their life cycles when different abilities are required. These
+                  companies may have a high risk of business failure. It is likely that a proportion of these investments will fail and that some of your investments will
+                  experience losses.
+                </p>
+                <p>
+                  (l) <b>Lack of management control:</b> Investors have no right to control the operations of the VentureCrowd trust through which you invest in an underlying
+                  company nor to control the underlying company itself. Investors must rely on VentureCrowd to manage the affairs of the relevant trust. VentureCrowd has wide
+                  latitude in making decisions in respect of the investments made.
+                </p>
+                <p>
+                  (m) <b>No liquidity:</b> An investor cannot withdraw any money invested through a VentureCrowd trust and may only receive distributions made following the receipt
+                  of income from, or the divestment of, the underlying company. There is no requirement for VentureCrowd, nor any other person to redeem or buy back or facilitate
+                  the sale or transfer of any interest in a VentureCrowd trust.
+                </p>
+                <p>
+                  (n) <b>Long term investment:</b> Due to the early stage status of the startups listed on VentureCrowd investors must be prepared to have a long term investment
+                  horizon.
+                </p>
+              </div>
+              <div id="tab-content-2" class="tab-content-block">
+                <h2 class="mb-3">Privacy</h2>
+                <h5><b>Purpose</b></h5>
+                <p>
+                  This privacy policy applies to VentureCrowd Pty Ltd (ABN 40 166 598 849, AFSL 503 381) (as the context requires We, Our or Us) in relation to Our operations in Australia. This policy explains how We handle personal information and comply with the requirements of the Australian Privacy Act 1988 (Cth) (Privacy Act). If you have any further questions in relation to this policy, please contact Us via email to hello@venturecrowd.com.au.
+                </p>
+                <p>
+                  This policy relates to Our collection and handling of personal information that is covered by the Privacy Act. It is not intended to cover categories of personal information that are not covered by the Privacy Act.
+                </p>
+                <p>
+                  By using this website, you are accepting the practices described in this privacy policy. These practices may be changed, but any changes will be posted and changes will only apply to activities and information on a going forward, and not retroactive, basis. You are encouraged to review the privacy policy whenever you visit the site to make sure that you understand how any personal information you provide will be used.
+                </p>
+                <h5><b>Information We may collect from you</b></h5>
+                <p>We may collect and process the following data about you:</p>
+                <ul>
+                  <li>information that you provide by filling in forms on Our site available from time to time. This includes information provided at the time of registering to become an investor or to apply for funding through Our site, subscribing to Our service, posting material or requesting further services. We may also ask you for information when you contact Us via Our site;
+                 </li>
+                  <li>if you contact Us, We may keep a record of that correspondence;</li>
+                  <li>we may also ask you to complete surveys that We use for research purposes, although you do not have to respond to them;</li>
+                  <li>details of transactions you carry out through Our site and of the fulfillment of your transactions; and</li>
+                  <li>
+                    details of your visits to Our site including, but not limited to, traffic data, location data, weblogs and other communication data, whether this is required for Our own billing purposes or otherwise and the resources that you access.
+                  </li>
+                </ul>
+                <h5><b>IP addresses</b></h5>
+                <p>We may collect information about your computer, including where available your IP address, operating system and browser type, for system administration and to report aggregate information to Our advertisers. This is statistical data about Our users’ browsing actions and patterns, and does not identify any individual.</p>
+                <h5><b>Cookies</b></h5>
+                <p>Our website uses cookies to distinguish you from other users of Our website. This helps Us to provide you with a good experience when you browse Our website and also allows Us to improve Our site.
+                </p>
+                <p>
+                  Our website uses Google Analytics and other Google services that transmit aggregate website traffic data. Google Analytics does not identify individual users or associate your IP address with any other data held by Google. We use reports provided by Google Analytics to help us understand website traffic and webpage usage. In addition, we may activate Google Advertising features, which may collect data about Our website traffic via
+                  <a href="http://www.google.com/policies/technologies/types/">Google advertising cookies</a>.
+                </p>
+                <p>In addition, we may use remarketing features to advertise Our website across the Internet, in particular on the Google Search and Display Network along with their partner sites. Google may display ads to you based on what parts of Our website you have viewed. This cookie does not in any way identify you or give access to your computer or mobile device.</p>
+                <p>
+                  By using this website, you consent to the processing of data about you by Google in the manner described in
+                  <a href="http://www.google.com/policies/privacy/">Google’s Privacy Policy- external site</a> and for the purposes set out above. You can opt out of Google Analytics if you disable or refuse the cookie, disable JavaScript, or 
+                  <a href="https://tools.google.com/dlpage/gaoptout">use the opt-out service provided by Google- external site</a>.
+                </p>
+                <p>
+                  Our website uses interfaces with social media sites such as Facebook, LinkedIn, Twitter and others. If you choose to “like” or “share” information from this website through these services, you should review the privacy policy of that service. If you are a member of a social media site, the interfaces may allow the social media site to connect your visits to this site with other Personal Information.
+                </p>
+                <p>
+                  We may use additional analytics tools to enhance contacts management, email distribution, heat mapping and sessions recordings. All sensitive data is kept confidential and/or anonymous were relevant and never used for individual identification purposes.
+                </p>
+                <h5><b>Where We store your personal data</b></h5>
+                <p>
+                  The data that We collect from you may be transferred to, and stored in Australia and overseas. In the event that any data is stored overseas, it may also be processed by staff operating outside Australia who work for Us or for one of Our suppliers. Such staff may be engaged in, among other things, the fulfillment of your order, the processing of your payment details and the provision of support services.
+                </p>
+                <h5><b>Protection of data</b></h5>
+                <p>
+                  All information you provide to Us is stored on Our secure servers. Any payment transactions will be encrypted. Where We have given you (or where you have chosen) a password which enables you to access certain parts of Our site, you are responsible for keeping this password confidential. We ask you not to share a password with anyone.
+                </p>
+                <p>
+                 Unfortunately, the transmission of information via the internet is not completely secure. Although We will do Our best to protect your personal data, We cannot guarantee the security of your data transmitted to Our site. Any transmission is at your own risk. Once We have received your information, We will use strict procedures and security features to try to prevent unauthorised access.
+                </p>
+                <h5><b>Uses made of the information</b></h5>
+                <p>We use information held about you in the following ways:</p>
+                <ul>
+                  <li>to ensure that content from Our site is presented in the most effective manner for you and for your computer;</li>
+                  <li>to provide you with information, products or services that you request from Us or which We feel may interest you, where you have consented to be contacted for such purposes;
+                  </li>
+                  <li>to deliver marketing and advertising content on Our site as well as on any of Our partner networks, advertisers and affiliates, as described in our Cookies policy;
+                  </li>
+                  <li>to be used or disclosed to advise you of offers, products and services that may be of interest to you by means of direct marketing. Offers, products and services will be delivered via, but not limited to:
+                    <ul>
+                      <li>email</li>
+                      <li>SMS messages</li>
+                      <li>mail</li>
+                      <li>push notifications on your mobile device (if you have these enabled on your device)</li>
+                    </ul>
+                    If you do not want your personal information to be used for direct marketing purposes, please contact us via email at <a href="mailto:hello@venturecrowd.com.au">hello@venturecrowd.com.au</a> so we can action this request. This is referred to as ‘opting out’ of direct marketing.
+                  </li>
+                  <li>to carry out Our obligations arising from any contracts entered into between you and Us;</li>
+                  <li>to allow you to participate in interactive features of Our products and services, when you choose to do so; and</li>
+                  <li>to notify you about changes to Our services or products.</li>
+                </ul>
+                <p>We may also use your data, or permit selected third parties to use your data, to provide you with information about services and products which may be of interest to you and We or they may contact you about these.
+                </p>
+                <h5><b>Disclosure of your information</b></h5>
+                <p>
+                  We may disclose your personal information to any member of Our group, which means Our subsidiaries, Our ultimate holding company and its subsidiaries (as the case
+                  may be), as defined in the <i>Corporations Act 2001</i> (Cth).
+                </p>
+                <p>We do not routinely disclose personal information to other organisations unless:</p>
+                <ul>
+                  <li>required by law;</li>
+                  <li>use or disclosure is permitted by this policy;</li>
+                  <li>We believe it necessary to provide you with a product or service which you have requested, or to contact you about a product or service which you have expressed interest;</li>
+                  <li>to protect the rights, property or personal safety of any member of the public or one of our customers or in Our interests;</li>
+                  <li>some or all of Our assets or Our operations are or may be transferred to another party as part of the sale of some or all of Our business; or</li>
+                  <li>you give your consent.</li>
+                </ul>
+                <p>
+                  We may also share non-personal, de-identified and aggregated information for research or promotional purposes. Except as set out in this policy, We do not sell or
+                  trade personal information to third parties, or allow such third parties to use that personal information.
+                </p>
+                <h5><b>Your rights</b></h5>
+                <p>
+                  You have the right to ask Us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if We intend to
+                  use your data for such purposes or if We intend to disclose your information to any third party for such purposes. You can exercise the right at any time by
+                  contacting Us at admin@venturecrowd.com.au.
+                </p>
+                <p>
+                  Our site may, from time to time, contain links to and from the websites of Our partner networks, advertisers and affiliates. If you follow a link to any of these
+                  websites, please note that these websites have their own privacy policies and that We do not accept any responsibility or liability for these policies. Please
+                  check these policies before you submit any personal data to these websites.
+                </p>
+                <h5><b>Commitment to data security</b></h5>
+                <p>
+                  Your personal identifiable information is kept secure. Only authorised employees, agents and contractors (who have agreed to keep information secure and
+                  confidential) have access to this information.
+                </p>
+                <h5><b>Access to information</b></h5>
+                <p>
+                  We will provide access to personal information upon request by an individual, except in the limited circumstances in which it is permitted for Us to withhold this
+                  information (for instance, where granting access would infringe another person’s privacy).
+                </p>
+                <p>
+                  When you make a request to access personal information, We will require you to provide some form of identification (such as a driver’s license or passport) so We
+                  can verify that you are the person to whom the information relates. In some cases We may also request an administrative fee to cover the cost of access.
+                </p>
+                <p>
+                  If at any time you want to know what personal information We hold about you, you may contact us by writing to
+                  <a href="mailto:hello@venturecrowd.com.au">hello@venturecrowd.com.au</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ./Body -->
+
+
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

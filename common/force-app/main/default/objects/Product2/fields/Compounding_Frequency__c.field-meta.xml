@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compounding_Frequency__c</fullName>
+    <description>This defines how the interest is going to be paid to the investor</description>
+    <inlineHelpText>This defines how the interest is going to be paid to the investor</inlineHelpText>
+    <label>Compounding Frequency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Compounding_Frequency</valueSetName>
+    </valueSet>
+</CustomField>

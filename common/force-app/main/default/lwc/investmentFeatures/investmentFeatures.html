@@ -1,0 +1,23 @@
+<!--
+
+-->
+<template>
+    <section class="component-container container p-4" style={getSectionStyle}>
+        <template if:true={displayFeatures}>
+            <template for:each={features} for:item="feature">
+                <div class="row mb-3" key={feature.Id}>
+                    <template for:each={feature.feature} for:item="featureItem">
+                        <div class={getGridClass} key={featureItem.feature}>
+                            <div class="label vc-font-suisseIntlBold">
+                               {featureItem.feature}
+                            </div>
+                            <div class="context vc-font-suisseIntlLight">
+                                {featureItem.value}
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </template>
+    </section>
+</template>

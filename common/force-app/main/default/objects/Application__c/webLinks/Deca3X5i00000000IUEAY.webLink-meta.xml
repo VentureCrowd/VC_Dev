@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deca3X5i00000000IUEAY</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Wholesale Certificate request form</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &apos;/s&apos;,&apos;/apex/dfsle__embeddedsigning&apos;, $Site.Prefix +&apos;/apex/dfsle__embeddedsigning&apos;), null, [sId = Application__c.Id, sendingExperience = &apos;null&apos;, isEmbedded = true, templateId = &apos;a3X5i00000000IUEAY&apos;, recordId = Application__c.Id, title = &apos;Wholesale Certificate request form&apos;])}</url>
+</WebLink>

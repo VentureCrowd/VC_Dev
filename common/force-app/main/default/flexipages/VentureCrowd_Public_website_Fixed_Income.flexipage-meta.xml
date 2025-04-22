@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1719f319-6593-43da-9cf3-aeb4b44435bd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9741a49f-c46f-45d2-b906-57a751c07507</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000005q9vW&amp;d=%2Fa%2F5i000000PPP9%2F7gKAp1K1e7tRJNLwfZ2WR2V75o4GZ4SA3_9c2.7qj2A&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>How Fixed Income Products Can Provide an Alternative Worth Considering During Market Downturns</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1719f319-6593-43da-9cf3-aeb4b44435bd</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>71dbb1c8-8f58-484e-b426-ded0902cf002</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>e23837f3-a925-4723-96bc-1cf14aec0286</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>d9c69</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-3de6b841-b5ec-42a6-b8ba-ce07d8478abd</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+	&lt;p&gt;“Market volatility”, “downturn”, “inflation”, “recession” – these buzzwords aren’t exactly music to the ears of an investor.&lt;/p&gt;
+    &lt;p&gt;Uncertainty always exists in financial markets. It’s, dare we say, &lt;i&gt;“the name of the game”&lt;/i&gt;. But, just because it exists, doesn’t mean you can’t generate a steady income during a market downturn.&lt;/p&gt;
+	&lt;p&gt;Enter: fixed income products. Fixed income is an investment approach focused on preserving capital and income. It allows you to gain a more reliable income stream with lower risk than, say, investing in stocks. Allocating fixed income as part of your diversified investment portfolio can play a vital role in managing your total portfolio risk.&lt;/p&gt;
+
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.LearnFixedIncome1.1}&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>71dbb1c8-8f58-484e-b426-ded0902cf002</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>eachLinkTextColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectText</name>
+                    <value>How to invest in the property market without buying a property</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectURL</name>
+                    <value>https://www.google.com/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Recent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleTextColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentName>blogSidebarNavigation</componentName>
+                <identifier>blogSidebarNavigation</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>e23837f3-a925-4723-96bc-1cf14aec0286</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>965e6685-e7f3-4b6b-9efe-a2710f7c47c0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-84ce7a62-1773-423f-aea3-2e609e51a8b9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+&lt;br&gt;
+&lt;h2&gt;Potential benefits of fixed-income products&lt;/h2&gt;
+&lt;/div&gt;
+&lt;br&gt;
+    &lt;p&gt;As investors look for alternatives to today’s volatile assets for their investment portfolios, private markets are providing a beacon of hope. Fixed income products is an alternative investment that carries a range of benefits, including:&lt;/p&gt;
+    &lt;br&gt;
+    &lt;h3&gt;Reduced risk&lt;/h3&gt;
+    &lt;p&gt;Fixed income is widely known to carry less risk than stocks, especially during a market downturn. The term “fixed” in and of itself means that the income from the investment is &lt;i&gt;fixed&lt;/i&gt; or set at a particular figure that does not vary like a dividend or rise with the rate of inflation. This means fixed-income products are generally less sensitive to macroeconomic or geopolitical events and therefore provides diversification from stock market risk.&lt;/p&gt;
+	&lt;p&gt;Allocating a portion of your portfolio to fixed-income investments can potentially help offset losses during market volatility or uncertainty.&lt;/p&gt;
+    &lt;br&gt;
+    
+    &lt;h3&gt;Capital preservation&lt;/h3&gt;
+    &lt;p&gt;Preservation of capital is an investment strategy where the goal is to preserve capital and reduce loss in a portfolio. Investors who are close to retirement age may benefit from this aspect of fixed income as they often rely on their investments to provide income.&lt;/p&gt;
+    &lt;br&gt;
+    
+    &lt;h3&gt;Steady source of income&lt;/h3&gt;
+    &lt;p&gt;Fixed income investments can help you to generate a more steady income. Fixed income products provide investors with a stream of &lt;a href=&quot;https://www.investopedia.com/terms/f/fixed-incomesecurity.asp&quot; target=&quot;_blank&quot;&gt;fixed periodic interest payments&lt;/a&gt; and the eventual return of capital upon maturity. Investors looking to generate a passive income can benefit from this.&lt;/p&gt;
+    &lt;br&gt;
+    
+     &lt;h3&gt;Solid returns&lt;/h3&gt;
+    &lt;p&gt;Some fixed interest products offer the potential for greater returns. Investors can seek higher returns by assuming more credit risk or interest rate risk.&lt;/p&gt;
+    &lt;br&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>965e6685-e7f3-4b6b-9efe-a2710f7c47c0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d741a301-ec9c-412d-a0f2-ccad310c44af</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1c5cca94-925f-4623-9fd6-e5898cb04608</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+&lt;br&gt;
+&lt;h2&gt;Passive income options for an investor&lt;/h2&gt;
+&lt;/div&gt;
+&lt;br&gt;
+    &lt;p&gt;Passive income is defined as a regular flow of income/money that requires little ongoing time or effort to earn and maintain. There are several &lt;a href=&quot;https://www.fool.com.au/definitions/passive-income/&quot; target=&quot;_blank&quot;&gt;passive income options&lt;/a&gt; in Australia including interest from fixed-income investments, dividends from shares and rental income from investment properties.&lt;/p&gt;
+	&lt;p&gt;At Venture Crowd, we offer a passive income option known as Preference Shares. This type of fixed income product pays monthly dividends, enabling investors to receive a determined target rate of return that is usually paid monthly, while also having a determined time period for maturation of the investment, usually around 12 months.&lt;/p&gt;
+	&lt;p&gt;Preference shares can provide a higher rate of return than bonds and, depending on the product, &lt;a href=&quot;https://www.bankrate.com/investing/common-vs-preferred-stocks/&quot; target=&quot;_blank&quot;&gt;pontentially lower risk&lt;/a&gt; than equity shares.&lt;/p&gt;
+	&lt;p&gt;We offer two alternative assets in our platform that are worth considering if you’re looking at a passive income option:&lt;/p&gt;   
+		&lt;p&gt;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/venturecrowd-services-australia&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;&lt;u&gt;VentureCrowd Services Australia:&lt;/u&gt;&lt;/b&gt;&lt;/a&gt; Opportunity to invest directly in out platform and  earn monthly income at 15% p.a. paid monthly in arrears (net of fees).&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property/glenvale-preference-shares&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;&lt;u&gt;Glenvale, Toowoomba Property Fund:&lt;/u&gt;&lt;/b&gt;&lt;/a&gt; Opportunity to diversify your portfolio into property without the massive entry fees of stamp duty, deposit etc. This property fund pays a passive income of 12% p.a. paid monthly (net of fees).&lt;/p&gt;
+			&lt;p&gt;Private credit and private debt are becoming &lt;a href=&quot;https://www.asianinvestor.net/article/private-debt-promises-better-gains-for-asset-owners-in-low-yield-environment/478463&quot; target=&quot;_blank&quot;&gt;more accessible.&lt;/a&gt; Asset owners are recognising both the better returns and reduced risk when allocating their fixed income to private credit.&lt;/p&gt;
+			&lt;p&gt;There are basically two ways to invest in our alternative assets: you are either investing in equity (shares/ownership in a private company) or credit/debt (which is investing in a private fixed income product that will pay the investor back in dividends).&lt;/p&gt;
+
+
+&lt;br&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d741a301-ec9c-412d-a0f2-ccad310c44af</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f3449cc8-6e8c-4ba0-9956-335ab645c2db</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8f7ee46c-1055-4a9b-b71f-2797a81d574a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+&lt;br&gt;
+&lt;h2&gt;Who can benefit from passive income options&lt;/h2&gt;
+&lt;/div&gt;
+&lt;br&gt;
+    &lt;p&gt;If you are a wholesale investor interested in either diversifying your portfolio into property and/or Venture capital, or, are simply looking to earn passive income via a fixed-income product, then you may benefit from this asset class.&lt;/p&gt;
+	&lt;p&gt;Similarly, if you have a wholesale investor certification, have assets of AUD$2.5 million or have a gross income of the last 2 financial years of at least AUD$250,000p.a, this is probably applicable to you.&lt;/p&gt; 
+	&lt;p&gt;Additionally, if you are an experienced investor with multiple investments in Venture capital or property, you may be qualified by our team as a wholesale investor after reviewing your documentation.&lt;/p&gt;
+    &lt;br&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f3449cc8-6e8c-4ba0-9956-335ab645c2db</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0b79a35c-0672-4335-8a19-8ca970ad6828</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-7e0c2236-fda7-4383-bdb1-d66693f04210</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+&lt;br&gt;
+&lt;h2&gt;Looking for certainty in an uncertain market?&lt;/h2&gt;
+&lt;/div&gt;
+&lt;br&gt;
+    &lt;p&gt;Worried about the current market and want to know your options to better leverage your investments? Watch our short video about &lt;a href=&quot;https://www.youtube.com/watch?v=uDb3-Qjq6ik&quot; target=&quot;_blank&quot;&gt;Dealing with Uncertainty&lt;/a&gt; or our &lt;a href=&quot;https://www.youtube.com/watch?v=j1C-RBb_GjI&quot; target=&quot;_blank&quot;&gt;Navigating the 2022 Market Webinar&lt;/a&gt;  to help you clear the fog amid rising inflation and interest rates. 
+&lt;/p&gt;
+
+&lt;br&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>0b79a35c-0672-4335-8a19-8ca970ad6828</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9553351f-9c81-4c31-a81d-5e892577a447</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1e298e78-8f18-4e92-81a3-59c7a75bc82a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>currentBlogSeqNumber</name>
+                    <value>4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>nextPostButtonLabel</name>
+                    <value>Next Post</value>
+                </componentInstanceProperties>
+                <componentName>blogNextPost</componentName>
+                <identifier>blogNextPost</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>9553351f-9c81-4c31-a81d-5e892577a447</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9741a49f-c46f-45d2-b906-57a751c07507</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9741a49f-c46f-45d2-b906-57a751c07507&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1719f319-6593-43da-9cf3-aeb4b44435bd&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-3de6b841-b5ec-42a6-b8ba-ce07d8478abd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;3de6b841-b5ec-42a6-b8ba-ce07d8478abd&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;71dbb1c8-8f58-484e-b426-ded0902cf002&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;e23837f3-a925-4723-96bc-1cf14aec0286&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;d9c69&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-84ce7a62-1773-423f-aea3-2e609e51a8b9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;84ce7a62-1773-423f-aea3-2e609e51a8b9&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;965e6685-e7f3-4b6b-9efe-a2710f7c47c0&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1c5cca94-925f-4623-9fd6-e5898cb04608</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1c5cca94-925f-4623-9fd6-e5898cb04608&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;d741a301-ec9c-412d-a0f2-ccad310c44af&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8f7ee46c-1055-4a9b-b71f-2797a81d574a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8f7ee46c-1055-4a9b-b71f-2797a81d574a&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f3449cc8-6e8c-4ba0-9956-335ab645c2db&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-7e0c2236-fda7-4383-bdb1-d66693f04210</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;7e0c2236-fda7-4383-bdb1-d66693f04210&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0b79a35c-0672-4335-8a19-8ca970ad6828&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1e298e78-8f18-4e92-81a3-59c7a75bc82a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1e298e78-8f18-4e92-81a3-59c7a75bc82a&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9553351f-9c81-4c31-a81d-5e892577a447&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Uncertainty always exists in financial markets. It’s, dare we say, “the name of the game”. But, just because it exists, doesn’t mean you can’t generate a steady income during a market downturn.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>How Fixed Income Products Can Provide an Alternative Worth Considering During Market Downturns</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Fixed Income</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

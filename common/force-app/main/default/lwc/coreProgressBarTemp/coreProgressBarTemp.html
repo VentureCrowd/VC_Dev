@@ -1,0 +1,21 @@
+<template>
+    <div lwc:if={renderOverTarget} class="progressBar-container">
+        <div class="target-numbers-over">
+            <h3>${formattedRaisedAmount}</h3>
+            <p>{progressPercentage}% OVER TARGET</p>
+        </div>
+        <div class="progress-bar-over" style={targetTextPosition}>
+            <div class="progress-bar-target" style={targetPosition}></div>
+        </div>
+    </div>
+    <div lwc:else class="progressBar-container">
+        <div class="target-numbers">
+            <h3>${formattedRaisedAmount}</h3>
+            <div class="min-target">
+                <p>${formattedMinimumTarget} TARGET</p>
+            </div>
+        </div>
+        <div class="progress-bar-base" style={percentageBar}></div>
+    </div>
+
+</template>

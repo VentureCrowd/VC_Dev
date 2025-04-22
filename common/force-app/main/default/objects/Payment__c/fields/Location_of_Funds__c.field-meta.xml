@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_of_Funds__c</fullName>
+    <description>Indicates where the funds are currently located or held.</description>
+    <inlineHelpText>Select the appropriate option to indicate the current location of the payment funds.</inlineHelpText>
+    <label>Location of Funds</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Received</fullName>
+                <default>true</default>
+                <label>Not Received</label>
+            </value>
+            <value>
+                <fullName>Monoova</fullName>
+                <default>false</default>
+                <label>Monoova</label>
+            </value>
+            <value>
+                <fullName>VCN Accounts</fullName>
+                <default>false</default>
+                <label>VCN Accounts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<aura:component extends="forceCommunity:navigationMenuBase" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:handler event="aura:doneRendering" action="{!c.doneRendering}"/>
+    <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical position-relative nav-wrapper">
+        <ul >
+            <aura:iteration items="[{'label':'My Portfolio','id':'my-portfolio','auraId':'my-portfilioi'},{'label':'My Profile','id':'profile','auraId':'profilei'},{'label':'My Entities','id':'my-entities','auraId':'my-entitiesi'},{'label':'My Companies','id':'my-companies','auraId':'my-companies'}]" var="item">
+                <li>
+                    <div aura:id="{!item.auraId}" onclick="{!c.onClick}" onmouseover="{!c.onHover}" onmouseout="{!c.onHoverOut}">
+                        <a href="javascript:void(0);"  id="{!item.id}" target = "_self"  class="slds-navigation-list--vertical__action slds-text-link--reset">
+                            <aura:if  isTrue="{!item.label == 'My Portfolio'}">
+                                <img src="{!$Resource.Portfolio}" style="padding:5px" class="vc-icons"/>
+                            </aura:if>
+                            <aura:if  isTrue="{!item.label == 'My Profile'}"> 
+                                <img src="{!$Resource.Profile}" style="padding:5px" class="vc-icons"/>
+                            </aura:if>
+                            <aura:if  isTrue="{!item.label == 'My Entities'}">
+                                <img src="{!$Resource.Entities}" style="padding:5px" class="vc-icons"/>
+                            </aura:if>
+                            <aura:if  isTrue="{!item.label == 'My Companies'}">
+                                <img src="{!$Resource.Companies}" style="padding:5px" class="vc-icons"/>
+                            </aura:if>
+                            <Span class="vc-menu-label" id="{!item.id}">{!item.label}</Span>
+                        </a>
+                    </div>
+                </li>
+            </aura:iteration>
+        </ul>   
+        <div class="sidebar-footer p-4">
+            <div class="button-container mb-3"><a onclick="{!c.logout}">Logout</a></div>
+        </div>
+    </div>
+</aura:component>

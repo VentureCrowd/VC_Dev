@@ -1,0 +1,24 @@
+.form-wrapper{
+    padding: var(--form-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.form-header, .form-footer{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-footer slot{
+    display: flex;
+    align-items: center;
+}
+
+.form-footer .actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--space-md);
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blog_Sequesnce__c</fullName>
+    <description>This field is useful for sorting after date, for example, if more than one blog post on the same day,  this is the second filter that gives clients the ability to show blogs in the order they want. sorting should be in descending. This field also determines next blog post</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Blog  sequence number for sorting in descending</inlineHelpText>
+    <label>Blog Sequesnce #</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>true</unique>
+</CustomField>

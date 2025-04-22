@@ -1,0 +1,70 @@
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+.container-fluid {
+    position: relative;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.1em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .headline {
+        padding: 100px 15px;
+    }
+}
+
+.tags a {
+    color: #000;
+    background-color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    border: inherit;
+    padding: 10px 30px;
+    margin: 0 7px;
+    transition: all 300ms ease;
+    margin-bottom: 10px;
+    border-radius: 40px;
+}
+
+.tags a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #D95BAA;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    transition: all 300ms ease;
+}
+
+.background:before {
+    content: '';
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

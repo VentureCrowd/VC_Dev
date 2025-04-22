@@ -1,0 +1,51 @@
+<template>
+    <!-- Modal Wrapper -->
+    <div class="modal-wrapper hidden">
+         <!-- Core Modal -->
+        <section class="core-modal">
+            <!-- Close Button -->
+            <div lwc:if={showButton} class="actions">
+                <a onclick={handleClose}>
+                    <c-core-icon 
+                    icon-name="exit"
+                    size="xlarge"
+                    class="exit-button">
+                    </c-core-icon>
+                </a>
+            </div>
+           
+            <!-- Header Slot -->
+            <div class="header">
+                <slot name="header">
+
+                </slot>
+               
+            </div>
+
+            <!-- Body Slot -->
+            <slot name="body">
+
+            </slot>
+
+            <!-- Footer Slot -->
+            <slot name="footer">
+
+            </slot>
+        </section>
+    </div>
+
+    <!-- Core Button Component -->
+    <template lwc:if={showOpenButton}>
+        <c-core-button
+        button-size={buttonSize}
+        label={label}
+        icon={icon}
+        icon-position={iconPosition}
+        variation={variation}
+        mode={mode}
+        disabled={disabledBool}
+        onbuttonclick={handleClick}>
+        </c-core-button>
+    </template>
+    
+</template>

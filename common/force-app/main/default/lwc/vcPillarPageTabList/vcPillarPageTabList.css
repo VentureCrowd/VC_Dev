@@ -1,0 +1,148 @@
+/* .overallContainer  {
+    max-width: 720px;
+    width: 100%;
+    /* padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem); 
+    margin-right: auto;
+    margin-left: auto;
+} */
+.tab-height {
+    height: 80px;
+}
+.tab-card {
+    background-color: #eaeff0;
+    border-radius: 8px;
+}
+.tab-card.active {
+    background-color: #ffffff;
+    border: 2px solid #36d5d1;
+    border-radius: 8px;
+}
+
+.selected {
+    display: block;
+}
+
+.deselected {
+    display: none;
+}
+
+.quicklinks {
+    color:#7455a6;
+    font-size: 14px;
+}
+
+.column1 ul li article{
+    background-color: #eaeff0;
+    border-radius: 8px;
+    text-align: left;
+    color: black;
+    height: 80px;
+    padding-top: 24px;
+    margin-bottom: 14px;
+    padding-left: 30px;
+}
+.column1-clicked {
+    background-color: #ffffff;
+}
+
+.column1 ul li article.active {
+    background-color: #ffffff;
+    /* border-color: #36d5d1; */
+    border: 2px solid #36d5d1;
+}
+
+tabName {
+    font-weight:bold;
+    font-size: 20;
+}
+
+/* .container, .container-md, .container-sm {
+max-width: 720px;
+}
+.container, .container-sm {
+max-width: 540px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+width: 100%;
+padding-right: var(--bs-gutter-x,.75rem);
+padding-left: var(--bs-gutter-x,.75rem);
+margin-right: auto;
+margin-left: auto;
+} 
+
+.component-container  {
+    padding-top: clamp(39px,5vw, 5vw);
+    padding-bottom: clamp(39px,5vw, 5vw);
+}
+
+.component-container.component-bg-dark-navy {
+    background-color: #0F141E;
+    color: #ffffff;
+}
+
+.component-container.component-bg-gray {
+    background-color: #f7f7f7;
+    color: #212529;
+}
+
+.component-container.component-bg-white {
+    background-color: #FFF;
+    color: #212529;
+}
+
+h3.tab-heading {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.tabset-content {
+    font-size: 18px;
+}
+
+.tabset-content a {
+    font-weight: 700;
+    color: #844CEA;
+    text-decoration: underline;
+}
+
+.tab-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-menu ul li {
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+    .tab-menu ul li {
+        width: 100%;
+    }
+}
+
+.tab-menu ul li a {
+    display: block;
+    font-size: 24px;
+    color: #add !important;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    padding: 25px 20px;
+    transition: all 300ms ease;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tab-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.tab-menu ul li a.active {
+    color: #2ac4ea !important;
+    background: linear-gradient(to bottom right, #11161f, #213344);
+    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
+}
+
+*/

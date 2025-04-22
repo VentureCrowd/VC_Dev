@@ -1,0 +1,44 @@
+:host {
+  /* Removes SF Card Header padding/margin top/bottom only */
+  --slds-c-card-header-spacing-block-end: 0px;
+  --slds-c-card-header-spacing-block-start: 0px;
+  
+    /* Removes SF Card body padding/margin top/bottom only */
+  --slds-c-card-body-spacing-block-start: 0px;
+  --slds-c-card-body-spacing-block-end: 0px;
+}
+.edit-button {
+    color: purple;
+    /* margin-left: 10px; */
+    text-decoration: underline;
+    font-size: small;
+}
+
+.slds-media {
+    border-bottom: 1px solid;
+    
+}
+
+.circular-photo {
+    border-radius : 50%;
+    height: 10rem;
+    width: 10rem;
+    max-width: initial;
+}
+
+.slds-button_neutral:hover {
+  color: #D95BAA !important;
+  border-color: #D95BAA !important;
+}
+
+.slds-button_neutral{
+  background-color:transparent !important;
+  color:#000 !important;
+  border: 1px solid #000 !important;
+}
+
+/* .lc-title {
+    margin-right: 21px;
+    margin-left: 20px;
+    border-bottom:1px solid;
+} */

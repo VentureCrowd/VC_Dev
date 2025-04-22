@@ -1,0 +1,205 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <!-- <c:VC_CF_Menu /> -->
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+                            <a href="#">Property</a>
+                            <a href="#">Webinar</a>
+                        </div>
+                        <h1 class="mt-4">Webinar Recording: Learn how the Park Ridge Development is being optimised</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/09/Park-Ridge-jogger-in-park-1.jpg')"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h2>
+Good development projects start with a solid financial feasibility, but the best ones involve optimisation strategies which can materially increase investor returns … and we want to know all about them!</h2>
+                            <p>
+                  
+                             <strong>  In this webinar we discussed how and why the Development Managers choose to optimise the DA plans on a project, in particular the optimisation at the Park Ridge Development and what that could do to improve the investment opportunity.</strong>
+               </p>
+                            <br/>
+                            <br/>
+                            
+                     
+                            
+                     We have had a lot of interest the Park Ridge development and prospective investors have told us they’re keen to understand what the Development Managers are doing to improve the development
+                  
+                            <br/>
+                            <br/>
+                            <div class="p-rich_text_section">The discussion covered:</div>
+                            <br/>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>1. Why optimise</li>
+                                <li>2. What are the costs</li>
+                                <li>3. What does this do to sales</li>
+                                <li>4. How likely is Council approval</li>
+                                <li>5. Timeline for approvals</li>
+                                
+                            </ul>
+                            <br/><br/>
+                            If you missed it, you can watch it below. Enjoy!
+                            <div class="fluid-video-wrapper">
+                            <iframe width="850" height="275" src="https://www.youtube.com/embed/hFwRlD5XW4o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                            </div>
+                            <div class="post-body-rich-text text-center mt-5">
+                            <div class="gradient-divider"></div>
+                            <h3>Register your Interest</h3>
+                            
+                                <h1>Want to learn more?</h1>
+                                <p>If you’d like to know more about our Park Ridge Development then click the button below to register your interest.</p>
+                                <a href="{!$Label.VC_CF_Register_Symphony}">Register Today</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'/blog/wave-swell-energy-pitch-fest-2020'}">
+            <div class="container">
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                    <div class="col-md-12 pb-5 next-post-title mt-3">
+                        <h3>Webinar Recording: Wave Swell Energy – Runner-up Pitch Fest 2020</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="next-post-bg-overlay"></div>
+            <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/water2.jpg')"></div>
+                </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

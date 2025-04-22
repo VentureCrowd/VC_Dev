@@ -1,0 +1,79 @@
+.wrapper {
+    color: var(--primary-text-color);
+    background: var(--secondary-background);
+}
+
+/*Style used for created new company*/
+button.special {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    max-width: 220px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #fff;
+    border-color: inherit;
+}
+
+button:hover {
+    background-color: #D95BAA;
+    opacity: 1;
+    color: #fff;
+}
+
+button.info-model {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    /* max-width: 220px; */
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    /* margin: 10px 0 0 0; */
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #000;
+    border-color: inherit;
+    border: 1px solid #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+button.info-model:hover {
+    background-color: #D95BAA;
+    opacity: 1;
+    color: #fff;
+}
+
+.vc-heading {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.my-companies-style {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    text-size-adjust: 100%;
+
+
+}

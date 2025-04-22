@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_Knowledge__c</fullName>
+    <label>Investment Knowledge</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beginner</fullName>
+                <default>false</default>
+                <label>Beginner</label>
+            </value>
+            <value>
+                <fullName>Still Learning</fullName>
+                <default>false</default>
+                <label>Still Learning</label>
+            </value>
+            <value>
+                <fullName>Confident</fullName>
+                <default>false</default>
+                <label>Confident</label>
+            </value>
+            <value>
+                <fullName>Sophisticated</fullName>
+                <default>false</default>
+                <label>Sophisticated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

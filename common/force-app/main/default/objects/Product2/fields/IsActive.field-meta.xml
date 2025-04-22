@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsActive</fullName>
+    <inlineHelpText>When this field is unchecked it will deactivate the Pricebook related to this product meaning any new investment or applications will fail.</inlineHelpText>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+</CustomField>

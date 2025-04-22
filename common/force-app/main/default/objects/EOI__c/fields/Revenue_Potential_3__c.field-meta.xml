@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_Potential_3__c</fullName>
+    <description>This is the potential revenue expected out of the total amount converted (Conversion Probability 30% field) multiplied for our commission (3%). Used for Executive Purposes</description>
+    <formula>Conversion_Probability_30__c *0.03</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the potential revenue expected out of the total amount converted (Conversion Probability 30% field) multiplied for our commission (3%). Used for Executive Purposes</inlineHelpText>
+    <label>Revenue Potential (3%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

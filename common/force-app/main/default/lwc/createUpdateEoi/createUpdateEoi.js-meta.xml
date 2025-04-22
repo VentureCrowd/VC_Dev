@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Update EOI</masterLabel>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="showBanner" type="Boolean" label="Show Banner" description="Show the Banner on the EOI creation screen"/>
+            <property name="titleText" type="String" label="Title Text" description="Show the Banner on the EOI creation screen" default="New to capital raising?"/>
+            <property name="secText" type="String" label="Secondary Text" description="Show the Banner on the EOI creation screen" default="Uncover expert tips and strategies to boost your campaign!"/>
+            <property name="bannerLink" type="String" label="Banner Redirection Link" description="The link that the user will be redirected to when they click on the button"/>
+        </targetConfig>
+        <!-- You can add targetConfig for other targets if needed -->
+    </targetConfigs>
+</LightningComponentBundle>

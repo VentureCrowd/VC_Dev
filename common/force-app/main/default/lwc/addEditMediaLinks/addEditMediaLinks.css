@@ -1,0 +1,99 @@
+:host {
+    --lwc-formLabelFontSize: 1rem;
+    --slds-c-modal-color-border: #d9d9d9;
+}
+
+.add-edit-media-links * {
+    font-family: 'SuisseIntl-Light';
+}
+
+.add-edit-media-links label {
+    font-family: 'SuisseIntl-Regular';
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem 0 0;
+    margin-bottom: 0.125rem;
+}
+
+.add-edit-media-links button label {
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.add-edit-media-links .edit-or-remove-button {
+    border: 0;
+    color: #d95baa;
+    font-family: 'SuisseIntl-Regular';
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+.add-edit-media-links .edit-or-remove-button label {
+    font-size: 13px;
+}
+
+textarea {
+    display: block;
+}
+
+.field-max-length-text {
+    color: #b7b7b7;
+    font-size: 12px;
+}
+
+.create-update-eoi-help-link {
+    color: #407fff;
+    text-decoration: underline;
+}
+
+.create-update-eoi-input {
+    --lwc-colorTextPlaceholder: #e0e0e0;
+}
+
+.cancel-or-save-or-update-button+.cancel-or-save-or-update-button,
+.edit-or-remove-button+.edit-or-remove-button {
+    margin-left: 1.5rem;
+}
+
+hr {
+    border-image-width: 0;
+    border-top: 0;
+    color: #d9d9d9;
+    height: 2px;
+    margin: 1.5rem 0;
+    opacity: 1;
+}
+
+button.info-model {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #000;
+    border-color: inherit;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+button.create-update-eoi-button {
+    padding: 10px 30px;
+    width: auto;
+}
+
+button.create-update-eoi-button>label {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+button.create-update-eoi-button.secondary {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}

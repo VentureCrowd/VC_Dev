@@ -1,0 +1,50 @@
+.vc_radioInput{
+    height: 60px;
+    width: 60px;
+    accent-color: var(--c-secondaryColorBubblegum) !important;
+}
+.vc_investorOption{
+    margin-bottom: 32px;
+}
+/*.vc_investorOptionsBodyDesc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+} */
+.vc_column-left,
+.vc_column-right {
+    padding: 24px;
+}
+.vc_blurBox2{
+    padding: 24px;
+}
+.vc_boxIcon img{
+    position: absolute;
+    top: -18px;
+    left: -16px;
+}
+@media only screen and (min-width: 1024px) {
+    .vc_column-left {
+        max-width: 665px;
+        margin: auto;
+        
+    }
+    .vc_column-right{
+        max-width: 430px;
+        margin: auto;
+    }
+
+}
+.vc_column-left .vc_subHeading2{
+    line-height: 1;
+}
+@media only screen and (max-width: 1023.5px) {
+    .vc_column-left {
+        margin-bottom: 16px;
+    }
+    .vc_radioInput{
+        height: 29px;
+        width: 29px;
+    }
+        
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monoova_Card_type__c</fullName>
+    <description>Card Type. Must be one of Visa, Mastercard. Case insensitive.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Card Type. Must be one of Visa, Mastercard. Case insensitive.</inlineHelpText>
+    <label>Monoova Card type</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

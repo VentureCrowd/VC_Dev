@@ -1,0 +1,201 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+      <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+            <div class="col-md-12 headline">
+             <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+              <h1 class="mt-4"> Venture Capital Melbourne </h1>
+            <p class="mt-4">
+                VentureCrowd offers investment opportunities in venture capital in Melbourne, as well as a platform for startups to raise and secure capital from 1000s of investors.
+                </p>
+                <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Register Today </a>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/Melbourne-Venture-Capital.jpg')"></div>
+      </section>
+
+      <!-- Post Body -->
+      <section class="post-body py-5">
+        <div class="container">
+         
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Venture Capital Melbourne </h3>
+                <p><span style="font-weight: 400;">If you are looking for a convenient way to invest in alternative assets, VentureCrowd offers investment opportunities in venture capital in Melbourne, as well as </span><a href="https://www.venturecrowd.com.au/s/venture-capital/sydney"><span style="font-weight: 400;">venture capital in Sydney</span></a><span style="font-weight: 400;"> and </span><a href="https://www.venturecrowd.com.au/s/property/brisbane"><span style="font-weight: 400;">venture capital in Brisbane</span></a><span style="font-weight: 400;">. Venture capital investing in startup businesses gives the investor potential to earn high returns on their investment, as startups have a lot of scope for growth. Alternatively, if you are an entrepreneur looking to raise capital for a new business, by utilising the VentureCrowd platform you can work collaboratively with our team to launch a </span><a href="https://www.venturecrowd.com.au/"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> campaign. At VentureCrowd, we have all your </span><a href="https://www.venturecrowd.com.au/s/venture-capital/"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> in Melbourne needs covered!&nbsp;</span></p>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> What are the methods of venture capital financing in Melbourne? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">To create a successful startup, you generally need an initial cash injection, so what are the best ways of raising these funds in Melbourne? There are several different methods of venture capital financing to consider. Firstly, you can try finding family or friends who may want to invest in your business or see how much of your own money you can make available for your new venture. One of the advantages of dealing with family and friends is that they know you already so they may consider it to be less risky than investing elsewhere, but bringing personal relationships and business relationships together can be complex. You’ll need to make sure you have a written agreement and everyone is clear on the specific details and expectations. You may also be eligible to apply for a government grant, but these can be very competitive. Another option is to take out a small business loan, although a business loan is not always easy to get due to the high-risks associated with a startup.&nbsp;&nbsp;</span></p>
+        </div>
+    </div>
+
+        </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                  
+                  <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+        <p><span style="font-weight: 400;">One popular way to get startup funding is through venture capital funds. This involves groups such as super funds or other high-net-worth individuals investing in venture funds managed by investors. Venture capitalists look for startup businesses who they think will have high growth potential, or they may have a specialised area and will look for businesses in that particular sector. Their experience will mean they can add value and work closely with the business. Some new businesses look for an angel investor. </span><a href="https://www.venturecrowd.com.au/s/angel-investing/"><span style="font-weight: 400;">Angel investing</span></a><span style="font-weight: 400;"> is where a high-net-worth individual invests in the early stages of a startup.&nbsp;&nbsp;</span></p>
+        <p><span style="font-weight: 400;">VentureCrowd has been successfully raising capital for wholesale investors for over three years. Dues to changes in Australian legislation, individuals can now invest smaller amounts of money into a startup, and these retail investors can share in the journey of the business, as well as the equity. </span></p>
+        </div>
+    </div>
+        </div>
+
+              </div>
+            </div> 
+          </div>
+            
+
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Why is venture capital in Melbourne better than a bank loan? </h3>
+
+<p><span style="font-weight: 400;">Equity-based crowdfunding gives investors equity in a business in exchange for a cash investment. This can be more attractive than borrowing money through bank loans, especially for early-stage companies for several reasons. Firstly, bank loan debts generally need to be paid back in regular payments over a specific time period, with interest, which can be difficult when a business is first starting. Investors, on the other hand, are speculating that the value of their investment will grow as the company develops. Due to the high-risk nature of getting a bank loan for a startup, it may not be very easy to secure a bank loan even if you want one. Unlike a bank, the investor has a more vested interest in the company doing well, so they can often provide advice and share from their extensive business experience.</span></p>
+                  
+              </div>
+            </div>
+          </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How long does it take to get venture capital funding in Melbourne? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">If you use a </span><a href="https://www.venturecrowd.com.au/"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> platform such as VentureCrowd, the funding round usually runs for 6 weeks. Once it is closed and the investments are received, VentureCrowd will transfer the funds to you minus the raised fee. The crowdfunding campaign is launched collaboratively with the VentureCrowd team using the VentureCrowd platform. The online platform takes care of all the legal documentation for you too, so that will also save you time.</span></p>
+        </div>
+    </div>
+
+        </div>
+                  
+              </div>
+            </div>
+
+          </div>
+
+
+
+            <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Should I invest in a venture capital fund in Melbourne? </h3>
+                  <div class="wpb_wrapper">
+                      
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                             <p><span style="font-weight: 400;">You may be thinking about whether you should invest in venture capital in Melbourne. By joining the VentureCrowd community you will have access to many great investment opportunities and you’ll be able to invest in potentially </span><a href="https://www.venturecrowd.com.au/s/high-return-investments"><span style="font-weight: 400;">high return investments</span></a><span style="font-weight: 400;"> and properties alongside thousands of sophisticated investors. And the process for Investing through VentureCrowd is simple and straight forward. Once you’ve registered, you’ll get access to investment opportunities in startups as well as property. Then you’ll have the opportunity to do your research, speak with the founder of the business, and then you’ll be ready to start investing. Once the investment has been paid, you’ll receive ownership and visibility online on our fully automated platform. If the company is successful, then you’ll get to share in their success!</span></p>
+                            <p><span style="font-weight: 400;">And if you are worried about whether VentureCrowd offers quality investments, all our deals are subjected to our rigorous curation process. To raise capital via VentureCrowd, a company or property development must first have its own external professional lead investor and have undergone due diligence. Once this has all happened the deal is ready to be made available and you can invest on the same economic terms as the professional leads.&nbsp;</span></p>
+                              <p><span style="font-weight: 400;">If you need any more information about venture capital in Melbourne, you can call us on <a href="tel:1300039655">1300 039 655</a>, send us an email at </span><a href="mailto:hello@venturecrowd.com.au"><span style="font-weight: 400;">hello@venturecrowd.com.au</span></a><span style="font-weight: 400;"> or <a href="https://www.venturecrowd.com.au/about/#contact-us">contact us online.</a></span></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+
+      <div class="social-share-container">
+        <div class="share-links mb-4">
+          <div class="link-container">
+            <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- ./Body -->
+
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+
+</apex:page>

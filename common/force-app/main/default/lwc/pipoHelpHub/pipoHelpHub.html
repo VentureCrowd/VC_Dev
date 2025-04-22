@@ -1,0 +1,85 @@
+<template>
+    <div class="help-hub-container" onclick={handleOutsideClose} >
+        <!-- Dropdown menu button -->
+        <c-core-button
+            label="Help Hub"
+            mode="dark"
+            variation="secondary"
+            onclick={toggleMenu}>
+        </c-core-button>
+
+        <!-- Dropdown Menu - content dynamically changes here -->
+        <div class="help-hub-dropdown-menu" if:true={isMenuOpen} >
+            <!-- Render different content inside the dropdown based on the selected option -->
+
+            <!-- Default content when no option is selected -->
+            <template if:true={isMenuDefault}>
+                <ul>
+                    <li class="dropdown-item" data-option="faqs" onclick={handleFaqClick}>Investor FAQs <span class="arrow">→</span></li>
+                    <li class="dropdown-item" data-option="documents" onclick={handleDownload}>Download tax documents <span class="arrow">→</span></li>
+                    <li class="dropdown-item" data-option="how-to" onclick={handleTourButtonClick}>How to use your investor portal <span class="arrow">→</span></li>
+                    <li class="dropdown-item" data-option="contact" onclick={handleOptionClick}>Contact us <span class="arrow">→</span></li>
+                </ul>
+            </template>
+
+            <!-- Contact Us Content -->
+            <template if:true={isContactSelected}>
+                <div class="content-container">
+                    <div class="close-container">
+                        <h2>Contact Us</h2>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xlarge"
+                            onclick={toggleMenu}>
+                        </c-core-icon>
+                    </div>
+                    <div class="help-hub-options-container">
+                        <p>You can reach us at any time. We'd love to chat</p>
+    
+                        <p>Call us on <a href="tel:1300039655"><strong>1300 039 655</strong></a> and select Option 5 or email us at <strong>hello@venturecrowd.com.au</strong></p>
+                        <c-core-button
+                            label="Contact Us"
+                            variation="primary"
+                            mode="light"
+                            onclick={handleContactUs}>
+                        </c-core-button>
+                    </div>                
+                </div>
+            </template>
+
+            <!-- Download Documents Content -->
+            <template if:true={isDocumentsSelected}>
+                <div class="content-container">
+                    <div class="close-container">
+                        <h2>Download tax documents</h2>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xlarge"
+                            onclick={toggleMenu}>
+                        </c-core-icon>
+                    </div>
+                    <div>
+                        <p>{helpText}</p>
+                        <template lwc:if={isLoading}>
+                            <div class="loading-spinner">
+                                <h1>Loading</h1>
+                                <c-core-loading-spinner></c-core-loading-spinner>
+                            </div>
+                        </template>
+                        <template lwc:else>
+                            <template for:each={taxStatements} for:item="statement">
+                                <div key={statement.label}>
+                                    <!-- Fixed: statement.files -->
+                                    <c-pipo-tax-statements
+                                    year={statement.year}
+                                    label={statement.label}> 
+                                    </c-pipo-tax-statements>
+                            </div>
+                            </template>
+                        </template>                        
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

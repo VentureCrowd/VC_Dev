@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Record_Type_Name</name>
+        <label>Record Type Name</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>VCPP</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>VCPP</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contracts_Administration_Fee</targetReference>
+            </connector>
+            <label>VCPP</label>
+        </rules>
+    </decisions>
+    <description>This flow will calculate the VCPP commission structure on Opportunities.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Gross_commissionFormula</name>
+        <dataType>Number</dataType>
+        <expression>$Record.Total_Product_Price__c * $Record.Invested_Product_ADMIN_FIELD__r.Masterplan__r.Gross_Sales_Commission__c</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>Gross_commissionFormulaNew</name>
+        <dataType>Currency</dataType>
+        <expression>$Record.Total_Product_Price__c * ($Record.Invested_Product_ADMIN_FIELD__r.Masterplan__r.Gross_Sales_Commission__c)/100</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Net_commission_to_VCPPFormula</name>
+        <dataType>Currency</dataType>
+        <expression>$Record.Gross_commission_n__c - $Record.Total_sales_rep_commission_n__c</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Net_Sale_Price_to_SPVFormula</name>
+        <dataType>Currency</dataType>
+        <expression>$Record.Total_Product_Price__c - $Record.Gross_commission_n__c</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>Total_sales_rep_commisionFormula</name>
+        <dataType>Currency</dataType>
+        <expression>$Record.Total_Product_Price__c * ($Record.Sales_commission_rate_c__c / 100)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Opportunity : VCPP Commission Formula Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity : VCPP Commission Formula Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Contracts_Administration_Fee</name>
+        <label>Update Contracts Administration Fee</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Contracts_Administration_Fee_n__c</field>
+            <value>
+                <elementReference>$Record.Contracts_Administrator__r.Contracts_Administration_Fee__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Gross_commission_n__c</field>
+            <value>
+                <elementReference>Gross_commissionFormulaNew</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_Sale_Price_to_SPV_n__c</field>
+            <value>
+                <elementReference>Net_Sale_Price_to_SPVFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_commission_to_VCPP_n__c</field>
+            <value>
+                <elementReference>Net_commission_to_VCPPFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sales_commission_rate_c__c</field>
+            <value>
+                <elementReference>$Record.Sales_Representative__r.Property_Commission__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Total_sales_rep_commission_n__c</field>
+            <value>
+                <elementReference>Total_sales_rep_commisionFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Record_Type_Name</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8</filterLogic>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>VCPP</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>HomeCorp</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Colin Moore</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>LJ Hooker Aspley</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>LJ Hooker Gold Coast</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Colliers Toowoomba</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pascal Pierre</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0122v000002VOzeAAG</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Index and Invest Now Sticky</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+
+            <property name="productId" type="String" label="Product Id"  description="Id of the Product" />
+            <property name="fixedAmount" type="Integer" label="Intial Amount"  description="Intial Amount" />
+            <property name="investUrl" type="String" label="Invest Now URL"  description="Invest Now URL" />
+            <property name="scrollNumber" type="Integer" label="Make Component fixed at Locatio" default="600" description="Invest Now URL" />
+
+            
+
+            <property name="heading1Text" type="String" label="Heading 1 Text"  description="Invest Now URL" />
+            <property name="heading1Id" type="String" label="Heading 1 Id"  description="Invest Now URL" />
+            <property name="heading2Text" type="String" label="Heading 2 Text"  description="Invest Now URL" />
+            <property name="heading2Id" type="String" label="Heading 2 Id"  description="Invest Now URL" />
+            <property name="heading3Text" type="String" label="Heading 3 Text"  description="Invest Now URL" />
+            <property name="heading3Id" type="String" label="Heading 3 Id"  description="Invest Now URL" />
+            <property name="heading4Text" type="String" label="Heading 4 Text"  description="Invest Now URL" />
+            <property name="heading4Id" type="String" label="Heading 4 Id"  description="Invest Now URL" />
+            <property name="heading5Text" type="String" label="Heading 5 Text"  description="Invest Now URL" />
+            <property name="heading5Id" type="String" label="Heading 5 Id"  description="Invest Now URL" />
+
+            
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

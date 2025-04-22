@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VC_Receipt_Issued_with_completed_check</fullName>
+    <active>true</active>
+    <description>Receipt Issued can only be chosen if the Funds received checkbox is checked.</description>
+    <errorConditionFormula>AND
+(
+($RecordType.Name= &apos;VC&apos;), 
+ISPICKVAL( StageName , &apos;Receipt Issued&apos;),
+ OR(
+ Funds_received_in_Bank__c = FALSE)
+)</errorConditionFormula>
+    <errorMessage>Please check if the funds have been received before changing the status to Receipt Issued.</errorMessage>
+</ValidationRule>

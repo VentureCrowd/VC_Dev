@@ -1,0 +1,59 @@
+<template>
+    <div class="image-uploader">
+        <label for="upload-image-button">{fileLabel}<span if:true={required}>*</span></label>
+        <div if:true={helpText} class="slds-var-p-bottom_x-small">{helpText}</div>
+        <div>
+            <button id="upload-image-button" class="slds-button slds-button_neutral slds-button_full-width upload-or-update-image" onclick={openUploaderModel}>
+                <label if:false={imgUrl}>Upload an image</label>
+                <label if:true={imgUrl}>Update image</label>
+            </button>
+            <div class="image-container slds-var-p-top_xx-small" if:true={imgUrl}>
+                <img src={imgUrl} />
+            </div>
+        </div>
+        <template if:true={isModelOpen}>
+            <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+                        <header class="slds-card__header slds-grid">
+                            <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__body">
+                                    <span class="cardHeading">Upload {fileLabel}</span>
+                                </div>
+                                <div class="slds-no-flex">
+                                    <lightning-icon icon-name="utility:close" size="small" alternative-text="close" title="close" onclick={closeUploaderModel}></lightning-icon>
+                                </div>
+                            </div>
+                        </header>
+                        <hr style="width: 98%; margin: auto" />
+                        <div class="slds-var-p-top_small">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_2-of-4">
+                                    <lightning-input type="file" accept={acceptedFormats} label="Attachment" onchange={openFileUpload}></lightning-input>
+                                </div>
+                                <div class="slds-col slds-size_2-of-4" style="background-color: #cfcdcd">
+                                    <p><b>Supported format:</b> JPEG, PNG, WebP</p>
+                                    <p><b>Minimum dimensions:</b> {dimensions}</p>
+                                    <p><b>Ratio:</b> {ratio}</p>
+                                    <div if:true={showRecommendedText}>
+                                        <p><b>Recommended:</b> Transparent background and white or light coloured text.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-container slds-var-p-top_xx-small" if:true={tempImgUrl}>
+                                <img src={tempImgUrl} />
+                            </div>
+                            <div class="slds-var-p-top_xx-small">
+                                <button class="info-model create-update-eoi-button" onclick={handleSubmit}>
+                                    <label>Submit</label>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+    </div>
+</template>

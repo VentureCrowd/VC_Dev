@@ -1,0 +1,68 @@
+<template>
+  
+        <span>
+          
+            <lightning-avatar src={currentUser.SmallPhotoUrl} class="profile-photo"></lightning-avatar>
+            <a href="javascript:void(0);" class="icon" onclick={onHamburgerClick}>
+               
+                <template if:true={showDropDown}>
+
+                    <!-- Ven 127 - Nav Bar Burger Menu  -->
+                     <img alt="Menu item" src={closeButtonBurger}/> 
+
+                </template>
+                <template if:false={showDropDown}>
+                   <img alt="Menu item" src={hamburger}/>
+                </template>
+            </a>
+        </span>           
+
+        <template if:true={showDropDown} ontouchstart="" >
+            <!-- Ven 127 - Nav Bar Burger Menu  -->
+
+            
+            <div class="slds-tree_container" >
+              <!-- Used to fix font loading issue -->
+            <a style="font-family: SuisseIntl-Bold; color: black"></a>
+            <ul id="tree" aria-labelledby="treeheading" class="slds-tree" role="tree">
+            <template if:true={menus} for:each={menus} for:item="item" for:index="index">
+            <li class="test1" id={item.id} key={item.id} aria-expanded="false" aria-label="Tree Branch" aria-level="1" role="treeitem">
+                <div class="slds-tree__item" style="padding: 0 16px 0 5px;">
+
+                  <a class="onClickColorChange" style="color: white;" onclick={navigateToCommPage} data-url={item.url}>{item.label}</a>
+                  <template if:true={item.submenu}> 
+                  <button data-target-id={index} data-index={index} ontouchend={onDropdownClick} key={item.id} class="slds-button slds-button_icon submenuButton" aria-hidden="true" tabindex="-1" style="height: 45px; width: 45px;">
+
+                    <img style="zoom: 150%; color: white; height: 10px; width: 10px;" class="slds-button__icon " aria-hidden="true" src={chevronBurger} type="image/svg+xml"></img>
+                  </button>
+                    </template>
+                </div>
+
+                <ul class="nestedUl" role="group">
+                <template for:each={item.submenu} for:item="a" >
+                  <li style="border-bottom: solid 0.5px; border-bottom-color: #8f8d8d8c;" data-index={index} key={a.displayName} aria-level="2" role="treeitem">
+                    <div class="slds-tree__item">
+                      <span class="slds-has-flexi-truncate">
+                        <a style="font-family: SuisseIntl-Light;" onclick={onHamburgerClick} class="onClickColorChange"  label={a.displayName} href={a.displayUrl}>{a.displayName}</a>
+                      </span>
+                    </div>
+                  </li>
+                </template>
+                </ul>
+              </li>
+             
+            </template> 
+        </ul>
+    </div>
+        </template>
+
+        <!-- ###############  User profile Ends here ##################-->
+
+        <!--<template if:true={isGuest}>
+            <a href="#" >Register</a>
+        </template>-->
+
+       <!-- <template if:false={isGuest}>
+            <a href="#" class="register">Logout</a> 
+        </template> -->
+</template>

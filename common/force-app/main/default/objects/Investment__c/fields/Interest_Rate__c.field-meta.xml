@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Rate__c</fullName>
+    <description>This si the Interest Rate Brought from the product info related to the opportunity</description>
+    <formula>Opportunity__r.Invested_Product_ADMIN_FIELD__r.Interest_Rate__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This si the Interest Rate Brought from the product info related to the opportunity, this can&apos;t be modified in the Investment Information, if you need to update, please go to the product record.</inlineHelpText>
+    <label>Interest Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

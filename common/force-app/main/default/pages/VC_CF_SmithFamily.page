@@ -1,0 +1,211 @@
+<apex:page standardStyleSheets="false" sidebar="false" showHeader="false" applyBodyTag="false" controller="ImageInfoController">
+     <apex:includeLightning />
+    <apex:slds />
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_SmithFamilyCSS}" />
+  <apex:stylesheet value="{!$Resource.overrideSLDSvfp}" />
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+     
+
+     <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-smith-family">    
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container h-100">
+          <div class="row align-items-center h-100 text-white pt-5 pb-5">
+            <div class="col-md-6 animate-group">
+              <h1 class="mb-5 animate-item-in">The Smith Family Partnership</h1>
+              <p class="mb-5 animate-item-in">
+                VentureCrowd’s mission is to find and fund the future, together. That means finding extraordinary people and supporting them to do extraordinary things.
+              </p>
+              <div class="images animate-item-in">
+                <img src="https://assets.venturecrowd.vc/uploads/2021/01/SFXVC_Partnership-Updated-Logo2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-bg-opacity"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/02/Updated_SF-BG.jpg')"></div>
+        <div class="shape-divider-wrap" data-front="true" data-style="fan" data-position="bottom">
+          <svg class="shape-divider" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003.92 91" preserveAspectRatio="none">
+            <polygon class="cls-1" points="502.46 46.31 1 85.67 1 91.89 1002.91 91.89 1002.91 85.78 502.46 46.31"></polygon>
+            <polygon class="cls-2" points="502.46 45.8 1 0 1 91.38 1002.91 91.38 1002.91 0.1 502.46 45.8"></polygon>
+            <rect class="cls-3" y="45.81" width="1003.92" height="46.09"></rect>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Body 1 -->
+
+      <section class="upper-body pt-lg-5 pb-lg-5">
+        <div class="container pt-2 pt-lg-5 pb-lg-5">
+          <div class="row pt-5 pt-lg-5 pb-lg-5">
+            <div class="col-md-6">
+              <div class="inner-container px-4">
+                <h2 class="mb-1">
+                  Currently in Australia, 1.2 million children and young people live in poverty*. Any one of these kids has the potential to change the planet, if only they had the
+                  opportunity.
+                </h2>
+                <em> *ACOSS/UNSW Poverty Overview Report, 2020.</em>
+                <p class="pt-4">
+                  VentureCrowd and The Smith Family are firm believers that providing educational support is key to breaking the cycle of poverty, so that young Australians can
+                  build better futures for themselves and reach their potential. That’s why VentureCrowd has partnered with The Smith Family to support their Learning for Life
+                  program and partner program, Kidpreneur.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 video-container">
+              <div class="inner-container px-4">
+                <div class="image mb-4"><img class="img-fluid" src="https://assets.venturecrowd.vc/uploads/2021/01/maxresdefault.jpg" /></div>
+                <a class="d-block" data-fancybox="true" data-height="480" data-width="854" href="https://www.youtube.com/watch?v=C46TLK8wZgU">
+                  <i aria-hidden="true" class="fa fa-play"></i>
+                  Watch Brooke's Story
+                </a>
+                <em class="d-block mt-4">
+                  Brooke grew up in extreme hardship. Without support, she would have missed out on learning opportunities that defined her career. Hear how she found the courage
+                  to believe in herself.
+                </em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Make A Difference -->
+      <section class="make-a-difference pb-5 ">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12 text-center"><h2>Make a Difference</h2></div>
+          </div>
+          <div class="row justify-content-center text-center tiles">
+            <div class="col-md-5 mr-0 mr-md-5 tile">
+              <div class="inner-container p-5">
+                <h3 class="pt-5">Learning for Life</h3>
+                <p class="px-1">
+                  The Smith Family’s <em>Learning for Life</em> program provides Australian children in need with financial support for school essentials, personal support for the
+                  family and child, and access to additional learning and mentoring programs.&nbsp;<strong>Donate directly to The Smith Family’s </strong
+                  ><em><strong>Learning for Life</strong></em
+                  ><strong> program through VentureCrowd.</strong>
+                </p>
+                <div class="mt-5 mb-5 d-inline-block link">
+                  Donate Today
+                  <span class="arrow">
+                    <i aria-hidden="true" class="fa fa-chevron-right fa-fw"></i>
+                  </span>
+                </div>
+              </div>
+              <a class="anchor-link" href="https://startups.venturecrowd.com.au/deal/detail/the_smith_family "></a>
+              <div class="tile-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/12/Sarah-classrooms-737x415.jpg')"></div>
+            </div>
+
+            <div class="col-md-5 tile">
+              <div class="inner-container p-5">
+                <h3 class="pt-5">Kidpreneur</h3>
+                <p class="px-1">
+                  The Smith Family’s partner program,&nbsp;Kidpreneur&nbsp;is an immersive, teacher-led program where primary school children use a project-based approach to build
+                  their very own micro-business. <strong>Donate directly to&nbsp;the&nbsp;<em>Kidpreneur</em>&nbsp;program&nbsp;through VentureCrowd<em>.</em></strong>
+                </p>
+                <div class="mt-5 mb-5 d-inline-block link">
+                  Donate Today
+                  <span class="arrow">
+                    <i aria-hidden="true" class="fa fa-chevron-right fa-fw"></i>
+                  </span>
+                </div>
+              </div>
+              <a class="anchor-link" href="https://startups.venturecrowd.com.au/deal/detail/the_smith_family "></a>
+              <div class="tile-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/12/tower-bridge.jpg')"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about-text text-white">
+        <div class="shape-divider-wrap-top" data-front="true" data-style="fan" data-position="bottom">
+          <svg class="shape-divider" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003.92 91" preserveAspectRatio="none">
+            <polygon class="cls-1" points="502.46 46.31 1 85.67 1 91.89 1002.91 91.89 1002.91 85.78 502.46 46.31"></polygon>
+            <polygon class="cls-2" points="502.46 45.8 1 0 1 91.38 1002.91 91.38 1002.91 0.1 502.46 45.8"></polygon>
+            <rect class="cls-3" y="45.81" width="1003.92" height="46.09"></rect>
+          </svg>
+        </div>
+        <div class="container py-5">
+          <div class="row py-5 animate-group">
+            <div class="col-md-12 mt-5 pt-5">
+              <h2 class="mb-5">A Message from the CEO</h2>
+            </div>
+            <div class="col-md-6 animate-item-in">
+              <p class="lead">As the first son of migrant parents, I know what it is like to struggle financially. I also know, without a doubt, that education changed my life.</p>
+              <p>
+                VentureCrowd exists to support Australian entrepreneurialism and the first step on that journey to success is quality education for every single child, regardless
+                of their background.
+              </p>
+              <p>Australia is a country of innovation and is brimming with talent that comes from very diverse backgrounds.</p>
+              <p class="footnote">– VentureCrowd CEO, <a target="_blank" href="https://www.linkedin.com/in/stevenmaarbani/">Steve Maarbani</a></p>
+            </div>
+            <div class="col-md-6 animate-item-in">
+              <p>
+                The <i>Kidpreneur</i> program recognises that potential starts with imagination and needs to be nurtured early. If we can inspire the entrepreneurial creativity of
+                children to truly imagine what is possible, then Australia as a whole will be reaping the rewards for years to come.
+              </p>
+              <p>
+                The alignment between VentureCrowd and The Smith Family is a perfect fit and I am excited for this partnership to be the bedrock of VentureCrowd’s commitment to
+                supporting the communities in which we operate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Photo -->
+      <section class="hero-photo has-parallax-bg">
+        <div class="container text-white h-100">
+          <div class="row align-items-end h-100">
+            <div class="col-md-6 mb-5"><h3 class="mb-5">Steve Maarbani, CEO of VentureCrowd and Judy Barraclough, Deputy Chief Executive Officer of The Smith Family</h3></div>
+          </div>
+        </div>
+        <div class="shape-divider-wrap-top" data-front="true" data-style="fan" data-position="bottom">
+          <svg class="shape-divider" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003.92 91" preserveAspectRatio="none">
+            <polygon class="cls-1" points="502.46 46.31 1 85.67 1 91.89 1002.91 91.89 1002.91 85.78 502.46 46.31"></polygon>
+            <polygon class="cls-2" points="502.46 45.8 1 0 1 91.38 1002.91 91.38 1002.91 0.1 502.46 45.8"></polygon>
+            <rect class="cls-3" y="45.81" width="1003.92" height="46.09"></rect>
+          </svg>
+        </div>
+        <div class="parallax-bg-opacity"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/01/Copy-of-_DSC0589.jpg')"></div> 
+         <!--  <div class="parallax-bg" style="background-image: url('{!imageNameURLMap['2020_01_Beat-the-Blues_Hero']}')"></div> -->  
+          
+      </section>
+
+      <!-- Footer text -->
+      <section class="footer-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 py-5">
+              <p>All donations of $2 and over are tax deductible. The Smith Family is unable to issue receipts for any donations directly, as all donations are collected by VentureCrowd and transferred to The Smith Family.</p>
+              <p>Venture Crowd is collecting donations for The Smith Family between 1/2/21 and 31/12/22. All donations made by Venture Crowd customers will be collected and transferred to The Smith Family every 30 Days. VentureCrowd Pty Ltd is authorised by The Smith Family (Level 9, 117 Clarence St, Sydney 2001, Ph: 1300 326 459) to fundraise on its behalf in ACT, NSW, NT, Qld, SA, Vic, WA and Tas. All funds raised will go directly to The Smith Family to help Australians in need.</p>
+              <p><strong><i>The Smith Family is not responsible for the content of any communication received from VentureCrowd as a result of making a donation.</i></strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ./Body -->
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

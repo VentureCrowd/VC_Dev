@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+
+            <property name="productId"   type="String" label="Product Id"  description="Id of the Product" />
+            <property name="fixedAmount" type="Integer" label="Intial Amount"  description="Intial Amount" />
+            <property name="minAmount"    type="Integer" label="Minimum Amount"  description="Minimum Amount" />
+            <property name="targetAmount" type="String" label="Target Amount"  description="Target Amount" />
+            <property name="investUrl"     type="String" label="Invest Now URL"  description="Invest Now URL" />
+            
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

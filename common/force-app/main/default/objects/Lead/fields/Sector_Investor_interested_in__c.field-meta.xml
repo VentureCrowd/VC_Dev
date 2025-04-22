@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sector_Investor_interested_in__c</fullName>
+    <label>Sector Investor interested in</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FinTech</fullName>
+                <default>false</default>
+                <label>FinTech</label>
+            </value>
+            <value>
+                <fullName>EdTech</fullName>
+                <default>false</default>
+                <label>EdTech</label>
+            </value>
+            <value>
+                <fullName>MedTech</fullName>
+                <default>false</default>
+                <label>MedTech</label>
+            </value>
+            <value>
+                <fullName>AgTech</fullName>
+                <default>false</default>
+                <label>AgTech</label>
+            </value>
+            <value>
+                <fullName>FoodTech</fullName>
+                <default>false</default>
+                <label>FoodTech</label>
+            </value>
+            <value>
+                <fullName>PropTech</fullName>
+                <default>false</default>
+                <label>PropTech</label>
+            </value>
+            <value>
+                <fullName>Impact</fullName>
+                <default>false</default>
+                <label>Impact</label>
+            </value>
+            <value>
+                <fullName>Financial Funds</fullName>
+                <default>false</default>
+                <label>Financial Funds</label>
+            </value>
+            <value>
+                <fullName>Property Development</fullName>
+                <default>false</default>
+                <label>Property Development</label>
+            </value>
+            <value>
+                <fullName>Arts &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Arts &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Venture Capital</fullName>
+                <default>false</default>
+                <label>Venture Capital</label>
+            </value>
+            <value>
+                <fullName>Family Office</fullName>
+                <default>false</default>
+                <label>Family Office</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Partners</fullName>
+                <default>false</default>
+                <label>Partners</label>
+            </value>
+            <value>
+                <fullName>Agnostic</fullName>
+                <default>false</default>
+                <label>Agnostic</label>
+            </value>
+            <value>
+                <fullName>B2B Software</fullName>
+                <default>false</default>
+                <label>B2B Software</label>
+            </value>
+            <value>
+                <fullName>BioTech</fullName>
+                <default>false</default>
+                <label>BioTech</label>
+            </value>
+            <value>
+                <fullName>Blockchain</fullName>
+                <default>false</default>
+                <label>Blockchain</label>
+            </value>
+            <value>
+                <fullName>CleanTech</fullName>
+                <default>false</default>
+                <label>CleanTech</label>
+            </value>
+            <value>
+                <fullName>ClimateTech</fullName>
+                <default>false</default>
+                <label>ClimateTech</label>
+            </value>
+            <value>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+                <label>Consumer</label>
+            </value>
+            <value>
+                <fullName>Crypto</fullName>
+                <default>false</default>
+                <label>Crypto</label>
+            </value>
+            <value>
+                <fullName>Decentralised Finance</fullName>
+                <default>false</default>
+                <label>Decentralised Finance</label>
+            </value>
+            <value>
+                <fullName>DeepTech</fullName>
+                <default>false</default>
+                <label>DeepTech</label>
+            </value>
+            <value>
+                <fullName>Digital Health</fullName>
+                <default>false</default>
+                <label>Digital Health</label>
+            </value>
+            <value>
+                <fullName>Digital Marketplaces</fullName>
+                <default>false</default>
+                <label>Digital Marketplaces</label>
+            </value>
+            <value>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+                <label>E-Commerce</label>
+            </value>
+            <value>
+                <fullName>Enterprise Saas</fullName>
+                <default>false</default>
+                <label>Enterprise Saas</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>ESGs</fullName>
+                <default>false</default>
+                <label>ESGs</label>
+            </value>
+            <value>
+                <fullName>HealthTech</fullName>
+                <default>false</default>
+                <label>HealthTech</label>
+            </value>
+            <value>
+                <fullName>Life Sciences</fullName>
+                <default>false</default>
+                <label>Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>MarTech</fullName>
+                <default>false</default>
+                <label>MarTech</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Real Estate - Commercial</fullName>
+                <default>false</default>
+                <label>Real Estate - Commercial</label>
+            </value>
+            <value>
+                <fullName>Real Estate - General</fullName>
+                <default>false</default>
+                <label>Real Estate - General</label>
+            </value>
+            <value>
+                <fullName>Real Estate - Hospitality</fullName>
+                <default>false</default>
+                <label>Real Estate - Hospitality</label>
+            </value>
+            <value>
+                <fullName>Real Estate - Industrial</fullName>
+                <default>false</default>
+                <label>Real Estate - Industrial</label>
+            </value>
+            <value>
+                <fullName>Real Estate - Residential</fullName>
+                <default>false</default>
+                <label>Real Estate - Residential</label>
+            </value>
+            <value>
+                <fullName>SpaceTech</fullName>
+                <default>false</default>
+                <label>SpaceTech</label>
+            </value>
+            <value>
+                <fullName>Sports</fullName>
+                <default>false</default>
+                <label>Sports</label>
+            </value>
+            <value>
+                <fullName>Sustainability</fullName>
+                <default>false</default>
+                <label>Sustainability</label>
+            </value>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Web3</fullName>
+                <default>false</default>
+                <label>Web3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

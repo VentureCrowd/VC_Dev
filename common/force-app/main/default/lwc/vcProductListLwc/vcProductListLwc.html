@@ -1,0 +1,23 @@
+<template>
+     <section >
+          <div class="row mobilemargintop" >
+               <!-- Start Loop -->
+               <template if:true={showproductslst} for:each={showproductslst} for:item="product" for:index="index">
+                    <c-vc-product-lwc 
+                    class="col-lg-4 item mb-4 mb-lg-4" 
+                    key={product.Id} 
+                    product={product}
+                    show-offer-button={showOfferButton}
+                    ></c-vc-product-lwc>
+               </template>
+               <!-- End Loop -->
+          </div>
+          <template if:true={showmorebtn}>
+               <div class="slds-m-left_x-small slds-align_absolute-center" style="padding-top: 20px; padding-bottom: 70px;">
+                    <a onclick={showmore} class="mt-1 showMoreButton">Show More</a>
+               </div>
+          </template>
+     </section>
+
+     
+</template>

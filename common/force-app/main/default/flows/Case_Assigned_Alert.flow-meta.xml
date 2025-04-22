@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send an email to the case owner to notify them that a case has been assigned.</description>
+        <name>Email_Case_Owner</name>
+        <label>Email Case Owner</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Case.Notify_Case_Owner_of_New_Case_Assigned</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Notify_Case_Owner_of_New_Case_Assigned</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <constants>
+        <name>Candice</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0052v00000glAJbAAM</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>CandiceAlert</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>New Case Assigned</stringValue>
+        </value>
+    </constants>
+    <environments>Default</environments>
+    <interviewLabel>Case Assigned Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Owner Assigned</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Email_Case_Owner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Alert_Case_Owner</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;@{!AlertUserAssigned} New Case Assigned&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>AlertUserAssigned</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>@{!$Record.User__c} New Case Assigned</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>UserAssignedID</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

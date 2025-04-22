@@ -1,0 +1,34 @@
+.THIS .vc-circle {
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color:#D95BAA;
+}
+
+.THIS {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom:16px;
+}
+
+.THIS .description {
+  margin-left: 24px;
+}
+
+.THIS h3 {
+  margin-bottom: 0;
+  font-family: 'SuisseIntl-Regular', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: #FFF;
+}
+
+.THIS p {
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #7B868C;
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_User</fullName>
+    <columns>NAME</columns>
+    <columns>Investment_Product_Image__c</columns>
+    <columns>Investment_Product_Name__c</columns>
+    <columns>Investment_Product_Type__c</columns>
+    <columns>Investment_Date__c</columns>
+    <columns>Purchased_Shares__c</columns>
+    <columns>Funds_Received_FORMULA__c</columns>
+    <columns>Investment_Amount_FORMULA__c</columns>
+    <columns>Investment_Product_Image_FORMULA__c</columns>
+    <columns>Unit_Cert_Issued__c</columns>
+    <columns>Investment_Product_Name_Formula__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Is_Person_Account__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </filters>
+    <label>Personal Investment_Investor User</label>
+</ListView>

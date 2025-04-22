@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Company_Overview__c</fullName>
+    <description>This field provides an overview of the company.</description>
+    <inlineHelpText>Give a detailed overview of your company’s mission, vision, and operations.</inlineHelpText>
+    <label>Who are we</label>
+    <length>1400</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

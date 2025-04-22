@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Date__c</fullName>
+    <description>The date and time when the payment was processed.</description>
+    <inlineHelpText>Record the exact date and time when the payment was made or received.</inlineHelpText>
+    <label>Payment Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

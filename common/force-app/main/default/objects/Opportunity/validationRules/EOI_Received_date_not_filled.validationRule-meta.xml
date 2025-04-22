@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EOI_Received_date_not_filled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+($RecordType.Name= &apos;VCPP&apos;),
+ISPICKVAL( Sub_Stage__c, &apos;EOI Received&apos; ),
+
+OR(
+(ISBLANK( EOI_Received__c))
+
+))</errorConditionFormula>
+    <errorMessage>Please fill the &quot;EOI Received Date&quot; field before moving this stage to &quot;EOI Received&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Fund__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Parent Fund</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Products (Parent Fund)</relationshipLabel>
+    <relationshipName>Products2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

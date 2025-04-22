@@ -1,0 +1,50 @@
+<template>
+    <div class="core-button-wrapper">
+       
+            <template lwc:if={iconPositionLeft}>
+                <button class={variationClass} onclick={handleClick} style={buttonStyle} disabled={disabled}>
+                    <template lwc:if={isLoading}>
+                        <div class="circle-spin-1"></div>
+
+                    </template>
+                    <template lwc:else>
+                        <div class="icon-wrapper">
+                            <c-core-icon icon-name={iconName} size={iconSize}></c-core-icon>
+                        </div>
+                        {label}
+                    </template>
+                    
+                </button>
+            </template>
+            
+            <template lwc:if={iconPositionRight}>
+                <button class={variationClass} onclick={handleClick} style={buttonStyle} disabled={disabled}>
+                    <template lwc:if={isLoading}>
+                        <div class="circle-spin-1"></div>
+
+                    </template>
+                    <template lwc:else>
+                        {label}
+                        <div class="icon-wrapper">
+                            <c-core-icon icon-name={iconName} size={iconSize}></c-core-icon>
+                        </div>
+                    </template>
+                    
+                </button>
+            </template>
+    
+            <template lwc:if={noIcon}>
+                <button class={variationClass} onclick={handleClick} style={buttonStyle} disabled={disabled}>
+                    <template lwc:if={isLoading}>
+                        <div class="circle-spin-1"></div>
+
+                    </template>
+                    <template lwc:else>
+                        {label}
+                    </template>
+                    
+                </button>
+            </template>
+       
+    </div>
+</template>

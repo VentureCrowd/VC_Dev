@@ -1,0 +1,42 @@
+<template>
+    <section class="hero">
+        <div class="container">
+            <div class="row py-0 py-lg-5 align-items-center">
+                <div class="col-md-12 py-0 py-lg-5">
+                    <p class="mb-0">Blog Archive</p>
+                    <h1> {archiveMonth} {archiveYear} </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <template if:true={archiveList} for:each={archiveList} for:item="eachMonthArchive"
+                    for:index="index">
+                    <div class="article col-lg-3 col-sm-6 mb-4" key={eachMonthArchive.Id}>
+                        <div class="inner-container">
+                            <a href={eachMonthArchive.Navigation_url__c} class="post-link">
+                                <div class="featured-image">
+                                    <div class="meta">
+                                        {eachMonthArchive.News_Category__c}
+                                    </div>
+                                    <img src={eachMonthArchive.Newsbg_Url__c} class="img-fluid" alt="" title=""/>
+                                </div>
+                                
+                                <div class="post-body p-5">
+                                    <div class="date">
+                                        {eachMonthArchive.fromattedDate}
+                                    </div>
+                                    <h3 class="title my-3">{eachMonthArchive.News_Label__c}</h3>
+                                    <div class="excerpt">{eachMonthArchive.News_Descriptions__c}</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+</template>

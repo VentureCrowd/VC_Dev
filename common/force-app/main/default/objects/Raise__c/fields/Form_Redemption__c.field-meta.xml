@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Redemption__c</fullName>
+    <description>Describe who can elect to redeem and on what conditions.</description>
+    <inlineHelpText>Describe who can elect to redeem and on what conditions.</inlineHelpText>
+    <label>Redemption</label>
+    <length>1200</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,98 @@
+<template>
+    <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+    <section data-id="formSection" id="formSection" class="sectionContainer registerInterestContainer">
+        <div class="textContainer">
+            <h2>Register your interest</h2>
+            <div class="subTitle">
+                <p>You’ll be first in line to access this exclusive deal.</p>
+            </div>
+
+            <div class="formContainer">
+                <form>
+                    <div>
+                        <input type="text" required class="inputFieldsStyle" placeholder="First name" name="FirstName"
+                            onchange={handleChange}>
+                    </div>
+                    <div>
+                        <input type="text" required class="inputFieldsStyle" placeholder="Last name" name="LastName"
+                            onchange={handleChange}>
+                    </div>
+                    <div>
+                        <input type="email" required class="inputFieldsStyle" placeholder="Email" name="Email"
+                            onchange={handleChange}>
+                    </div>
+                    <div class="mobileNumberGrid">
+
+                        <select class="inputFieldsStyle-picker" onchange={handleChange} name="countryLabel">
+                            <option value="61">Australia +61</option>
+                            <template for:each={phoneoptions} for:item="option">
+                                <option key={option.value} value={option.value}>{option.label}</option>
+                            </template>
+                        </select>
+                        <input type="tel" required class="inputFieldsStyle mobileNumberField" placeholder="Mobile phone"
+                            name="MobilePhone" onchange={handleChange} maxlength="10">
+                    </div>
+                    <div class="howMuchAreYouConsideringInvesting">
+                        <select class="inputFieldsStyle" name="Investment_Amount__c" onchange={handleChange} required>
+                            <option value="">Investment Range</option>
+                            <option value="$250 to $500">$250 to $500</option>
+                            <option value="$500 to $1,000">$500 to $1,000</option>
+                            <option value="$1,000 to $3,000">$1,000 to $3,000</option>
+                            <option value="$3,000 to $5,000">$3,000 to $5,000</option>
+                            <option value="$5,000 to $8,000">$5,000 to $8,000</option>
+                            <option value="$8,000 to $10,000">$8,000 to $10,000</option>
+                            <option value="$10,000 to $20,000">$10,000 to $20,000</option>
+                            <option value="$20,000 to $50,000">$20,000 to $50,000</option>
+                            <option value="$50,000 to $100,000">$50,000 to $100,000</option>
+                            <option value="$100,000 to $200,000">$100,000 to $200,000</option>
+                            <option value="$200,000+">$200,000+</option>
+                        </select>
+                    </div>
+                    <div class="investorQuestion locatedInAustralia">
+                        <label class="question-label">Are you located in Australia?</label>
+                        <div>
+                            <label class="custom-radio-button">
+                                <input required type="radio" class="inputForm" name="Are_you_located_in_Australia__c"
+                                    value="Yes" checked="checked" onchange={handleChange} />
+                                Yes
+                            </label>
+                            <label class="custom-radio-button">
+                                <input required type="radio" class="inputForm" name="Are_you_located_in_Australia__c"
+                                    value="No" onchange={handleChange} />
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="investorQuestion typeOfInvestor">
+                        <label class="question-label">What type of investor are you?</label>
+                        <div>
+                            <label class="custom-radio-button">
+                                <input type="radio" class="inputForm" name="Wholesale_Status__c" value="retail"
+                                    checked="checked" onchange={handleChange} />
+                                Retail
+                            </label>
+                            <label class="custom-radio-button">
+                                <input type="radio" class="inputForm" name="Wholesale_Status__c" value="wholesale"
+                                    onchange={handleChange} />
+                                Wholesale
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <div class="disclaimer">
+                    <span>
+                        By submitting this form, you're allowing us to keep you in the loop with the latest updates
+                        and news about this product. You can easily unsubscribe at any time.
+                    </span>
+                </div>
+
+                <div class="registerButton">
+                    <button title="Register my interest" type="button" onclick={createleadRecord}
+                        class="special">Register my interest</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <iframe src={navigateTo} name="captchaFrame" onload={captchaLoaded} width="0" height="0"
+        style="display:none;"></iframe>
+</template>

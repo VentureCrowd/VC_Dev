@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Closed_Won_with_no_Membership</fullName>
+    <active>false</active>
+    <description>Prevent the opportunity to be closed won without it having a valid membership and a valid product.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Closed Won&quot;),
+    NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Won&quot;)),
+    Ready_to_Close_Won__c = FALSE,
+    OR(
+        RecordTypeId = &quot;0122v000002VOzfAAG&quot;,
+        RecordTypeId = &quot;0125i00000093CmAAI&quot;
+    )
+)</errorConditionFormula>
+    <errorMessage>You cannot mark the Opportunity as Closed Won until the &apos;Ready to Close Won&apos; checkbox is checked. In order to automatically update these fields please update any other text field in the opportunity prior to updating the stage.</errorMessage>
+</ValidationRule>

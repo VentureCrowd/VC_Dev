@@ -1,0 +1,177 @@
+.my-companies-style {
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+    font-size: var(--text-lg);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    overflow-wrap: break-word;
+    text-size-adjust: 100%;
+}
+
+.boxcolor {
+    background-color: rgba(224, 224, 224, 0.50);
+    border-radius: 0.9375rem;
+}
+
+button.btn-view-live-page {
+    width: 100%;
+    max-width: 13.75rem;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 1.875rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    border-color: inherit;
+}
+
+
+.heading-class{
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+
+button.btn-view-live-page:hover {
+    width: 100%;
+    max-width: 13.75rem;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+    background-color: var(--primary-accent);
+    color: #fff;
+    border-radius: 1.875rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    border-color: inherit;
+}
+
+.more-options {
+    position: relative;
+    display: inline-block;
+}
+
+.more-options-model {
+    position: absolute;
+    left: -140px;
+    top: 15px;
+    background-color: #f9f9f9;
+    z-index: 2;
+}
+
+.common-text-prop {
+    color: var(--primary-accent);
+    font-weight: 500;
+}
+
+.custom-progress-bar {
+    background: black;
+}
+
+.common-color {
+    color: var(--primary-accent);
+}
+
+.custom-slds-p-left_large { 
+    padding-left: 2rem;
+}
+
+/* Default styles for font sizes */
+.new-vc-font-size_36 {
+    font-size: 2.25rem;
+}
+
+.new-vc-font-size_16 {
+    font-size: 1rem;
+}
+
+.new-vc-font-size_14 { 
+    font-size: 0.875rem;
+}
+
+.new-vc-font-size_25 { 
+    font-size: 1.5625rem;
+}
+
+.vc-primary-bg-color {
+    background-color: var(--primary-background-color);
+}
+
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media screen and (max-width: 768px) {
+    .custom-slds-p-left_large { 
+        padding-left: 0px;
+    }
+}
+
+/* Additional media queries for other screen sizes if needed */
+@media screen and (max-width: 480px) {
+    .custom-slds-p-left_large { 
+        padding-left: 0px;
+    }
+}
+
+
+/*$ New changes based on raise High-Level */
+
+.font-size-xl {
+    font-size: var(--text-xl);
+}
+
+.font-size-xxxl {
+    font-size: var(--text-xxxl);
+}
+
+.font-size-md {
+    font-size: var(--text-md);
+}
+
+.vc_text-color_black {
+    color: var(--primary-text-color);
+}
+
+.investment-wrapper {
+    padding: var(--space-unit) var(--space-lg);
+}
+
+.margin-top-lg {
+    margin-top: var(--space-lg);
+}
+
+.margin-top-xxs {
+    margin-top: var(--space-xxs);
+}
+
+.margin-lg {
+    margin: 0 var(--space-lg);
+}
+
+/* ERROR CONTAINER */
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 500px;
+    margin: auto;
+    margin-top: var(--space-xxl);
+}
+
+.error-container h1 {
+    font-family: 'SuisseIntl-Bold';
+    font-size: var(--text-xxl);
+    text-align: center;
+    padding-bottom: var(--space-md);
+}
+
+.error-container p {
+    text-align: center;
+    padding-bottom: var(--space-md);
+}

@@ -1,0 +1,83 @@
+<aura:component extends="forceCommunity:navigationMenuBase" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:handler event="aura:doneRendering" action="{!c.doneRendering}"/>
+    <aura:attribute name="showDropDown" type="Boolean" default="false"/>
+    <aura:attribute name="currentUser" type="User"/>
+    <aura:attribute name="menus" type="List"/>
+    <aura:attribute name="isUserAvailable" type="Boolean"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   <!-- <div class="slds-backdrop slds-backdrop_open"></div>-->
+    <div class="slds-grid slds-grid_vertical" style="background:black;">
+        <div class="slds-col" style="padding:10px;">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <img alt="VentureCrowd" class="img-fluid" src="{!$Resource.VC_CF_GlobalAssets + '/img/Logo.svg'}" />
+                </div>
+                <div class="slds-col">
+                    
+                </div>
+                <div class="slds-col">
+                    <span class='slds-avatar slds-avatar--circle'>
+                        <img alt="User Photo" src="{!v.currentUser.FullPhotoUrl}"/>                    
+                    </span>
+                    <!-- <span style="color:white;margin-left:5px;">Hi {!v.currentUser.Name}</span> -->
+                </div>
+                <div class="slds-col" style="text-align:right;"> 
+                    <a href="javascript:void(0);" class="icon" onclick="{!c.onHamburgerClick}">
+                        <img alt="Menu item" src="{!$Resource.HamburgerIcon}"/>
+                    </a>
+                    <!--<button onClick = "{!c.onHamburgerClick}">
+                        <img alt="Menu item" src="{!$Resource.HamburgerIcon}"/>
+                    </button>-->
+                    
+                    <!--Accordian submenu code starts here-->
+
+                    <aura:if isTrue="{!v.showDropDown}">
+                        <lightning:accordion aura:id="accordion" activeSectionName="B">
+
+                            <aura:iteration items="{!v.menus}" var="item">
+                                <lightning:accordionSection name="{!item.label}" label="{!item.label}">
+                                    <aura:iteration items="{!item.subMenus}" var="subMenu">
+                                       <p>{!subMenu.label}</p>
+                                        </aura:iteration>
+                                </lightning:accordionSection>
+                             </aura:iteration>
+                                
+                        </lightning:accordion>
+                    </aura:if>
+                   
+                    <!--Accordian submenu code Ends  here-->
+                    
+                 <!--   <aura:if isTrue="{!v.showDropDown}">
+                        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                            <div class="slds-dropdown slds-dropdown_right">
+                                <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+                                    <aura:iteration items="{!v.menuItems}" var="item">
+                                        <li class="slds-dropdown__item" role="presentation">
+                                            
+                                            <a href="javascript:void(0);" role="menuitem" tabindex="0">
+                                                <span class="slds-truncate" title="{!item.label}">{!item.label}</span>
+                                            </a>
+                                        </li>
+                                    </aura:iteration>
+                                </ul>
+                            </div>
+                        </div>
+                    </aura:if>-->
+                </div>
+            </div>
+        </div>
+        <div class="slds-col" style="padding:5px;">
+            <div class="slds-grid">
+                <aura:iteration items="[{'label':'My Portfolio','id':'my-portfolio','auraId':'my-portfilioi'},{'label':'My Profile','id':'profile','auraId':'profilei'},{'label':'My Entities','id':'my-entities','auraId':'my-entitiesi'}]" var="item">
+                    <div class="slds-col slds-align_absolute-center" id="{!item.id}" onclick="{!c.onClick}" style="text-align:center;">
+                        <span>
+                            <a href="javascript:void(0);" style="color:white;" id="{!item.id}" target = "_self">
+                                {!item.label}
+                            </a>
+                        </span>
+                    </div>
+                </aura:iteration>
+            </div>
+        </div>
+    </div>
+</aura:component>

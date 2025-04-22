@@ -1,0 +1,77 @@
+<template>
+  <section class={getComponentStyleClasses}>
+      <div class="row mt-4 pt-5">
+          <div class="col-md-12 text-center">
+              <div class="col-md-12 heading">
+                  <h3 class="mb-4 vc-font-caxton4">{strContentHeading}</h3>
+                  <p class="mb-5 vc-font-suisseIntlLight">{strBodyCopy}</p>
+                  <!-- <div class="logo"><img src={productLogoUrl}/></div> -->
+              </div>
+          </div>
+          <div class="container">
+            <div class="row pl-5 pr-5">
+              <div class="col-md-4 cell mb-4 mb-lg-4">
+
+                  <div class="inner-container" style={tile_1_Style}>
+                      <a target={opensInSameOrNewTab} href={Investment_Tile_1_URL} style={tile_1_url_Style}>
+                          <div class="title vc-font-caxton4">{Investment_Tile_1_Headline}</div>
+                          <div class="post-body vc-font-suisseIntlLight ">
+                              <div class="logo">
+                                  <div class="logo1 text-center"> <img src={productLogoUrl1} /> </div>
+                              </div>
+                              <div class="desc pl-2 pr-2 pt-2 text-center vc-font-suisseIntlLight">
+                                  {Investment_Tile_1_Body}
+                              </div>
+                          </div>
+                      </a>
+                      <div class= "tile-bg-opacity"></div> 
+                      <div class="tile-bg" style={tile_1_Style}></div>
+                  </div>
+
+              </div>
+              <div class="col-md-4 cell mb-4 mb-lg-4">
+
+
+                <div class="inner-container" style={tile_2_Style}>
+                  <a target={opensInSameOrNewTab} href={Investment_Tile_2_URL} style={tile_2_url_Style}>
+                      <div class="title vc-font-caxton4">{Investment_Tile_2_Headline}</div>
+                      <div class="post-body vc-font-suisseIntlLight">
+                          <div class="logo">
+                              <div class="text-center"> <img src={productLogoUrl2} /> </div>
+                          </div>
+                          <div class="desc pl-2 pr-2 pt-2 text-center vc-font-suisseIntlLight">
+                              {Investment_Tile_2_Body}
+                          </div>
+                      </div>
+                  </a>
+                  <div class="tile-bg-opacity"></div>
+                  <div class="tile-bg" style={tile_2_Style}></div>
+              </div>
+
+            </div>
+            <div class="col-md-4 cell mb-4 mb-lg-4">
+
+
+              <div class="inner-container" style={tile_3_Style}>
+                <a target={opensInSameOrNewTab} href={Investment_Tile_3_URL} style={tile_3_url_Style}>
+                    <div class="title vc-font-caxton4">{Investment_Tile_3_Headline}</div>
+                    <div class="post-body vc-font-suisseIntlLight">
+                        <div class="logo">
+                            <div class="text-center"> <img src={productLogoUrl3} /> </div>
+                        </div>
+                        <div class="desc pl-2 pr-2 pt-2 text-center vc-font-suisseIntlLight">
+                            {Investment_Tile_3_Body}
+                        </div>
+                    </div>
+                </a>
+                <div class="tile-bg-opacity"></div>
+                <div class="tile-bg" style={tile_3_Style}></div>
+            </div>
+
+            </div>
+            </div>
+          </div>
+                </div>
+  </section>
+
+</template>

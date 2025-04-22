@@ -1,0 +1,90 @@
+.product-lead-form-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+@media screen and (max-width: 459px) {
+    .product-lead-form-container {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+.core-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.mobile-input-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+c-core-input.mobile-code-input{
+    flex: 3;
+}
+
+c-core-input.mobile-number-input{
+    flex: 7;
+}
+
+.product-lead-form-footer p {
+    padding: var(--space-md);
+    font-size: var(--text-sm);
+    color: #707070;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-xl);
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.wholesale-only-message {
+    color: var(--error-color, #D8000C);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-xs);
+    font-family: "SuisseIntl-light";
+}
+
+.submitted-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    justify-content: center;
+    align-items: center;
+}
+
+.submitted-content p{
+    font-family: "SuisseIntl-Bold" !important;
+}
+
+h2.main-title {
+    font-family: 'SuisseIntl-Bold';
+    font-size: var(--text-xl);
+}
+
+.ea-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-direction: column;
+    padding-bottom: var(--space-md);
+}
+
+.ea-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.ea-body p{
+    text-align: center;
+}

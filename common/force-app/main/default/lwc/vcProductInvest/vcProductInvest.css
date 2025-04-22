@@ -1,0 +1,58 @@
+/* settings for small mobile devices*/
+@media screen and (max-width:767px) {
+    .mobilemargintop {
+        margin-top: 1.65em;
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+    }
+
+    /* entire group of tiles */
+    .cb-section_row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+
+/* settings for medium-sized mobile devices*/
+@media screen and (min-width: 768px) and (max-width:1180px) {
+
+    /* ea tile settings */
+    .mobilemargintop {
+        margin-top: 1.65em;
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+    }
+}
+
+/* settings for large screen computers*/
+@media screen and (min-width:1200px) {
+
+    /* ea tile settings */
+    .mobilemargintop {
+        margin-top: 1.65em;
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+    }
+
+    /* entire group of tiles */
+    .cb-section_row {
+        width: 100% !important;
+        max-width: 1250px !important;
+    }
+}
+.showMoreButton{
+    font-family: "Caxton-2";
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 11%);
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+}
+.showMoreButton:hover{
+    background-color: #D95BAA;
+    text-decoration: none;
+}

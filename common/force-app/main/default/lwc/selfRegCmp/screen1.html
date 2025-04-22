@@ -1,0 +1,110 @@
+<template>
+    <!--New Code starts here-->
+    <lightning-spinner if:true={showspinner}></lightning-spinner>
+    <div>
+        <div class="slds-grid vc-grid-wrap bg">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-5 vc_blurBox slds-p-bottom_x-large">
+                <div class="vc_column-left vc_text-color_white">
+                    <div class="vc_RegistrationPageLogo">
+                        <img alt="Venture Crowd" src={mainlogo} />
+                    </div>
+                    <h1 class="vc_masterHeading vc-font-caxton4 slds-p-bottom_medium">Join over <br/>70,000 investors</h1>
+                    <div class="vc_subHeading vc-font-size-mob_15 vc-font-suisseIntlLight slds-p-bottom_x-large">Invest with your head <span class="vc-font-caxton5">and</span> your heart</div>
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2 vc_deskpaddingRight">
+                            <lightning-input class="vc_inputField" type="text" label="First Name" data-id="firstName" required></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input class="vc_inputField" type="text" label="Last Name" data-id="lastName" required></lightning-input>
+                        </div>
+                    </div>
+                    <lightning-input class="vc_inputField" type="email" label="Email" data-id="email" required></lightning-input>
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-5 slds-large-size_2-of-5 vc_deskpaddingRight">
+                            <lightning-combobox class="vc_combobox" value="61" label="Code" placeholder="Select Country Code" options={phoneoptions} onchange={handlemobilecodeChange} data-id="countrycode" required>                                
+                            </lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_3-of-5 slds-large-size_3-of-5">
+                            <lightning-input class="vc_inputField" type="text" label="Mobile" data-id="mobile" onchange={handlemobileChange} required></lightning-input>
+                        </div>
+                    </div>
+                    <lightning-input class="vc_inputField" type="password" label="Password" data-id="password" required onchange={passwordchange}></lightning-input>
+                    <lightning-input class="vc_inputField" type="password" label="Confirm Password" data-id="cnfpassword" required onchange={cnfpasswordchange}></lightning-input>
+                    <div class="slds-grid slds-p-vertical_medium vc-align-vertical vc-m-none">
+                        <lightning-input class="vc_checkbox slds-m-right_small" type="checkbox" variant="label-hidden" name="input1"></lightning-input>
+                        <p class="vc_body1 vc-font-size-mob_13  vc-font-suisseIntlRegular vc_text-color_white">I have read and agree to VentureCrowd's <a href="/s/legals" target="_blank">terms and conditions and privacy policy</a>.</p>
+                    </div>
+                    <div class="slds-grid vc-align-vertical vc-m-none">
+                        <lightning-input class="vc_checkbox slds-m-right_medium" type="checkbox" label="" variant="label-hidden" name="input2" data-id="Email_Opt_In__pc"></lightning-input>
+                        <p class="vc_body1 vc-font-size-mob_13  vc-font-suisseIntlRegular vc_text-color_white">I agree to receive communications from VentureCrowd. I understand I can unsubscribe at any time.</p>
+                    </div>
+                
+                    <div class="slds-text-align_center slds-p-top_x-large">
+                        <!-- <lightning-button variant="brand" icon-name="utility:forward" icon-position="right" class="vc_btn-primary vc_forwardBtnIcon" label="Register today for free" onclick={handlePage2}></lightning-button>
+                         -->
+                        <div class="vc_btn-primary">
+                            <button name="lead" class="slds-button" onclick={handlePage2}>
+                                <div class="vc-font-caxton2 vc_buttonLabelWidth"> Register today for free </div>
+                                <div class="slds-size_1-of-2 vc_forwardBtnIcon vc_buttonLabelWidth"> <img alt="Register" src={BtnArrow} width="200px" height="26px" /> </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-grid_align-spread slds-text-align_center">
+                        <div class="slds-p-top_x-large slds-size_1-of-1 slds-large-size_1-of-2 vc_subHeading2 vc-font-size-mob_10  vc-font-caxton3 vc_text-color_white vc_deskpaddingRight">
+                            It’s fast and easy<br/>No hidden fees
+                        </div>
+                        <div class="slds-p-top_x-large slds-size_1-of-1 vc_body1 vc-font-size-mob_10  vc_text-color_white slds-large-size_1-of-2 ">
+                            <div>Already have an account?</div>
+                            <div><a href="/s/login" target="_self">Login here</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-5 vc-align_absolute-center-vertical">
+                <div class="vc_column-right">
+                    <div class="vc_blurBox2 vc_blackBg slds-m-bottom_x-large">
+                        <div class="slds-p-bottom_x-small">
+                            <img alt="Venture Crowd" src={vc_logo} width="41px" height="26px" />
+                        </div>
+                        <div class="vc-font-size_25 vc-font-size-mob_23 vc-font-caxton2 vc_text-color_white slds-p-bottom_x-small ">
+                            Over $14,000,000 <br/>distributed to investors
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15 vc_text-color_white">
+                            Our multi-asset platform has distributed returns to investors across venture capital and property funds.
+                        </div>
+
+                    </div>
+
+                    <div class="vc_blurBox2 slds-m-bottom_x-large vc_black-border">
+                        <!-- <div class="vc_boxIcon">
+                            <img alt="Venture Crowd" src={medicalIcon} width="40px" height="48px" />
+                        </div> -->
+                        <div class="vc-font-size_25 vc-font-size-mob_23 slds-p-bottom_x-small">
+                            <span class="vc-font-caxton2">4D Medical:</span> <span class="vc-font-caxton4">297% return to VentureCrowd investors</span>
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15">
+                            Only 18 months after 4DMedical raised capital through VentureCrowd, they listed on the ASX, delivering a 297% return to VentureCrowd investors.
+                        </div>
+
+                    </div>
+
+                    <div class="vc_blurBox2 slds-m-bottom_x-large vc_black-border">
+                        <!-- <div class="vc_boxIcon">
+                            <img alt="Venture Crowd" src={jayrideIcon} width="83px" height="40px" />
+                        </div> -->
+                        <div class="vc-font-size_25 vc-font-size-mob_23 slds-p-bottom_x-small">
+                            <span class="vc-font-caxton2">Jayride:</span><span class="vc-font-caxton4"> 107% return to VentureCrowd investors</span>
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15">
+                            Jayride listed on ASX delivering a gross return of 107% to VentureCrowd investors.
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!--New Code Ends here-->
+    <div  style="display: none;">
+        <iframe src={navigateTo} name="captchaFrame" onload={captchaLoaded}></iframe>
+    </div>    
+</template>

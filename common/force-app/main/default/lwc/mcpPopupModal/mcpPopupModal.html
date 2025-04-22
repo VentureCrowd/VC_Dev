@@ -1,0 +1,43 @@
+<template>
+    <div class="mcp-modal-container" aria-label="Popup" role="dialog" aria-modal="true" aria-hidden="false" if:true={showModal}>
+
+        <div class="mcp-modal-overlay" onclick={closeModal}></div>
+    
+        <div class="mcp-modal">
+    
+            <div class="mcp-modal-content">
+                
+                <img src={imageUrl} class="mcp-modal-image" alt={imageAltText}>
+                
+                <div class="mcp-modal-body">
+                    <h1 class="mcp-modal-header" if:true={headerText}>{headerText}</h1>
+
+                    <p class="mcp-modal-subheader" if:true={subheaderText}>{subheaderText}</p>
+
+                    <div class="mcp-modal-cta-button">
+                        <c-core-button 
+                        if:true={ctaUrl}
+                        label={ctaText}
+                        variation="primary"
+                        mode="light"
+                        onclick={ctaClick}>
+                        </c-core-button>
+                    </div>
+
+                </div>
+    
+            </div>
+    
+            <button class="mcp-modal-close-icon" title="Close" tabindex="-1" onclick={closeModal}>
+                <div class="mcp-modal-icon">
+                    <c-core-icon 
+                        icon-name="close" 
+                        size="medium"
+                    ></c-core-icon>
+                </div>
+            </button>
+    
+        </div>
+    
+    </div>
+</template>

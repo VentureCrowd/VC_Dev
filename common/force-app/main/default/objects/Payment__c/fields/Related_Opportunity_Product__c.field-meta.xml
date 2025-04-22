@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Opportunity_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A link to the related opportunity line item, indicating the specific product or service line in an opportunity associated with this payment.</description>
+    <inlineHelpText>This lookup field allows you to connect the payment to a specific line item within an opportunity.</inlineHelpText>
+    <label>Related Opportunity Product</label>
+    <referenceTo>OpportunityLineItem</referenceTo>
+    <relationshipLabel>Payments</relationshipLabel>
+    <relationshipName>Payments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

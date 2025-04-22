@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refund_Payment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A link to a refund payment record, used specifically for refunds processed for Card &amp; Direct Debit payments.</description>
+    <inlineHelpText>Use this field to link the payment to its corresponding refund record if a refund was issued.</inlineHelpText>
+    <label>Refund Payment</label>
+    <referenceTo>Payment__c</referenceTo>
+    <relationshipLabel>Payments</relationshipLabel>
+    <relationshipName>Payments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

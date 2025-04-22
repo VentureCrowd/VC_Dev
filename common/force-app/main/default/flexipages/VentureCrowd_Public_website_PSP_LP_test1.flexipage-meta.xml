@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>551ab3d9-4d66-4ec8-b3c0-90d0a9b01e74</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2caf7f4f-4cb1-4562-99eb-a64b006db22f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Invest in ExtrasJar Private Syndicate Platform</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000000BW03&amp;d=%2Fa%2F5i000000PE76%2FePikU5biotV_79ahP1estAWTr9z8qSJqQECeAt9mX88&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Invest Now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000000BVOY&amp;d=%2Fa%2F5i000000PE6N%2FPr8mQg6Oji.6Y_KNydWKDC5ojs._aDyw5kpJHVA52Ss&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Register to VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/login/SelfRegister?startURL=%2Fs%2Fportal%2Fportfolio&amp;utm_source=lp&amp;utm_medium=referral&amp;utm_campaign=psp&amp;utm_content=banner</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>Please scroll down to see investment instructions</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Sydney Angels</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>551ab3d9-4d66-4ec8-b3c0-90d0a9b01e74</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a3a2b8a1-542e-4089-89df-b0b5ad6e5ebd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9cf897df-a16c-47d7-861c-515e99b0b693</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+	&lt;h3 class=&quot;color-purple mb-4 pt-4 &quot;&gt;ExtrasJar&lt;/h3&gt;
+&lt;p&gt;Thank you for your interest in participating in this syndicate. Please follow the steps below to secure your allocation and if you have any questions please email the ventureCrowd funds management team on hello@venturecrowd.com.au.&lt;p/&gt;
+	&lt;h3 class=&quot;color-purple mb-4 pt-4 &quot;&gt;VentureCrowd Registered Members: Invest Now&lt;/h3&gt;
+    &lt;p&gt;&lt;b&gt;If you are already registered with VentureCrowd&lt;/b&gt;, please use the link below to nominate the amount you would like to invest in this transaction.
+Once the syndicate has closed, we will email you your Investment Contract and the Trust Deed as well as payment instructions for this transaction.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonName</name>
+                    <value>Invest Now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonRedirectUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>subTitle</name>
+                    <value>VentureCrowd registered investors can immediately invest in this Private Syndicate. If you are not registered, please scroll down and complete the registration form before investing.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Registered VentureCrowd Investors</value>
+                </componentInstanceProperties>
+                <componentName>registerNowProductLanding</componentName>
+                <identifier>registerNowProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+	&lt;h3 class=&quot;color-purple mb-4 pt-4 &quot;&gt;New Investors: Please Register&lt;/h3&gt;
+    &lt;p&gt;&lt;b&gt;If you are new to the VentureCrowd platform&lt;/b&gt;, you will need to register before you can secure your allocation.  This process should take you no more than 15 minutes to complete. 
+Please click on the Investor Identification Form link below for information on what is required depending on the investing entity you wish to use or the information required if you are investing under your personal name.
+&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonName</name>
+                    <value>Register Now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonRedirectUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/login/SelfRegister?startURL=%2Fs%2Fportal%2Fportfolio&amp;utm_source=lp&amp;utm_medium=referral&amp;utm_campaign=psp&amp;utm_content=body</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>subTitle</name>
+                    <value>If you are not a registered VentureCrowd member, please register through the link below and then return to this page to complete your investment.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>New Investors</value>
+                </componentInstanceProperties>
+                <componentName>registerNowProductLanding</componentName>
+                <identifier>registerNowProductLanding2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+	&lt;h3 class=&quot;color-purple mb-4 pt-4 &quot;&gt;Wholesale Certification&lt;/h3&gt;
+    &lt;p&gt;If you have a wholesale certificate from your accountant that has been issued within the last two years, please send it by reply email for verification and approval. If not, please see the attached template by clicking the Wholesale Certification Template that your accountant can use for verification.
+    &lt;/p&gt;
+    &lt;p&gt;If you don’t meet these criteria, but you do have experience with investing, then you may meet an exemption to qualify as an experienced investor. This is considered on a case by case basis and would require an application to be completed to determine if you have the required type and duration of investment experience. Please advise by using the email address below if this would be the most suitable option for you so that we may have the application sent through to you.
+Please email the relevant information required to hello@venturecrowd.com.au. 
+&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;&lt;a href=&quot;https://venturecrowd.my.salesforce.com/sfc/p/2v000000WjFp/a/5i000000PE6c/DhH.YgKbZXuyyZ6XH_gSwytt6WuifN4H7iHOJMfZQ_I&quot;&gt;Wholesale Certification Template&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;span&gt;&lt;a href=&quot;https://venturecrowd.my.salesforce.com/sfc/p/2v000000WjFp/a/5i000000PE6h/Hj8XieOffwSe1LyKws7yi.Z6zJWSjnrczixpt4.GDDw&quot;&gt;Investor Identification Form&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a3a2b8a1-542e-4089-89df-b0b5ad6e5ebd</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3bcc3028-70be-466f-9786-3635b8c8d3b1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b9ba909a-24ab-45ed-ba6e-78ec38bcae6e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;container content-container--text-edit&quot;&gt;
+    &lt;div class=&quot;row px-3 px-lg-0&quot;&quot;&gt;
+        &lt;div class=&quot;col-lg-6 mb-4 mb-lg-0&quot;&gt;
+            &lt;h1&gt;Investing Through VentureCrowd&lt;/h1&gt;
+            &lt;p&gt;VentureCrowd offers an end-to-end digital investment platform for alternative assets, managed by our internal technical and sector specialists who oversee all aspects of the investment process. 
+Our dedicated Venture Capital and Property product teams each have deep sector expertise and our platform is designed to ensure a seamless and secure investment experience.
+ &lt;/p&gt;
+            &lt;a data-fancybox data-width=&quot;854&quot; data-height=&quot;480&quot; href=&quot;https://www.youtube.com/embed/YG6OpEGYeBU?rel=0&quot; class=&quot;video-link&quot;&gt;
+                &lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt; Play video&lt;/a&gt;
+        &lt;/div&gt;
+                                     
+                                      &lt;div class=&quot;col-lg-6&quot;&gt;
+  &lt;/p&gt;
+            &lt;h3&gt;&lt;strong&gt;About our Private Syndicate Platform&lt;/strong&gt;&lt;/h3&gt;
+            &lt;p&gt;VentureCrowd provides companies, syndicates and investors with an online platform to aggregate investments when raising capital.&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;&lt;b&gt;Simple&lt;/b&gt;: Investors receive a simple, secure and private registration for their investment.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;b&gt;Secure&lt;/b&gt;: The VentureCrowd PSP is built and managed to internationally recognised standards, in addition, the platform is subject to a regular penetration testing program.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;b&gt;24/7&lt;/b&gt;: Investors can view their investment in the company, portfolio and update personal details via an easy to use online platform.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;b&gt;Investor Updates&lt;/b&gt;: Communications from the company are managed via the VentureCrowd platform and delivered in a clear and uniform fashion.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;&lt;b&gt;Deal Access&lt;/b&gt;: Investors gain access to VentureCrowd’s curated alternative asset investment opportunities.&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3bcc3028-70be-466f-9786-3635b8c8d3b1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>fcd72599-51d9-4147-a130-e210d6aaba85</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-c6ed9cca-f378-4476-824e-a166520cad0e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>openVCLogoUrl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2021/03/Open-VClogo_white-300x79.png</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--cm--c.documentforce.com/sfc/dist/version/download/?oid=00D0p0000000N1k&amp;ids=0680p000000cUTs&amp;d=%2Fa%2F0p0000004QKF%2FIyHBFYBQoyINcgOMCqcGCTRos7ltEjFyUwT1QKvEMsc&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strHeading</name>
+                    <value>70+ Ventures Funded</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>straSupportingCopy</name>
+                    <value>The following are examples of some of the ventures funded through our digital investment platform</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentProductLanding</componentName>
+                <identifier>currentInvestmentProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeadingText</name>
+                    <value>Why VentureCrowd?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ParagraphText</name>
+                    <value>VentureCrowd is Australia’s leading digital investment platform for alternative assets. When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so you won’t be investing alone. Here’s a snapshot of our traction so far.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Totalmembers</name>
+                    <value>63000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>TotalmembersLabel</name>
+                    <value>Total Members</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Totalraised</name>
+                    <value>$175000000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>TotalraisedsLabel</name>
+                    <value>Total Raised</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Gray</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>portfoliosize</name>
+                    <value>70</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>portfoliosizeLabel</name>
+                    <value>Portfolio Size</value>
+                </componentInstanceProperties>
+                <componentName>whyVentureCrowd</componentName>
+                <identifier>whyVentureCrowd</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCCT&amp;d=%2Fa%2F2v000000EOXy%2FwBrrdkegPezSl87dQ.nxZPfvZNYfahz_Y7zMDnsA_do&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>4DMedical is an Australian health technology SaaS business operating in AUS &amp; the US. VentureCrowd investors acquired shares at $0.37. 4DMedical listed on the  ASX after 18 months at $1.50 per share, delivering a 297% return to VentureCrowd investors who participated in this capital raise.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                    <value>4DMedical</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCCn&amp;d=%2Fa%2F2v000000EOY3%2F9GwKh4YyKYCgKaTGFSA5KKboWRtnTcFp1BszIZcKwyY&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>VentureCrowd portfolio company Jayride listed on the ASX in January 2018 making it Australia&apos;s ﬁrst crowd-funded startup exit. Listed on ASX in January 2018 at an issue price that was more than double the Series A investment, delivering a gross return of 107% to investors.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                    <value>Jayride</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCZy&amp;d=%2Fa%2F2v000000EOYS%2FKBAlLP.9FfJqEiAoaP5Hda3ihBdSHSpSKMOhnhOEN8k&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                    <value>VentureCrowd is the only digital investment platform in Australia that has delivered successful exit returns from Equity Crowdfunding.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>Previous Success Stories</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentCtaProductLanding</componentName>
+                <identifier>currentInvestmentCtaProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>fcd72599-51d9-4147-a130-e210d6aaba85</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c022413f-5c38-4d51-8e93-cddcb6b1bc4c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-4edd4ac2-48e9-45cd-b6e4-86d975934b94</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--disclaimer&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row px-3 px-lg-0&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;
+     
+                &lt;p&gt;
+                    
+					&lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt;Legals&lt;/a&gt; | Copyright © 2021 VentureCrowd. All Rights Reserved
+					&lt;br&gt;
+					VentureCrowd Pty Ltd (ABN 40 166 598 849, AFSL 503 381)
+					Important Notice: Capital is at risk and returns are not guaranteed. Past performance is not a reliable indicator of future performance. 
+                    This content is of a general nature only and has been prepared without taking account of your objectives, financial situation or needs. Before acting on this information or making an investment decision, 
+                    you should consider your personal circumstances and consider obtaining financial, taxation and or legal advice which is tailored to your personal circumstances before making an investment decision.
+					&lt;br&gt;
+                    &lt;br&gt;
+                    Please call &lt;a href=&quot;tel:1300039655&quot; target=&quot;_blank&quot;&gt; 1300 039 655 &lt;/a&gt; to get a copy of the PDS.
+                    Please read our &lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt;terms and conditions&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt; privacy &lt;/a&gt; statement before using the Website.
+					&lt;br&gt;
+                    &lt;br&gt;
+					VentureCrowd Pty Ltd is a Corporate
+                    Authorised Representative #420843 of Guardian Securities Limited, AFSL #240506.
+                  &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c022413f-5c38-4d51-8e93-cddcb6b1bc4c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2caf7f4f-4cb1-4562-99eb-a64b006db22f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2caf7f4f-4cb1-4562-99eb-a64b006db22f&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;551ab3d9-4d66-4ec8-b3c0-90d0a9b01e74&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9cf897df-a16c-47d7-861c-515e99b0b693</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9cf897df-a16c-47d7-861c-515e99b0b693&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a3a2b8a1-542e-4089-89df-b0b5ad6e5ebd&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b9ba909a-24ab-45ed-ba6e-78ec38bcae6e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b9ba909a-24ab-45ed-ba6e-78ec38bcae6e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;3bcc3028-70be-466f-9786-3635b8c8d3b1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-c6ed9cca-f378-4476-824e-a166520cad0e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;c6ed9cca-f378-4476-824e-a166520cad0e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;fcd72599-51d9-4147-a130-e210d6aaba85&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-4edd4ac2-48e9-45cd-b6e4-86d975934b94</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;4edd4ac2-48e9-45cd-b6e4-86d975934b94&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c022413f-5c38-4d51-8e93-cddcb6b1bc4c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>VentureCrowd provides companies, syndicates and investors with an online platform to aggregate investments when raising capital.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Private Syndicate Platform | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>PSP-LP_test1</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

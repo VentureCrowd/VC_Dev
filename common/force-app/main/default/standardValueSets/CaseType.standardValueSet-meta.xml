@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Products</fullName>
+        <default>false</default>
+        <label>Products</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Statements</fullName>
+        <default>false</default>
+        <label>Statements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Certificates</fullName>
+        <default>false</default>
+        <label>Certificates</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Problem</fullName>
+        <default>false</default>
+        <label>Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Question</fullName>
+        <default>false</default>
+        <label>Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VC Opportunity</fullName>
+        <default>false</default>
+        <label>VC Opportunity</label>
+    </standardValue>
+</StandardValueSet>

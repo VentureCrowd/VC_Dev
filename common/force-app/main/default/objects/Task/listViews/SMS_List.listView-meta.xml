@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_List</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHO_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>STATUS</columns>
+    <columns>aircall2gp__SMS_Direction__c</columns>
+    <columns>aircall2gp__SMS_Sent_From__c</columns>
+    <columns>aircall2gp__SMS_Sent_To__c</columns>
+    <columns>aircall2gp__SMS_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>aircall2gp__SMS_Status__c</field>
+        <operation>equals</operation>
+        <value>Received</value>
+    </filters>
+    <filters>
+        <field>aircall2gp__SMS_Direction__c</field>
+        <operation>equals</operation>
+        <value>Inbound</value>
+    </filters>
+    <filters>
+        <field>SUBJECT</field>
+        <operation>contains</operation>
+        <value>CRC</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>ldela</value>
+    </filters>
+    <label>SMS List</label>
+</ListView>

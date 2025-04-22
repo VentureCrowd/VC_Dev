@@ -1,0 +1,39 @@
+<!-- File: RaisePDFPage.page -->
+<apex:page controller="RaisePDFController" 
+    renderAs="pdf" 
+    contentType="application/pdf" 
+    applyBodyTag="false" 
+    applyHtmlTag="false" 
+    showHeader="false" 
+    sidebar="false"
+>
+    <html>
+        <head>
+            <style>
+                /* Add your custom CSS styles here */
+                body {
+                    font-family: Arial, sans-serif;
+                    font-size: 12px;
+                }
+                h1 {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    border: 1px solid #000;
+                    padding: 8px;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+        </head>
+        <body>
+            <apex:outputText value="{!HTMLContent}" escape="false"/>
+        </body>
+    </html>
+</apex:page>

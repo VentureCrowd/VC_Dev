@@ -1,0 +1,279 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+      <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+            <div class="col-md-9 headline">
+              <div class="tags-container"><a href="#">Business</a><a href="#">Interview</a></div>
+              <h1 class="mt-4">How to beat the back-to-work blues and start the year strong!</h1>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/01/Beat-the-Blues_Hero.jpg')"></div>
+      </section>
+
+      <!-- Post Body -->
+      <section class="post-body py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-9">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h2>
+                   Returning to work after summer holidays is rough for most workers and is a natural response, even for those who love their job, but there are ways to beat the post-holiday blues quickly and easily. </h2>
+                  <p>
+                      People and behaviour expert Mark Carter says it is normal to feel down at the prospect of returning to work and during the first days back on the job, especially after a particularly festive break over Christmas and New Year.<br/><br/>
+
+“Sometimes when you go on holidays, it can take a few days to (unwind and) get into the holiday,” he says.<br/><br/>
+
+“To come back, you’ve got to ramp it back up.” <br/><br/>
+
+Carter, a TEDx speaker and author of Add Value, says the blues can be amplified for workers if they do not enjoy what they do anymore or are discontent at their workplace.<br/><br/>
+                  </p>
+                  <div >
+								<img width="850" height="590" src="https://assets.venturecrowd.vc/uploads/2021/01/Photoshoot_Image1.jpg"  />
+                      			<h6>
+                                    VentureCrowd chief executive Steven Maarbani has found the secret to being happy when returning to work after a holiday, with employees Darren Tasker, Elle Georgiou, Glen Barry, and Archie Georgiou. Picture: Darren Leigh Roberts
+
+                      </h6>
+							</div>
+                  <br/>
+                  <br/>
+                  
+                  So workers should assess if their low mood is just the blues or a response to a bigger issue that may require them to look for a new job.
+<br/>
+                  <br/>
+Others who have resisted moves back into offices before Christmas, after COVID-related work-from-home orders, are urged to give it a go.
+<br/>
+                  <br/>
+Organisational psychologist Keti Malkoski, principal at Schiavello Group, says the post-holiday blues also may be amplified by the end of remote working.
+<br/>
+                  <br/>
+“Returning to our ‘new normal’ and workplace may be confronting for some employees that remain concerned about their wellbeing and have become accustomed to absolute remote working,” she says.
+<br/>
+                  <br/>
+Carter says being mentally prepared before the alarm goes off is a good start.
+<br/>
+                  <br/>
+“If you don’t enjoy work, or think you’re not going to enjoy it, you’re going to be in the blues,” he says.
+<br/>
+                  <br/>
+Focus on what will be fun or enjoyable about being back at work, and try to get a good night’s sleep. Avoid back-to-back-to-back meetings on the first day back and take time to build the momentum up – unless ripping the Band-Aid off and jumping back in with a packed schedule is actually preferred. Workers also can start to focus on the year ahead and restore goals that may have gone awry during 2020.
+<br/>
+                  <br/>
+Identify career, KPI or other work-related goals that will provide direction, and establish learning goals for the year.
+
+“It’s a good chance to stop and re-evaluate, what is it you enjoy doing in your work?” Carter says.
+<br/>
+                  <br/>
+“Find things that you do enjoy about your role. Have a conversation with managers or leaders to get them to help you.”
+<br/>
+                  <br/>
+However, Carter advises against planning or counting the days until the next break –especially when travel restrictions are constantly changing that can ruin holiday plans – and instead find other things to look forward to, at work or in their personal lives.
+<br/>
+                  <br/>
+“Ask yourself, ‘What other hobbies and activities can I plan to reward myself with?’,” he says.
+                  
+                      
+
+
+                   <div >
+								<img width="850" height="590" src="https://assets.venturecrowd.vc/uploads/2021/01/5119aceebfc0b97bee7b0feb095dc6f3.jpg"  />
+                      			
+							</div>
+                  <div>
+                      
+                      <br/>
+                  <br/>
+                      
+     <p>
+         
+         Starting the year with strategy sessions helps to engage and invigorate staff at crowdfunding investment platform VentureCrowd after their 2½ week Christmas and New Year break.
+<br/>
+                  <br/>
+Chief executive Steve Maarbani says many staff returned to work on Monday reenergised just because of their time off relaxing and recuperating.
+<br/>
+                  <br/>
+However for those who take a bit more time to get into the swing of things, three days of back-to-back strategy sessions are held, which helps workers to reframe their minds, connect with each other, and engage in business operations.
+<br/>
+                  <br/>
+Maarbani says workers cannot go full steam ahead until they have done the proper planning for next steps.
+<br/>
+                  <br/>
+“It’s always a slow start on the first day,” Maarbani says.
+<br/>
+                  <br/>
+“We’re six months in (to the financial year, so we discuss) is it still the right strategy for us?”
+<br/>
+                  <br/>
+“Is it yes, let’s play on; or no, this will require a rethink – once we get to that, then it’s really easy to run fast.”
+<br/>
+                  <br/>
+Maarbani personally hits the ground running and sends a message to all staff to help get them excited about work.
+<br/>
+                  <br/>
+“This year’s message is all about leadership, control and change,” he says.
+<br/>
+                  <br/>
+“For us to remain a market leader in our space, leadership belongs to all of us.”<br/>
+                  <br/>
+
+“It’s empowerment, reminding people that we are in control, that we trust them to lead.”
+<br/>
+                  <br/>
+This year it also incorporated the importance of family, health and wellbeing.
+         <br/>
+                  <br/>
+                      </p>                 
+
+                      
+                      
+                      
+                  </div>
+                  
+              </div>
+            </div>
+            <!-- Sidebar -->
+					<div class="col-md-3 sidebar px-4 px-md-0">
+						<div class="inner-container py-3">
+							<div class="recent-posts mb-5">
+								<h3 class="mb-2">Recent Posts</h3>
+								<ul>
+									<li>
+										<a href="#">How to invest in the property market without buying a property</a>
+									</li>
+									<li>
+										<a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+									</li>
+									<li>
+										<a href="#">Companies with a social conscience perform better</a>
+									</li>
+									<li>
+										<a href="#">Why gender equality is good for business</a>
+									</li>
+									<li>
+										<a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+									</li>
+								</ul>
+							</div>
+							<div class="archives">
+								<h3 class="mb-2">Archives</h3>
+								<ul>
+									<li>
+										<a href='#'>December 2020</a>
+									</li>
+									<li>
+										<a href='#'>November 2020</a>
+									</li>
+									<li>
+										<a href='#'>October 2020</a>
+									</li>
+									<li>
+										<a href='#'>September 2020</a>
+									</li>
+									<li>
+										<a href='#'>August 2020</a>
+									</li>
+									<li>
+										<a href='#'>January 2020</a>
+									</li>
+									<li>
+										<a href='#'>November 2019</a>
+									</li>
+									<li>
+										<a href='#'>October 2019</a>
+									</li>
+									<li>
+										<a href='#'>September 2018</a>
+									</li>
+									<li>
+										<a href='#'>March 2018</a>
+									</li>
+									<li>
+										<a href='#'>December 2017</a>
+									</li>
+									<li>
+										<a href='#'>August 2017</a>
+									</li>
+									<li>
+										<a href='#'>July 2017</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Post Footer -->
+		<section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'/blog/steve-maarbani-ticker-news-interview'}">
+			<div class="container">
+				<div class="row text-center py-5 text-white">
+					<div class="col-md-12 pt-5 next-post-link">Next Post</div>
+					<div class="col-md-12 pb-5 next-post-title mt-3">
+						<h3>Webinar Recording – Nexba Bridging Round Investment Opportunity | Nov 5, 2020 | Closing 13th November 2020</h3>
+					</div>
+				</div>
+			</div>
+			
+			<div class="next-post-bg-overlay"></div>
+			<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/12/Ticker_Banner.jpg')"></div>
+		</a>
+            </section>
+		<div class="social-share-container">
+			<div class="share-links mb-4">
+				<div class="link-container">
+					<a href="#" class="share-linked-in">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="share-trigger">
+				<i class="fa fa-share-alt" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+	<!-- ./Body -->
+	<!-- Component: Footer -->
+	<c:VC_CF_Footer />
+	<!-- ./Component: Footer -->
+	<script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

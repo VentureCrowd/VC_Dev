@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>09bc3209-1710-4cdb-a80e-f485e5d6549e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1dfd6cdd-6a06-4bfd-8ef2-7ec3a4e8e16b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i0000087q4W&amp;d=%2Fa%2F5i000000PVLQ%2FdeEiUBXnQGx9fsG0idOSGPN4sKRewhBkWL4qek8ONWE&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>Understanding the Property Capital Stack</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>09bc3209-1710-4cdb-a80e-f485e5d6549e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5c2f9577-1509-4dfc-9c2d-61d27427757d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>e7f85633-d023-4a88-8ff8-51cb01b4e4ca</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>d9c69</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-94814382-c0ec-4d45-8456-4f54cc3380de</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+	&lt;p&gt;Did you know that, just like with startup investing, real estate investing has different investment layers with different risks and returns?&lt;/p&gt;
+	&lt;p&gt;While real estate is a natural go-to for many new investors wanting to maximise returns and reduce risks, there are many ways to break into property investing. And because every real estate investment is unique, it’s important to understand how real estate investing can look depending on how you invest, when you enter the market and the deal type you invest in.&lt;/p&gt;
+	&lt;p&gt;In commercial property development such as what we do here at VentureCrowd, deals are broken down into 3 primary layers, each with different investment types, returns and risks attached to them. We refer to the different investment levels as the property capital stack.&lt;/p&gt;
+	&lt;p&gt;Once you get your head around the capital stack you will be better equipped to evaluate and manage real estate investment risks and projected returns.  In this article we break down the capital stack to help you make informed decisions about diversifying your real estate investments.&lt;/p&gt;
+    &lt;br&gt;
+    &lt;h1&gt;What is the capital stack in real estate investing?&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;The property capital stack describes &lt;a href=&quot;https://www.realtymogul.com/knowledge-center/article/demystifying-capital-stack&quot; target=&quot;_blank&quot;&gt;the capital investment layers&lt;/a&gt; for financing, developing and operating a commercial real estate investment.&lt;/p&gt;
+	&lt;p&gt;The capital stack defines who has the rights (and in what order) to the income and profits the property generates throughout the hold period and upon sale. Importantly, it also defines who has rights to the actual asset in case of an uncured default.&lt;/p&gt;
+	&lt;p&gt;When investing in real estate through an online marketplace, platform or other means, getting clear on the capital structure of any given development  and the associated risks and rewards helps you diversify your portfolio in an optimal way.&lt;/p&gt;
+	&lt;p&gt;Essentially, the stack’s structure and your place within it as an investor  will determine how and when you will get paid and whether you have the ability to take control of the underlying property.&lt;/p&gt;
+	&lt;p&gt;In a nutshell, your position within the stack shows your exposure level and also the level of your expected return.
+&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5c2f9577-1509-4dfc-9c2d-61d27427757d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>eachLinkTextColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectText</name>
+                    <value>How to invest in the property market without buying a property</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectURL</name>
+                    <value>https://www.google.com/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Recent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleTextColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentName>blogSidebarNavigation</componentName>
+                <identifier>blogSidebarNavigation</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>e7f85633-d023-4a88-8ff8-51cb01b4e4ca</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9232c2f2-84c5-4815-b5b4-090d63cbcae2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-3550fe4a-dc55-456d-afd1-465f5bdd8095</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.DIFPropertyStack.2}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;br&gt;
+    &lt;h1&gt;How the property capital stack works&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;The real estate capital stack is structured into three main components:
+    &lt;/p&gt;
+    
+    &lt;p&gt;&lt;b&gt;1. The acquisition stage&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;At the bottom of the capital stack we have equity.&lt;/p&gt;
+	&lt;p&gt;Common equity holders have the highest risk in the stack as they’re in first and paid last. Common equity holders require the highest return to compensate for such risk and have the potential to enjoy very high rewards.&lt;/p&gt;
+	&lt;p&gt;Unlike debt investors, equity investors target a Return on Equity (RoE) which typically translates into higher returns than the other two investment levels. This level carries more risk, however. For example, common equity holders aren’t guaranteed to receive periodic payments or even their principal back and their investments are generally illiquid. At VentureCrowd, equity projects tend to target a Return On Equity between 30-40%.&lt;/p&gt;
+&lt;br&gt;
+    &lt;p&gt;&lt;b&gt;2. The civil works stage&lt;/b&gt;&lt;/p&gt;
+
+	&lt;p&gt;Preference Equity/Mezzanine Debt is the next position in the capital stack. It is a fixed income security that offers passive recurring income for investors. This level forms the middle of the stack. Mezzanine debt is not secured by the property but by a pledge of the ownership interest. Because mezzanine debt is repaid after First Mortgage Fund (FMF) debt, it carries a slightly higher risk profile but is less risky than a common equity investment because the site value is higher after DA approvals and acquisition.&lt;/p&gt;
+	&lt;p&gt;As such, investors can expect to earn higher returns than they would gain with FMF. For example, where FMF debt may typically earn a 3-4% interest rate, mezzanine debt can earn &lt;a href=&quot;https://risingrp.com/insights/capital-stack-real-estate/&quot; target=&quot;_blank&quot;&gt;8-14% interest or more&lt;/a&gt;. That said, at VentureCrowd, we tend to offer 6% to 9%+ returns on our preference level investments. Given our focus on high growth Southeast Queensland, this target return rate can be as high as 12 to 15%.&lt;/p&gt;
+&lt;br&gt;
+    &lt;p&gt;&lt;b&gt;3. The construction stage&lt;/b&gt;&lt;/p&gt;
+	&lt;p&gt;In VentureCrowd property deals, First Mortgage Fund is another debt-based or fixed income security that pays regular passive income to investors. It sits at the top of the real estate capital stack. It is home to the highest priority &lt;a href=&quot;https://risingrp.com/insights/capital-stack-real-estate/&quot; target=&quot;_blank&quot;&gt;debt&lt;/a&gt;, meaning FMF investors are paid out first. 
+
+If a property performs well and generates cash flows sufficient to pay periodic debt service payments, then debt holders will get their full periodic payment before any other capital contributors. Because of this, First Mortgage Debt is considered to have the least risk. Traditionally first mortgage investments can range from 6-9%. In our case, because of our focus on high-growth areas like SEQ, our first mortgage fund allows for a 12% target return.
+
+&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>9232c2f2-84c5-4815-b5b4-090d63cbcae2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ce1df954-7d82-40ee-ad23-ff2a8454533d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fa754df8-824f-4ebe-a332-36c525417c09</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;br&gt;
+    &lt;h1&gt;Why does the property capital stack matter?&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;The property capital stack is important for two main reasons. From a property developer’s perspective, the way the capital stack is structured will influence a deal’s overall profitability. From the investor’s perspective, understanding the capital stack can help them to determine where and when to invest. Those seeking “safer” investments at lower yields can choose to invest in low-leverage debt, while those investors chasing higher yields may want to invest in common equity. &lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&amp;nbsp;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property/carrara-tranche-2&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Understandingthepropertystackimage.1}&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ce1df954-7d82-40ee-ad23-ff2a8454533d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6617e9b1-c272-4c88-8a39-8e631695735c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-23933d85-c3bf-41f5-b497-80c9721ae476</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;br&gt;
+    &lt;h1&gt;What to consider when investing in commercial property deals&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Understanding how a property developer distributes cash flow in each layer of the property capital stack will better position you to understand whether the intended return is worth the risk you take on.&lt;/p&gt;
+	&lt;p&gt;In commercial real estate, if you are less tolerant of risk as an investor, then FMF debt is generally the most secure position in the capital stack.&lt;/p&gt;
+	&lt;p&gt;Note that while risk decreases as you move up the capital stack, so does the potential return. There is no “good” or “bad” position within the stack, as long as you are aware of the potential return compared to the risk. You also have the opportunity to invest in projects at each level to diversify your portfolio. Our Cannon Hill project, for instance, provides the opportunity for an equity (high return, first in, last out) stake. Our Carrara project is a level 2 investment and our Glenvale project is now at the FMF stage.&lt;/p&gt;
+	&lt;p&gt;In reviewing crowdfunded real estate investments, an important part of due diligence is to understand the terms of the investment, including where you, as the investor, will sit in the capital stack. It’s also important to factor in the current investment environment.&lt;/p&gt;
+	&lt;p&gt;During a bear market such as we’ve experienced in 2022, where there’s high inflation, investors tend to gravitate towards fixed income securities to take advantage of subsequent higher interest rates, so that’s something to bear in mind (pun intended). However, when you consider regional growth, it’s worth looking at projects at each layer of the property capital stack to optimise your overall returns.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6617e9b1-c272-4c88-8a39-8e631695735c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2ff11228-c15f-496e-bce0-c56c748b8d89</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-3b169aa8-044a-4bc4-8657-335682554663</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;br&gt;
+    &lt;h1&gt;About VentureCrowd’s property deals&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Here at VentureCrowd, we raise capital for property development projects across the different stages of the property capital stack. Some projects will involve all capital stack investment layers and some will only have one or two. It really depends on the project.&lt;/p&gt;
+	&lt;p&gt;If you’re interested in property investment, the Queensland property market is a great place to start. Driven by affordability, lifestyle and work flexibility, regional property prices have on average climbed 15.2% (versus 9.4% in capital cities) over the past 12 months.&lt;/p&gt;
+    &lt;p&gt;Current property development projects we have on offer include:&lt;/p&gt;
+
+        
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2ff11228-c15f-496e-bce0-c56c748b8d89</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>29207dbc-8a28-45d7-afab-aa7d1c25bd38</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>8800a81f-871d-4f06-875f-132761f4fd01</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>08498</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>dc2c6f6c-0719-462e-86a3-7c36934a8fb5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>59e2f</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-827ade52-8cf5-4228-8de0-0eedbcd122f1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.CannonHillDealCard.1}&quot; style=&quot;width: 343.76px; height: 343.76px;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+    
+              &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property/cannon-hill&quot; target=&quot;_blank&quot; style=&quot;align: centre; padding: 14px 30px; font-weight: 500; color:#fff; font-size:20px; border: 2px solid #000000; background-color: #000000;&quot;&gt;Learn more&lt;/a&gt;
+
+        &lt;br&gt;&lt;br&gt;&lt;br&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>29207dbc-8a28-45d7-afab-aa7d1c25bd38</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.CarraraDealCard.1}&quot; style=&quot;width: 344.102px; height: 344.102px;&quot;&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+            
+                  &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property/carrara-tranche-2&quot; target=&quot;_blank&quot; style=&quot;align: centre; padding: 14px 30px; font-weight: 500; color:#fff; font-size:20px; border: 2px solid #000000; background-color: #000000;&quot;&gt;Learn more&lt;/a&gt;
+
+        &lt;br&gt;&lt;br&gt;&lt;br&gt;
+        
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>8800a81f-871d-4f06-875f-132761f4fd01</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.ToowoombaDealCard.1}&quot; style=&quot;width: 343.008px; height: 343.008px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+           
+                      &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property/fmf-glenvale&quot; target=&quot;_blank&quot; style=&quot;align: centre; padding: 14px 30px; font-weight: 500; color:#fff; font-size:20px; border: 2px solid #000000; background-color: #000000;&quot;&gt;Learn more&lt;/a&gt;
+
+        &lt;br&gt;&lt;br&gt;&lt;br&gt;
+        
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>dc2c6f6c-0719-462e-86a3-7c36934a8fb5</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a9145076-75c9-4a30-a464-ded25319fc5f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8a73f7d3-bc83-4aa1-a74d-0cf6ed4fb0a3</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;p&gt;Whichever level of the property capital stack you’re comfortable with, our aim here at VentureCrowd is to give you the opportunity to access impactful property investments that allow you to diversify your portfolio.
+        &lt;a href=&quot;https://www.venturecrowd.com.au/s/property&quot; target=&quot;_blank&quot;&gt;View our VC property deals&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/login/SelfRegister&quot; target=&quot;_blank&quot;&gt;book a call&lt;/a&gt; with one of our Property Capital Managers today. 
+    &lt;/p&gt;
+&lt;br&gt;
+        
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a9145076-75c9-4a30-a464-ded25319fc5f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>971b365d-b156-4cca-a576-4b883fb3d9b1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-dda906f3-cc3f-4e90-b199-ff87a0c576c9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>currentBlogSeqNumber</name>
+                    <value>26</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>nextPostButtonLabel</name>
+                    <value>Next Post</value>
+                </componentInstanceProperties>
+                <componentName>blogNextPost</componentName>
+                <identifier>blogNextPost</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>971b365d-b156-4cca-a576-4b883fb3d9b1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1dfd6cdd-6a06-4bfd-8ef2-7ec3a4e8e16b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1dfd6cdd-6a06-4bfd-8ef2-7ec3a4e8e16b&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;09bc3209-1710-4cdb-a80e-f485e5d6549e&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-94814382-c0ec-4d45-8456-4f54cc3380de</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;94814382-c0ec-4d45-8456-4f54cc3380de&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5c2f9577-1509-4dfc-9c2d-61d27427757d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;e7f85633-d023-4a88-8ff8-51cb01b4e4ca&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;d9c69&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-3550fe4a-dc55-456d-afd1-465f5bdd8095</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;3550fe4a-dc55-456d-afd1-465f5bdd8095&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9232c2f2-84c5-4815-b5b4-090d63cbcae2&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fa754df8-824f-4ebe-a332-36c525417c09</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fa754df8-824f-4ebe-a332-36c525417c09&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ce1df954-7d82-40ee-ad23-ff2a8454533d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-23933d85-c3bf-41f5-b497-80c9721ae476</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;23933d85-c3bf-41f5-b497-80c9721ae476&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;6617e9b1-c272-4c88-8a39-8e631695735c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-3b169aa8-044a-4bc4-8657-335682554663</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;3b169aa8-044a-4bc4-8657-335682554663&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2ff11228-c15f-496e-bce0-c56c748b8d89&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-827ade52-8cf5-4228-8de0-0eedbcd122f1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;827ade52-8cf5-4228-8de0-0eedbcd122f1&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;29207dbc-8a28-45d7-afab-aa7d1c25bd38&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;4&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;8800a81f-871d-4f06-875f-132761f4fd01&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;08498&quot;,&quot;columnWidth&quot;:&quot;4&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;dc2c6f6c-0719-462e-86a3-7c36934a8fb5&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;59e2f&quot;,&quot;columnWidth&quot;:&quot;4&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8a73f7d3-bc83-4aa1-a74d-0cf6ed4fb0a3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8a73f7d3-bc83-4aa1-a74d-0cf6ed4fb0a3&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a9145076-75c9-4a30-a464-ded25319fc5f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-dda906f3-cc3f-4e90-b199-ff87a0c576c9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;dda906f3-cc3f-4e90-b199-ff87a0c576c9&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;971b365d-b156-4cca-a576-4b883fb3d9b1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>he property capital stack refers to the layers of capital that go into a real estate investment. Find out how to assess your risk as a property investor here.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Understanding the Property Capital Stack</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Understanding the Property Capital Stack</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

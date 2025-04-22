@@ -1,0 +1,31 @@
+<template>
+    <div class="progress-bar">
+        <!-- Renders if and Eoi Exist -->
+        <!-- <template if:false={companyId}>
+            <div class="light eoi">
+                <div class="wrapper-eoi">
+                    <div class="eoi-text">
+                        <p class="font-eoi">Expression of Interest</p>
+                        <p class="font-eoi-link">Manage</p>
+                    </div>
+                </div>
+            </div>
+        </template> -->
+        <template for:each={updatedValues} for:item="value">
+            <div key={value.id} class={value.variation}>
+                <div class="wrapper">
+                    <div class="status-text" if:true={value.completed}><p>Completed</p></div>
+                    <div class="status-text in-progress" if:true={value.active}><p>In progress</p></div>
+                    <div class="information-container">
+                        <p>{value.id}. {value.label}</p>
+                        <div class="checkmark" if:true={value.completed}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
+                                <path d="M1 5.5L5.33333 10L14 1" stroke="#2F9F55" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

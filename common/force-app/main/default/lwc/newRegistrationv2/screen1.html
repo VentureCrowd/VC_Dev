@@ -1,0 +1,188 @@
+<template>
+    <!--New Code starts here-->
+    <lightning-spinner if:true={showspinner}></lightning-spinner>
+    <div class="wrapper">
+        <div class="slds-grid vc-grid-wrap bg">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-5 vc_blurBox slds-p-bottom_small">
+                <div class="vc_column-left vc_text-color_white">
+                    <div class="vc_RegistrationPageLogo">
+                        <img alt="Venture Crowd" src={mainlogo} />
+                    </div>
+                    <h1 class="vc-font-size_48 vc-font-caxton4 slds-p-bottom_medium">Fast-tracking success for founders, investors & syndicates</h1>
+                    <!-- <div class="vc-font-size_25 vc-font-size-mob_15 vc-font-suisseIntlLight slds-p-bottom_medium">
+                        Invest with your head <span class="vc-font-caxton5">and</span> your heart</div> -->
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2 vc_deskpaddingRight">
+                            <p>First name*</p>
+                            <lightning-input 
+                            class="vc_inputField" 
+                            type="text" 
+                            label="First Name" 
+                            data-id="firstName" 
+                            onchange={handleFirstName}
+                            value={leadData.firstName}
+                            maxlength="255"
+                            required></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <!--! Make sure the data field data-id it's lastName -->
+                            <p>Last name*</p>
+                            <lightning-input 
+                            class="vc_inputField" 
+                            type="text" 
+                            label="Last Name" 
+                            data-id="lastName" 
+                            onchange={handleLastName}
+                            value={leadData.lastName}
+                            maxlength="255"
+                            required></lightning-input>
+                        </div>
+                    </div>
+                    <p>Email*</p>
+                    <lightning-input 
+                    class="vc_inputField" 
+                    type="email" 
+                    label="Email" 
+                    data-id="email" 
+                    required 
+                    onchange={handleEmailChange} 
+                    value={leadData.email}
+                    maxlength="255">
+                    </lightning-input>
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-5 slds-large-size_2-of-5 vc_deskpaddingRight">
+                            <p>Country code*</p>
+                            <lightning-combobox 
+                            class="vc_combobox" 
+                            value="61" 
+                            label="Code"
+                            placeholder="Select Country Code"
+                            options={phoneoptions}
+                            onchange={handlemobilecodeChange} 
+                            data-id="countrycode" 
+                            required>
+                            </lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_3-of-5 slds-large-size_3-of-5">
+                            <p>Mobile*</p>
+                            <lightning-input 
+                            class="vc_inputField" 
+                            type="tel" 
+                            label="Mobile" 
+                            data-id="mobile" 
+                            pattern="[0-9]{9,10}"
+                            onchange={handlemobileChange} 
+                            value={leadData.mobile}
+                            required 
+                            maxlength="10">
+                            </lightning-input>
+                        </div>
+                    </div>
+                    <p>Password*</p>
+                    <lightning-input class="vc_inputField" type="password" label="Password" data-id="password" required
+                        onchange={passwordchange} maxlength="128"></lightning-input>
+                    <p>Confirm password*</p>
+                    <lightning-input class="vc_inputField" type="password" label="Confirm Password"
+                        data-id="cnfpassword" required onchange={cnfpasswordchange} maxlength="128"> 
+                    </lightning-input>
+                    <div class="slds-grid slds-p-vertical_medium vc-align-vertical vc-m-none">
+                        <lightning-input 
+                        class="vc_checkbox slds-m-right_small" 
+                        type="checkbox" 
+                        variant="label-hidden" 
+                        required
+                        name="input1" 
+                        onchange={handleCheckboxChange}
+                        checked>
+                        </lightning-input>
+                        <p class="vc_body1 vc-font-size-mob_13  vc-font-suisseIntlRegular vc_text-color_white">I have
+                            read and agree to VentureCrowd's <a href="/s/legals" target="_blank">terms and conditions
+                                and privacy policy</a>.</p>
+                    </div>
+                    <div class="slds-grid vc-align-vertical vc-m-none">
+                        <lightning-input 
+                        class="vc_checkbox slds-m-right_medium" 
+                        type="checkbox" 
+                        label=""
+                        variant="label-hidden"
+                        name="input2" 
+                        data-id="Email_Opt_In__pc" 
+                        onchange={handleCheckboxChange}
+                        checked
+                        ></lightning-input>
+                        <p class="vc_body1 vc-font-size-mob_13  vc-font-suisseIntlRegular vc_text-color_white">I agree
+                            to receive communications from VentureCrowd. I understand I can unsubscribe at any time.</p>
+                    </div>
+
+                    <div class="slds-text-align_center slds-p-top_x-large">
+                        <!-- <lightning-button variant="brand" icon-name="utility:forward" icon-position="right" class="vc_btn-primary vc_forwardBtnIcon" label="Register today for free" onclick={handlePage2}></lightning-button>
+                         -->
+                        <div class="vc_btn-primary">
+                            <button name="lead" class="slds-button" onclick={handlePage2} disabled={buttonDisabled}>
+                                <div class="vc-font-caxton2 vc_buttonLabelWidth"> Register today for free </div>
+                                <div class="slds-size_1-of-2 vc_forwardBtnIcon vc_buttonLabelWidth"> <img alt="Register"
+                                        src={BtnArrow} width="200px" height="26px" /> </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-grid_align-spread slds-text-align_center">
+                        <div
+                            class="slds-p-top_x-large slds-size_1-of-1 slds-large-size_1-of-2 vc_subHeading2 vc-font-size-mob_10  vc-font-caxton3 vc_text-color_white vc_deskpaddingRight">
+                            It’s fast and easy<br />No hidden fees
+                        </div>
+                        <div
+                            class="slds-p-top_x-large slds-size_1-of-1 vc_body1 vc-font-size-mob_10  vc_text-color_white slds-large-size_1-of-2 ">
+                            <div>Already have an account?</div>
+                            <div><a href="/s/login" target="_self">Login here</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-5 vc-align_absolute-center-vertical">
+                <div class="vc_column-right">
+                    <div class="vc_blurBox2 vc_blackBg slds-m-bottom_x-large">
+                        <div class="slds-p-bottom_x-small">
+                            <img alt="Venture Crowd" src={vc_logo} width="41px" height="26px" />
+                        </div>
+                        <div
+                            class="vc-font-size_25 vc-font-size-mob_23 vc-font-caxton2 vc_text-color_white slds-p-bottom_x-small ">
+                            Over $300M capital raised <br />since inception
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15 vc_text-color_white">
+                            Our expert team has helped fund over 200 purpose-driven ventures and community-focused property projects
+                        </div>
+
+                    </div>
+
+                    <div class="vc_blurBox2 slds-m-bottom_x-large vc_black-border">
+                        <!-- <div class="vc_boxIcon">
+                            <img alt="Venture Crowd" src={medicalIcon} width="40px" height="48px" />
+                        </div> -->
+                        <div class="vc-font-size_25 vc-font-size-mob_23 vc-font-caxton2 slds-p-bottom_x-small">
+                            Over 200 startups funded
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15">
+                            Since inception, our platform has fully digitised the capital raising process, enabling retail, wholesale and institutional 
+                            investors invest in Australia's brightest startups.
+                        </div>
+
+                    </div>
+
+                    <div class="vc_blurBox2 slds-m-bottom_x-large vc_black-border">
+                        <!-- <div class="vc_boxIcon">
+                            <img alt="Venture Crowd" src={jayrideIcon} width="83px" height="40px" />
+                        </div> -->
+                        <div class="vc-font-size_25 vc-font-size-mob_23  vc-font-caxton2 slds-p-bottom_x-small">
+                            Over $20M distributed to investors
+                        </div>
+                        <div class="vc_body2 vc-font-size-mob_15">
+                            Our multi-asset platform has distributed returns to investors across venture capital and property funds.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--New Code Ends here-->
+    <iframe src={navigateTo} name="captchaFrame" onload={captchaLoaded} width="0" height="0" style="display:none;"></iframe>
+</template>

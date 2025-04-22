@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <label>Lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Another real estate agent</fullName>
+                <default>false</default>
+                <label>Another real estate agent</label>
+            </value>
+            <value>
+                <fullName>Awaiting other Development Results</fullName>
+                <default>false</default>
+                <label>Awaiting other Development Results</label>
+            </value>
+            <value>
+                <fullName>Bought another property</fullName>
+                <default>false</default>
+                <label>Bought another property</label>
+            </value>
+            <value>
+                <fullName>Buyer&apos;s agent</fullName>
+                <default>false</default>
+                <label>Buyer&apos;s agent</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t decide</fullName>
+                <default>false</default>
+                <label>Can&apos;t decide</label>
+            </value>
+            <value>
+                <fullName>Cancelled Before Appointment</fullName>
+                <default>false</default>
+                <label>Cancelled Before Appointment</label>
+            </value>
+            <value>
+                <fullName>Claims they never clicked</fullName>
+                <default>false</default>
+                <label>Claims they never clicked</label>
+            </value>
+            <value>
+                <fullName>Claim they did not book</fullName>
+                <default>false</default>
+                <label>Claim they did not book</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Advisor</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Advisor</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Didn&apos;t like the project</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Didn&apos;t like the project</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-No Trust - does not understand the model</fullName>
+                <default>false</default>
+                <label>CM-Dasp-No Trust - does not understand the model</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Other</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Other</label>
+            </value>
+            <value>
+                <fullName>CM-Dasp-Personal reasons.</fullName>
+                <default>false</default>
+                <label>CM-Dasp-Personal reasons.</label>
+            </value>
+            <value>
+                <fullName>CM-Wasp-Location based</fullName>
+                <default>false</default>
+                <label>CM-Wasp-Location based</label>
+            </value>
+            <value>
+                <fullName>CM-Wasp-No Trust - does not understand the model</fullName>
+                <default>false</default>
+                <label>CM-Wasp-No Trust - does not understand the model</label>
+            </value>
+            <value>
+                <fullName>CM-Wasp-time waster</fullName>
+                <default>false</default>
+                <label>CM-Wasp-time waster</label>
+            </value>
+            <value>
+                <fullName>CM-wasp-Timing not quite right -but still interested.</fullName>
+                <default>false</default>
+                <label>CM-wasp-Timing not quite right -but still interested.</label>
+            </value>
+            <value>
+                <fullName>Couldn&apos;t get finance</fullName>
+                <default>false</default>
+                <label>Couldn&apos;t get finance</label>
+            </value>
+            <value>
+                <fullName>Dasp Lost Tags</fullName>
+                <default>false</default>
+                <label>Dasp Lost Tags</label>
+            </value>
+            <value>
+                <fullName>Does Not Qualify</fullName>
+                <default>false</default>
+                <label>Does Not Qualify</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t have enough in SMSF</fullName>
+                <default>false</default>
+                <label>Don&apos;t have enough in SMSF</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Founder looking to raise capital</fullName>
+                <default>false</default>
+                <label>Founder looking to raise capital</label>
+            </value>
+            <value>
+                <fullName>Invested Elsewhere</fullName>
+                <default>false</default>
+                <label>Invested Elsewhere</label>
+            </value>
+            <value>
+                <fullName>Just looking</fullName>
+                <default>false</default>
+                <label>Just looking</label>
+            </value>
+            <value>
+                <fullName>Lots too small</fullName>
+                <default>false</default>
+                <label>Lots too small</label>
+            </value>
+            <value>
+                <fullName>Multiple Offer on Lot</fullName>
+                <default>false</default>
+                <label>Multiple Offer on Lot</label>
+            </value>
+            <value>
+                <fullName>Multiple opportunities</fullName>
+                <default>false</default>
+                <label>Multiple opportunities</label>
+            </value>
+            <value>
+                <fullName>No Deposit</fullName>
+                <default>false</default>
+                <label>No Deposit</label>
+            </value>
+            <value>
+                <fullName>No funds</fullName>
+                <default>false</default>
+                <label>No funds</label>
+            </value>
+            <value>
+                <fullName>No Phone Number</fullName>
+                <default>false</default>
+                <label>No Phone Number</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>Not enough commission</fullName>
+                <default>false</default>
+                <label>Not enough commission</label>
+            </value>
+            <value>
+                <fullName>Not enough Profit</fullName>
+                <default>false</default>
+                <label>Not enough Profit</label>
+            </value>
+            <value>
+                <fullName>Not in a position for 1 month</fullName>
+                <default>false</default>
+                <label>Not in a position for 1 month</label>
+            </value>
+            <value>
+                <fullName>Not in a position for 2 months</fullName>
+                <default>false</default>
+                <label>Not in a position for 2 months</label>
+            </value>
+            <value>
+                <fullName>Not in a position for 3 months</fullName>
+                <default>false</default>
+                <label>Not in a position for 3 months</label>
+            </value>
+            <value>
+                <fullName>Not in a position indefinitely</fullName>
+                <default>false</default>
+                <label>Not in a position indefinitely</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Not Ready</fullName>
+                <default>false</default>
+                <label>Not Ready</label>
+            </value>
+            <value>
+                <fullName>No Trust</fullName>
+                <default>false</default>
+                <label>No Trust</label>
+            </value>
+            <value>
+                <fullName>Not the right configuration</fullName>
+                <default>false</default>
+                <label>Not the right configuration</label>
+            </value>
+            <value>
+                <fullName>Not the right location</fullName>
+                <default>false</default>
+                <label>Not the right location</label>
+            </value>
+            <value>
+                <fullName>Not the right price point</fullName>
+                <default>false</default>
+                <label>Not the right price point</label>
+            </value>
+            <value>
+                <fullName>Not the right yield</fullName>
+                <default>false</default>
+                <label>Not the right yield</label>
+            </value>
+            <value>
+                <fullName>Nurturing</fullName>
+                <default>false</default>
+                <label>Nurturing</label>
+            </value>
+            <value>
+                <fullName>Over budget</fullName>
+                <default>false</default>
+                <label>Over budget</label>
+            </value>
+            <value>
+                <fullName>Overpriced</fullName>
+                <default>false</default>
+                <label>Overpriced</label>
+            </value>
+            <value>
+                <fullName>Passive Researcher</fullName>
+                <default>false</default>
+                <label>Passive Researcher</label>
+            </value>
+            <value>
+                <fullName>Project not suitable</fullName>
+                <default>false</default>
+                <label>Project not suitable</label>
+            </value>
+            <value>
+                <fullName>Registration Delays</fullName>
+                <default>false</default>
+                <label>Registration Delays</label>
+            </value>
+            <value>
+                <fullName>Set up SMSF</fullName>
+                <default>false</default>
+                <label>Set up SMSF</label>
+            </value>
+            <value>
+                <fullName>Spam</fullName>
+                <default>false</default>
+                <label>Spam</label>
+            </value>
+            <value>
+                <fullName>Time Waster</fullName>
+                <default>false</default>
+                <label>Time Waster</label>
+            </value>
+            <value>
+                <fullName>Timing not right</fullName>
+                <default>false</default>
+                <label>Timing not right</label>
+            </value>
+            <value>
+                <fullName>Too risky</fullName>
+                <default>false</default>
+                <label>Too risky</label>
+            </value>
+            <value>
+                <fullName>Investment transferred to different entity</fullName>
+                <default>false</default>
+                <label>Transfer of ownership</label>
+            </value>
+            <value>
+                <fullName>Unsubscribed</fullName>
+                <default>false</default>
+                <label>Unsubscribed</label>
+            </value>
+            <value>
+                <fullName>Wasp lost tags</fullName>
+                <default>false</default>
+                <label>Wasp lost tags</label>
+            </value>
+            <value>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Number</label>
+            </value>
+            <value>
+                <fullName>Opted out</fullName>
+                <default>false</default>
+                <label>Opted out</label>
+            </value>
+            <value>
+                <fullName>Email bounced</fullName>
+                <default>false</default>
+                <label>Email bounced</label>
+            </value>
+            <value>
+                <fullName>Lead Cleanup</fullName>
+                <default>false</default>
+                <label>Lead Clean - No Activity</label>
+            </value>
+            <value>
+                <fullName>(G) Lost tags</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(G) Lost tags</label>
+            </value>
+            <value>
+                <fullName>(GP) Lost tags</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(GP) Lost tags</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

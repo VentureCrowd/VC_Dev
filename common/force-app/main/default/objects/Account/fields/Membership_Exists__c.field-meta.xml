@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Membership_Exists__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is checked when a membership exists against the person account whether currently active or not.</description>
+    <inlineHelpText>This field is checked when a membership exists against the person account whether currently active or not.</inlineHelpText>
+    <label>Membership Exists</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

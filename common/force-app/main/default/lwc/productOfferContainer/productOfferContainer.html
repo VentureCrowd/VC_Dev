@@ -1,0 +1,30 @@
+<template>
+    <div class="product-container">
+        <div class="investment-wrapper">
+            <template for:each={mainCards} for:item="card">
+                <div key={card.id}>
+                    <c-product-offer-card
+                        company-name={card.tileHeading}
+                        company-one-liner={card.companyOneLiner}
+                        banner-url={card.bannerURL}
+                        industry-type={card.industryType}
+                        investment-type={card.investmentType}
+                        logo-url={card.logoURL}
+                        status={status}
+                        deal-page-link={card.dealPageLink}
+                        is-eoi={isEOI}
+                        banner-auto={card.bannerAuto}>
+                    </c-product-offer-card>
+                </div>
+            </template>
+        </div>
+        <template lwc:if={showButton}>
+            <c-core-button
+                label={showMoreButtonText}
+                variation="secondary"
+                mode="light"
+                onclick={handleShowMoreButton}>
+            </c-core-button>
+        </template>
+    </div>
+</template>

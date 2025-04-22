@@ -1,0 +1,258 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="ReCaptchaAuraController"> 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="countriesList" type="List"/>
+    <aura:attribute name="firstName" type="String" /> 
+    <aura:attribute name="lastName" type="String" /> 
+    <aura:attribute name="countryCode" type="String" default="61" />
+    <aura:attribute name="mobile" type="String" /> 
+    <aura:attribute name="email" type="String" /> 
+    <aura:attribute name="password" type="String" default="" /> 
+    <aura:attribute name="confirmPassword" type="String" default=""/>
+    <aura:attribute name="investmentPimpa" type="Boolean" default="false"/>
+    <aura:attribute name="investmentBotanic" type="Boolean" default="false"/>
+    <aura:attribute name="investmentSYield" type="Boolean" default="false"/>
+    <aura:attribute name="terms" type="Boolean" default="false"/>
+    <aura:attribute name="isResetModal" type="Boolean" default="false"/>
+    <aura:attribute name="showformValidation" type="Boolean" default="false"/>
+    <aura:attribute name="isMobile" type="Boolean" default="false"/>
+    <aura:attribute name="showMoreInfo" type="Boolean" default="false"/>
+    <aura:attribute name="Email_Opt_In" type="Boolean" default="false"/>
+    <aura:attribute name="investorDetail" type="String" default="Retail"/> 
+    <aura:attribute name="formValidationText" type="String" default="Please fill in all fields"/>
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'Retail', 'value': 'Retail'},
+    {'label': 'Wholesale Investor', 'value': 'Wholesale Investor'},
+    {'label': 'Founder', 'value': 'Founder'}
+    ]"/>
+    <aura:attribute name="termOpp" type="List" default="[
+    {'label': '', 'value': 'term1'}
+    ]"/>
+    <aura:attribute name="value" type="String" default="Retail"/>
+    <aura:attribute name="termValue" type="String"/>
+    <aura:attribute name="showLoginError" type="Boolean" default="false" />
+    <aura:attribute name="showspinner" type="Boolean" default="false" />
+    <aura:attribute name="showCountries" type="Boolean" default="false" />
+    <aura:if isTrue="{!v.showspinner}">
+            <lightning:spinner alternativeText="Loading" size="small"  style="background-color:transparent"/>
+    </aura:if>
+    <aura:if isTrue="{!v.showMoreInfo}">
+         <!-- Modal/Popup Box starts here-->
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open modal-container">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Box Header Starts here-->
+                    <header class="slds-modal__header">
+                        <!-- WHAT IS THIS SHIT? -->
+                        <!-- <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.handleCancel }"
+                                              alternativeText="close"
+                                              variant="border-filled"
+                                              class="slds-modal__close"/> -->
+                        <div class="modal-close-button" onclick="{! c.handleCancel }">
+                            <i class="gg-close-o"></i>
+                        </div>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate slds-text-font_montserrat">What type of investor are you?</h2>
+                    </header>
+                    <!--Modal/Popup Box Body Starts here-->
+                    <div class="slds-modal__content slds-p-around_medium modal-body-content" id="modal-content-id-1">
+                        <p>
+                            <div style="text-align: left!important;" class="slds-text-font_montserrat">
+                                <b>Retail (Anyone residing in Australia and 18 y/o or older is a retail investor)</b>
+								 <br></br>
+								  
+                                You are either just getting started in investing, or already have experience but do not yet reach the criteria for Wholesale Investor (see below). You will be guided through easy and fast verification steps after completing this form.
+								<br></br>
+                                <br></br>
+                                <b>Wholesale Investor </b>
+								 <br></br>								  
+                                If you have a wholesale investor certification, have assets of AUD$2.5million or, have a gross income of the last 2 financial years of at least AUD$250,000 per annum, this is probably applicable to you. Additionally, if you are an experienced investor with multiple investments in venture capital or property, you may be qualified by our team as a wholesale investor after reviewing your documentation. After completing this registration form, you will be guided through simple and secure steps to complete your wholesale investor certification.
+                                <br></br>    
+								<br></br>								
+                                <b>Founder</b>
+								<br></br>
+                                You would like to raise capital with VentureCrowd.
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <aura:if isTrue="{!v.isResetModal}">
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            
+            <div class="{! v.isMobile ? 'slds-modal__container' :'slds-modal__container sectionDesktop'}">
+                <header class="slds-modal__header">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-align_absolute-center">
+                            <span>We can see that your email is already registered on our platform. Please select one of the following options.</span>
+                        </div>
+                        <div class="slds-col slds-float_right" style="text-align:right;">
+                            <span onclick="{!c.closeResetModal}"><img src="{!$Resource.closeImage}" alt="close"/></span>
+                        </div>
+                    </div>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <!--<div class="slds-grid" style="margin-bottom:5px;">
+                        <div class="slds-col slds-float_right" style="text-align:right;">
+                            <span onclick="{!c.closeResetModal}"><img src="{!$Resource.closeImage}" alt="close"/></span>
+                        </div>
+                    </div>-->
+                    <div class="slds-grid slds-grid_vertical">
+                        <!--<div class="slds-col slds-align_absolute-center">
+                            <span>We can see that your email is already registered on our platform. Please select one of the options.</span>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center slds-size_4-of-12"></div>-->
+                        <div class="slds-col slds-align_absolute-center">
+                            <div class="{! v.isMobile? 'slds-grid slds-grid_vertical': 'slds-grid slds-gutters slds-align_absolute-center'}">
+                                <div class="slds-col slds-align_absolute-center" style="margin:5px;">
+                                    <lightning:button variant="brand" class="capRoundBottom" label="Forgot Password" title="Redirect action" onclick="{! c.redirectToForgotPassword }" />
+                                </div>
+                                <div class="slds-col slds-align_absolute-center"></div>
+                                <div class="slds-col slds-align_absolute-center">
+                                    <lightning:button variant="brand" class="capRoundBottom" label="Login" title="Login action" onclick="{! c.redirectToLogin }" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <div class="slds-p-around_small form-container"> 
+        <lightning:input type="text" variant="label-hidden" name="Firstname" placeholder="First Name *" value = "{!v.firstName}" required="true"/> 
+        <br/>
+        <lightning:input type="text" variant="label-hidden" name="Lastname" placeholder="Last Name *" value = "{!v.lastName}" required="true"/> 
+        <br/>
+        <!-- <div class="phone-container">
+            
+        </div> -->
+        <div class="slds-grid" >
+            <div class="slds-col country-code">
+            <!--lightning:combobox class="country-code text-start" variant="label-hidden" required="true" value="{!v.countryCode}" options="{!v.countriesList}"></lightning:combobox-->
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <div class="slds-combobox_container">
+                        <div aura:id="ddId" class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right " role="none">
+                                <button type="button" onblur="{!c.handleShowCountriesFalse}" onclick="{!c.handleShowCountries}" class="buttonDD slds-input_faux slds-combobox__input slds-grid_vertical-align-center" aria-labelledby="combobox-label-id-130 combobox-id-59-selected-value" id="combobox-id-59-selected-value" aria-controls="listbox-id-1" aria-expanded="false" aria-haspopup="listbox">
+                                    <span class="slds-truncate " id="combobox-value-id-97">{!v.countryCode}</span>
+                                </button>
+                                <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right " style="height:100%;">
+                                    <lightning:icon size="x-small" iconName="utility:down"/>
+                                </span>
+                            </div>
+                            <aura:if isTrue="{!v.showCountries}">
+                            <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                    <aura:iteration items="{!v.countriesList}" var="countries">
+                                    <li  role="presentation" class="slds-listbox__item">
+                                        <div id="{!countries.value}" onmousedown="{!c.handleOnClickCountry}" data-id="{!countries.value}"
+                                            class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                            <span class="slds-media__figure slds-listbox__option-icon "></span>
+                                            <span class="slds-media__body">
+                                                
+                                                    <span class="slds-truncate" title="Accounts">{!countries.label}</span>
+                                                
+                                            </span>
+                                        </div>
+                                    </li>
+                                    </aura:iteration>
+                                </ul>
+                            </div>
+                            </aura:if>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="slds-col ">
+                <lightning:input class="mobile-number" name="Mobile" variant="label-hidden" onblur="{!c.onMobileKeyUp}" onkeypress="{!c.onMobileKeyUp}" aura:id="mobile"  placeholder="Mobile *" value = "{!v.mobile}" required="true" /> 
+            </div>
+        </div>
+        <br/>
+        <lightning:input type="Email" variant="label-hidden" name="Email" placeholder="Email*" value = "{!v.email}" required="true" /> 
+        <br/>
+        <lightning:input name="Password" variant="label-hidden" type="password" aura:id="password" placeholder="Password *" value = "{!v.password}" onkeypress="{!c.passwordKeyUp}" onmouseleave="{!c.passwordKeyUp}" onblur="{!c.passwordKeyUp}" onchange="{!c.passwordKeyUp}" required="true" /> 
+        <br/>
+        <lightning:input name="ConfirmPassword" variant="label-hidden" type="password" aura:id="confirmPassword" placeholder="Confirm Password *" value = "{!v.confirmPassword}" onkeypress="{!c.confirmPasswordKeyUp}" onmouseleave="{!c.confirmPasswordKeyUp}" onblur="{!c.confirmPasswordKeyUp}" onchange="{!c.confirmPasswordKeyUp}"  messageWhenbadInput="password and confirmpassword must match" required="true" /> 
+        
+        <br/>
+        
+        
+        <div class="recapText">
+            <p> What type of investor are you?* 
+                    <!-- <lightning:buttonIcon iconName="utility:help_doc_ext"  class = "iconPosition" variant="border-filled" onclick="{! c.handleMoreInfo }" alternativeText="More info." /> -->
+                <!-- STOP USING LIGHTNING ELEMENTS. THEY DONT EVER FIT THE FIGMA DESIGNS -->
+                <img src="{!$Resource.iconQuestion}" class="more-info-button" alt="More Info" onclick="{! c.handleMoreInfo }"/>
+            </p>
+            <lightning:radioGroup name="radioGroup"
+                          aura:id="investmentOption"
+                          options="{! v.options }"
+                          value="{! v.value }"
+                          onchange="{! c.handleChange }"
+                          type="radio"/>
+            
+          <!--  <lightning:input class="blue-checkbox" type="checkbox" label="Super High Yield Fund - Pimpama" name="Pimpama"  checked="{!v.investmentPimpa}"></lightning:input>
+            <lightning:input class="blue-checkbox" type="checkbox" label="Botanic Wellness" name="Botanic"  checked="{!v.investmentBotanic}"></lightning:input>
+            <lightning:input class="blue-checkbox" type="checkbox" label="Super High Yield Fund - Fernvale" name="SuperYeildFern" checked="{!v.investmentSYield}"></lightning:input>-->
+            <br/>
+            
+            <div style="display:flex;">
+              <!--  <lightning:input type="checkbox"  name="terms" checked="{! v.terms }"></lightning:input>-->
+                <lightning:radioGroup name="groupButton"
+                          aura:id="term"
+                          options="{! v.termOpp }"
+                          value="{! v.termValue }"
+                          onchange="{! c.handleChangeTerm }"
+                          type="radio"/>
+                <label id="termsLabel" class="terms-and-conditions"> I have read and agree to VentureCrowd's <a onclick="{!c.handleTermsAndConditionsInNewWindow}" >terms and conditions and privacy policy,</a> and to receive communications from VentureCrowd. I understand I can unsubscribe at any time.*
+                </label>
+            </div>
+            <!--<div style="display:flex;">
+                <input type="checkbox" id="terms" name="terms" value="{!v.terms}"></input>
+                <label for="terms" style="margin-left: 10px;margin-top:-4px;"> 
+                    <span style="white-space: nowrap;">I have read and agree to VentureCrowd's </span>
+                    <a href="#" style="color:white;text-decoration: underline;">terms and condition</a>
+                    and
+                    <a href="#" style="color:white;text-decoration: underline;">privacy policy.</a>
+                </label>
+            </div> --> 
+        </div>
+        <!--<lightning:input label="HighGrowth" name="Password" /> 
+        <lightning:textarea label="Message" name="Message"/> -->
+        <niantec:recaptcha aura:id="nicaptcha" 
+                           captchaType="v3" 
+                           badge="inline" 
+                           action="homepage" 
+                           theme="light" 
+                           oncallback="{!c.handleCallback}"
+                           onverifycallback="{!c.handleVerifyCallback}"
+                           onexpiredcallback="{!c.handleExpiredCallback}" 
+                           onerrorcallback="{!c.handleErrorCallback}"> 
+        </niantec:recaptcha> 
+        <div class="submit-button-container">
+            <lightning:button variant="brand" class="reCapRoundBottom" label="Register" title="Register action" onclick="{! c.handleClick }" />
+        </div>
+        <aura:if isTrue="{!v.showLoginError}">
+            <p  class="slds-text-color_destructive"> We are having trouble registering your details at the moment. Please reach out to our support team by calling
+                1300 039
+                655 or you can email us at <a href="mailto:hello@venturecrowd.com.au" style="color:white">hello@venturecrowd.com.au</a> and one of
+                our friendly team members will help with your
+                registration.</p>
+        </aura:if>
+        <!--<div class="slds-m-vertical_large"> 
+            <lightning:button aura:id="submit" disabled="true" label="Submit" onclick="{!c.handleSubmit}"></lightning:button> 
+        </div> 
+        <div> 
+            <lightning:button label="Reset" onclick="{!c.handleSubmit}"></lightning:button> 
+            <lightning:button label="Execute" onclick="{!c.handleExecute}"></lightning:button> 
+            <lightning:button label="getCaptcha" onclick="{!c.handleGetCaptcha}"></lightning:button>
+        </div> -->
+        <!--<p class="text-white login-link">Already have an account? <a href="https://cm-vc-internal.cs74.force.com/InvestorLogin/s/login">Login now</a></p>-->
+        <aura:if isTrue="{!v.showformValidation}" >
+            
+            <p style="color:red;"><br/>{!v.formValidationText}</p>
+        </aura:if>
+    </div>
+</aura:component>

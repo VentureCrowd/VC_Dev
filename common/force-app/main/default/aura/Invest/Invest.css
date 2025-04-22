@@ -1,0 +1,442 @@
+.THIS .vc-modalTopHeader{
+}
+.THIS .vc-logo img{
+    width:150px;
+}
+.THIS .value--row{
+    width:100%;
+    text-align:right;    
+}
+.THIS .capRoundBottom{
+    border-radius:8px;
+}
+.THIS .slds-radio_faux{
+    border-color: #CFCECC;
+}
+.THIS .errorMessage{
+    font-family: 'SuisseIntl-Regular';
+    font-size: 12px;
+    color: #EF5350;
+    line-height: 18px;
+    margin-left: -143px;
+}
+.THIS .roundOffMessage{
+    font-family: 'SuisseIntl-Regular' !important;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.THIS .errorMessageFinalText{
+    font-family: 'SuisseIntl-Regular';
+    font-size: 12px;
+    color: #EF5350;
+    line-height: 18px;
+}
+
+.THIS .Unused{
+    font-family: 'SuisseIntl-Regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: #000;
+    margin-left: -143px;
+}
+.THIS .richTextCSS ol{
+    list-style:'';
+}
+.THIS .textInput{
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* SELECT STYLING */
+.THIS .invest-as--custom-dropdown {
+    width: 100%;
+}
+
+.THIS .invest-as--custom-dropdown .label {
+    color: #000;
+    font-family: "SuisseIntl-Regular", sans-serif;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.THIS .invest-as--custom-dropdown .current-selection {
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.THIS .invest-as--custom-dropdown .title {
+    flex: 1;
+    font-family: "SuisseIntl-Light", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    margin-top: 2px;
+    padding: 0 8px;
+}
+
+
+.THIS .invest-as--custom-dropdown .image {
+    max-width: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.THIS .invest-as--custom-dropdown .image img {
+    height: auto;
+    width: 100%;
+}
+.THIS .value--quantity-container .slds-radio_button .slds-radio_button__label{
+    color:#000;
+}
+.THIS.slds-radio_faux{    
+    border-color: lightgray;
+}
+.THIS .value--quantity-container .slds-radio_button .slds-radio_button__label:hover{
+    color:#D95BAA;
+}
+.THIS .value--quantity-container .slds-radio_button [type=radio]:checked+.slds-radio_button__label{
+    background-color:#000;
+    color:#fff !important;
+}
+.THIS .generatePDFButton button,
+.THIS .mobilePDFButton button{
+    background-color: #000;
+    font-family: "Caxton-2", sans-serif;
+    font-size: 14px;
+    padding: 9px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    border-color: inherit;
+}
+.THIS .generatePDFButton button:hover,
+.THIS .mobilePDFButton button:hover{
+    background-color: #D95BAA;
+    color: #fff;
+}
+
+.THIS .invest-as--custom-dropdown .arrow {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+                width: 22px;
+                height: 22px;
+                border: 2px solid transparent;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all 300ms ease;
+            }
+            
+            .THIS .invest-as--custom-dropdown .current-selection.open .arrow {
+                transform: rotate(180deg);
+            }
+            
+            .THIS .invest-as--custom-dropdown .arrow::after {
+                content: "";
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #D95BAA ;
+                border-right: 2px solid #D95BAA;
+                transform: rotate(45deg);
+                left: 4px;
+                top: 2px
+            }
+            
+            .THIS .invest-as--custom-dropdown ul.expanded-list {
+                padding: 0;
+                margin: 8px 0 20px 0;
+                list-style: none;
+                background-color: #FFF;
+                border-radius: 4px;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                display: none;
+            }
+            
+            .THIS .invest-as--custom-dropdown ul.expanded-list.open {
+                display: block;
+            }
+            
+            .THIS .invest-as--custom-dropdown ul.expanded-list li {
+                font-family: "SuisseIntl-Light", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.1px;
+                transition: background 300ms ease;
+                cursor: pointer;
+                padding: 8px 16px;
+                border-bottom: 0.5px solid hsl(220deg 33% 9% / 20%);
+            }
+            
+            .THIS .invest-as--custom-dropdown ul.expanded-list li:last-child {
+                border-bottom: none;
+            }
+            
+            .THIS .invest-as--custom-dropdown ul.expanded-list li:hover {
+                color: #FFF;
+                background: #1B1B1B ;
+            }
+            
+            .THIS .custom-select-container {
+                display: none !important;
+            }
+            
+            /* BUG FIXES: VC-1241 */
+            .THIS .value--quantity-container {
+                margin-left: 23px;
+                margin-right: 23px;
+            }
+            
+            
+            .THIS .value--quantity-inner-container {
+                display: flex;
+            }
+            
+            .THIS .value--quantity-input {
+                flex: 1;
+            }
+            
+            .THIS .value--quantity-input label {
+                width: 100%;
+                text-align: center;
+                font-family: 'SuisseIntl-Regular';
+                font-size: 16px;
+            }
+            
+            
+            /* Total Payment Fixes */
+            .THIS .invest--total-payment {
+                background-color: #000;
+                border-radius: 6px;
+                color: #FFF;
+                display: flex;
+                padding: 26px 16px;
+                font-size: 26px;
+                font-family: 'SuisseIntl-Regular';
+                margin-left: 23px;
+                margin-right: 23px;
+                align-items: center;
+            }
+            
+            @media only screen and  (max-width: 767px) {
+                .THIS .invest--total-payment {
+                    font-size: 18px;
+                }
+            }
+            
+            .THIS .invest--total-payment .payment--label {
+                width: 60%;
+            }
+            
+            .THIS .invest--total-payment .payment--amount {
+                width: 40%;
+                text-align: right;
+            }
+            
+            .THIS .value--container {
+                margin-left: 23px;
+                margin-right: 23px;
+                /* border-top: 1px solid rgb(123 134 140 / 20%); */
+                padding-top: 24px;
+                margin-top: 24px;
+            }
+            .cInvest .value--container .value--row .value--cost
+            .THIS .value--container .value--row {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 16px;
+                color:#000 !important ;
+            }
+            
+            .THIS .value--container .value--row .value--label {
+                font-family: 'SuisseIntl-Regular';
+                color: #000;
+                font-size: 14px;
+                width: 70%;
+                text-align: right;
+            }
+            
+            .THIS .value--container .value--row .value--cost {
+                font-family: 'SuisseIntl-Light';
+                color: #000;
+                font-size: 14px;
+                width: 30%;
+                text-align: right;
+            }
+            
+            /* Investment Amount Bug Fixes */
+            
+            .THIS .invest--input-amount {
+                margin-left: 23px;
+                margin-right: 23px;
+                margin-top: 40px;
+            }
+            
+            .THIS .invest--input-amount p {
+                font-size: 14px;
+                font-family: 'SuisseIntl-Light';
+            }
+            
+            .THIS .invest--input-amount .invest--amount-input {
+                font-family: 'SuisseIntl-Light';
+            }
+            
+            /* Title Bug Fixes */
+            .THIS .invest--company span {
+                font-weight: 700 !important;
+            }
+            
+            @media only screen and  (max-width: 767px) {
+                .THIS .invest--heading span {
+                    padding-top: 39px;
+                }
+            }
+            
+            
+            /* THANK YOU PAGE */
+            @media only screen and  (max-width: 767px) {
+                .THIS .invest--thank-you .thank-you-heading {
+                    margin-top: 50px;
+                }
+            }
+            
+            .THIS .donation .slds-checkbox .slds-checkbox__label .slds-form-element__label
+            {
+                color : black !important;
+                font-size: 18px;
+                /* display: grid !important;
+                grid-template-columns: 1fr 1fr !important; */
+            }
+            .THIS .donation .slds-form-element__label:empty{
+                display: none;
+            }
+            .THIS .donation .slds-form-element .slds-checkbox [type=checkbox]+.slds-checkbox__label .slds-checkbox_faux{
+                border-color: black !important;
+            }
+            
+            .THIS .donation .slds-form-element__control .slds-checkbox {
+                display: block;
+                background-color: white;
+                margin: 5px;
+                border-radius: 5px;
+                padding: 12px;
+            }
+            .THIS li.disabled{
+                pointer-events:none; 
+                opacity:0.6; 
+            }
+            
+            /* Ven 163 -  Added for mobile view*/
+            /* margin-top: 13px; margin-left: 9px */
+            @media only screen and  (max-width: 420px) {
+                .THIS .mobileColumnFirst {
+                    width: 41.6666666667% !important;
+                }
+                .THIS .mobileColumnSecond {
+                    width: 50% !important;
+                }
+                
+                .THIS .mobileCloseButton {
+                    /* margin-left: -12px!important; */
+                    /* margin-top: -10px !important; */
+                    
+                    /* margin-top: -5px !important;
+                    margin-left: 15px !important;
+                    float: left!important; */
+                    
+                    /* height: 21px;
+                    margin-top: -5px!important;
+                    margin-left: 15px!important;
+                    float: left!important; */
+                }
+                
+                
+                .THIS .mobilePDFButton {
+                    /* margin-right: 0px !important; */
+                    text-align: unset !important;
+                    
+                    
+                }
+                .THIS .mobilePDFButton button {
+                    /* margin-top: -10px !important; */
+                    /* font-size:12px !important;
+                    inline-size: max-content !important;
+                    margin-left: 9px !important;
+                    margin-right: 0px !important; */
+                    
+                    /* padding-left: 27px;
+                    padding-right: 0px; */
+                    font-size: 15px!important;
+                    inline-size: max-content!important;
+                    /* margin-left: 0px!important;
+                    margin-right: 5px!important; */
+                }
+                
+                .THIS .mobilePDFButton button {
+                    margin-right: 35px;
+                    
+                } }  
+            
+            @media only screen and  (max-width: 361px) {
+                .THIS .mobileColumnFirst {
+                    width: 41.6666666667% !important;
+                }
+                .THIS .mobileColumnSecond {
+                    width: 50% !important;
+                }
+                
+                .THIS .mobileCloseButton {
+                    /* margin-left: -12px!important; */
+                    /* margin-top: -10px !important; */
+                    /* 
+                    height: 21px; */
+                    
+                    /* margin-top: -5px !important;
+                    margin-left: 15px!important;
+                    float: left!important; */
+                }
+                
+                .THIS .mobilePDFButton {
+                    /* margin-right: 0px !important; */
+                    text-align: unset !important;
+                    
+                    
+                }
+                .THIS .mobilePDFButton button {
+                    /* margin-top: -10px !important; */
+                    font-size: 15px !important;
+                    inline-size: max-content !important;
+                    /*  margin-left: 0px !important;
+                    margin-top: -6px !important;
+                    margin-right: 0px !important; */
+                    /* padding-left: 0px; */
+                }
+                
+                
+                .THIS .mobilePDFButton button {
+                    margin-right: 35px;
+                    
+                }    
+                .THIS .slds-modal__container {
+                    max-width: 675px !important;
+                    font-family: "SuisseIntl-Regular", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-top: 50px;
+                    
+                }
+                
+            }

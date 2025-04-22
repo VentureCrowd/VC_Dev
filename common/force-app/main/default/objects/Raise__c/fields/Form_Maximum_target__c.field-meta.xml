@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Maximum_target__c</fullName>
+    <description>This field indicates the maximum funding target for the company.</description>
+    <inlineHelpText>Specify the maximum amount of funding your company is aiming to raise.</inlineHelpText>
+    <label>Maximum target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

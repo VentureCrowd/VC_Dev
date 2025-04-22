@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Referral_Commission_Paid__c</fullName>
+    <inlineHelpText>When this has been paid please save it against the referring partner&apos;s account.</inlineHelpText>
+    <label>Date Referral Commission Paid</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

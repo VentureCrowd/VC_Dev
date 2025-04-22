@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wholesale_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordType.Name = &apos;Wholesale Investor Application&apos;,
+  ISPICKVAL(Status__c, &apos;Application Approved&apos;) ,
+  Membership_Validated__c = FALSE,
+  ISBLANK( Membership_Validated_By__c),
+ISBLANK( Date_Validated__c  ))</errorConditionFormula>
+    <errorMessage>Please make sure to fill all the fields in the Membership Validation section. Thank you</errorMessage>
+</ValidationRule>

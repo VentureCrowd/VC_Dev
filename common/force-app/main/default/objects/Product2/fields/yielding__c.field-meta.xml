@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>yielding__c</fullName>
+    <inlineHelpText>Select the view that is most appropriate for the type of product</inlineHelpText>
+    <label>Yielding</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capitalised</fullName>
+                <default>false</default>
+                <label>Capitalised</label>
+            </value>
+            <value>
+                <fullName>Compounding</fullName>
+                <default>false</default>
+                <label>Compounding</label>
+            </value>
+            <value>
+                <fullName>Distributions owing</fullName>
+                <default>false</default>
+                <label>Distributions owing</label>
+            </value>
+            <value>
+                <fullName>No distributions</fullName>
+                <default>false</default>
+                <label>No distributions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

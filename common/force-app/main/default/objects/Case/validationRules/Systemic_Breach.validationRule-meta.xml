@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Systemic_Breach</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (ISPICKVAL(Is_This_A_Systemic_Breach__c,&quot;Yes&quot;), ISBLANK( Details_of_Systemic_Breach__c ))</errorConditionFormula>
+    <errorDisplayField>Details_of_Systemic_Breach__c</errorDisplayField>
+    <errorMessage>Please Enter the Details</errorMessage>
+</ValidationRule>

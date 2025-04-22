@@ -1,0 +1,132 @@
+<template>
+    <div class="product-lead-form-container">
+        <div class="form-body" data-id="form-container">
+            <template lwc:if={isLoading}>
+                <div class="loading-spinner" data-id="loading-spinner">
+                    <span>Loading</span>
+                    <c-core-loading-spinner></c-core-loading-spinner>
+                </div>
+            </template>
+            <!-- Display Submission Confirmation if form is submitted -->
+            
+            <template lwc:else>
+                <c-core-form 
+                    title={formTitle}
+                    subtitle={formSubtext}
+                    button-label={buttonLabel}
+                    form-data={formData}
+                    onsubmit={handleSubmit}
+                    onchange={handleFormChange}
+                    button-variation="black"
+                    disable-submit={disableSubmit}
+                    full-width>
+                        <!-- Form Body Slot: Contains All Input Fields -->
+                        <div class="core-form-body" slot="body">
+                            <!-- First Name Input Field -->
+                            <c-core-input 
+                            type="text" 
+                            name="firstName" 
+                            placeholder="First Name"
+                            required>
+                            </c-core-input>
+
+                            <!-- Last Name Input Field -->
+                            <c-core-input 
+                            type="text" 
+                            name="lastName" 
+                            placeholder="Last Name"
+                            required>
+                            </c-core-input>
+                            
+                            <!-- Email Input Field -->
+                            <c-core-input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Email"
+                                required>
+                            </c-core-input>
+
+                            <div class="mobile-input-container">
+                                <!-- Mobile Number Code Input Field -->
+                                <c-core-input 
+                                    class="mobile-code-input"
+                                    type="dropdown" 
+                                    options={phoneNumberCodes}
+                                    value={formData.mobileCode}
+                                    name="mobileCode" 
+                                    required>
+                                </c-core-input>
+                                
+                                <!-- Mobile Number Input Field -->
+                                <c-core-input 
+                                    class="mobile-number-input"
+                                    type="tel" 
+                                    placeholder="Mobile Number" 
+                                    name="mobileNumber" 
+                                    required>
+                                </c-core-input>
+                            </div>
+                        
+
+                            
+                            <!-- User Type Radio Buttons -->
+                            <template if:true={showInvestorType}>
+                                <c-core-radio
+                                label="What kind of investor are you?"
+                                name="investorType"
+                                values={investorOptions}
+                                value={formData.investorType}
+                                size="medium"
+                                alignment-position="horizontal"
+                                subtext="Wholesale investors must have either a gross income of $250,000 or more per year for the past two years, or Net assets of at least $2.5 million."
+                                required>
+                                </c-core-radio>
+
+                                <div lwc:if={showWholesaleMessage} class="wholesale-only-message">
+                                    <span>
+                                        This investment opportunity is not available to retail investors.
+                                    </span>
+                                </div>
+                            </template>
+                            
+                            <template if:true={showProductDropdown}>
+                                <c-core-input 
+                                label="What product are you interested in?"
+                                type="dropdown" 
+                                value={formData.product}
+                                options={productOptions}
+                                name="product" 
+                                required>
+                                </c-core-input>
+                            </template>                           
+                            
+                        </div>
+                    </c-core-form>
+
+                    <div class="product-lead-form-footer">
+                        <p>By submitting this form, you're allowing us to keep you in the loop with the latest updates and news about this deal. You can unsubscribe at any time.</p>
+                    </div>
+                </template>
+        </div>
+    </div>
+    <c-core-modal
+    variation="primary" 
+    mode="light"
+    show-close-button="True"
+    width="450"
+    hide-open-button>
+        <div class="ea-header" slot="header">
+            <c-core-icon
+                icon-name="tickCircleDone"
+                width="40"
+                height="40"
+            ></c-core-icon>
+            <h2 class="main-title">Thank you for your submission!</h2>
+        </div>
+            
+        <div class="ea-body" slot="body">
+            <p>{successMessage}</p>
+        </div>
+        
+    </c-core-modal>
+</template>

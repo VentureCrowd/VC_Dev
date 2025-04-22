@@ -1,0 +1,104 @@
+.black-background {
+    background-color: black;
+}
+
+.vc-heading {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+  
+button.special {
+  /* font-family: "Caxton-2", "Montserrat", sans-serif !important; */
+  width: 100%;
+  max-width: 220px;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--primary-foreground);
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  transition: all 300ms ease;
+  background-color: var(--primary-background);
+  border-color: inherit;
+}
+
+@media (max-width: 480px) {
+  .slds-grid.slds-wrap.slds-grid_align-spread {
+    display: inline-block;
+  }
+
+  .slds-medium-size_8-of-12 {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .slds-medium-size_4-of-12 {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+
+  .vc-heading {
+    font-size: 15px; 
+    max-width: 50%;
+    width: 50%;
+    display: inline-block;
+    padding: 8px 30px 5px 0px; 
+  }
+
+  button.special {
+    max-width: 100%;
+    width: 100%;
+    /* padding: 10px 20px; */
+    text-align: center;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    font-size: 13px;
+    /* Adjust as needed */
+  }
+}
+
+  
+button.special:hover {
+  background-color: #D95BAA;
+  opacity: 1;
+  color: #fff;
+}
+
+.fix_margin {
+  margin-bottom: 20px !important;
+  margin-top: 0 !important;
+}
+
+.createNewCompany { 
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: all 300ms ease;
+  background-color: #fff;
+  border-color: inherit;
+  background-color: #D95BAA;
+  opacity: 1;
+  color: #fff;
+}
+
+.notAusBasedCompany { 
+  color: #D95BAA;
+}
+
+@media (max-width: 767px) {
+  .slds-medium-size_8-of-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+  }
+  .slds-medium-size_4-of-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-top: 1rem; /* Adjust as needed */
+  }
+}

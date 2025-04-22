@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>My Profile Component</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property label="Record Id" name="recordId" type="String" description="Id of the record"/>
+            <property label="Card Title" name="cardTitle" type="String" description="Title of the card"/>
+            <property label="Display User pic/Checkbox" name="isDisplayPicture" type="Boolean" description="Should User Picture/Wholesale check-box be displayed?"/>
+            <property label="Personal Account Only" name="isOnlyPersonalAccount" type="Boolean" description="Display Component only to personal Account"/>
+            <property label="Associated Object" name="sObjectName" type="String" description="Associated S-Object"/>
+            <property label="Fields to Retrieve (Business Contact)" name="sObjectBFields" type="String" description="Associated S-Object (, Seperated)"/>
+            <property label="Fields to Retrieve (Personal Account)" name="sObjectPFields" type="String" description="Associated S-Object (, Seperated)"/>
+            <property label="Fields to Retrieve (Salesforce User)" name="sObjectSFields" type="String" description="Associated S-Object (, Seperated)"/>     
+            <property label="Display Edit (Behaviour)" name="editBehaviour" type="String" datasource="Yes,No,No-Customize Edit" default="Yes"  description="Edit Button Functionality"/>
+            <property label="Custom Text and URL" name="editOverRide" type="String"  description="Custom Text and URL (, Seperated)"/>
+            <property label="Help text(if any)" name="helptext" type="String" description="Custom Text and URL (, Seperated)" />
+            <property label="Help text for popup(if any)" name="helptextpopup" type="String" description="Custom Text and URL (, Seperated)" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year_to_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;|&quot; /***** CALENDAR YEAR OFFSET CALCULATION *****/
+&amp;
+TEXT(
+    YEAR(CloseDate) - YEAR(TODAY())
+)
+&amp;
+&quot;CY&quot;
+&amp; /***** CALENDAR YEAR TO DATE INDICATOR *****/
+IF(
+    MONTH(CloseDate) &lt; MONTH(TODAY())
+    ||
+    (
+        MONTH(CloseDate) = MONTH(TODAY())
+        &amp;&amp;
+        DAY(CloseDate) &lt;= DAY(TODAY())
+    ),
+    &quot;TD&quot;,
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Year to Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

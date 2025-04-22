@@ -1,0 +1,56 @@
+<template>
+    <template lwc:if={isGuest}>
+        <slot name="body"></slot>
+    </template>
+    <template lwc:else>
+        <template  for:each={comments} for:item="comment">
+            <div key={comment.id} class="container-wrapper">
+                <div class="question-container" >
+                    <div class="information-container">
+                        <div class="image-container">
+                            <img src={comment.InvestorProfileURL} alt="">
+                        </div>
+                        <div>
+                            <h2>{comment.InvestorName}</h2>
+                            <p>{comment.PublishedDate}</p>
+                        </div>
+                    </div>
+                    <p>{comment.Comment}</p>
+                </div>
+                <div lwc:if={comment.VcTeamResponse} class="answer-container">
+                    <div class="information-container">
+                        <div class="image-container">
+                            <img src={comment.VcTeamProfileUrl} alt="">
+                        </div>
+                        <div>
+                            <h2>{comment.VcTeamName}</h2>
+                            <p>{comment.VcTeamRole}</p>
+                            <p>{comment.ResponseDate}</p>
+                        </div>
+                    </div>
+                    <p>{comment.VcTeamResponse}</p>
+                </div>
+            </div>
+        </template>  
+
+        <!-- Comment box section -->
+        <div class="comments-container">
+            <div class="input-container">
+                <c-core-input
+                name="testInput"
+                type="text"
+                placeholder="Ask a question"
+                onchange={commentChange}>
+                </c-core-input>
+            </div>
+            <div class="button-container">
+                <c-core-button
+                label="Submit"
+                variation="primary"
+                mode="light"
+                onbuttonclick={publishComment}>
+                </c-core-button>
+            </div>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Type__c</fullName>
+    <label>Property Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acreage/Semi Rural</fullName>
+                <default>false</default>
+                <label>Acreage/Semi Rural</label>
+            </value>
+            <value>
+                <fullName>Apartment</fullName>
+                <default>false</default>
+                <label>Apartment</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>House and Land Packages</fullName>
+                <default>false</default>
+                <label>House and Land Packages</label>
+            </value>
+            <value>
+                <fullName>Investment Property</fullName>
+                <default>false</default>
+                <label>Investment Property</label>
+            </value>
+            <value>
+                <fullName>Residential Home</fullName>
+                <default>false</default>
+                <label>Residential Home</label>
+            </value>
+            <value>
+                <fullName>Residential Land</fullName>
+                <default>false</default>
+                <label>Residential Land</label>
+            </value>
+            <value>
+                <fullName>Retirement Living</fullName>
+                <default>false</default>
+                <label>Retirement Living</label>
+            </value>
+            <value>
+                <fullName>Rural Land</fullName>
+                <default>false</default>
+                <label>Rural Land</label>
+            </value>
+            <value>
+                <fullName>Serviced Apartment</fullName>
+                <default>false</default>
+                <label>Serviced Apartment</label>
+            </value>
+            <value>
+                <fullName>Studio</fullName>
+                <default>false</default>
+                <label>Studio</label>
+            </value>
+            <value>
+                <fullName>Terrace</fullName>
+                <default>false</default>
+                <label>Terrace</label>
+            </value>
+            <value>
+                <fullName>Townhouse</fullName>
+                <default>false</default>
+                <label>Townhouse</label>
+            </value>
+            <value>
+                <fullName>Unit</fullName>
+                <default>false</default>
+                <label>Unit</label>
+            </value>
+            <value>
+                <fullName>Unit Block</fullName>
+                <default>false</default>
+                <label>Unit Block</label>
+            </value>
+            <value>
+                <fullName>Villa</fullName>
+                <default>false</default>
+                <label>Villa</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

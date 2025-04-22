@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ausaf.syed@venturecrowd.com.au</contactEmail>
+    <label>Tableau SSO</label>
+    <oauthConfig>
+        <callbackUrl>https://sso.online.tableau.com/public/sp/SSO/114730db-9306-4b89-aed0-d7bbae1b0644</callbackUrl>
+        <consumerKey>3MVG9G9pzCUSkzZv17BxV0U5PX3RPjJQCk8N34LDmRhB1DJzS9URvUitmzqAUwmB7RcgYeN.WFdys6atxgnoD</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>true</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>true</isPkceRequired>
+        <isRefreshTokenRotationEnabled>true</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <samlConfig>
+        <acsUrl>https://sso.online.tableau.com/public/sp/SSO/114730db-9306-4b89-aed0-d7bbae1b0644</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>https://sso.online.tableau.com/public/sp/metadata/114730db-9306-4b89-aed0-d7bbae1b0644</entityUrl>
+        <issuer>https://venturecrowd.my.salesforce.com</issuer>
+        <samlNameIdFormat>Unspecified</samlNameIdFormat>
+        <samlSigningAlgoType>SHA256</samlSigningAlgoType>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://prod-apsoutheast-a.online.tableau.com/t/venturecrowd</startUrl>
+</ConnectedApp>

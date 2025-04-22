@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_VC_Entity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is the Related VC Entity, where the investment amount will be deposited from the beggining of the investors application, then sent to the vehicle, the vehicle then will send the money back to this account to be then sent to the customer when the investment reaches maturity.</description>
+    <label>Related VC Entity</label>
+    <referenceTo>VC_Entity__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

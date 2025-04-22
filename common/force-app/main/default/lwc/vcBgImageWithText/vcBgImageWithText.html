@@ -1,0 +1,23 @@
+<template>
+
+    <template if:true={backgroundimageurl}>
+        <section class="component-container section--full-width">
+            <div class="container">
+                <div class="row text-white py-3 py-lg-5 px-3 px-lg-0">
+                    <div class="col-md-12 text-center">
+                        <h3 class="titleTextSec mb-5 vc-font-caxton4" lwc:dom="manual"></h3> 
+                        <div class="IntroTextSec mb-5 vc-font-suisseIntlLight" lwc:dom="manual"></div>
+                        
+                        <template if:true={primaryButtonHref}>
+                            <a target={primaryButtonTarget} href={primaryButtonHref} class={primaryButtonStyle}>{primaryButtonLabel}</a>
+                        </template>
+
+                    </div>
+                </div>
+            </div>
+            <div class="background-overlay"></div>
+            <div class="background" style={getbackgroundImgStyling}></div>
+        </section>
+    </template>
+
+</template>

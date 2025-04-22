@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Founder_Campaign</fullName>
+    <active>true</active>
+    <label>Founder Campaign</label>
+    <picklistValues>
+        <picklist>Campaign_Stage__c</picklist>
+        <values>
+            <fullName>Campaign Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOI Build</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mkt Assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raise Build</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Type__c</picklist>
+        <values>
+            <fullName>Friends %26 Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro_Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro_Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

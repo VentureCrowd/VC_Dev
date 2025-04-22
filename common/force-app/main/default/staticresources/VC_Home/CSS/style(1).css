@@ -1,0 +1,111 @@
+/*
+ Theme Name: Salient Child Theme
+ Theme URI: https://venturecrowd.com.au/
+ Description: This is a custom child theme for Salient
+ Author: Lorentz Kim
+ Author URI: https://venturecrowd.com.au/
+ Template: salient
+ Version: 0.1
+*/
+
+@font-face {
+  font-family: AvenirNext Bold;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-Bold-01.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AvenirNext BoldItalic;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-BoldItalic-02.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AvenirNext DemiBold;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-DemiBold-03.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AvenirNext DemiBoldItalic;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-DemiBoldItalic-04.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AvenirNext Italic;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-Italic-05.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext Medium;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-Medium-06.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext MediumItalic;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-MediumItalic-07.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext Regular;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-Regular-08.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext Heavy;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-Heavy-09.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext HeavyItalic;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-HeavyItalic-10.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext UltraLight;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-UltraLight-11.ttf');
+}
+
+@font-face {
+  font-family: AvenirNext UltraLightItalic;
+  src: url('/wp-content/themes/salient-child/fonts/avenir/AvenirNext-UltraLightItalic-12.ttf');
+}
+
+@font-face {
+    font-family: 'just_lovelyregular';
+    src: url('nicky_laatz__-_just_lovely-webfont.woff2') format('woff2'),
+         url('nicky_laatz__-_just_lovely-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+font-family: 'Gilroy-Regular';
+src: url('https://venturecrowd--akcelo--c.visualforce.com/resource/1607219020000/VC_Home/Fonts/Gilroy-Regular.otf');  
+}
+
+.menu-item-login-button a {
+  font-family: 'Gilroy-Regular'!important;
+  font-size: 14px!important;
+  font-style: normal;
+  font-weight: 500!important;
+  letter-spacing: 1px!important;
+}
+
+.menu-item-register-button a {
+  padding: 8px 16px 8px 16px!important;
+  margin: 0!important;
+  margin-top: -3px!important;
+  font-family: 'Gilroy-Regular'!important;
+  font-size: 14px!important;
+  font-style: normal;
+  font-weight: 500!important;
+  letter-spacing: 1px!important;
+  background-color: #05C5D1!important;
+  color: #fff;
+}
+
+.menu-item-register-button a:hover, .menu-item-register-button a:before, .menu-item-register-button a:after {
+  border: 0!important;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Activity_Update_Alert__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL(StageName, &quot;Closed Lost&quot;)
+),
+&quot;🟢 Closed Lost&quot;,
+IF(
+ISPICKVAL(StageName, &quot;Closed Won&quot;),
+&quot;🟢 Closed Won&quot;,
+IF(
+ISBLANK(LastActivityDate),
+&quot;🟠 no activity&quot;,
+IF(
+(TODAY() - LastActivityDate) &lt;= 3,
+&quot;🟢 on time&quot;,
+IF(
+AND(
+(TODAY() - LastActivityDate) &gt; 3,
+(TODAY() - LastActivityDate) &lt;= 8
+),
+&quot;🟠 over 3d&quot;,
+IF(
+(TODAY() - LastActivityDate) &gt; 8,
+&quot;🔴 over 8d&quot;,
+&quot;&quot;
+)
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Activity Update Alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

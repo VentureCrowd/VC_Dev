@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Raise_Status_Update__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        Status__c = &quot;Live&quot;,
+        Status__c = &quot;Closed&quot;,
+        Status__c = &quot;Live on VC Website&quot;
+    ),
+    &quot;🟢 Live/Closed&quot;,
+    IF(
+        Days_Since_Raise_Status_Update__c &lt; 15,
+        &quot;🟢 under 15 days&quot;,
+        IF(
+            AND(
+                Days_Since_Raise_Status_Update__c &gt;= 15,
+                Days_Since_Raise_Status_Update__c &lt; 30
+            ),
+            &quot;🟠 under 30 days&quot;,
+            IF(
+                AND(
+                    Days_Since_Raise_Status_Update__c &gt;= 30,
+                    Days_Since_Raise_Status_Update__c &lt; 100
+                ),
+                &quot;🔴 under 100 days&quot;,
+                IF(
+                    Days_Since_Raise_Status_Update__c &gt;= 100,
+                    &quot;🆘 over 100 days&quot;,
+                    &quot;&quot;
+                )
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Raise Status Update</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

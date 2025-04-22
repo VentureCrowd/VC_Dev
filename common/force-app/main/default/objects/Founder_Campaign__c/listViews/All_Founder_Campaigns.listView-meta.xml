@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Founder_Campaigns</fullName>
+    <columns>NAME</columns>
+    <columns>Campaign_Stage__c</columns>
+    <columns>Next_Step__c</columns>
+    <columns>Next_Step_Date_Validation__c</columns>
+    <columns>Marketing_Partner__c</columns>
+    <columns>Related_EOI__c</columns>
+    <columns>EOI_Status__c</columns>
+    <columns>EOI_Number_of_Leads__c</columns>
+    <columns>EOI_Target_Raise_Amount__c</columns>
+    <columns>EOI_Sum_of_Leads__c</columns>
+    <columns>Related_Raise__c</columns>
+    <columns>Raise_Status__c</columns>
+    <columns>True_Amount_to_Raise__c</columns>
+    <columns>Raise_Opp_Value__c</columns>
+    <columns>Raise_Opportunity_Count__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Founder Campaigns</label>
+</ListView>

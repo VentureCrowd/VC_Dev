@@ -1,0 +1,63 @@
+<template>
+    <div class="vc-page-wrapper slds-page-header_record-home">
+        <div class="vc-page-header">
+            <div class="vc-page-header__col-title">
+                <div class="slds-media slds-media_center">
+                    <div class="slds-media__figure vc_image">
+                        <img src={tile.prodimgformula} alt="Logo">
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate vc_tile_header-title vc-font-suisseIntlRegular" title={tile.prodDisplayName}>
+                                        {tile.prodDisplayName}
+                                    </span>
+                                    <span class="vc_tile_header-subTitle vc-font-suisseIntlLight">{tile.portalshortdescription}</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc-page-header__col-actions" if:true={tile.showviewmore}>
+                <div class="slds-page-header__controls">
+                    <div class="vc-page-header__control vc_desktopView">
+                        <button class="slds-button slds-button_neutral vc_viewMoreButton" data-id={tile.invId} data-redirecttype={tile.redirectType} title="View More" onclick={handleClick}>View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vc-page-body">
+            <div class="vc-page-body__col-details">
+                <!-- <ul class="slds-page-header__detail-row">
+                    <template for:each={tile.fieldDataSet} for:item="field">
+                        <li class="slds-page-header__detail-block" key={field.label}>
+                            <div class="slds-text-title slds-truncate" title={field.label}>{field.label}</div>
+                            <div class="slds-truncate" title={field.value}>{field.value}</div>
+                        </li>
+                    </template>
+                </ul> -->
+                <div class="vc-page-body__detail-row slds-grid_align-spread slds-wrap">
+                    <template for:each={tile.fieldDataSet} for:item="field">
+                        <div class="vc-page-body__detail-block" style="width:25%" key={field.label}>
+                            <div class="slds-text-title slds-truncate vc-page-body__detailBlock-title vc-font-suisseIntlRegular" title={field.label}>
+                                {field.label}
+                                <lightning-helptext class="vc_lightningHelpText" content={field.helpText} if:true={field.helpText}></lightning-helptext>
+                            </div>
+                            <template lwc:if={field.isHyperLink}>
+                                <a class="slds-truncate vc-page-body__detailBlock-value vc-font-suisseIntlLight" href="javascript:void(0);" data-id={field.hyperlinknavigation} onclick={redirectrToRecord} title={field.value}>{field.value}</a>
+                            </template>
+                            <template lwc:else>
+                                <div class="slds-truncate vc-page-body__detailBlock-value vc-font-suisseIntlLight" title={field.value}>{field.value}</div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+                <div class="vc-page-header__control slds-border_top vc_mobileView slds-text-align_center" if:true={tile.showviewmore}>
+                    <button class="slds-button slds-button_base" data-id={tile.invId} data-redirecttype={tile.redirectType} title="View More" onclick={handleClick}>View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

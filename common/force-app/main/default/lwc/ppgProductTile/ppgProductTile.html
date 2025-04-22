@@ -1,0 +1,55 @@
+<template>
+    <div class="product-tile-container">
+        <div class="product-info"> 
+            <div class="product-image">
+                <img src={productData.imgUrl} alt="product image" />
+            </div>
+            <div class="product-content">
+                <div class="product-name">
+                    {productData.name}
+                </div>
+                <template lwc:if={isMobile}>
+                    <div class="product-mobile">
+                        <div class="product-dropdown" onclick={handleShowMobileDetails}>
+                                Details 
+                                <c-core-icon
+                                icon-name="down-chevron"
+                                width="7"
+                                height="4"
+                                ></c-core-icon>
+                        </div>
+                    </div>
+                </template>
+                <template lwc:else>
+                    <div class="product-type">
+                        {productData.type}
+                    </div>
+                </template>
+                
+            </div>
+        </div>
+        <div class="investment-info">
+            <div class="investment-amt">
+                ${investmentAmount}
+            </div>
+        </div>
+    </div>
+    <div class="investment-breakdown">
+        <div class="investment-lines">
+            <template for:each={lineItems} for:item="lineItem">
+                <div class="line-item" key={lineItem.label}>
+                    <div class="label">{lineItem.label}</div>
+                    <div class="value">${lineItem.value}</div>
+                </div>
+            </template>
+        </div>
+        <div class="investment-total">
+            <div class="label">
+                Total Payment
+            </div>
+            <div class="value">
+                {totalPaymentValue}
+            </div>
+        </div>
+    </div>
+</template>

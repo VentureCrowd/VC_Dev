@@ -1,0 +1,47 @@
+<template>
+    
+    <section class={getComponentStyleClasses}>
+        <div class="container">
+            <template if:true={HeaderText}>
+                <div class="row">
+                    <div class="col-lg-12 text-center"><h2 class="mb-5 vc-font-caxton4">{HeaderText}</h2></div>
+                </div>
+            </template>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <template if:true={firstImg}>
+                        <div class="icon mb-4">
+                            <img src={firstImg} alt="" />
+                        </div>
+                    </template>
+                    <template if:true={firstImgTitle}><h4 class="mb-4 vc-font-suisseIntlLight">{firstImgTitle}</h4></template>
+                    <template if:true={firstImgFooterText}><p class="pb-4 px-5 firstImgFooterTextSec vc-font-suisseIntlLight">{firstImgFooterText}</p></template>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <template if:true={secondImg}>
+                        <div class="icon mb-4">
+                            <img src={secondImg} alt="" />
+                        </div>
+                    </template>
+                    <template if:true={secondImgTitle}><h4 class="mb-4 vc-font-suisseIntlLight">{secondImgTitle}</h4></template>
+                    <template if:true={secondImgFooterText}><p class="pb-4 px-5 secondImgFooterTextSec vc-font-suisseIntlLight">{secondImgFooterText}</p></template>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <template if:true={thirdImg}>
+                        <div class="icon mb-4">
+                            <img src={thirdImg} alt="" />
+                        </div>
+                    </template>
+                    <template if:true={thirdImgTitle}><h4 class="mb-4 vc-font-suisseIntlLight">{thirdImgTitle}</h4></template>
+                    <template if:true={thirdImgFooterText}><p class="pb-4 px-5 thirdImgFooterTextSec vc-font-suisseIntlLight">{thirdImgFooterText}</p></template>
+                </div>
+            </div>
+
+            <template if:true={footerBtnLabel}>
+                <div class="row pt-5 pb-0">
+                    <div class="col-lg-12 text-center"><a href={footerBtnRedirectUrl} class="cta-link vc-font-suisseIntlRegular">{footerBtnLabel}</a></div>
+                </div>
+            </template>
+        </div>
+    </section>
+</template>

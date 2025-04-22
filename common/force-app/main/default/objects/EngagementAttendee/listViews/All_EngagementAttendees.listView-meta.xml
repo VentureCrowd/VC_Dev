@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_EngagementAttendees</fullName>
+    <columns>Name</columns>
+    <columns>ExternalAttendee</columns>
+    <columns>InternalAttendee</columns>
+    <columns>Engagement</columns>
+    <columns>StartDateTime</columns>
+    <columns>EndDateTime</columns>
+    <columns>Owner</columns>
+    <columns>Id</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Engagement Attendees</label>
+</ListView>

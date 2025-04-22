@@ -1,0 +1,111 @@
+/* @Simplus VEN-170: New Navbar */
+/* Custom Fonts */
+@font-face {
+  font-family: "Suisse Int'l";
+  font-display: auto;
+  src: url('/resource/Fonts/Suisse/SuisseIntl-Light.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: "Caxton Bk Bt";
+  font-display: auto;
+  src: url('/resource/Fonts/Caxton/caxton.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: "Suisse Int'l Bold";
+  font-display: auto;
+  src: url('/resource/Fonts/Suisse/SuisseIntl-Bold.ttf') format('TrueType');
+}
+
+ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* top: 100%; */
+  width: 100%;
+  background-color: #000000;
+  overflow-y: scroll;
+  z-index: 999999999;
+  max-height: 83vh;
+}
+
+ul li {
+  text-align: left;
+}
+
+ul li a {
+  color: #FFFFFF;
+  font-family: "SuisseIntl-Regular";
+  font-size: 18px;
+  font-weight: 200;
+  padding: 14px 22px;
+  display: block;
+
+  /* transition: none; */
+  
+}
+
+.profile-photo {
+  border-radius: 50%;
+  margin-right: 6px;
+  
+}
+
+
+
+/* Ven 127 - New nav Bar Button */
+.submenuButton {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  margin-top: 0px !important;
+}
+
+/* Ven 127 - Nav Bar Burger Menu */
+.slds-tree__item .slds-button{
+  align-self:  center !important;
+}
+.slds-tree__item {
+  justify-content: space-between;
+}
+.slds-tree__item:hover{
+
+background: none !important;
+}
+
+.nestedUl {
+  position: unset !important;
+}
+ .onClickColorChange:hover{
+  color: #D95BAA !important;
+  text-decoration: underline !important;
+  font-family: "SuisseIntl-Bold" !important;
+  transition: none !important;
+}
+
+/* Ven 127 - Nav Bar Burger Menu */
+[aria-expanded=true]>.slds-tree__item .slds-button__icon {
+  
+  /* Used filter to access svg styling within used hex to filter #D95BAA => filter */
+  filter: invert(65%) sepia(25%) saturate(1746%) hue-rotate(283deg) brightness(99%) contrast(92%);
+
+  transition: 0.1s transform ease-in-out;
+}
+[aria-expanded=false]>.slds-tree__item .slds-button__icon {
+  transition: 0.1s transform ease-out;
+}
+
+[aria-level="1"]>.slds-tree__item {
+  padding-left: 2%;
+}
+   
+
+.slds-button:active {
+  color: black;
+  border-color: black;
+}
+.slds-button:focus {
+  outline:0;
+  box-shadow: none;
+}

@@ -1,0 +1,79 @@
+.ent-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ent-card{
+    padding: var(--space-md);
+}
+
+.ent-card-title h1 {
+    font-size: var(--text-xl);
+    font-family: "SuisseIntl-Medium";
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ent-card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ent-card-body {
+    padding-top: var(--space-lg);
+}
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg) 0;
+}
+
+.loading-spinner h1 {
+    margin: 0;
+}
+
+.ent-card-body c-core-button{
+    display: none;
+}
+
+/*  Devices (phones, 1000px and down) */
+@media only screen and (max-width: 1000px) {
+    .ent-container{
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+    .ent-card-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-details {
+        gap: var(--space-lg);
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .ent-card-title c-core-button{
+        display: none;
+    }
+
+    .ent-card-body c-core-button{
+        display: block;
+    }
+    
+    
+}

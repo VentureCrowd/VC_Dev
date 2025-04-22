@@ -1,0 +1,73 @@
+/* .vc_description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+.vc_termsLabel{
+    padding-left: 10px;
+    padding-top: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+} */
+/* .vc_text1{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+} */
+.vc-helpText {
+    position: relative;
+    bottom: 5px;
+    left: 8px;
+}
+
+.vc_blankCircle {
+    width: 20px;
+    height: 20px;
+    background: rgba(130, 75, 234, 0.29);
+    border-radius: 50%;
+}
+
+.vc_blankCircle+.vc_blankCircle {
+    margin-left: 16px;
+}
+
+.vc_column-left,
+.vc_column-right {
+    padding: 24px;
+}
+
+.vc_iconSetImage img {
+    display: block;
+}
+
+.vc_iconSetImage {
+    text-align: -webkit-center;
+    display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+    .vc_column-left {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .vc_column-right {
+        max-width: 765px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1023.5px) {
+    .vc_column-left {
+        margin-bottom: 16px;
+    }
+
+    .vc-align-baseline {
+        align-items: baseline;
+    }
+}

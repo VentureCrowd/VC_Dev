@@ -1,0 +1,42 @@
+@media screen and (max-width:768px) {
+	.mobilemargintop {
+		margin-top: 1.65em;
+		margin-bottom: 1.65em;
+        margin-left: 0.45em;
+		margin-right: 0.45em;
+	}
+}
+
+
+.show-more a {
+    color: #fff;
+    background-color: #02c8c8;
+    display: inline-block;
+    border: 2px solid #02c8c8;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 10px 25px;
+    transition: all 300ms ease;
+}
+
+.show-more a:hover {
+    background-color: #05d3d3;
+    border-color: #05d3d3;
+    text-decoration: none;
+}
+.showMoreButton{
+    font-family: "Caxton-2";
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 11%);
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.showMoreButton:hover{
+    background-color: #D95BAA;
+    text-decoration: none;
+}

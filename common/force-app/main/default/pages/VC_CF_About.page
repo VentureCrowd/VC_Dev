@@ -1,0 +1,203 @@
+<apex:page standardStyleSheets="false"  showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0" controller="ImageInfoController">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+    <apex:stylesheet value="{!$Resource.VC_CF_AboutCSS}"/>
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <apex:includeLightning />
+    <script type='text/javascript' src='https://www.google.com/recaptcha/api.js' />
+    <script type='text/javascript'>
+        //check if url contains contactus 
+        //then hilight sendemail section
+    	let url='{!$CurrentPage.URL}';
+    	let isContactUs=url.indexOf('contactus')>-1;
+        if(isContactUs)
+	    window.location.hash = '#sendEmail';       
+   
+    function formReset(){
+        document.getElementById("pg:fm").reset();
+        }
+    
+    
+    
+    
+    
+      // Here 'VfApp' Is Lightning Application Name
+    $Lightning.use("c:UserActionMenuApp", function() {
+      /* 'LcForVf' is Lightning Component Name which we are Displaying In Vf Page 
+       * syntax for create lightning component dynamically :
+       * $Lightning.createComponent(String type, Object attributes, String locator, function callback) */
+    $Lightning.createComponent("c:SendEmailComp",
+    { 
+      // Set Lightning Component Attributes Property before creating Lightning Component In Visualforce page 
+        /*  textColor : "Red",
+        currentUserName : '{!$User.FirstName} {!$User.LastName}' */
+        isContactUs:isContactUs,
+        usedinComunity:true
+        
+    },
+   "sendEmail",
+    function(component) {
+        console.log("component created");
+        // create component Callback, Lightning Component has been Created,
+        // Now you can set more lightning Component attributes here,
+        // and do more cool stuff here
+        //component.set("v.accId" , '{!$CurrentPage.parameters.recId}');
+    });
+ });
+    
+    </script> 
+    
+    <style type="text/CSS">
+        .hideButton{
+        display:none !important;
+        }
+    </style>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-about">
+        
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row  text-white mt-1 mt-lg-5 pt-1 pt-lg-5 pb-5">
+                    <div class="col-md-12 animate-group">
+                        <h1 class="mb-4 mt-5 animate-item-in"><strong>VentureCrowd</strong> gives you access to handpicked investment opportunities in alternative assets with reduced deal complexity.</h1>
+                        <p class="animate-item-in">We give investors convenient access to alternative equity, property and credit opportunities on the same terms as professional lead investors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/Future-City-Singapore-GRAD.jpg')"></div>
+        </section>
+        
+        <!-- Spacer -->
+        <section class="hero-spacer"></section>
+        
+        <!-- Alignment -->
+        <section class="alignment">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 has-background d-none d-md-block" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/about_us_2.png')"></div>
+                    <div class="col-md-6">
+                        <div class="inner-container pl-3 pr-3 pt-5 pb-5 p-lg-5 m-0 m-lg-5">
+                            <div class="animate-group">
+                                <h3 class="mb-3 animate-item-in">Alignment</h3>
+                                <p class="mb-5 animate-item-in">
+                                    We align all parties, offer complete transparency, and help drive portfolio diversification through early-stage businesses, premium real estate developments and
+                                    alternative debt investments.
+                                </p>
+                            </div>
+                            <div class="animate-group">
+                                <h3 class="mb-3 animate-item-in">Direct Access</h3>
+                                <p class="mb-5 animate-item-in">
+                                    Providing investors with direct access to curated alternative investment opportunities that have traditionally been limited to institutional or sophisticated
+                                    investors.
+                                </p>
+                            </div>
+                            <div class="animate-group">
+                                <h3 class="mb-3 animate-item-in">Alternative Assets</h3>
+                                <p class="animate-item-in">
+                                    We empower entrepreneurs, established business owners, property developers and lenders with access to alternative finance from a crowd of both retail &amp;
+                                    sophisticated investors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Partnerships -->
+        <section class="partnerships">
+            <div class="container pt-5">
+                <div class="row text-white text-center pt-5 pb-5 justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-8">
+                        <h2>Strong Partnerships</h2>
+                        <p>VentureCrowd has strong partners that focus on making principle investments and managing funds for seed stage and early stage ventures.</p>
+                        
+                        <ul class="py-4 py-md-5 my-4 my-md-5 animate-in">
+                            <li class="mb-1 mb-md-0"><img src="https://assets.venturecrowd.vc/uploads/2018/02/artesian-logo.png" /></li>
+                            <li class="mb-5 mb-md-0"><img src="https://assets.venturecrowd.vc/uploads/2018/02/sydney-angels-logo-w.png" /></li>
+                            <li class="mb-3 mb-md-0"><img src="https://assets.venturecrowd.vc/uploads/2018/02/clearstate-logo-w.png" /></li>
+                            <li class="mb-3 mb-md-0"><img src="https://assets.venturecrowd.vc/uploads/2018/02/prime-logo-w.png" /></li>
+                        </ul>
+                        
+                        <a class="button-outline-white" href="{!$Label.VC_CF_Public_URL + '/more/partners'}">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section class="contact">
+            <div class="container py-4 py-md-5">
+                <div class="row py-4 py-md-5 justify-content-center">
+                    <div class="col-md-12 text-white text-center">
+                        <h3 class="px-2 px-md-5">If you have any questions or would like more information about VentureCrowd, we’d love to hear from you.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row animate-group" data-animation="scale">
+                    
+                    <div class="col-md-6 contact-form animate-item-in">
+                        <div class="inner-container pl-2 pr-2 pt-5 pb-5 m-2 pl-md-5 ">
+                            <!-- AUra component to send email -->
+                            <div id="sendEmail"></div> 
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 contact-details animate-item-in" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/about_us_3.png')">
+                        <div class="inner-container pl-2 pr-2 pt-5 pb-5 m-2 pl-md-5 ">
+                            
+                            <h4>Offices</h4>
+                            <p class="mb-4">Sydney / Brisbane / Melbourne</p>
+                            
+                            <h4>Email</h4>
+                            <p class="mb-4">
+                                <a href="mailto:hello@venturecrowd.com.au" target="_blank">hello@venturecrowd.com.au</a>
+                            
+                            </p>
+                            
+                            <h4>Contact Number</h4>
+                            <p class="mb-4 pb-5">1300 039 655</p>
+                            
+                            <h4 class="mb-3">Elsewhere</h4>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/VentureCrowdAustralia/"><i aria-hidden="true" class="fa fa-facebook fa-fw"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://twitter.com/venturecrowd?lang=en"><i aria-hidden="true" class="fa fa-twitter fa-fw"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <a target="_blank" href="https://www.linkedin.com/company/venturecrowd-pty-ltd/"><i aria-hidden="true" class="fa fa-linkedin fa-fw"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ./Body -->
+    
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    </apex:page>

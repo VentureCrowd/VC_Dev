@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_EBITDA__c</fullName>
+    <inlineHelpText>Enter the amount of turnover the company will consider investing in as a minimum number. Add more detail if required to the &quot;Background&quot; field.</inlineHelpText>
+    <label>Minimum EBITDA</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

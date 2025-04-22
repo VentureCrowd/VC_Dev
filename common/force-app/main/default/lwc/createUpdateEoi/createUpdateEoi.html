@@ -1,0 +1,455 @@
+<template>
+    <template lwc:if={showBanner}>
+        <div class="create-update-eoi-banner">
+            <div class="content">
+                <p class="bold"> {titleText} </p>
+                <p> {secText} </p>
+            </div>
+            <div class="action">
+                <template lwc:if={bannerLink}>
+                    <a target="_blank" href={bannerLink}> 
+                        <c-core-button
+                        label="Let's go >"
+                        variation="black"
+                        ></c-core-button>
+                    </a>
+                </template>
+            </div>
+        </div>
+    </template>
+    
+    <div if:false={isEoiSubmittedForPublished} class="create-update-eoi">
+        <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+        
+        <div class="slds-col edit-eoi-container slds-var-p-bottom_small">
+            <div class="vc_text-color_black">
+                <div class="vc-font-caxton4 slds-var-m-bottom_medium create-update-eoi-company-account-name">{companyAccountName}</div>
+                <h1 class="vc-font-suisseIntlRegular vc-font-size_25 slds-var-p-bottom_medium">Craft an 'expression of interest' page</h1>
+                <div class="slds-var-p-bottom_medium create-update-eoi-subheading">Now it's time to start sharing your story with your network and obtaining expressions of interest from potential investors. This section contains the key highlights about your business and guidance to help you craft the most compelling story possible.</div>
+                <div class="slds-var-p-bottom_medium create-update-eoi-subheading">Effortlessly review and tweak the content as needed. Once you're happy with all mandatory fields, submit it for our quick review. This is your gateway to capturing investor interest and accelerating your company's growth.</div>
+            </div>
+        </div>
+        <div class="faq-container">
+                <c-core-button
+                    label="FAQs"
+                    variation="secondary"
+                    mode="light"
+                    onclick={openFaqPage}>
+                </c-core-button>
+                <c-core-button
+                    label="Example expression of interest page"
+                    variation="secondary"
+                    mode="light"
+                    onclick={openSeeExamplePage}>
+                </c-core-button>
+        </div>
+        <div>
+            <article class="slds-card slds-col slds-size_12-of-12 slds-var-p-around_x-large">
+
+                <div class="slds-modal__content">
+                    <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleSectionToggle} active-section-name={activeSections}>
+                        <lightning-accordion-section name="companyOverview" label="Company overview" class="slds-var-m-bottom_medium accordion-section">
+                            <div>
+                                <div class="slds-var-p-top_large slds-var-p-bottom_large">
+                                    <label for="company-trading-name">Company trading name*</label>
+                                    <div class="vc-font-suisseIntlLight vcslds-var-p-bottom_x-small">This is a brand name or the name customers know the company by.</div>
+                                    <lightning-input class="eoi-slds-input" id="company-trading-name" data-section="companyOverview" message-when-value-missing=" " data-id="EOI_Title__c" name="EOI_Title__c" type="text" value={eoiData.EOI_Title__c} data-value={eoiData.EOI_Title__c} label="" variant="label-hidden" required onchange={handleChange} maxlength="200"></lightning-input>
+                                    <c-custom-error-message show-error-message={showTitleError}></c-custom-error-message>
+                                </div>
+                                <div class="slds-var-p-bottom_large">
+                                    <label for="company-one-liner">Company one liner*</label>
+                                    <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">This is a catchy one line about the company's purpose and mission.</div>
+                                    <lightning-input class="eoi-slds-input" id="company-one-liner" data-section="companyOverview" message-when-value-missing=" " data-id="One_liner_about_business__c" name="One_liner_about_business__c" value={eoiData.One_liner_about_business__c} data-value={eoiData.One_liner_about_business__c} type="text" label="" variant="label-hidden" required onchange={handleChange} maxlength="150"></lightning-input>
+                                    <div class="slds-float_right slds-var-p-top_x-small">
+                                        <a target="_blank" href=" https://www.venturecrowd.com.au/s/learn/faq/guides#one-liner" class="slds-text-link create-update-eoi-help-link" style="color: none">How do I write a company one-liner?</a>
+                                    </div>
+                                    <div class="field-max-length-text slds-var-p-top_x-small">Max 150 characters</div>
+                                    <c-custom-error-message show-error-message={showOneLinerError}></c-custom-error-message>
+                                </div>
+                                <div class="slds-var-p-bottom_large">
+                                    <label for="company-trading-name">Pitch video link</label>
+                                    <div class="vc-font-suisseIntlLight vcslds-var-p-bottom_x-small">Share the link to a video explaining your company, offering.
+                                    <c-core-link 
+                                    label="The Importance of a high-quality Pitch Video"
+                                    hyperlink={helpTextMapping.pitchVideo}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link></div>
+                                    <lightning-input message-when-value-missing=" " data-id="Youtube_Video_Link__c" name="Youtube_Video_Link__c" type="text" value={eoiData.Youtube_Video_Link__c} onchange={handleChange} placeholder="https://www.youtube.com/" maxlength="255" class="eoi-slds-input create-update-eoi-input"></lightning-input>
+                                    <c-custom-error-message show-error-message={showYouTubeError} message="Invalid YouTube URL."></c-custom-error-message>
+                                </div>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                        <c-image-uploader required data-id={eoiData.DocumentId4} eoi-id={eoiId} file-name="logo" file-label="Company logo" img-url={eoiData.logo} help-text="The company logo will appear in the header of the expression of interest page." onfilesubmit={handleRefreshView} dimensions="150x150px" ratio="1:1 (square)"></c-image-uploader>
+                                    </div>
+                                    <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-var-p-left_small">
+                                        <c-image-uploader required data-id={eoiData.DocumentId5} eoi-id={eoiId} file-name="Banner" file-label="Banner image" img-url={eoiData.Banner} help-text="The banner image will appear in the header of the expression of interest page." onfilesubmit={handleRefreshView} dimensions="1920x1080px" ratio="16:9"></c-image-uploader>
+                                    </div>
+                                </div>
+                                <div class="slds-text-align_right slds-var-p-top_x-small slds-var-p-bottom_large">
+                                    <a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/how-to-resize-images" class="slds-text-link slds-float_right create-update-eoi-help-link">How do I resize images?</a>
+                                </div>
+                                <div class="slds-form-element__control slds-var-p-bottom_large">
+                                    <label for="company-overview">Company overview*</label>
+                                    <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Provide an overview of the company and its story to spark the interest of a potential investor.</div>
+                                    <textarea id="company-overview" data-section="companyOverview" data-id="Offer_Overview__c" name="Offer_Overview__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Offer_Overview__c}>{eoiData.Offer_Overview__c}</textarea>
+                                    <div class="slds-float_right slds-var-p-top_x-small">
+                                        <a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/guides#company-overview" class="slds-text-link create-update-eoi-help-link" style="color: none">How do I write a company overview?</a>
+                                    </div>
+                                    <div class="field-max-length-text slds-var-p-top_x-small">Max 600 characters</div>
+                                    <c-custom-error-message show-error-message={showOfferOverviewError}></c-custom-error-message>
+                                </div>
+                                <div>
+                                    <label>Supporting images</label>
+                                    <div class="vc-font-suisseIntlLight">Upload up to 3 images of your company's offering.</div>
+
+                                    <c-image-uploader class="slds-var-m-top_medium" eoi-id={eoiId} img-url={eoiData.SupportImages1} onfilesubmit={handleRefreshView} file-label="Image 1" file-name="supportingImage1" dimensions="600x600px" ratio="1:1 (square)"></c-image-uploader>
+                                    <div if:true={eoiData.SupportImages1}>
+                                        <button class="slds-button remove-supporting-image">
+                                            <label data-id={eoiData.DocumentId1} onclick={handleRemoveSupportingImage}>Remove image</label>
+                                        </button>
+                                    </div>
+
+                                    <c-image-uploader class="slds-var-m-top_medium" eoi-id={eoiId} img-url={eoiData.SupportImages2} onfilesubmit={handleRefreshView} file-label="Image 2" file-name="supportingImage2" dimensions="600x600px" ratio="1:1 (square)"></c-image-uploader>
+                                    <div if:true={eoiData.SupportImages2}>
+                                        <button class="slds-button remove-supporting-image">
+                                            <label data-id={eoiData.DocumentId2} onclick={handleRemoveSupportingImage}>Remove image</label>
+                                        </button>
+                                    </div>
+
+                                    <c-image-uploader class="slds-var-m-top_medium" eoi-id={eoiId} img-url={eoiData.SupportImages3} onfilesubmit={handleRefreshView} file-label="Image 3" file-name="supportingImage3" dimensions="600x600px" ratio="1:1 (square)"></c-image-uploader>
+                                    <div if:true={eoiData.SupportImages3}>
+                                        <button class="slds-button remove-supporting-image">
+                                            <label data-id={eoiData.DocumentId3} onclick={handleRemoveSupportingImage}>Remove image</label>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-accordion-section>
+
+                        <lightning-accordion-section name="companyHighlights" label="Company highlights" class="slds-var-m-bottom_medium accordion-section">
+                            <div class="slds-grid slds-gutters slds-var-p-top_large slds-var-p-bottom_large">
+                                <div class="slds-col slds-size_9-of-12">
+                                    <div>Provide a short description (1-2 sentences) under the headings below to showcase your company's growth and highlights.</div>
+                                    <div>These will appear as bullet points on the expression of interest page.</div>
+                                </div>
+                                <div class="slds-col slds-size_3-of-12 slds-text-align_right">
+                                    <a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/guides#company-highlights" class="slds-text-link create-update-eoi-help-link">How do I write company highlights?</a>
+                                </div>
+                            </div>
+
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="problem-or-opportunity">Problem or opportunity*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Describe the problem or marketing opportunity the company is addressing.</div>
+                                <textarea id="problem-or-opportunity" data-section="companyHighlights" data-id="Problem_or_opportunity__c" name="Problem_or_opportunity__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Problem_or_opportunity__c}>{eoiData.Problem_or_opportunity__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showYoYGrowthError}></c-custom-error-message>
+                            </div>
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="solution">Solution*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Describe the solution and how it addresses this problem.</div>
+                                <textarea id="solution" data-section="companyHighlights" data-id="Solution__c" name="Solution__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Solution__c}>{eoiData.Solution__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showKeyPartnershipsError}></c-custom-error-message>
+                            </div>
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="differentiation">Differentiation*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Describe how the company is different to current solutions.</div>
+                                <textarea id="differentiation" data-section="companyHighlights" data-id="Differentiation__c" name="Differentiation__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Differentiation__c}>{eoiData.Differentiation__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showKeyCustomersError}></c-custom-error-message>
+                            </div>
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="intellectual-property">Intellectual property*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Describe the company's intellectual property and its unique value as an asset.</div>
+                                <textarea id="intellectual-property" data-section="companyHighlights" data-id="Intellectual_Property__c" name="Intellectual_Property__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Intellectual_Property__c}>{eoiData.Intellectual_Property__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showARRError}></c-custom-error-message>
+                            </div>
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="total-addressable-market">Total addressable market*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Describe the size of the sector/market in which your company operates and how much is it forecast to grow by.</div>
+                                <textarea id="total-addressable-market" data-section="companyHighlights" data-id="Total_addressable_market__c" name="Total_addressable_market__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Total_addressable_market__c}>{eoiData.Total_addressable_market__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showCompetitiveAdvError}></c-custom-error-message>
+                            </div>
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="progress">Progress*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Describe how the company has performed so far.</div>
+                                <textarea id="progress" data-section="companyHighlights" data-id="Progress__c" name="Progress__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Progress__c}>{eoiData.Progress__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showAddressableMarketError}></c-custom-error-message>
+                            </div>
+                            <div class="slds-form-element__control">
+                                <label for="growth-plan">Growth plan*</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Summarise the key initiatives of your plan for growth in the next phase of your company.</div>
+                                <textarea id="growth-plan" data-section="companyHighlights" data-id="Growth_plan__c" name="Growth_plan__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required data-value={eoiData.Growth_plan__c}>{eoiData.Growth_plan__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                                <c-custom-error-message show-error-message={showGrowthStrategyError}></c-custom-error-message>
+                            </div>
+                        </lightning-accordion-section>
+
+                        <lightning-accordion-section name="team" label="Team" class="slds-var-m-bottom_medium accordion-section">
+                            <div>
+                                <a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/guides#Your-team" class="slds-text-link slds-float_right create-update-eoi-help-link">Why showcasing the team is important?</a>
+                            </div>
+                            <div>
+                                <c-add-edit-founders data-section="team" onvalidatefounder={handleValidateFounder}></c-add-edit-founders>
+                                <c-custom-error-message show-error-message={showFounderError} message="Add at least one founder before submitting the expression of interest to be published."></c-custom-error-message>
+                            </div>
+                            <div>
+                                <c-add-edit-wider-team></c-add-edit-wider-team>
+                            </div>
+                            <div>
+                                <c-add-edit-advisor></c-add-edit-advisor>
+                            </div>
+                        </lightning-accordion-section>
+
+                        <lightning-accordion-section name="socialAndMediaLinks" label="Social and media links" class="slds-var-m-bottom_medium accordion-section">
+                            <h4 class="vc-font-size_23 slds-var-p-top_large slds-var-p-bottom_medium">
+                                <b class="vc-font-caxton7">Social media</b>
+                            </h4>
+                            <div class="vc-font-suisseIntlLight slds-var-p-bottom_medium">Add URLs of any social media accounts linked to your company.</div>
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_large">
+                                        <lightning-input label="Facebook" message-when-value-missing=" " data-id="Facebook_link__c" name="Facebook_link__c" type="text" value={eoiData.Facebook_link__c} onchange={handleChange} placeholder="https://www.facebook.com/" maxlength="255" class="eoi-slds-input create-update-eoi-input"></lightning-input>
+                                        <c-custom-error-message show-error-message={showFacebookError} message="Invalid Facebook URL."></c-custom-error-message>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_large">
+                                        <lightning-input label="Instagram" message-when-value-missing=" " data-id="Instagram_link__c" data-value={eoiData.Instagram_link__c} name="Instagram_link__c" type="text" value={eoiData.Instagram_link__c} onchange={handleChange} placeholder="https://www.instagram.com/" maxlength="255" class="eoi-slds-input create-update-eoi-input"></lightning-input>
+                                        <c-custom-error-message show-error-message={showInstagramError} message="Invalid Instagram URL."></c-custom-error-message>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_large">
+                                        <lightning-input label="LinkedIn" message-when-value-missing=" " data-id="Linkedin_link__c" name="Linkedin_link__c" type="text" value={eoiData.Linkedin_link__c} onchange={handleChange} placeholder="https://www.linkedin.com/" maxlength="255" class="eoi-slds-input create-update-eoi-input"></lightning-input>
+                                        <c-custom-error-message show-error-message={showLinkedInError} message="Invalid LinkedIn URL."></c-custom-error-message>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_large">
+                                        <lightning-input label="X (Twitter)" message-when-value-missing=" " data-id="Twitter_X_link__c" name="Twitter_X_link__c" type="text" value={eoiData.Twitter_X_link__c} onchange={handleChange} placeholder="https://twitter.com/" maxlength="255" class="eoi-slds-input create-update-eoi-input"></lightning-input>
+                                        <c-custom-error-message show-error-message={showTwitterError} message="Invalid X (Twitter) URL."></c-custom-error-message>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_large">
+                                        <lightning-input label="YouTube" message-when-value-missing=" " data-id="Youtube_link__c" name="Youtube_link__c" type="text" value={eoiData.Youtube_link__c} onchange={handleChange} placeholder="https://www.youtube.com/" maxlength="255" class="eoi-slds-input create-update-eoi-input"></lightning-input>
+                                        <c-custom-error-message show-error-message={showYouTubeError} message="Invalid YouTube URL."></c-custom-error-message>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slds-var-p-top_large">
+                                <c-add-edit-media-links></c-add-edit-media-links>
+                            </div>
+                        </lightning-accordion-section>
+
+                        <lightning-accordion-section name="intendedRaise" label="Intended raise" class="slds-var-m-bottom_medium accordion-section">
+                            <div class="slds-grid slds-gutters slds-var-p-top_large slds-var-p-bottom_large">
+                                <div class="slds-col slds-size_9-of-12">
+                                    <div class="vc-font-suisseIntlLight">This section is optional, however if you wish to complete any of the "intended raise" fields, then the ALL must be completed.</div>
+                                </div>
+                                <div class="slds-col slds-size_3-of-12 slds-text-align_right">
+                                    <a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/guides#Capital" class="slds-text-link create-update-eoi-help-link">How to write about the capital required?</a>
+                                </div>
+                            </div>
+                            <!-- <div class="slds-var-p-top_large slds-var-p-bottom_large"></div> -->
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_small">
+                                        <lightning-combobox class="vc-combobox-2 eoi-slds-combobox " label="Stage" data-id="Company_Stage__c" name="Company_Stage__c" options={companyStageOptions} value={eoiData.Company_Stage__c} type="picklist" onchange={handleChange} placeholder="Please select an option..."></lightning-combobox>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_small">
+                                        <lightning-input class="eoi-slds-input" label="Target amount" data-id="Target_Raise_Amount__c" name="Target_Raise_Amount__c" type="number" formatter="currency" value={eoiData.Target_Raise_Amount__c} placeholder="$" onchange={handleChange} maxlength="18"></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_small">
+                                        <label for="min-investment-amt">Minimum investment amount</label>
+                                        <a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/guides#InvestmentAmount" class="slds-text-link create-update-eoi-help-link">How to decide on a minimum investment amount and why is it important?</a>
+                                        <lightning-input class="eoi-slds-input" id="min-investment-amt" data-id="Minimum_Investment_amount__c" name="Minimum_Investment_amount__c" type="number" formatter="currency" value={eoiData.Minimum_Investment_amount__c} placeholder="$" onchange={handleChange} maxlength="18"></lightning-input>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12">
+                                    <div class="slds-var-p-bottom_large">
+                                        <label for="contact-email">Contact email</label>
+                                        <div class="vc-font-suisseIntlLight slds-var-p-bottom_medium">Provide a contact email which potential investors can contact with questions about the raise.</div>
+                                        <lightning-input class="eoi-slds-input" id="contact-email" data-section="intendedRaise" message-when-value-missing=" " data-id="Raise_Contact_email__c" name="Raise_Contact_email__c" value={eoiData.Raise_Contact_email__c} data-value={eoiData.Raise_Contact_email__c} type="text" label="" variant="label-hidden" required onchange={handleChange} maxlength="254"></lightning-input>
+                                        <c-custom-error-message show-error-message={showContactRaiseEmailError} message="Please enter a valid email address"></c-custom-error-message>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                           
+
+                            <div class="slds-form-element__control slds-var-p-bottom_large">
+                                <label for="planned-use-of-funds">Planned use of funds</label>
+                                <div class="vc-font-suisseIntlLight slds-var-p-bottom_x-small">Provide an outline of key initiatives which will be funded by the capital and support company growth.</div>
+                                <textarea id="planned-use-of-funds" data-section="intendedRaise" data-id="Planned_used_of_funds__c" name="Planned_used_of_funds__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="300" required data-value={eoiData.Planned_used_of_funds__c}>{eoiData.Planned_used_of_funds__c}</textarea>
+                                <div class="slds-var-p-top_x-small field-max-length-text">Max 300 characters</div>
+                            </div>
+
+                            
+
+                            <span if:true={showIntendedRaisedError} style="color: #d95baa">Please correct and complete the intended raise details.</span>
+                            <div class="addLeadInvestorButton">
+                                <c-add-edit-lead-investor></c-add-edit-lead-investor>
+                            </div>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                </div>
+            </article>
+        </div>
+
+        <!-- confirm submission popup start here -->
+        <div if:true={showConfirmSubmissionPopup} class="more-options-model">
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open slds-modal_small">
+                <div class="slds-modal__container">
+                    <!-- Cross button to close mode -->
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closePopup}>
+                        <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                            <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#close"></use>
+                        </svg>
+                        <label class="slds-assistive-text">Cancel and close</label>
+                    </button>
+                    <div class="slds-modal__header">
+                        <!-- Model header -->
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Confirm submission</h1>
+                    </div>
+                    <!-- agree to continue checkboxes start here -->
+                    <div class="slds-modal__content slds-var-p-around_medium">
+                        <fieldset class="slds-form-element">
+                            <div class="slds-form-element__control">
+                                <div class="slds-checkbox">
+                                    <input type="checkbox" name="checkbox1" id="checkbox-unique-id-1" value="" onclick={handleCheck} />
+                                    <label class="slds-checkbox__label" for="checkbox-unique-id-1">
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span>I confirm the accuracy of the information provided, and will update this information if it changes or becomes misleading.</span>
+                                    </label>
+                                </div>
+                                <div class="slds-checkbox">
+                                    <input type="checkbox" name="checkbox2" id="checkbox-unique-id-2" value="" onclick={handleCheck} />
+                                    <label class="slds-checkbox__label" for="checkbox-unique-id-2">
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span>I consent to VentureCrowd using the information provided to provide capital raising tools and services to me.</span>
+                                    </label>
+                                </div>
+                                <div class="slds-checkbox">
+                                    <input type="checkbox" name="checkbox3" id="checkbox-unique-id-3" value="" onclick={handleCheck} />
+                                    <label class="slds-checkbox__label" for="checkbox-unique-id-3">
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span>I agree to VentureCrowd hosting this content with its branding and understand {companyAccountName} is responsible for distributing and sharing the published page.</span>
+                                    </label>
+                                </div>
+                                <div class="slds-checkbox">
+                                    <input type="checkbox" name="checkbox4" id="checkbox-unique-id-4" value="checkbox-unique-id-90" onclick={handleCheck} />
+                                    <label class="slds-checkbox__label" for="checkbox-unique-id-4">
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span> I agree that this content complies with <a target="_blank" href="https://www.venturecrowd.com.au/s/legals" class="slds-text-link create-update-eoi-help-link" style="color: none">VentureCrowd's policies</a>.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!-- agree to continue checkboxes ends here -->
+                    <div class="slds-modal__footer">
+                        <!-- The error message will be shown if all checkboxes are not checked) -->
+                        <span if:true={showConfirmSubmitMessage} class="slds-float_left common-color">You must agree to all terms before submitting.</span>
+                        <!-- Submit button  -->
+                        <button type="button" onclick={handlePublishEoi} class="custom-button">
+                            <label>Submit</label>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </div>
+        <!-- confirm submission popup ends here -->
+    </div>
+
+    <div class="sticky-menu">
+        <div lwc:if={missingRequiredDetails}>
+            <c-core-button
+            label="Submit to be published"
+            variation="primary"
+            mode="light"
+            onclick={handleSubmit}>
+            </c-core-button>
+        </div>
+        <div class="error-container" lwc:else>
+            <c-core-button
+            label="Submit to be published"
+            variation="primary"
+            mode="light"
+            onclick={handleShowErrorOnSubmit}>
+            </c-core-button>
+            <span if:true={showMissingFieldsError} class="total-mandatory-or-missing-fields">{totalMandatoryOrBadValuesFields} {mandatoryFieldsMessage}</span>
+        </div>
+
+        <div class="menu-buttons">
+            <c-core-button
+                label="Preview"
+                variation="secondary"
+                mode="light"
+                onclick={handlePreview}>
+            </c-core-button>
+
+            <template lwc:if={disableSaveButton}>
+                <c-core-button
+                label="Save"
+                variation="secondary"
+                mode="dark"
+                onclick={handleSave}>
+                </c-core-button>
+            </template>
+            <template lwc:else>
+                <c-core-button
+                label="Save"
+                variation="secondary"
+                mode="dark"
+                disabled>
+                </c-core-button>
+            </template>
+        </div>
+    </div>
+
+    <!-- confirm submission popup start here -->
+    <div if:true={isEoiSubmittedForPublished} class="more-options-model slds-text-align_center">
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-var-p-around_medium">
+                    <div>
+                        <lightning-icon class="action-icon-color" icon-name="action:approval" alternative-text="Approved" title="Approved"></lightning-icon>
+                    </div>
+                    <div class="content">
+                        <p>Congratulations, we've received your submission for {companyAccountName}!</p>
+                        <p>Your submission is with our team who will review and publish the page.</p>
+                        <p>In the following business days you will receive an email with a link to the published page and other helpful resources to help you engage and garner interest within your network.</p>
+                    </div>
+                    <div>
+                        <button type="button" onclick={returnToMyCompanies} class="custom-button">
+                            <label>Return to My Companies</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </div>
+
+    
+    
+    <!-- confirm submission popup ends here -->
+</template>

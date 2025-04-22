@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EDR_Complaints_Register</fullName>
+    <active>true</active>
+    <businessProcess>Complaints Register</businessProcess>
+    <description>EDR Register - External</description>
+    <label>EDR Complaints Register</label>
+    <picklistValues>
+        <picklist>AFCA_Stage__c</picklist>
+        <values>
+            <fullName>Case Management 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management Conciliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision %E2%80%93 Determination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration and Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rules Review 1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>Bank Account Details update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bounce back of distribution %28when account details accurate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bounce back of distribution %28when account details are accurate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTC vs%2E ROE %2F ROI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can%E2%80%99t pull one online when required by accountant%2Finvestor%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancel and Refund Investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of contact details %28phone %2F email %2F address%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of investment ownership and ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost to complete project not provided%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM to answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed communication on expected outcomes of projects%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detailed explanation required on cause of liquidity constraints%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution statement easily identifiable in regards to investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution statement not received or available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easily identifiable references</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical investments still shown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect bank Bank Account Details used after providing new ones%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect investor details used ie%3A spelling errors%2C bank details%2C investment under incorrect account %28entity vs personal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect status of investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information on how the project is tracking against original feasibility forecasts%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment documents like unit certs %26 tax statements not easily accessible on OIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment information documentation difficult to find</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment not showing on the dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late communication on matured%2Fmaturing investment redemptions not being able to be met%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latest Update not received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My payment is less than expected%2C why%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not reflecting details correctly - %28potentially unit register issue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Please process redemption request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request confirmation of holdings statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request current FY%E2%80%99s Financial Statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request current FY%E2%80%99s annual statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request current FY%E2%80%99s distribution statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Product Disclosure Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request latest valuation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request one off remittance %2F distribution statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request past FY%E2%80%99s Financial Statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request past FY%E2%80%99s annual statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request past FY%E2%80%99s distribution statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing of return of capital on matured investments%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing of tax statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updates on VC exits when these are delayed%2Fhappen later than expected%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updates on VC products not consistent or regular enough%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valuations not updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internal_Company__c</picklist>
+        <values>
+            <fullName>GSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_This_A_Systemic_Breach__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Precaution_to_Avoid_Breach__c</picklist>
+        <values>
+            <fullName>Training Provided to CM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Provided to CRC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Information Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment Complaints - Incorrect Investor Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Errors %2F Queries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redemptions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statements %28tax %26 distribution%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Related_AFSL__c</picklist>
+        <values>
+            <fullName>GSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Significance__c</picklist>
+        <values>
+            <fullName>Non-Significant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Significant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Certificates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statements</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Breach__c</picklist>
+        <values>
+            <fullName>Breach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

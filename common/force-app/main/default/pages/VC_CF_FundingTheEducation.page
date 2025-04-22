@@ -1,0 +1,242 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+     <apex:includeLightning />
+    <apex:slds />
+    <script>
+    
+    /* #######################  Navigation URL Function ########################*/
+		function navigate(navigateurl) {
+            alert("navigation to >>",navigateurl);
+            console.log("navigation to >>",navigateurl);
+            if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) ) {
+            // Lightning navigation - Salesforce navigateToURL
+                // sforce.one.navigateToURL(navigateurl);
+                 sforce.one.navigateToURL(navigateurl);
+            }
+            else {
+            // Set the window's URL using a Visualforce expression
+            window.location.href =navigateurl;
+            }
+            // navigateToPage('{!$Label.VC_CF_Public_URL}'+navigateurl);
+		}
+    </script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+                            
+                            <a href="#">Education</a>
+                            <a href="#">Partnerships</a>
+                            <a href="#">Philanthropy</a>    
+                            
+                        </div>
+                        <h1 class="mt-4">Funding the education of underprivileged children</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/02/TSFXVC.jpg')"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h2>
+                                
+VentureCrowd has partnered with <a href="{! $Label.VC_CF_Public_URL +'/smith-family-partnership'}">The Smith Family</a> to help fund the education of underprivileged children, because every child deserves the opportunity for a quality education.<br/>
+                            <br/>
+                            </h2>
+                            
+
+                            <p>
+                                We spoke to AusBiz media about joining forces with The Smith Family to help fund the education of underprivileged children and break the cycle of poverty.
+                            </p>
+                            <h6 class="mb-3">
+                                Watch the video below.
+                            </h6>
+                            <div class="fluid-video-wrapper">
+                            <iframe width="850" height="275" src="https://www.youtube.com/embed/YiY4ywQLF-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                            </div>
+                            <br/>
+                             <br/>
+                           
+                            
+                            
+                            <h4>
+                                Read more about the partnership as featured in the following publications:
+                            </h4>
+                            <ul>
+                                <li>Partnership to spark generosity in the everyday investor – PRObono Australia: <a href="https://probonoaustralia.com.au/news/2021/02/partnership-to-spark-generosity-in-the-everyday-investor/">Read</a></li>
+<li>Crowdfunding platform builds charitable donation into investment process – Third Sector:<a href="https://www.thirdsector.com.au/crowdfunding-platform-builds-charitable-donation-into-investment-process/">Read</a> </li>
+<li>VentureCrowd to offer donations alongside Investments – F&amp;P Magazine: <a href="https://www.fpmagazine.com.au/venturecrowd-to-offer-donations-alongside-investments-377637/">Read</a></li>
+                            </ul>
+                             <br/>
+                             <br/>
+                             <br/>
+                            <h2>Short on time? Here’s the summary:</h2>
+                            <ul>
+                                <li>1,200,000 Aussie children and young people live in poverty </li>
+<li>We believe education is the key to breaking the cycle of poverty</li>
+<li>VentureCrowd has partnered with The Smith Family to help fund the education of underprivileged children</li>
+<li>All money donated goes directly to The Smith Family</li>
+<li>VentureCrowd provides its team, platform and access to its investors free of charge</li>
+                            </ul>
+                            <br/>
+                            
+                            
+                                                        <div class="post-body-rich-text text-center mt-5">
+                            
+                                <h1> Donate Today</h1>
+                                                            <p>
+                                Skip the bottle of Reisling tonight, and donate that money to The Smith Family instead!
+                            </p>
+                                <a href="{!$Label.VC_CF_Public_URL + '/smith-family-partnership'} ">I want to Help!</a>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'//blog/beat-the-back-to-work-blues'}">
+            <div class="container">
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                    <div class="col-md-12 pb-5 next-post-title mt-3">
+                        <h3>How to beat the back-to-work blues and start the year strong!</h3>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="next-post-bg-overlay"></div>
+            <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/01/Beat-the-Blues_Hero.jpg')"></div>
+                </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

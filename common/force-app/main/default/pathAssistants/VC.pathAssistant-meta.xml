@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>VC Opportunity</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Funds_Deposited_Confirmation_from_Client__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Next_Action_Date_Time__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Application Received, &lt;/strong&gt;please ensure you merge your original opportunity with the newly created opportunity done by the investor via the website.&lt;/p&gt;&lt;p&gt;Confirm funds transferred and update record remittance advice.&lt;/p&gt;&lt;p&gt;Ensure ID and Wholesale status are confirmed.&lt;/p&gt;</info>
+        <picklistValueName>Application Received</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Probability</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Next_Action_Date_Time__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Closing Pending, &lt;/strong&gt;Move to this stage only if the investor has confirmed their investment amount and the close date.&lt;/p&gt;&lt;p&gt;Ensure you send the closing pending email template.&lt;/p&gt;</info>
+        <picklistValueName>Closing Pending</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Probability</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Next_Action_Date_Time__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Decision Appointment&lt;/strong&gt;, on this call you aim to answer all questions for your investor so they can decide to invest or not. At this stage, your investor can remain in DASP stage if they have outstanding queries. They can move to Closing Pending if they have confirmed their investment amount and their &lt;strong style=&quot;font-size: 13px;&quot;&gt;close date&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Ensure you send the DASP email template.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If they are moving to Lost please ensure you are collecting any &lt;strong style=&quot;font-size: 13px;&quot;&gt;Product Feedback&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Decision Appt Set Pending</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Probability</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Next_Action_Date_Time__c</fieldNames>
+        <fieldNames>CM_Assigned__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Why Call&lt;/strong&gt; is the most important call a capital manager makes.&lt;/p&gt;&lt;p&gt;This call is all about discovery and learning what is important to your investor and why.&lt;/p&gt;&lt;p&gt;Be curious and ask open questions. At the conclusion of the Why call you should agree on the next steps with your investor. Book the decision call date and time, send the why call email template, and move this opportunity to DASP.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;If they are moving to Lost please ensure you are collecting any &lt;/span&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Product Feedback&lt;/strong&gt;&lt;/p&gt;</info>
+        <picklistValueName>Why Appt Set Pending</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>VC</recordTypeName>
+</PathAssistant>

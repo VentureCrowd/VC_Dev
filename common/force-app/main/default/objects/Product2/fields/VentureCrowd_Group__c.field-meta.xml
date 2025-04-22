@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VentureCrowd_Group__c</fullName>
+    <defaultValue>&apos;VentureCrowd and its wholly owned subsidiaries including VentureCrowd Pty Ltd (ACN 166 598 849) and VentureCrowd Nominees Pty Ltd (ACN 166 599 140)&apos;</defaultValue>
+    <description>this field is utilised on the contract modal</description>
+    <inlineHelpText>this field is utilised on the contract modal</inlineHelpText>
+    <label>VentureCrowd Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

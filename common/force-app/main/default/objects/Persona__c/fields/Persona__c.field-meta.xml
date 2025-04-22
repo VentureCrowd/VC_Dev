@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Persona__c</fullName>
+    <description>VentureCrowd Persona list for defining individual investor style characteristics</description>
+    <label>Persona</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conscious Investor</fullName>
+                <default>false</default>
+                <label>Conscious Investor</label>
+            </value>
+            <value>
+                <fullName>Grand Designer</fullName>
+                <default>false</default>
+                <label>Grand Designer</label>
+            </value>
+            <value>
+                <fullName>Keen Bean</fullName>
+                <default>false</default>
+                <label>Keen Bean</label>
+            </value>
+            <value>
+                <fullName>Sharp Shooter</fullName>
+                <default>false</default>
+                <label>Sharp Shooter</label>
+            </value>
+            <value>
+                <fullName>Wealth Creator</fullName>
+                <default>false</default>
+                <label>Wealth Creator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

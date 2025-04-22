@@ -1,0 +1,74 @@
+/**/
+
+.vc_masterHeading {
+    font-size: 64;
+}
+.vc-align-vertical{
+    align-items: baseline;
+}
+.vc-m-none lightning-input,
+.vc-m-none p {
+    margin-bottom: 0 ;
+}
+
+/**/
+
+
+a,
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+lightning-input,
+lightning-combobox {
+    margin-bottom: 24px;
+}
+
+.vc_column-left,
+.vc_column-right {
+    padding: 24px;
+}
+
+.vc_blurBox2 {
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vc_deskpaddingRight {
+    padding-right: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .vc_column-left {
+        max-width: 655px;
+        margin: auto;
+    }
+
+    .vc_column-right {
+        max-width: 430px;
+        margin: auto;
+        /* padding-top: 450px; */
+    }
+
+    .vc_blurBox2 {
+        max-width: 380px;
+        padding-right: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 1023.5px) {
+    .vc_column-left {
+        margin-bottom: 16px;
+    }
+}
+
+/* .vc_boxIcon img{
+    position: absolute;
+    top: -24px;
+    left: 40%;
+}
+.vc_boxIcon img:first-child{
+    top: -16px;
+} */

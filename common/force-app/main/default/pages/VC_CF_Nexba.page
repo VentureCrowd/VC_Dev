@@ -1,0 +1,206 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+                            <a href="#">Crowdfunding</a>
+                            <a href="#">Startups </a>
+                        </div>
+                        <h1 class="mt-4">Nexba raises $6M: Series A Round</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/09/Nexba-Cover.jpg')"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h2>Case Study: Nexba</h2> <br/>
+                            <p><i>Sydney scale-up <a href="https://www.nexba.com/" target="_blank">Nexba</a> has raised $6 million to date through a Series A Round, facilitated by Australian crowdfunding platform VentureCrowd.</i></p>
+                            
+                            <p>
+While on holiday with his family in Mexico, <a href="https://au.linkedin.com/in/drewbilbe" target="_blank">Drew Bilbe</a> had a new business idea. He saw the need for the creation of a natural drink which also tasted good, and while relaxing on Nexpa beach, he decided to bring his idea to life. Nexpa beach inspired Nexba, and the natural beverage brand was born in 2010.</p>
+                  <p><a href="https://au.linkedin.com/in/drewbilbe" target="_blank">Drew</a> co-founded the business with his brother-in-law, <a href="https://au.linkedin.com/in/troy-douglas-12a0b722" target="_blank">Troy Douglas</a>. The pair used personal loans and family backing to establish the company. Today, Nexba products range from soft drinks to iced tea; from kombucha to tonic water and flavoured sparkling water which are free of sugar, fructose, artificial flavours and animal products. Since its creation, Nexba has won a series of awards including the 2015 Australian Telstra Business award; <a href="https://www.nexba.com/blogs/news/18327492-smart-company-nexba-makes-hot-30-under-30-list" target="_blank">2017 Smart Company 30 Under 30</a>; Forbes 30 under 30 Asia; and 2017 Product of the Year award.</p>
+
+
+                            <div>
+                                <img class="img-fluid" width="850" height="370" src="https://assets.venturecrowd.vc/uploads/2020/09/Nexba-Kombucha.jpg"  />
+                            </div>
+                            <br/>
+                            <h2>"If you are going to do something, do it big,"</h2> <br/>
+                            <p><strong>– Co-founder Troy has said of the business’ success in an <a href="https://www.smh.com.au/business/small-business/if-you-re-going-to-do-something-do-it-big-aussie-sugar-free-drink-goes-global-20181119-p50gwu.html" target="_blank">interview with The Sydney Morning Herald.</a></strong></p>
+                            <p>
+Nexba successfully developed its brand to have a strong distribution network across major Australian retailers including <a href="https://www.coles.com.au/" target="_blank">Coles</a>, <a href="https://www.woolworths.com.au/" target="_blank">Woolworths</a>, <a href="https://www.7eleven.com.au/" target="_blank">7-Eleven</a>, and <a href="https://www.aldi.com.au/" target="_blank">Aldi</a>. In 2018, the business commenced its global expansion plans, entering the international market and signing a deal with UK supermarket giant <a href="https://www.sainsburys.co.uk/" target="_blank">Sainsbury’s</a>.</p>
+<p>“Nexba is a distinctive brand with an innovative, great-tasting product for our consumers who are concerned about their sugar intake. Nexba provides another step towards making Sainsbury’s a home for truly unique brands,” Sainsbury’s Head of Future Brands, Rachel Eyre <a href="http://www.foodanddrinkbusiness.com.au/news/nexba-signs-on-with-sainsbury-s" target="_blank">said of the deal</a>.</p>
+                          
+                          
+                           <div class="gradient-divider"></div>
+                            <h3>Crowdfunding to create investor success</h3> <br/>
+                           <p>Nexba’s VentureCrowd Series A fundraising round closed in May 2019 and broke records for being the largest non-tech crowdfunding raise in Australian history. The crowd-funding portion comprised almost $1.5 million <a href="https://startups.venturecrowd.com.au/deal/detail/Nexba_seriesaextension_Scaleup" target="_blank">of the total $6 million raised</a>. The remaining funds came from prominent, private investors including <a target="_blank" href="https://au.linkedin.com/in/paulzahra">Paul Zahra</a>, and former CEO of  <a target="_blank" href="https://www.davidjones.com/">David Jones</a> and <a target="_blank" href="https://www.linkedin.com/in/john-bacon-5996a01a8/">John Bacon</a>, founder of  <a target="_blank" href="https://www.linkedin.com/company/link-healthcare/">Link Healthcare</a>.</p>
+                       
+                           <p><a href="https://www.linkedin.com/in/stevenmaarbani/" target="_blank">Steve Maarbani</a>, CEO co-founder of <a href="https://venturecrowd.com.au/" target="_blank">VentureCrowd</a>, said: “We were very impressed with the level of interest and calibre of investors, which ranged from business leaders to ordinary everyday investors. It shows that the Nexba story resonates with the market and reinforces growing consumer demand for better-for-you food and beverage products. We believe that this consumer trend will only continue to grow and that Nexba will grow with it.”</p>
+                       
+                            <div class="gradient-divider"></div>
+                            <h3>The COVID crisis and future expansion</h3> <br/>
+                           <p>During the current COVID-19 crisis, Nexba has seen a decrease in sales from petrol outlets and convenience stores, but this downturn hasn’t impacted sales in major retailers like Coles, Woolworths and Sainsbury’s, where demand has surged.</p>
+                           <p>Troy <a href="https://www.theceomagazine.com/business/innovation-technology/covid-19-globalisation/" target="_blank">told CEO Magazine</a> that even during the height of the pandemic, Nexba has had access to great manufacturers globally and its view on global expansion hasn’t changed.</p>
+                           <p>“Nexba’s growth has been doubling annually for the past four years and, without question, the UK will be a focus to further expand into Europe. Our sparkling waters for the UK market are already made in the Netherlands. So we’re still moving forwards.”>Nexba also discovered that consumer e-commerce was just as important as their traditional retail business model.</p>
+
+<p>In May, Troy told The Australian Institute of Company Directors that he believed the economic crisis of 2020 has created an accelerated trend towards health and wellness from many consumers.</p>
+<p>“What is exciting for us is the ability to use this [momentum] and accelerate our e-commerce and online model…We want to treat this as a global business opportunity that can grow to a significant share of our business in the future.”</p>
+<p>
+Nexba turned over around $14 million — at 137 per cent revenue growth — and is on track to turn over more than $24 million this financial year. </p>
+<p>In June this year, <a href="https://www.afr.com/street-talk/searching-for-a-sweetener-drink-maker-nexba-pitches-pe-for-funds-20200621-p554nh">the Australian Financial Review reported</a> that Nexba was on the hunt for a growth equity partner in Europe, and had enlisted the help of investment bank Houlihan Lokey to do so. Nexba is seeking to raise $50 million to boost its opportunity for European expansion, growth and working capital, in return for a minority business stake.</p>
+                       <p>In terms of long-term future growth plans, the Nexba founders also have their sights set on the United States.</p>
+                       
+                       
+                       
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'/blog/unyoked-raise-1-2-million-in-two-hours'}">
+            <div class="container">
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                    <div class="col-md-12 pb-5 next-post-title mt-3">
+                        <h3>Evergen raises $6M: Fundraising Round</h3>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="next-post-bg-overlay"></div>
+            <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/09/Solar-future-GRAD-crop.jpg')"></div>
+                </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

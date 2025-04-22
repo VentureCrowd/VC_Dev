@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Body_Corporate</fullName>
+    <active>true</active>
+    <description>If Body Corporate is TRUE then Body Corporate Fee needs to be Filled.</description>
+    <errorConditionFormula>AND (Body_Corporate__c = TRUE, ISBLANK( Body_Corporate_Fee__c ))</errorConditionFormula>
+    <errorDisplayField>Body_Corporate_Fee__c</errorDisplayField>
+    <errorMessage>Please Enter Body Corporate Fee</errorMessage>
+</ValidationRule>

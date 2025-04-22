@@ -1,0 +1,62 @@
+<template>
+    <div style={backgroundImgStyling}>
+        <div class="container slds-p-vertical_xx-large">
+            <div class="slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center">
+                <div class="slds-grid slds-grid_align-center slds-col slds-size_1-of-1">
+                    <div class="slds-col slds-grid_vertical slds-grid_align-center">
+
+                        <div class="slds-col slds-container_large ">
+                            <div class="slds-text-heading_large masterHeader slds-text-align_center">
+                                <span class="slds-text-align_center slds-grid_align-center ">
+                                    {masterHeading}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="slds-col slds-container_medium">
+                            <div class="slds-grid masterHeaderDescription">
+                                <span class="slds-text-align_center slds-grid_align-center ">
+                                    {masterDescription}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-grid_align-center slds-col slds-size_1-of-1 slds-p-vertical_x-small">
+
+                    <div class="slds-container_large ">
+                        <div class="div-2">
+                            <ul>
+                                <template for:each={textArray} for:item="text" for:index="index">
+                                    <li class="lightning-layout slds-grid_vertical-align-center " key={text}>
+
+                                        <div class="slds-grid slds-p-vertical_xx-large slds-p-horizontal_x-small slds-grid_align-center">
+
+                                            <div class="slds-col slds-size_1-of-11">
+                                                <div class="circle">{text.imageUrl}</div>
+                                            </div>
+
+                                            <div class="slds-col slds-p-top_xx-small slds-p-horizontal_small slds-size_3-of-4">
+                                                <div class="slds-col slds-p-bottom_medium">
+                                                    <div class="slds-col slds-size_1-of-1 ">
+                                                        <lightning-formatted-rich-text value={text.header}>
+                                                        </lightning-formatted-rich-text>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_1-of-1">
+                                                    <lightning-formatted-rich-text class="description" value={text.description}>
+                                                    </lightning-formatted-rich-text>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

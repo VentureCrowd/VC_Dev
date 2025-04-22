@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a9ac4208-dd89-4695-87b5-6f09493cf024</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-18bfc7bb-dffa-43a0-8196-25e324b99248</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-partners-hero-2.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Partner With Us</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://cm-vc-internal.cs74.force.com/s/about?contactus=true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>Same Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pg&amp;oid=00D2v000000WjFp&amp;lastMod=1629794440000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>VentureCrowd supports the most exciting startups, high growth companies and property developments in Australia. Join our network of partners.</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a9ac4208-dd89-4695-87b5-6f09493cf024</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>48419417-cece-4e5d-9d83-e6d6fdf739d9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2995f0f4-8446-4b73-a69a-6c95eff2b7e8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000H2qIK&amp;oid=00D2v000000WjFp&amp;lastMod=1628480613000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>Uniseed supports innovations that solve market problems and create a positive impact for our community. Uniseed invests over a broad range of technology sectors and has exited ten investments, to date. Uniseed invests in researchers, technologies and businesses that will change the world for the better.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_URL</name>
+                    <value>https://uniseed.com/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000H2qIF&amp;oid=00D2v000000WjFp&amp;lastMod=1628480476000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>Sydney Angels is a not-for-profit angel investment member organisation that supports the early-stage startup ecosystem by running processes and events that connect the member network with promising early-stage companies.  Together we invest in Australian startups with high growth potential.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_URL</name>
+                    <value>https://www.sydneyangels.net.au/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_3_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000H2qIA&amp;oid=00D2v000000WjFp&amp;lastMod=1628480255000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_3_Body</name>
+                    <value>Homecorp Property Group is an established leader in residential urban property development and master planned communities. Homecorp has developed, sold and completed 18 major residential housing projects, grossing more than $1.5 billion in sales.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_3_Headline</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_3_URL</name>
+                    <value>https://www.homecorpgroup.com.au/#about</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>linkSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>openInSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl1</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000H2qIo&amp;oid=00D2v000000WjFp&amp;lastMod=1628481391000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl2</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/sydney-angels-logo-w.png</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl3</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000H2qIP&amp;oid=00D2v000000WjFp&amp;lastMod=1628480684000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryLinkSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                    <value>VentureCrowd has a strong network of partners that focus on curating impact investing opportunities and managing funds for seed stage and early stage ventures, as well as property funds and projects.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>VentureCrowd partnerships</value>
+                </componentInstanceProperties>
+                <componentName>vcPartnersInvestmentProductLanding</componentName>
+                <identifier>vcPartnersInvestmentProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>48419417-cece-4e5d-9d83-e6d6fdf739d9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>32d5a585-6285-474e-9dfd-00e65176272d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-0d07d3c0-8842-49f8-8e0e-7cd2e46505ef</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor page-home&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h3 align=&quot;center&quot;&gt;VentureCrowd Partner Program&lt;/h3&gt;
+        &lt;div class=&quot;row pb-5&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+       			&lt;img class=&quot;img-fluid&quot; src=&quot;https://venturecrowd--cm--c.documentforce.com/servlet/servlet.ImageServer?id=0150p000000MF4V&amp;oid=00D0p0000000N1k&amp;lastMod=1636011056000&quot;/&gt;
+   			&lt;/div&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;br&gt;
+                        &lt;p&gt;VentureCrowd is Australia’s leading crowd-sourced equity platform, empowering a new generation of investors to access and invest in Australian early stage, high growth potential start-ups.&lt;/p&gt;
+                        &lt;br&gt;&lt;p&gt;By facilitating access to investors that are not currently investing in venture capital opportunities, VentureCrowd aims to unlock a new pool of early stage finance to help fuel the development of Australia’s start-ups and help close funding rounds quickly and efficiently.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor page-home&quot; style=&quot;background-color: white&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h3 align=&quot;center&quot;&gt;How does VentureCrowd work with its partners?&lt;/h3&gt;
+        &lt;div class=&quot;row pb-5&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+       			&lt;img class=&quot;img-fluid&quot; src=&quot;https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-partners-2.jpg&quot;/&gt;
+   			&lt;/div&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;br&gt;
+                        &lt;p&gt;Working with our network partners across Australia, VentureCrowd takes a collaborative approach to solving the early stage funding gap for Australian startups. VentureCrowd helps to close funding rounds in which our Partners are participating, quickly and efficiently, by offering the balance of the round to our growing database of registered investors online&lt;/p&gt;
+                        &lt;br&gt;&lt;p&gt;We start off by getting to know each of our Partners, understanding the companies and ideas they like to back and honing in on how we can help close funding rounds. As details of a funding round are finalised we are able to get involved and offer the balance, on the same economic terms, to otherwise hard to access investors through our platform. Having strong relationships with our Partners we confidently co-invest on the same valuation and other core terms already negotiated and set.&lt;/p&gt;
+                        &lt;br&gt;&lt;p&gt;VentureCrowd funding campaigns also have PR and digital distribution strategies built in, giving the startups and our Partners significant exposure to key stakeholders, including potential investors, customers, and commercial partners.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>32d5a585-6285-474e-9dfd-00e65176272d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3dde693d-a878-4518-9658-f8c163c54c69</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-65e63101-6631-445d-bdf9-d8233c7faf32</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeaderText</name>
+                    <value>What&apos;s in it for you?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3oi&amp;oid=00D2v000000WjFp&amp;lastMod=1629703070000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Streamlined registration approval on VentureCrowd for all startups in which you are an investor in the current round. This means fast-tracked access to our Digital Campaigns, making it quicker and easier for companies to close their funding rounds.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgTitle</name>
+                    <value>Fast-tracked access</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3on&amp;oid=00D2v000000WjFp&amp;lastMod=1629766327000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>Exclusive VentureCrowd workshops and events exploring the startup ecosystem, capital raising and equity crowdfunding in Australia.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgTitle</name>
+                    <value>Workshops &amp; events</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3os&amp;oid=00D2v000000WjFp&amp;lastMod=1629703475000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>Participation and access to our co-branded events, thought leadership publications, market research projects and other ecosystem development initiatives.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgTitle</name>
+                    <value>Participate</value>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3dde693d-a878-4518-9658-f8c163c54c69</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>b43d09e3-4355-4566-bed5-bcab4b619330</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-21965fb2-a01e-4f30-9b47-e1150f24243c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentName>vcContactUS</componentName>
+                <identifier>vcContactUS</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>b43d09e3-4355-4566-bed5-bcab4b619330</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-18bfc7bb-dffa-43a0-8196-25e324b99248</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;18bfc7bb-dffa-43a0-8196-25e324b99248&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a9ac4208-dd89-4695-87b5-6f09493cf024&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2995f0f4-8446-4b73-a69a-6c95eff2b7e8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2995f0f4-8446-4b73-a69a-6c95eff2b7e8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;48419417-cece-4e5d-9d83-e6d6fdf739d9&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(247, 247, 247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-0d07d3c0-8842-49f8-8e0e-7cd2e46505ef</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;0d07d3c0-8842-49f8-8e0e-7cd2e46505ef&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;32d5a585-6285-474e-9dfd-00e65176272d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-65e63101-6631-445d-bdf9-d8233c7faf32</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;65e63101-6631-445d-bdf9-d8233c7faf32&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;3dde693d-a878-4518-9658-f8c163c54c69&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-21965fb2-a01e-4f30-9b47-e1150f24243c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;21965fb2-a01e-4f30-9b47-e1150f24243c&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;b43d09e3-4355-4566-bed5-bcab4b619330&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>VentureCrowd is backed by Artesian Venture Partners</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>partners_partners_v2</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

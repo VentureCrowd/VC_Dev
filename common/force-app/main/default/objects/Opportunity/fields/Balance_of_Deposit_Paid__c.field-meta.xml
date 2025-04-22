@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Balance_of_Deposit_Paid__c</fullName>
+    <inlineHelpText>The amount of the balance of the deposit paid. 
+Confirmation must be received by the Lawyers and filed against the Opportunity record.</inlineHelpText>
+    <label>Balance of Deposit Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

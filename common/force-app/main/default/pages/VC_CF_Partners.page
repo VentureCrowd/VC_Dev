@@ -1,0 +1,286 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_PartnersCSS}" />
+  <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  </head>
+
+  <apex:includeLightning />
+  <script type='text/javascript' src='https://www.google.com/recaptcha/api.js' />
+  <script type='text/javascript'>
+    //check if url contains contactus 
+    //then hilight sendemail section
+    let url = '{!$CurrentPage.URL}';
+    let isContactUs = url.indexOf('contactus') > -1;
+    if (isContactUs)
+      window.location.hash = '#sendEmail';
+
+    function formReset() {
+      document.getElementById("pg:fm").reset();
+    }
+
+
+
+
+
+    // Here 'VfApp' Is Lightning Application Name
+    $Lightning.use("c:UserActionMenuApp", function () {
+      /* 'LcForVf' is Lightning Component Name which we are Displaying In Vf Page 
+       * syntax for create lightning component dynamically :
+       * $Lightning.createComponent(String type, Object attributes, String locator, function callback) */
+      $Lightning.createComponent("c:SendEmailComp",
+        {
+          // Set Lightning Component Attributes Property before creating Lightning Component In Visualforce page 
+          /*  textColor : "Red",
+          currentUserName : '{!$User.FirstName} {!$User.LastName}' */
+          isContactUs: isContactUs,
+          usedinComunity: true
+
+        },
+        "sendEmail",
+        function (component) {
+          console.log("component created");
+          // create component Callback, Lightning Component has been Created,
+          // Now you can set more lightning Component attributes here,
+          // and do more cool stuff here
+          //component.set("v.accId" , '{!$CurrentPage.parameters.recId}');
+        });
+    });
+
+  </script>
+
+
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+  <!-- Body -->
+  <div id="vc_content__container" class="position-relative page-slug-partners">
+    <!-- Hero -->
+    <section class="hero has-parallax-bg">
+      <div class="container">
+        <div class="row text-white mt-md-5 py-1 py-md-5">
+          <div class="col-md-12 animate-group">
+            <h3 class="mb-1 mt-1 mt-lg-5 pt-5 animate-item-in">Partners</h3>
+            <h1 class="mb-4 mt-5 animate-item-in">VentureCrowd supports the most exciting startups, high growth companies and property developments in Australia.</h1>
+            <h1 class="mb-5 animate-item-in">Join our network of partners.</h1>
+            <a class="button-outline-white animate-item-in" href="#sendEmail">PARTNER WITH US</a>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-partners-hero-2.jpg')"></div>
+    </section>
+
+    <!-- Partnerships -->
+    <section class="partnerships">
+      <div class="container">
+        <div class="row mt-4 pt-5 pb-5">
+          <div class="col-md-12 text-center">
+            <h2>VentureCrowd Partnerships</h2>
+            <p>VentureCrowd has a strong network of partners that focus on curating impact investing opportunities and managing
+              funds for seed stage and early stage ventures, as well as property funds and projects. </p>
+          </div>
+        </div>
+        <div class="row pb-5 text-white tiles">
+          <div class="col-md-4 mb-4 mb-md-0 text-center partner-1">
+            <div class="inner-container" style="background-image: url('https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000H2qIK&oid=00D2v000000WjFp&lastMod=1628480613000')">
+              <div class="logo pt-5 animate-in">
+                <img src="https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000H2qIo&oid=00D2v000000WjFp&lastMod=1628481391000"
+                  style="width: 207px;" />
+              </div>
+              <div class="desc pb-4 pl-5 pr-5 pt-2 m-2">
+               <p>
+                  Uniseed supports innovations that solve market problems and create a positive impact for our community. Uniseed invests over
+                a broad range of technology sectors and has exited ten investments, to date. Uniseed invests in researchers,
+                technologies and businesses that will change the world for the better.
+              </p>
+              </div>
+              <div class="call-to-action pb-5">
+                <a href="https://uniseed.com/" target="_blank" class="has-arrow">UNISEEDS WEBSITE
+                  <span class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="bg-overlay"></div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0 partner-2">
+            <div class="inner-container" style="background-image: url('https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000H2qIF&oid=00D2v000000WjFp&lastMod=1628480476000')">
+              <div class="logo pt-5 animate-in">
+                <img src="https://assets.venturecrowd.vc/uploads/2018/02/sydney-angels-logo-w.png" />
+              </div>
+              <div class="desc pb-4 pl-5 pr-5 pt-2 m-2">
+                <p>
+                  Sydney Angels is a not-for-profit angel investment member organisation that supports the early-stage startup ecosystem by running processes and events that connect the member network with promising early-stage companies.
+                </p>
+                <p>Together we invest in Australian startups with high growth potential.</p>
+              </div>
+              <div class="call-to-action pb-5">
+                <a href="https://www.sydneyangels.net.au/" target="_blank" class="has-arrow">SYDNEY ANGELS WEBSITE 
+                  <span class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="bg-overlay"></div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0 partner-3">
+            <div class="inner-container" style="background-image: url('https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000H2qIA&oid=00D2v000000WjFp&lastMod=1628480255000')">
+              <div class="logo pt-5 animate-in">
+                <img src="https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000H2qIP&oid=00D2v000000WjFp&lastMod=1628480684000"
+                />
+              </div>
+              <div class="desc pb-4 pl-5 pr-5 pt-2 m-2">
+                <p>
+                Homecorp Property Group is an established leader in residential urban property development and master planned communities.
+                Homecorp has developed, sold and completed 18 major residential housing projects, grossing more than $1.5
+                billion in sales.
+              </p>
+              </div>
+              <div class="call-to-action pb-5">
+                <a href="https://www.homecorpgroup.com.au/#about" target="_blank" class="has-arrow">HOMECORP WEBSITE
+                  <span class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="bg-overlay"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Program -->
+    <section class="partner-program">
+      <div class="container-fluid">
+        <div class="row upper">
+          <div class="col-md-6 text-center col-bg text-white">
+            <h3 class="animate-in">Partner Program</h3>
+          </div>
+          <div class="col-md-6">
+            <div class="inner-container p-0 p-md-5 m-0 m-md-5 animate-in">
+              <p class="mb-4">
+                VentureCrowd is Australia’s leading crowd-sourced equity platform, empowering a new generation of investors to access and
+                invest in Australian early stage, high growth potential start-ups.
+              </p>
+              <p>
+                By facilitating access to investors that are not currently investing in venture capital opportunities, VentureCrowd aims
+                to unlock a new pool of early stage finance to help fuel the development of Australia’s start-ups and help
+                close funding rounds quickly and efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row lower">
+          <div class="col-md-6">
+            <div class="inner-container p-0 p-md-5 m-0 m-md-5 animate-in">
+              <h4 class="mb-4 ">How does VentureCrowd work with its partners?</h4>
+              <p class="mb-4">
+                Working with our network partners across Australia, VentureCrowd takes a collaborative approach to solving the early stage
+                funding gap for Australian startups. VentureCrowd helps to close funding rounds in which our Partners are
+                participating, quickly and efficiently, by offering the balance of the round to our growing database of registered
+                investors online
+              </p>
+              <p class="mb-4">
+                We start off by getting to know each of our Partners, understanding the companies and ideas they like to back and honing
+                in on how we can help close funding rounds. As details of a funding round are finalised we are able to get
+                involved and offer the balance, on the same economic terms, to otherwise hard to access investors through
+                our platform. Having strong relationships with our Partners we confidently co-invest on the same valuation
+                and other core terms already negotiated and set.
+              </p>
+              <p class="mb-4">VentureCrowd funding campaigns also have PR and digital distribution strategies built in, giving the startups
+                and our Partners significant exposure to key stakeholders, including potential investors, customers, and
+                commercial partners.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-partners-2.jpg');"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's in it for you -->
+    <section class="access py-0 py-md-5">
+      <div class="container py-0 py-md-5">
+        <div class="row py-5">
+          <div class="col-md-12 text-center text-white">
+            <h2 class="animate-in">What's in it for you?</h2>
+            <p>Being a ventureCrowd Partner gives you access to:</p>
+          </div>
+        </div>
+        <div class="row text-center text-white pb-5 pt-5 animate-group">
+          <div class="col-md-4">
+            <div class="icon mb-5 animate-item-in">
+              <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="iconsmind-Scroll-Fast"></i>
+            </div>
+            <h3 class="mb-4 animate-item-in">Fast-tracked access</h3>
+            <div class="desc px-4 animate-item-in">
+              Streamlined registration approval on VentureCrowd for all startups in which you are an investor in the current round. This
+              means fast-tracked access to our Digital Campaigns, making it quicker and easier for companies to close their
+              funding rounds.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon mb-5 mt-5 mt-md-0  animate-item-in">
+              <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="iconsmind-Network"></i>
+            </div>
+            <h3 class="mb-4 animate-item-in">Workshops &amp; events</h3>
+            <div class="desc px-4 animate-item-in">
+              Exclusive VentureCrowd workshops and events exploring the startup ecosystem, capital raising and equity crowdfunding in Australia.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon mb-5 mt-5 mt-md-0  animate-item-in">
+              <i style="font-size: 50px; line-height: 50px; height: 50px; width: 50px;" class="iconsmind-Reverbnation"></i>
+            </div>
+            <h3 class="mb-4 animate-item-in">Participate</h3>
+            <div class="desc px-4 animate-item-in">
+              Participation and access to our co-branded events, thought leadership publications, market research projects and other ecosystem
+              development initiatives.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-opacity"></div>
+      <div class="bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2018/02/Screen-Shot-2018-02-23-at-10.31.33-AM.png');"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container py-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <p>Please fill out the form below and we’ll get back to as soon as we can.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center py-5">
+          <div class="col-md-6 py-5 form-container">
+            <!-- AUra component to send email -->
+            <div id="sendEmail"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ./Body -->
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Stage__c</fullName>
+    <label>Sub Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Offer Doc sent</fullName>
+                <default>false</default>
+                <label>Offer Doc sent</label>
+            </value>
+            <value>
+                <fullName>Offer Received</fullName>
+                <default>false</default>
+                <label>Offer Received</label>
+            </value>
+            <value>
+                <fullName>Offer Approved</fullName>
+                <default>false</default>
+                <label>Offer Approved</label>
+            </value>
+            <value>
+                <fullName>EOI Sent</fullName>
+                <default>false</default>
+                <label>EOI Sent</label>
+            </value>
+            <value>
+                <fullName>EOI Received</fullName>
+                <default>false</default>
+                <label>EOI Received</label>
+            </value>
+            <value>
+                <fullName>Contract Issued</fullName>
+                <default>false</default>
+                <label>Contract Issued</label>
+            </value>
+            <value>
+                <fullName>Contract signed by Buyer</fullName>
+                <default>false</default>
+                <label>Contract signed by Buyer</label>
+            </value>
+            <value>
+                <fullName>Contract Executed</fullName>
+                <default>false</default>
+                <label>Contract Executed (Conditional)</label>
+            </value>
+            <value>
+                <fullName>Contract Unconditional</fullName>
+                <default>false</default>
+                <label>Contract Executed (Unconditional)</label>
+            </value>
+            <value>
+                <fullName>Awaiting Settlement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awaiting Settlement</label>
+            </value>
+            <value>
+                <fullName>Contract Pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract Pending</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Under Offer</controllingFieldValue>
+            <valueName>Offer Doc sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Offer</controllingFieldValue>
+            <valueName>Offer Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Under Offer</controllingFieldValue>
+            <valueName>Offer Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EOI</controllingFieldValue>
+            <valueName>EOI Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EOI</controllingFieldValue>
+            <valueName>EOI Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract</controllingFieldValue>
+            <valueName>Contract Issued</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract</controllingFieldValue>
+            <valueName>Contract signed by Buyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract</controllingFieldValue>
+            <valueName>Contract Executed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract</controllingFieldValue>
+            <valueName>Contract Unconditional</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

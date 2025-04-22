@@ -1,0 +1,57 @@
+<!--
+
+-->
+<template>
+  <template if:true={displayComponent}>
+
+      <div class="component--container">
+        <span class="vc-font-suisseIntlRegular">
+          {displayText}
+        </span>
+        <br/>
+      
+        <template if:true={displayHelpline}>
+          <br/>
+          <span class="phone--number vc-font-suisseIntlRegular" data-aura-rendered-by="13:115;a">
+          <br/>
+          <img src="/resource/1614714724000/Phone" data-aura-rendered-by="14:115;a">1300 039 655</span>
+        </template>
+      
+      
+        <template if:true={displayButton}>
+          <button class="slds-button slds-button_icon slds-button_brand view-more" onclick={handleNavigation}>{buttonLabel}
+          </button>
+        </template>
+      </div>
+
+  </template>
+
+
+  <!-- <lightning-card>
+    <div class="component--container" if:true={displayComponent}>
+  
+      <div class="slds-float_right">
+        <span>
+          {displayText}
+        </span>
+          
+
+          <template if:true={displayHelpline}>
+          <span class="phone--number" data-aura-rendered-by="13:115;a"><img src="/resource/1614714724000/Phone"
+  
+              data-aura-rendered-by="14:115;a">1300 039 655</span>
+            
+          </template>
+      
+
+            <template if:true={displayButton}>
+              <button
+                class="slds-button slds-button_icon slds-button_brand view-more"
+                onclick={handleNavigation}
+              >{buttonLabel}
+              </button>
+            </template>
+      </div>
+      </div>
+  </lightning-card> -->
+</template>

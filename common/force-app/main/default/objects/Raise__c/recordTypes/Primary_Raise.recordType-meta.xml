@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Raise</fullName>
+    <active>true</active>
+    <description>Main raise record type</description>
+    <label>Primary Raise</label>
+    <picklistValues>
+        <picklist>Form_Investment_Product_Type__c</picklist>
+        <values>
+            <fullName>Convertible Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinary Shares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preference Shares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promissory Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAFE Note</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Form_Investment_type__c</picklist>
+        <values>
+            <fullName>Retail</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Wholesale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Form_Sector__c</picklist>
+        <values>
+            <fullName>AgTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agnostic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts %26 Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2B Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BioTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockchain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHARITY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CleanTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ClimateTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cosmetics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DeathTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decentralised Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DeepTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Marketplaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESGs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EdTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EnergyTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Saas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FinTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FoodTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HealthTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MarTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PropTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property_Development_Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property_Development_First_Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property_Development_Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property_Development_Second_Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate - Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate - Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate - Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate - Residential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RegTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robotics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SecurityTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SpaceTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TravelTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venture Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Form_Share_price_currency__c</picklist>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Form_Stage__c</picklist>
+        <values>
+            <fullName>IPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Seed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-IPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Seed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Series A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Series B%2B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live on VC Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending final approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting to complete learning course</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subscription__c</picklist>
+        <values>
+            <fullName>Premium Subscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Subscription</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

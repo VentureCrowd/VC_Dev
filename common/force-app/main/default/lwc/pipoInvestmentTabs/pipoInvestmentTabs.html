@@ -1,0 +1,114 @@
+<template>
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner">
+            <h1>Loading</h1>
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    <template lwc:else>
+        <div class="tab-container">
+            <!-- Dropdown Button for Mobile -->
+            <div class="tab-header-mobile">
+                <div class="dropdown-container" onclick={toggleDropdown}>
+                    <span class="active-label">{activeTabLabel}</span>
+                    <c-core-icon
+                    icon-name="arrowDown">
+                </c-core-icon>
+                </div>
+                <c-core-button
+                    label="Date"
+                    variation="tertiary"
+                    icon-position="right"
+                    icon="sort" 
+                    size="medium"
+                    onclick={handleClick}>
+                </c-core-button>
+            </div>
+        
+            <!-- Tab Headers for Desktop -->
+            <div class="tab-header" if:false={isDropdownVisible}>
+                <div class="tab-desktop-container">
+                    <div class="tab active" data-tab="updates" onclick={selectTab}>
+                        <span class="tab-label">Investment updates</span>
+                        <span class="badge">{lengthFiles.investorUpdates}</span>
+                    </div>
+                    <div class="tab" data-tab="documents" onclick={selectTab}>
+                        <span class="tab-label">Financial documents</span>
+                        <span class="badge">{lengthFiles.financialDocuments}</span>
+                    </div>
+                    <div class="tab" data-tab="certificates" onclick={selectTab}>
+                        <span class="tab-label">Investment certificates</span>
+                        <span class="badge">{lengthFiles.investmentCertificates}</span>
+                    </div>
+                </div>
+                <c-core-button
+                    label="Date"
+                    variation="tertiary"
+                    icon-position="right"
+                    icon="sort" 
+                    size="medium"
+                    onclick={handleClick}>
+                </c-core-button>
+            </div>
+
+            <!-- Dropdown Content for Mobile -->
+            <div class="dropdown-content" if:true={isDropdownVisible}>
+                <div class="tab" data-tab="updates" onclick={selectTab}>
+                    <span class="tab-label active-label">Investment Updates</span>
+                    <span class="badge active-label">{lengthFiles.investorUpdates}</span>
+                </div>
+                <div class="tab" data-tab="documents" onclick={selectTab}>
+                    <span class="tab-label">Financial documents</span>
+                    <span class="badge">{lengthFiles.financialDocuments}</span>
+                </div>
+                <div class="tab" data-tab="certificates" onclick={selectTab}>
+                    <span class="tab-label">Investment certificates</span>
+                    <span class="badge">{lengthFiles.investmentCertificates}</span>
+                </div>
+            </div>
+            
+            <!-- Content of the tabs -->
+            <div class="tab-content">
+                <template if:true={isInvUpdates}>
+                    <div lwc:if={investorUpdates}>
+                        <template for:each={investorUpdates} for:item="item">
+                            <div class="file-wrapper" key={item.FileName}>
+                                <a class="file-name" href={item.PublicDownloadUrl}><p>{item.FileName}</p></a>
+                                <p>{item.Date}</p>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="tab-help-text" lwc:else>
+                        <p>It looks like you don't have any investment updates. Once you do they will appear here.</p>
+                    </div>
+                </template>
+                <template if:true={isFinancial}>
+                    <div lwc:if={financialDocuments}>
+                        <template for:each={financialDocuments} for:item="item">
+                            <div class="file-wrapper" key={item.FileName}>
+                                <a class="file-name" href={item.PublicDownloadUrl}><p>{item.FileName}</p></a>
+                                <p>{item.Date}</p>
+                            </div>
+                        </template>    
+                    </div>    
+                    <div class="tab-help-text" lwc:else>
+                        <p>It looks like you don't have any financial documents. Once you do they will appear here.</p>
+                    </div>
+                </template>
+                <template if:true={isInvCertificates}>
+                    <div lwc:if={investmentCertificates}>
+                        <template for:each={investmentCertificates} for:item="item">
+                            <div class="file-wrapper" key={item.FileName}>
+                                <a class="file-name" target="_new" href={item.PublicDownloadUrl}><p>{item.FileName}</p></a>
+                                <p>{item.Date}</p>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="tab-help-text" lwc:else>
+                        <p>It looks like you don't have any investment certificates. Once you do they will appear here.</p>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </template>
+</template>

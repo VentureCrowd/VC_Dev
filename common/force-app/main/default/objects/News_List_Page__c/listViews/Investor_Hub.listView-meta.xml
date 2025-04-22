@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investor_Hub</fullName>
+    <columns>NAME</columns>
+    <columns>Publish_On_Community_Site__c</columns>
+    <columns>Archive__c</columns>
+    <columns>Tagged_category__c</columns>
+    <columns>src_url__c</columns>
+    <columns>News_Category__c</columns>
+    <columns>News_Descriptions__c</columns>
+    <columns>CategoryBanner_Img_Url__c</columns>
+    <columns>News_Label__c</columns>
+    <columns>Date__c</columns>
+    <columns>Blog_Sequesnce__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>News_Category__c</field>
+        <operation>equals</operation>
+        <value>Investor Hub</value>
+    </filters>
+    <label>Investor Hub</label>
+</ListView>

@@ -1,0 +1,122 @@
+<template>
+    <!-- Main container for the component -->
+    <div class="add-edit-wider-team">
+        <!-- Loading spinner, displayed when fetching data or performing actions -->
+        <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+
+        <!-- Section for managing Management Team profiles -->
+        <div>
+            <h4 class="vc-font-size_25 slds-var-m-top_xx-large slds-var-p-bottom_medium">
+                <b class="vc-font-caxton7">Management team</b>
+            </h4>
+            <span>Add profiles of individuals who are part of the leadership or management team.</span>
+        </div>
+
+        <!-- Button to open the modal for adding a new profile -->
+        <button class="info-model create-update-eoi-button secondary slds-var-m-top_medium" onclick={openAddModel}>
+            <label>Add profile</label>
+        </button>
+
+        <!-- Modal for adding a new profile -->
+        <template if:true={isAddModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Add profile</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Full name*" name="Name" required onchange={handleChange} maxlength="80"></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Role*" name="Member_Role__c" required onchange={handleChange} placeholder="e.g. Founder and Chief Executive Officer." maxlength="100" class="create-update-eoi-input"></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control">
+                            <label for="add-wider-team-bio">Bio*</label>
+                            <div class="slds-var-p-bottom_x-small">Write a summary of the individual's credibility, past or current roles and/or achievements.</div>
+                            <textarea id="add-wider-team-bio" data-id="Team_Member_Description__c" name="Team_Member_Description__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required></textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeAddModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={addTeamMember} disabled={disableSaveBtn}>
+                                <label>Save</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+
+        <!-- Modal for updating an existing profile -->
+        <template if:true={isEditModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 class="slds-modal__title slds-hyphenate">Update profile</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Full name*" name="Name" value={teamMemberToUpdate.Name} onchange={handleChange} maxlength="80"></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Role*" name="Member_Role__c" value={teamMemberToUpdate.Member_Role__c} maxlength="100" required onchange={handleChange} placeholder="e.g. Founder and Chief Executive Officer." class="create-update-eoi-input"></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control">
+                            <label for="edit-wider-team-bio">Bio*</label>
+                            <div class="slds-var-p-bottom_x-small">Write a summary of the individual's credibility, past or current roles and/or achievements.</div>
+                            <textarea id="edit-wider-team-bio" data-id="Team_Member_Description__c" name="Team_Member_Description__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required>{teamMemberToUpdate.Team_Member_Description__c}</textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeEditModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={updateTeamMember} disabled={disableUpdateBtn}>
+                                <label>Update</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <div if:true={showTeam} class="slds-var-m-top_x-large">
+            <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+            <template if:true={hasTeamMember} for:each={teamMemberLst} for:item="item">
+                <div key={item.Id} class="slds-var-m-top_x-large">
+                    <div class="demo-only slds-size_2-of-4">
+                        <div class="slds-media slds-media_responsive">
+                            <div class="slds-media__body">
+                                <div>
+                                    <span><b>{item.Name}</b></span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <span>{item.Member_Role__c}</span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <span>{item.Team_Member_Description__c}</span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleEditTeamMember}>Edit</label>
+                                    </button>
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleRemoveTeamMember}>Remove</label>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

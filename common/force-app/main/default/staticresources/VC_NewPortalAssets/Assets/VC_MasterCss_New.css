@@ -1,0 +1,198 @@
+/* to make the checkbox text white */
+/* .vc_checkbox .slds-checkbox .slds-checkbox__label .slds-form-element__label {
+	color: rgb(123, 134, 140) !important;
+} */
+.vc_masterHeading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 66px;
+    color: #FFFFFF;
+}
+
+.vc_subHeading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.vc_subHeading2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.vc_subHeading3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+.vc_body1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.vc_body2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.vc_inputField .slds-form-element__label,
+.vc_inputAddress .slds-form-element__label,
+.vc_combobox .slds-form-element__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.vc_inputField .slds-input,
+.vc_inputAddress .slds-input,
+.vc_inputAddress .slds-textarea,
+.vc_combobox .slds-combobox__input {
+    background: #F6F6F6;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.vc_checkbox .slds-checkbox_faux {
+    width: 16px;
+    height: 16px;
+    border-color: white;
+}
+
+.vc_checkbox .slds-checkbox .slds-checkbox__label .slds-form-element__label,
+.vc_checkbox-label {
+    padding-left: 16px;
+    padding-top: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: white;
+}
+
+.slds-required {
+    visibility: inherit;
+    border: none;
+    text-decoration: none;
+}
+
+.vc_combobox .slds-combobox__input {
+    height: 56px;
+    align-items: center;
+    align-content: center;
+}
+
+.vc_btn-primary .slds-button {
+    padding: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #06C5D1;
+    border: none;
+    background: linear-gradient(268.12deg, #824BEA 19.8%, #06C5D1 73.49%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+}
+
+.vc_inputField {
+    margin-bottom: 8px;
+}
+
+.vc_inputAddress .slds-form-element__row {
+    margin-bottom: 16px;
+}
+
+/* .vc_inputAddress legend+lightning-helptext {
+    position: absolute;
+    left: 120px;
+}
+
+.vc_inputAddress .slds-form-element__control lightning-lookup-address .slds-form-element__label {
+    display: none;
+}
+
+.vc_inputAddress .slds-form-element__row {
+    margin-bottom: 8px;
+}
+
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:nth-child(3),
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:last-child {
+    display: block;
+}
+
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:nth-child(3) .slds-form-element,
+.vc_inputAddress .slds-form-element__control .slds-form-element__row:last-child .slds-form-element {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+} */
+
+.vc_text-color_white {
+    color: white !important;
+}
+
+.vc_btn-primary .slds-button {
+    width: 100%;
+}
+
+/* @media only screen and (max-width: 1023.5px) {
+    .vc_btn-primary .slds-button {
+        width: 100%;
+    }
+} */
+
+.slds-has-error .slds-form-element__help {
+    float: unset;
+}
+
+/**Registration Page CSS **/
+.vc_blurBox {
+    background: rgba(0, 0, 0, 0.33);
+    backdrop-filter: blur(14px);
+    border-top-right-radius: 103px;
+    border-bottom-right-radius: 103px;
+}
+
+@media only screen and (max-width: 1023.5px) {
+    .vc_blurBox {
+        border-radius: 21px !important;
+        padding: 24px;
+    }
+}
+
+.vc_blurBox2 {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(14px);
+    border-radius: 25px;
+}
+
+.vc_RegistrationPageLogo img {
+    width: 90px;
+    height: 50px;
+}
+
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Registration Page css ends here*/

@@ -1,0 +1,105 @@
+.multi-step-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100vw;
+    bottom: 0px;
+    left: 0;
+    margin-left: calc(-50vw + 50%);
+    z-index: 100;
+    /* box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.05); */
+    border-top: 1px solid #CFCECC;
+    background-color: var(--white);
+    padding: var(--space-lg) var(--space-xxl);
+}
+
+.header{
+    padding: var(--space-xl) 0;
+}
+
+.vertical-stepper{
+    flex-direction: row;
+}
+
+.stepper{
+    flex: 2;
+    display: flex;
+}
+
+.stepper:after {
+    display: block;
+    content: "";
+    border-right: 1px solid #CFCECC;
+    height: 100%;
+    padding-left: var(--space-xxl);
+}
+
+.form-container{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    justify-content: space-between;
+}
+
+.save-container{
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+}
+
+.saved-tile{
+    color: #27B48A;
+}
+
+.saving-tile{
+    color: #407FFF;
+}
+
+.next-button {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-md);
+}
+
+/* Circle spinner */
+
+.circle-spin-1 {
+    --size: var(--text-base-size);
+    --stroke-width: calc(var(--size) / 6);
+    --color: currentColor;
+    --animation-timing-function: linear;
+    --animation-duration: 1s;
+    width: var(--size);
+    height: var(--size);
+    border-width: var(--stroke-width);
+    border-style: solid;
+    border-color: var(--color) var(--color) var(--color) transparent;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    animation: var(--animation-timing-function) var(--animation-duration) infinite circle-spin-1-animation;
+  }
+  
+  @keyframes circle-spin-1-animation {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }

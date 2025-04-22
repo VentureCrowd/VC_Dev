@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maturation_Date__c</fullName>
+    <inlineHelpText>If this investment has a defined term, ensure that you indicate the correct date of maturation here and that you have also checked &quot;Defined Term&quot; check box.
+To update this field, please go to related tab -&gt; Click on NEW button at Investment Maturities Section</inlineHelpText>
+    <label>Maturation Date</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,233 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+
+                            <a href="#">Fixed Income</a>
+                            <a href="#">Mortgage Funds</a>
+                            <a href="#">Ticker INVEST</a>
+                        </div>
+                        <h1 class="mt-4">How to supplement your income with Mortgage Funds</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JPvwC&d=%2Fa%2F2v000000ENtE%2FUv9SH6e6oGrnK43cfd.Vt.NBTswQRBDAZ54vIOtQ6Tk&asPdf=false');min-height: 77vh;"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h4 style="font-weight: 400;font-size: 1.4rem;">VentureCrowd CEO Steve Maarbani spoke to Ticker INVEST about mortgage fund investing.
+                            </h4>
+                            <br/>
+                            <br/>
+                            <p>
+                                Watch the recording of the interview below.
+                            </p>
+                            <div class="fluid-video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/DQUPPnUEQrY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h2>Short on time? Here's the summary:</h2>
+                            </div>
+                            <br/>
+                            
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>There’s lots of talk from commentators about the impact of extremely low government bond yields and interest rates, and the fact that we are now moving into a long period of low-returns.</li>
+                                <li>As an example, Commonwealth Bank’s 12-month term deposit rate in April 2021 was 0.35%, which is not even half a percent. The Consumer Price Index for 2020, which is the rate at which prices increased, was 0.9%.</li>
+                                <li>To put that in perspective, if you are earning 0.35% interest and the cost of living has gone up by 0.9%, you are basically losing money and going backwards financially.</li>
+                                <li>Historically, people liked term deposits and Government bonds because they are safe, but in this environment, investors should think very carefully about whether the returns from term deposits are actually delivering and meeting their financial requirements.</li>
+                                <li>The good news is good income producing investments with good yields are still available. However these come with slightly more risk than a term deposit.</li>
+                                <li>In this low-return environment investors can generate higher than average income returns by investing in mortgage funds.</li>
+                                <li>Mortgage funds are gaining in popularity at the moment because they allow ordinary investors to invest in a fund which lends money to property owners. Those loans are secured against the property by registered mortgage. Rather than pay interest to a bank, the property owner pays interest to the fund and the fund distributes that income to its investors after it deducts its management fees. Basically, mortgage funds replace loans from banks.</li>
+                                <li>Income products like mortgage funds can be used to supplement income as mortgage funds generally pay between 6% to 9% per annum, depending on the project that the fund is investing in. They also typically pay distributions every month and those distributions are usually fixed.</li>
+                                <li>For those looking to supplement their income, mortgage funds are one option worth considering as investors can expect to receive a set percentage on their money every month.</li>
+                                <li>However there are risks involved that mortgage fund investors should look out for. It’s important to remember that mortgage funds are not the same as term deposits. They generally lend to property owners or property developers which comes with risk. Risks can include things like a downturn in the property market, impact of natural disasters (like floods or fires), or some other impact on general economic conditions.</li>
+                                <li>So if investors are considering investing in a mortgage fund, they should assess not just the quality of the fund manager offering the investment, but also the project or property that secures the loan.</li>
+                                <li>Two key things investors should be aware of when considering investing in a mortgage fund:
+                                <ul>
+                                <li>Mortgage funds normally have a term of at least 12 months, so you need to be able to put that money aside for that period of time.</li>
+                                <li>Always diversify. It’s never a good idea to put all of your investable cash into one mortgage fund. Split your investment budget between a number of different products to lower your risk. </li>
+                                </ul>
+                                </li>
+                            </ul>
+                            <p>Most VentureCrowd investors seek our campaigns because they are specifically looking for higher return opportunities and that comes with a little more risk. At the end of the day, each investor’s appetite for risk is something that needs to be assessed individually – if you’re not sure, get independent financial advice to help you create a structured investment plan for your needs and help identify investments that fit into that plan.</p>
+                               
+                                
+
+                                <div class="post-body-rich-text text-center mt-5">
+
+                                    <h5>We find and fund the future</h5>
+
+                                    <h1>Invest with VentureCrowd</h1>
+                                    <p>Find out more about who is raising capital on VentureCrowd</p>
+
+                                    <a target="_top" href="{!$Label.VC_CF_Public_URL + '/invest'}">View Offers</a>
+                                </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Zega Webinar: Wrapped up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Zega Intelligent Cookware Webinar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">From Capital Raise to Curtain Raise: Inspired Dance Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why millennials are driven to build purpose driven businesses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contactless Ordering: Terminating Payment Terminal Providers?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">April 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">March 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">February 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">January 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <!-- <a href="{! $Label.VC_CF_Public_URL +'/blog/invest-in-property-without-buying'}"> -->
+            <a href="#">
+                <div class="container">
+                    <div class="row text-center py-5 text-white">
+                        <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                        <div class="col-md-12 pb-5 next-post-title mt-3">
+                            <h3>How the smart kitchen is revolutionising the family home</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-post-bg-overlay"></div>
+                <div class="next-post-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JPvK5&d=%2Fa%2F2v000000ENsf%2FvcMee61Eg1e7AfIVZdYGERp_jZQ3fOmqimlDDLMvsHU&asPdf=false')"></div>
+            </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

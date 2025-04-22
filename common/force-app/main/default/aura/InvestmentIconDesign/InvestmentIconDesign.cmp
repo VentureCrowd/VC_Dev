@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global"
+                controller="InvestmentIconDesignClass">
+	
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="investmentRecord" type="Object"/>
+    <aura:attribute name="showcmp" type="boolean" default="false" />
+    <!--aura:attribute name="category" type="String"/-->
+    <aura:attribute name="sector" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.retrivePrdFeedbackCategory}"></aura:handler>
+   
+    <aura:if isTrue="{!v.showcmp}">
+      <force:recordData aura:id="record"
+      fields="Investment_Product_Name__c,Investment_Product_Image_FORMULA__c"
+      recordId="{!v.recordId}"
+      targetError="{!v.recordError}"
+      targetRecord="{!v.record}"
+      targetFields ="{!v.investmentRecord}" 
+      mode="VIEW"/> 
+    <!-- NO NEED FOR THIS TO BE WRAPPED IN LIGHTNING:CARD. SERIOUSLY?-->
+      <aura:if isTrue="{!v.investmentRecord.Investment_Product_Image_FORMULA__c != null}">
+        <div> 
+          <img src="{!v.investmentRecord.Investment_Product_Image_FORMULA__c}" class="imageDesign"/>
+            <div class="description">
+              <h3>{!v.investmentRecord.Investment_Product_Name__c}</h3>
+                <p class="category">{!v.sector}</p>
+                <!--p class="category">{!v.category}</p-->
+            </div>
+        </div> 
+          <aura:set attribute="else">
+              <div> 
+                <span class="vc-circle"></span>
+                  <div class="description">
+                      <h3>{!v.investmentRecord.Investment_Product_Name__c} </h3>
+                      <p class="category">{!v.sector}</p>
+                  </div>
+            </div> 
+          </aura:set>
+      </aura:if>
+    </aura:if>
+    
+</aura:component>

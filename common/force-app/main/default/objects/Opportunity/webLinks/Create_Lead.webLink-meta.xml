@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Lead</fullName>
+    <availability>online</availability>
+    <description>Create a lead with prefilled information of the opportunity</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create Lead</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Opportunity_Create_Pre_filled_lead?VarOppID={!Opportunity.Id}</url>
+</WebLink>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Personal_Account</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Type__pc</columns>
+    <columns>Profile_Image__c</columns>
+    <columns>Bank_Account_Name__c</columns>
+    <columns>Bank_Account_Number__c</columns>
+    <columns>BSB_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IS_PERSON_ACCOUNT</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Personal Account</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

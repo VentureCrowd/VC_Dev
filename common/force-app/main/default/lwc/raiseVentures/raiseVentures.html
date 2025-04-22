@@ -1,0 +1,615 @@
+<template>
+    
+    <!-- loading spinner -->
+    <template lwc:if={isLoading}>
+        <div class="file-loading-spinner">
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+
+    <template lwc:elseif={isLive}>
+    <div class="container" lwc:dom="manual"></div>
+    <template lwc:if={isPreview}>
+        <header class="topContainer">
+            <div class="textContainer">
+                <h3>Preview of Deal page</h3>
+                <p>This is a preview of what your deal page would look like based on the information you have input so far.</p>
+            </div>
+            <c-core-button 
+                label="Return to editing"
+                variation="secondary"
+                mode="dark"
+                onclick={returnToEdit}
+                data-id="primary-button">
+            </c-core-button>
+        </header>
+    </template>
+
+    <div class="raise-toast-msg-container">
+        <c-core-toast-message
+        title={errorTitle}
+        body={errorBody}
+        variant="error"
+        >
+            <div slot="body">
+                <ul class="field-error-list">
+                    <template for:each={errorBodyFields} for:item="errorfield">
+                        <li class="field-error-item" key={errorfield.label} data-id={errorfield.label} onclick={handleClickErrorField} >  
+                            {errorfield.label}
+                        </li>
+                    </template>
+                </ul>
+               
+            </div>
+        </c-core-toast-message>
+    </div>
+
+    <!--* Main Banner Section-->
+    <section class="section-banner">
+        <div class="text-container">
+            <div class="company-container">
+                <div class="company-info-container">
+                    <div class="company-info-header">
+                        <img class="company-logo" src={raiseDetails.companyLogoId} alt="Company logo"/>
+
+                        <div class="badges">
+                            <div lwc:if={raiseDetails.stage} class="raise-stage">
+                                {raiseDetails.stage}
+                            </div>
+    
+                            <div lwc:if={sector} class="raise-stage">
+                                {sector}
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <h1>{raiseDetails.name} raise</h1>
+
+                   
+
+                    
+                   
+                    <div class="company-info">
+                        <p>{raiseDetails.companyOneLiner}</p>
+                    </div>
+                    <c-core-progress-bar values={values}></c-core-progress-bar>
+
+                    <template lwc:if={dealLive}>
+                        <div class="investment-container">
+                            <input type="text" class="amount-input" value={raiseDetails.minInvInput}  oninput={validateInput}/>
+                            <button class="invest-button" onclick={handleInvestClick}>Invest now</button>
+
+                            <!-- PPG LEGALS MODAL -->
+                            <!-- <template lwc:if={isValidInvestor}>
+                                <c-ppg-legals-modal
+                                lwc:ref="modalEl"
+                                onacknowledgesuccess={handleNavigateCheckout}
+                                product-family={investType}
+                                ></c-ppg-legals-modal>
+                            </template>
+                            <template lwc:else>
+                                    <c-core-modal
+                                    variation="primary" 
+                                    mode="light"
+                                    show-close-button="True"
+                                    width="450"
+                                    hide-open-button
+                                    lwc:ref="modalEl"
+                                    >
+                                        <div class="ea-header" slot="header">
+                                            <h2 class="bold-title">Uh oh!</h2>
+                                        </div>
+                                            
+                                        <div class="ea-body" slot="body">
+                                            <p>You’re listed in our system as a retail investor but this deal is only open to wholesale investors.</p>
+                                            <p>Feel this is incorrect?</p>
+                                        </div>
+                                        
+
+                                        <div slot="footer">
+                                            <c-core-button
+                                            label="Contact us"
+                                            variation="secondary"
+                                            onbuttonclick={handleContactUs}
+                                            ></c-core-button>
+                                        </div>
+                                    </c-core-modal>
+                            </template> -->
+                          
+                        </div>
+                    </template>
+                </div>
+                <div class="company-info-video">
+                    <template lwc:if={raiseDetails.videoLink}>
+                        <iframe class="raisePageVideo" src={raiseDetails.videoLink} frameborder="0" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--* Countdown and social media Section -->
+    <section class="section-countdown">
+        <div class="wrapper-small-bar">
+            <div class="countdown-container">
+                <c-core-countdown-timer
+                    alt-text="CLOSES IN"
+                    end-text="CLOSED ON"
+                    close-date={closeDate}
+                    ondeallivechange={handleDealLiveChange}>
+                </c-core-countdown-timer>
+            </div>
+            <!-- Iterate over all social links -->
+            <div class="social-media-icons">
+                <template for:each={socialMedia} for:item="item" lwc:if={socialMedia}>
+                    <c-core-icon
+                        key={item.id}
+                        link-url={item.url}
+                        icon-name={item.icon}
+                        size="xxlarge">
+                    </c-core-icon>
+                </template>
+            </div>
+        </div>
+
+    </section>
+
+    <!--* Overview Section --> 
+    <section class="sectionContainer">
+        <div class="text-container">
+            <h2>Overview</h2>
+            <div class="overview-wrapper">
+                <div class="overview-section">
+                    <lightning-formatted-rich-text value={raiseDetails.companyOverview}></lightning-formatted-rich-text>                    
+                    <div class="info-company-container">
+                        <hr>
+                        <!-- Iterate over here -->
+                        <div key={item.id} for:each={overviewData} for:item="item" class="overview-information">
+                            <div class="overview-content">
+                                <p><strong>{item.name}</strong></p>
+                                <div class="overview-values">
+                                    <p>{item.value}</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-section">
+                    <template lwc:if={isRetail} for:each={navLinksRetail} for:item="link">
+                        <a key={link.name} onclick={scrollToSection} data-target={link.name}>
+                            {link.label}
+                        </a>
+                    </template>
+
+                    <template lwc:if={isWholesale} for:each={navLinksWholesale} for:item="link">
+                        <a key={link.name} onclick={scrollToSection} data-target={link.name}>
+                            {link.label}
+                        </a>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--* Meet Founder Section -->
+    <section data-section="founders" class="sectionContainer">
+        <div class="text-container">
+            <h2>Meet the Founder</h2>
+            <div class="founders-containers">
+                <template for:each={founders} for:item="founder">
+                    <div key={founder.id}>
+                        <div class="profile-card" >
+                            <div class="profile-image">
+                                <img src={founder.imageUrl} alt={founder.name}>
+                            </div>
+                            <div class="profile-info">
+                                <h1 class="profile-name">{founder.name}</h1>
+                                <p class="profile-role">{founder.role}</p>
+                                <a href={founder.linkedIn} class="profile-link" target="_blank">View LinkedIn Profile</a>
+                            </div>
+                        </div>
+                        <div class="profile-description">
+                            <p>{founder.description}</p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!--* The Offer Section -->
+    <section data-section="offer" class="sectionContainer">
+        <div class="text-container offer-section">
+            <h3>The Offer</h3>
+
+            <template lwc:if={offerText}>
+                <p style="text-align: center;">
+                    {offerText}
+                </p>
+            </template>
+            <template lwc:else>
+                <template lwc:if={isConvertibleNote}>
+                    <p style="text-align: center;">
+                        Investors will be issued units in an unregistered wholesale managed investment scheme, 
+                        structured as a unit trust, the trustee of which is VentureCrowd Nominees Pty Ltd (ACN 166 599 140). 
+                        The trust will acquire the Convertible Notes issued by {raiseDetails.name}.
+                    </p>
+                </template>
+                <template lwc:elseif={isWholesaleOrdinaryShare}>
+                    <p>Investors will be issued units in an unregistered wholesale managed investment scheme, structured as a unit trust, the trustee of which is VentureCrowd Nominees Pty Ltd (ACN 166 599 140). The trust will acquire the ordinary shares issued by {raiseDetails.name}.</p>
+                </template>
+                <template lwc:else>
+                    <p>{raiseDetails.name} is offering investors {raiseDetails.investmentProductType} at {raiseDetails.offerText}</p>
+                    <template lwc:if={isRetail}>
+                        <p>This investment opportunity is open to every 18+ Australian resident, and you can invest from just ${raiseDetails.minInvestAmount}.</p>
+                    </template>
+                    <template lwc:else>
+                        <p>This investment opportunity is open for wholesale and pre-approved investors and you can invest from just ${raiseDetails.minInvestAmount}.</p>
+                    </template>
+                </template>
+            </template>
+
+            
+            
+        </div>
+        <div class="button-wrapper">
+            <c-core-button 
+            label="Invest Now "
+            variation="secondary"
+            mode="dark"
+            onclick={handleInvestClick}
+            data-id="primary-button">
+            </c-core-button>
+        </div>
+    </section>
+
+    <!--* Problem & Market Section-->
+    <section data-section="problem-market" class="sectionContainer">
+        <div class="text-container">
+            <h2>Problem & Market</h2>
+            <!-- TODO: Grab the information from the backend || Ask Ken about the break lines -->
+            <!-- <p>{_formData.problem}</p> -->
+            <lightning-formatted-rich-text value={raiseDetails.problem}></lightning-formatted-rich-text>
+            <div class="full-image-container">
+                <!--* Dynamically rendered images can be handled in JavaScript -->
+                    <div class="halfv-fullh-img">
+                        <img src={raiseDetails.heroImage} alt={raiseDetails.heroImage} />
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--* The Solution Section -->
+    <section data-section="solution" class="sectionContainer">
+        <div class="text-container">
+            <h2>The Solution</h2>
+            <!-- TODO: Grab the information from the backend || Ask Ken about the break lines -->
+            <lightning-formatted-rich-text value={raiseDetails.solution}></lightning-formatted-rich-text>
+        </div>
+    </section>
+
+    <!--* Differentiation & Intellectual Property -->
+    <section data-section="differentiation" class="sectionContainer">
+        <div class="text-container">
+            <div class="differentiation-container">
+                <h2>Differentiation</h2>
+                <!--! This will have a flex for this -->
+                <div class="half-text-image">
+                    <div class="half-text-container">
+                        <lightning-formatted-rich-text value={raiseDetails.differentiation}></lightning-formatted-rich-text>
+                    </div>
+                    <div class="half-image-container">
+                        <img src={raiseDetails.supportingImage1} alt={raiseDetails.supportingImage2} />
+                    </div>
+                </div>
+            </div>
+            <div data-section="intellectual-property" class="intellectual-p-container">
+                <h2>Intellectual Property</h2>
+                <!--! This will have a flex for this -->
+                <div class="half-text-image">
+                    <div class="half-text-container">
+                        <lightning-formatted-rich-text value={raiseDetails.intellectualProperty}></lightning-formatted-rich-text>
+                    </div>
+                    <div class="half-image-container">
+                        <img src={raiseDetails.supportingImage2} alt={raiseDetails.supportingImage2} />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--* Total Addressable Market -->
+    <section data-section="total-addressable-market" class="sectionContainer">
+        <div class="text-container">
+            <h2>Total Addressable Market</h2>
+            <!-- TODO: Grab the information from the backend || Ask Ken about the break lines -->
+            <lightning-formatted-rich-text value={raiseDetails.addressableMarket}></lightning-formatted-rich-text>
+        </div>
+    </section>
+
+    <!--* Progress -->
+    <section data-section="progress" class="sectionContainer">
+        <div class="text-container">
+                <h2>Progress</h2>
+                <!--! This will have a flex for this-->
+                <div class="half-text-image">
+                    <div class="half-text-container">
+                        <lightning-formatted-rich-text value={raiseDetails.progress}></lightning-formatted-rich-text>
+                    </div>
+                    <div class="half-image-container">
+                        <img src={raiseDetails.supportingImage3} alt={raiseDetails.supportingImage3} />
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!--* Growth | Capital | Valuation -->
+    <section class="sectionContainer">
+        <div class="text-container">
+            <div data-section="growth" class="growth-container">
+                <h2>Growth Strategy</h2>
+                <lightning-formatted-rich-text value={raiseDetails.growthPlan}></lightning-formatted-rich-text>
+            </div>
+        </div>
+    </section>
+
+    <!--* Capital | Valuation -->
+    <template lwc:if={isRetail}>
+        <section data-section="valuation-capital-required"  class="sectionContainer">
+            <div class="text-container">
+                <div class="capital-valuation-wrapper">
+                    <div class="capital-r-container">
+                        <h2>Capital Required</h2>
+                        <p><strong>${capitalRequired}</strong></p>
+                        <p><c-core-link 
+                            label="Planned use of funds"
+                            hyperlink={plannedUseFonds}
+                            icon="externalLink"
+                            size="medium"
+                            variation="tertiary">
+                        </c-core-link></p>
+                    </div>
+                    <div id="valuation" class="valuation-container">
+                        <h2>Valuation</h2>
+                        <p><strong>${raiseDetails.valuation}</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <section class="sectionContainer">
+        <div class="text-container">
+            <div id="use-of-funds" class="funds-container">
+                <h2>Use of Funds</h2>
+                <lightning-formatted-rich-text value={raiseDetails.useOfFunds}></lightning-formatted-rich-text>
+            </div>
+        </div>
+    </section>
+
+    <!--* This section is the black one  -->
+    <section class="background-in-container">
+        <div class="invest-in-container">
+            <div class="text-container">
+                <h3>Invest In {raiseDetails.name}</h3>
+                <lightning-formatted-rich-text value={raiseDetails.companyOneLiner}></lightning-formatted-rich-text>
+            </div>
+            <c-core-button 
+                label="Invest Now"
+                variation="primary"
+                mode="dark"
+                onclick={handleInvestClick}
+                data-id="primary-button">
+            </c-core-button>
+        </div>
+    </section>
+
+    <!--* Team and Advisors Section -->
+    <section data-section="team-advisors" class="sectionContainer">
+        <div class="text-container">
+            <h2>Directors and Management Team</h2>
+            <div class="founders-containers">
+                <template for:each={managementTeam} for:item="managementTeam">
+                    <div key={managementTeam.id}>
+                        <div class="profile-card" >
+                            <div class="profile-image">
+                                <img src={managementTeam.imageUrl} alt={managementTeam.name}>
+                            </div>
+                            <div class="profile-info">
+                                <h1 class="profile-name">{managementTeam.name}</h1>
+                                <p class="profile-role">{managementTeam.role}</p>
+                                <template lwc:if={managementTeam.linkedIn}>
+                                    <a href={managementTeam.linkedIn} class="profile-link"  target="_blank">View LinkedIn Profile</a>
+                                </template>
+                            </div>
+                        </div>
+                        <div class="profile-description">
+                            <p>{managementTeam.description}</p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <template lwc:if={advisorsExist}>
+                <h2>Advisors, Ambassadors and Key Investors</h2>
+                <div class="founders-containers">
+                    <template for:each={advisors} for:item="advisors">
+                        <div key={advisors.id}>
+                            <div class="profile-card">
+                                <template lwc:if={advisors.imageUrl}>
+                                    <div class="profile-image">
+                                        <img src={advisors.imageUrl} alt={advisors.name}>
+                                    </div>
+                                </template>
+                                <div class="profile-info">
+                                    <h1 class="profile-name">{advisors.name}</h1>
+                                    <p class="profile-role">{advisors.role}</p>
+                                    <template lwc:if={advisors.linkedIn}>
+                                        <a href={advisors.linkedIn} class="profile-link" target="_blank">View LinkedIn Profile</a>
+                                    </template>
+                                    
+                                </div>
+                            </div>
+                            <div class="profile-description">
+                                <p>{advisors.description}</p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </section>
+
+    <!--* Media -->
+    <template lwc:if={displayMediaLinks}>
+        <section data-section="media" class="sectionContainer">
+            <div class="text-container">
+                <h2>Media</h2>
+                <template for:each={mediaLinks} for:item="media">
+                    <div class="media-container" key={media.id}>
+                        <h3>{media.name}</h3>
+                        <a href={media.link}>{media.link}</a>
+                    </div>
+                </template>
+            </div>
+        </section>
+    </template> 
+
+    <!--* Info about VentureCrowd -->
+    <section class="sectionContainer">
+        <div class="text-container">
+            <div class="vc-information">
+                <h2>Why Invest Through VentureCrowd</h2>
+                <p>VentureCrowd is the leading digital investment platform for alternative assets. We find and fund the brightest and most innovative startups. Our curation and due diligence are rigorous and our track record of success speaks for itself: </p>
+                <br>
+                <ul>
+                    <li>Only digital investment platform in Australia to have successfully delivered multiple exit returns to investors through equity crowdfunding</li>
+                    <li>74K+ members and counting</li>
+                    <li>Over $312,000,000 in capital raised since inception</li>
+                </ul>
+                <br>
+                <p>VentureCrowd is investor-led, which means we only list deals with secured professional external lead investors. Our investors then invest on the same economic terms as professional investors. If you invest in one of our deals you will receive equity or ownership in the company raising the capital. Not only might your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.</p>
+                <br>
+                <!--TODO: Ask Ken about if we need to use window.location -->
+                <a href="">Invest Now</a>
+                <br>
+                <p>If you would prefer to speak to one of our team members about this offer, please: </p>
+                <br>
+                <ul>
+                    <!--TODO: Change the link for this number -->
+                    <li><a href="https://calendly.com/d/d34-nsh-ryd/ask-a-customer-relationship-coordinator" target="_blank">Book a call </a>or</li>
+                    <li>call us on <a href="tel:1300039655,5">1300 039 655</a></li>
+                </ul>
+                <br>
+                <p>Please note, the Fund Manager reserves the right to vary or cancel the Offer, vary the amount raised under the Offer, vary or waive the Minimum Investment and close the Offer, without notice and without giving reasons.</p>
+            </div>
+        </div>
+    </section>  
+    
+
+    <section class="sectionContainer" lwc:if={showComments}>
+        <div class="text-container">
+            <h2>Comments</h2>
+
+            <c-core-comments
+                raise-id={raiseId}>
+                <div class="comment-section" slot="body">
+                    <h2>Want to see more?</h2>
+                    <p>You need to join VentureCrowd to view the full investment opportunity and comments.</p>
+                    <c-core-button
+                        label="Join Venturecrowd"
+                        variant="secondary"
+                        mode="light"
+                        onbuttonclick={handleRegister}>
+                    </c-core-button>
+                    <div>
+                        <p>Already registered?</p>
+                        <a href="/s/login/">Log In</a>
+                    </div>
+                </div>
+            </c-core-comments>
+        </div>
+    </section>
+    
+    <!--* Fees & Key Documents Section -->
+    <section data-section="fees" class="sectionContainer">
+
+        <div class="text-container">
+            <div class="tab-container">
+                <div data-id="fees" onclick={handleTabClick} class={feesTabClass}>Fees</div>
+                <div data-id="key-documents" onclick={handleTabClick} class={keyDocumentsTabClass}>Key Documents</div>
+            </div>
+            <!--TODO SELECT IF it's wholesale or retail -->
+            <div if:true={isFeesTabActive}>
+                <div class="content">
+                    <h2>Fees</h2>
+
+                    <template lwc:if={noFeesPayable}>
+                        <p>Investors will not be charged any fees on this investment.</p>
+                    </template>
+                    <template lwc:else>
+                        <p>Investors each invest through an individual VentureCrowd Trust.</p>
+                        <ul>
+                            <template lwc:if={isWholesale}>
+                                <li><strong>Contribution Fee: </strong>1.1% of your investment amount in the Fund, payable upon acceptance of your investment by the Trustee.</li>
+                                <li><strong>Management Fee: </strong>1.65% per annum (charged on conversion or exit).</li>
+                            </template>
+                            <template lwc:else>
+                                <li><strong>Contribution Fee: </strong>1.1% This is the fee charged by the Trustee for the establishment of the bare trust through which you will hold a beneficial interest in your shares. Payable upon acceptance of your investment.</li>
+                            </template>
+                            <li><strong>Performance Fee: </strong>20% of the profit. We only charge a performance fee on conversion or exit.</li>
+                            <li><strong>*Off-Market Transfer Fee (if you wish to transfer your holding to someone else): </strong>$500 + 2% of the total amount transferred, unless the buyer is identified by you in advance</li>
+                            <li>*If the buyer is identified by you in advance the 2% fee does not apply. VentureCrowd cannot guarantee a purchaser for your holding.</li>
+                        </ul>
+                    </template>
+                    
+                </div>
+            </div>
+            <!--* Documents Tab -->
+            <div if:true={isKeyDocumentsTabActive}>
+                <div class="content">
+                    <h2>Key Documents</h2>
+                    <!--TODO Import the documents in a dictionary here -->
+                    <div class="document-container" >
+                        <template for:each={files} for:item="keyDocuments">
+                                <div class="document-style" key={keyDocuments.publicDownloadUrl}>
+                                    <div class="alignment-icons">
+                                        <c-core-icon
+                                        icon-name="document"
+                                        size="xxxlarge">
+                                        </c-core-icon>
+                                        <p class="documents-title">{keyDocuments.fileName}</p>
+                                    </div>
+                                    <!--* Will allow us to download the document -->
+                                    <template lwc:if={userLogged}>
+                                        <a href={keyDocuments.publicDownloadUrl}>
+                                            <c-core-icon
+                                            icon-name="download"
+                                            size="xxlarge">
+                                            </c-core-icon>
+                                        </a>
+                                    </template>
+                                    <template lwc:else>
+                                        <a href="/s/login/">
+                                            <c-core-icon
+                                            icon-name="lock"
+                                            size="xxlarge">
+                                            </c-core-icon>
+                                        </a>
+                                    </template>
+                                </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+<template lwc:elseif={isNotLiveApproved}>
+    <div class="page-not-live">
+        <h1>This raise page is pending. Please try again later.</h1>
+    </div>
+</template>
+</template>

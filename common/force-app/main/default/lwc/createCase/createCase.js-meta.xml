@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default,lightning__HomePage">
+            <property name="options" type="String" default="Investment Further Detail,Wholesale or Retail Investor,Investment Risk Enquiry,New Account or ID,Other (please specify in your enquiry)" />
+            <property name="recordtypeId" type="String" description="RecordType of the case to be assignes to" label="Record Type Id"/>
+            <property name="assigneQueueId" type="String" description="Queue Owner of the" label="Owner Queue Id" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

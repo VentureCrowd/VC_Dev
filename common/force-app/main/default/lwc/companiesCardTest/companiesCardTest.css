@@ -1,0 +1,52 @@
+.buttonStyle { 
+    color: #D95BAA; 
+    border-bottom:2px solid #D95BAA
+}
+.cardStyle { 
+    background: #fff;
+    height: 13.938rem;
+}
+.slds-button{ 
+    border-radius: 0px 0px 0px 0px;
+}
+.vc-heading {
+    font-size: 20px;
+}
+.cardHeading {
+    font-family: "SuisseIntl-Regular", sans-serif;
+    font-weight: 800;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 20px;
+    display: block;
+}
+
+.eoiHeading {
+    font-family: "SuisseIntl-Regular", sans-serif;
+    font-weight: 400;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 20px;
+    display: block;
+}
+.slds-path__title{
+    white-space: break-spaces;
+}
+.slds-is-active{
+    background-color: blacks;
+    --slds-c-path-color-background:  black !important;
+}
+
+
+.fix_margin {
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+
+.notAusBasedCompany { 
+    color: #D95BAA;
+}

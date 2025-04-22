@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Stage__c</fullName>
+    <label>Campaign Stage</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Mkt Assets</fullName>
+                <default>false</default>
+                <label>Mkt Assets</label>
+            </value>
+            <value>
+                <fullName>EOI Build</fullName>
+                <default>false</default>
+                <label>EOI Build</label>
+            </value>
+            <value>
+                <fullName>Raise Build</fullName>
+                <default>false</default>
+                <label>Raise Build</label>
+            </value>
+            <value>
+                <fullName>Live</fullName>
+                <default>false</default>
+                <label>Live</label>
+            </value>
+            <value>
+                <fullName>Closing</fullName>
+                <default>false</default>
+                <label>Closing</label>
+            </value>
+            <value>
+                <fullName>Campaign Closed</fullName>
+                <default>false</default>
+                <label>Campaign Closed</label>
+            </value>
+            <value>
+                <fullName>Application Follow-Up</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application Follow-Up</label>
+            </value>
+            <value>
+                <fullName>EOI Live</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EOI Live</label>
+            </value>
+            <value>
+                <fullName>Lead Conversion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lead Conversion</label>
+            </value>
+            <value>
+                <fullName>Opp Conversion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Opp Conversion</label>
+            </value>
+            <value>
+                <fullName>Raise Live</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Raise Live</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

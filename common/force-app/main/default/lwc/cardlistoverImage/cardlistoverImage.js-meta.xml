@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="masterHeading" type="String" label="Master Heading" placeholder="Only takes plain text" />
+            <property name="masterDescription" type="String" label="Master Description" placeholder="Only takes plain text" />
+            <property name="imageUrlList" type="String" label="Image URL List" placeholder="Image Url separated by ','." />
+            <property name="headingList" type="String" label="Heading List" placeholder="Heading separated by ','." />
+            <property name="descriptionList" type="String" label="Description List" placeholder="Description separated by ',,'. Can take HTML tags." />
+            <property name="backgroungimage" type="String" label="Backgroung Image" placeholder="background image URL" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

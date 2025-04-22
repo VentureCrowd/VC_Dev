@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_Interested_In__c</fullName>
+    <label>Products Interested In</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Income</fullName>
+                <default>false</default>
+                <label>Income</label>
+            </value>
+            <value>
+                <fullName>Investing</fullName>
+                <default>false</default>
+                <label>Investing</label>
+            </value>
+            <value>
+                <fullName>Listing a Property</fullName>
+                <default>false</default>
+                <label>Listing a Property</label>
+            </value>
+            <value>
+                <fullName>Mortgage</fullName>
+                <default>false</default>
+                <label>Mortgage</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Private Syndicate Platform (PSP)</fullName>
+                <default>false</default>
+                <label>Private Syndicate Platform (PSP)</label>
+            </value>
+            <value>
+                <fullName>Property Equity</fullName>
+                <default>false</default>
+                <label>Property Equity</label>
+            </value>
+            <value>
+                <fullName>Property Sales</fullName>
+                <default>false</default>
+                <label>Property Sales</label>
+            </value>
+            <value>
+                <fullName>Raising Capital</fullName>
+                <default>false</default>
+                <label>Raising Capital</label>
+            </value>
+            <value>
+                <fullName>Venture Capital Investing</fullName>
+                <default>false</default>
+                <label>Venture Capital Investing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

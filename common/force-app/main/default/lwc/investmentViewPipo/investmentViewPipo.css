@@ -1,0 +1,259 @@
+.loading-spinner{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) 0;
+}
+
+.loading-spinner h1 {
+  margin: 0;
+}
+
+.wrapper-investments {
+    padding: var(--space-xxl) var(--space-xxl);
+}
+
+@media (width >= 0px) and (width <= 600px) {
+    .wrapper-investments {
+        padding-inline: var(--space-md);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--space-xxl);
+}
+
+@media (width >= 0px) and (width <= 600px) {
+  .content {
+    padding-bottom: 0;
+  }
+}
+
+
+
+.investment-data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+@media (width >= 0px) and (width <= 600px) {
+  .investment-data-grid {
+    display: unset;
+    padding-bottom: var(--space-lg);
+}
+
+}
+
+.investment-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xxl);
+}
+
+/* Handle the font size of the data point */
+.data-point, .field-name p {
+  font-size: var(--text-lg);
+}
+
+.field-name {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--space-sm);
+}
+
+@media (width <= 650px) {
+  .data-point {
+    text-align: left;
+  }
+  .field-name {
+    column-gap: 0px;
+  }
+  .investment-item {
+    gap: var(--space-lg);
+  }
+}
+
+
+
+
+.field-name p {
+  font-family: "SuisseIntl-Light";
+  color: #53545D;
+}
+
+
+/* Tabs Stuff */
+
+.inbox-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #555;
+  font-size: 16px;
+}
+
+.tab.active {
+  color: #D95BAA;
+  border-bottom: 2px solid #D95BAA;
+}
+
+.badge {
+  background-color: #D95BAA;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Tabs Css */
+p strong {
+  font-family: "SuisseIntl-Bold";
+}
+
+.breadcrumb-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--space-md);
+}
+
+@media (width >= 0px) and (width <= 600px) {
+  .breadcrumb-container {
+    padding-bottom: var(--space-xl);
+    flex-direction: row;
+    align-items: center;
+    row-gap: var(--space-lg);
+  }
+}
+
+
+.verification-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.verification-container p {
+  margin-bottom: 0;
+}
+
+.company-section {
+  display: flex;
+  align-items: center;
+  margin-block: var(--space-xl);
+  justify-content: space-between;
+}
+
+.company-information-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+@media (width >= 0px) and (width <= 600px) {
+  .company-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: var(--space-lg);
+
+  }
+  .company-logo {
+    display: none;
+  }
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.company-name {
+  font-size: var(--text-xl)
+}
+
+.verification-section {
+  margin-top: var(--space-xl);
+}
+
+@media (width <= 1000px) {
+  .stepper-container {
+    display: none;
+  }
+
+  .stepper-container.responsive {
+    display: flex;
+  }
+}
+
+@media (width >= 1000px) {
+  .stepper-container.responsive {
+    display: none;
+  }
+
+  .stepper-container {
+    display: flex;
+  }
+}
+
+.stepper-container {
+  margin-block: var(--space-xl);
+  padding: 40px 38px;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 20px;
+  border: 1px solid var(--Ash, #CFCECC);
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.investment-inbox {
+  margin-bottom: var(--space-md);
+}
+
+c-core-icon {
+  cursor: pointer;
+}
+
+.error-message p a {
+  color: var(--white);
+  
+}
+
+.error-message p {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,146 @@
+p {
+    margin-bottom: 0;
+}
+
+.company-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-xl);
+    justify-content: space-between;
+}
+
+.company-information-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.company-name {
+    font-size: var(--text-xl);
+}
+
+@media (width >= 0px) and (width <= 600px) {
+    .company-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: var(--space-lg);
+
+    }
+    .company-logo {
+        display: none;
+    }
+}
+
+
+.spotlight-wrapper {
+    padding-bottom: var(--space-xxl);
+    display: grid;
+    /*! Use this in APRIL 2025 */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+@media (width >= 0px) and (width <= 1012px) {
+    .spotlight-wrapper {
+        grid-template-columns: 1fr;
+        padding-bottom: var(--space-xl);
+    }
+
+}
+
+.tooltip-wrapper {
+    display: flex;
+}
+
+.spotlight-wrapper h1 {
+    font-size: var(--text-4xl);
+}
+
+@media (width <= 500px) {
+    .spotlight-wrapper h1 {
+        font-size: var(--text-xl);
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+
+.distribution-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.header-modal h2 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-sm);
+}
+
+.distribution-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-block: var(--space-xl);
+}
+
+.transaction {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    align-items: center;
+}
+
+.transaction-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (width >= 0px) and (width <= 640px) {
+    .transaction {
+        gap: var(--space-md);
+    }
+
+    .transaction-details {
+        display: block;
+    }
+}
+
+.price {
+    font-family: 'SuisseIntl-Bold';
+}
+
+.footer-modal a {
+    color: var(--tertiary-accent);
+}
+
+.badges-wrapper {
+    display: flex;
+}
+
+c-core-modal {
+    height: 2em;
+}
+
+
+.arrow-responsive {
+    display: none;
+}
+
+@media (width <= 560px) {
+    .arrow-responsive {
+        display: block;
+        color: var(--tertiary-accent);
+    }
+}

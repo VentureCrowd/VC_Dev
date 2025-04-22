@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preview_EOI__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+    &quot;https://www.venturecrowd.com.au/s/lp/eoi-preview?id=&quot; &amp; Id,
+    &quot;Click to view EOI&quot;,
+    &quot;_blank&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Preview EOI</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

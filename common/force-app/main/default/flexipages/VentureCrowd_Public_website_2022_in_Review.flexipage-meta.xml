@@ -1,0 +1,1784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>59be2e1d-433e-445f-98f4-293179745ff8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-65915b3e-8c1c-4435-803b-a365a619b944</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000008Aer9&amp;d=%2Fa%2F5i000000PZDQ%2F0hvU2gybVetnB3iMa5fE6aQ2ikHT_FEzs8s0XW_auNQ&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>2022 in Review</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>59be2e1d-433e-445f-98f4-293179745ff8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2083e139-18f9-4711-9ab1-13347f56cc73</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>010f9be6-7e4b-4dda-8be1-5e47f2cce7f6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>d9c69</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fa8df1f7-9109-4753-b5c0-02a31a718abc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+    &lt;p&gt;2022 was a historic year, and ‌a year full of contradictions.&lt;/p&gt;
+	&lt;p&gt;Aussie investors have had to contend with heightened market volatility because of the ongoing COVID-19 pandemic recovery, the war in Ukraine, supply chain disruptions, high inflation and rising interest rates, not to mention the fear of a possible global recession.&lt;/p&gt;
+	&lt;p&gt;Yet, all this has only strengthened our resolve to create the biggest positive impact possible. For VentureCrowd, we&apos;ve continued to experience massive growth despite a bear market. We remain committed to backing a better future for people and the climate.&lt;/p&gt;
+	&lt;p&gt;All things considered, 2022 has helped us remain focused on growing our clients’ capital while shining a light on &lt;a href=&quot;https://www.venturecrowd.com.au/s/learn/invest/impact-investing&quot; target=&quot;_blank&quot;&gt;impact investing.&lt;/a&gt;&lt;/p&gt;
+	&lt;p&gt;Let’s look back on the significant world events that shaped this financial year, along with the milestones VentureCrowd celebrated in 2022.&lt;/p&gt;
+
+    &lt;br&gt;
+    &lt;img class=&quot;img-fluid&quot; src=&quot;https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000008Aoht&amp;d=%2Fa%2F5i000000PZNz%2Fjwnm.6NS2xzRXKZczfvShP0baU5b.gSOnzhtmXWYGq8&amp;asPdf=false&quot; style=&quot;padding-bottom: 20px&quot;&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2083e139-18f9-4711-9ab1-13347f56cc73</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>eachLinkTextColor</name>
+                    <value>Pink</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectText</name>
+                    <value>How to invest in the property market without buying a property</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>redirectURL</name>
+                    <value>https://www.google.com/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Recent</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleTextColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentName>blogSidebarNavigation</componentName>
+                <identifier>blogSidebarNavigation</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>010f9be6-7e4b-4dda-8be1-5e47f2cce7f6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c40ea8da-3f67-4a4c-94de-c0be4ab92cc0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2a457f85-9415-4c53-a2b9-fda74a47dc11</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1&gt;January: The world was hopeful for a smooth Covid road to recovery &lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;January kicked off with the world’s superpowers releasing a &lt;a href=&quot;https://www.whitehouse.gov/briefing-room/statements-releases/2022/01/03/p5-statement-on-preventing-nuclear-war-and-avoiding-arms-races/?utm_source=twitter&quot; target=&quot;_blank&quot;&gt;joint statement&lt;/a&gt;: “There can be no winners in the event of a nuclear war.”&lt;/p&gt;
+	&lt;p&gt;This set the scene for some of the biggest contradictions that happened in 2022 — the Ukraine War, rumours of a nuclear threat from Russia, China firing missiles near Taiwan and North Korea firing missiles over Japan.&lt;/p&gt;
+	&lt;p&gt;In the past, investors made fortunes on the back of wars. At VentureCrowd, we are committed that the exact opposite becomes true.&lt;/p&gt;
+	&lt;p&gt;On January 7, Covid-19 hit the &lt;a href=&quot;https://www.nytimes.com/live/2022/01/06/world/omicron-covid-vaccine-tests&quot; target=&quot;_blank&quot;&gt;300 million case milestone&lt;/a&gt; continued to play havoc around the world but with higher vaccination numbers, rules relaxed and people started to travel again. 
+	&lt;p&gt;Health and wellness continue to be a high priority for what we fund through VentureCrowd with our &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/healthtech-fund&quot; target=&quot;_blank&quot;&gt;Healthtech fund&lt;/a&gt;, EngeneIC, and our sponsorship of Luminax, not to mention foodtech NEXBA.&lt;/p&gt;
+	&lt;p&gt;January also saw the launch of our new Pre-IPO investment opportunity, for Australia’s leading-edge envirotech company, Patriot Hydrogen which was oversubscribed &lt;b&gt;198%.&lt;/b&gt;&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c40ea8da-3f67-4a4c-94de-c0be4ab92cc0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>eea718a9-129b-48a5-9307-0113bc8c0842</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-59757995-9d81-40ad-a7e0-9b4b8f6ea6a9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;February: Geopolitical instability held the world’s attention&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Just one month after the world’s superpowers made their statement on Nuclear arms, China and Russia joined forces to &lt;a href=&quot;https://www.bbc.com/news/world-asia-60257080&quot; target=&quot;_blank&quot;&gt;oppose NATO expansion&lt;/a&gt;. By the end of February, Russia began a &lt;a href=&quot;https://en.wikipedia.org/wiki/Timeline_of_the_2022_Russian_invasion_of_Ukraine&quot; target=&quot;_blank&quot;&gt;full scale invasion&lt;/a&gt; of The Ukraine and the move was condemned globally. &lt;/p&gt;
+	&lt;p&gt;A couple of days later, &lt;a href=&quot;https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change&quot; target=&quot;_blank&quot;&gt;The Intergovernmental Panel on Climate Change (IPCC)&lt;/a&gt; released the second part of its Sixth Assessment Report on climate change. It concluded that many impacts are on the verge of becoming &quot;irreversible&quot;.&lt;/p&gt;
+	&lt;p&gt;Meanwhile, at VentureCrowd, February marked an Australian first. A new partnership between &lt;a href=&quot;https://www.linkedin.com/company/cohort-space/&quot; target=&quot;_blank&quot;&gt;Cohort Innovation Space&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/company/venturecrowd-pty-ltd/&quot; target=&quot;_blank&quot;&gt;VentureCrowd&lt;/a&gt; gave a $500,000 boost to the &lt;a href=&quot;https://www.linkedin.com/company/luminax-accelerator/&quot; target=&quot;_blank&quot;&gt;LuminaX HealthTech Accelerator&lt;/a&gt; through the VentureCrowd HealthTech Fund.&lt;/p&gt;
+	&lt;p&gt;The fund committed to invest $50,000 in each of the ten startups who were accepted into the 2022 &lt;a href=&quot;https://www.linkedin.com/company/luminax-accelerator/&quot; target=&quot;_blank&quot;&gt;LuminaX HealthTech Accelerator&lt;/a&gt;, helping validate and commercialise early-stage, high-growth startups that use technology to solve problems in the healthcare space.&lt;/p&gt;
+
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>eea718a9-129b-48a5-9307-0113bc8c0842</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>8177d02d-7eab-40a1-9b6b-44c21fbd5f8b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-15700035-e22d-46a0-90df-7f59b9932fd0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;March: War crimes and another Covid milestone&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;On March 3, the International Criminal Court opened an investigation into possible &lt;a href=&quot;https://fortune.com/2022/03/02/russia-putin-war-crimes-ukraine-geneva-conventions-icc-hague/&quot; target=&quot;_blank&quot;&gt;war crimes&lt;/a&gt; committed by Russia in its invasion of Ukraine and their use of ‘vacuum bombs’&lt;/p&gt;
+    &lt;p&gt;Meanwhile, despite Covid19 deaths dropping, total deaths surpassed &lt;a href=&quot;https://edition.cnn.com/2022/03/07/health/global-covid-deaths-surpass-six-million/index.html&quot; target=&quot;_blank&quot;&gt;6 million globally&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;At VentureCrowd, March marked an important milestone: &lt;b&gt;$200,000,000 capital raised&lt;/b&gt; since inception! As we keep growing, we&apos;re proud to continue proving investments can be impactful and accessible.&lt;/p&gt;
+	&lt;p&gt;On Wednesday, March 8, we celebrated International Women’s Day. We are proud to have a talented and diverse team with 40% female team members and growing. However, we also recognised that as an industry, we need to do better. &lt;a href=&quot;https://www.asbfeo.gov.au/media-centre/media-releases/access-capital-still-barrier-women-led-small-businesses&quot; target=&quot;_blank&quot;&gt;82% of women&lt;/a&gt; said they believed their gender impacted their ability to raise venture capital funding, with women being significantly underrepresented at just 16% of founders in Australia.&lt;/p&gt;
+	&lt;p&gt;We also launched our Carrara property investment opportunity, and it broke all the records: 🤯 &lt;b&gt;$2M+ raised in 6 hrs, $4M+ in 24 hrs and $7M+ in less than a week!&lt;/b&gt;&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>8177d02d-7eab-40a1-9b6b-44c21fbd5f8b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>91ff4674-44ae-464f-8028-a6efc5edd952</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9d88890c-3e6b-4f25-b37b-243ef3e94342</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;April: The world feels the impact of rising prices&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;In April, &lt;a href=&quot;https://www.theguardian.com/global-development/2022/apr/08/global-food-prices-rise-to-highest-ever-levels-after-russian-invasion-ukraine-wheat&quot; target=&quot;_blank&quot;&gt;Global food prices rose&lt;/a&gt; to their highest ever levels after the Russian invasion of Ukraine, with cooking oils, cereals and meat costing 30% more than April 2021. &lt;/p&gt;
+	&lt;p&gt;Then, on April 13, the World surpassed &lt;a href=&quot;https://www.axios.com/2022/04/13/world-covid-cases-surpass-500-million&quot; target=&quot;_blank&quot;&gt;half a billion&lt;/a&gt; confirmed Covid cases.&lt;/p&gt;
+	&lt;p&gt;It wasn’t all bad news though. April also brought with it advances in science. The world’s largest and most powerful &lt;a href=&quot;https://home.cern/news/news/accelerators/large-hadron-collider-restarts&quot; target=&quot;_blank&quot;&gt;particle accelerator&lt;/a&gt; restarted after a break of more than three years for maintenance, consolidation and upgrade work.&lt;/p&gt;
+	&lt;p&gt;VentureCrowd launched our retail deal &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/our-cow&quot; target=&quot;_blank&quot;&gt;OurCow&lt;/a&gt; – raising a whopping &lt;b&gt;$2.3M with over 1,000 investors&lt;/b&gt; on the VentureCrowd platform.&lt;/p&gt;
+    
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>91ff4674-44ae-464f-8028-a6efc5edd952</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>8729f5da-45ca-489b-8d7c-70647835b1fe</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-17fd12b4-00a6-42d7-86fd-bff2eb8e60a1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;May: Another pandemic and a new Aussie government &lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;In early May 2022, &lt;a href=&quot;https://www.who.int/emergencies/disease-outbreak-news/item/2022-DON381&quot; target=&quot;_blank&quot;&gt;Monkeypox&lt;/a&gt; cases were reported from countries where the disease is not endemic. By the end of May there were 98 confirmed cases prompting an emergency meeting of the WHO. We also saw a changeover in Australian politics with the Labor party’s Anthony Albanese becoming Australia’s 31st Prime Minister.&lt;/p&gt; 
+	&lt;p&gt;VentureCrowd portfolio company, &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/invertigro&quot; target=&quot;_blank&quot;&gt;InvertiGro&lt;/a&gt;, partnered with Woolworths to bring about Australia&apos;s first in-supermarket vertical farm to reduce food miles and the company’s carbon footprint. It was a small but significant step for the grocery giant.&lt;/p&gt;
+    
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>8729f5da-45ca-489b-8d7c-70647835b1fe</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>112064ae-319a-40dc-9b39-3fe4c61258ef</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-59e79d11-0bb7-420f-857b-1825ea50f6bc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;June: The world shakes &lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;On June 22, at least 1,000 people were killed and 1,500 others injured after a 5.9 magnitude &lt;a href=&quot;https://www.aljazeera.com/news/2022/6/22/dozens-killed-as-6-1-magnitude-quake-shakes-afghanistan-pakistan&quot; target=&quot;_blank&quot;&gt;earthquake&lt;/a&gt; rocked remote parts of eastern Afghanistan and neighbouring Pakistan.&lt;/p&gt;
+	&lt;p&gt;Natural disasters always impact the world’s most vulnerable populations the worst and are a sombre reminder to follow our commitment to addressing the UN SDGs through impact investing.&lt;/p&gt;
+	&lt;p&gt;Thankfully, our crowd agrees. VentureCrowd &lt;a href=&quot;https://www.afr.com/companies/financial-services/crowdfunding-a-heart-starter-for-stalled-ventures-20210615-p581ai&quot; target=&quot;_blank&quot;&gt;featured in the Australian Financial Review (AFR)&lt;/a&gt; after our best year yet. In the 2022 financial year, we recorded double the amount of investments than the previous year, with &lt;b&gt;over $65 million invested&lt;/b&gt; across 70 different venture capital and property projects. We attribute this success to the digitisation of the entire capital raising process. &lt;/p&gt;
+    
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>112064ae-319a-40dc-9b39-3fe4c61258ef</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2a05bc20-715e-4eac-8af7-bf045c2cc3f9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>b57711c2-56ac-4037-abfa-63a84f336432</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>07a21</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>52ce47ab-508b-4819-9a1e-6e27cf55cc33</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>93d2f</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-09cd43fe-4c66-4b3d-aac2-20f134a1091e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>2a05bc20-715e-4eac-8af7-bf045c2cc3f9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+&lt;img class=&quot;img-fluid&quot; src=&quot;https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000008Aohy&amp;d=%2Fa%2F5i000000PZO4%2FyixPyVjKa0AiJwJfbd44pc5VjIJVKfi_lI_iKEIz5Zo&amp;asPdf=false&quot; style=&quot;padding-bottom: 20px; padding-left: 80px;&quot;&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>b57711c2-56ac-4037-abfa-63a84f336432</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>52ce47ab-508b-4819-9a1e-6e27cf55cc33</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>76b51926-4d2e-47d5-a621-af3fc2d69751</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-195ec687-f610-4228-95fe-285d133560ac</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;July: Monkeypox declared a global emergency&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;The month of July was another big month - socially, politically and economically. The IMF &lt;a href=&quot;https://www.imf.org/en/Publications/WEO/Issues/2022/07/26/world-economic-outlook-update-july-2022&quot; target=&quot;_blank&quot;&gt;World Economic Outlook Update&lt;/a&gt; touted July as “gloomy and more uncertain” as risks began to materialise. &lt;/p&gt;
+      &lt;p&gt;WHO declared Monkeypox a &lt;a href=&quot;https://www.abc.net.au/news/2022-07-24/monkeypox-who-declares-global-emergency/101264482&quot; target=&quot;_blank&quot;&gt;global health emergency&lt;/a&gt; as cases surged to 16,000 across 74 countries.&lt;/p&gt;
+      &lt;p&gt;In better news, Australia broke a world swimming record at the &lt;a href=&quot;https://olympics.nbcsports.com/2022/07/31/adam-peaty-commonwealth-games-swimming-world-record-australia/&quot; target=&quot;_blank&quot;&gt;2022 Commonwealth Games&lt;/a&gt;.&lt;/p&gt;
+	&lt;p&gt;VentureCrowd continued to support health and wellness innovation with portfolio company &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/nexba&quot; target=&quot;_blank&quot;&gt;Nexba&lt;/a&gt; reaching an important milestone. They officially removed 5 billion grams of sugar from the world’s diet. Nexba also oversubscribed on their first of three 2022 deals on our platform. &lt;/p&gt;
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>76b51926-4d2e-47d5-a621-af3fc2d69751</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>8e390442-1935-4606-bf99-1d72356a27d0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-66eb134e-6362-4c48-b67f-a95d9932e734</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;August: Climate crisis hits home in Pakistan&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Pakistan’s climate challenges posed a threat to national security after consistently being ranked among &lt;a href=&quot;https://www.usip.org/publications/2022/07/pakistans-climate-challenges-pose-national-security-emergency&quot; target=&quot;_blank&quot;&gt;the top 10&lt;/a&gt; most vulnerable countries on the Climate Risk Index. These challenges threatened to spark climate-related conflict over resources (such as food and water) that have become scarce due to climate change impacts. &lt;/p&gt;
+	&lt;p&gt;At the end of August, Pakistan &lt;a href=&quot;https://www.bbc.com/news/world-asia-62704004&quot; target=&quot;_blank&quot;&gt;appealed for aid&lt;/a&gt; as 119 more died in a single day, bringing the death toll to over 1,000, due to floods devastating the country. &lt;/p&gt;
+	&lt;p&gt;Of course, our most vulnerable are often the most likely to be impacted in times of crisis which is why we remain committed to making an impact across a number of focus areas including climatetech and healthtech.&lt;/p&gt;
+	&lt;p&gt;In August, VentureCrowd launched its first IPO deal with &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/bridge&quot; target=&quot;_blank&quot;&gt;Bridge SAAS&lt;/a&gt; - a platform that gives aged care and disability providers a way to navigate the ever-changing waters of the NDIS and aged care sectors. &lt;/p&gt;
+    
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>8e390442-1935-4606-bf99-1d72356a27d0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f6fb2dc9-ff90-4539-ab2d-a70e3ace738b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-25d37981-0189-4245-94ac-1ebb7ecbc6f6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;September: Farewell Queen Elizabeth&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;The death of &lt;a href=&quot;https://www.bbc.com/news/uk-61585886&quot; target=&quot;_blank&quot;&gt;Queen Elizabeth II&lt;/a&gt; on September 8 marked a new era for Britain and the world at large. It comes at a time of unique flux in British politics, as Liz Truss was also appointed Prime Minister of the United Kingdom (briefly) during a time when the country was facing its worst economic outlook in years, a deepening energy crisis and increased social inequality. On September 10, the Accession Council &lt;a href=&quot;https://www.abc.net.au/news/2022-09-10/king-charles-accession-council-proclaimation-in-london-crowds/101426370&quot; target=&quot;_blank&quot;&gt;proclaimed Charles&lt;/a&gt; as King as crowds gathered for ceremonies in London to commemorate the Queen’s 70 year reign.&lt;/p&gt; 
+	&lt;p&gt;While the world mourned the loss of an iconic leader, we were ever present to the need to do even more for our planet and for the billions of people on it. September provided a reminder of our commitment to making an impact. We celebrated raising &lt;b&gt;$250M&lt;/b&gt; to date. &lt;/p&gt;
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f6fb2dc9-ff90-4539-ab2d-a70e3ace738b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f4690998-7065-4024-8a0f-e0d17f0025cb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-c6c510e3-29b1-40d4-bf06-0b7fc2730090</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;October: Elon Musk buys Twitter&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;Financial asset prices declined sharply and volatility increased alongside rising interest rates and downgrades to the global outlook. The risks from cyber-attacks and climate change continued to be a focus of financial institutions and regulators.&lt;/p&gt; 
+	&lt;p&gt;In Silicon Valley, Elon Musk completed his &lt;a href=&quot;https://techcrunch.com/2022/10/27/elon-musk-fired-top-twitter-execs-including-ceo-reports-say/&quot; target=&quot;_blank&quot;&gt;$44 billion acquisition of Twitter&lt;/a&gt; firing top executives almost immediately.&lt;/p&gt;
+	&lt;p&gt;VentureCrowd announced the &lt;a href=&quot;https://www.businessnewsaustralia.com/articles/venturecrowd-teams-up-with-makerx-to-build-vest--a-world-first-blockchain-wealth-tech-platform.html&quot; target=&quot;_blank&quot;&gt;blockchain-based community platform Vest&lt;/a&gt; and launched &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/picaluna&quot; target=&quot;_blank&quot;&gt;Picaluna&lt;/a&gt;; funeral arranging, reimagined. It was a very successful retail deal that saw a successful raise, ending up &lt;b&gt;367% oversubscribed.&lt;/b&gt;&lt;/p&gt;
+    
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f4690998-7065-4024-8a0f-e0d17f0025cb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3dfb7fc9-a26f-4e33-b063-9846cc071938</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-20cca286-607c-488e-a5fc-1efcac69976f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;November: The World Hits 8 Billion People&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;In November, the &lt;a href=&quot;https://www.who.int/europe/news/item/07-11-2022-statement---climate-change-is-already-killing-us--but-strong-action-now-can-prevent-more-deaths&quot; target=&quot;_blank&quot;&gt;UN Climate Change Conference (COP27)&lt;/a&gt; took place in Sharm el-Sheikh, Egypt, with a focus on 5 key areas for action, including: the environment, food security, water, decarbonisation and climate adaptation. This month also marked a global milestone – the world’s population reaching 8 billion people.&lt;/p&gt; 
+	&lt;p&gt;And world leaders gathered in Bali for the G20 Summit - &lt;a href=&quot;https://www.9news.com.au/world/joe-biden-xi-jinping-meet-at-g20-summit-in-bali-amid-china-and-usa-tensions/96286a69-99a9-467c-ab54-821bc4c4a962&quot; target=&quot;_blank&quot;&gt;US President Joe Biden&lt;/a&gt; and Chinese President Xi Jinping discussed Taiwan in an effort to avoid &apos;conflict&apos; and Anthony Albanese met with the Chinese leader for the first time, in a bid to renew ties.&lt;/p&gt;
+	&lt;p&gt;VentureCrowd also hit a milestone. We celebrated &lt;b&gt;distributing over $17 million worth of returns&lt;/b&gt; to our crowd since inception and had current portfolio companies that are on track for potentially significant exits.&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3dfb7fc9-a26f-4e33-b063-9846cc071938</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>aca1e82f-01a3-4deb-bbd8-220cc3216cc8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab18</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8c33ad5f-e7c7-4ff5-b224-1cb704992085</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;December: The World Cup creates news for the wrong reasons&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;This month, all eyes were on Qatar for &lt;a href=&quot;https://www.amnesty.org.au/explainer-human-rights-and-the-fifa-world-cup-in-qatar/&quot; target=&quot;_blank&quot;&gt;the World Cup&lt;/a&gt;, and news surfaced about human rights abuses that occurred while the infrastructure for the World Cup was being developed. Of course, soccer fans still showed up in droves and the final is set to take place on December 19.&lt;/p&gt; 
+	&lt;p&gt;Worker safety and trust is at the heart of supply chain transparency (not to mention the UN SDGs) and Web3 tech is making huge ground in this arena. We are proud to be supporting innovation in this space and developing our own Web3 wealthtech platform. &lt;/p&gt;
+	&lt;p&gt;At VentureCrowd we are ending 2022 on a high, growing our &lt;a href=&quot;https://www.venturecrowd.com.au/s/about&quot; target=&quot;_blank&quot;&gt;VentureCrowd team&lt;/a&gt; that now consists of over 45 members!&lt;/p&gt;
+    
+    
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>aca1e82f-01a3-4deb-bbd8-220cc3216cc8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>e405a71a-a24c-42e8-bcc8-0c85dd514309</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab19</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-25de7129-c2a7-4c03-8d36-5bb48d36e32c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;h1&gt;Impactful ventures and deals still available in 2022&lt;/h1&gt;
+    &lt;br&gt;
+    &lt;p&gt;We can’t wait to see what 2023 brings. In the meantime, have a wonderful and peaceful holiday season and don’t forget to check out our holiday deals including:&lt;/p&gt;
+    &lt;ul&gt;
+	&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/nexba&quot; target=&quot;_blank&quot;&gt;Nexba’s final Series B raise&lt;/a&gt; on our platform to accelerate their growth on the back of recent, very significant wins. &lt;/p&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/engeneic-bridging-round&quot; target=&quot;_blank&quot;&gt;EnGeneIC&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures/canceraid&quot; target=&quot;_blank&quot;&gt;CancerAid&lt;/a&gt;, two fast-growth healttechs fighting cancer. CancerAid is reducing system-wide cancer costs and transforming how patients navigate the world’s no. 1 healthcare problem for better quality of life and, most importantly, outcomes. EnGeneIC’s patented EDV™ nanocell technology makes cancer treatment more potent and far less toxic. EnGeneIC recently won AFR Healthtech of the Year for the second time and their offer is once again oversubscribed.&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;An exciting range of &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property&quot; target=&quot;_blank&quot;&gt;property investment opportunities&lt;/a&gt;, from First Mortgage Funds to Equity and Preference Shares, enabling investors to diversify across the whole &lt;a href=&quot;https://www.venturecrowd.com.au/s/learn/property/understanding-the-property-capital-stack&quot; target=&quot;_blank&quot;&gt;Property Capital Stack.&lt;/a&gt;&lt;/li&gt;    
+	&lt;li&gt;&lt;p&gt;And newcomers you can register your interest in include: &lt;a href=&quot;https://www.venturecrowd.com.au/s/lp/elladex-eoi&quot; target=&quot;_blank&quot;&gt;Elladex&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/lp/land-lease-home-loans-eoi&quot; target=&quot;_blank&quot;&gt;Land Lease Home Loans&lt;/a&gt;. Elladex is the celebrity-backed Spotify of personal and professional development for women who want more. Land Lease Home Loans offers an affordable, secure alternative to traditional home ownership or renting.&lt;/p&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+	&lt;p&gt;🎄 Merry Christmas from all of us at VentureCrowd! 🎅&lt;/p&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>e405a71a-a24c-42e8-bcc8-0c85dd514309</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9852103d-5b36-45f1-a452-9bd1b15daad3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab20</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>77ad8be8-c14d-49bd-910b-73a6ddfddf80</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>58fe3</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab21</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>15afd169-c2e3-4cf1-8ef1-de5f6106eb1d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>226fb</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab22</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-0ae96128-aa48-4561-8214-2090b14b0c93</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>9852103d-5b36-45f1-a452-9bd1b15daad3</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+&lt;img class=&quot;img-fluid&quot; src=&quot;https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000008Aoi3&amp;d=%2Fa%2F5i000000PZO9%2FX2bokNLjctSeN4Uxm0tP5iMZme0rdvi.Lk3CmU09Dec&amp;asPdf=false&quot; style=&quot;padding-bottom: 20px; padding-left: 80px;&quot;&gt;
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>77ad8be8-c14d-49bd-910b-73a6ddfddf80</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>15afd169-c2e3-4cf1-8ef1-de5f6106eb1d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5a370c58-6909-4f2a-b5b3-497638b63610</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab23</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-f1edb123-f05f-440d-b5fe-46d2e225d367</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;________________&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+&lt;br&gt;
+    &lt;p&gt;From an economic and market standpoint, there has been no shortage of events in 2022. Many changes have contributed to the volatility of the market and concerns surrounding inflation, increasing geopolitical tensions and the continued fight against climate and social injustice. Now, as we move forward into a new quarter, VentureCrowd remains focused on our active approach to impact investing and the opportunities that lay ahead for our team and platform of over 70,000 members investing in impactful opportunities across &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/ventures&quot; target=&quot;_blank&quot;&gt;venture capital&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/invest/property&quot; target=&quot;_blank&quot;&gt;property funds&lt;/a&gt;.&lt;/p&gt;
+&lt;br&gt;
+        
+    &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5a370c58-6909-4f2a-b5b3-497638b63610</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3d91fdee-827a-4760-b34b-636a3bf062e0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab24</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-5bb792ba-547f-4e7a-81ba-6def69727867</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>currentBlogSeqNumber</name>
+                    <value>60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>nextPostButtonLabel</name>
+                    <value>Next Post</value>
+                </componentInstanceProperties>
+                <componentName>blogNextPost</componentName>
+                <identifier>blogNextPost</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3d91fdee-827a-4760-b34b-636a3bf062e0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-65915b3e-8c1c-4435-803b-a365a619b944</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;65915b3e-8c1c-4435-803b-a365a619b944&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;59be2e1d-433e-445f-98f4-293179745ff8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fa8df1f7-9109-4753-b5c0-02a31a718abc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fa8df1f7-9109-4753-b5c0-02a31a718abc&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2083e139-18f9-4711-9ab1-13347f56cc73&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;010f9be6-7e4b-4dda-8be1-5e47f2cce7f6&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;d9c69&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2a457f85-9415-4c53-a2b9-fda74a47dc11</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2a457f85-9415-4c53-a2b9-fda74a47dc11&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c40ea8da-3f67-4a4c-94de-c0be4ab92cc0&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-59757995-9d81-40ad-a7e0-9b4b8f6ea6a9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;59757995-9d81-40ad-a7e0-9b4b8f6ea6a9&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;eea718a9-129b-48a5-9307-0113bc8c0842&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-15700035-e22d-46a0-90df-7f59b9932fd0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;15700035-e22d-46a0-90df-7f59b9932fd0&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;8177d02d-7eab-40a1-9b6b-44c21fbd5f8b&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9d88890c-3e6b-4f25-b37b-243ef3e94342</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9d88890c-3e6b-4f25-b37b-243ef3e94342&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;91ff4674-44ae-464f-8028-a6efc5edd952&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-17fd12b4-00a6-42d7-86fd-bff2eb8e60a1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;17fd12b4-00a6-42d7-86fd-bff2eb8e60a1&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;8729f5da-45ca-489b-8d7c-70647835b1fe&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-59e79d11-0bb7-420f-857b-1825ea50f6bc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;59e79d11-0bb7-420f-857b-1825ea50f6bc&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;112064ae-319a-40dc-9b39-3fe4c61258ef&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-09cd43fe-4c66-4b3d-aac2-20f134a1091e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;09cd43fe-4c66-4b3d-aac2-20f134a1091e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2a05bc20-715e-4eac-8af7-bf045c2cc3f9&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;2&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;b57711c2-56ac-4037-abfa-63a84f336432&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;07a21&quot;,&quot;columnWidth&quot;:&quot;8&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;52ce47ab-508b-4819-9a1e-6e27cf55cc33&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;93d2f&quot;,&quot;columnWidth&quot;:&quot;2&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-195ec687-f610-4228-95fe-285d133560ac</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;195ec687-f610-4228-95fe-285d133560ac&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;76b51926-4d2e-47d5-a621-af3fc2d69751&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-66eb134e-6362-4c48-b67f-a95d9932e734</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;66eb134e-6362-4c48-b67f-a95d9932e734&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;8e390442-1935-4606-bf99-1d72356a27d0&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-25d37981-0189-4245-94ac-1ebb7ecbc6f6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;25d37981-0189-4245-94ac-1ebb7ecbc6f6&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f6fb2dc9-ff90-4539-ab2d-a70e3ace738b&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-c6c510e3-29b1-40d4-bf06-0b7fc2730090</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;c6c510e3-29b1-40d4-bf06-0b7fc2730090&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f4690998-7065-4024-8a0f-e0d17f0025cb&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-20cca286-607c-488e-a5fc-1efcac69976f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;20cca286-607c-488e-a5fc-1efcac69976f&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;3dfb7fc9-a26f-4e33-b063-9846cc071938&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8c33ad5f-e7c7-4ff5-b224-1cb704992085</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8c33ad5f-e7c7-4ff5-b224-1cb704992085&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;aca1e82f-01a3-4deb-bbd8-220cc3216cc8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-25de7129-c2a7-4c03-8d36-5bb48d36e32c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;25de7129-c2a7-4c03-8d36-5bb48d36e32c&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;e405a71a-a24c-42e8-bcc8-0c85dd514309&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-0ae96128-aa48-4561-8214-2090b14b0c93</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;0ae96128-aa48-4561-8214-2090b14b0c93&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9852103d-5b36-45f1-a452-9bd1b15daad3&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;2&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;77ad8be8-c14d-49bd-910b-73a6ddfddf80&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;58fe3&quot;,&quot;columnWidth&quot;:&quot;8&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;15afd169-c2e3-4cf1-8ef1-de5f6106eb1d&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;226fb&quot;,&quot;columnWidth&quot;:&quot;2&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-f1edb123-f05f-440d-b5fe-46d2e225d367</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;f1edb123-f05f-440d-b5fe-46d2e225d367&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5a370c58-6909-4f2a-b5b3-497638b63610&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section18</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-5bb792ba-547f-4e7a-81ba-6def69727867</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;5bb792ba-547f-4e7a-81ba-6def69727867&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;3d91fdee-827a-4760-b34b-636a3bf062e0&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section19</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>VentureCrowd looks back on the year 2022 and the events &amp; milestones that shaped the financial year and ESG investing. Click to view our timeline.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>2022 in Review - World events and VentureCrowd wins</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>2022 in Review</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>dfec1882-bcf8-4d23-aac6-769b33804b67</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-737e7718-cfc1-4e83-be18-168d968e0ff9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i0000089GsB&amp;d=%2Fa%2F5i000000PX9b%2F8uRrYrvr58xNYzNTiC1dZSr0hL7qeSzlhcm3c1CaLWo&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>Why I became a first-time investor</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>dfec1882-bcf8-4d23-aac6-769b33804b67</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f6d2f5f6-24ee-40a5-a993-f0ab53428dcb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9cf56ab6-4e07-4e47-aa38-afc40d563d4d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;i&gt;By Cara Szellemes&lt;/i&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;When I first founded a tech startup 7 years ago, my perception of investors was that they were uber-wealthy people (mostly men) who liked to have good stories to tell at dinner parties.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;I put investors up on a pedestal. They were the elite, the people who had &amp;ldquo;made it.&amp;rdquo; I pictured wild parties on yachts off someone&amp;rsquo;s private island with lots of young attractive people lounging around a pool and never-ending cocktails. Yes, I know. I&amp;rsquo;ve watched way too much TV over the years.&lt;/p&gt;
+&lt;p&gt;My personal experiences varied. Most of the investors I met with when raising capital for my startup were nerds like me who had created something people wanted and made a trade sale so they could move on to their next project. Some had inherited wealth, some were successful professionals who had risen into the C-suite in engineering, finance and development, some were lifestyle entrepreneurs looking for cool projects to back and some fit the description above.&lt;/p&gt;
+&lt;p&gt;It didn&amp;rsquo;t help that back when I was a founder, I was broke much of that time, so I was in awe of people who invested and I wanted to be one of them one day. I poured every penny I had into my venture and then some and there were times I had to sell my jewellery and other precious possessions just to pay the rent. In fact, when I closed my startup I was nearly $20K in debt (I know many who were in way worse situations). It nearly broke me, but it was what it was. However, the lessons I learned from that experience were invaluable and part of why I choose to invest today.&lt;/p&gt;
+&lt;p&gt;After I closed my startup, I found a job working in the innovation sector and clawed my way out of debt over a period of about 2 years. I resolved that I would never put my family in that situation again and if I did start another venture, it would be bootstrapped and only funded if it made commercial sense.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f6d2f5f6-24ee-40a5-a993-f0ab53428dcb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2e809f0f-ed56-477c-af2c-a4ffe67da645</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-29c65396-7610-4529-ada1-3befa52689da</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;The changing investment world&lt;/h1&gt;
+&lt;p&gt;In the years since, much has changed in the investment world. Thanks to platforms like VentureCrowd, equity crowdfunding, and micro-investing, more people are investing, and they definitely don&amp;rsquo;t fit the stereotypes.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Along with people who&amp;rsquo;ve had successful startups in the past, people who&amp;rsquo;ve been born into wealth and people who&amp;rsquo;ve had high-flying careers in finance, people who invest are tradies, single mothers, hairdressers, government employees, psychologists, accountants, massage therapists, restaurant managers and university students.&lt;/p&gt;
+    &lt;br/&gt;
+&lt;h1&gt;
+    How equity crowdfunding has changed the game
+&lt;/h1&gt;
+
+
+
+&lt;br&gt;
+    &lt;p&gt;
+        After I cut up my credit cards and set about creating surplus income
+        for my family, I thought long and hard about how I would invest. I
+        really wanted to invest in early-stage startups but didn’t feel I had
+        the capital to take that kind of risk on. I had worked closely with an
+        angel investor on his marketing and had a pretty good understanding of
+        the odds… they were not in my favour.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Equity crowdfunding has changed the game.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Equity crowdfunding enables me to invest smaller amounts of money over
+        several projects to spread my risk and when I do make a return, I can
+        earmark those funds to invest in other projects.
+    &lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;
+    What I look for in an early-stage startup
+&lt;/h1&gt;
+
+    &lt;br/&gt;
+
+
+    &lt;p&gt;
+        And thanks to having learned about startups the hard way, I know what
+        to look for in an early-stage startup.
+    &lt;/p&gt;
+    &lt;p&gt;
+        First and foremost, I look at the team. Who are they, what are their
+        backgrounds and skill bases and how do they work together? If something
+        feels off about the team, I don’t invest because no matter how good an
+        idea they have, if they can’t work together well, don’t have the right
+        competencies or appear to be very ego-driven, it would feel too risky.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Secondly, I look at the competitive landscape. Is there another startup
+        that’s way ahead and killing it or are they a first-mover? How are they
+        different? If their idea is disruptive to the competition, then that’s
+        a huge green light. If their idea complements the competition and has a
+        competitive advantage, that signals a higher possibility of an early
+        exit in a trade sale.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Lastly, I look at the customer base. Is it a big enough problem people
+        are willing to pay to fix? Does it solve the problem? Is the solution
+        what people want? Is the startup fostering a community? I learned that
+        community is everything when it comes to building a startup.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Of course, there are many other factors that influence why I would
+        invest, but these are the main ones. I still have a lot to learn, but
+        I’m really enjoying the journey.
+    &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2e809f0f-ed56-477c-af2c-a4ffe67da645</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>fe058180-b531-4de9-847d-9719e970f5df</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8b90ee6c-c27c-441a-9ede-b2d95e285644</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;
+    The investment conversation with friends and family
+&lt;/h1&gt;
+
+    &lt;br/&gt;
+
+
+    &lt;p&gt;
+        When I talk to my friends and family about investing, many of them
+        don’t quite get it yet. I don’t blame them. It’s still a new
+        conversation to have and in the current economic climate, people are
+        nervous about money.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Most people I know are in the “put your money in a term deposit and
+        save like crazy for a house” frame of mind. I don’t disagree with that
+        approach as that is also part of my investing strategy, but I think
+        there are more efficient ways to create wealth that many people don’t
+        realise they have access to (like
+        &lt;a
+            href=&quot;https://www.venturecrowd.com.au/s/learn/invest/why-fixed-income-works-in-this-economy&quot;
+            rel=&quot;noopener noreferrer&quot;
+            target=&quot;null&quot;
+        &gt;
+            fixed income investments
+        &lt;/a&gt;
+        for example), so there are more conversations to be had.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Crowdfunding has made it possible for many people like me to
+        &lt;a
+            href=&quot;https://www.venturecrowd.com.au/s/learn/invest/the-impact-opportunity&quot;
+            rel=&quot;noopener noreferrer&quot;
+            target=&quot;null&quot;
+        &gt;
+            invest in worthy projects
+        &lt;/a&gt;
+        that are not only set to make a profit but will create a lot of change
+        along the way.
+    &lt;/p&gt;
+    &lt;p&gt;
+        I’m proud to be working with a company that is levelling the investor
+        playing field for people like me, and I’m proud to back some amazing
+        companies as well.
+    &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>fe058180-b531-4de9-847d-9719e970f5df</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1f0cf903-316b-4cf3-95f8-0cb80be3b78f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>16775551-3790-4edf-8072-67ef280cdc26</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>21fea</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-f5e4141c-7817-4de4-be24-3314f0b1f611</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;hr&gt;
+&lt;h3&gt;
+    About Cara Szellemes
+&lt;/h3&gt;
+&lt;p&gt;
+    Cara Szellemes is a published Amazon no. 1 bestselling author on women and
+    entrepreneurship, a multi-award-winning content strategist and
+    entrepreneur, and mum of three grown young men. She is now part of the
+    VentureCrowd team as our Content Marketing Specialist.&lt;/p&gt;
+    &lt;br/&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1f0cf903-316b-4cf3-95f8-0cb80be3b78f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>16775551-3790-4edf-8072-67ef280cdc26</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a8d37250-38d2-43f8-a887-12673262efd7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2a4776b6-5329-4f53-a471-655b6bf12e5e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>currentBlogSeqNumber</name>
+                    <value>67</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>nextPostButtonLabel</name>
+                    <value>Next Post</value>
+                </componentInstanceProperties>
+                <componentName>blogNextPost</componentName>
+                <identifier>blogNextPost</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a8d37250-38d2-43f8-a887-12673262efd7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-737e7718-cfc1-4e83-be18-168d968e0ff9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;737e7718-cfc1-4e83-be18-168d968e0ff9&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;dfec1882-bcf8-4d23-aac6-769b33804b67&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9cf56ab6-4e07-4e47-aa38-afc40d563d4d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9cf56ab6-4e07-4e47-aa38-afc40d563d4d&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f6d2f5f6-24ee-40a5-a993-f0ab53428dcb&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-29c65396-7610-4529-ada1-3befa52689da</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;29c65396-7610-4529-ada1-3befa52689da&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2e809f0f-ed56-477c-af2c-a4ffe67da645&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8b90ee6c-c27c-441a-9ede-b2d95e285644</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8b90ee6c-c27c-441a-9ede-b2d95e285644&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;fe058180-b531-4de9-847d-9719e970f5df&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-f5e4141c-7817-4de4-be24-3314f0b1f611</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;f5e4141c-7817-4de4-be24-3314f0b1f611&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1f0cf903-316b-4cf3-95f8-0cb80be3b78f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;8&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;16775551-3790-4edf-8072-67ef280cdc26&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;21fea&quot;,&quot;columnWidth&quot;:&quot;4&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2a4776b6-5329-4f53-a471-655b6bf12e5e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2a4776b6-5329-4f53-a471-655b6bf12e5e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a8d37250-38d2-43f8-a887-12673262efd7&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Learn how the wealthtech sector is transforming the way consumers approach wealth management and how it will shape the future of investing. Read more here.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Revolutionary Wealthtech | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>why I became a first time investor</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <masterLabel>SXSW QRCode Container</masterLabel>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="targetUrl" type="String" label="QRCode Target URL" description="URL that the QR Code will redirect to"/>
+            <property name="userType" type="String" label="User Type"  datasource="founder,investor" description="If the user is an investor or founder" default="investor"/>
+            <property name="utmSource" type="String" label="UTM Source"  description="Referrer, for example: google, newsletter4, billboard"/>
+            <property name="utmMedium" type="String" label="UTM Medium"  description="Marketing medium, for example: cpc, banner, email"/>
+            <property name="utmCampaign" type="String" label="UTM Campaign"  description="Product, slogan, promo code, for example: spring_sale"/>
+            <property name="utmKeyword" type="String" label="UTM Keyword"  description=" Paid keyword"/>
+            <property name="utmContent" type="String" label="UTM Content"  description=" Use to differentiate creatives."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Owner_Active_Status__c</fullName>
+    <formula>Product_Owner__r.IsActive</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product_Owner_Active_Status</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

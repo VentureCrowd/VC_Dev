@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accountant__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Please create the accountant as a Person Account Seperatly to adding them here if you are needing to send them this docusign. Note Email and name is required on accountant creation.</inlineHelpText>
+    <label>Accountant</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Applications (Accountant)</relationshipLabel>
+    <relationshipName>Applications3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

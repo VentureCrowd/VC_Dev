@@ -1,0 +1,92 @@
+/* Reset the styles */
+p {
+    margin-bottom: 0em;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    width: 100%;
+    background-color: #fff;
+}
+
+.light {
+    border: 1px solid #CFCECC;
+    flex: 1;
+    background: #fff;
+    max-height: 8em;
+}
+
+.light.eoi {
+    border: 1px solid var(--secondary-foreground);
+    background: var(--secondary-foreground);
+}
+
+/* Change the style if it's active */
+.active {
+    border-bottom: 5px solid var(--primary-accent);
+}
+
+.active .information-container p {
+    font-family: "SuisseIntl-Bold";
+}
+
+.active .wrapper,
+.completed .wrapper{
+    padding: var(--space-xs) var(--space-md);
+}
+
+.wrapper {
+    padding: 1.5em var(--space-md) var(--space-xs) var(--space-md);
+}
+
+.information-container {
+    padding-top: var(--space-xs);
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-text  {
+    width: fit-content;
+    text-align: left;
+    color: #2F9F55;
+}
+
+.status-text.in-progress {
+    color: #407FFF;
+}
+
+.status-text p {
+    font-size: var(--text-sm);
+}
+
+.information-container p {
+    max-width: 9em;
+    text-align: left;
+    white-space: break-spaces;
+    font-size: var(--text-base-size);
+
+}
+
+.eoi-text {
+    color: var(--secondary-text-color);
+    max-width: 9em;
+    text-align: left;
+    white-space: break-spaces;
+}
+
+.font-eoi {
+    font-size: var(--text-md);
+}
+
+.font-eoi-link {
+    padding-top: var(--space-xs);
+    font-size: var(--text-sm);
+    text-decoration: underline;
+}
+
+.wrapper-eoi {
+    padding: var(--space-sm);
+
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Raise__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Raise Status</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Mark the raise process as completed. This final stage indicates that the raise process has been concluded.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Provide detailed information about the raise and the company. This step involves entering comprehensive details that potential investors will need to understand the raise.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Await feedback from the review team and make necessary adjustments. This step involves responding to queries and refining the raise details based on feedback.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Publish the raise page for public investment. This step makes the raise available to potential investors.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Live</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Start the Raise process by creating a new Raise record. This is the initial step where you set up the basic information about the raise.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Await final approval from the review team. This is the final review stage before the raise can go live.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Pending final approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Submit the raise for initial review. This stage involves preparing the raise details for evaluation by the review team.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Ready for review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Ensure the payment fee for the raise process is received. This stage involves completing the financial transaction required to proceed.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Waiting for payment</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Complete the required learning course. This step ensures that all participants are well-informed about the raise process and related regulations.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Waiting to complete learning course</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Primary_Raise</recordTypeName>
+</PathAssistant>

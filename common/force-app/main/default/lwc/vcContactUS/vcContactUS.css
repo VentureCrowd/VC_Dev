@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "Suisse Int'l";
+    src: url('/resource/Fonts/Suisse/SuisseIntl-Light.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: "Caxton Bk Bt";
+    src: url('/resource/Fonts/Caxton/caxton.ttf') format('TrueType');
+}
+
+:host {
+    --lwc-brandAccessible: #5D3796;
+    --lwc-buttonBorderRadius: 30px;
+    --lwc-colorTextDefault: #000;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .marginmobilefirstpanel {
+        margin-right: 1.5rem;
+    }
+}
+
+.padding-tr-div {
+    padding-right: 1.7rem
+}
+
+.padding-ml-div {
+    margin-left: 1.5rem
+}
+
+.padding-mt-div {
+    margin-top: 4rem;
+}
+
+.fontdisplay {
+    font-size: 18px;
+    font-family: "Suisse Int'l";
+    color: #000;
+    font-weight: normal;
+}
+
+.fontdisplay1 {
+    font-size: 15px;
+    font-family: "Suisse Int'l";
+    color: white;
+
+
+}
+
+.fontdisplay2 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    .component-container {
+        margin-top: 66px;
+    }
+}
+
+.bold {
+    font-size: 16px;
+    color: white;
+    font-family: "Suisse Int'l" !important;
+}
+
+/* .email {
+    font-size: 16px;
+    color: white;
+    font-family: "Suisse Int'l" !important;
+} */
+
+.error {
+    color: red;
+}
+
+.slds-car {
+    border-style: none;
+}
+
+.inputStyle {
+    --sds-c-input-color-border: rgb(217, 219, 221);
+    --sds-c-input-height: 10px;
+}
+
+.textareastyle {
+    --sds-c-textarea-color-border: rgb(217, 219, 221);
+}
+
+.sm {
+    padding-bottom: 1ch;
+}
+
+.bg {
+    /* The image used 
+    background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/about_us_3.png');*/
+
+    /* Full height */
+    /* height: 1000px; */
+    height: auto;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.stretchButton {
+
+    text-align: center;
+    display: inline-block;
+}
+
+button {
+    /* background-color: #05c5d1; */
+    border: 1px solid rgb(217, 219, 221);
+    ;
+    display: inline-block;
+    /* width: auto; */
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    padding: 15px 30px;
+    transition: all 300ms ease;
+    border: none;
+    /* margin-top: 30px; */
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.disablebutton {
+    background-color: #a5aaaa !important;
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    transition: all 300ms ease;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.button123 {
+    --sds-c-button-spacing-block-start: 1rem;
+    --sds-c-button-spacing-block-end: 1rem;
+    --sds-c-button-brand-color-background: #000;
+    --slds-c-button-color-border: #000;
+    --sds-c-button-line-height: 1rem;
+    --font-family-sans-serif: "Caxton-2" !important;
+    padding: 10px 30px;
+}
+
+.button123:hover {
+    --sds-c-button-brand-color-background: #D95BAA !important;
+    --slds-c-button-color-border: #D95BAA !important;
+}
+
+p>lightning-combobox {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border: 1px solid #ccc;
+
+    /*padding-right: var(--slds-c-input-spacing-horizontal-end, var(--sds-c-input-spacing-horizontal-end, var(--lwc-spacingMedium,1rem)));*/
+}
+
+.THIS .slds-input-has-icon_right .slds-input,
+.slds-input-has-icon_right .slds-input_faux,
+.slds-input-has-icon_right .slds-input_bare,
+.slds-input-has-icon_right .slds-input--bare,
+.slds-input-has-icon--right .slds-input,
+.slds-input-has-icon--right .slds-input_faux,
+.slds-input-has-icon--right .slds-input_bare,
+.slds-input-has-icon--right .slds-input--bare {
+    padding: 12px 11px !important;
+}
+
+.slds-input_faux {
+    --sds-c-button-spacing-block-start: 1rem;
+    --sds-c-button-spacing-block-end: 1rem;
+    --sds-c-button-brand-color-background: #000;
+    --slds-c-button-color-border: #000;
+    --sds-c-button-line-height: 1rem;
+    --font-family-sans-serif: "Caxton-2" !important;
+    padding: 12px 11px;
+    border: 1px solid rgb(217, 219, 221);
+    ;
+}
+
+.slds-input_faux .slds-combobox__input {
+    --sds-c-input-color-border: rgb(217, 219, 221);
+    border-color: rgb(217, 219, 221);
+    border: 1px solid rgb(217, 219, 221);
+    ;
+}
+
+.slds-listbox__item {
+    font-size: 15px;
+    font-family: "Suisse Int'l" !important;
+}

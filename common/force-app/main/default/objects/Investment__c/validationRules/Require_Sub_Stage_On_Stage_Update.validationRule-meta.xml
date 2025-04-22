@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Sub_Stage_On_Stage_Update</fullName>
+    <active>false</active>
+    <description>Ensures that Sub Stage is selected when Stage is updated.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(Investment_Stages__c),
+  ISPICKVAL(Investment_Stages__c, &quot;Closed&quot;),
+  OR(
+    ISPICKVAL(invSub_Status__c, &quot;&quot;),
+    NOT(ISPICKVAL(invSub_Status__c, &quot;Partially Redeemed&quot;))
+  )
+)</errorConditionFormula>
+    <errorMessage>You must select a Sub Status when the Stage is updated.</errorMessage>
+</ValidationRule>

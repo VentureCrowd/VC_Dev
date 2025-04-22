@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Register_interest_for__c</fullName>
+    <label>Register interest for</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cornerstone Village - Pimpama, QLD</fullName>
+                <default>false</default>
+                <label>Cornerstone Village - Pimpama, QLD</label>
+            </value>
+            <value>
+                <fullName>Woodside Park - Fernvale, QLD</fullName>
+                <default>false</default>
+                <label>Woodside Park - Fernvale, QLD</label>
+            </value>
+            <value>
+                <fullName>Stonewood Estate - Oxenford, QLD</fullName>
+                <default>false</default>
+                <label>Stonewood Estate - Oxenford, QLD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

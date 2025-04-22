@@ -1,0 +1,7 @@
+<aura:component implements="forceCommunity:themeLayout">
+	<ltng:require styles="/resource/headCSSLWC" />
+     
+    
+    {!v.body}
+    
+</aura:component>

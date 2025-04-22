@@ -1,0 +1,951 @@
+<template>
+    <template lwc:if={showHalfWayPopup}>
+        <div class="encouragement-popup modal">
+            <div class="modal-content">
+                <img src={halfWayPopupImage}/>
+                <div class="modal-text">
+                    <p class="title">You're over half way completed!</p>
+                    <p>We are so excited to see you progressing with your raise application and you are now over half way finished.</p>
+                    <p>You can already access a <a href={previewDealPageURL}>preview of your compelling deal page</a>  that will be shared with potential and existing investors, turning interest into action.</p>
+                </div>
+                <c-core-button
+                label="Continue" 
+                variation="primary"
+                mode="light"
+                onbuttonclick={handleClosePopup}>
+                </c-core-button>
+              </div>
+        </div>
+    </template>
+    <template lwc:if={showEndPopup}>
+        <div class="encouragement-popup modal">
+            <div class="modal-content">
+                <img src={endPopupImage}/>
+                <div class="modal-text">
+                    <p class="title">Almost there!</p>
+                    <p>Hooray, you have now completed everything that is going to be included in your deal page. You can still <a href={previewDealPageURL}>access the preview</a> to make sure you are happy with it.</p>
+                    <p>Only one more step to go to complete the application before it is submitted for review by our ventures team!</p>
+                </div>
+                <c-core-button
+                label="Continue" 
+                variation="primary"
+                mode="light"
+                onbuttonclick={handleClosePopup}>
+                </c-core-button>
+              </div>
+        </div>
+    </template>
+    <div class="loading-spinner" lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <template lwc:else>
+        <c-core-multi-step-form
+        title="Raise Information"
+        onsubmit={handleData}
+        onchange={handleChange}
+        onrequestnextstep={handleNext}
+        is-next-loading={isNextLoading}
+        onrequestpreviousstep={handlePrev}
+        is-prev-loading={isPrevLoading}
+        form-data={formData}
+        nextbutton="Save & Continue"
+        prevbutton="Back"
+        additional-button="Preview raise page"
+        is-additional-button-loading={isDealPageLoading}
+        onadditionalbuttonevent={handleAdditionalButton}
+        current-step-index={currentStep}
+        onerrorsfound={handleErrorsFound}
+        submitbutton="Review"
+        is-saving={isSaving}
+        vertical
+        lwc:if={dataRetrieved}>
+            <div slot="header">
+                <p class="form-desc">The information filled in here will form your Deal Page and offer document where investors will 
+                    be able to read about your company and investment offering. 
+                    You can preview your deal page at any time throughout filling out the form. 
+                </p>
+            </div>
+            <div slot="steps">
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> About </div>
+                        <div class="step-desc"> Generic information about your company</div>
+                        <div class="step-eta">Approx 15 mins</div>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="companyFullName"
+                        label="Company's Full Name"
+                        type="text"
+                        limit="255"
+                        help="This is a brand name or the name customers know the company by."
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="companyOneLiner"
+                        label="Company one liner"
+                        limit="255"
+                        type="text"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>This is a catchy one liner about the company's purpose and mission.</p>
+                                <c-core-link 
+                                label="How do I write a company one-liner?"
+                                hyperlink={helpTextMapping.oneLiner}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="companyWebsite"
+                        label="Company website"
+                        type="url"
+                        help=" "
+                        placeholder="www."
+                        limit="255"
+                        required
+                        ></c-core-input>
+                        <c-core-radio
+                        label="Is your company registered in Australia?"
+                        name="resgisteredAus"
+                        values={yesNoOptions}
+                        size="medium"
+                        help=" "
+                        alignment-position="horizontal"
+                        required-value="true"
+                        required>
+                        </c-core-radio>
+                        <c-core-input
+                        name="sector"
+                        label="Sector"
+                        type="dropdown"
+                        options={sectorOptions}
+                        help=" "
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="abn"
+                        label="ABN"
+                        type="number"
+                        help=" "
+                        limit=11
+                        required
+                        ></c-core-input>
+                    </div>
+                    <div class="address-inputs">
+                        <c-core-input
+                        name="companyStreetAddress"
+                        label="Company Address"
+                        type="text"
+                        limit="255"
+                        help="Street Address"
+                        required
+                        ></c-core-input>
+                        <div class="sub-details">
+                            <c-core-input
+                            name="companySuburb"
+                            label=""
+                            type="text"
+                            help="Suburb"
+                            limit="255"
+                            required
+                            class="suburb"
+                            ></c-core-input>
+                            <c-core-input
+                            name="companyState"
+                            label=""
+                            type="dropdown"
+                            help="State"
+                            options={stateOptions}
+                            required
+                            class="state"
+                            ></c-core-input>
+                            <c-core-input
+                            name="companyPostcode"
+                            label=""
+                            type="number"
+                            help="Postcode"
+                            limit="4"
+                            required
+                            class="postcode"
+                            ></c-core-input>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="acn"
+                        label="Australian Company Number (ACN)"
+                        limit="9"
+                        type="text"
+                        help=" "
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="companyLogoId"
+                        label="Company Logo"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Upload image (required)"
+                        subtext="JPEG/PNG/WEBP, min dimensions 150x150px"
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="supportingImages"
+                        label="Supporting Images"
+                        type="file"
+                        record-id={recordId}
+                        help="You must upload 3 supporting images of your company's offering or product this will help potential investors visualise your company."
+                        subtext="JPEG/PNG/WEBP, min dimensions 150x150px"
+                        minimum-value="3"
+                        file-text="Upload images (required)"
+                        multiple
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="heroImageId"
+                        label="Hero Image"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Upload image (required)"
+                        subtext="JPEG/PNG/WEBP, min dimensions 150x150px"
+                        required
+                        ></c-core-input>
+                    </div>
+                    <c-raise-media-links
+                    record-id={recordId}>
+                    </c-raise-media-links>
+                    <div class="inputs social-links">
+                        <c-core-input
+                        name="instagramUrl"
+                        label="Instagram"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.instagram.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="linkedinUrl"
+                        label="LinkedIn"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.linkedin.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="twitterUrl"
+                        label="Twitter (X)"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.twitter.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="facebookUrl"
+                        label="Facebook"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.facebook.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="videoUrl"
+                        label="Pitch video"
+                        type="url"
+                        placeholder="https://www.youtube.com/"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Share the link to a video explaining your company, offering or raise.</p>
+                                <c-core-link 
+                                label="The Importance of a high-quality Pitch Video"
+                                hyperlink={helpTextMapping.pitchVideo}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="youtubeUrl"
+                        label="Youtube"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.youtube.com/"
+                        ></c-core-input>
+                    </div>
+                    <div class="inputs-nocol">
+                        <c-core-alert 
+                        type="information">
+                            <div class="alert-body" slot="body">
+                                Need a quick recap before you start drafting the hard stuff? 
+                                <c-core-link 
+                                label="Watch our Capital Raising Narrative guidance video."
+                                hyperlink={helpTextMapping.guidanceVideo}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>                
+                             </div>
+                        </c-core-alert>
+                        <c-core-input
+                        name="companyOverview"
+                        label="Company Overview"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Provide an 
+                                <c-core-link 
+                                label="overview of the company and its story"
+                                hyperlink={helpTextMapping.companyOverview}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                to spark the interest of a potential investor.
+                                </p>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="problemOrOpp"
+                        label="Problem or Opportunity"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="problem or opportunity the company is addressing."
+                                hyperlink={helpTextMapping.problem}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="solution"
+                        label="Solution"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="solution and how it addresses this problem."
+                                hyperlink={helpTextMapping.solution}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <c-core-input
+                        name="differentiation"
+                        label="Differentiation"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe how the company is
+                                <c-core-link 
+                                label="different to existing solutions."
+                                hyperlink={helpTextMapping.differentiation}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>      
+                        </c-core-input>
+                        <c-core-input
+                        name="intellectualProperty"
+                        label="Intellectual Property"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="company's intellectual property"
+                                hyperlink={helpTextMapping.intellectualProperty}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                and its unique value as an asset.
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <c-core-input
+                        name="totalAddressableMarket"
+                        label="Total Addressable Market"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="problem or marketing opportunity"
+                                hyperlink={helpTextMapping.totalAddMarket}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                the company is addressing.
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <c-core-input
+                        name="progress"
+                        label="Progress"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe how the 
+                                <c-core-link 
+                                label="company has performed so far."
+                                hyperlink={helpTextMapping.progress}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>  
+                        </c-core-input>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> 
+                                Structure and Strategy
+                        </div>
+                        <div class="step-desc"> Information on your team and socials/media </div>
+                        <div class="step-eta">Approx 60 mins</div>
+                    </div>
+                    <div class="inputs-nocol">
+                        <c-raise-team-member-component
+                        raise-id={recordId}
+                        section-title="Founder/s"
+                        helptext="It is mandatory to add at least one founder to be shown on the expression of interest page."
+                        category="Founder"
+                        required-members="1"
+                        required
+                        ></c-raise-team-member-component>
+                        <hr>
+                        <c-raise-team-member-component
+                        raise-id={recordId}
+                        section-title="Directors and management team"
+                        helptext="Add profiles of individuals who are part of the leadership or management team. Include details of their skills and experience of each director and senior manager that are relevant to their role/position in your company."
+                        category="Management Team"
+                        required-members="1"
+                        required
+                        >
+                            <div slot="body" class="team-member-body-slot">
+                                <c-core-alert 
+                                type="information">
+                                    <div class="alert-body" slot="body">
+                                        When you describe your team, 
+                                        it's important to include not just the founders but all key members of the team 
+                                        and the advisory board that collectively have the skills and attributes necessary 
+                                        to execute your plan. If you don't yet have those people, we suggest filling those gaps 
+                                        before you launch your raise. 
+                                        <c-core-link 
+                                        label="Learn more"
+                                        hyperlink={helpTextMapping.directors}
+                                        icon="externalLink"
+                                        size="medium"
+                                        variation="tertiary"
+                                        target="_blank"
+                                        ></c-core-link>
+                                    </div>
+                                </c-core-alert>
+                            </div>
+                        </c-raise-team-member-component>
+                        <hr>
+                        <c-raise-team-member-component
+                        raise-id={recordId}
+                        section-title="Advisors, ambassadors and key investors"
+                        category="Advisors"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Add profiles of individuals who are
+                                <c-core-link 
+                                label="advisors, ambassadors and/or key investors of the company."
+                                hyperlink={helpTextMapping.advisors}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>      
+                        </c-raise-team-member-component>
+
+                        <c-core-radio
+                        label="I have consent from the individuals listed to publish their names in association with this raise."
+                        name="consentToIndividuals"
+                        values={yesNoOptions}
+                        size="medium"
+                        help=" "
+                        alignment-position="horizontal"
+                        text-position="horizontal"
+                        required-value="true"
+                        required>
+                        </c-core-radio>
+
+                        <c-core-input
+                        name="raiseManagerContact"
+                        label="Raise manager contact"
+                        type="email"
+                        limit="255"
+                        help="Provide a contact email which potential investors can contact with questions about the raise."
+                        required
+                        ></c-core-input>
+
+                        <!-- Growth plan -->
+                        <c-core-input
+                        name="growthPlan"
+                        label="Growth plan"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                <c-core-link 
+                                label="Summarise the key initiatives of your plan for growth"
+                                hyperlink={helpTextMapping.growthPlan}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                in the next phase of your company.
+                                </p>
+                            </div>      
+                        </c-core-input>
+                        <c-core-input
+                        name="growthPlanFileId"
+                        error-label="Growth Plan File"
+                        type="file"
+                        record-id={recordId}
+                        help=" "
+                        file-text="Supporting document upload (required)"
+                        file-type="document"
+                        required
+                        ></c-core-input>
+
+                        <!-- Financial statements -->
+                        <c-core-input
+                        name="financialInformation"
+                        label="Financial Information"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Please share a
+                                <c-core-link 
+                                label="summary of your financial statements"
+                                hyperlink={helpTextMapping.financialInfo}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                and upload your full financial statements.
+                                </p>
+                            </div>     
+                        </c-core-input>
+                        <div class="inputs">
+                            <c-core-input
+                            name="financialInformationUrl"
+                            label=""
+                            type="url"
+                            limit="255"
+                            placeholder="Add link to data room (optional)"
+                            ></c-core-input>
+                            <c-core-input
+                            name="financialInformationFileId"
+                            error-label="Financial Information File"
+                            type="file"
+                            record-id={recordId}
+                            file-text={financialFileRequired.text}
+                            file-type="document"
+                            minimum-value="1"
+                            required={financialFileRequired.required}
+                            multiple
+                            ></c-core-input>
+                        </div>
+
+                        <c-core-input
+                        name="debtFunding"
+                        label="Debt funding and other sources of funding"
+                        type="textarea"
+                        limit="1200"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Include 
+                                    <c-core-link 
+                                    label="details of the key terms of any debt financing"
+                                    hyperlink={helpTextMapping.debtFunding}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                     and upload any relevant documents.
+                                </p>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="debtFundingFileId"
+                        error-label="Debt Funding File"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Supporting document upload"
+                        file-type="document"
+                        ></c-core-input>
+
+
+                        <c-core-input
+                        name="legalOrDisciplanryActions"
+                        label="Legal or disciplinary actions against company"
+                        type="textarea"
+                        limit="1200"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    <c-core-link 
+                                    label="Share any enforceable undertakings, criminal or civil penalties and/or convictions"
+                                    hyperlink={helpTextMapping.legal}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                     relating to your company or it's leadership.
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="materialAgreementsFileId"
+                        label="Material agreements"
+                        type="file"
+                        file-type="document"
+                        record-id={recordId}
+                        file-text="Upload material agreements (optional)"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Include any 
+                                    <c-core-link 
+                                    label="material agreements"
+                                    hyperlink={helpTextMapping.materialAgreements}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    essential to the operation, performance or future prospects of your company. 
+                                </p>
+                            </div>
+                        </c-core-input>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> Intended Raise </div>
+                        <div class="step-desc"> Financial details about your company to date </div>
+                        <div class="step-eta">Approx 80 mins</div>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="stage"
+                        label="Stage"
+                        type="dropdown"
+                        options={stageOptions}
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>What 
+                                <c-core-link 
+                                label="stage of raising"
+                                hyperlink={helpTextMapping.stage}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                capital are you at?
+                                </p>
+                            </div>  
+                        </c-core-input>
+
+                        <c-core-input
+                        name="pitchDeckFileId"
+                        label="Pitch deck upload"
+                        type="file"
+                        record-id={recordId}
+                        subtext=""
+                        file-text="Upload document (required)"
+                        file-type="document"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Upload your companies pitch deck.</p> 
+                                <c-core-link 
+                                label="Learn more about pitch decks and access templates"
+                                hyperlink={helpTextMapping.pitchDeck}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>  
+                        </c-core-input>
+                    </div>
+
+                    <div class="inputs-nocol">
+                        <!-- Use of funds -->
+                        <c-core-input
+                        name="plannedUseOfFunds"
+                        label="Use of funds"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Provide an outline of key initiatives which will be funded by the capital and support company growth.
+                                <c-core-link 
+                                label=" How much should I raise?"
+                                hyperlink={helpTextMapping.useOfFunds}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>  
+                        </c-core-input>
+                           
+                        <c-core-input
+                        name="plannedUseOfFundsFileId"
+                        error-label="Planned Use of Funds File"
+                        type="file"
+                        record-id={recordId}
+                        file-type="document"
+                        file-text="Supporting document upload (optional)"
+                        ></c-core-input>
+                   </div>    
+
+                    <div class="inputs">
+                    
+                        <c-core-input
+                        name="offerLaunchDate"
+                        label="Offer launch date (Approximate)"
+                        type="date"
+                        placeholder="DD/MM/YYYY"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Launch date refers to when your deal is live to the public and everyone can invest if they meet the requirements. 
+                               
+                                </p>
+                                <c-core-link 
+                                label="Learn more"
+                                hyperlink={helpTextMapping.launchDate}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>  
+                        </c-core-input>
+
+
+                        <c-core-input
+                        name="offerCloseDate"
+                        label="Offer close date (Approximate)"
+                        type="date"
+                        placeholder="DD/MM/YYYY"
+                        compare-date={formData.offerLaunchDate}
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>The close date refers to the date investors will no longer be able to invest in your offering. 
+                               
+                                </p>
+                                <c-core-link 
+                                label="Learn more"
+                                hyperlink={helpTextMapping.closeDate}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>  
+                        </c-core-input>
+                    </div>
+                    
+                    <div class="inputs-nocol">
+                        <div class="alert-container">
+                            <c-core-alert 
+                            type="warning">
+                                <div class="alert-body" slot="body">
+                                    Please note: Dates are approximate and need to consider time for Capital Raising 101 course completion and 
+                                    VentureCrowd review times. If you would like to change your offer launch and close dates please contact our team.
+                                </div>
+                            </c-core-alert>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <c-core-input
+                        name="investProductType"
+                        label="Investment Product Type"
+                        type="dropdown"
+                        options={investProductTypeOptions}
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                <c-core-link 
+                                label="What type of investment opportunity are you offering?"
+                                hyperlink={helpTextMapping.productType}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <!-- Put conditional fields here -->
+                    </div>
+
+                    <template lwc:if={investTypeFields}>
+                        <div class="inputs-product-type">
+                            <template for:each={investTypeFields.fields} for:item="field"> 
+                                <c-core-input
+                                key={field.name}
+                                name={field.name}
+                                label={field.label}
+                                type={field.type}
+                                options={field.options}
+                                placeholder={field.placeholder}
+                                required={field.required}
+                                disabled={field.disabled}
+                                >
+                                    <div class="help-text" slot="helptext">
+                                        <p> {field.help}
+                                            <template lwc:if={field.helpLink}>
+                                                <c-core-link 
+                                                label={field.helpLinkText}
+                                                hyperlink={field.helpLink}
+                                                icon="externalLink"
+                                                size="medium"
+                                                variation="tertiary"
+                                                target="_blank"
+                                                ></c-core-link>
+                                            </template>
+                                        </p>
+                                    </div>  
+                                </c-core-input>
+                            </template>
+                        </div>
+                    </template>
+                    
+                    <div class="inputs">
+                        <c-core-input
+                        name="targetAmount"
+                        label="Target amount"
+                        type="currency"
+                        help="What is the minimum target amount you wish to raise?"
+                        required
+                        ></c-core-input>
+
+                        <c-core-input
+                        name="minInvestAmount"
+                        label="Minimum investment amount"
+                        type="currency"
+                        help="We recommend a minimum of $10-20,000"
+                        required
+                        ></c-core-input>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> Finalise </div>
+                        <div class="step-desc"> Information specifically about the upcoming raise </div>
+                        <div class="step-eta">Approx 10 mins</div>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Communication with Investors</p>
+                        </div>
+                        <p>VentureCrowd's platform provides a comments section for you to engage with Investor questions, and it is your responsibility to engage with these communications.</p>
+                        <hr>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Accuracy of data provided</p>
+                        </div>
+                        <p>I confirm all of the information I have provided in the previous form is true and correct, and contains all material information relevant to the company and the offer.</p>
+                        <hr>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Risk warning</p>
+                        </div>
+                        <p>I acknowledge I have read and agree with the below risk warning .</p>
+                        
+                        <div class="information-text-body">
+                            Important Notice: Capital is at risk and returns are not guaranteed. Past performance is not a reliable indicator of future performance. Any advice on this webpage is general advice only and has been prepared without considering your objectives, financial situation or needs. You should not rely on any advice contained on this webpage and before making any investment decision we recommend that you consider whether it is appropriate to your situation and seek appropriate financial, taxation and legal advice. You should read the available offer document for the product before making any investment decision. Issued by VentureCrowd Capital Pty Ltd ACN 147 162 294 a corporate authorised representative 001296352 of VentureCrowd Pty Ltd ABN 40 166 598 849 under AFSL No: 503381.
+                        </div>
+
+                        <hr>
+                    </div>
+
+                   
+
+                    <c-core-checkbox
+                    name="termsAndConditions"
+                    values={termsAndConditionsOptions} 
+                    error-label="Terms and conditions"
+                    mode="light"
+                    size="xlarge"
+                    text-position="right"
+                    alignment-position="horizontal"
+                    required>
+                </c-core-checkbox>
+                </div>
+            </div>
+        </c-core-multi-step-form>
+    </template>
+</template>

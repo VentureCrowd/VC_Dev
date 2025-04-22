@@ -1,0 +1,171 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_LearnCommonCSS}"/>
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+ 
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+ <!-- Body -->
+    
+    <div id="vc_content__container" class="position-relative page-slug-making-an-investment">
+      <!-- Header -->
+      <section class="header">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-12 text-center text-white">
+              <h4 class="mt-3">Investor Education</h4>
+              <h2 class="mt-4">Making an investment</h2>
+              <div class="prev-next-container mt-4">
+                 <!-- <apex:commandLink onclick="navigate('/investor-education/due-diligence'); return false;" styleClass="ml-4" > <i class="fa fa-angle-left" aria-hidden="true"></i></apex:commandLink>
+              	<apex:commandLink onclick="navigate('/investor-education/early-stage-securities'); return false;" styleClass="ml-4" ><i class="fa fa-angle-right" aria-hidden="true"></i></apex:commandLink>
+                 -->
+               <a href="{!$Label.VC_CF_Public_URL + '/investor-education/due-diligence/'}" class="mr-4">&lt;</a>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/early-stage-securities'}" class="ml-4">&gt;</a>
+            
+			</div>
+            </div>
+          </div>
+        </div>
+        <div class="row-bg-overlay"></div>
+        <div class="row-bg" style="background-image: url(https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-invest-education.jpg)"></div>
+      </section>
+
+      <!-- Index -->
+      <section class="index">
+        <div class="container">
+          <div class="row justify-content-center pt-5 pb-3">
+            <div class="col-md-12 col-lg-6">
+              <a href="#how">How is my investment held?</a>
+              <a href="#is-it-safe">Is it safe?</a>
+              <a href="#reporting-tax">Reporting &amp; Tax</a>
+              <a href="#payments">Payments</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+
+              <!-- Section: Overview -->
+              <div id="how" class="content-block">
+                <h3>How is my investment held?</h3>
+                <p>
+                  Investments may be held in a number of ways and differs from deal to deal. Each deal will clearly detail the way in which your assets are held. Common examples
+                  are;
+                </p>
+
+                <ul>
+                  <li>Units within a Unit Trust</li>
+                  <li>Direct Equity</li>
+                </ul>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="is-it-safe" class="content-block">
+                <h3>Is it safe?</h3>
+
+                <p>All investments carry risk and previous performance figures are not indicative of the future.</p>
+                <p>Investors receive real-time binding contracts of their equity in the businesses they are investing in.</p>
+                <p>
+                  The VentureCrowd platform is tested to internationally recognised standards for security of data.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Equity Financy-->
+              <div id="reporting-tax" class="content-block">
+                <h3>Reporting &amp; Tax</h3>
+
+                <p>The platform provides real-time portfolio reporting and tax reporting can be delivered quarterly, half-yearly or annually.</p>
+              
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Accelerate Growth -->
+              <div id="payments" class="content-block">
+                <h3>
+                  Payments</h3>
+                <p>
+                  Investors can choose to pay via bPay or Direct Bank Transfer.
+                </p>
+                </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+            </div>
+            <!-- ./col-md-6 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="related py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Why should I include ‘early stage securities’ in my investment portfolio?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/why-include-ess/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Due diligence – how to choose?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/due-diligence/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Making an investment via VentureCrowd.</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/investment-via-vc'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+        
+    <!-- ./Body -->
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

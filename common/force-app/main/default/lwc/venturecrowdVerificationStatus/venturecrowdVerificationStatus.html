@@ -1,0 +1,73 @@
+<template>
+  <div class="verification--container">
+  <br />
+  <br />
+  <template if:true={showError}>
+    <div class="slds-align_absolute-center" style="height: 5rem; color: red; font-size: large">
+      Please contact VentureCrowd support team for assistance.
+    </div>
+  </template>
+
+  <!-- Show Page If there are no errors-->
+  <template if:false={showError}>
+    <div class="slds-align_absolute-center"  style="display: grid;place-items: center; font-size: large">
+      <!--The IDs have been successfully verified. Thank you.-->
+        <!--Verification Succesful-->
+        <template if:true={isVerificationSuccesful}>
+            <div style="padding-top:70px">
+          <h1 class = "header1">Thank you for completing your ID Verification <br>with VentureCrowd.</h1><br/>
+           <p class = "paragraph">Visit your portfolio dashboard to see what current investment opportunities are available.</p><br/><br/>
+          <lightning-button class="slds-align_absolute-center button123" variant="brand" label="Back to My Portfolio" title=" Button"
+            onclick={handleNavigation}></lightning-button>
+        </div>
+        </template>
+
+        <!--Verification InProgress-->
+        <template if:true={isInProgress}>
+          <h1> Thank you for starting your ID Verification with VentureCrowd. </h1><br />
+            <p> Your verification is in progress and needs to be completed before you can invest with us. </p><br />
+              <lightning-button class="slds-align_absolute-center button" variant="brand" label="Complete Now" title=" Button"
+                onclick={handlePageReload}></lightning-button>
+        </template>
+
+        <!--Verification Error-->
+        <template if:true={isError}>
+          <h1> Looks like there was an error with your ID verification </h1><br />
+              <p> You’ll need to verify your identity before you can make any investments.
+              </p><br />
+                <lightning-button class="slds-align_absolute-center" variant="brand" label="Verify Now" title=" Button"
+                  onclick={handlePageReload}></lightning-button>
+        </template>
+
+        <!--Verification Pending-->
+        <template if:true={isPending}>
+          <h1>Thank you for completing your ID Verification with VentureCrowd.</h1><br />
+          <p>Visit your portfolio dashboard to see what current investment opportunities are available.</p>
+          <lightning-button class="slds-align_absolute-center" variant="brand" label="Back to My Portfolio" title=" Button"
+            onclick={handleNavigation}></lightning-button>
+        </template>
+
+        <!--Verification Locked Out-->
+        <template if:true={isLockedOut}>
+          <h1> Your ID Verification submission has been locked.</h1><br />
+              <p> You’ll need to speak to one of the VentureCrowd team members to resolve this issue. Please call 1300 039 655
+              </p><br />
+              <lightning-button class="slds-align_absolute-center" variant="brand" label="Back to My Portfolio" title=" Button"
+                onclick={handleNavigation}></lightning-button>
+        </template>
+
+        <!--Verification Null-->
+        <template if:true={isNull}>
+          <div>
+            <h1>Thank you for completing your ID Verification with VentureCrowd.</h1><br />
+            <p>Visit your portfolio dashboard to see what current investment opportunities are available.</p><br/>
+            <lightning-button class="slds-align_absolute-center" variant="brand" label="Back to My Portfolio" title=" Button"
+              onclick={handleNavigation}></lightning-button>
+
+          </div>
+        </template>
+
+    </div>
+  </template>
+</div>
+</template>

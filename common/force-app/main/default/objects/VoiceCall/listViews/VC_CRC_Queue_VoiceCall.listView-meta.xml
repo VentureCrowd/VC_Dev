@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VC_CRC_Queue_VoiceCall</fullName>
+    <filterScope>Queue</filterScope>
+    <label>VC CRC Queue</label>
+    <queue>VC_CRC_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

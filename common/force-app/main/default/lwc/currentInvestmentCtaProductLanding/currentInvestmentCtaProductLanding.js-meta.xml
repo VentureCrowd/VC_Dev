@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <!-- Left Section -->
+            <property name="strContentHeading" type="String" label="Content Heading" description="" default="Current property investments" />
+            <property name="strBodyCopy" type="String" label="Body Copy" description="" default="The following are examples of current VentureCrowd property investments." />
+            <property name="productLogoUrl" type="String" label="Product Logo Url" description="" default="https://assets.venturecrowd.vc/uploads/2021/03/VCPP_logo.png" />
+
+            <!-- Tile 1 Atts -->
+            <property name="Investment_Tile_1_BGImageURL" type="String" label="Investment Tile 1 Background ImageURL" description="" default="https://assets.venturecrowd.vc/uploads/2020/10/Cornerstone-Village-LT.jpg" />
+            <property name="Investment_Tile_1_Headline" type="String" label="Investment Tile 1 Headline" description="" default="Cornerstone Village, QLD Residential" />
+            <property name="Investment_Tile_1_Body" type="String" label="Investment Tile 1 Body" description="" default="Cornerstone Village offers a unique lifestyle with 60% of the village dedicated to park-land. A garden theme is intrinsically woven throughout the streets and parks of Cornerstone Village, with a focus on flowering trees, and evergreens." />
+            <property name="Investment_Tile_1_URL" type="String" label="Investment Tile 1 URL" description="" default="" />
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Gray" default="White" />
+            <property name="openInSameOrNew" datasource="Same Tab, New Tab" type="String" label="Link Target 1" placeholder="Behaviour of the Link or URL" description=""/>
+
+            <!-- Tile 2 Atts -->
+            <property name="Investment_Tile_2_BGImageURL" type="String" label="Investment Tile 2 Background ImageURL" description="" default="https://assets.venturecrowd.vc/uploads/2021/03/Bryna-Entry-Final-Low-res@2x-1536x754.jpg" />
+            <property name="Investment_Tile_2_Headline" type="String" label="Investment Tile 2 Headline" description="" default="Stonewood Estate, QLD Residential" />
+            <property name="Investment_Tile_2_Body" type="String" label="Investment Tile 2 Body" description="" default="Nestled in the tranquil natural landscape, yet only minutes from the heart of the Gold Coast, Stonewood combines privacy with connectivity in a collection of 58, three and four bedroom houses and townhomes." />
+            <property name="Investment_Tile_2_URL" type="String" label="Investment Tile 2 URL" description="" default="" />
+            <property name="secondaryLinkSameOrNew" datasource="Same Tab, New Tab" type="String" label="Link Target 2" placeholder="Behaviour of the Link or URL" description=""/>
+    
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

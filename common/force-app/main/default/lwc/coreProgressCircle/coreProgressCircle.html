@@ -1,0 +1,14 @@
+<template>
+    <div class="wrapper" style={wrapperStyle}>
+        <div class="outer-circle" style={outerCircleStyle}>
+            <div class="inner-circle" style={innerCircleStyle}>
+                <div class="number">
+                    {percentage}%
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width={width} height={width}>
+            <circle style={circleStyle} cx={center} cy={center} r={radius} stroke-linecap="butt"/>
+        </svg>
+    </div>
+</template>

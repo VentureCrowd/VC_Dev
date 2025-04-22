@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Account__c</fullName>
+    <description>You should select the business account related to the campaign in order to pull the person account related to it as well.</description>
+    <inlineHelpText>You should select the business account related to the campaign in order to pull the person account related to it as well.</inlineHelpText>
+    <label>Business Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Founder Campaigns</relationshipLabel>
+    <relationshipName>Founder_Campaigns</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

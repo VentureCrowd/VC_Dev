@@ -1,0 +1,23 @@
+<template>
+    <div class="sxsw-qrcode-container">
+
+        <div class="sxsw-header">
+            <c-sxsw-navbar></c-sxsw-navbar>
+        </div>
+            <div class="sxsw-qrcode-content">
+                <h1>Scan the code below</h1>
+            </div>
+            <c-qrcode-generator
+            target-url={urlToRedirect}
+            ></c-qrcode-generator>
+        <div class="footer-section">
+            <p>As seen on</p>
+            <div class="footer-logos">
+                <template for:each={logoList} for:item="logo">
+                    <img key={logo.url} src={logo.url} alt="logoImage"/>
+                </template>
+            </div>
+        </div>
+    </div>
+
+</template>

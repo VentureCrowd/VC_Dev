@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wholesale_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(
+    ISCHANGED(Name) ||
+    ISCHANGED(OwnerId) ||
+    ISCHANGED(Redemption_Request__c) || 
+    ISCHANGED(Redemption_Request_Date__c) || 
+    ISCHANGED(NextStep),
+    false,
+    IF(
+        ISPICKVAL(Invested_Product_ADMIN_FIELD__r.Family, &apos;Wholesale&apos;) &amp;&amp;
+        RecordType.Name == &apos;VC&apos; &amp;&amp;
+        NOT(Primary_Contact__r.Account.Wholesale__pc) &amp;&amp;
+        (ISPICKVAL(StageName,&apos;Receipt Issued&apos;) || ISPICKVAL(StageName,&apos;Closed Won&apos;)),
+        IF(
+            ISPICKVAL(Invested_Product_ADMIN_FIELD__r.Type__c, &apos;VC Product&apos;),
+            IF(Primary_Contact__r.Account.EIC_Startup__pc, false, true),
+            IF(
+                ISPICKVAL(Invested_Product_ADMIN_FIELD__r.Type__c, &apos;Property Product&apos;),
+                IF(Primary_Contact__r.Account.EIC_Property__pc, false, true),
+                false
+            )
+        ),
+        false
+    )
+) &amp;&amp;
+NOT($Profile.Name = &quot;System Administrator&quot;) &amp;&amp;
+NOT($Profile.Name = &quot;Funds Manager&quot;)</errorConditionFormula>
+    <errorMessage>The associated Primary contact is not certified Wholesale or EIC to proceed with this product.</errorMessage>
+</ValidationRule>

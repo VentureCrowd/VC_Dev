@@ -1,0 +1,6 @@
+<apex:page id="MainPage"
+           showHeader="false" 
+           cache="true"
+           contentType="application/x-pdf#InvestmentContractDetails.pdf">
+    <apex:include pageName="PageThatGeneratesPdf"/>
+</apex:page>

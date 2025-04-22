@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_to_Close_Won__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field validation is based on the Membership Type, Status and Product Type being updated. Please update the description or any field in the opportunity prior to updating the Stage to automatically populate these fields and then, once they are automatically populated please move the stage of the opportunity.</description>
+    <inlineHelpText>This field validation is based on the Membership Type, Status and Product Type being updated. Please update the description or any field in the opportunity prior to updating the Stage to automatically populate these fields and then, once they are automatically populated please move the stage of the opportunity.</inlineHelpText>
+    <label>Ready to Close Won</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

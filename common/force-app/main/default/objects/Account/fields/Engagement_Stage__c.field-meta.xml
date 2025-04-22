@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engagement_Stage__c</fullName>
+    <label>Engagement Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>First Contact/Inbound</fullName>
+                <default>false</default>
+                <label>First Contact/Inbound</label>
+            </value>
+            <value>
+                <fullName>Reached Out</fullName>
+                <default>false</default>
+                <label>Reached Out</label>
+            </value>
+            <value>
+                <fullName>Meeting Pending</fullName>
+                <default>false</default>
+                <label>Meeting Pending</label>
+            </value>
+            <value>
+                <fullName>Founder Not Ready</fullName>
+                <default>false</default>
+                <label>Founder Not Ready</label>
+            </value>
+            <value>
+                <fullName>Raise Timing Unknown</fullName>
+                <default>false</default>
+                <label>Raise Timing Unknown</label>
+            </value>
+            <value>
+                <fullName>Company To Early</fullName>
+                <default>false</default>
+                <label>Company To Early</label>
+            </value>
+            <value>
+                <fullName>Growth Services - To Early</fullName>
+                <default>false</default>
+                <label>Growth Services - To Early</label>
+            </value>
+            <value>
+                <fullName>Growth Services - VC Raise</fullName>
+                <default>false</default>
+                <label>Growth Services - VC Raise</label>
+            </value>
+            <value>
+                <fullName>No Response From Founder</fullName>
+                <default>false</default>
+                <label>No Response From Founder</label>
+            </value>
+            <value>
+                <fullName>Short List</fullName>
+                <default>false</default>
+                <label>Short List</label>
+            </value>
+            <value>
+                <fullName>Portfolio Founder</fullName>
+                <default>false</default>
+                <label>Portfolio Founder</label>
+            </value>
+            <value>
+                <fullName>Rejected - Founder Not Interested</fullName>
+                <default>false</default>
+                <label>Rejected - Founder Not Interested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

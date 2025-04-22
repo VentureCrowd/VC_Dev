@@ -1,0 +1,57 @@
+<template>
+  <template if:true={backgroundimageurl}>
+    <section class="component-container">
+        <div class="container">
+          <div class="row align-items-center h-100 text-white py-3 py-lg-5 px-3 px-lg-0">
+            <div class={getClassWrapper1}>
+              <div class="logo mb-3"><img src={productLogo}/></div>
+              <h1 class="mb-4 vc-font-caxton4">{titleText}</h1>
+              <h3 class="mb-4 vc-font-suisseIntlLight">
+                <!-- <template for:each={listText.introList} for:item="eachLine" for:index="index">
+                  <p key={eachLine.key}>{eachLine.value}</p>
+                </template> -->
+                {IntroText}
+              </h3>
+              <p class="mt-2">
+                <!-- <template for:each={listText.summaryList} for:item="eachLine" for:index="index">
+                    <p key={eachLine.key}>{eachLine.value}</p>
+                </template> -->
+                {summaryText}
+              </p>
+              <ul class="mt-5">
+              <template if:true={isGuest}>
+                <template if:true={primaryButtonVisible}>  
+                  <li><a target={primaryButtonTarget} href={primaryButtonHref} class={primaryButtonStyle} >{primaryButtonLabel}</a></li>
+                </template>  
+                <template if:true={secondaryButtonVisible}>  
+                  <li><a target={secondaryButtonTarget} href={secondaryButtonHref} class={secondaryButtonStyle}>{secondaryButtonLabel}</a></li>
+                </template>
+              </template>  
+              <template if:false={isGuest}>
+                <template if:true={primaryButtonVisible_Login}>
+                  <li><a target={primaryButtonTarget_Login} href={primaryButtonHref_Login} class={primaryButtonStyle_Login} >{primaryButtonLabel_Login}</a></li>
+                </template>  
+                <template if:true={secondaryButtonVisible_Login}>
+                  <li><a target={secondaryButtonTarget_Login} href={secondaryButtonHref_Login} class={secondaryButtonStyle_Login}>{secondaryButtonLabel_Login}</a></li>
+                </template>
+              </template>  
+              </ul>
+            </div>
+            <div class="col-md-4" if:true={videoURL}>
+              <div class="vc-playIcon-background slds-align_absolute-center">
+                <a class="video-link" href="https://youtu.be/tBFsGLx1sD4" data-height="480" data-width="854" data-fancybox="">
+                  <lightning-icon icon-name="utility:play" size="large" variant="inverse" alternative-text="Play!" title="Play">
+                  </lightning-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="background-overlay"></div>
+        <div class="background" style={getbackgroundImgStyling}></div>
+        <!-- <canvas width="1280" height="720"></canvas>
+          <video src={videoURL} preload="auto" autoplay playsinline webkit-playsinline mutedhidden>
+          </video> -->
+    </section>
+  </template>
+</template>

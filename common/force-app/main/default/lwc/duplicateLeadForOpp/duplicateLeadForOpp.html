@@ -1,0 +1,11 @@
+<template>
+    <p class="slds-p-horizontal_small">
+        <lightning-card title={title} if:true={showComponent}>
+            <template for:each={leads} for:item="lead">
+                <div key={lead.Id} data-id={lead.Id} onclick={navigatetolead} class="slds-p-horizontal_small slds-text-link">
+                    {lead.Name}
+                </div>
+            </template>
+        </lightning-card>
+    </p>
+</template>

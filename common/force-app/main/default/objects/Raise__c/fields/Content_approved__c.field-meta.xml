@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox indicates whether the content has been approved.</description>
+    <inlineHelpText>Check this box if the content has been reviewed and approved.
+A task to the record owner to instruct the Funds Management Team to send the Establishment Fee to the founder will also be created when this field is checked.</inlineHelpText>
+    <label>Content approved</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

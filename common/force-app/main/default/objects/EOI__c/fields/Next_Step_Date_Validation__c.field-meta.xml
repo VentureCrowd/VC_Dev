@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Step_Date_Validation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISPICKVAL( EOI_Status__c , &quot;Published&quot;),
+    &quot;🔵 Published&quot;,
+    IF(
+        ISPICKVAL(EOI_Status__c, &quot;Closed&quot;),
+        &quot;🔵 Closed&quot;,
+        IF(
+            ISBLANK(Next_Step_Date_Time__c),
+            &quot;☢️ No Steps&quot;,
+            IF(
+                DATEVALUE(Next_Step_Date_Time__c) &lt; TODAY(),
+                &quot;🔴 Outdated Step&quot;,
+                &quot;🟢 Step on time&quot;
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Step Date Validation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

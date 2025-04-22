@@ -1,0 +1,18 @@
+<template>
+    <div class="countdown">
+        <p>{altText}</p>
+        <div class="timer" lwc:if={dealLive}>
+            <p class="numbers">{days}</p>
+            <p>DAYS </p>
+            <p class="numbers">{hours}</p>
+            <p>HOURS</p>
+            <p class="numbers">{minutes}</p>
+            <p>MINUTES</p>
+            <p class="numbers">{seconds}</p>
+            <p>SECONDS</p>
+        </div>
+        <div class="timer" lwc:else>
+            <p class="numbers">{days} at {hours}:{minutes} pm</p>
+        </div>
+    </div>
+</template>

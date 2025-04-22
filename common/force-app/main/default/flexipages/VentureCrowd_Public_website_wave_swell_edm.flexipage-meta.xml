@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a8beecdc-a478-43e6-888a-9910b7196b9d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-80fca74c-0bd5-4a45-8ecc-6ec668f78ce1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>From waves to zero emission electricity</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IVcjb&amp;oid=00D2v000000WjFp&amp;lastMod=1635916631000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Register your interest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>anchor:web-to-lead-form</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IVcjg&amp;oid=00D2v000000WjFp&amp;lastMod=1635916757000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Watch video</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://www.youtube.com/watch?v=PD5fXCW-yKc&amp;t=2s</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Invest in Clean Energy</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a8beecdc-a478-43e6-888a-9910b7196b9d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f7ca9421-65bf-446a-b806-d342ea7af6aa</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-65d86244-3e91-4969-bd80-7b18bf09362a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;container content-container--text-edit&quot;&gt;
+    &lt;div class=&quot;row px-3 px-lg-0&quot;&quot;&gt;
+        &lt;div class=&quot;col-lg-6 mb-4 mb-lg-0&quot;&gt;
+            &lt;h1&gt;Invest in Clean Energy&lt;/h1&gt;
+            &lt;p&gt;Wave Swell is a developer of world leading proprietary technology which works to convert the energy in ocean waves into clean and emissions free electricity. The company is now generating energy from waves, at a time when clean energy transition is a critical point of conversation at COP26 and being backed by over $130 trillion of global funding to accelerate innovation.
+&lt;br&gt;
+&lt;br&gt;
+Wave energy, as a clean energy resource, has benefits over wind and solar energy, exhibiting a greater predictability, more consistency, and a higher energy density.The technology will not replace established renewable sources such as wind and solar, but will complement them to create a more resilient electrical grid. 
+
+&lt;br&gt; 
+
+ &lt;/p&gt;
+            &lt;a data-fancybox data-width=&quot;854&quot; data-height=&quot;480&quot; href=&quot;https://www.youtube.com/embed/PD5fXCW-yKc?rel=0&quot; class=&quot;video-link&quot;&gt;
+                &lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt; Play video&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;h3&gt;About the Offer&lt;/h3&gt;
+            &lt;p&gt;This investment opportunity will enable wholesale investors to invest directly in a company that is reshaping the future and tackling climate change &lt;br&gt;
+  &lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Company Highlights:&lt;/strong&gt;&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;Intellectual property secured globally by an International Patent Cooperation Treaty application and patents pending.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;Founding team which includes two of the world’s leading experts in ocean-generated renewable energy.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;The company’s King Island unit is operating and providing electricity to the homes and businesses on the island.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;The Australian Maritime College has analysed the data from the unit and found it is operating and exporting power consistently and efficiently across a broad range of sea states.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;Hydro Tasmania has confirmed the unit has met all connection and operational requirements.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;An independent assessment of the technology predicts it has the potential to reach cost parity with the lowest cost wind and solar.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;The company expects to be an attractive acquisition target.&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f7ca9421-65bf-446a-b806-d342ea7af6aa</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>82e35b12-952a-4f85-a59f-adaedb01e80e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-3966b014-2ec1-49c1-ada2-10210e7190c0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Gray</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>leadSourceVal</name>
+                    <value>Database Emails</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>registerBtnLabel</name>
+                    <value>Register My Interest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleSubText</name>
+                    <value>Register below and we&apos;ll let you know before this deal is made public.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Register your Interest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>webSourcePageName</name>
+                    <value>WSE - EOI EDM</value>
+                </componentInstanceProperties>
+                <componentName>webToLeadFormProductlanding</componentName>
+                <identifier>webToLeadFormProductlanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>82e35b12-952a-4f85-a59f-adaedb01e80e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>bad0efa4-5277-4ae1-b609-fc3f20fd973a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-921ce09e-38c1-4f19-8750-e088c6cc728d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IVc43&amp;oid=00D2v000000WjFp&amp;lastMod=1632431064000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>Energy transition is one of the major industries in focus right now as the world talks about reaching net zero by 2050. At COP26 climate change conference, many of the globe’s biggest financial firms pledged to invest as much as $130 trillion to the clean energy transition.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                    <value>$130 Trillion Towards Renewables</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IVcjl&amp;oid=00D2v000000WjFp&amp;lastMod=1635918245000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>Venture capital investments into early- and late-stage clean energy generation startups increased globally in 2021 compared with 2020 from $134.0 million to $189.4 million and $1.0 billion to $1.7 billion, respectively (Source: Pitchbook 2021).</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                    <value>Green Venture Capital</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCZy&amp;d=%2Fa%2F2v000000EOYS%2FKBAlLP.9FfJqEiAoaP5Hda3ihBdSHSpSKMOhnhOEN8k&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                    <value>The world requires more renewable energy, and the focus on the COP26 event in Glasgow is clear evidence of this. With a new renewable energy technology that promises to be as low cost as wind and solar, while also exhibiting  important advantages over these other sources, the Wave Swell Energy (WSE) technology has an enormous market potential.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>Why Invest In Wave Energy?</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentCtaProductLanding</componentName>
+                <identifier>currentInvestmentCtaProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeadingText</name>
+                    <value>Why VentureCrowd?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ParagraphText</name>
+                    <value>VentureCrowd is Australia’s leading digital investment platform for alternative assets. When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so you won’t be investing alone. Here’s a snapshot of our traction so far.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Totalmembers</name>
+                    <value>63000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>TotalmembersLabel</name>
+                    <value>Total Members</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Totalraised</name>
+                    <value>176000000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>TotalraisedsLabel</name>
+                    <value>Total Raised</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Gray</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>portfoliosize</name>
+                    <value>70</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>portfoliosizeLabel</name>
+                    <value>Portfolio Size</value>
+                </componentInstanceProperties>
+                <componentName>whyVentureCrowd</componentName>
+                <identifier>whyVentureCrowd</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCCT&amp;d=%2Fa%2F2v000000EOXy%2FwBrrdkegPezSl87dQ.nxZPfvZNYfahz_Y7zMDnsA_do&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>4DMedical is an Australian health technology SaaS business operating in AUS &amp; the US. VentureCrowd investors acquired shares at $0.37. 4DMedical listed on the  ASX after 18 months at $1.50 per share, delivering a 297% return to VentureCrowd investors who participated in this capital raise.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                    <value>4DMedical</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCCn&amp;d=%2Fa%2F2v000000EOY3%2F9GwKh4YyKYCgKaTGFSA5KKboWRtnTcFp1BszIZcKwyY&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>VentureCrowd portfolio company Jayride listed on the ASX in January 2018 making it Australia&apos;s ﬁrst crowd-funded startup exit. Listed on ASX in January 2018 at an issue price that was more than double the Series A investment, delivering a gross return of 107% to investors.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                    <value>Jayride</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCZy&amp;d=%2Fa%2F2v000000EOYS%2FKBAlLP.9FfJqEiAoaP5Hda3ihBdSHSpSKMOhnhOEN8k&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                    <value>VentureCrowd is the only digital investment platform in Australia that has delivered successful exit returns from Equity Crowdfunding.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>Previous Success Stories</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentCtaProductLanding</componentName>
+                <identifier>currentInvestmentCtaProductLanding2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>openVCLogoUrl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2021/03/Open-VClogo_white-300x79.png</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--cm--c.documentforce.com/sfc/dist/version/download/?oid=00D0p0000000N1k&amp;ids=0680p000000cUTs&amp;d=%2Fa%2F0p0000004QKF%2FIyHBFYBQoyINcgOMCqcGCTRos7ltEjFyUwT1QKvEMsc&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strHeading</name>
+                    <value>70+ Ventures Funded</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>straSupportingCopy</name>
+                    <value>The following are examples of some of the ventures funded through our digital investment platform</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentProductLanding</componentName>
+                <identifier>currentInvestmentProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bad0efa4-5277-4ae1-b609-fc3f20fd973a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9783a4b8-c458-48bd-8b54-2d888b6a67e1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-4ce39e5d-4785-40eb-8d66-ae445be6278f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--disclaimer&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row px-3 px-lg-0&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;
+
+                &lt;p&gt;
+                    
+					&lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt;Legals&lt;/a&gt; | Copyright © 2021 VentureCrowd. All Rights Reserved
+					&lt;br&gt;
+					VentureCrowd Pty Ltd (ABN 40 166 598 849, AFSL 503 381)
+					Important Notice: Capital is at risk and returns are not guaranteed. Past performance is not a reliable indicator of future performance. 
+                    This content is of a general nature only and has been prepared without taking account of your objectives, financial situation or needs. Before acting on this information or making an investment decision, 
+                    you should consider your personal circumstances and consider obtaining financial, taxation and or legal advice which is tailored to your personal circumstances before making an investment decision.
+					&lt;br&gt;
+                    &lt;br&gt;
+                    Please call &lt;a href=&quot;tel:1300039655&quot; target=&quot;_blank&quot;&gt; 1300 039 655 &lt;/a&gt; to get a copy of the PDS.
+                    Please read our &lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt;terms and conditions&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt; privacy &lt;/a&gt; statement before using the Website.
+					&lt;br&gt;
+                    &lt;br&gt;
+					VentureCrowd Pty Ltd is a Corporate
+                    Authorised Representative #420843 of Guardian Securities Limited, AFSL #240506.
+                  &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>9783a4b8-c458-48bd-8b54-2d888b6a67e1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-80fca74c-0bd5-4a45-8ecc-6ec668f78ce1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;80fca74c-0bd5-4a45-8ecc-6ec668f78ce1&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a8beecdc-a478-43e6-888a-9910b7196b9d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-65d86244-3e91-4969-bd80-7b18bf09362a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;65d86244-3e91-4969-bd80-7b18bf09362a&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f7ca9421-65bf-446a-b806-d342ea7af6aa&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-3966b014-2ec1-49c1-ada2-10210e7190c0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;3966b014-2ec1-49c1-ada2-10210e7190c0&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;82e35b12-952a-4f85-a59f-adaedb01e80e&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-921ce09e-38c1-4f19-8750-e088c6cc728d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;921ce09e-38c1-4f19-8750-e088c6cc728d&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;bad0efa4-5277-4ae1-b609-fc3f20fd973a&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-4ce39e5d-4785-40eb-8d66-ae445be6278f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;4ce39e5d-4785-40eb-8d66-ae445be6278f&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9783a4b8-c458-48bd-8b54-2d888b6a67e1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Wave Swell converts energy in ocean waves into clean and zero emissions electricity. Invest in an Aussie climate tech company tackling global warming.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Wave Swell Energy | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>wave-swell-edm</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

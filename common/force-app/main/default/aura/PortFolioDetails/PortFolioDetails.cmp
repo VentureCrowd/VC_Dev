@@ -1,0 +1,28 @@
+<aura:component Controller="PortFolioDetailController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<aura:attribute name="currentUser" type="User"/>
+<aura:attribute name="currentAccount" type="Account"/>
+ <aura:attribute name="investments" type="List"/>
+<aura:attribute name="isUserAvailable" type="Boolean" default="false"/>
+ <aura:attribute name="greetingMsg" type="String" default="Good Morning "/>
+    <lightning:layout>
+    <lightning:layoutItem size="4" >
+        <p>My Portfolio</p><br/>
+         <lightning:avatar src="{!v.currentUser.SmallPhotoUrl}" />
+         <span style="margin-left:5px;">{!v.greetingMsg} {!v.currentUser.Name}</span>
+        </lightning:layoutItem>
+         <lightning:layoutItem size="4" >
+        </lightning:layoutItem>
+        
+        
+         <lightning:layoutItem size="4">
+             <lightning:layout>
+             <lightning:layoutItem size="2" >Total Amount Invested</lightning:layoutItem>
+             <lightning:layoutItem size="2">{!v.currentAccount.Total_Investment__c}</lightning:layoutItem>
+             </lightning:layout>        
+        </lightning:layoutItem>
+    
+    </lightning:layout>
+   
+      
+</aura:component>

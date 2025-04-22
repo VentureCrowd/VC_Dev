@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSF_Offer_Text__c</fullName>
+    <defaultValue>&apos;Means the offer document of the Issuer relating to the offer of shares in the Issuer available on the VentureCrowd website on the date of this application.&apos;</defaultValue>
+    <description>this field is utilised on contract modal</description>
+    <inlineHelpText>this field is utilised on contract modal</inlineHelpText>
+    <label>CSF Offer Text</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>TextArea</type>
+</CustomField>

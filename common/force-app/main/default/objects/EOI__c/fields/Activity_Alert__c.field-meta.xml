@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Alert__c</fullName>
+    <description>This calculates the days without activity</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        ISPICKVAL(EOI_Status__c, &quot;Published&quot;),
+        ISPICKVAL(EOI_Status__c, &quot;Closed&quot;)
+    ),
+    &quot;🟢 Published/Closed&quot;,
+    IF(
+        ISBLANK(LastActivityDate),
+        &quot;🟠 no activity&quot;,
+        IF(
+            (TODAY() - LastActivityDate) &lt; 15,
+            &quot;🟢 on time&quot;,
+            IF(
+                AND(
+                    (TODAY() - LastActivityDate) &gt;= 15,
+                    (TODAY() - LastActivityDate) &lt;= 30
+                ),
+                &quot;🟠 over 15d&quot;,
+                IF(
+                    (TODAY() - LastActivityDate) &gt; 30,
+                    &quot;🔴 over 30d&quot;,
+                    &quot;&quot;
+                )
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This calculates the days without activity</inlineHelpText>
+    <label>Last EOI Activity Alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

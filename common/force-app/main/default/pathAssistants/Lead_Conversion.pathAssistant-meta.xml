@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead Conversion</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Number_of_Attempts__c</fieldNames>
+        <fieldNames>Background_information__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px;&quot;&gt;The lead status is moved to “in progress” as soon as the first contact attempt is made. Update the number of attempts made to contact is recorded after each phone call, text and email. If moving to lost, mark the lost reason and gather more information regarding the lost reason and submit using the &lt;/span&gt;&lt;a href=&quot;https://docs.google.com/document/d/1AccC7L24ISpdEeEdKNe5pEGMYU5NdJboa0mgzQOO92w/edit#heading=h.pd8zbh3e6lkn&quot; target=&quot;_blank&quot; style=&quot;font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px;&quot;&gt;PRODUCT FEEDBACK&lt;/a&gt;&lt;span style=&quot;font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px;&quot;&gt; process.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>In Progress</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Loss_Reason__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;If the investor answers the call, the lead is either converted to an opportunity or marked as “Lost” according to their response. In the case that the opportunity is &lt;/span&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;“Lost”&lt;/strong&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;, the user is required to collect detailed information explaining why the product is not suitable or desirable for the investor and collect a “Lost Reason”. This information should also be captured and recorded using the&lt;/span&gt;&lt;a href=&quot;https://docs.google.com/document/d/1AccC7L24ISpdEeEdKNe5pEGMYU5NdJboa0mgzQOO92w/edit#heading=h.pd8zbh3e6lkn&quot; target=&quot;_blank&quot; style=&quot;font-size: 13px;&quot;&gt; PRODUCT FEEDBACK&lt;/a&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; process.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>MobilePhone</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>Number_of_Attempts__c</fieldNames>
+        <fieldNames>Web_Source__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 15px; font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif;&quot;&gt;A lead is defined by a person who follows a call to action (CTA) and provides us with their personal information in a digital format. The information must contain a minimum of First &amp;amp; last name, mobile number and an email address. They can provide further information, but this is the minimum requirement to be defined as a lead.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>VC</recordTypeName>
+</PathAssistant>

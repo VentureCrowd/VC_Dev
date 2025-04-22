@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trust_Deed_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>When filling this field you MUST ensure it is formatted like this &quot; Trust No. 055&quot; OR &quot;Trust No. 055 A&quot; The spaces and grammar are relied upon by other processes.</inlineHelpText>
+    <label>Trust Deed Name</label>
+    <length>200</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,135 @@
+p{
+    font-family: 'SuisseIntl-Light';
+}
+li{
+    font-family: 'SuisseIntl-Light';
+}
+
+.alert-body{
+    font-family: 'SuisseIntl-Light';
+}
+
+.wrapper{
+    padding : var(--space-xs);
+}
+
+.container{
+    padding: var(--space-md) 0;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkbox-container p, .checkbox-container li{
+    font-size: var(--text-md);
+}
+
+
+ol{
+    list-style: decimal;
+    margin-left: var(--space-md);
+}
+
+
+.checkbox-container p {
+    padding: 0px var(--space-lg);
+}
+
+.progress-tracker{
+    display: flex;
+    padding: var(--space-lg);
+    gap: var(--space-lg);
+    background-color: rgba(147, 147, 147, 0.1);
+    border-radius: 23px;
+    align-items: center;
+    margin-bottom: var(--space-xl);
+}
+
+span.text-container ol{
+    padding: 0px var(--space-xl);
+}
+
+span.text-container{
+    padding: var(--space-md);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-xxl);
+}
+
+.footer h3{
+    font-family: "SuisseIntl-Regular";
+    padding-bottom: var(--space-md);
+}
+
+.text-desc {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-desc p{
+    margin: 0px;
+}
+
+.text-desc h4{
+    font-family: 'SuisseIntl-Medium';
+    padding-bottom: var(--space-sm);
+}
+
+
+c-core-alert {
+    display: none;
+    padding: 0 calc(var(--space-md) + var(--space-lg));
+}
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* MOBILE STYLING */
+
+@media only screen and (max-width: 768px) {
+    .checkbox-container {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .progress-tracker{
+        flex-direction: column;
+    }
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+c-core-input {
+    padding: var(--space-md) calc(var(--space-md) + var(--space-lg));
+}
+
+.input-container p {
+    padding: 0px var(--space-lg);
+}
+
+p.p-title {
+    font-family: 'SuisseIntl-Bold';
+}

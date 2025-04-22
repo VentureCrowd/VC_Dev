@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_did_you_first_hear_about_us__c</fullName>
+    <description>A survey question from our welcome journey filled by the user.</description>
+    <inlineHelpText>A survey question from our welcome journey filled by the user.</inlineHelpText>
+    <label>How did you first hear about us</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

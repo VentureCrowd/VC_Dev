@@ -1,0 +1,100 @@
+<template>
+     <!-- Hero Banner Blog -->
+     <section class="hero has-parallax-bg" >
+        <div class="container-fluid" >
+            <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                <div class="col-md-9 headline">
+                    <div class="tags">
+                        <!-- <template for:each={buttonsData} for:item="eachBtn" for:index="index">
+                            <a href={eachBtn.btnUrl} key={eachBtn.btnKey}>{eachBtn.btnName}</a>
+                        </template> -->
+                        <template if:true={HealthTech}>
+                        <a href={HealthTechurl}>HealthTech </a>
+                        </template>
+                  
+                        <template if:true={FoodTech}>
+                            <a href={FoodTechurl}>FoodTech </a>
+                         </template>
+                  
+                         <template if:true={Renewables}>
+                                <a href={Renewablesurl}>Renewables </a>
+                        </template>
+                    
+                        <template if:true={Lifestyle}>
+                                  <a href={Lifestyleurl}>Lifestyle </a>
+                         </template>
+                        
+                        <template if:true={Property}>
+                            <a href={Propertyurl}>Property </a>
+                        </template>
+                        <template if:true={Crowdfunding}>
+                            <a href={Crowdfundingurl}>Crowdfunding</a>
+                        </template>
+		
+						<template if:true={Invest}>
+                            <a href={Investurl}>Invest</a>
+                        </template>
+				
+						<template if:true={News}>
+                            <a href={Newsurl}>News</a>
+                        </template>
+						
+						<template if:true={PropTech}>
+                            <a href={PropTechurl}>PropTech</a>
+                        </template>
+						
+						<template if:true={PropertyFunds}>
+                            <a href={PropertyFundsurl}>PropertyFunds</a>
+                        </template>
+						
+						<template if:true={PropertyResidential}>
+                            <a href={PropertyResidentialurl}>PropertyResidential</a>
+                        </template>
+						
+						<template if:true={Ventures}>
+                            <a href={Venturesurl}>Ventures</a>
+                        </template>
+						
+						<template if:true={BioTech}>
+                            <a href={BioTechurl}>BioTech</a>
+                        </template>
+						
+						<template if:true={MedTech}>
+                            <a href={MedTechurl}>MedTech</a>
+                        </template>
+						
+						<template if:true={AgTech}>
+                            <a href={AgTechurl}>AgTech</a>
+                        </template>
+						
+						<template if:true={FinTech}>
+                            <a href={FinTechurl}>FinTech</a>
+                        </template>
+						
+						<template if:true={EdTech}>
+                            <a href={EdTechurl}>EdTech</a>
+                        </template>
+						
+						<template if:true={CleanTech}>
+                            <a href={CleanTechurl}>CleanTech</a>
+                        </template>
+						
+						<template if:true={ESG}>
+                            <a href={ESGurl}>ESG</a>
+                        </template>
+
+                        <template if:true={investorHub}>
+                            <a href={investorHuburl}>Investor Hub</a>
+                        </template>
+
+                        <template if:true={web3}>
+                            <a href={web3url}>Web3</a>
+                        </template>
+                    </div>
+                    <h1 class="mt-4">{bannerTitle}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background" style={getbackgroundImgStyling}></div>
+    </section>
+</template>

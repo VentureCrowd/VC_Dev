@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Body_Content__c</fullName>
+    <description>Used within the automated investor update emails to display custom content within the email body.</description>
+    <label>Email Body Content</label>
+    <length>1000</length>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

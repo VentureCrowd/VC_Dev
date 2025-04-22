@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Banners for Candiforce and potentially other banners too</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>VisualForce Banners</label>
+    <pageAccesses>
+        <apexPage>Investee_Entity_Banner</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Investment_Banner</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Transaction_banner</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>VC_Entity_Banner</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>

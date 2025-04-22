@@ -1,0 +1,247 @@
+<template>
+    <div class="wrapper">
+        <div class="resume-form" lwc:if={raiseExists}>
+            <c-core-button
+            label="Resume raise"
+            variation="primary"
+            mode="light"
+            onbuttonclick={handleResumeRaise}>
+            </c-core-button>
+        </div>
+        <div class="raise-modal" lwc:else>
+            <c-core-modal
+            label="Ready to raise">
+            <div slot="body" class="container">
+                <div class="loading-spinner"  lwc:if={isLoading}>
+                    <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+                </div>                
+                <div class="checkbox-form" lwc:else >
+                    <c-core-form
+                    title="Before you get started"
+                    hide-button
+                    onsubmit={handleGetStarted}
+                    onchange={handleChange}
+                    form-data={formData}
+                    lwc:ref="coreForm">
+                        <div slot="header">
+                            <p>
+                                We know you are excited about raising with us and we are so keen to help you in your capital raising journey.
+                                We want to make sure you understand a few things before you get started so you can get the most out of your capital raise:
+                            </p>
+                        </div>
+                        <div class="formBody" slot="body">
+                            <div class="progress-tracker">
+
+                                <c-core-progress-circle percentage={percentageFilled}></c-core-progress-circle>
+                                <div class="text-desc">
+                                    <h4 class="text--md">
+                                        You're already ahead!
+                                    </h4>
+                                    <p>
+                                        As part of your Expression of Interest phase, you have completed {percentageFilled}% of the information required for your capital raise!   
+                                    </p>
+                                </div>
+                            </div>
+                            <ol>
+                                <li>
+                                    <div class="input-container">
+                                        <span class="text-container">
+                                            <p class="p-title">Are you offering a wholesale or retail investment opportunity?</p>
+                                            <p>Let us know so we can tailor the raise application form to your needs and gather the right information to best represent your investment opportunity to potential investors.</p>
+                                            <p>Need help deciding? <a href={helpTextMapping.retailOrWholesale} target="_blank">Learn more about wholesale vs. retail.</a> </p>
+                                        </span>
+                                        <c-core-input
+                                        name="investType"
+                                        label="Retail or Wholesale?"
+                                        type="dropdown"
+                                        options={investOptions}
+                                        help=" "
+                                        required
+                                        >
+                                        </c-core-input>
+                                    </div>
+                                    <template  lwc:if={isRetail}>
+                                        <div class="checkbox-container">
+                                            <span class="text-container">
+                                                <p>Does your company meet all of the <a target="_blank" href={helpTextMapping.asicRequirements}>ASIC Requirements for eligibility to make a Crowd Sourced Funding offer?</a></p>
+                                            </span>
+                                            <c-core-radio
+                                            name="asicRequirements"
+                                            values={values}
+                                            mode="light"
+                                            size="medium"
+                                            alignment-position="horizontal">
+                                            </c-core-radio>
+                                        </div>
+                                        <c-core-alert 
+                                        data-id="asicRequirements"
+                                        type="warning">
+                                            <div class="alert-body" slot="body">
+                                                ASIC sets out the requirements for your company to be eligible to make offers under the CSF regime.
+                                                 All requirements must be satisfied at the time the offer is made—that is, 
+                                                 when the CSF offer document for the offer is first published on the CSF 
+                                                 intermediary's platform.
+                                            </div>
+                                        </c-core-alert>
+                                    </template>
+                                    
+                                    <hr>
+                                </li>
+                                <li>
+                                    <div class="checkbox-container">
+                                        <span class="text-container">
+                                            <p>Are you aware that your Expression of interest page should reach the <a target="_blank" href={helpTextMapping.amtCapital}>required amount of capital to begin a raise?</a></p>
+                                        </span>
+                                        <c-core-radio
+                                        name="eoiReached"
+                                        values={values}
+                                        mode="light"
+                                        size="medium"
+                                        alignment-position="horizontal">
+                                        </c-core-radio>
+                                    </div>
+                                    <c-core-alert 
+                                    data-id="eoiReached"
+                                    type="warning">
+                                        <div class="alert-body" slot="body">
+                                            VentureCrowd recommends you have at least double your target goal in EOIs before you begin a raise. 
+                                            It's vital you reach your EOI target as it's estimated only 30% of your EOIs will convert to capital raised. 
+                                        </div>
+                                    </c-core-alert>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <div class="checkbox-container">
+                                        <span class="text-container">
+                                            <p>Do you agree to follow VentureCrowd’s <a target="_blank" href={helpTextMapping.capitalRaise}>Capital Raising 101 guidance and understand your responsibilities</a> for the management and success of your raise campaign?</p>
+                                        </span>
+                                        <c-core-radio
+                                        name="captialRaising101"
+                                        values={values}
+                                        mode="light"
+                                        size="medium"
+                                        alignment-position="horizontal">
+                                        </c-core-radio>
+                                    </div>
+                                    <c-core-alert 
+                                    data-id="captialRaising101"
+                                    type="warning">
+                                        <div class="alert-body" slot="body">
+                                            VentureCrowd offers exclusive access to our Capital Raising 101 course once your application 
+                                            has been submitted. The course will equip you with all the knowledge you need to create a 
+                                            successful raise campaign.
+                                        </div>
+                                    </c-core-alert>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <div class="checkbox-container">
+                                        <span class="text-container">
+                                            <p>
+                                                Do you have access to all of the following &nbsp;
+                                                <template lwc:if={isRetail}>
+                                                    <a target="_blank" href={helpTextMapping.keyDocumentsRetail}>key documents</a>
+                                                </template>
+                                                <template lwc:else>
+                                                    <a target="_blank" href={helpTextMapping.keyDocumentsWholesale}>key documents</a>
+                                                </template>
+                                                &nbsp; for your raise?
+                                            </p>
+                                            <ol>
+                                                <template lwc:if={isRetail}>
+                                                    <li>Company valuation</li>
+                                                    <li>Share price</li>
+                                                    <li>Documentation on your capital, business and organisational structure</li>
+                                                    <li>Financial statements</li>
+                                                    <li>Company constitution</li>
+                                                    <li>Shareholder's agreement</li>
+                                                </template>
+                                                <template lwc:else>
+                                                    <li>Company valuation</li>
+                                                    <li>Documentation on your capital, business and organisational structure</li>
+                                                    <li>Financial statements</li>
+                                                    <li>Pitch deck</li>
+                                                </template>
+                                            </ol>
+                                        </span>
+                                        <c-core-radio
+                                        name="financialItems"
+                                        values={values}
+                                        mode="light"
+                                        size="medium"
+                                        alignment-position="horizontal">
+                                        </c-core-radio>
+                                    </div>
+                                    <c-core-alert 
+                                    data-id="financialItems"
+                                    type="warning">
+                                        <div class="alert-body" slot="body">
+                                            You will need the information listed above so key details of your raise can be determined.
+                                        </div>
+                                    </c-core-alert>
+                                    <hr>
+                                </li>
+                                <li>
+                                    <div class="checkbox-container">
+                                        <span class="text-container">
+                                            <p>Do you agree to VentureCrowds's fees and understand the <a target="_blank" href={helpTextMapping.feesBenefits}>amazing benefits</a> that come with them</p>
+                                        </span>
+                                        <c-core-radio
+                                        name="fees"
+                                        values={values}
+                                        mode="light"
+                                        size="medium"
+                                        alignment-position="horizontal">
+                                        </c-core-radio>
+                                        
+                                    </div>
+                                    <c-core-alert 
+                                    data-id="fees"
+                                    type="warning">
+                                        <div class="alert-body" slot="body">
+                                            In order to raise with VentureCrowd, you will need to pay an establishment fee upon application 
+                                            and a success fee on completion of your raise.
+                                        </div>
+                                    </c-core-alert>
+                                    <hr>
+                                </li>
+                            </ol>
+                        </div>
+                        <div slot="footer" class="footer">
+                            <div class="validation-success" lwc:if={isAllValid}>
+                                <h3 class="text--lg">You are ready to raise!</h3>
+                                <p>
+                                    Join hundreds of founders like you who have collectively raised over $300 million via our platform.
+                                </p>
+                            </div>
+                            <div class="validation-failed" lwc:if={isAllNo}>
+                                <h3 class="text--lg">You aren't quite ready to raise!</h3>
+                                <p>
+                                    You must be able to answer Yes to all questions above to
+                                    progress with an application to raise capital.
+                                </p>
+                                <br>
+                                <p style="color: var(--primary-accent)">
+                                    Need help?
+                                </p>
+                                <p>
+                                    Access our guides on the above questions to help you  achieve raise readiness.
+                                </p>
+                            </div>
+                            <c-core-button 
+                            label="Get started"
+                            variation="primary"
+                            mode="light"
+                            onbuttonclick={submitForm}
+                            disabled={buttonDisabled}>
+                            </c-core-button>
+                        </div>
+                    </c-core-form>
+                    
+                </div>
+            </div>
+            </c-core-modal>
+        </div>
+
+    </div>
+</template>

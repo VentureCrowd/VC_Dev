@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_to_Invest_Under_Different_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>updated from Invest Now form. When investor prefers to invest under different account</description>
+    <inlineHelpText>updated from Invest Now form. When investor prefers to invest under different account</inlineHelpText>
+    <label>Req to Invest Under Different Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

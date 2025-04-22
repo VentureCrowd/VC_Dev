@@ -1,0 +1,2625 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/*@media screen and (max-width: $md) {
+    min-height: calc(100vh - 128px) !important;
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.comm-page-custom-portfolio {
+  background-color: #f7f7f7;
+  /* View More Button */
+  /* Card styles */
+  /* Investment Opportunities */
+}
+
+.comm-page-custom-portfolio .siteforceContentArea {
+  overflow-x: hidden;
+  padding: 30px 30px;
+  margin-top: 77px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .siteforceContentArea {
+   /*VEN-284 - Adjusted margin from 90px to 0 and set padding to 90px;*/ 
+   margin-top: 0px;
+   padding-top: 90px;
+  }
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column {
+  margin-bottom: 3em;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification {
+    text-align: center;
+  }
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification .inner-container {
+  background-color: #fff;
+  padding: 20px !important;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification .inner-container {
+    margin-bottom: 2em;
+  }
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification span.verification--text {
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #000 !important;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification span.phone--number {
+  font-size: 26px !important;
+  font-weight: 700;
+  color: #000 !important;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--id-verification span.phone--number img {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--portfolio-header {
+    text-align: left;
+  }
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--portfolio-header .investment--status-null {
+  text-align: left;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .vc--portfolio-header .investment--status-null p {
+  font-size: 16px;
+  font-family: "SuisseIntl_Light", "Montserrat", sans-serif;
+  /* font-weight: 400; */
+  margin-bottom: 1em;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column span {
+  font-family: "Caxton-2", "Montserrat", sans-serif;
+  /* font-weight: 600; */
+  color: #000;
+  font-size: 16px;
+  /* font-style: normal; */
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column h2 {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 800 !important; */
+  font-size: 26px !important;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column .cMyPortfolio_Investments>.slds-col.slds-size_5-of-12 {
+  width: 100% !important;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card {
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  border: none;
+  min-height: 170px;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card.cardStyling .cardText {
+  color: #fff !important;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card .slds-card__header {
+  display: none;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card .slds-card__body .slds-card__footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 20px;
+  margin: 0;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card .slds-card__body .slds-card__footer.cardText {
+  color: #000;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card .slds-border_top.slds-card__footer>div {
+  font-size: 42px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  line-height: 1em;
+}
+
+.comm-page-custom-portfolio .siteforceContentArea .cb-section_column article.slds-card .slds-border_top.slds-card__footer>span {
+  font-size: 42px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000;
+  position: absolute;
+  bottom: 20px;
+  line-height: 1em;
+}
+
+.comm-page-custom-portfolio .ui-widget .forceCommunityRichText.forceCommunityRichTextInline b {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px !important;
+  color: #000;
+}
+
+.comm-page-custom-portfolio button.viewMoreButton {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #844cea;
+  transition: all 300ms ease;
+  font-size: 14px;
+  display: inline-block;
+  padding: 4px 30px;
+  margin-top: 20px;
+}
+
+.comm-page-custom-portfolio button.viewMoreButton:hover {
+  background-color: #5d3796;
+  color: #fff;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-container_center {
+  text-align: center;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid h2.slds-text-heading_medium {
+  color: #000;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 {
+    width: 100%;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 * {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout {
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  height: 174px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout {
+    height: 207px !important;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout:after {
+  content: "";
+  background-color: #f6f6f6;
+  display: block;
+  height: 86px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout:after {
+    height: 127px;
+  }
+}
+
+
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative {
+  position: relative !important;
+  height: 250px !important;
+  /* Background image */
+  /* */
+  /* Main Content */
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative {
+    height: 300px !important;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative>div>div.slds-scrollable_none {
+  display: block;
+  width: 48px !important;
+  height: 48px !important;
+  top: 20px !important;
+  left: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .flagContainer {
+  display: none;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container {
+  z-index: 2 !important;
+  /* Investment Amount */
+  /* View button */
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container * {
+  color: #000 !important;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-title {
+  position: absolute;
+  left: 85px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800;
+  top: 24px;
+  z-index: 4;
+  text-align: left;
+  line-height: 0.85em;
+  overflow: hidden;
+  right: 20px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-title span {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-title {
+    font-size: 20px;
+    height: auto;
+    max-height: 2em;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container p.js-content-subtitle {
+  position: absolute;
+  left: 85px;
+  font-family: "Montserrat", sans-serif !important;
+  top: 28px;
+  z-index: 4;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container p.js-content-subtitle span {
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container p.js-content-subtitle {
+    font-size: 14px;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata {
+  position: absolute;
+  top: 113px;
+  left: 242px;
+  padding: 0;
+  z-index: 4;
+  width: 145px;
+  margin: 0;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata {
+    top: 100px;
+    left: 33.333%;
+    width: 33.333%;
+    text-align: left;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata:before {
+  content: "Status";
+  display: block;
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime {
+  position: absolute;
+  left: 25px;
+  top: 114px;
+  text-align: left;
+  z-index: 4;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+  margin: 0;
+  width: auto;
+  line-height: 1.1em;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime span {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime {
+    left: 20px;
+    width: 33.333%;
+    top: 100px;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime:before {
+  content: "Date";
+  display: block;
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow {
+  position: absolute;
+  top: 114px;
+  z-index: 4;
+  text-align: left;
+  left: 130px;
+  margin: 0 !important;
+  width: auto;
+  line-height: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow {
+    top: 100px;
+    left: 66.666%;
+    width: 33.333%;
+    text-align: left;
+  }
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow span {
+  display: block;
+  position: relative;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow:before {
+  content: "Investment";
+  display: block;
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container button.slds-button {
+  position: absolute;
+  bottom: 102px !important;
+  right: 30px !important;
+  background-color: transparent;
+  padding: 0;
+  width: auto;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+  font-size: 14px;
+  color: #844cea !important;
+  border: none;
+  z-index: 4;
+  display: inline-block;
+  transition: all 300ms ease;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-portfolio .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container button.slds-button {
+    max-width: 100%;
+    width: 90%;
+    top: 163px;
+    display: block;
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0 !important;
+    border-top: 1px solid #0003d;
+    text-transform: capitalize;
+  }
+}
+
+/* VEN - 293 */
+.comm-page-custom-portfolio > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-v-c_current-investment-list > div > div > c-v-c_current-tile-component > div > div.vc-page-body > div > div.vc-page-body__detail-row.slds-grid_align-spread.slds-wrap lightning-helptext.vc_lightningHelpText > div {
+  position: absolute !important;
+
+  padding-left: 2px;
+}
+
+.comm-page-custom-portfolio > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-v-c_current-investment-list > div > div > c-v-c_current-tile-component > div > div.vc-page-body > div > div.vc-page-body__detail-row.slds-grid_align-spread.slds-wrap lightning-helptext.vc_lightningHelpText > div > lightning-button-icon > button {
+font-size: 0px !important;
+}
+
+.comm-page-custom-portfolio  > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-v-c_current-investment-list > div > div > c-v-c_current-tile-component > div > div.vc-page-body > div > div.vc-page-body__detail-row.slds-grid_align-spread.slds-wrap > div > div.slds-text-title.slds-truncate.vc-page-body__detailBlock-title.vc-font-suisseIntlRegular > lightning-helptext > div {
+  position: absolute !important;
+
+  padding-left: 2px;
+}
+
+.comm-page-custom-portfolio  > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-v-c_current-investment-list > div > div > c-v-c_current-tile-component > div > div.vc-page-body > div > div.vc-page-body__detail-row.slds-grid_align-spread.slds-wrap > div > div.slds-text-title.slds-truncate.vc-page-body__detailBlock-title.vc-font-suisseIntlRegular > lightning-helptext > div > lightning-button-icon > button {
+  font-size: 0px !important;
+  }
+
+  .comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-investment-files > div > c-back-button > div > a{
+    margin-left: 18px;
+    margin-top: 68px;
+    z-index: 9;
+  }
+
+
+
+  /* 293 END */
+
+
+/*@media screen and (max-width: $md) {
+    min-height: calc(100vh - 128px) !important;
+}*/
+.comm-page-detail-005 {
+  overflow-x: hidden;
+}
+
+.comm-page-detail-005 .slds-size_2-of-12 {
+  background-color: #fff;
+}
+
+.comm-page-detail-005 .slds-size_10-of-12 {
+  background-color: #f7f7f7;
+}
+
+.comm-page-detail-005 .slds-size_10-of-12 * {
+  font-family: "SuisseIntl-light", "Montserrat", sans-serif;
+}
+
+/* VEN - 138  added for helptext-icon alignment*/
+.comm-page-detail-005 .slds-size_10-of-12 .slds-form-element__icon {
+  padding-top: 0 !important;
+  vertical-align: baseline !important;
+}
+
+/* VEN - 138  added for helptext-icon alignment*/
+.helpText .slds-form-element .slds-form-element__legend {
+  font-weight: var(--lwc-fontWeightBold, 700);
+  float: left;
+  width: auto;
+}
+
+.helpText .slds-form-element lightning-helptext>.slds-form-element__icon {
+  padding-top: var(--lwc-spacingXxxSmall, 0.125rem);
+}
+
+/*VEN-138*/
+.helpTextHIN lightning-helptext>.slds-form-element__icon {
+  padding-top: 0.9px !important;
+}
+
+.comm-page-detail-005 .siteforceContentArea {
+  overflow-x: hidden;
+  padding: 30px 30px;
+  background-color: #fff;
+  /*VEN-284 - Adjusted margin from 77px to 0 and set padding to 77px;*/
+  margin-top: 0px;
+  padding-top: 77px;
+}
+
+.comm-page-detail-005 .siteforceContentArea:before {
+  content: "My Profile";
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: "Caxton-2", "Montserrat", sans-serif;
+  /* font-weight: 700; */
+  color: #000;
+}
+
+.comm-page-detail-005 .siteforceContentArea .slds-card {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  padding: 20px;
+  height: 100%;
+  border-radius: 0 !important;
+}
+
+.comm-page-detail-005 .siteforceContentArea .slds-card__body .slds-scrollable {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.comm-page-detail-005 .siteforceContentArea .slds-card__body .slds-scrollable img.circular-photo {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.comm-page-detail-005 .siteforceContentArea .cb-section_row .cb-section_column>div {
+  height: 100%;
+}
+
+.comm-page-detail-005 .siteforceContentArea .cb-section_row .cb-section_column>div>.ui-widget {
+  height: 100%;
+}
+
+.comm-page-detail-005 .siteforceContentArea .slds-card__body .lc-title {
+  margin: 0;
+  padding-bottom: 15px;
+  /* border-bottom: 2px solid #e1e6e8; */
+}
+
+.comm-page-detail-005 .siteforceContentArea .slds-card__body .lc-title p {
+  color: #000;
+  font-size: 18px;
+  padding: 0;
+  font-family: "SuisseIntl-Regular", "Montserrat", sans-serif;
+  /* font-weight: 800; */
+}
+
+.comm-page-detail-005 .siteforceContentArea .slds-card__body button.edit-button {
+  color: #d95baa;
+  font-family: "SuisseIntl-Light", "Montserrat", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+}
+
+.comm-page-detail-005 .lc-popover .slds-backdrop {
+  background-color: #000000c4;
+}
+
+.comm-page-detail-005 .slds-modal__container .slds-card__header h2.slds-card__header-title span {
+  color: #000;
+  font-size: 18px;
+  padding: 0;
+  font-family: "Caxton-2", sans-serif;
+  /* font-weight: 800; */
+}
+
+.comm-page-detail-005 .slds-modal__container .slds-card__body .lc-title {
+  border-bottom: 2px solid #e1e6e8;
+}
+
+.comm-page-detail-005 .slds-modal__container .slds-modal__content {
+  border: none;
+  box-shadow: none;
+}
+
+.comm-page-detail-005 .slds-modal__container .slds-card__header .slds-icon-utility-close {
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.comm-page-detail-005 .slds-modal__container .slds-card__header .slds-icon-utility-close svg {
+  width: 20px;
+  height: 20px;
+  transition: all 300ms ease;
+}
+
+.comm-page-detail-005 .slds-modal__container .slds-card__header .slds-icon-utility-close:hover svg {
+  transform: rotate(90deg);
+}
+
+.comm-page-detail-005 .slds-modal__container label.slds-form-element__label {
+  font-family: "SuisseIntl-Regular", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+.comm-page-detail-005 .slds-modal__container input[type=text],
+.comm-page-detail-005 .slds-modal__container textarea {
+  padding: 10px 20px;
+  border: 1px solid #3a3a3a;
+}
+
+.comm-page-detail-005 .slds-modal__container button.slds-button {
+  background-color: #000;
+  width: 100%;
+  font-family: "Caxton-2", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  padding: 4px 20px;
+  max-width: 180px;
+  display: inline-block;
+  transition: all 300ms ease;
+  /* margin-top: 26px; */
+  border-radius: 30px;
+}
+
+.comm-page-detail-005 .slds-modal__container button.slds-button:hover {
+  background-color: #D95BAA;
+  border-color: #D95BAA;
+}
+
+/*@media screen and (max-width: $md) {
+    min-height: calc(100vh - 128px) !important;
+}*/
+.comm-page-usersettings {
+  /* background-color: #000; */
+  /* #### MODAL #### */
+}
+
+.comm-page-usersettings .siteforceContentArea {
+  padding: 30px;
+  background-color: #000;
+}
+
+.comm-page-usersettings .siteforceContentArea * {
+  font-family: "SuisseIntl-Light";
+}
+
+.comm-page-usersettings .siteforceContentArea h1.texttitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .row.slds-m-top--medium {
+  display: none;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection {
+  display: block;
+  margin: 0;
+  margin-right: 40px;
+  width: 100%;
+  max-width: 320px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection {
+    margin-right: 0px;
+  }
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection h2.texttitle {
+  color: #fff;
+  border-bottom: 1px solid #c3cdd1;
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  font-family: "SuisseIntl-Regular";
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox {
+  display: block;
+  width: 100%;
+  margin: 0 0 15px 0 !important;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox * {
+  font-weight: 400;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox a.changepassword {
+  color: #844cea;
+  font-weight: 800;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox .settingsLabel {
+  color: #fff;
+  font-size: 13px;
+  font-family: "SuisseIntl-Regular";
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox .settingsLabel span {
+  color: #fff;
+  font-size: 13px;
+  font-family: "SuisseIntl-Regular";
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox .settingsOutputbox {
+  font-size: 14px;
+  color: #fff;
+  font-family: "SuisseIntl-Light";
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .accountSection .sectionbox input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 12px 15px;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  height: auto;
+  line-height: 1em;
+  color: #000;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection {
+  display: block;
+  margin: 0;
+  width: 100%;
+  max-width: 320px;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection h2.texttitle {
+  color: #fff;
+  border-bottom: 1px solid #c3cdd1;
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  font-family: "SuisseIntl-Regular";
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection .sectionbox {
+  display: block;
+  width: 100%;
+  margin: 0 0 15px 0 !important;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection .sectionbox * {
+  font-weight: 400;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection .sectionbox label {
+  color: #fff;
+  font-family: "SuisseIntl-Regular";
+  font-size: 12px;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection .sectionbox label span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .locationSection .sectionbox input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 12px 15px;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  height: auto;
+  line-height: 1em;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .lastRow {
+  width: 100%;
+  display: block;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .lastRow .savecancelbuttoncontainer {
+  float: none;
+  width: 100%;
+  text-align: left;
+  margin: 50px 0 0 0;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .lastRow .savecancelbuttoncontainer .saveButton {
+  background-color: #fff;
+  display: inline-block;
+  text-transform: none;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 6px 45px;
+  transition: all 0.3s ease;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .lastRow .savecancelbuttoncontainer .saveButton:hover {
+  background-color: #d95baa;
+  border-color: #d95baa;
+  color: #fff;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .lastRow .savecancelbuttoncontainer .cancelButton {
+  background-color: transparent;
+  color: #fff;
+  display: inline-block;
+  text-transform: none;
+  border-radius: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #fff;
+  padding: 6px 45px;
+  transition: all 0.3s ease;
+}
+
+.comm-page-usersettings .siteforceContentArea .forceCommunityUserSettingsInternal>div .lastRow .savecancelbuttoncontainer .cancelButton:hover {
+  color: #D95BAA;
+  border-color: #D95BAA;
+}
+
+.comm-page-usersettings .modal-glass {
+  background-color: #000;
+}
+
+.comm-page-usersettings .slds-modal__container {
+  max-width: 504px !important;
+  min-width: 320px !important;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header h2.title {
+  color: #000;
+  font-size: 18px;
+  padding: 32px 0 0 0;
+  margin: 0 40px;
+  font-weight: 800;
+  width: 100%;
+  text-align: left;
+  line-height: 1em;
+  font-family: "Caxton-4";
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header h2.title:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #e1e6e8;
+  margin-top: 20px;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header button {
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header button svg {
+  width: 20px;
+  height: 20px;
+  transition: all 300ms ease;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header button svg path {
+  fill: #000;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__header button:hover svg {
+  transform: rotate(90deg);
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content {
+  flex: none;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row {
+  display: block !important;
+  padding-top: 0px;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox {
+  padding: 0 40px;
+  margin-bottom: 0;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox span.errorMessage {
+  display: block;
+  font-weight: 7400;
+  float: none;
+  width: 100%;
+  margin-left: 0;
+  font-size: 12px;
+  margin-top: 14px;
+  line-height: 1.4em;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox span.passwordRules {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "SuisseIntl-Light";
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox ul.passwordRules {
+  margin: 0;
+  padding: 0;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox ul.passwordRules li {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "SuisseIntl-Light";
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox .settingslabel {
+  width: 100%;
+  float: none;
+  text-align: left;
+  display: block;
+  font-family: "SuisseIntl-Regular";
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox .settingslabel span {
+  text-align: left;
+  font-weight: 400;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox .settingslabel span.required {
+  float: none;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__content .row .sectionbox input[type=password] {
+  padding: 10px 20px;
+  border: 1px solid #3a3a3a;
+  float: none;
+  width: 100% !important;
+  margin: 9px 0 0 0 !important;
+  height: auto;
+  color: #000;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__footer {
+  border: none;
+  padding: 0 37px 20px 37px;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__footer .forceModalActionContainer--footerAction {
+  width: 100%;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__footer button.slds-button {
+  background-color: #000;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  padding: 4px 20px;
+  max-width: 140px;
+  display: inline-block;
+  transition: all 300ms ease;
+  margin-top: 0;
+  border-radius: 30px;
+  border: 1px solid #000;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__footer button.slds-button:hover {
+  background-color: #D95BAA;
+  border-color: #D95BAA;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__footer button.slds-button.uiButton--neutral {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.comm-page-usersettings .slds-modal__container .slds-modal__footer button.slds-button.uiButton--neutral:hover {
+  border-color: #D95BAA;
+  color: #D95BAA;
+  background-color: transparent;
+}
+
+/*@media screen and (max-width: $md) {
+    min-height: calc(100vh - 128px) !important;
+}*/
+.comm-page-detail {
+  background-color: #f7f7f7;
+}
+
+.comm-page-detail .siteforceContentArea {
+  margin-top: 112px;
+  /* Global link styling for page*/
+  /* Main Grid */
+  /* Header */
+}
+
+.comm-page-detail .siteforceContentArea * {
+  font-family: "SuisseIntl-Regular", sans-serif;
+}
+
+.comm-page-detail .itemBody .test-id__field-value {
+  font-family: "SuisseIntl-Light", sans-serif;
+  font-size: 13px;
+}
+
+.comm-page-detail .siteforceContentArea .itemBody a {
+  font-family: "SuisseIntl-Light", sans-serif;
+  font-size: 13px;
+  color: #D95BAA;
+  text-decoration: underline;
+  border: none !important;
+}
+
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  margin: 30px;
+  border-radius: 10px;
+  /* Notes and attachements */
+}
+/* VEN-293 --  added code to bolden field label  */
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap div[data-region-name=content]:before {
+  content: "Account";
+  display: block;
+  border-bottom: 1px solid #1b1b1b;
+  margin: 0 27px;
+  font-family: "Caxton-2";
+  color: #000;
+  padding: 20px 0 10px 0;
+  font-weight: 600;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap div[data-region-name=content] .slds-page-header__title span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.1000000015px;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article {
+  border: none !important;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader {
+  background-color: transparent !important;
+  border-bottom: 1px solid #1b1b1b;
+  border-radius: 0;
+  padding: 10px 0 3px 0 !important;
+  /* Icon */
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader .slds-media__figure.stencil.slds-avatar.slds-avatar_small {
+  display: none;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader .actionsContainer ul li {
+  border: none;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader .actionsContainer a {
+  background-color: #844cea;
+  width: 100%;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  padding: 4px 17px;
+  font-size: 14px;
+  max-width: 180px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: none;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader .actionsContainer a div {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader .actionsContainer a:hover {
+  background-color: #462971;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListCardHeader h2 a span {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListPreview span.itemTitle,
+.comm-page-detail .siteforceContentArea .slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap .forceRelatedListSingleContainer article .forceRelatedListPreview span.view-all-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #844cea;
+  text-decoration: underline;
+  border: none;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper {
+  padding: 0 18px;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper .analyticsEmbeddedReportChart {
+  display: flex;
+  flex-direction: column;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper .analyticsEmbeddedReportChart div[data-ngname=legend_chart_0] {
+  display: none;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper .analyticsEmbeddedReportChart .outerbound {
+  background: linear-gradient(98.18deg, #662385 0%, #1d7da4 33.9%, #02c8c8 100%);
+  border-radius: 12px;
+  order: 2;
+  width: 100%;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper .analyticsEmbeddedReportChart .outerbound .touch-mask {
+  pointer-events: none;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper .analyticsEmbeddedReportChart .lightning {
+  order: 1;
+  width: 100%;
+}
+
+.comm-page-detail .siteforceContentArea .reportChartFrameWrapper .analyticsEmbeddedReportChart .lightning span.asOfDate {
+  color: #000 !important;
+  font-size: 20px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+}
+/* VEN-293 --  added code to bolden field label  */
+.comm-page-detail > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div.slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap > div.slds-col--padded.slds-size--12-of-12.slds-medium-size--8-of-12.slds-large-size--8-of-12.comm-layout-column > div > div:nth-child(3) > div > div > article > div.test-id__record-layout-container.riseTransitionEnabled > div > div > div > div span.test-id__field-label {
+  font-weight: 600;
+}
+.comm-page-detail > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div.slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap > div.slds-col--padded.slds-size--12-of-12.slds-medium-size--8-of-12.slds-large-size--8-of-12.comm-layout-column > div > div:nth-child(3) > div > div > article > div > div:nth-child(1) > div > div span.test-id__field-label{
+  font-weight: 600;
+}
+
+.comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div.slds-col--padded.contentRegion.comm-layout-column > div > div > c-investment-files > div > div > c-back-button > div > a {
+  margin-top: 80px;
+  z-index: 99;
+  margin-left: 15px;
+}
+.comm-page-custom-files  > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div {
+  margin-top: 70px;
+}
+
+
+.comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div {
+  margin-top: 112px;
+}
+
+.comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div.slds-col--padded.contentRegion.comm-layout-column {
+
+  
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div.slds-col--padded.contentRegion.comm-layout-column {
+
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div {
+  background: black;
+}
+
+.comm-page-custom-files > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-investment-files > div > c-back-button {
+  width: 200%;
+  margin-left: -20px;
+  display: block;
+  background-color: black;
+  height: 118px;
+}
+
+
+.comm-page-detail > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div.slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap > div.slds-col--padded.slds-size--12-of-12.slds-medium-size--4-of-12.slds-large-size--4-of-12.comm-layout-column > div > div > c-investment-files > article > div:nth-child(3) > footer > div > button.slds-button:hover {
+  color: #d95baa !important;
+  border-color: #d95baa !important;
+}
+
+.comm-page-detail > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div.slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap > div.slds-col--padded.slds-size--12-of-12.slds-medium-size--4-of-12.slds-large-size--4-of-12.comm-layout-column > div > div > c-investment-files > article button.slds-button:hover {
+  color: #d95baa !important;
+  border-color: #d95baa !important;
+}
+
+body > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-investment-files > article > div.slds-card__header.slds-grid > header > div:nth-child(4) > button.slds-button:hover {
+  color: #d95baa !important;
+  border-color: #d95baa !important;
+}
+body > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div > div > div > div.cb-section_row.slds-grid.slds-wrap.slds-large-nowrap > div > div > div > c-investment-files > article > div.slds-card__header.slds-grid > header > div:nth-child(3) > button.slds-button:hover {
+  color: #d95baa !important;
+  border-color: #d95baa !important;
+}
+
+
+/* VEN-293 --  added code to bolden field label  */
+
+
+
+.comm-page-custom-my-entities {
+  background-color: #000;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea {
+  overflow-x: hidden;
+  padding: 30px 30px;
+  margin-top: 77px;
+  background-color: #fff;
+  /* What the fuck is this */
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea {
+   margin-top: 90px;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .forceCommunityRichText p span {
+  font-family: "Caxton-4", "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #000 !important;
+  font-size: 16px !important;
+  font-style: normal;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection {
+  /* Card styles */
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 {
+    width: 100%;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 * {
+  font-family: "Montserrat", sans-serif;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout {
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  height: 174px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout {
+    height: 207px !important;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout:after {
+  content: "";
+  background-color: #f6f6f6;
+  display: block;
+  height: 86px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout:after {
+    height: 127px;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative {
+  position: relative !important;
+  height: 250px !important;
+  /* Background image */
+  /* */
+  /* Main Content */
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative {
+    height: 300px !important;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative>div>div.slds-scrollable_none {
+  display: block;
+  width: 48px !important;
+  height: 48px !important;
+  top: 20px !important;
+  left: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .flagContainer {
+  display: none;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container {
+  z-index: 2 !important;
+  /* Investment Amount */
+  /* View button */
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container * {
+  color: #000 !important;
+  background-color: #fff;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-title {
+  position: absolute;
+  left: 85px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  top: 24px;
+  z-index: 4;
+  text-align: left;
+  line-height: 0.85em;
+  overflow: visible;
+}
+
+/* VEN 286 - Updates for the spacing  */
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-title span {
+  font-family: "SuisseIntl-Regular", sans-serif;
+  font-weight: 800;
+ /* changed white-space: nowrap;*/
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* added */
+  width: 100%;
+  line-height: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-title {
+    font-size: 20px;
+    height: auto;
+    max-height: 2em;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container p.js-content-subtitle {
+  position: absolute;
+  left: 85px;
+  font-family: "SuisseIntl-Regular", sans-serif !important;
+  top: 28px;
+  z-index: 4;
+  color: #000 !important;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container p.js-content-subtitle span {
+  color: #fff !important;
+  font-family: "SuisseIntl-Regular", sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container p.js-content-subtitle {
+    font-size: 14px;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata {
+  position: absolute;
+  top: 113px;
+  /* changes 286 */
+  left: 40.66%;
+  padding: 0;
+  z-index: 4;
+  width: auto;
+  margin: 0;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata {
+    top: 100px;
+    left: 33.333%;
+    width: auto;
+    text-align: left;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata li {
+  list-style: none;
+  font-family: "SuisseIntl-Light" !important;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata li:nth-child(1):before {
+  content: "BSB";
+  display: block;
+  color: #000 !important;
+  font-family: "SuisseIntl-Regular", sans-serif !important;
+  padding-bottom: 5px;
+    /* VEN - 286 - Changed from 14px to 16px  */
+    font-size: 16px;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata li:nth-child(2) {
+  margin-left: 18px;
+}
+
+/* added 286 */
+@media screen and (max-width: 368px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata li:nth-child(2) {
+    margin-left: 0px;
+  }
+}
+
+
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-metadata li:nth-child(2):before {
+  content: "Account Number";
+  display: block;
+  color: #000 !important;
+  font-family: "SuisseIntl-Regular", sans-serif !important;
+  padding-bottom: 5px;
+  /* VEN - 286 - Changed from 14px to 16px  */
+  font-size: 16px;
+  margin: 0;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime {
+  position: absolute;
+  left: 25px;
+  top: 114px;
+  text-align: left;
+  z-index: 4;
+  font-family: "SuisseIntl-Light", sans-serif;
+  margin: 0;
+  width: auto;
+  line-height: 1.1em;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime {
+    left: 20px;
+    width: 33.333%;
+    top: 100px;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-datetime:before {
+  content: "Date";
+  display: block;
+  color: #000 !important;
+  font-family: "Montserrat", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow {
+  position: absolute;
+  top: 114px;
+  z-index: 4;
+  text-align: left;
+  left: 30px;
+  margin: 0 !important;
+  width: auto;
+  line-height: 1.1em;
+}
+
+/* VEN 286 - Changed */
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow {
+    top: 100px;
+    left: 20px;
+    /* VEN 286 - Changed width: 33.333%; to width: 24.333%;*/
+    width: 24.333%;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1920px)  {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow {
+    /* VEN 286 - Changed width: 33.333%; to width: 24.333%;*/
+    width: 33.333%;
+  }
+}
+
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow span {
+  display: block;
+  position: relative;
+  font-family: "SuisseIntl-Light", sans-serif;
+  font-size: 13px;
+
+  /* Added 286 */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container .js-content-eyebrow:before {
+  content: "Account Name";
+  display: block;
+  color: #000 !important;
+  font-family: "SuisseIntl-Regular", sans-serif !important;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container button.slds-button {
+  position: absolute;
+  bottom: 102px !important;
+  right: 30px !important;
+  background-color: transparent;
+  padding: 0;
+  width: auto;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #D95BAA !important;
+  border: none;
+  z-index: 4;
+  display: inline-block;
+  transition: all 300ms ease;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container button.slds-button {
+    max-width: 100%;
+    width: 90%;
+    top: 163px;
+    display: block;
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0 !important;
+    border-top: 1px solid #0003d;
+    text-transform: capitalize;
+  }
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection button.viewMoreButton {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #844cea;
+  transition: all 300ms ease;
+  font-size: 14px;
+  display: inline-block;
+  padding: 4px 30px;
+  margin-top: 20px;
+}
+
+.comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection button.viewMoreButton:hover {
+  background-color: #5d3796;
+  color: #fff;
+}
+
+/* .comm-page-detail-001 {
+  background-color: #f7f7f7;
+} */
+
+.comm-page-detail-001 .siteforceContentArea {
+  overflow-x: hidden;
+  padding: 30px 30px;
+  margin-top: 77px;
+  background-color: #000;
+}
+
+.comm-page-detail-001 .forceRecordLayout .full.forcePageBlockSectionView .slds-section__title {
+  color: #000 !important;
+}
+
+.comm-page-detail-001 .forcePageBlockItemView .slds-form-element__static,
+.comm-page-detail-001 .forcePageBlockItemEdit input,
+.comm-page-detail-001 .forcePageBlockItemEdit textarea {
+  color: #000;
+  font-family: "SuisseIntl-Light";
+  font-size: 13px;
+}
+
+.comm-page-detail-001 .forcePageBlockItemEdit input {
+  border-color: grey;
+}
+
+.comm-page-detail-001 .forceRecordEditActions .forceActionButton.uiButton--brand {
+  background-color: #000;
+  border-radius: 30px;
+  font-family: "Caxton-2", sans-serif;
+  color: #fff;
+  border-color: inherit;
+  padding: 5px 30px;
+}
+
+.comm-page-detail-001 .forceRecordEditActions .forceActionButton.uiButton--brand:hover {
+  background-color: #D95BAA;
+}
+
+.comm-page-detail-001 .forceRecordEditActions .forceActionButton.uiButton--neutral {
+  background-color: transparent;
+  border-radius: 30px;
+  border-color: #000;
+  font-family: "Caxton-2", sans-serif;
+  color: #000;
+  padding: 5px 20px;
+}
+
+.comm-page-detail-001 .forceRecordEditActions .forceActionButton.uiButton--neutral:hover {
+  color: #D95BAA;
+  border-color: #D95BAA;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-detail-001 .siteforceContentArea {
+    margin-top: 90px;
+  }
+}
+
+.comm-page-detail-001 .siteforceContentArea .forceRelatedListCardHeader .actionsContainer {
+  display: none;
+}
+
+
+/* Ven 272  */
+
+	/* Mobile */	
+  .comm-page-detail-001 > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div > div.panel-header > button > span.bBody {	
+    font-family: "SuisseIntl-Regular" !important;	
+    color: #D95BAA;	
+  }	
+  .comm-page-detail-001 > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div > div > div > div.slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap > div.slds-col--padded.slds-size--12-of-12.slds-medium-size--8-of-12.slds-large-size--8-of-12.comm-layout-column > div > div:nth-child(2) > div > button:focus{	
+    background-color: white;	
+  }	
+  /* Tablet */	
+  .comm-page-detail-001 > div.TABLET.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.container {	
+    max-width: 100%;	
+  }	
+  .comm-page-detail-001 > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div.slds-grid.slds-wrap.slds-medium-nowrap.slds-large-nowrap > div.slds-col--padded.slds-size--12-of-12.slds-medium-size--8-of-12.slds-large-size--8-of-12.comm-layout-column > div > div:nth-child(2) > div > button:focus {	
+    background-color: white;	
+  }	
+  body > div.TABLET.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.IOS > div.panel-header > button >	
+  span.bBody {	
+    font-family: "SuisseIntl-Regular" !important;	
+    color: #D95BAA;	
+  }	
+  .comm-page-detail-001.siteforce-Modal-Open > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.IOS.container {	
+    max-width: 100% !important;	
+  }
+  @media screen and (max-width: 1312px) {
+    .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout{
+
+    height: 207px !important;
+  }
+  .comm-page-custom-my-entities .siteforceContentArea .js-dynamic-collection .forceCommunityDynamicCollectionGrid .slds-grid .slds-large-size_1-of-2 .forceCommunityBannerLayout>div.slds-is-relative .slds-template__container button.slds-button {
+    max-width: 100%;
+    width: 90%;
+    top: 163px;
+    display: block;
+    margin: 0 auto;
+    left: 0 !important;
+    right: 0 !important;
+    border-top: 1px solid #0003d;
+    text-transform: capitalize;
+  }
+  .comm-page-detail-001 .siteforceContentArea {
+  margin-top: 70px;
+  }
+}
+/* Ven 272 End */
+
+
+/*@media screen and (max-width: $md) {
+    min-height: calc(100vh - 128px) !important;
+}*/
+.comm-page-relatedlist {
+  background-color: #f7f7f7;
+}
+
+.comm-page-relatedlist .siteforceContentArea {
+  margin-top: 110px;
+}
+
+.comm-page-relatedlist .siteforceContentArea * {
+  font-family: "SuisseIntl-Regular";
+}
+
+.comm-page-relatedlist .siteforceContentArea div[data-region-name=content] {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.105);
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.comm-page-relatedlist .siteforceContentArea div[data-region-name=content] .slds-page-header ul.branding-actions li {
+  border: none;
+}
+
+.comm-page-relatedlist .siteforceContentArea div[data-region-name=content] .slds-page-header ul.branding-actions li a {
+  background-color: #D95BAA;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 22px;
+  font-family: "gilroyregular";
+  transition: all 300ms ease;
+  display: none;
+}
+
+/* VEN-260 -- Disable links to only show download START */
+.comm-page-relatedlist > div.DESKTOP.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div > div.modal-body > div.forceContentBasePreviewPlayer > div > div.toolbar > div.slds-grid > div.file-preview-buttons > div.forceContentPreviewerActionsBar > div.uiMenu{
+  display: none;
+}
+.comm-page-relatedlist > div.branding-actions > div.actionMenu > ul > li:nth-of-type(3){
+  display: none;
+}
+.comm-page-relatedlist > div.branding-actions > div.actionMenu > ul > li:nth-of-type(5){
+  display: none;
+}
+.comm-page-relatedlist > div.branding-actions > div.actionMenu > ul > li:nth-of-type(6){
+  display: none;
+}
+.comm-page-relatedlist > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div > div.slds-col.slds-size_10-of-12 > div > div > div > div.slds-col--padded.contentRegion.comm-layout-column > div > div > div > div > div > div.slds-page-header--object-home.slds-page-header_joined.slds-page-header_bleed.slds-page-header.slds-shrink-none.test-headerRegion.forceListViewManagerHeader > div:nth-child(1) > div.slds-col.slds-has-flexi-truncate.firstHeaderRow > div > div > lst-breadcrumbs > nav > ol > li:nth-child(2) > a {
+            pointer-events: none;
+            color: #6b6b6b;
+            cursor: default;
+}
+
+body > div.themeLayoutStarterWrapper.isHeroUnderHeader-false.isHeaderPinned-false.siteforceThemeLayoutStarter > div.body.isPageWidthFixed-true > div > div.slds-col--padded.contentRegion.comm-layout-column > div > div > div > div > div.slds-col.slds-size_1-of-1.slds-m-bottom_medium > div > button:nth-child(1)
+{
+  width: 100%;
+}
+
+body > div.themeLayoutStarterWrapper.isHeroUnderHeader-false.isHeaderPinned-false.siteforceThemeLayoutStarter > div.body.isPageWidthFixed-true > div > div.slds-col--padded.contentRegion.comm-layout-column > div > div > div > div > div.slds-col.slds-size_1-of-1.slds-m-bottom_medium > div > button:nth-child(2)
+{
+  display: none;
+}
+body > div.themeLayoutStarterWrapper.isHeroUnderHeader-false.isHeaderPinned-false.siteforceThemeLayoutStarter > div.body.isPageWidthFixed-true > div > div.slds-col--padded.contentRegion.comm-layout-column > div > div > div > div > div.slds-col.slds-size_1-of-1.slds-m-bottom_medium > div > button:nth-child(3) {
+  display: none;
+}
+
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE >
+div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar.fadeOut > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(2) {
+  display: none;
+}
+
+
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE > div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(2) {
+  display: none;
+}
+
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE > div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(1) {
+  align-items: baseline;
+}
+
+
+
+
+body > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE.preview.slds-card.forceContentBasePreviewPlayer.forceContentPreviewPlayer.forceContentMobilePreviewPlayer > div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar > div.slds-p-top_xx-small.slds-p-right--medium > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default.visible.positioned > div.slds-dropdown_right > ul > li > a > button.slds-float_left slds-p-left_xxx-small.actionbutton.uiButton--default.uiButton--neutral.uiButton {
+  align-items: baseline;
+}
+
+
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE >
+div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar.fadeOut > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(1) {
+  align-items: baseline;
+}
+
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE >
+div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar.fadeOut > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(2) > img {
+  display: none;
+}
+
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE >
+div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar.fadeOut > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(2) > span {
+  display: none;
+}
+.comm-page-relatedlist > div.PHONE.comm-panels-container.uiContainerManager.siteforcePanelsContainer > div > div.panel.slds-modal.slds-fade-in-open > div.modal-container.slds-modal__container > div.modal-body.scrollable.slds-modal__content > div.AVAILABLE >
+div.slds-grid.slds-grid--align-spread.slds-p-top--medium.slds-p-bottom--medium.forceContentMobilePreviewPlayerTopToolbar.fadeOut > div.slds-p-top_xx-small.slds-p-right--medium > div > div.slds-dropdown_right.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default > div > ul > li > a > button:nth-child(2) > lightning-icon {
+  display: none;
+}
+
+.comm-page-relatedlist > div.mainContentAreaForPortfolio.cVentureCrowdThemeLayoutTest > div.slds-col.slds-size_12-of-12 > div.slds-grid.slds-grid_vertical > div.slds-col > div.siteforceSldsOneColLayout.siteforceContentArea > div.slds-col--padded.contentRegion.comm-layout-column > div > div.ui-widget > div.forceCommunityRelatedList > div.slds-grid.slds-grid--vertical-align-start.slds-line-height--reset.forceCommunityActionsContainerMobile > button.slds-button.slds-button--neutral.slds-line-height--reset.slds-p-vertical--none.slds-m-around--none.slds-m-left--none.slds-size--1-of-1.buttonOutsideOverflow.uiButton.forceCommunityActionButtonMobile {
+  display: none;
+}
+
+
+/* VEN-260 -- Disable links to only show download  END*/
+
+.comm-page-relatedlist .siteforceContentArea div[data-region-name=content] .slds-page-header ul.branding-actions li a:hover {
+  background-color: #dbdbdb;
+}
+
+.comm-page-relatedlist .siteforceContentArea div[data-region-name=content] nav ol li a span {
+  font-family: "gilroysemibold" !important;
+  font-size: 14px;
+  color: #D95BAA;
+  text-decoration: underline;
+  border: none;
+}
+
+.comm-page-relatedlist .siteforceContentArea .slds-table a {
+  font-family: "SuisseIntl-Regular" !important;
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
+  border: none;
+}
+
+/* Check Password */
+.comm-page-check-password .slds-size_10-of-12 {
+  box-shadow: 0 70px 110px -30px #00000026;
+  /*margin-bottom: 380px; - VEN-296 - Simplus - Commented out to remove the gray area under the page content*/
+  position: relative;
+  z-index: 800;
+  padding-top: 70px;
+  /*& > .slds-grid.slds-grid_vertical {
+      & > .slds-col:nth-child(2) {
+      }
+  }*/
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-check-password .slds-size_10-of-12 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .comm-page-check-password .slds-size_10-of-12 {
+    margin-bottom: 598px;
+  }
+}
+
+.comm-page-check-password .siteforcePlaceholderComponent {
+  display: none;
+}
+
+.comm-page-check-password .siteforceContentArea {
+  min-height: 690px;
+  margin: 70px auto 0 auto;
+}
+
+.comm-page-check-password .siteforceContentArea * {
+  font-family: "SuisseIntl-Light", sans-serif !important;
+}
+
+.comm-page-check-password .siteforceContentArea h3.page-heading {
+  font-family: "SuisseIntl-Bold", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.comm-page-check-password .siteforceContentArea .page-text {
+  font-size: 14px;
+}
+
+.comm-page-check-password .siteforceContentArea .button-container a {
+  background-color: #000;
+  width: 100%;
+  border-radius: 30px;
+  font-family: "Caxton-2", sans-serif !important;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  max-width: 180px;
+  display: inline-block;
+  transition: all 300ms ease;
+  border-color: inherit;
+}
+
+.comm-page-check-password .siteforceContentArea .button-container a:hover {
+  background-color: #D95BAA;
+  text-decoration: none;
+}
+
+/* Forgot Passsword */
+.comm-page-forgot-password .slds-size_10-of-12 {
+  box-shadow: 0 70px 110px -30px #00000026;
+  /*margin-bottom: 380px; - VEN-296 - Simplus - Commented out to remove the gray area under the page content*/
+  position: relative;
+  z-index: 800;
+  padding-top: 70px;
+  /*& > .slds-grid.slds-grid_vertical {
+      & > .slds-col:nth-child(2) {
+      }
+  }*/
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-forgot-password .slds-size_10-of-12 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .comm-page-forgot-password .slds-size_10-of-12 {
+    margin-bottom: 598px;
+  }
+}
+
+.comm-page-forgot-password .siteforceContentArea * {
+  font-family: "suisseInte-Light", sans-serif !important;
+}
+
+.comm-page-forgot-password .password-reset-text {
+  font-size: 14px !important;
+}
+
+.comm-page-forgot-password .password-reset-text-reminder {
+  font-size: 12px !important;
+}
+
+.cForgotPasswordTheme .slds-size_2-of-12 {
+  display: none;
+}
+
+.cForgotPasswordTheme .slds-size_10-of-12 {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.cForgotPasswordTheme .divider {
+  height: 50px;
+}
+
+.cForgotPasswordTheme h3.password-reset {
+  font-family: "suisseInte-Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.comm-page-forgot-password .siteforcePlaceholderComponent {
+  display: none;
+}
+
+.vc-button-neutral_black,
+.comm-page-forgot-password .uiOutputRichText a {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  color: #000;
+  max-width: 200px;
+  border-radius: 30px;
+  font-family: "Caxton-2" !important;
+  font-size: 14px;
+}
+
+.vc-button-neutral_black:hover,
+.comm-page-forgot-password .uiOutputRichText a:hover {
+  border: 1px solid #D95BAA;
+  color: #D95BAA;
+  text-decoration: none;
+}
+
+.cForgotPasswordTheme p.password-reset-text {
+  font-size: 1.15em;
+}
+
+.cForgotPasswordTheme .salesforceIdentityForgotPassword2 {
+  text-align: center;
+}
+
+.cForgotPasswordTheme .salesforceIdentityForgotPassword2 .inputContainer {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 30px 0 30px 0;
+}
+
+.cForgotPasswordTheme .salesforceIdentityForgotPassword2 .inputBox {
+  padding: 15px;
+  margin: 0;
+  max-width: 323px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #000;
+  font-family: "suisseIntl-Light" !important;
+}
+
+.cForgotPasswordTheme .salesforceIdentityForgotPassword2 .inputIcon {
+  display: none;
+}
+
+.cForgotPasswordTheme .salesforceIdentityForgotPassword2 .uiButton {
+  background-color: #000;
+  max-width: 200px;
+  border-radius: 30px;
+  font-family: "Caxton-2" !important;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.cForgotPasswordTheme .salesforceIdentityForgotPassword2 .uiButton span {
+  font-family: "Caxton-2" !important;
+}
+
+/*@media screen and (max-width: $md) {
+    min-height: calc(100vh - 128px) !important;
+}*/
+.comm-page-custom-invest {
+  background-color: #f7f7f7;
+  /* ### SIDEBAR CONTAINER ### */
+}
+
+.comm-page-custom-invest .slds-size_2-of-12 {
+  display: none !important;
+}
+
+.comm-page-custom-invest .slds-size_10-of-12 {
+  width: 100%;
+}
+
+.comm-page-custom-invest .siteforceContentArea {
+  overflow-x: hidden;
+  padding: 30px 30px;
+  margin-top: 77px;
+  z-index: 600;
+  margin-bottom: 379px;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea {
+    margin-top: 48px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .comm-page-custom-invest .siteforceContentArea {
+    margin-bottom: 598px;
+  }
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--global-container {
+  width: 100%;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--heading {
+  margin-bottom: 10px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--heading span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--company>span {
+  display: flex;
+  align-items: center;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--company img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--company span.title {
+  font-family: "gilroysemibold";
+  font-size: 32px;
+  color: #000;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--input-amount .slds-grid {
+  border-bottom: 1px solid #00038;
+  padding: 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea .invest--input-amount .slds-grid {
+    font-size: 14px;
+  }
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--input-amount .slds-grid p.invest--amount-label {
+  padding: 10px 0;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--input-amount .slds-grid .invest--amount-field {
+  text-align: right;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--input-amount .slds-grid .invest--amount-field p {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 4px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--input-amount .slds-grid .invest--amount-field p span {
+  text-decoration: underline;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--securities-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea .invest--securities-heading {
+    font-size: 14px;
+  }
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--securities-amount .securities--title {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--securities-amount .securities--value {
+  color: #000;
+  font-family: "gilroysemibold";
+  font-size: 22px;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea .invest--securities-amount .securities--value {
+    font-size: 18px;
+  }
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--total-payment {
+  margin-top: 30px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--total-payment .slds-grid {
+  background-color: #000;
+  border-radius: 6px;
+  font-family: "gilroysemibold";
+  color: #fff;
+  font-size: 26px;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea .invest--total-payment .slds-grid {
+    font-size: 19px;
+  }
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--investing-as {
+  margin-top: 30px;
+  border-bottom: 1px solid #00038;
+  padding-bottom: 30px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--investing-as .investing-as-container {
+  display: flex;
+  align-items: center;
+  font-family: "gilroysemibold";
+  font-size: 22px;
+  color: #000;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .comm-page-custom-invest .siteforceContentArea .invest--investing-as .investing-as-container {
+    font-size: 18px;
+  }
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--investing-as .investing-as-container .image-container {
+  margin-right: 10px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--investing-as .investing-as-container .image-container img {
+  border-radius: 50%;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--investing-as .investing-as-container span.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  display: block;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--terms {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #000;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--terms .terms-title {
+  font-weight: 700;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--terms .terms-subtitle {
+  margin-bottom: 15px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--terms .terms-form {
+  margin-bottom: 5px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--terms .terms-form a {
+  text-decoration: underline;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--terms .terms-footnote {
+  margin-top: 10px;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--button {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--button button {
+  background-color: #844cea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 9px 30px;
+  border-radius: 40px;
+  text-transform: uppercase;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you .thank-you-heading {
+  font-family: "gilroysemibold";
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you .thank-you-name {
+  font-family: "gilroysemibold";
+  font-size: 32px;
+  color: #000;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you .thank-you-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you .body-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you .body-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .invest--thank-you button {
+  background-color: #844cea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 9px 30px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .slds-modal .slds-modal__container {
+  max-width: 600px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.comm-page-custom-invest .siteforceContentArea .slds-modal img {
+  margin-bottom: 20px;
+}
+
+/* Error / 404 */
+.comm-page-error .siteforcePlaceholderComponent {
+  display: none;
+}
+
+/* VEN-124: Error Page White Spaces (Forest) - changes */
+.comm-page-error .siteforceContentArea {
+  background-color: #f9f9f9;
+  min-height: 690px;
+  margin: 0px auto 0 auto;
+  box-shadow: 0 70px 110px -30px #00000026;
+  /* margin-bottom: 380px; */
+  position: relative;
+  z-index: 800;
+  /* padding-top: 30px;
+  padding-bottom: 70px; */
+}
+
+/* VEN-248: Commented out due to font clashing */
+
+/* .comm-page-error .siteforceContentArea * {
+  font-family: "Montserrat", sans-serif !important;
+} */
+
+@media screen and (max-width: 768px) {
+  .comm-page-error .siteforceContentArea {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* VEN-248: Error Page White Spaces (Forest) - changes */
+/* @media screen and (max-width: 992px) {
+  .comm-page-error .siteforceContentArea {
+    margin-bottom: 598px;
+  }
+} */
+
+.comm-page-error .siteforceContentArea img {
+  max-width: 490px !important;
+  height: auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.comm-page-error .siteforceContentArea .forceCommunityRichTextInline p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) {
+  z-index: 600;
+  margin-bottom: 379px;
+  background-color: #f7f7f7;
+  /* ### BODY CONTAINER ### */
+  /* ### SIDEBAR CONTAINER ### */
+}
+
+@media screen and (max-width: 768px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) {
+    margin-bottom: 598px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2)>.slds-grid {
+    flex-direction: column;
+  }
+}
+
+.cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_10-of-12 {
+  min-height: calc(100vh - 382px);
+  box-shadow: 0 70px 110px -30px #00000026;
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_10-of-12 {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 {
+    height: auto;
+    width: 100%;
+    margin-top: 75px;
+    position: fixed;
+    z-index: 800;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav ul {
+    position: static;
+    top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav ul li {
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    border-radius: 30px;
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav ul li img {
+    display: none;
+  }
+}
+
+.cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav .sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav .sidebar-footer {
+    display: none;
+  }
+}
+
+.cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav .sidebar-footer .button-container a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Caxton-2" !important;
+  font-size: 15px;
+  transition: all 300ms ease;
+  background: transparent;
+}
+
+.cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav .sidebar-footer .button-container a:hover {
+  text-decoration: none;
+  color: #D95BAA;
+  border-color: #D95BAA;
+  background-color: transparent;
+}
+
+.cVentureCrowdThemeLayoutTest>.slds-col:nth-child(2) .slds-size_2-of-12 .cVerticalNav .sidebar-footer span {
+  font-family: "gilroyregular" !important;
+}
+
+.comm-page-detail .slds-col.slds-size_10-of-12,
+.comm-page-relatedlist .slds-col.slds-size_10-of-12 {
+  background-color: #000;
+}
+
+.vc-button-blackBackground {
+  font-family: 'Caxton-2';
+  font-size: 16px;
+  color: #FFFFFF !important;
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.vc-button-blackBackground:hover {
+  background-color: #D95BAA !important;
+  text-decoration: none !important;
+}

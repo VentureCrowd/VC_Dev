@@ -1,0 +1,108 @@
+<template>
+    <!--New Code starts here-->
+    <lightning-spinner if:true={showspinner}></lightning-spinner>
+    <div class="wrapper">
+        <div class="slds-grid vc-grid-wrap bg">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-5 vc_blurBox slds-p-bottom_small">
+                <div class="vc_column-left vc_text-color_white">
+                    <!--? Logo of the company -->
+                    <div class="vc_RegistrationPageLogo slds-p-bottom_medium">
+                        <input type="image" onclick={backButton} src={leftArrow} class="back-button"/>
+                    </div>
+                    <!--? Title and helping text -->
+                    <h1 class="vc-font-size_48 vc-font-caxton4 slds-p-bottom_medium">Begin your funding journey</h1>
+                    <!--TODO: Change class media vc_investorOption -->
+                    <div class="vc-font-size_21 vc-font-size-mob_15 vc-font-suisseIntlLight slds-p-bottom_xx-large">
+                        Complete the form below to instantly create an expression of interest page, and start your journey towards seamless capital raising.
+                    </div>
+                    <!--? First field   -->
+                    <p>Full legal name of company*</p>
+                    <lightning-input class="vc_inputField" type="text" label="Name of Company" data-id="name-company" required></lightning-input>
+
+                    <!--? Second Field -->
+                    <!--TODO: Change class media vc_investorOption -->
+                    <div>
+                        <p>Is your company registered in Australia?*</p>
+                        <div class="slds-media vc_investorOption slds-p-bottom_small">
+                            <!--? Radio Button for 'Yes' -->
+                            <div class="slds-media__figure">
+                                <input type="radio" id="australian-company-yes" name="companyRegistration" class="vc_radioInput"
+                                    value="Yes" onchange={handleRadioChange} checked />
+                            </div>
+                            <div class="slds-m-right_xx-large vc_text-color_white">
+                                <div class="vc-font-size_16 vc-font-size-mob_15 slds-p-top_xx-small">Yes</div>
+                            </div>
+                            <!--? Radio Button for 'No' -->
+                            <div class="slds-media__figure">
+                                <input type="radio" id="australian-company-no" name="companyRegistration" class="vc_radioInput"
+                                    value="No" onchange={handleRadioChange}/>
+                            </div>
+                            <div class="slds-media__body vc_text-color_white">
+                                <div class="vc-font-size_16 vc-font-size-mob_15 slds-p-top_xx-small">No</div>
+                            </div>
+                        </div>
+                        <!-- Conditionally Rendered Message -->
+                        <template if:true={isNoSelected}>
+                                <p class="slds-custom-error-message">We currently only raise capital for companies registered in Australia.</p>
+                        </template>
+                    </div>
+
+                    
+                    <!--? Company Website Field -->
+                    <!--TODO Change onchange to new function in Js -->
+                    <p>Company website*</p> 
+                    <lightning-input class="vc_inputField" type="text" label="company-website" data-id="company-website"
+                        onchange={urlValidation} placeholder="www.yourcompany.com"  required></lightning-input>
+
+                    <!--? Sector Field -->
+                    <p>Sector*</p>
+                    <lightning-combobox class="vc_combobox" 
+                    label="" 
+                    placeholder="Select an Industry"
+                    options={sectorOptions}
+                    data-id="company-sector" 
+                    onchange={handleSectorChange} 
+                    required>
+                    </lightning-combobox>
+
+                    <!--? Abn Field Website -->
+                    <p>ABN*</p> 
+                    <lightning-input max-length="14" class="vc_inputField" type="text" label="ABN" data-id="abn-number" 
+                        onchange={abnValidation} required></lightning-input>
+
+                    <!--? Button of Sign me up --> 
+                    <div class="slds-text-align_center slds-p-top_x-large">
+                        <div class="vc_btn-primary">
+                            <button name="lead" class="slds-button" onclick={handlePage4}>
+                                <div class="vc-button-box-container">
+
+                                    <div class="vc-font-caxton2 vc_buttonLabelWidth"> Sign me up </div>
+                                    <div class="slds-size_1-of-2 vc_forwardBtnIcon vc_buttonLabelWidth"> <img alt="Register"
+                                            src={BtnArrow} width="200px" height="26px" /> </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--? Right column - As seen on -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-5 vc-align_absolute-center-vertical ">
+                <div class="vc_column-right">
+                    <div class="slds-text-align_center">
+                        <div class="vc-font-size_25 vc-font-caxtonRegular">As seen on</div>
+                        <div class="slds-grid slds-grid_align-center vc_iconSetImage">
+                            <img alt="TheAustralian" src={australianIcon} />
+                            <img alt="BNA" src={bnaIcon} />
+                            <img alt="FR" src={frIcon} />
+                            <img alt="ausbiz" src={ausbizIcon} />
+                            <img alt="7" src={sevenIcon} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--New   Ends here-->
+    <iframe src={navigateTo} name="captchaFrame" onload={captchaLoaded} width="0" height="0" style="display:none;"></iframe>
+</template>

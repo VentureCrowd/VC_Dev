@@ -1,0 +1,41 @@
+.core-toast-message-container {
+    padding: var(--space-md) var(--space-xxl);;
+    width: 100%;
+    background: var(--primary-accent);
+    color: white;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Sticks to the top when scrolled past */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    /* transition: transform 0.1s ease-in-out; Smooth transition */
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visible{
+    display: flex;
+}
+
+.content .text .title h2{
+    font-size: var(--text-md);
+    font-family: 'SuisseIntl-Bold';
+    padding-bottom: var(--space-sm);
+}
+
+.content .text .body{
+    font-size: var(--text-md);
+    font-family: 'SuisseIntl-Light';
+    padding-bottom: var(--space-sm);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.close-action{
+    cursor: pointer;
+}

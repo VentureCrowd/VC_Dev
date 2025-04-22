@@ -1,0 +1,152 @@
+.answer-html-container {
+    font-family: "SuisseMain";
+    overflow-x: auto;
+}
+
+
+table {
+    overflow-x: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100% !important;
+    border: 1px solid #000;
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+.objective-container {
+    width: 100%;
+    padding-block: var(--space-lg);
+    margin-block: var(--space-xxl);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 19px;
+    background: var(--Dove, #F0F1F2);
+}
+
+
+.objective-wrapper {
+    display: flex;
+    padding-inline-start: var(--space-xl);
+    padding-inline-end: var(--space-xxl);
+    column-gap: var(--space-xl);
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .objective-wrapper {
+        flex-direction: column;
+        padding-inline-start: var(--space-xs);
+        padding-inline-end: var(--space-xs);
+        align-items: flex-start;
+    }
+}
+
+.objective-wrapper h3,
+.objective-wrapper p {
+    margin: 0;
+}
+
+.knowledge-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--space-xxl) calc( 2 * var(--space-xxl));
+}
+
+@media only screen and (max-width: 768px) {
+    .knowledge-container {
+        padding: var(--space-sm);
+    }
+}
+
+
+.banner-container {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: var(--space-xxl) calc(2*var(--space-xxl));
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-container {
+        padding: var(--space-xxl) var(--space-md);
+        background-position: right;
+    }
+}
+
+.banner-wrapper {
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-wrapper {
+        width: 100%;
+    }
+}
+
+.clock-container {
+    margin-top: var(--space-xl);
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.banner-wrapper h1 {
+    font-size: calc(2 * var(--text-xxl));
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-wrapper h1 {
+        width: 100%;
+        font-size: var(--text-xxl);
+    }
+}
+
+.banner-wrapper p {
+    font-size: var(--text-md);
+}
+
+.buttons-container {
+    margin-bottom: calc(2 * var(--space-xl));
+    width: fit-content;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: var(--space-md);
+    margin-block: var(--space-xl);
+    justify-content: flex-end;
+}
+
+.clock-container p {
+    margin-top: 6px;
+}
+
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.loading-spinner h1 {
+    margin: 0;
+}

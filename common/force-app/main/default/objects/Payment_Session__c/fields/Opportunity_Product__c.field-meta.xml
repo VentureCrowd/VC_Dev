@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Links the session to the associated Opportunity Product (Line Item) record.</description>
+    <inlineHelpText>Select the Opportunity Product record associated with this session.</inlineHelpText>
+    <label>Opportunity Product</label>
+    <referenceTo>OpportunityLineItem</referenceTo>
+    <relationshipLabel>Payment Sessions</relationshipLabel>
+    <relationshipName>Payment_Sessions</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

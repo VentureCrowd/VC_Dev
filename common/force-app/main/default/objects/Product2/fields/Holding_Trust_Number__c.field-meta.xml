@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Holding_Trust_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(
+  MID(
+    Trust_Deed_Name__c,
+    FIND(&quot;No. &quot;, Trust_Deed_Name__c) + 4, 
+    FIND(&quot; &quot;, Trust_Deed_Name__c, FIND(&quot;No. &quot;, Trust_Deed_Name__c) + 4) - (FIND(&quot;No. &quot;, Trust_Deed_Name__c) + 4)
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Holding Trust Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ventures - Pre-Seed</fullName>
+                <default>false</default>
+                <label>Ventures - Pre-Seed</label>
+            </value>
+            <value>
+                <fullName>Ventures - Seed</fullName>
+                <default>false</default>
+                <label>Ventures - Seed</label>
+            </value>
+            <value>
+                <fullName>Ventures - Series A</fullName>
+                <default>false</default>
+                <label>Ventures - Series A</label>
+            </value>
+            <value>
+                <fullName>Ventures - Series B</fullName>
+                <default>false</default>
+                <label>Ventures - Series B</label>
+            </value>
+            <value>
+                <fullName>Ventures - Series C</fullName>
+                <default>false</default>
+                <label>Ventures - Series C</label>
+            </value>
+            <value>
+                <fullName>Ventures - Bridging Round</fullName>
+                <default>false</default>
+                <label>Ventures - Bridging Round</label>
+            </value>
+            <value>
+                <fullName>Ventures - Pre-IPO</fullName>
+                <default>false</default>
+                <label>Ventures - Pre-IPO</label>
+            </value>
+            <value>
+                <fullName>Ventures - IPO</fullName>
+                <default>false</default>
+                <label>Ventures - IPO</label>
+            </value>
+            <value>
+                <fullName>Property - Equity</fullName>
+                <default>false</default>
+                <label>Property - Equity</label>
+            </value>
+            <value>
+                <fullName>Property - Preference Equity</fullName>
+                <default>false</default>
+                <label>Property - Preference Equity</label>
+            </value>
+            <value>
+                <fullName>Property - Debt</fullName>
+                <default>false</default>
+                <label>Property - Debt</label>
+            </value>
+            <value>
+                <fullName>Fund - Multi Stage as per IM</fullName>
+                <default>false</default>
+                <label>Fund - Multi Stage as per IM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

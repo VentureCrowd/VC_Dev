@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Geolocation__c</fullName>
+    <description>The geographical location associated with the session, if available.</description>
+    <displayLocationInDecimal>false</displayLocationInDecimal>
+    <inlineHelpText>Displays the geographical location (latitude and longitude) from where the session was initiated.</inlineHelpText>
+    <label>Geolocation</label>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Location</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>VC</fullName>
+        <default>false</default>
+        <label>VC</label>
+    </customValue>
+    <customValue>
+        <fullName>GSL</fullName>
+        <default>false</default>
+        <label>GSL</label>
+    </customValue>
+    <masterLabel>Associated AFSL License</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

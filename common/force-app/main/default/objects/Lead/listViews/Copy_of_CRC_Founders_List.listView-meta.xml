@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_CRC_Founders_List</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Next_Step__c</columns>
+    <columns>Next_Step_Date_Time__c</columns>
+    <columns>Next_Step_Date_Validation__c</columns>
+    <columns>Background_information__c</columns>
+    <columns>Loss_Reason__c</columns>
+    <columns>Matching_Account__c</columns>
+    <columns>Founder_Readiness__c</columns>
+    <columns>Founder_status__c</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.Founders</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>jkenn,bcrow</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>2/11/2025 12:00 AM</value>
+    </filters>
+    <label>Copy of CRC Founders List</label>
+</ListView>

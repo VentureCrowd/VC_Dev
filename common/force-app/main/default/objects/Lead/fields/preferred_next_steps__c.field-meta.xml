@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>preferred_next_steps__c</fullName>
+    <label>What is your preferred next step?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phone_call</fullName>
+                <default>false</default>
+                <label>Phone_call</label>
+            </value>
+            <value>
+                <fullName>Email_with_Product_Information</fullName>
+                <default>false</default>
+                <label>Email_with_Product_Information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

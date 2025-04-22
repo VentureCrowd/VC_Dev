@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Masterplan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Staging plan</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only Staging plans can be chosen</errorMessage>
+        <filterItems>
+            <field>Masterplan__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Staging Plan</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Masterplan__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

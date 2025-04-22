@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conversion_Probability_30__c</fullName>
+    <description>This is the potential conversion amount averaged at 30%. Used to calculate the potential of conversion into RAISE&apos;s. - NOT of the EOI itself, this field is for Executive Strategy Purposes</description>
+    <formula>Target_Raise_Amount__c *0.3</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the potential conversion amount averaged at 30%. Used to calculate the potential of conversion into RAISE&apos;s. - NOT of the EOI itself, this field is for Executive Strategy Purposes</inlineHelpText>
+    <label>Conversion Probability (30%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

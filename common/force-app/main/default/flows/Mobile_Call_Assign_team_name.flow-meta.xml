@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Teams</name>
+        <label>Teams</label>
+        <locationX>930</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>CRC_team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 7 3911 1113</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 1300 039 655</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 480 025 855</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_team_CRC</targetReference>
+            </connector>
+            <label>CRC team</label>
+        </rules>
+        <rules>
+            <name>IM_team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 7 3911 1022</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 488 855 323</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 480 025 858</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 480 025 885</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_team_IM</targetReference>
+            </connector>
+            <label>IM team</label>
+        </rules>
+        <rules>
+            <name>IR_team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 7 3188 6650</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 7 3497 4366</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_team_IR</targetReference>
+            </connector>
+            <label>IR team</label>
+        </rules>
+        <rules>
+            <name>Ventures_team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 488 846 022</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 3 7003 9338</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 482 082 999</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 488 846 022</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 3 7003 9338</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 482 082 999</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_team_Ventures</targetReference>
+            </connector>
+            <label>Ventures team</label>
+        </rules>
+        <rules>
+            <name>VCPP_team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 1300 767 357</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 7 3703 1900</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 488 822 281</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_team_VCPP</targetReference>
+            </connector>
+            <label>VCPP team</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Update_on_owner</name>
+        <label>Update on owner</label>
+        <locationX>1106</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Ben</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 3 7003 9338</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 3 7003 9338</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 488 846 022</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 488 846 022</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Ben_Owner</targetReference>
+            </connector>
+            <label>Ben/landline</label>
+        </rules>
+        <rules>
+            <name>Johnny</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Internal_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 482 082 999</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Customer_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>+61 482 082 999</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Johnny_Owner</targetReference>
+            </connector>
+            <label>Johnny</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Mobile Call: Assign team name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Mobile Call: Assign team name</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Ben_Owner</name>
+        <label>Ben Owner</label>
+        <locationX>842</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>0055i000006sxsjAAA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Johnny_Owner</name>
+        <label>Johnny Owner</label>
+        <locationX>1106</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>0055i00000C4u6qAAB</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_team_CRC</name>
+        <label>Update team CRC</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Team__c</field>
+            <value>
+                <stringValue>CRC</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_team_IM</name>
+        <label>Update team IM</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Team__c</field>
+            <value>
+                <stringValue>IM</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_team_IR</name>
+        <label>Update team IR</label>
+        <locationX>578</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Team__c</field>
+            <value>
+                <stringValue>IR</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_team_VCPP</name>
+        <label>Update team VCPP</label>
+        <locationX>1546</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Team__c</field>
+            <value>
+                <stringValue>VCPP</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_team_Ventures</name>
+        <label>Update team Ventures</label>
+        <locationX>1106</locationX>
+        <locationY>395</locationY>
+        <connector>
+            <targetReference>Update_on_owner</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Team__c</field>
+            <value>
+                <stringValue>Ventures</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>804</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Teams</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Internal_Number__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Mobile_Call__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

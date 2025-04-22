@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GSL_Incedent_Register_Validations</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  Related_AFSL__c , &apos;GSL&apos; ),
+ISPICKVAL(  Type_of_Breach__c , &apos;Incident&apos; ),
+
+OR(
+(ISBLANK(  Date_Registered__c  )),
+(ISBLANK(   Reason_for_no_Breach_recorded__c  )),
+(ISBLANK(  Reported_By__c )),
+(ISBLANK(  Representative__c ))
+
+))</errorConditionFormula>
+    <errorMessage>Please fill in, Date Discovered, Reasin for no breach recorded, Representative and reported by fields to proceed.</errorMessage>
+</ValidationRule>

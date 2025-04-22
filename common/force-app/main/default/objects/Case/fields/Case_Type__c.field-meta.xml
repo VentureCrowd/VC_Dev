@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type__c</fullName>
+    <description>This is the custom field created for Investor Support Register</description>
+    <label>Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank Account Details update</fullName>
+                <default>false</default>
+                <label>Bank Account Details update</label>
+            </value>
+            <value>
+                <fullName>Bounce back of distribution (when account details accurate)</fullName>
+                <default>false</default>
+                <label>Bounce back of distribution (when account details accurate)</label>
+            </value>
+            <value>
+                <fullName>DM to answer</fullName>
+                <default>false</default>
+                <label>DM to answer</label>
+            </value>
+            <value>
+                <fullName>Latest Update not received</fullName>
+                <default>false</default>
+                <label>Latest Update not received</label>
+            </value>
+            <value>
+                <fullName>Request for Product Disclosure Statement</fullName>
+                <default>false</default>
+                <label>Request for Product Disclosure Statement</label>
+            </value>
+            <value>
+                <fullName>My payment is less than expected, why?</fullName>
+                <default>false</default>
+                <label>My payment is less than expected, why?</label>
+            </value>
+            <value>
+                <fullName>Request latest valuation</fullName>
+                <default>false</default>
+                <label>Request latest valuation</label>
+            </value>
+            <value>
+                <fullName>Request current FY’s annual statements</fullName>
+                <default>false</default>
+                <label>Request current FY’s annual statements</label>
+            </value>
+            <value>
+                <fullName>Request past FY’s annual statements</fullName>
+                <default>false</default>
+                <label>Request past FY’s annual statements</label>
+            </value>
+            <value>
+                <fullName>Request current FY’s distribution statement</fullName>
+                <default>false</default>
+                <label>Request current FY’s distribution statement</label>
+            </value>
+            <value>
+                <fullName>Request past FY’s distribution statement</fullName>
+                <default>false</default>
+                <label>Request past FY’s distribution statement</label>
+            </value>
+            <value>
+                <fullName>Request confirmation of holdings statement</fullName>
+                <default>false</default>
+                <label>Request confirmation of holdings statement</label>
+            </value>
+            <value>
+                <fullName>Request one off remittance / distribution statement</fullName>
+                <default>false</default>
+                <label>Request one off remittance / distribution statement</label>
+            </value>
+            <value>
+                <fullName>Request current FY’s Financial Statements</fullName>
+                <default>false</default>
+                <label>Request current FY’s Financial Statements</label>
+            </value>
+            <value>
+                <fullName>Request past FY’s Financial Statements</fullName>
+                <default>false</default>
+                <label>Request past FY’s Financial Statements</label>
+            </value>
+            <value>
+                <fullName>Not reflecting details correctly - (potentially unit register issue)</fullName>
+                <default>false</default>
+                <label>Not reflecting details correctly - (potentially unit register issue)</label>
+            </value>
+            <value>
+                <fullName>Investment not showing on the dashboard</fullName>
+                <default>false</default>
+                <label>Investment not showing on the dashboard</label>
+            </value>
+            <value>
+                <fullName>Incorrect status of investment</fullName>
+                <default>false</default>
+                <label>Incorrect status of investment</label>
+            </value>
+            <value>
+                <fullName>Please process redemption request</fullName>
+                <default>false</default>
+                <label>Please process redemption request</label>
+            </value>
+            <value>
+                <fullName>Change of investment ownership and ID</fullName>
+                <default>false</default>
+                <label>Change of investment ownership and ID</label>
+            </value>
+            <value>
+                <fullName>Change of contact details (phone / email / address)</fullName>
+                <default>false</default>
+                <label>Change of contact details (phone / email / address)</label>
+            </value>
+            <value>
+                <fullName>Hardship request</fullName>
+                <default>false</default>
+                <label>Hardship request</label>
+            </value>
+            <value>
+                <fullName>Cancel and Refund Investment</fullName>
+                <default>false</default>
+                <label>Cancel and Refund Investment</label>
+            </value>
+            <value>
+                <fullName>Incorrect bank Bank Account Details used after providing new ones.</fullName>
+                <default>false</default>
+                <label>Incorrect bank Bank Account Details used after providing new ones.</label>
+            </value>
+            <value>
+                <fullName>Bounce back of distribution (when account details are accurate)</fullName>
+                <default>false</default>
+                <label>Bounce back of distribution (when account details are accurate)</label>
+            </value>
+            <value>
+                <fullName>Easily identifiable references</fullName>
+                <default>false</default>
+                <label>Easily identifiable references</label>
+            </value>
+            <value>
+                <fullName>Timing of return of capital on matured investments.</fullName>
+                <default>false</default>
+                <label>Timing of return of capital on matured investments.</label>
+            </value>
+            <value>
+                <fullName>Detailed explanation required on cause of liquidity constraints.</fullName>
+                <default>false</default>
+                <label>Detailed explanation required on cause of liquidity constraints.</label>
+            </value>
+            <value>
+                <fullName>Late communication on matured/maturing investment redemptions not being able to be met.</fullName>
+                <default>false</default>
+                <label>Late communication on matured/maturing investment redemptions not being able to be met.</label>
+            </value>
+            <value>
+                <fullName>Delayed communication on expected outcomes of projects.</fullName>
+                <default>false</default>
+                <label>Delayed communication on expected outcomes of projects.</label>
+            </value>
+            <value>
+                <fullName>Cost to complete project not provided.</fullName>
+                <default>false</default>
+                <label>Cost to complete project not provided.</label>
+            </value>
+            <value>
+                <fullName>Information on how the project is tracking against original feasibility forecasts.</fullName>
+                <default>false</default>
+                <label>Information on how the project is tracking against original feasibility forecasts.</label>
+            </value>
+            <value>
+                <fullName>Updates on VC exits when these are delayed/happen later than expected.</fullName>
+                <default>false</default>
+                <label>Updates on VC exits when these are delayed/happen later than expected.</label>
+            </value>
+            <value>
+                <fullName>Updates on VC products not consistent or regular enough.</fullName>
+                <default>false</default>
+                <label>Updates on VC products not consistent or regular enough.</label>
+            </value>
+            <value>
+                <fullName>CTC vs. ROE / ROI</fullName>
+                <default>false</default>
+                <label>CTC vs. ROE / ROI</label>
+            </value>
+            <value>
+                <fullName>Investment documents like unit certs &amp; tax statements not easily accessible on OIP</fullName>
+                <default>false</default>
+                <label>Investment documents like unit certs &amp; tax statements not easily accessible on OIP</label>
+            </value>
+            <value>
+                <fullName>Incorrect investor details used ie: spelling errors, bank details, investment under incorrect account (entity vs personal)</fullName>
+                <default>false</default>
+                <label>Incorrect investor details used ie: spelling errors, bank details, investment under incorrect account (entity vs personal)</label>
+            </value>
+            <value>
+                <fullName>Timing of tax statements</fullName>
+                <default>false</default>
+                <label>Timing of tax statements</label>
+            </value>
+            <value>
+                <fullName>Distribution statement not received or available</fullName>
+                <default>false</default>
+                <label>Distribution statement not received or available</label>
+            </value>
+            <value>
+                <fullName>Distribution statement easily identifiable in regards to investment</fullName>
+                <default>false</default>
+                <label>Distribution statement easily identifiable in regards to investment</label>
+            </value>
+            <value>
+                <fullName>Can’t pull one online when required by accountant/investor.</fullName>
+                <default>false</default>
+                <label>Can’t pull one online when required by accountant/investor.</label>
+            </value>
+            <value>
+                <fullName>Historical investments still shown</fullName>
+                <default>false</default>
+                <label>Historical investments still shown</label>
+            </value>
+            <value>
+                <fullName>Investment information documentation difficult to find</fullName>
+                <default>false</default>
+                <label>Investment information documentation difficult to find</label>
+            </value>
+            <value>
+                <fullName>Valuations not updated</fullName>
+                <default>false</default>
+                <label>Valuations not updated</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Exit CSF Offer (Cooling Off Period)</controllingFieldValue>
+            <valueName>Cancel and Refund Investment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Errors / Queries</controllingFieldValue>
+            <valueName>Incorrect bank Bank Account Details used after providing new ones.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Errors / Queries</controllingFieldValue>
+            <valueName>Bounce back of distribution (when account details are accurate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment Errors / Queries</controllingFieldValue>
+            <valueName>Easily identifiable references</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>Delayed communication on expected outcomes of projects.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>Cost to complete project not provided.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>Information on how the project is tracking against original feasibility forecasts.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>Updates on VC exits when these are delayed/happen later than expected.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>Updates on VC products not consistent or regular enough.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>CTC vs. ROE / ROI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Complaints</controllingFieldValue>
+            <valueName>Investment documents like unit certs &amp; tax statements not easily accessible on OIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment Complaints - Incorrect Investor Information</controllingFieldValue>
+            <valueName>Incorrect investor details used ie: spelling errors, bank details, investment under incorrect account (entity vs personal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements (tax &amp; distribution)</controllingFieldValue>
+            <valueName>Timing of tax statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements (tax &amp; distribution)</controllingFieldValue>
+            <valueName>Distribution statement not received or available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements (tax &amp; distribution)</controllingFieldValue>
+            <valueName>Distribution statement easily identifiable in regards to investment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements (tax &amp; distribution)</controllingFieldValue>
+            <valueName>Can’t pull one online when required by accountant/investor.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portal Complaints</controllingFieldValue>
+            <valueName>Historical investments still shown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portal Complaints</controllingFieldValue>
+            <valueName>Investment information documentation difficult to find</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portal Complaints</controllingFieldValue>
+            <valueName>Valuations not updated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment not received</controllingFieldValue>
+            <valueName>Bank Account Details update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment not received</controllingFieldValue>
+            <valueName>Bounce back of distribution (when account details accurate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment question - mid investment</controllingFieldValue>
+            <valueName>DM to answer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment question - mid investment</controllingFieldValue>
+            <valueName>Latest Update not received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment question - mid investment</controllingFieldValue>
+            <valueName>Request for Product Disclosure Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment question - mid investment</controllingFieldValue>
+            <valueName>My payment is less than expected, why?</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment question - mid investment</controllingFieldValue>
+            <valueName>Request latest valuation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request current FY’s annual statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request past FY’s annual statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request current FY’s distribution statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request past FY’s distribution statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request confirmation of holdings statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request one off remittance / distribution statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request current FY’s Financial Statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Request past FY’s Financial Statements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Statements</controllingFieldValue>
+            <valueName>Not reflecting details correctly - (potentially unit register issue)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dashboard questions (technical)</controllingFieldValue>
+            <valueName>Investment not showing on the dashboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dashboard questions (technical)</controllingFieldValue>
+            <valueName>Incorrect status of investment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redemptions</controllingFieldValue>
+            <valueName>Please process redemption request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redemptions</controllingFieldValue>
+            <valueName>Hardship request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redemptions</controllingFieldValue>
+            <valueName>Timing of return of capital on matured investments.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redemptions</controllingFieldValue>
+            <valueName>Detailed explanation required on cause of liquidity constraints.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Redemptions</controllingFieldValue>
+            <valueName>Late communication on matured/maturing investment redemptions not being able to be met.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Update unit register</controllingFieldValue>
+            <valueName>Change of investment ownership and ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Update unit register</controllingFieldValue>
+            <valueName>Change of contact details (phone / email / address)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

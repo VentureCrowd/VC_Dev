@@ -1,0 +1,63 @@
+<template>
+    <div class="card desktop" onclick={handleClick}>
+        <div class="left">
+            <div class="logo">
+                <img src={logoUrl} alt="Logo"/>
+            </div>
+            <div class="product-information">
+                <p class="product-name">{productName}</p>
+                <p class="product-date">{investmentDate}</p>
+            </div>
+        </div>
+        <div class="right">
+            <c-core-badges lwc:if={badgeStyle}
+                value={badgeStyle.label}
+                background-color={badgeStyle.backgroundColor}
+                text-color="var(--black)"
+                icon-name={badgeStyle.iconName}
+                icon-color={badgeStyle.color}>
+            </c-core-badges>
+            <div class="value-information">
+                <div class="investor-information">
+                    <p class="investor-name">{investorName}</p>
+                    <p class="price">${price}</p>
+                </div>
+                <template lwc:if={investmentId}>
+                    <c-core-icon
+                        icon-name="arrowRight"
+                        size="large"
+                        onclick={handleClick}>            
+                    </c-core-icon>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive view -->
+    <div class="card responsive" onclick={handleClick}>
+        <div class="left">
+            <div class="logo">
+                <img src={logoUrl} alt="Logo"/>
+            </div>
+        </div>
+        <div class="right">
+            <p class="product-name">{productName}</p>
+            <div class="investor-name">{investorName}</div>
+            <div class="price-responsive">
+                <c-core-icon lwc:if={badgeStyle.iconName}
+                icon-name={badgeStyle.iconName}
+                size="large"
+                ></c-core-icon>
+                <p>${price}</p>
+            </div>
+            <p>{investmentDate}</p>
+        </div>
+        <div class="third-column" lwc:if={investmentId}>
+            <c-core-icon
+                icon-name="arrowRight"
+                size="large"
+                onclick={handleClick}>            
+            </c-core-icon>
+        </div>
+    </div>
+</template>

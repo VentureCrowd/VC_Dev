@@ -1,0 +1,227 @@
+<apex:component Controller="VC_CF_MenuCOntroller">
+    <apex:includeLightning />
+    <apex:slds />
+    <script>
+
+        /* #######################  Navigation URL Function ########################*/
+        function navigate(navigateurl, isPortal) {
+            // https://www.venturecrowd.com.au/s/
+            // https://www.venturecrowd.com.au/portal/s/
+            if (isPortal) {
+                // if logginout from portal
+                if (navigateurl.includes('logout')) {
+                    //navigateToPage('{!$Label.VC_CF_Public_URL}'+'/login/?ec=302&startURL=%2Fs%2Fportal');
+                    let urll = '/s/secur/logout.jsp?retURL=/s/login';
+                    window.location.replace(urll);
+                }
+                else {
+                    navigateToPage('{!$Label.Investor_Community_URL}' + navigateurl);
+                }
+            } else {
+                navigateToPage('{!$Label.VC_CF_Public_URL}' + navigateurl);
+            }
+
+
+        }
+
+        /* #######################  Logout Function URL ########################*/
+        function logout() {
+            console.log("Logout function called");
+            // window.open("https://"+window.location.hostname+"/portal/secur/logout.jsp?retURL=/s/login");
+            navigate('logout', true);
+        }
+
+        /* #######################  Aura component for Profile Dropdown ########################*/
+        $Lightning.use("c:UserActionMenuApp", function () {
+            $Lightning.createComponent("c:UserActionMenu",
+                {
+                    // Set Lightning Component Attributes Property before creating Lightning Component In Visualforce page 
+                    usedInVF: true,
+                    vfpageMethod: getMessageFromUserActionMenu,
+                },
+                "UserActionMenu",
+                function (component) { });
+        });
+
+        $Lightning.use("c:UserActionMenuApp", function () {
+            $Lightning.createComponent("c:InvestorMobileMenu",
+                {
+                    // Set Lightning Component Attributes Property before creating Lightning Component In Visualforce page 
+                    usedInVF: true,
+                    vfpageMethod: getMessageFromInvestorMobileMenu,
+                },
+                "InvestorMobileMenu",
+                function (component) { });
+        });
+
+        /* #######################  To navigate to investor portal URLs ########################*/
+        function getMessageFromUserActionMenu(compMsg) {
+            var url = '';
+            if (compMsg == 'profile') {
+                url = '/profile/' + '{!$User.Id}';
+                // window.location.replace("https://"+window.location.hostname+"/portal/s"+'/profile/'+'{!$User.Id}');
+            } else if (compMsg == 'my-portfolio') {
+                url = '/portfolio';
+                //window.location.replace("https://"+window.location.hostname+"/portal/s"+'/');
+            } else if (compMsg == 'my-entities') {
+                url = '/my-entities';
+                //window.location.replace("https://"+window.location.hostname+"/portal/s"+'/my-entities');
+            }
+
+            if (compMsg == 'Logout') {
+                // window.location.replace("https://"+window.location.hostname+"/portal/secur/logout.jsp?retURL=/s/login");
+                logout();
+            } else {
+                // Pass true to navigate to Portal instea dof public site
+                navigate(url, true);
+            }
+        }
+
+        function getMessageFromInvestorMobileMenu(url) {
+            // Navigate to public site
+            navigate(url, false);
+        }
+
+    </script>
+    <header id="vc_header__container" class="container-fluid fixed-top">
+        <apex:form >
+            <apex:actionFunction name="navigateToPage" action="{!navigateToPage}" reRender="form">
+                <apex:param value="" name="navigateurl" />
+            </apex:actionFunction>
+            <div class="align-items-center row">
+                <div class="col-8 col-lg-3 logo">
+                    <a href="{!$Label.VC_CF_Public_URL + '/'}">
+                        <img alt="VentureCrowd" class="img-fluid" src="{!URLFOR($Resource.VC_CF_GlobalAssets,'img/Logo.svg')}" />
+                    </a>
+                </div>
+
+                <div class="col-6 d-lg-block d-none menu">
+                    <ul>
+                        <li class="has-sub-menu">
+
+                            <!-- Navigate to Public Site -->
+                            <a href="{!$Label.VC_CF_Public_URL + '/invest'}" target="_top">Invest</a>
+
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getInvestdetails}" var="invdetail"> 
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu">
+                            <!-- Navigate to Public Site -->
+                            <a href="{!$Label.VC_CF_Public_URL + '/invest/ventures'}" target="_top">Ventures</a>
+
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getVenturesdetails}" var="invdetail">
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu">
+                            <!-- Navigate to Public Site -->
+                            <a href="{!$Label.VC_CF_Public_URL + '/property'}" target="_top">Property</a>
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getPropertydetails}" var="invdetail">
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Navigate to Public Site -->
+                            <a href="{!$Label.VC_CF_Public_URL + '/raise'}" target="_top">Raise</a>
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getRaisedetails}" var="invdetail">
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu">
+                            <!-- Navigate to Public Site -->
+                            <a href="{!$Label.VC_CF_Public_URL + '/blog'}" target="_top">Learn</a>
+
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getLearndetails}" var="invdetail">
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <a href="{!$Label.VC_CF_Public_URL + '/blog'}" target="_top">News</a>
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getNewsdetails}" var="invdetail">
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li> -->
+                        <li class="has-sub-menu">
+                            <!-- Navigate to Public Site -->
+                            <a href="{!$Label.VC_CF_Public_URL + '/about'}" target="_top">About</a>
+
+                            <ul class="sub-menu">
+                                <li class="back d-block d-lg-none">
+                                    <span>Back</span>
+                                </li>
+                                <apex:repeat value="{!getAboutdetails}" var="invdetail">
+                                    <li>
+                                        <a target="_top" href="{!invdetail.displayUrl}">{!invdetail.displayName}</a>
+                                    </li>
+                                </apex:repeat>
+                            </ul>
+                        </li>
+                        <li class="d-block d-lg-none">
+                            <!-- <a href="{!$Label.VC_CF_Public_URL + '/portal/s'}" style="{!IF((ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">Login</a> -->
+                               <!-- <a href="{!$Label.VC_CF_Public_URL + '/portal/s'}"  style="{!IF((ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">Login</a> -->
+                               <a href="{!$Label.vc_cf_login_sy}"  >Login</a>
+                               <span style="{!IF(NOT(ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">Hi '{$User.Name}'</span>
+                           </li>
+                           <li class="d-block d-lg-none">
+                             <a href="{!$Label.VC_CF_Register_Symphony}" >Register</a>
+                             <!-- <a href="{!$Label.Investor_Community_URL + '/login/SelfRegister'}"  style="{!IF((ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">Register</a> -->
+                              <a onclick="logout()" class="register" style="{!IF(NOT(ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">Logout</a>
+                           </li>
+                         </ul>
+                       </div>
+                       <div class="actions col-3 d-lg-block d-none text-right" style="{!IF(NOT(ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}" >
+                         <div id="UserActionMenu"></div> 
+                       </div>
+
+
+                <!--  ##################### Burger Menu Logic  ######################### -->
+                <div class="col-4 d-block d-lg-none mobile text-right">
+                    <div id="InvestorMobileMenu"></div>
+                </div>
+            </div>
+        </apex:form>
+    </header>
+</apex:component>

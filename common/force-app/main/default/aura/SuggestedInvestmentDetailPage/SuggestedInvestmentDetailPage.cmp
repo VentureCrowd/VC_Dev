@@ -1,0 +1,4 @@
+<aura:component extends="forceCommunity:navigationMenuBase" implements="forceCommunity:availableForAllPageTypes" access="global" controller="MyPortfolio_Investments">
+	 <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+      
+</aura:component>

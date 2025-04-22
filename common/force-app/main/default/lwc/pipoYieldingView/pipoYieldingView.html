@@ -1,0 +1,140 @@
+<template>
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner">
+            <h1>Loading</h1>
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    <template lwc:else>
+    <div class="company-section">
+        <div class="company-information-wrapper">
+            <div class="company-logo">
+                
+                <img src={productLogo} alt="">
+            </div>
+            <h2 class="company-name">{companyName}</h2>
+        </div>
+
+        <template lwc:if={yieldingView}>
+            <div class="badges-wrapper">
+                <c-core-badges
+                value={yieldingView.label}
+                background-color={yieldingView.backgroundColor}
+                text-color="var(--black)"
+                icon-name={yieldingView.iconName}
+                icon-color={yieldingView.color}>
+                </c-core-badges>
+                <c-core-tooltip
+                    help-text={yieldingView.helpText}
+                    size="medium">
+                </c-core-tooltip>   
+            </div>
+        </template>
+    </div>
+
+    <!-- Conditional for the spotlight wrapper -->
+    <template lwc:if={yieldingView.spotlightView}>
+        <section class="spotlight-wrapper">
+            <c-core-card hide-footer wrapping="md" mode="gray" shadow>
+                <div slot="title">
+                    <h1>${totalDistributions}</h1>
+                </div>
+                <div slot="body">
+                    <div class="tooltip-wrapper">
+                    <p>Total paid distributions</p>
+                        <c-core-tooltip 
+                        help-text="This refers to the total interest distribution that has been paid in cash terms. This is updated in monthly cycles so may not be 100% accurate." 
+                        size="medium"></c-core-tooltip>                        
+                    </div>
+                </div>
+            </c-core-card>
+
+            <!--!Important This will need to be activated in April 2025 -->
+            <!-- <c-core-card wrapping="md" mode="gray" shadow>
+                <div slot="title">
+                    <h1>{yieldingValue}%</h1>
+                </div>
+                <div slot="body">
+                    <div class="tooltip-wrapper">
+                        <p>Average Yield (p.a.)</p>
+                        <c-core-tooltip 
+                        help-text="Average yield refers to the amount of money an investment earns each year, expressed as a percentage of the initial investment. This is updated monthly so may not be 100% accurate." 
+                        size="medium"></c-core-tooltip>                        
+                    </div>
+                </div>
+            </c-core-card> -->
+            
+            <c-core-card hide-footer wrapping="md" mode="gray" shadow>
+                <div class="distribution-modal"  slot="title">
+                    <div class="card-wrapper">
+                        <c-core-icon style={iconColor}
+                        icon-name={yieldingView.iconName}
+                        color={yieldingView.color}
+                        width="43"
+                        height="43"
+                        no-pointer>
+                        </c-core-icon>
+                        <h1>${latestDistributions}</h1>
+                    </div>
+
+                    <c-core-modal
+                        lwc:ref="coremodal"
+                        hide-open-button={hideOpenButton}
+                        label="View more"
+                        variation="quaternary"
+                        icon="arrowRight"
+                        icon-position="right">
+                        <div class="header-modal" slot="header">
+                            <h2>Latest activity </h2>
+                            <p>
+                                Distributions are updated every 2-3 weeks:
+                            </p>
+                        </div>
+                        <div slot="body">
+                            <div class="distribution-grid">
+                            <template for:each={transactionsData} for:item="transaction" >
+                                <div key={transaction.Name} class="transaction">
+                                    <div class="transaction-details">
+                                    <p>{transaction.Date}</p>
+                                    <p class="price">+${transaction.formatNumber}</p>
+                                    </div>
+                                    <c-core-badges
+                                        value={transaction.label}
+                                        background-color={transaction.backgroundColor}
+                                        text-color="var(--black)"
+                                        icon-name={transaction.iconName}
+                                        icon-color={transaction.color}>
+                                    </c-core-badges> 
+                                </div>
+                            </template>
+                            </div>
+                        </div>
+                        <div class="footer-modal" slot="footer">
+                            <p>Transactions prior to 1 November 2024 are unavailable. <a href="mailto:hello@venturecrowd.com.au">For older transactions please contact us</a></p>
+                        </div>
+                    </c-core-modal>
+
+                    <div class="arrow-responsive">
+                        <c-core-icon
+                        icon-name="arrowRight"
+                        width="20"
+                        height="20"
+                        onclick={handleOpenModal}>
+                        </c-core-icon>
+                    </div>
+                </div>
+                <div slot="body">
+                    <div class="tooltip-wrapper">
+                        <p>Latest activity</p>
+                        <c-core-tooltip 
+                        help-text="This refers to the latest activity on your investment. This will include interest distributions (cash & accruing) as well as any redemption payments. This is updated in monthly cycles so may not be 100% accurate." 
+                        size="medium"></c-core-tooltip>                                       
+                    </div>
+                </div>
+
+            </c-core-card>
+        </section>
+    </template>
+    <!-- End of the loading spinner -->
+    </template>
+</template>

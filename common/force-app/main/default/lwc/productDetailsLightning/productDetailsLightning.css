@@ -1,0 +1,51 @@
+.image-hover-zoom:hover {
+    position:fixed;
+    display:block;
+}
+
+.icon-style {
+    min-height: 2rem !important;
+    min-width: 2rem !important;
+}
+
+ .selected-icon {
+    margin-left:-2rem;
+    position:relative;
+ }
+
+ .vc-box {
+     /* min-height: 6.8rem; */
+     height:100%;
+ }
+
+ .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+  }
+
+  .white {
+      background-color : white;
+  }
+
+  .green {
+    background-color : green;
+}
+
+/* .vc-row > .slds-slot {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 960px) {
+    .vc-row slot {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  } */

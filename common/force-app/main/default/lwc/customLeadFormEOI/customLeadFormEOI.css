@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section:nth-of-type(odd) {
+    background-color: #fff;
+  }
+  
+  section:nth-of-type(even) {
+    background-color: #F0F1F2;
+  }
+
+/*! Delete it */
+
+button.special {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    max-width: 220px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #000;
+    border-color: inherit;
+}
+    
+button.special:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #D95BAA;
+    border-color: #D95BAA;
+}
+
+
+button.buttonWhite {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    max-width: 220px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #fff;
+    border-color: inherit;
+}
+    
+button.buttonWhite:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #D95BAA;
+    border-color: #D95BAA;
+}
+
+/*$ New stuff for the list - Fri 2/2 */
+
+.custom-list li {
+    /* margin-bottom: 5px; Space between list items */
+    /* line-height: 1.5; Adjusts the line height for better readability */
+    font-size: 16px;
+    list-style-type: disc;
+    margin-left: 1.5rem;
+
+
+}
+
+header,
+.sectionContainer,
+.header-image-container,
+.topContainer
+{
+    --gutter: 32px;
+}
+
+@media only screen and (min-width: 751px) {
+    header,
+    .sectionContainer,
+    .header-image-container,
+    .topContainer {
+        --gutter: 64px;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    header,
+    .sectionContainer,
+    .header-image-container,
+    .topContainer {
+        --gutter: 96px;
+    }
+}
+
+body {
+    background-color: #fff;
+    font-family: 'SuisseIntl-Regular', 'Montserrat';
+    color: #000;
+    font-size: 16px;
+}
+
+ul, p {
+    margin: 0 0 0.75rem;
+    padding: 0;
+}
+
+
+h2,
+h3 {
+    font-weight: 400;
+    font-family: 'SuisseIntl-Light' !important;
+
+    }
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 48px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+
+a {
+    color: #D85AAA;
+    font-size: 16px;
+
+}
+
+lightning-formatted-number {
+    font-family: 'SuisseIntl-Light';
+}
+/* Sneak peak - first section of the page. */
+
+.topContainer {
+    color: #000;
+    background: #fff;
+    padding: 32px var(--gutter);
+}
+
+.textContainer {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.topContainer p {
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+
+
+
+
+.header-image-container {
+    /* Use box-shadow "inset" to put the black opaque layer in CSS only. */
+    box-shadow: inset 0 0 0 1000px rgba(15, 20, 30, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 141px var(--gutter) 94px var(--gutter);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header-image-container .textContainer {
+    flex-grow: 100;
+}
+
+.text-image-container {
+    text-align: left;
+    display: grid;
+    width: 100%
+}
+
+@media only screen and (min-width: 751px) {
+    .text-image-container {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .text-image-container {
+        width: 50%;
+    }
+}
+
+.company-logo {
+    max-height: 128px;
+    max-width: 256px;
+}
+
+.text-image-container h1 {
+    font-size: 48px;
+    font-family: 'Caxton-4', 'Montserrat';
+    color: #fff;
+    margin: 16px 0;
+}
+
+.text-image-container h2 {
+    font-family: 'SuisseIntl-Regular', 'Montserrat';
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.text-image-container .buttonWhite {
+    border-color: #fff;
+}
+
+/* Company overview - the third section of the page. */
+
+/* .greyContainer {
+    background-color: #F0F1F2;
+} */
+
+.sectionContainer {
+    padding: 96px var(--gutter);
+}
+
+.offerOverview p {
+    margin-bottom: 32px;
+}
+
+.offerOverviewImages {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 96px;
+    justify-items: center;
+}
+
+@media screen and (min-width: 751px) {
+    .offerOverviewImages {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 48px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .offerOverviewImages {
+        gap: 96px;
+    }
+}
+
+.offerOverviewImages .OverviewImagesContainer {
+    max-width: 256px;
+    max-height: 256px;
+}
+
+@media screen and (min-width: 751px) {
+    .offerOverviewImages .OverviewImagesContainer {
+        max-width: unset;
+        max-height: unset;
+    }
+}
+
+.offerOverviewImages img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+.companyHighlights ul li {
+    margin-bottom: 32px;
+}
+
+.companyHighlights ul li strong {
+    font-family: 'SuisseIntl-Bold', 'Montserrat';
+    font-weight: 800;
+}
+
+.registerButton {
+    align-content: space-around;
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.founders {
+    margin: 64px 0;
+}
+
+/*$ Button for both */
+
+.custom-button {
+    font-family: 'Caxton-2';
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 0 !important;
+    border-radius: 999px;
+    padding: 8px 32px;
+    text-decoration: none;
+    outline: none;
+    transition: all 150ms ease;
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    border: 1px solid #000;
+}
+
+.custom-button:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #D95BAA;
+    border-color: #D95BAA;
+}
+
+.buttonsContainer .custom-button {
+    font-family: 'Caxton-2';
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 24px;
+}
+
+
+.managementTeamAndAdvisors {
+    display: flex;
+    flex-direction: column;
+    column-gap: 96px;
+    row-gap: 64px;
+}
+
+@media screen and (min-width: 751px) {
+    .managementTeamAndAdvisors {
+        flex-direction: row;
+    }
+
+}
+
+.containerTeamCategory {
+    flex: 1;
+    margin-top: 32px;
+}
+
+.teamCards {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: 64px;
+}
+
+.teamCards.cardFounder {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 96px;
+    row-gap: 64px;
+}
+
+@media screen and (min-width: 1001px) {
+    .teamCards.cardFounder {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.teamContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.teamContainer_founders {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 501px) {
+    .teamContainer_founders {
+        flex-direction: row;
+    }
+}
+
+.teamProfileIcon {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+/* This css controls handles the text of the members categories */
+.memberNameStyle,
+.memberRoleStyle,
+.memberDescriptionStyle,
+.memberUrlStyle {
+    display: block;
+}
+
+.memberNameStyle {
+    font-family: 'Caxton-7', 'Montserrat' !important;
+    font-size: 1.6em;
+}
+
+.memberRoleStyle {
+    margin-top: 4px;
+}
+
+.memberDescriptionStyle {
+    font-weight: 300;
+    margin-top: 24px;
+}
+
+.memberUrlStyle {
+    margin-top: 24px;
+}
+
+.memberUrlStyle a {
+    color: #D85AAA;
+    text-decoration: underline;
+}
+
+.intendedRaise {
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+@media screen and (min-width: 751px) {
+    .intendedRaise {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 96px;
+        row-gap: 64px;
+    }
+}
+
+.leadInvestor_name {
+    font-family: 'Caxton-7', 'Montserrat' !important;
+    font-size: 1.3em;
+}
+
+.containerGrid1,
+.containerGrid2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerGrid1 {
+    gap: 32px;
+}
+
+.containerGrid2 {
+    gap: 16px;
+}
+
+/* Media Links */
+
+.mediaLinks {
+    display: flex;
+    flex-direction: column;
+    column-gap: 96px;
+    row-gap: 64px;
+}
+
+@media only screen and (min-width: 751px) {
+    .mediaLinks {
+        flex-direction: row;
+    }
+}
+
+.mediaLinks .containerGrid1,
+.mediaLinks .containerGrid2 {
+    flex: 1;
+}
+
+.mediaLinkContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.socialIconsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.link-container {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+}
+
+
+/*? Form */
+
+.formContainer {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.inputContainer {
+    margin-bottom: 16px;
+}
+
+.inputFieldsStyle {
+    width: 100%;
+    padding: 12px !important;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #7B868C !important;
+    border-radius: 4px !important;
+    height: 55px;
+}
+
+.inputFieldsStyle.option {
+    color: #9A9393;
+}
+
+
+.inputFieldsStyle-picker {
+    width: 150px;
+    padding: 11px !important;
+    font-size: 16px;
+    border: 1px solid #7B868C !important;
+    border-radius: 4px !important;
+    height: 55px;
+}
+
+.mobileNumberGrid {
+    display: flex;
+}
+.mobileNumberField {
+    margin-left: 18px;
+    
+}
+
+.registerInterestContainer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.registerInterestContainer h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.registerInterestContainer p {
+    margin-bottom: 40px;
+}
+
+.registerInterestContainer input::placeholder {
+    font-size: 16px;
+    color: #9A9393;
+}
+
+select,
+input[type="radio"] {
+    cursor: pointer;
+}
+
+
+
+input[type="radio"]{
+    accent-color: #D85AAA;
+    margin-right: 10px;
+}
+
+.custom-radio-button {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.question-label {
+    margin-right: 10px;
+}
+
+.inputForm {
+    width: auto;
+}
+
+.howMuchAreYouConsideringInvesting {
+    text-align: left;
+}
+
+.investorQuestion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .investorQuestion {
+        flex-direction: column;
+    }
+}
+.registerMyInterest {
+    margin-top: 0;
+}
+
+.disclaimer {
+    margin-top: 60px;
+    font-size: x-small;
+}
+
+.subTitle { 
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: x-large;
+}

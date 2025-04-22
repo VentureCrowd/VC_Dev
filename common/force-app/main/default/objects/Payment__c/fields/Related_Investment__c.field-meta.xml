@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Investment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A link to the related investment record, indicating that this payment is associated with a particular investment.</description>
+    <inlineHelpText>Use this lookup field to associate the payment with a specific investment record.</inlineHelpText>
+    <label>Related Investment</label>
+    <referenceTo>Investment__c</referenceTo>
+    <relationshipLabel>Payments</relationshipLabel>
+    <relationshipName>Payments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

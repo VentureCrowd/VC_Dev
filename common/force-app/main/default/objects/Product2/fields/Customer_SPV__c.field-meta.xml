@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_SPV__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The name of the company that this product belongs to.</description>
+    <inlineHelpText>The VC company or the SPV.</inlineHelpText>
+    <label>Customer SPV</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Products (Customer)</relationshipLabel>
+    <relationshipName>Products1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,60 @@
+<template>
+    <div class="media-links-wrapper">
+        <div class="input-label">
+            <p>
+                Media Links
+            </p>
+        </div>
+        <div class="content-row">
+            <div class="help-text">
+                Share 
+                <c-core-link 
+                label="mentions of the company in the media"
+                hyperlink={helpTextMapping.mediaLinkText}
+                icon="externalLink"
+                size="medium"
+                variation="tertiary"
+                target="_blank"
+                ></c-core-link>
+                add a 'title' of the piece of media and the URL.
+            </div>
+
+           <c-raise-add-media-link-modal
+           record-id={recordId}
+           variation="secondary"
+           label="Add Media"
+           name="Add Media"
+           onsaved={handleRefreshList}
+           ></c-raise-add-media-link-modal>
+        </div>
+        
+        <template lwc:if={isLoading}>
+            <!-- loading spinner -->
+            <div class="content-row">
+                <div class="file-loading-spinner">
+                    <lightning-spinner variant="brand" size="small"> </lightning-spinner>
+                </div>
+            </div>
+        </template>
+        <template lwc:else for:each={values} for:item="mediaLink">
+            <div class="content-row" key={mediaLink.id}>
+                    <div class="media-link" >
+                        <p>{mediaLink.name}</p>
+                        <p>{mediaLink.link}</p>
+                    </div>
+                    <div class="actions">
+                        <c-raise-add-media-link-modal
+                        record-id={recordId}
+                        media-link-id={mediaLink.id}
+                        variation="tertiary"
+                        label="Edit"
+                        name="Edit Media"
+                        onsaved={handleRefreshList}
+                        ></c-raise-add-media-link-modal>
+                        <c-core-button label="Remove" variation="tertiary" onbuttonclick={handleRemoveLink} data-id={mediaLink.id}></c-core-button>
+                    </div>
+            </div>
+        </template>
+
+    </div>
+</template>

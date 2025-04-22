@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <masterLabel>Core Lead Form</masterLabel>
+    <isExposed>true</isExposed>
+    <targets>
+        <!-- Expose to Experience Builder -->
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="imgUrl" type="String" label="Form Image URL" description="URL of the form image"/>
+            <property name="formTitle" type="String" label="Form Title" description="Title of the form" default="Lead Form"/>
+            <property name="formSubtext" type="String" label="Form Subtitle" description="Subtitle of the form" default="Enter your details below"/>
+            <property name="buttonLabel" type="String" label="Submit Button Label" description="This defines the button label text" default="Submit"/>
+            <property name="successMessage" type="String" label="Success Message" description="This message displays when the form is submitted succesfully" default="Thank you for submitting your interest!"/>
+          
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

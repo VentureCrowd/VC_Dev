@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Glenvale</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>PC_FIRST_NAME</columns>
+    <columns>PC_LAST_NAME</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>PC_PHONE3</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Wholesale__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PC_PHONE3</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Glenvale</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

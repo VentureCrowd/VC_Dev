@@ -1,0 +1,101 @@
+<template>
+    <!-- Section for header -->
+    <div class="sxsw-header">
+        <c-sxsw-navbar></c-sxsw-navbar>
+    </div>
+    <div class="sxsw-container">
+        <div class="sxsw-banner">
+            <div class="container-left">
+                <div class="content">
+                    <h1>
+                        THANKS FOR VISITING US AT SXSW SYDNEY
+                    </h1>
+                   <button onclick={handleButtonClick} class="sxsw-button">
+                    Make Moves
+                   </button>
+                </div>
+            </div>
+            <div class="container-right" style={backgroundStyle}>
+                <div class="content">
+                    <div class="star">
+                        <template lwc:if={isMobileView}>
+                            <c-core-icon
+                            icon-name="sxswStar"
+                            height="88"
+                            width="88"
+                            no-pointer
+                            ></c-core-icon>
+                        </template>
+                        <template lwc:else>
+                            <c-core-icon
+                            icon-name="sxswStar"
+                            height="159"
+                            width="159"
+                            no-pointer
+                            ></c-core-icon>
+                        </template>
+                       
+                    </div>
+
+                    <div class="text">
+                        <h2>
+                            AT VENTURECROWD, WE'RE ALL ABOUT MAKING BOLD MOVES.
+                        </h2>
+
+                        <template lwc:if={isMobileView}>
+                            <c-core-icon
+                            icon-name="sxswArrow"
+                            height="130"
+                            width="50"
+                            no-pointer
+                            ></c-core-icon>
+                        </template>
+                        <template lwc:else>
+                            <c-core-icon
+                            icon-name="sxswArrow"
+                            height="130"
+                            width="50"
+                            no-pointer
+                            ></c-core-icon>
+                        </template>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="sxsw-form-container" data-id="formContainer">
+            <div class="sxsw-content">
+                <div class="landing-page-description">
+                    <p>VentureCrowd connects visionary investors with cutting-edge startups and helps founders secure vital funding. Whether you're backing the future or building it, we're your launchpad.</p>
+                    <br/>
+                    <template lwc:if={isFounder}>
+                        <p class="sxsw-subtext-founder">
+                            Submit your EOI by 5PM on 31 Oct to unlock exclusive SXSW benefits and support. Don't miss out – Act now!
+                        </p>
+                    </template>
+                </div>
+
+                <c-core-lead-form
+                data-id="sxsw-form-ele"
+                img-url={formImage}
+                form-title={formTitleText}
+                form-subtext={formSubtext}
+                button-label="Get Started"
+                success-message="Thank you for submitting your interest in VentureCrowd!"
+                onleadcreated={handleLeadCreated}
+                onleadnotcreated={handleLeadNotCreated}
+                ></c-core-lead-form>
+             </div>
+            <!-- Form HERE -->
+        </div>
+        <div class="footer-section">
+            <p>As seen on</p>
+            <div class="footer-logos">
+                <template for:each={logoList} for:item="logo">
+                    <img key={logo.url} src={logo.url} alt="logoImage"/>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

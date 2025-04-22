@@ -1,0 +1,38 @@
+<template>
+    <div class="cb-section_row slds-grid slds-wrap slds-large-nowrap">
+        <section>
+            <div class="row mobilemargintop">
+                <template if:true={productList_1} for:each={productList_1} for:item="product" for:index="index">
+                    <c-vc-product-lwc 
+                    class="col-lg-4 item mb-4 mb-lg-4" 
+                    key={product.Id} 
+                    product={product}
+                    show-offer-button={showOfferButton}></c-vc-product-lwc>
+                </template>
+            </div>
+        </section>
+    </div>
+    <div class="slds-align_absolute-center" style="padding-top: 120px; padding-bottom: 70px;    font-family: 'Montserrat';    font-size: 48px;    line-height: 54px;">
+        <h2>
+            Successful Deals
+        </h2>
+    </div>
+    <div class="cb-section_row slds-grid slds-wrap slds-large-nowrap">
+        <section>
+            <div class="row mobilemargintop">
+                <template if:true={productList_2} for:each={productList_2} for:item="product" for:index="index">
+                    <c-vc-product-lwc 
+                    class="col-lg-4 item mb-4 mb-lg-4" 
+                    key={product.Id} 
+                    product={product}
+                    show-offer-button={showOfferButton}></c-vc-product-lwc>
+                </template>
+                <template if:true={showmorebtn}>
+                    <div class="slds-align_absolute-center" style="padding-top: 20px; padding-bottom: 70px;">
+                        <a onclick={showmore} class="mt-1 showMoreButton">Show More</a>
+                    </div>
+                </template>
+            </div>
+        </section>
+</div>
+</template>

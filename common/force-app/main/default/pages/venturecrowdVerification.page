@@ -1,0 +1,667 @@
+<!--
+
+-->
+<!-- VEN-184: Added attribute showHeader to hide standard Salesforce header -->
+<apex:page controller="VenturecrowdVerificationController" showHeader="false">
+
+  <apex:includeLightning />
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://test-au.vixverify.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;**script-src 'self' http://onlineerp.solution.quebec 'unsafe-inline' 'unsafe-eval';** "/> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:https://au.vixverify.com 'unsafe-eval'; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"
+    />
+
+    <!-- 
+                      These Javascript files are not required for greenID, and are used for the initial data capture screen only.
+                  -->
+    <script src="https://au.vixverify.com/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="https://simpleui-au.vixverify.com/df/javascripts/libs/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="https://au.vixverify.com/js/simpleui-demo.js"></script>
+
+    <!-- 
+                      These two JavaScript files are required.
+                      Link to them as below, don't take a local copy.
+                      The greenidConfig.js file contains the full list of on-screen wording that can be customised via the setOverrides function (below). 
+                  -->
+    <script src="https://simpleui-au.vixverify.com/df/javascripts/greenidConfig.js" type="text/javascript"></script>
+    <script src="https://simpleui-au.vixverify.com/df/javascripts/greenidui.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      let finishEvent = 'this one';
+      // The setup function initialises the greenID Simple UI and passes in key variables,
+      // such as the div ID where the form controls will be injected and the ID of your form.
+      // A full list of parameters is available at https://vixverify.atlassian.net/wiki/display/GREEN/Using+the+SimpleUI#UsingtheSimpleUI-JavascriptSetupforRegisteringaNewPerson
+      greenidJQuery("document").ready(function () {
+        debugger;
+        try {
+          greenidUI.setup({
+            environment: "prod",
+            formId: "theform",
+            frameId: "greenid-div",
+            country: "usethiscountry",
+            sessionCompleteCallback: onSubmitCallback,
+            preSubmitValidationCallback: preSubmitValidator,
+          });
+          greenidConfig.setOverrides();
+        } catch (e) {
+          console.log(e, 'GSAC');
+        }
+      });
+
+      /**
+       * VEN-184:
+       *  Added validation for DOB: must be a valid date in the past
+       *  Format DOB to dd/mm/yyyy; input date passes format as yyyy-mm-dd
+       *  Updated the validation error message
+       */
+       function preSubmitValidator() {
+        /* if (document.getElementById('dob').value) {
+          return true;
+        } else {
+          alert('Please enter the Date of Birth');
+        } */
+
+        if (document.getElementById('dob_display').value) {
+          // format: yyyy-mm-dd
+          let inputDOB = document.getElementById('dob_display').value;
+
+          // set input from date picker as Date type
+          let inputDOBdate = new Date(inputDOB);
+
+          // Date of Birth must be a valid date in the past
+          if (inputDOBdate.setHours(0, 0, 0, 0) > new Date().setHours(0, 0, 0, 0)) {
+            alert('Date of Birth must be a valid date in the past.');
+            return false;
+          }
+
+          // locale en-GB matches with dd/mm/yyyy format
+          let formattedDOB = inputDOBdate.toLocaleDateString('en-GB');
+
+          // set value of hidden element
+          document.getElementById('dob').value = formattedDOB;
+
+          let finalDOBdate = document.getElementById('dob').value;
+          console.log('finalDOBdate', finalDOBdate);
+
+          return true;
+        } else {
+          alert('Please enter the Date of Birth');
+        }
+      }
+
+      function onSubmitCallback(event) {
+        // redirectPage(event)
+        // let windoworigin = window.location.origin;
+        parent.location.hash = 'verification-status';
+        sessionStorage.setItem("vc-verificationToken", event);
+
+
+        // upsertRecord(event);
+        // window.top.location.href = `${windoworigin}/s/verification-status/?verificationToken=${event}`;
+      }
+
+
+    </script>
+
+    <!-- 
+                      These files are for the Harmony address matching solution, used on this data capture page only.
+                      They are not required for greenID, though use of address matching is recommended.
+                  -->
+    <script src="https://au.vixverify.com/js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://au.vixverify.com/js/for-harmony/20170703/harmony-1.6.2.min.js" type="text/javascript"></script>
+    <script src="https://au.vixverify.com/js/for-harmony/20170703/harmony-ui-1.6.2.min.js" type="text/javascript"></script>
+    <script src="https://au.vixverify.com/js/for-simpleui-demo-harmony/enable-au-harmony.js" type="text/javascript"></script>
+    <script async="" type="text/javascript" src="https://au.vixverify.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=622659406"></script>
+
+    <script type="text/javascript" defer="true">
+
+      $Lightning.use("c:ventureVerificationAddressApp", function () {
+        $Lightning.createComponent("c:loqateAddressContainer",
+          {
+          },
+          "LightningComponentid",
+          function (cmp) {
+          debugger;
+            console.log('LWC Componenet added in VF page');
+            document.querySelector('c-loqate-address-container').addEventListener('doupdate', function (event) {
+              console.log('doupdate', event);
+
+              document.getElementById('flatNumber').value = event.detail.subdwelling
+              document.getElementById('streetNumber').value = event.detail.streetNumber
+              document.getElementById('streetName').value = event.detail.streetName
+              document.getElementById('streetType').value = event.detail.streetType
+              document.getElementById('suburb').value = event.detail.locality ? event.detail.locality : event.detail.townCity;
+              document.getElementById('postcode').value = event.detail.postcode
+
+            });
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+    <style>
+      @charset "UTF-8";
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700");
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1250px;
+        }
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      @font-face {
+        font-family: "SuisseIntl-Regular";
+        src: url("/s/sfsites/c/resource/VC_NewPortalAssets/Assets/Fonts/Suisse/SuisseIntl-Regular.woff") format("woff");
+      }
+
+      .container h1 {
+        width: 100%;
+        text-align: center;
+      }
+
+      /* VEN-184: Replaced image */
+      .container h1::before {
+        content: "";
+        display: block;
+        width: 88px;
+        height: 105px;
+        margin: 40px auto 0 auto;
+        background-size: cover;
+        /* background-image: url('https://assets.venturecrowd.vc/uploads/2021/11/shield.png'); */
+        background-image: url('/resource/id_verification_icon');
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container h1::after {
+        content: "Let's verify your ID";
+        display: block;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 25px;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      #greenid-container h1 {
+        text-align: left;
+      }
+
+      #greenid-container h1::before,
+      #greenid-container h1::after {
+        display: none;
+      }
+
+      .container h1 img {
+        display: none !important;
+      }
+
+      html body.sfdcBody {
+        background-color: #F7F7F7 !important;
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container #greenid-container {
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      .container #greenid-container[data-eq-state~="small"] .lead {
+        font-size: 14px;
+      }
+
+      .container #greenid-container .dropdown-menu {
+        padding: 40px;
+      }
+
+      .container #greenid-container .dropdown-menu .list-group-item {
+        margin-left: 0;
+        border: none;
+      }
+
+      .container #greenid-container #greenid-source-header #greenid-source-list-container #greenid-option-list .dropdown-menu .list-group-item a {
+        padding: 10px 0;
+      }
+
+      .container .panel {
+        margin-top: 40px;
+        padding: 40px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container h1,
+      .container h2,
+      .container h3,
+      .container h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: #0F141E;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container #greenid-container h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: #0F141E;
+        margin: 0 0 20px;
+        display: inline-block;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container #greenid-container h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: #0F141E;
+        margin: 20px 0;
+        display: inline-block;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      /* VEN-184: Applied new site-wide color */
+      .container #greenid-container a,
+      .container #greenid-container a:hover {
+        color: #D95BAA;
+      }
+
+      /* VEN-184: Reduced left and right padding to fit button in container */
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container .btn,
+      .container .btn:hover,
+      .container #greenid-container .btn,
+      .container #greenid-container .btn:hover {
+        border-radius: 40px;
+        color: #fff;
+        padding: 12px 32px;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      /* VEN-184: Apply new color to button, default */
+      .container .btn,
+      .container #greenid-container .btn {
+        background: #000;
+      }
+
+      /* VEN-184: Apply new color to button, hover */
+      .container .btn:hover,
+      .container #greenid-container .btn:hover {
+        background: #D95BAA;
+      }
+
+      /* VEN-184: Apply new site-wide font - SuisseIntl to form labels and inputs */
+      .container label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      /* VEN-184: Removed rule 'height: 48px;' to fall back on next input element width */
+      .container .form-control,
+      .container #greenid-container .form-control {
+        background: #FFFFFF;
+        border: 1px solid #7B868C;
+        box-sizing: border-box;
+        border-radius: 4px;
+        /* height: 48px; */
+      }
+
+      /* VEN-184: Apply new site-wide font - SuisseIntl to form labels and inputs */
+      .container .form-control,
+      .container .control-label {
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+      }
+
+      .container #greenid-container #greenid-source-content {
+        height: auto !important;
+      }
+
+      .container .form-control.loading {
+        text-align: left;
+      }
+
+      .container #greenid-div hr {
+        display: none;
+      }
+
+      .greenid-modal.in .modal-dialog {
+        margin-top: 50vh;
+        transform: translateY(-50%);
+      }
+
+      .greenid-modal .modal-header {
+        border-bottom: none;
+      }
+
+      .greenid-modal .modal-footer {
+        border-top: none;
+      }
+
+      /* VEN-184: Applied new site-wide font - SuisseIntl */
+      .container #greenid-container .greenid-alert-danger {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+        font-style: normal;
+        font-weight: normal;
+        color: #0F141E;
+        background: rgba(239, 83, 80, 0.1);
+      }
+
+      .container #greenid-container .greenid-alert-danger span::before {
+        color: #EF5350;
+      }
+
+      @media (min-width: 1200px) {
+        .container #greenid-div .form-group.col-sm-3,
+        .container #greenid-container .form-group.col-sm-3,
+        .container #greenid-container[data-eq-state~="small"] .col-sm-3 {
+          width: 33.3%;
+        }
+      }
+
+      /* VEN-184: Added red asterisk to indicate required field */
+      .required-field-mark {
+        color: #EA001E
+      }
+
+      /* VEN-184: Added class for Submit button */
+      .button-container {
+        text-align: center;
+      }
+
+      .btn.btn-primary {
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      #greenid-container #greenid-option-list .dropdown-menu .pull-left:nth-child(2) {
+        display: none;
+      }
+
+      .loqateAddressCSS {
+        font-size: 16px !important;
+        font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif" !important;
+        height: 56px;
+        align-items: center;
+      }
+    </style>
+
+    <!-- 
+                  This CSS file is required. 
+                  Don't take a local copy and modify it, just link to it as below then override it (if needed) in your own CSS file.
+              -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://simpleui-au.vixverify.com/df/assets/stylesheets/greenid.css"
+    />
+
+    <!--
+                  This CSS file is not required. It is used for the initial data capture screen only.
+              -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+    <!--
+                  The two JS files below are required to ensure compatibility with Internet Explorer 8.
+              -->
+    <!--[if lt IE 9]>
+            <script src="https://test2.edentiti.com/df/javascripts/libs/html5shiv.js"></script>
+            <script src="https://test2.edentiti.com/df/javascripts/libs/respond.min.js"></script>
+          <![endif]-->
+
+    <!-- This CSS file is for the Harmony address matching solution used on the data capture page only, and is not required for greenID -->
+    <link href="https://au.vixverify.com/js/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://hosted.mastersoftgroup.com/harmony/rest/au/generateID?callback=jsonCallback__generateID_1626376651486&amp;Authorization=Basic%20d2ViOlhERjVHd3V2UHNMdUoyMk5jZkQ5Y1JuV0RhYVBrR2pp"></script> -->
+    <div class="container">
+      <h1>
+        <img src="https://au.vixverify.com/verification/customers/venturecrowd/img/logo.png" width="411" height="150" alt="VentureCrowd Holdings Pty Ltd"
+        />
+      </h1>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+
+          <!-- 
+                              The content of this 'greenid-div' div will be removed and replaced with the greenID content. 
+                              It can just be an empty div.
+                              This div ID is specified at the bottom of the page in the setup function and can be whatever you like.
+                          -->
+          <div id="greenid-div">
+            <h3 style="margin-top: 40px;">Provide your details to begin</h3>
+          </div>
+
+
+
+
+          <!-- 
+                              Your form will be hidden when it's submitted. 
+                              You specify your form ID in the setup function below.
+                          -->
+          <form method="POST" action="https://www.venturecrowd.com.au/s/verification-status" id="theform" role="form">
+
+            <!-- 
+                                  Your accountId (sometimes known as your customerId) is unique to you and remains the same in test and production
+                              -->
+            <input type="hidden" id="accountId" value="venturecrowd" name="accountId" />
+
+            <!-- 
+                                  Your apiCode will be different in test and production. 
+                                  The one that's first included below for you is for the test environment. 
+                              -->
+            <input type="hidden" id="apiCode" value="a6h-ziU-n4y-907" name="apiCode" />
+
+            <input type="hidden" id="usethiscountry" value="AU" name="country" />
+
+            <div class="row" style="margin-top:20px">
+
+              <div class="form-group col-sm-4">
+                <label for="givenNames" class="control-label">First Name</label>
+                <input type="text" id="givenNames" name="givenNames" class="form-control" />
+              </div>
+
+              <div class="form-group col-sm-4">
+                <label for="middleNames" class="control-label">Middle Name</label>
+                <input type="text" id="middleNames" name="middleNames" class="form-control" />
+              </div>
+
+              <div class="form-group col-sm-4">
+                <label for="surname" class="control-label">Surname</label>
+                <input type="text" id="surname" name="surname" class="form-control" />
+              </div>
+
+            </div>
+
+            <!-- 
+                                  Depending whether or not Harmony address matching is enabled on your account will dictate whether
+                                  a single address line or the broken-up address fields are output. Harmony is optional but recommended.
+                              -->
+            <div id="address-fields">
+
+              <div id="address-harmony-div">
+                <!-- <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label for="fullAddress" class="control-label">Address</label>
+                    <input id="fullAddress" type="text" class="form-control" placeholder="Start typing and select from the list that appears..."/>
+                  </div>
+                </div> -->
+              </div>
+
+              <div id="address-non-harmony-div">
+
+                <hr/>
+
+                <fieldset>
+                  <label>Address</label>
+
+                  <br/>
+
+                  <!-- VEN-184: Hide label on page level -->
+                  <!-- <label>Mailing Address</label> -->
+
+                  <div id="LightningComponentid"/>
+                  <!--div class="countryPicklist">
+                    <label for="countryCustom" class="control-label">Country</label>
+                    <select id="countryCustom" class="form-control">
+                      <option value="au" selected="selected">Australia</option>
+                      <option value="nz">New Zealand</option>
+                    </select>
+                  </div-->
+                  <br/>
+                  <div class="row">
+
+                    <div class="form-group col-sm-2">
+                      <label for="flatNumber" class="control-label">Unit Number</label>
+                      <input type="text" id="flatNumber" name="flatNumber" class="form-control" />
+                    </div>
+
+                    <div class="form-group col-sm-2">
+                      <label for="streetNumber" class="control-label">Street Number</label>
+                      <input type="text" id="streetNumber" name="streetNumber" class="form-control" />
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                      <label for="streetName" class="control-label">Street Name</label>
+                      <input type="text" id="streetName" name="streetName" class="form-control" />
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                      <label for="streetType" class="control-label">Street Type</label>
+                      <select id="streetType" class="form-control">
+                        <option value="" selected="selected">Select your street type...</option>
+                        <option value="AVE">Avenue</option>
+                        <option value="CIR">Circle</option>
+                        <option value="CCT">Circuit</option>
+                        <option value="CL">Close</option>
+                        <option value="CT">Court</option>
+                        <option value="CRES">Crescent</option>
+                        <option value="DR">Drive</option>
+                        <option value="ESP">Esplanade</option>
+                        <option value="EXP">Expressway</option>
+                        <option value="HWY">Highway</option>
+                        <option value="LANE">Lane</option>
+                        <option value="MWY">Motorway</option>
+                        <option value="PDE">Parade</option>
+                        <option value="PL">Place</option>
+                        <option value="RD">Road</option>
+                        <option value="SQ">Square</option>
+                        <option value="ST">Street</option>
+                        <option value="TCE">Terrace</option>
+                        <option value="WAY">Way</option>
+                      </select>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="form-group col-sm-4">
+                      <label for="suburb" class="control-label">Suburb</label>
+                      <input type="text" id="suburb" name="suburb" class="form-control" />
+                    </div>
+
+                    <!-- Begin State Dropdown -->
+                    <!-- <div class="form-group col-sm-4">
+                                          <label for="state" class="control-label">State</label>
+                                          <select id="state" name="state" class="form-control">
+                                              <option value="">Select your State/Territory...</option>
+                                              <option value="NSW">NSW</option>
+                                              <option value="VIC">VIC</option>
+                                              <option value="QLD">QLD</option>
+                                              <option value="SA">SA</option>
+                                              <option value="WA">WA</option>
+                                              <option value="ACT">ACT</option>
+                                              <option value="NT">NT</option>
+                                              <option value="TAS">TAS</option>
+                                          </select>
+                                      </div> -->
+                    <!-- End State Dropdown -->
+
+                    <div class="form-group col-sm-2">
+                      <label for="postcode" class="control-label">Postcode</label>
+                      <input type="text" id="postcode" name="postcode" class="form-control" />
+                    </div>
+
+                  </div>
+
+                </fieldset>
+
+                <hr/>
+              </div>
+
+            </div>
+            <!-- <div id="address-loading-placeholder">
+              <label class="control-label">Address fields loading...</label>
+            </div> -->
+
+            <div class="row">
+              <div class="form-group col-sm-3 col-lg-2">
+                <!--
+                  VEN-184: 
+                  * Added red asterisk to indicate required field
+                  * Created a hidden element to hold formatted Date of Birth value
+                  * Added same border-radius to input type date as style attribute
+                  * Removed date picker glyphicon and '(DD/MM/YYYY)' in label
+                -->
+                <label for="dob_display" class="control-label">Date of Birth<span class="required-field-mark">*</span></label>
+                <div class="input-group date">
+                  <input type="hidden" name="dob" id="dob"/>
+                  <input type="date" name="dob_display" id="dob_display" class="form-control" style="border-radius: 4px;" aria-required="true"/>
+                  <!-- <span class="input-group-addon datepicker">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 20px">
+              <div class="form-group col-sm-6">
+                <label for="email" class="control-label">Email</label>
+                <input type="text" id="email" name="email" class="form-control" />
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- VEN-184: Added class for Submit button container -->
+              <div class="form-group col-sm-12 button-container">
+                <input value="Submit details" type="submit" id="submitbob" name="submitbob" class="btn btn-primary" />
+              </div>
+            </div>
+
+          </form>
+
+          <apex:form >
+            <apex:actionFunction action="{!upsertRecord}" name="upsertRecord" rerender="one" />
+            <apex:outputLabel id="one">{!sName}</apex:outputLabel>
+          </apex:form>
+
+        </div>
+      </div>
+    </div>
+
+    <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none"></ul>
+    <div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+
+    <object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none"></object>
+    <span id="__symantecPKIClientDetector" style="display: none">__PRESENT</span>
+
+  </body>
+
+  <!-- VEN-184: Pass scroll height of document body to parent onload -->
+  <script>
+    postToParent = () => {
+      let height = document.body.scrollHeight;
+      window.parent.postMessage({ 'scrollHeight' : height }, '*');
+    }
+
+    window.onload = () => {
+      postToParent();
+    }
+  </script>
+</apex:page>

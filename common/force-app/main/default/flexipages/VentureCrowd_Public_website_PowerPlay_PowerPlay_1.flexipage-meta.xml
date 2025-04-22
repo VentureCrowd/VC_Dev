@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>eb46cd59-202d-4bac-ac0b-4442e64622c3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1ef5960a-f49a-4e87-9299-d6500c0632c5</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>This opportunity is open to everyone</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i0000087fTu&amp;d=%2Fa%2F5i000000PVAI%2FmxO9ZTT4uIhHMl2u3Lfo8H7z.M3a6YI62Gs0fuRYBqE&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fixedAmount</name>
+                    <value>256</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fixedAmountCent</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>investUrl</name>
+                    <value>/s/portal/invest-now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>minAmount</name>
+                    <value>8000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>minAmountCent</name>
+                    <value>256</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/portal/invest-now?amount=256&amp;Id=01t5i0000030uxvAAA</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i0000030uxvAAA</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000005rHCN&amp;d=%2Fa%2F5i000000PRdu%2Fv5XstjNeQEPbl5J5hI5IrXf55Xgc9.Mk_XY929l835A&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>For a minimum of $256 you can become a shareholder</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>targetAmount</name>
+                    <value>0.08</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Own shares in PowerPlay</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductWithInvestmentDetails</componentName>
+                <identifier>heroBannerProductWithInvestmentDetails</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>eb46cd59-202d-4bac-ac0b-4442e64622c3</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1b0d6695-78f5-4a96-8790-2d05e9c1c11d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3371686a-cf51-43ba-9668-7453b425dbdc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>16395</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-eaa6065e-7dc9-4822-ac2e-430fdec325b7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor p-4&quot;&gt;
+    &lt;br&gt;
+    &lt;p&gt;This is a retail crowdfunding investment opportunity for &lt;strong&gt;retail investors (any 18+ Australian resident)&lt;/strong&gt; to invest in &lt;strong&gt;PowerPlay&lt;/strong&gt;, the first cryptocurrency incentive model that makes using renewable energy good for your pocket as well as the environment. No solar panels, batteries or Teslas required to be an energy genius.&lt;/p&gt;
+    &lt;p&gt;Use Energy, Earn Crypto, Pay Less.&lt;/p&gt;
+    &lt;p&gt;With a minimum investment of $256, this opportunity is open to everyone!&lt;/p&gt;
+    
+        &lt;h1 class=&quot;color-black mb-2&quot;&gt;Why PowerPlay?&lt;/h1&gt;
+ 
+    &lt;p class=&quot;lead&quot; id=&apos;KeyInvestmentHighlights&apos;&gt;&lt;/p&gt;
+	&lt;ul&gt;
+        &lt;li&gt;PowerPlay’s &lt;b&gt;unique IP&lt;/b&gt; makes them the first crypto led energy retailer on the planet.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;No cost or investment barrier to entry&lt;/b&gt; for new customers: renters, people in apartments (excluding embedded networks) and anyone who can’t install solar.&lt;/li&gt;
+        &lt;li&gt;Total accessible market comprises &lt;b&gt;nearly 7 million homes&lt;/b&gt; on the Australia’s East coast.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Massive growth potential&lt;/b&gt; into countries with less solar penetration than Australia and high rental rates.&lt;/li&gt;
+        &lt;li&gt;A &lt;b&gt;desirable energy savings solution&lt;/b&gt; for crypto curious Millennials and Zoomers who feel the pain of increased cost-of-living, climate change and the energy crisis.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;PowerPlay will use these funds&lt;/b&gt; to expand their  marketing, to demonstrate their scalability, and to conduct their open beta which will significantly increase their current value.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Utility-driven&lt;/b&gt;: Profitability is not tied to the token price.&lt;/li&gt;
+        &lt;li&gt;Industry precedent for &lt;b&gt;exit&lt;/b&gt; with a strategic merger or IPO.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Please read this page in detail and the CSF risk warning before investing.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;
+ &lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/oOGMhHp3JxU?rel=0&quot; src=&quot;https://www.youtube.com/embed/oOGMhHp3JxU?rel=0&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://venturecrowd.zoom.us/webinar/register/7716657276844/WN_YisZ-RQOS0-pP4sxEHzznw&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.PowerPlay_Webinar_DealPage.1}&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1b0d6695-78f5-4a96-8790-2d05e9c1c11d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columnWidth</name>
+                    <value>2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>componentBackgroundColor</name>
+                    <value>rgba(195, 205, 209, 0.2)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>featureValues</name>
+                    <value>[  {&quot;feature&quot;: &quot;$256&quot;, &quot;value&quot;: &quot;Minimum Investment&quot; }, {&quot;feature&quot;: &quot;$16&quot;, &quot;value&quot;: &quot;Share Price&quot; }, { &quot;feature&quot;: &quot;Open to everyone&quot;, &quot;value&quot;: &quot;Investor Type&quot; },   { &quot;feature&quot;: &quot;Web3&quot;, &quot;value&quot;: &quot;Industry&quot; }  ]</value>
+                </componentInstanceProperties>
+                <componentName>investmentFeatures</componentName>
+                <identifier>investmentFeatures</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--page-index p-4&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#KeyInvestmentHighlights&quot;&gt;Key Investment Highlights&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhatisPowerPlay&quot;&gt;What is PowerPlay?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#Problemandmarket&quot;&gt;Problem &amp; Market&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#Solution&quot;&gt;PowerPlay&apos;s Solution&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#CompetitiveAdvantage&quot;&gt;Competitive Advantage&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#GrowthStrategy&quot;&gt;Growth Strategy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#ExitStrategy&quot;&gt;Exit Strategy&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#TheOffer&quot;&gt;The Offer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#ManagementTeam&quot;&gt;Management Team&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#RecentMedia&quot;&gt;Recent Media&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhyVentureCrowd?&quot;&gt;Why VentureCrowd?&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href=&quot;#Risks&quot;&gt;Risks&lt;/a&gt;&lt;/li&gt;   
+        
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3371686a-cf51-43ba-9668-7453b425dbdc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>846acc9b-dfa1-4744-9b0a-11c80a85dda8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9a914cba-df98-4443-9182-038732c1afd3</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;WhatisPowerPlay&apos; class=&quot;color-black mb-4 pt-4 &quot;&gt;What is PowerPlay?&lt;/h1&gt;
+    
+	&lt;p&gt;PowerPlay is a ‘Use to Earn’ Web3 project that incentivises consumers who can’t access renewable energy solutions to be more energy efficient. &lt;a href=&quot;https://www.youtube.com/watch?v=WDz6WYCCcJ8&quot; target=&quot;_blank&quot;&gt;Learn more here.&lt;/a&gt;&lt;/p&gt;
+	&lt;p&gt;When users align energy usage with peak renewable generation and low wholesale energy costs then they earn tokens. This means washing machines, EVs, hot water, pool filters and other discretionary use items are all ways to earn PowerPlay’s utility token REMI. REMI can be cashed out, swapped for other coins like bitcoin or used to generate ongoing power bill discounts by depositing the tokens into the on-chain smart contract called the ‘Bill Buster’.&lt;/p&gt;
+	&lt;p&gt;Loyalty is inbuilt into PowerPlay in that it rewards users who accumulate the most REMI tokens with the biggest power bill discounts which are only available on a PowerPlay energy offer.&lt;/p&gt;
+	&lt;p&gt;Best of all, even if they move home their ability to generate a discount comes with them as long as they sign up to PowerPlay at their new home. The platform is designed to be easy to use  and customers do not need any prior knowledge about cryptocurrency or any bespoke set up to start earning rewards.&lt;/p&gt;
+   
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPMarket2.1}&quot; style=&quot;width: 364.266px; height: 364.266px;&quot;&gt; &lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPMarketingGraphic.1}&quot; style=&quot;width: 364.57px; height: 364.57px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>846acc9b-dfa1-4744-9b0a-11c80a85dda8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1655d19a-5191-4f4d-b41e-98c8a0a757e2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3ec6ef20-54f8-4737-aa68-6e720da37b23</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>c446e</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ad5f5c26-3d61-4b6c-aeba-32437d649b8f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>a9bbe</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-d778c607-b5ff-420d-8e8b-14bc99ebf634</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;Problemandmarket&apos; class=&quot;color-black mb-4 pt-4 &quot;&gt;Problem and Market&lt;/h1&gt;
+    
+    &lt;p&gt;When you rent a home or apartment that has no solar panels, you’re stuck with whatever energy solution the homeowner has in place. As a renter, you have no say and no incentive to optimise discretionary energy use. This is despite feeling the pressure from cost-of-living increases, the looming energy crisis and growing concern about climate change.&lt;/p&gt;
+	&lt;p&gt;Simple tariff models of peak and off-peak no longer represent the actual wholesale energy market, paving the way for a novel solution. Most retail energy brands are outdated and fail to engage the younger Millennial and Zoomer markets. They also struggle to differentiate themselves from one another.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1655d19a-5191-4f4d-b41e-98c8a0a757e2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>3ec6ef20-54f8-4737-aa68-6e720da37b23</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.PPDPMarket.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ad5f5c26-3d61-4b6c-aeba-32437d649b8f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>4609ce9a-33cd-43d6-ba6b-ccd780ac028c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-31ab28da-9ceb-452e-a925-a6feffcca6d9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPSolutionVentureCrowd.1}&quot; style=&quot;width: 844.99px; height: 563.604px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;Solution&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;PowerPlay&apos;s Solution&lt;/h1&gt;
+    
+    &lt;p&gt;PowerPlay gamifies energy use, making it fun and rewarding for consumers. The more the platform’s users access energy at optimal times, the more REMI tokens they will earn and the lower their carbon footprint will be.&lt;/p&gt;
+	&lt;p&gt;Through PowerPlay’s app customers can see their energy use in real time, the amount of renewable energy currently in the grid supply and the current wholesale market rate. This literally puts the power in customers’ hands to optimise their energy use.&lt;/p&gt;
+	&lt;p&gt;The PowerPlay app calls data directly from the energy user&apos;s smart meter making it useful for the consumer and not just for the retailer. PowerPlay’s app is designed to be fun, engaging and provides a strong economic incentive for better energy use habits. Even if customer engagement with the app varies, they can still earn token rewards as long as they have average or better usage profiles. To access rewards, all a customer needs to do is sign up to a PowerPlay supported energy offer.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>4609ce9a-33cd-43d6-ba6b-ccd780ac028c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>46d0a82a-e5e6-4e3b-bf67-8591a4a70456</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d94eb5c4-01b3-4b61-85ba-73f4dce6e90c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>79631</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d67a3324-0ab4-4aed-a981-da5d5898a961</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>0a985</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-27969aff-1842-4bd3-9ebd-f2737d5cbbe0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>46d0a82a-e5e6-4e3b-bf67-8591a4a70456</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/yLSyhxqCG0w&quot; src=&quot;https://www.youtube.com/embed/yLSyhxqCG0w&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Watch customer testimony &lt;a href=&quot;https://www.youtube.com/watch?v=yLSyhxqCG0w&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d94eb5c4-01b3-4b61-85ba-73f4dce6e90c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>d67a3324-0ab4-4aed-a981-da5d5898a961</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6171ccb3-60ef-4c20-af94-97e54533a7a8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f4a29e76-8cf5-45b9-8894-aa119fba6be7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>dd175</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>899f4656-a956-403e-a74d-3fc3026d6faa</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>ca442</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1e91e1ab-df79-4054-8d7f-b0231fdabbd0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;CompetitiveAdvantage&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;Competitive Advantage&lt;/h1&gt;
+    &lt;p&gt;PowerPlay’s product is novel and has wide appeal to a &lt;b&gt;very large crypto enthusiast audience.*&lt;/b&gt;&lt;/p&gt;
+	&lt;p&gt;Their cryptocurrency incentive token offers a significant marketing differentiator in a competitive space. The other major advantage is REMI’s utility. If a customer accumulates and ‘stakes’ their REMI tokens in the ‘Bill Buster’ then it generates a bill discount. Customers will then reap rewards to stay on the platform and accumulate utility tokens. Buying tokens from a secondary market is another way a customer can increase their bill discount. This has the potential to support token price growth. While not required for the sustainability of the project, token price growth would further raise awareness and potentially increase customer growth.&lt;/p&gt;
+  	&lt;p&gt;
+        &lt;a href=&quot;https://zerocap.com/millennials-and-bitcoin/&quot; target=&quot;_blank&quot;&gt;*a November 2019 survey&lt;/a&gt;
+        by the Independent Reserve Index has shown that 17% of Australians own bitcoin or another cryptocurrency, with 39% of those Australians being millennials. The research also forecast that over 50% of adults aged 44 or younger will own bitcoin by 2024.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6171ccb3-60ef-4c20-af94-97e54533a7a8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>f4a29e76-8cf5-45b9-8894-aa119fba6be7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPREMI.1}&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>899f4656-a956-403e-a74d-3fc3026d6faa</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>43abb063-424e-4ae9-ba13-a992d0a85393</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fcf16532-4b20-4ac8-af7e-1461a49ef911</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h1 id=&apos;GrowthStrategy&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;Growth Strategy&lt;/h1&gt;
+    
+    &lt;p&gt;PowerPlay’s growth strategy comprises:&lt;/p&gt;
+	&lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Viral referral marketing&lt;/b&gt; to acquire new customers. 10% of the platform’s native token is allocated to fund viral loop campaigns, allowing them to win more customers with no capital outlay. &lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Paid promotion&lt;/b&gt; will build on organic reach from viral campaigns to lower cost per acquisition. Messaging and content will focus on the unique and novel energy sector offering. &lt;/li&gt;
+        &lt;li&gt;Tap into the &lt;b&gt;thriving Web3 ecosystem marketing&lt;/b&gt; channels, news sites, podcasts, TikTok and Youtube channels as well as create original blog content for their own and partner sites. &lt;/li&gt;
+        &lt;li&gt;Leverage a decentralised franchise model to &lt;b&gt;expand internationally&lt;/b&gt; with regional expertise driving growth in other markets.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.BitCourier_Banner_PowerPlay.1}&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>43abb063-424e-4ae9-ba13-a992d0a85393</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>e3e17b75-9c68-47f0-9c60-580cbb830f7a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-23f5853d-6667-40eb-9a33-5e8e4d3962f9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h1 id=&apos;ExitStrategy&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;Use of Funds &amp; Exit Strategy&lt;/h1&gt;
+    
+    &lt;p&gt;PowerPlay will use these funds to conduct their open beta, marketing, support and scale Australian operations, and to demonstrate their scalability via a partnership with an established retailer.&lt;/p&gt;
+    &lt;p&gt;A successful open beta will significantly increase PowerPlay&apos;s current value and at this point a series A round will be conducted to secure funding for PowerPlay to establish, acquire or merge with a retailer.&lt;/p&gt;
+    &lt;p&gt;PowerPlay has a massive growth potential into countries with less solar penetration than Australia and high rental rates.&lt;/p&gt;
+    &lt;p&gt;There&apos;s industry precedent for exit with a strategic merger or IPO.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>e3e17b75-9c68-47f0-9c60-580cbb830f7a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0e7bdad2-1639-426e-930f-b75d2fa018c7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>8fb12929-add0-4112-8192-6927abce8ea4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>79631</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab18</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c2bc7ab2-0ded-4381-a48f-79a07fcba791</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>0a985</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab19</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-004092c5-7134-42c7-a63e-0d204f20db9e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>0e7bdad2-1639-426e-930f-b75d2fa018c7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/vyNurjQf9aU&quot; src=&quot;https://www.youtube.com/embed/vyNurjQf9aU&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Hear from one of PowerPlay&apos;s first Investors, Steve from DLTx. &lt;strong&gt;DLTx is one of the premier blockchain development agencies in Brisbane, Australia, and the world. &lt;/strong&gt;They don&apos;t invest in projects lightly, and they see potential in PowerPlay, choosing to invest significant sweat equity to develop PowerPlay&apos;s MVP.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>8fb12929-add0-4112-8192-6927abce8ea4</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>c2bc7ab2-0ded-4381-a48f-79a07fcba791</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>301dba93-0857-414c-99e2-10ddd3dbe17b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab20</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-647985ec-d97a-4ca4-af00-cbb0b7c1da98</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam.1}&quot; style=&quot;width: 958.037px; height: 638.291px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;ManagementTeam&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;Management Team&lt;/h1&gt;
+	
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam_Aaron.1}&quot; style=&quot;width: 484.746px; height: 234.082px;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam_Damien.1}&quot; style=&quot;width: 490.225px; height: 240.674px;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam_Phoenix.1}&quot; style=&quot;width: 487.246px; height: 247.705px;&quot;&gt; &lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam_Drew.1}&quot; style=&quot;width: 486.885px; height: 263.223px;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam_Danielle.1}&quot; style=&quot;width: 496.387px; height: 329.854px;&quot;&gt; &lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.PPDPTeam_Mick.1}&quot; style=&quot;width: 477.549px; height: 317.344px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>301dba93-0857-414c-99e2-10ddd3dbe17b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5a7c4a2d-5acb-461a-89df-d0a003af0381</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab21</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-58c64569-116e-4e29-ad3f-719668ae9878</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;RecentMedia&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;Recent Media&lt;/h1&gt;
+	&lt;ul&gt;
+        &lt;li&gt;AusBiz / Startup Daily interview with Damian (Skip to 9:34): &lt;a href=&quot;https://www.ausbiz.com.au/media/startup-daily-30th-august-raises-raises-raises?videoId=23850&quot; target=&quot;_blank&quot;&gt;Watch now&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;BitCourier Interview with Phoenix: &lt;a href=&quot;https://bitcourier.co.uk/news/powerplay-interview&quot; target=&quot;_blank&quot;&gt;Read more&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Ticker News Insight: &lt;a href=&quot;https://www.linkedin.com/posts/tickerinsight_incentivising-renewables-with-web3-tech-activity-6986202978005254144-Ta9E&quot; target=&quot;_blank&quot;&gt;Watch now&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5a7c4a2d-5acb-461a-89df-d0a003af0381</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a7e9d5c4-6d43-45ee-8336-7caeea68ded9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab22</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>e76dbefa-ffbf-4a73-942a-1bf6e39fe598</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>87429</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab23</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5c6f7d49-1349-4890-9350-70f05d031ea3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>99193</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab24</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-5cb64267-b524-4ea0-989d-72009c754fec</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>a7e9d5c4-6d43-45ee-8336-7caeea68ded9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/3tzHvBZwzpI&quot; src=&quot;https://www.youtube.com/embed/3tzHvBZwzpI&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>e76dbefa-ffbf-4a73-942a-1bf6e39fe598</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>5c6f7d49-1349-4890-9350-70f05d031ea3</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>72e7e777-767a-4c80-aa1e-e658190ec3eb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab25</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-56dd215e-d098-48c2-8962-8ab31dae4df7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h1 id=&apos;TheOffer&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;The Offer&lt;/h1&gt;
+	&lt;p&gt;The Offer of fully paid ordinary shares in PowerPlay Pty Ltd at $16 per share, to raise a maximum of $800,000&lt;/p&gt;
+	&lt;p&gt;This crowd-sourced funding (CSF) Offer Document relates to the Offer of fully paid ordinary shares in PowerPlay. This Offer is made under the CSF regime in Part 6D.3A of the Corporations Act 2001 (Corporations Act).&lt;/p&gt;
+     &lt;p&gt;Please read this page in detail and the CSF risk warning before investing.&lt;/p&gt;
+
+    &lt;h1 id=&apos;WhyVentureCrowd?&apos; class=&quot;color-black mb-4 pt-4&quot;&gt;Why Invest Through VentureCrowd?&lt;/h1&gt;
+	&lt;p&gt;VentureCrowd is the leading digital investment platform for alternative assets. We find and fund the brightest and most innovative startups.&lt;/p&gt;
+
+&lt;p&gt;Our curation and due diligence is rigorous and our track record of success speaks for itself:&lt;/p&gt;
+    &lt;ul&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Only digital investment platform in Australia&lt;/b&gt; to have successfully delivered multiple exit returns to investors through equity crowdfunding.&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;69K+ members&lt;/b&gt; and counting.&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;&lt;b&gt;Over $250,000,000&lt;/b&gt; in capital raised since inception.&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;VentureCrowd is investor-led, which means we only list deals with secured professional external lead investors. Our investors then invest on the same economic terms as professional investors. If you invest in one of our deals you will receive equity or ownership in the company that is raising the capital. Not only will your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt; &lt;a href=&quot;https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t5i0000030uxvAAA&amp;amount=256&quot;&gt;Invest now &lt;/a&gt; &lt;/strong&gt; &lt;/p&gt;
+
+    &lt;h1 class=&quot;color-black mb-4 pt-4&quot;&gt;Questions?&lt;/h1&gt;
+    &lt;p&gt;If you have any questions about this investment offer, please read our &lt;strong&gt;&lt;a href=&quot;https://www.venturecrowd.com.au/s/learn/faq&quot; target=&quot;_blank&quot;&gt;Frequently Asked Questions&lt;/a&gt;&lt;/strong&gt; or post your question in the &lt;strong&gt;comments&lt;/strong&gt; section below. If you have any questions about PowerPlay, please contact the Powerplay team at: &lt;a href=&quot;mailto:aaron@powerplay.xyz&quot; target=&quot;_blank&quot;&gt;aaron@powerplay.xyz&lt;/a&gt;&lt;/p&gt;
+    &lt;ul&gt;
+    &lt;ul&gt;
+
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>72e7e777-767a-4c80-aa1e-e658190ec3eb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>8ea076c6-320c-459c-85de-eb55d3d32171</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab26</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-7e5b62be-11a6-4282-b01d-1a7e70a4bbaf</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d3fb87a5-82fb-49e9-8b21-341ab3750960</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>fbf2c</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab27</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>bce954a9-9721-41e9-bbcb-01fd7a70a6ef</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>4b984</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab28</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>cbe02831-705a-41db-8b4b-1fc8c6d51f09</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab29</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-39bfe40c-e397-4c8f-aac4-b0e7c072bf18</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;Crowd-sourced funding is risky. Issuers using this facility include new or rapidly growing ventures. Investment in these types of ventures is speculative and carries high risks. You may lose your entire investment, and you should be in a position to bear this risk without undue hardship. Even if the company is successful, the value of your investment and any return on the investment could be reduced if the company issues more shares. Your investment is unlikely to be liquid. This means you are unlikely to be able to sell your shares quickly or at all if you need the money or decide that this investment is not right for you. Even though you have remedies for misleading statements in the offer document or misconduct by the company, you may have difficulty recovering your money. There are rules for handling your money. However, if your money is handled inappropriately or the person operating this platform becomes insolvent, you may have difficulty recovering your money. Ask questions, read all information given carefully, and seek independent financial advice before committing yourself to any investment.&lt;/p&gt;&lt;p&gt;This information has been prepared and issued by VentureCrowd Pty Ltd ABN 40 166 598 849 AFSL 503381 (VentureCrowd or we or us). The information is general information only and is not intended to provide you with financial advice or take into account your objectives, financial situation or needs. You should consider, with your professional adviser, whether the information is suitable for your circumstances.&lt;/p&gt;&lt;p&gt;Please note past investment performance is not a reliable indicator of future investment performance and no guarantee of performance, the return of capital or a particular rate of return is provided. While we believe this material is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which can’t be excluded. Crowd Funding (CSF) Offers are facilitated by VentureCrowd Pty Ltd and involve the provision of a crowdfunding service. In deciding whether to acquire securities under a CSF offer, you should first consider the CSF offer document (available in this page).&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d3fb87a5-82fb-49e9-8b21-341ab3750960</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i0000030uxvAAA</value>
+                </componentInstanceProperties>
+                <componentName>keyDocument</componentName>
+                <identifier>keyDocument</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>bce954a9-9721-41e9-bbcb-01fd7a70a6ef</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;p&gt;N/A&lt;/p&gt;
+         
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>cbe02831-705a-41db-8b4b-1fc8c6d51f09</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-39bfe40c-e397-4c8f-aac4-b0e7c072bf18</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>tabsetConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;39bfe40c-e397-4c8f-aac4-b0e7c072bf18&quot;,&quot;activeTab&quot;:&quot;&quot;,&quot;useOverflowMenu&quot;:false,&quot;tabs&quot;:[{&quot;UUID&quot;:&quot;d3fb87a5-82fb-49e9-8b21-341ab3750960&quot;,&quot;tabName&quot;:&quot;Risks&quot;,&quot;tabKey&quot;:&quot;fbf2c&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;bce954a9-9721-41e9-bbcb-01fd7a70a6ef&quot;,&quot;tabName&quot;:&quot;Key Documents&quot;,&quot;tabKey&quot;:&quot;4b984&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;cbe02831-705a-41db-8b4b-1fc8c6d51f09&quot;,&quot;tabName&quot;:&quot;Fees&quot;,&quot;tabKey&quot;:&quot;1&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:tabset</componentName>
+                <identifier>forceCommunity_tabset</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>8ea076c6-320c-459c-85de-eb55d3d32171</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c8293b0f-38d7-4343-a4dc-02e9ce8be36e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab30</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-62398173-4d43-4389-8b84-8045e7d4a7eb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>prodId</name>
+                </componentInstanceProperties>
+                <componentName>Comments</componentName>
+                <identifier>Comments</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c8293b0f-38d7-4343-a4dc-02e9ce8be36e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1ef5960a-f49a-4e87-9299-d6500c0632c5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1ef5960a-f49a-4e87-9299-d6500c0632c5&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;eb46cd59-202d-4bac-ac0b-4442e64622c3&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-eaa6065e-7dc9-4822-ac2e-430fdec325b7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;eaa6065e-7dc9-4822-ac2e-430fdec325b7&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1b0d6695-78f5-4a96-8790-2d05e9c1c11d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;3371686a-cf51-43ba-9668-7453b425dbdc&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;16395&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>327</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(65,65,65,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9a914cba-df98-4443-9182-038732c1afd3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9a914cba-df98-4443-9182-038732c1afd3&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;846acc9b-dfa1-4744-9b0a-11c80a85dda8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-d778c607-b5ff-420d-8e8b-14bc99ebf634</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;d778c607-b5ff-420d-8e8b-14bc99ebf634&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1655d19a-5191-4f4d-b41e-98c8a0a757e2&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;6&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;3ec6ef20-54f8-4737-aa68-6e720da37b23&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;c446e&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;ad5f5c26-3d61-4b6c-aeba-32437d649b8f&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;a9bbe&quot;,&quot;columnWidth&quot;:&quot;5&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-31ab28da-9ceb-452e-a925-a6feffcca6d9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;31ab28da-9ceb-452e-a925-a6feffcca6d9&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;4609ce9a-33cd-43d6-ba6b-ccd780ac028c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-27969aff-1842-4bd3-9ebd-f2737d5cbbe0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;27969aff-1842-4bd3-9ebd-f2737d5cbbe0&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;46d0a82a-e5e6-4e3b-bf67-8591a4a70456&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;d94eb5c4-01b3-4b61-85ba-73f4dce6e90c&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;79631&quot;,&quot;columnWidth&quot;:&quot;10&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;d67a3324-0ab4-4aed-a981-da5d5898a961&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;0a985&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1e91e1ab-df79-4054-8d7f-b0231fdabbd0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1e91e1ab-df79-4054-8d7f-b0231fdabbd0&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;6171ccb3-60ef-4c20-af94-97e54533a7a8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;6&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;f4a29e76-8cf5-45b9-8894-aa119fba6be7&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;dd175&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;899f4656-a956-403e-a74d-3fc3026d6faa&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;ca442&quot;,&quot;columnWidth&quot;:&quot;5&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fcf16532-4b20-4ac8-af7e-1461a49ef911</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fcf16532-4b20-4ac8-af7e-1461a49ef911&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;43abb063-424e-4ae9-ba13-a992d0a85393&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-23f5853d-6667-40eb-9a33-5e8e4d3962f9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;23f5853d-6667-40eb-9a33-5e8e4d3962f9&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;e3e17b75-9c68-47f0-9c60-580cbb830f7a&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-004092c5-7134-42c7-a63e-0d204f20db9e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;004092c5-7134-42c7-a63e-0d204f20db9e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0e7bdad2-1639-426e-930f-b75d2fa018c7&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;8fb12929-add0-4112-8192-6927abce8ea4&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;79631&quot;,&quot;columnWidth&quot;:&quot;10&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;c2bc7ab2-0ded-4381-a48f-79a07fcba791&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;0a985&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-647985ec-d97a-4ca4-af00-cbb0b7c1da98</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;647985ec-d97a-4ca4-af00-cbb0b7c1da98&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;301dba93-0857-414c-99e2-10ddd3dbe17b&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-58c64569-116e-4e29-ad3f-719668ae9878</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;58c64569-116e-4e29-ad3f-719668ae9878&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5a7c4a2d-5acb-461a-89df-d0a003af0381&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-5cb64267-b524-4ea0-989d-72009c754fec</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;5cb64267-b524-4ea0-989d-72009c754fec&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a7e9d5c4-6d43-45ee-8336-7caeea68ded9&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;e76dbefa-ffbf-4a73-942a-1bf6e39fe598&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;87429&quot;,&quot;columnWidth&quot;:&quot;10&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;5c6f7d49-1349-4890-9350-70f05d031ea3&quot;,&quot;columnName&quot;:&quot;Column 3&quot;,&quot;columnKey&quot;:&quot;99193&quot;,&quot;columnWidth&quot;:&quot;1&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0, 0, 0, 0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-56dd215e-d098-48c2-8962-8ab31dae4df7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;56dd215e-d098-48c2-8962-8ab31dae4df7&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;72e7e777-767a-4c80-aa1e-e658190ec3eb&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-7e5b62be-11a6-4282-b01d-1a7e70a4bbaf</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;7e5b62be-11a6-4282-b01d-1a7e70a4bbaf&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;8ea076c6-320c-459c-85de-eb55d3d32171&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-62398173-4d43-4389-8b84-8045e7d4a7eb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;62398173-4d43-4389-8b84-8045e7d4a7eb&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c8293b0f-38d7-4343-a4dc-02e9ce8be36e&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section16</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta name=productID content=01t5i0000030uxvAAA&gt;
+&lt;meta name=category-industrySector content=Web3&gt;
+&lt;meta name=category-productName content=&apos;PowerPlay Australia Pty Ltd&apos;&gt;
+&lt;meta name=category-riskProfile content=5&gt;
+&lt;meta name=category-userType content=Retail&gt;
+&lt;meta name=category-persona content=RetailInvestor&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>PowerPlay are on a mission to help millions maximise their renewable energy use with cryptocurrency. This Equity Retail Crowdfunding investment opportunity is open to everyone!</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>PowerPlay | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>PowerPlay_PowerPlay (1)</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

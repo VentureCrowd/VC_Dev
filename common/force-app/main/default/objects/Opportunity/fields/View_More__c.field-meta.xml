@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View_More__c</fullName>
+    <description>Test Field to check hyperlink functionality</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+    LEFT($Api.Partner_Server_URL_390, FIND(&apos;.com&apos;, $Api.Partner_Server_URL_390) + 4) 
+    + &apos;/&apos; + Id, 
+    &apos;Access Opportunity&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>View More</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

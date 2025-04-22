@@ -1,0 +1,289 @@
+/* @Simplus VEN-170: New Navbar */
+/* Custom Fonts - start - */
+@font-face {
+    font-family: "Suisse Int'l";
+    src: url('/resource/Fonts/Suisse/SuisseIntl-Light.ttf') format('TrueType');
+  }
+  
+  @font-face {
+    font-family: "Caxton Bk Bt";
+    src: url('/resource/Fonts/Caxton/caxton.ttf') format('TrueType');
+  }
+  
+  /* Custom Fonts - end - */
+  
+  header {
+    padding: 0 28px;
+    transition: top 0.5s ease;
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .black-background {
+    background-color: black;
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .default-background {
+    /* VEN-293 - changed to black  */
+    /* background-color: transparent; */
+    background-color: black;
+  }
+  
+  .logo img {
+    max-height: 30px;
+  }
+  
+  .logo {
+      /* Ven 127 - New navbar added text align for login page */
+      text-align: left;
+  }
+  
+  
+  /* all mobile devices in portrait mode */
+  @media screen and (max-width: 992px) {
+    .logo {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  
+    }
+  
+    header {
+      padding: 0px 28px;
+      transition: top 0.1s ease;
+    }
+  
+    /*
+    .container-fluid .row .mobile {
+      position: static !important;
+    }
+  
+    
+    .menu>ul>li>a {
+      position: absolute;
+    }
+  
+  
+    .menu>ul>li {
+      position: absolute;
+    }
+    */
+  }
+  
+  @media screen and (min-width: 992px) {
+  
+    /* VEN-130: Adjust logo/navbar for responsiveness */
+    .menu>ul>li>a {
+      font-size: 20px !important;
+    }
+  
+    /* @Simplus VEN-170: New Navbar */
+    .default-background {
+      background-color: black !important;
+    }
+  
+    .logo img {
+      padding-left: 9px
+    }
+  
+  
+  }
+  
+  @media screen and (max-width: 1220px) {
+    .actions a {
+      font-size: 14px !important;
+    }
+  }
+  
+  /* @Simplus VEN-167: The Nav Bar Headers are not aligned to the centre - changes: iPad Air view enhancement */
+  @media screen and (min-width: 1180px) and (max-width: 1180px) {
+  
+    /* Menu Items to have more spaces in between */
+    .menu>ul>li>a {
+      font-size: 20px !important;
+      margin: 0px 18px !important;
+    }
+  
+    .actions a {
+      font-size: 14px !important;
+    }
+  }
+  
+  /* @Simplus VEN-167: The Nav Bar Headers are not aligned to the centre - changes: iPad Mini view enhancment */
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+  
+    /* Menu Items to have more spaces in between */
+    .menu>ul>li>a {
+      font-size: 17px !important;
+      margin: 0px 18px !important;
+    }
+  
+    .actions a {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media screen and (max-width: 1120px) {
+    .actions .action--login {
+      padding: 7px 29px !important;
+    }
+  
+    .actions .action--register {
+      padding: 7px 29px !important;
+    }
+  
+  }
+  
+  .menu>ul {
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .menu>ul>li>a {
+    /* @Simplus VEN-170: New Navbar */
+    font-family: "Suisse Int'l";
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+    /* VEN-130: Adjust logo/navbar for responsiveness  */
+    margin: 0 calc(4vw - 28px);
+    padding: 25px 0;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+  }
+  
+  .menu>ul>li>a:after {
+    transition: transform 0.3s ease-out, border-color 0.3s ease-out;
+    position: absolute;
+    display: block;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    border-top: 2px solid #d95baa;
+    content: "";
+    padding-bottom: inherit;
+  }
+  
+  .menu>ul>li>a:active,
+  .menu>ul>li>a:focus {
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .active {
+    color: #d95baa !important;
+    font-weight: bold !important;
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  .menu>ul>li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu>ul>li:hover a:after {
+    transform: scaleX(1);
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .menu>ul>li .sub-menu {
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: opacity 400ms ease;
+    opacity: 0;
+    z-index: 100;
+  }
+  
+  .menu>ul>li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu>ul>li .sub-menu li {
+    text-align: left;
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .menu>ul>li .sub-menu li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 10px 15px;
+    font-family: "Suisse Int'l";
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .menu>ul>li .sub-menu li:hover {
+    background-color: #d95baa;
+  }
+  
+  .menu>ul>li .sub-menu li:hover a {
+    text-decoration: none;
+  }
+  
+  .profile-photo {
+    border-radius: 50%;
+  }
+  
+  .actions a {
+    font-family: "Caxton Bk Bt";
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    outline: none;
+    border-radius: 60px;
+  }
+  
+  .actions .action--login {
+    padding: 7px 37px;
+    border: 1.5px solid #fff;
+    transition: all 300ms ease;
+    height: 45px;
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .actions .action--login:hover {
+    border-color: #d95baa;
+    color: #fff;
+    background-color: #d95baa;
+  }
+  
+  /* @Simplus VEN-170: New Navbar */
+  .actions .action--register:hover {
+    border-color: #d95baa;
+    color: #fff;
+    background-color: #d95baa;
+  }
+  
+  .actions .action--register {
+    padding: 7px 37px;
+    margin-right: 12px;
+    border: 1.5px solid #fff;
+  }
+  
+  .actions .username {
+    color: #7b868c;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: "Suisse Int'l";
+  }
+  
+  .container-fluid .row .mobile {
+    position: static;
+  }

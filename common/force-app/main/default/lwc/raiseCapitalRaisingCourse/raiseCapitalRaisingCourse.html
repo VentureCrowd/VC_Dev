@@ -1,0 +1,93 @@
+<template>
+    <div class="course-container">
+        <div class="course-header">
+            <div class="course-title">
+                <h1>{course.title}</h1>
+                <div class="actions">
+                    <c-core-button label="Save" onbuttonclick={handleSave}></c-core-button>
+                    <template lwc:if={displayCourseCompletedButton}>
+                        <c-core-modal
+                        onmodalbutton={handleComplete}
+                        show-close-button= "False"
+                        label="Complete course"
+                        disabled={isNotCompleted}>
+                            <div class="modal-course-completed" slot="header">
+                            <img src={completeCourseImg}/>
+                                <h2>
+                                    You’ve completed your 
+                                    <br/>
+                                    Capital Raising 101 course!
+                                </h2>
+                            </div>
+
+                            <div class="body-modal" slot="body">
+                                
+                                <p>The Ventures team will be in touch about launching your raise campaign!</p>
+
+                                <c-core-button
+                                    label="My companies"
+                                    mode="dark"
+                                    variation="secondary"
+                                    onbuttonclick={returnToCompanies}>
+                                    
+                                </c-core-button>
+                            </div>
+                        </c-core-modal>
+                    </template>
+                    
+                </div>
+            </div>
+            <div class="course-description">
+            </div>
+            <div class="course-progress-bar">
+                <!-- Progress here -->
+                    <div class="progress-text">{completedPercentage} % Complete</div>
+                    <div class="progressbar">
+                        <div class="progress-bar-width"></div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="course-body">
+            <!-- Cards go here -->
+            <template for:each={modules} for:item="module">
+                <div class="module-card" key={module.id}>
+                    <div class="module-image">
+                        <img src={module.bannerURL}/>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-header">
+                            <a href={module.moduleUrl}><div class="module-title">{module.title}</div></a>
+                            <div class="module-checkbox">
+                                <c-core-checkbox
+                                name={module.id}
+                                values={completedOption} 
+                                mode="light"
+                                size="large"
+                                alignment-position="horizontal"
+                                onchange={handleCheckboxChange}>
+                                </c-core-checkbox>
+                            </div>
+                        </div>
+                        <div class="module-body">
+                            {module.description}
+                        </div>
+                        <div class="module-footer">
+                            <div class="module-tags">
+                                <template for:each={module.tags} for:item="tag">
+                                    <div key={tag} class="module-tag">
+                                        {tag}
+                                    </div>
+                                </template>
+                            </div>
+                            <div class="module-etc">
+                                <p>{module.estimatedCompletionTimeFormatted}</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WASP_VC_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+($RecordType.Name= &apos;VC&apos;),
+ISPICKVAL( StageName, &apos;Decision Appt Set Pending&apos; ),
+
+OR(
+(ISBLANK(CloseDate )),
+(ISBLANK(Probability )),
+(ISBLANK(NextStep )),
+(ISBLANK(Next_Action_Date_Time__c )),
+(ISBLANK(CM_Assigned__c ))
+
+
+))</errorConditionFormula>
+    <errorMessage>Please make sure Close Date, Probability, Next Step, Next Action Date Time and CM Assigned are filled in.</errorMessage>
+</ValidationRule>

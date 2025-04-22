@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Custom Table</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="columnWidth" type="String" label="Enter Column Width" datasource="1,2,3" description="Column width" default="2"/>
+            <property name="featureValues" type="String" label="Enter the Features (JSON Format)" description='Enter Features in JSON format (Example : [{"feature":"feature1","value":"value1"},{"feature":"feature2","value":"value2"}]' default ='[   { "feature": "Final Tranch", "value": "Now Open for Investment" },   { "feature": "12% p.a. (Net) paid Monthly", "value": "intrest Rate" },   { "feature": "First Mortagage", "value": "secutiry" },   { "feature": "12 months", "value": "Loan Term" },   { "feature": "$ 4.9m", "value": "Total Loan Amount" },   { "feature": "$ 25,000", "value": "Minimum Investment" },   {     "feature": "Varying to Maximum of 60% LVR on balance land Unsold",     "value": "LVR"   },   { "feature": "1.1%", "value": "One off contribution Fee" } ]'/>
+            <property name="componentBackgroundColor" type="String" label="Background Color of the component" description="Please Speicify the Background color of the component" default="rgba(195, 205, 209, 0.2)"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

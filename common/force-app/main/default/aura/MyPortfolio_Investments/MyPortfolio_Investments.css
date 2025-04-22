@@ -1,0 +1,53 @@
+.THIS *{
+    color:#000;
+}
+.THIS .header--title{
+    padding-bottom:8px;
+}
+.THIS .vc-number-value{
+    font-size: 42px !important;
+    font-family: "SuisseIntl-Light", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    line-height: 1em;
+}
+.THIS .vc-background-transparent .slds-card{
+    background:transparent;
+    border:1px solid #fff !important;
+}
+
+.THIS .cardStyling {
+    color:white;
+    /*background: linear-gradient(98.18deg, #662385 0%, #1D7DA4 33.9%, #02C8C8 100%);*/
+    background:#D95BAA ;
+    border: 1px solid #d95baa!important;
+}
+.THIS .cardStylingMiddle{
+    color:white;
+    /*background: linear-gradient(98.18deg, #662385 0%, #1D7DA4 33.9%, #02C8C8 100%);*/
+    background:#D95BAA ;
+    border-color: #d95baa !important;
+
+}
+.THIS .cardTextMiddle{  
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: medium;
+    text-align:center;
+}
+.THIS .cardText{   
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align:left;
+    font-size: medium;
+}
+
+
+.THIS .cardStylingFooter{
+    font-size:xxx-large;
+    text-align:left;
+}
+.THIS .cardStylingFooterMiddle{
+    font-size:xxx-large;
+    text-align:center;
+}

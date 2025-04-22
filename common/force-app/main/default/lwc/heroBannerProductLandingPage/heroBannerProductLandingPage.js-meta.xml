@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="backgroundimageurl" type="String" required="true" label="Enter Background image url" placeholder="Image public URL" description="Background Image url" default="https://assets.venturecrowd.vc/uploads/2020/09/Smart-City-smart-touch-GRAD-FV-1.jpg"/>
+            <property name="productLogo" type="String" label="Enter Product Logo url" placeholder="Image public URL" description="Background Image url" default="https://assets.venturecrowd.vc/uploads/2021/02/ESN-Cleer-logo-white.png"/>
+
+            <property name="titleText" type="String" label="Title Content" placeholder="Title" description="" default="Title"/>
+            <property name="IntroText" type="String" label="Introduction Content" placeholder="Intoduction" description="" default="Introduction"/>
+            <property name="summaryText" type="String" label="Summary Content" placeholder="Summary" description="" default="Summary"/>
+
+
+            <property name="primaryButtonLabel" type="String" label="Primary Button Label - Guest User" placeholder="Label" description="Primary Button" default="CTA - Primary"/>
+            <property name="primaryButtonColor" type="String" datasource="Teal,Pink,Purple,Ghost,White" label="Primary Button Colour - Guest User" placeholder="CTA - Primary Color" description="" default="Teal" />
+            <property name="primaryButtonLink" type="String" label="Primary Button URL - Guest User" placeholder="Same Page Section Name or URL" default="anchor:web-to-lead-form" description="Links url for Primary Button"/>
+            <property name="primaryButtonSameOrNew" datasource="Same Tab, New Tab" type="String" label="Primary Link Target - Guest User" placeholder="Behaviour of the Link or URL" description=""/>
+
+            <property name="secondaryButtonLabel" type="String" label="Secondary Button Label - Guest User" placeholder="Label" description="Secondary Button" default="CTA - Secondary"/>
+            <property name="secondaryButtonColor" type="String" datasource="Teal,Pink,Purple,Ghost,White" label="Secondary Button Colour - Guest User" placeholder="CTA - Secondary Color" description="" default="Ghost"/>
+            <property name="secondaryButtonLink" type="String" label="Secondary Button URL - Guest User" placeholder="Same Page Section Name or URL" description="Links url for Secondary Button"/>
+            <property name="secondaryButtonSameOrNew" datasource="Same Tab, New Tab" type="String" label="Secondary Link Target - Guest User" placeholder="Behaviour of the Link or URL" description=""/>
+            
+            <property name="primaryButtonLabel_Login" type="String" label="Primary Button Label - Logged-in User" placeholder="Label" description="Primary Button Login" default="About Us"/>
+            <property name="primaryButtonColor_Login" type="String" datasource="Teal,Pink,Purple,Ghost,White" label="Primary Button Colour - Logged-in User" placeholder="CTA - Primary Color" description="" default="Teal" />
+            <property name="primaryButtonLink_Login" type="String" label="Primary Button URL - Logged-in User" placeholder="Same Page Section Name or URL" default="https://www.venturecrowd.com.au/s/about" description="Links url for Primary Button Login"/>
+            <property name="primaryButtonSameOrNew_Login" datasource="Same Tab, New Tab" type="String" label="Primary Link Target - Logged-in User" placeholder="Behaviour of the Link or URL" description=""/>
+
+            <property name="secondaryButtonLabel_Login" type="String" label="Secondary Button Label - Logged-in User" placeholder="Label" description="Secondary Button Login" default="Invest"/>
+            <property name="secondaryButtonColor_Login" type="String" datasource="Teal,Pink,Purple,Ghost,White" label="Secondary Button Colour - Logged-in User" placeholder="CTA - Secondary Color Login" description="" default="Purple"/>
+            <property name="secondaryButtonLink_Login" type="String" label="Secondary Button URL - Logged-in User" placeholder="Same Page Section Name or URL" default="https://www.venturecrowd.com.au/s/invest" description="Links url for Secondary Button Login"/>
+            <property name="secondaryButtonSameOrNew_Login" datasource="Same Tab, New Tab" type="String" label="Secondary Link Target - Logged-in User" placeholder="Behaviour of the Link or URL" description=""/>
+            
+            <property name="videoURL" type="String" label="Enter the URL for the Video" placeholder="Video URL" description="Video url" default=""/>
+             <property name="videoURLSameOrNew" datasource="Same Tab, New Tab" type="String" label="Video Target" placeholder="Behaviour of the Link or URL" default="New Tab" description=""/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

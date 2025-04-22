@@ -1,0 +1,29 @@
+<template>
+    <section>
+        <div class="recent-posts mb-5">
+            <h3 class="mb-2" style={getTitleStyling}>Recent Posts</h3>
+            <ul>
+                <template for:each={lstNewsListPages} for:item="eachNews" for:index="index">
+                    <li key={eachNews.Navigation_url__c}>
+                        <a href={eachNews.Navigation_url__c} key={eachNews.Navigation_url__c}
+                            style={getLinkStyling}>{eachNews.News_Label__c}</a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+
+        <div class="recent-posts mb-5">
+            <h3 class="mb-2" style={getTitleStyling}>Archives</h3>
+            <ul>
+                <template for:each={lstArchiveMonthly} for:item="eachRow">
+                    <li key={eachRow.key}>
+                        <a key={eachRow.key} data-url={eachRow.value} onclick={redirectToMonthlyArchive} style={getLinkStyling}
+                            >{eachRow.value}</a>
+                            <!-- onclick={redirectToMonthlyArchive} -->
+                            <!-- href="/s/archivewithcategories?month={eachRow.value}" -->
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </section>
+</template>

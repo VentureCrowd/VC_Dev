@@ -1,0 +1,11 @@
+<template>
+    <div class="items">
+        <p>{label}</p>
+        <template lwc:if={loadingButton}>
+            <div class="circle-spin-1"></div>
+        </template>
+        <template lwc:else>
+            <p class="download-text" onclick={handleClick}>Download</p>
+        </template>
+    </div>
+</template>

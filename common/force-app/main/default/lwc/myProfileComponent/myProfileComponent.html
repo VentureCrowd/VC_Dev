@@ -1,0 +1,92 @@
+<!--
+
+-->
+<template>
+    <template if:true={displayComponent}>
+        <lightning-card >
+            <!-- Start: Lightning Card Header-->
+            <div class="lc-title">
+                <slot name="title">
+                        <p class="slds-p-horizontal_small">{cardTitle} <lightning-helptext if:true={helptext} content={helptext}></lightning-helptext>
+                        </p>
+                </slot>
+            </div>
+            <!-- END: Lightning Card Header-->
+    
+            <!-- Start: Lightning Card Body-->
+            <div class="slds-grid slds-scrollable" style="min-height:160px;max-height:160px">
+    
+                <!--Start : Render data fields-->
+                <template if:true={displayData}>
+                    <ul class="slds-p-right_medium slds-col">
+                        <template for:each={displayData} for:item="data">
+                            <li key={data.Id} class="vc-font-suisseIntlRegular">
+                                {data.field}
+                            </li>
+                            <li key={data.Id} class="vc-font-suisseIntlLight slds-p-bottom_medium">                              
+                                <lightning-formatted-rich-text value={data.value}></lightning-formatted-rich-text>
+                            </li>
+                        </template>
+                    </ul>
+                </template>
+                <!--END : Render data fields-->
+    
+                <!--END : Render Picture and Upload-->
+                <template if:true={isDisplayPicture}>
+                    <div class="slds-col">
+                            <div class="slds-grid slds-grid_vertical">
+                                <div class="slds-col">
+                                    <br/>
+                                    <lightning-icon class="slds-float_right" size="x-small" icon-name="utility:edit" onclick={handleImageChange} alternative-text="edit" title="edit"></lightning-icon>
+                                    <img data-aura-rendered-by="3:99;a" class="circular-photo" src={FullPhotoUrl}  />
+                                </div>
+                            </div>
+                            <br/>
+                        </div>
+                </template>
+                <!--END : Render Picture and Upload -->
+    
+    
+            </div>
+            <!-- END: Lightning Card Body-->
+    
+            <!-- Start: Lightning Card Fotter-->
+            <template if:true={displayEdit}>
+                <div class="slds-grid slds-scrollable">
+                    <slot name="footer">
+                        <button class="slds-button edit-button" onclick={handleEditClick}>Edit</button>
+                    </slot>
+                </div>
+            </template>
+    
+            <template if:true={displayOverride}>
+                <div class="slds-grid slds-scrollable">
+                    <slot name="footer">
+                        <button class="slds-button edit-button" onclick={handleOverrideClick}>{overrideLabel}</button>
+                    </slot>
+                </div>
+            </template>
+            <!-- END: Lightning Card Fotter-->
+        </lightning-card>
+    </template>
+
+
+
+    <template if:true={displayPopover}>
+        <c-my-profile-component-popover 
+            title={popoverTitle}
+            user-type={userType}
+            is-mobile-number={isMobileNumber}
+            mobile-number={mobileNumber}
+            record-id={recordId}
+            is-update-image={isUpdateImage}
+            is-edit-record={isEditRecord}
+            to-update-record-id={toUpdateRecordId}
+            to-update-object={toUpdateObject}
+            fields-to-edit={fieldsToEdit}
+            helptext={helptextpopup}
+            onclosepopup={handleClosePopup}>
+        </c-my-profile-component-popover>
+    </template>
+    
+</template>

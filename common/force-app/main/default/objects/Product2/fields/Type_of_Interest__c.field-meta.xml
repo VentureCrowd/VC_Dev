@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Interest__c</fullName>
+    <label>Class of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A Class Units</fullName>
+                <default>false</default>
+                <label>A Class Units</label>
+            </value>
+            <value>
+                <fullName>B Class Units</fullName>
+                <default>false</default>
+                <label>B Class Units</label>
+            </value>
+            <value>
+                <fullName>C Class Units</fullName>
+                <default>false</default>
+                <label>C Class Units</label>
+            </value>
+            <value>
+                <fullName>D Class Units</fullName>
+                <default>false</default>
+                <label>D Class Units</label>
+            </value>
+            <value>
+                <fullName>E Class Units</fullName>
+                <default>false</default>
+                <label>E Class Units</label>
+            </value>
+            <value>
+                <fullName>F Class Units</fullName>
+                <default>false</default>
+                <label>F Class Units</label>
+            </value>
+            <value>
+                <fullName>G Class Units</fullName>
+                <default>false</default>
+                <label>G Class Units</label>
+            </value>
+            <value>
+                <fullName>Ordinary Units</fullName>
+                <default>false</default>
+                <label>Ordinary Units</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

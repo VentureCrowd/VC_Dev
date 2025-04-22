@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VCPP_Commission_date_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Sales_Unconditional_Commission_Approved__c = FALSE) &amp;&amp; 
+ISCHANGED(Sales_rep_amount_at_Unconditional_Paid__c)</errorConditionFormula>
+    <errorMessage>Sales Unconditional Commission Approved needs to be filled before entering a paid date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Revenue__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  ISBLANK(TEXT(Investment_Amount__c)),
+  IF(
+    OR(
+      ISPICKVAL(Wholesale_Status__c, &quot;No&quot;),
+      ISPICKVAL(Wholesale_Status__c, &quot;&quot;)
+    ),
+    1900 * 0.1,
+    IF(
+      ISPICKVAL(Wholesale_Status__c, &quot;Yes&quot;),
+      21000 * 0.1,
+      NULL
+    )
+  ),
+  IF(
+    CONTAINS(TEXT(Investment_Amount__c), &quot;+&quot;),
+    VALUE(SUBSTITUTE(SUBSTITUTE(LEFT(TEXT(Investment_Amount__c), FIND(&quot;+&quot;, TEXT(Investment_Amount__c)) - 1), &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;)) * 0.1,
+    IF(
+      OR(CONTAINS(TEXT(Investment_Amount__c), &quot; to &quot;), CONTAINS(TEXT(Investment_Amount__c), &quot;-&quot;)),
+      VALUE(SUBSTITUTE(SUBSTITUTE(LEFT(TEXT(Investment_Amount__c), FIND(&quot; &quot;, TEXT(Investment_Amount__c)) - 1), &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;)) * 0.1,
+      IF(
+        OR(CONTAINS(TEXT(Investment_Amount__c), &quot;$&quot;), FIND(&quot;-&quot;, TEXT(Investment_Amount__c)) &gt; 0),
+        VALUE(SUBSTITUTE(SUBSTITUTE(LEFT(TEXT(Investment_Amount__c), FIND(&quot;-&quot;, TEXT(Investment_Amount__c)) - 1), &quot;$&quot;, &quot;&quot;), &quot;,&quot;, &quot;&quot;)) * 0.1,
+        NULL
+      )
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Potential Revenue</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

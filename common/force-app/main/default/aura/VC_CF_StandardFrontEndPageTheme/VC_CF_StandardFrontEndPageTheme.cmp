@@ -1,0 +1,20 @@
+<aura:component implements="forceCommunity:themeLayout">
+	 <!-- <ltng:require styles="/resource/standardFrontEndPageCSS" />  -->
+     <ltng:require scripts="{!$Resource.standardFrontEndPageJS}"/>
+    <aura:attribute name="header" type="Aura.Component[]"/>
+    <aura:attribute name="footer" type="Aura.Component[]"/>
+    
+        
+        <div class="navigation">
+           {!v.header}
+        </div>
+        <div class="mainContentArea">
+        {!v.body}
+        </div>
+   
+        <div class="footer">
+            {!v.footer}
+        </div>
+        
+    
+</aura:component>

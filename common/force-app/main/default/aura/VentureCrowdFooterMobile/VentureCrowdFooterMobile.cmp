@@ -1,0 +1,57 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="CommunityUserDetailController">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="currentUser" type="User"/>
+    <aura:attribute name="isUserAvailable" type="Boolean" default="false"/>
+    
+    <div class="slds-grid slds-grid_vertical">
+        <aura:iteration items="[{'label':'Company','isFootHead':'spanCSSTile'},{'label':'About Us','isFootHead':'spanCSS'},{'label':'Contact Us','isFootHead':'spanCSS'},{'label':'Legals','isFootHead':'spanCSS'},{'label':'Get Started','isFootHead':'spanCSSTile'},{'label':'Invest','isFootHead':'spanCSS'},{'label':'Raise','isFootHead':'spanCSS'},{'label':'Manage','isFootHead':'spanCSS'},
+{'label':'Property','isFootHead':'spanCSS'},{'label':'Learn','isFootHead':'spanCSSTile'},{'label':'How it Works','isFootHead':'spanCSS'},{'label':'FAQs','isFootHead':'spanCSS'},{'label':'Investor Edication','isFootHead':'spanCSS'},
+{'label':'Blog','isFootHead':'spanCSS'},{'label':'My Account','isFootHead':'spanCSSTile'},{'label':'Login','isFootHead':'spanCSS'},
+{'label':'Register','isFootHead':'spanCSS'},{'label':'Forgot Password','isFootHead':'spanCSS'}]" var="item">
+            <div class="slds-col slds-align_absolute-center">
+                <span class="{!item.isFootHead}">{!item.label}</span>
+            </div>
+        </aura:iteration>
+    </div>
+    <div class="slds-grid slds-gutters footerSocial">
+        <div class="slds-col">
+        </div>
+        <div class="slds-col footerAlignment">
+            <p class="footerSocialSpan">Copyright © 2021 VentureCrowd. All rights Reserved. </p>
+        </div>
+        <div class="slds-col">
+        </div>
+        <div class="slds-col">
+        </div>
+        <div class="slds-col footerAlignment">
+            <div class="slds-col">
+                <div class="slds-grid">
+                    <div class="slds-col footerAlignment">
+                       <a target="_blank" class="footeranchor" href="https://twitter.com/venturecrowd?lang=en">
+                    		<img alt="T Logo" src="{!$Resource.Twitter}"/>
+                        </a>
+                    	<a target="_blank" class="footeranchor" href="https://www.facebook.com/VentureCrowdAustralia/">
+                            <img alt="F Logo" src="{!$Resource.Facebook}"/>
+                        </a>
+                    	<a target="_blank" class="footeranchor" href="https://www.linkedin.com/company/venturecrowd-pty-ltd/">
+                            <img alt="L Logo" src="{!$Resource.Linkedin}"/>
+                        </a>
+                    </div>
+                    
+                </div>
+        	</div>
+            <div class="slds-col">
+                <div class="slds-col footerAlignment">
+                    	<span style="border-radius:4px;">
+                            <lightning:button variant="base" onclick="{! c.onbuttonClick }">
+                            <img alt="L Logo" src="{!$Resource.BTTImg}"/>
+                        	</lightning:button>
+                        </span>
+                    </div>
+            </div>
+        
+        </div>
+        
+    </div>
+    
+</aura:component>

@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false">
+    <div style="width: 100vw; max-width: 100%; margin: 0; padding: 0;">
+        <iframe 
+            id="tableau-iframe"
+            src="https://prod-apsoutheast-a.online.tableau.com/t/venturecrowd/views/PerformanceMetrics/Dashboard1?:embed=y&amp;:showVizHome=no&amp;:toolbar=no"
+            width="100%" 
+            height="700px"
+            frameborder="0" 
+            scrolling="no" 
+            allowfullscreen="true">  <!-- Changed to allowfullscreen="true" -->
+        </iframe>
+    </div>
+</apex:page>

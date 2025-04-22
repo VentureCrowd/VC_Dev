@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the MobileVerification record is currently active and awaiting verification</description>
+    <inlineHelpText>Check this box if the mobile verification process is still active and awaiting user input. This helps track whether the verification is ongoing or has been completed or expired.</inlineHelpText>
+    <label>Active</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

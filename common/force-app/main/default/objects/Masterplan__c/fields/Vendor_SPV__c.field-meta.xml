@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_SPV__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Vendor - SPV</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>VCPP Plans (Vendor - SPV)</relationshipLabel>
+    <relationshipName>VCPP_Plans2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

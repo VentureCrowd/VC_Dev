@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Type__c</fullName>
+    <inlineHelpText>Choose the option that is reflected in the PDS/IM. If it is a set return on an annualised basis, choose &quot;Per Annum&quot;.</inlineHelpText>
+    <label>Return Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per Annum</fullName>
+                <default>false</default>
+                <label>Per Annum</label>
+            </value>
+            <value>
+                <fullName>Fixed Return</fullName>
+                <default>false</default>
+                <label>Fixed Return</label>
+            </value>
+            <value>
+                <fullName>Variable</fullName>
+                <default>false</default>
+                <label>Variable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

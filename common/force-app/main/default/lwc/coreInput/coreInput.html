@@ -1,0 +1,163 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="input-wrapper">
+        <!-- Input Label -->
+        <template if:true={label}>
+            <div class="input-header">
+                <div class="input-label">
+                    <p>{label}<template if:true={required}> *</template></p>
+                </div>
+                
+                <!-- <div class="tooltip">i
+                    <span class="tooltip-text">Help Text....</span>
+                </div> -->
+            </div>
+        </template>
+
+        <!-- Help Text -->
+        <template lwc:if={help}>
+            <div class="help-text">{help}</div>
+        </template> 
+        <!-- Help Text slot -->
+        <template lwc:else>
+            <div class="help-text">
+                <slot name="helptext">
+                </slot>
+            </div>
+        </template>
+        <div class={inputContainerClass}>
+            <!-- Icon on the Left -->
+            <template  if:true={isIconLeft}>
+                <template if:true={hasIcon}>
+                    <c-core-icon
+                   icon-name="search"
+                   size="large"
+                   ></c-core-icon>
+                </template>
+            </template>
+            
+            <!-- Conditional rendering based on input type -->
+            <template lwc:if={isTextarea}>
+                <textarea class={inputClass} name={name} onchange={handleOnChange} rows="3" placeholder={placeholder} disabled={disabled} onkeyup={handleKeyPress}>{value}</textarea>
+            </template>
+            <!-- Conditional rendering for dropdown inputs -->
+            <template lwc:elseif={isDropdown}>
+                <select class={inputClass} name={name} onchange={handleSelectChange}  disabled={disabled}>
+                    <option value="" disabled selected>Please select an option</option>
+                    <template for:each={processedOptions} for:item="option">
+                        <option key={option.value} value={option.value} selected={option.selected} >{option.label}</option>
+                    </template>
+                </select>
+            </template>
+
+            <!-- file input -->
+            <template lwc:elseif={isFile}>
+                <label class="file-label">
+                    <template lwc:if={multiple}>
+                        <input class={inputClass} type="file" name={name} onchange={handleFileChange} placeholder={placeholder} multiple data-id="file-input" disabled={disabled}>
+                    </template>
+                    <template lwc:else>
+                        <input class={inputClass} type="file" name={name} onchange={handleFileChange} placeholder={placeholder} data-id="file-input" disabled={disabled}>
+                    </template>
+                    <div class="choose-button">Choose</div>
+                    <span class="file-label-text">{fileText}</span>
+                </label>
+            
+            </template>
+
+            <!-- date input -->
+            <template lwc:elseif={isDate}>
+                <input class={inputClass} type="date" name={name} onchange={handleOnChange} value={value} placeholder={placeholder} disabled={disabled} >
+            </template>
+
+            <!-- currency input -->
+            <template lwc:elseif={isCurrency}>
+                <div class="currency-wrapper">
+                    <span class="currency-symbol">$</span>
+                    <input class={inputClass} type="number" step="0.01" name={name} onchange={handleOnChange} value={value} placeholder={placeholder} disabled={disabled} onkeyup={handleKeyPress}>
+                </div>
+            </template>
+
+            <!-- standard input -->
+            <template lwc:else>
+                <input class={inputClass} type={type} name={name} onchange={handleOnChange} value={value} placeholder={placeholder} disabled={disabled} onkeyup={handleKeyPress}>
+            </template>
+
+             <!-- Icon on the Right -->
+             <template if:true={hasIcon}>
+                <template if:true={isIconRight}>
+                   <c-core-icon
+                   icon-name="search"
+                   size="large"
+                   ></c-core-icon>
+                </template>
+            </template>
+        </div>
+
+        <div class="text-area-subtext">
+            <!-- Character Limit Display -->
+            <template if:true={limit}>
+                
+                    <template lwc:if={overCharacterLimit}>
+                        <div class="character-limit error">
+                            You have {_charactersOver} characters too many
+                        </div>
+                    </template>
+                    <template lwc:else>
+                        <div class="character-limit">
+                            You have {_charactersLeft} characters remaining
+                        </div>
+                        
+                    </template>
+                
+            </template>
+
+        <!-- Subtext display (this is additional description text underneath the field) -->
+        <template if:true={subtext}>
+            <div class="subtext">
+                {subtext}
+            </div>
+        </template>
+    
+            
+        </div>
+       
+       
+
+        <template if:true={isFile}>
+            <template lwc:if={isLoading}>
+                <!-- loading spinner -->
+                <div class="file-loading-spinner">
+                    <lightning-spinner variant="brand" size="small"> </lightning-spinner>
+                </div>
+            </template>
+            <template lwc:else>
+                <div class="upload-list" >
+                    <template for:each={value} for:item="file">
+                        <div key={file.index} class="file-uploaded">
+                            <p>{file.fileName}</p>
+                            <c-core-button label="Remove file" variation="tertiary" onbuttonclick={removeFile} data-id={file.fileId}></c-core-button>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </template>
+
+        <!-- Error message -->
+        <template if:true={displayErr}>
+            <template for:each={errorMessage} for:item="message">
+                <div class="error-message" key={message}>
+                    {message}
+                </div>
+            </template>
+        </template>
+
+        <template if:true={displayFileErr}>
+            <template for:each={fileFailedMessage} for:item="message">
+                <div class="error-message" key={message}>
+                    {message}
+                </div>
+            </template>
+        </template>
+    </div>
+</template>

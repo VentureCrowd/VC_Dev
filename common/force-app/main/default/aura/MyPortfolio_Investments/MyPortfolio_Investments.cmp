@@ -1,0 +1,147 @@
+<!--
+
+-->
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="MyPortfolio_Investments">
+    <aura:attribute name="totalInvestments" type="Double" default="0"/>
+    <aura:attribute name="personalInvestments" type="Double" default="0"/>
+    <aura:attribute name="numberOfPersonalInvestments" type="Double" default="0"/>
+    <aura:attribute name="numberOfEntitiesInvestments" type="Double" default="0"/>
+    <aura:attribute name="INVESTMENTCOUNT" type="Double" default="0" />
+    <aura:attribute name="entitiesInvestments" type="Double" default="0"/>
+    <aura:attribute name="currentTimeGreeting" type="String" />
+    <aura:attribute name="description" type="String" />
+    <aura:attribute name="currentUser" type="User"/>
+    <aura:attribute name="showPersonalInvestments" type="Boolean" />
+    <aura:attribute name="showEntitiesInvestments" type="Boolean" />
+    <aura:attribute name="showTotalInvestments" type="Boolean" />
+    <aura:attribute name="isHomePage" type="Boolean" />
+    <aura:attribute name="isIdVerified" type="Boolean" default="false" />
+    <aura:attribute name="recordId" type="String" default="true" />
+    <aura:attribute name="cssstring" type="String" default="true" />
+    <aura:attribute name="dataExists" type="Boolean" default="true" />
+    <aura:attribute name="isMobile" type="Boolean" default="false"/>
+    <aura:attribute name="stage" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:if isTrue="{!v.dataExists}">
+        <aura:if isTrue="{!v.isHomePage}">
+            <aura:if isTrue="{!v.isMobile}"> 
+                <div class="slds-grid slds-grid_vertical vc--id-verification">  
+                    <aura:if isTrue="{! and(notequals(v.stage,'Closed Won'),not(v.isIdVerified))}">
+                        <div class="slds-grid slds-grid_vertical inner-container">
+                            <div class="slds-col">
+                                <c:verifyNowContainer></c:verifyNowContainer>
+                            </div>
+                            <div class="slds-col"></div>
+                        </div>
+                        <div class="slds-col">
+                        </div>
+                    </aura:if>
+                    <div class="slds-col">
+                        
+                        <div class="slds-grid slds-grid_vertical vc--portfolio-header">
+                            <div class="slds-col header--title">
+                                <span class="vc-font-caxton4" style="color:#000">My Portfolio</span>
+                            </div>
+                            <div class="slds-col current--user">
+                                <h2 class="vc-font-suisseIntlLight">{!v.currentTimeGreeting}, {!v.currentUser.Name}</h2>
+                            </div>
+                            <div class="slds-col current--user">
+                                <lightning:formattedRichText value="{!v.description}"/>
+                            </div>
+                             <aura:if isTrue="{! and(equals(v.totalInvestments,'$0'))}">
+                                <div class="slds-col">
+                                </div>
+                                <div class="slds-col investment--status-null">
+                                    <p class="vc-font-caxton4">Welcome to VentureCrowd!</p>
+                                    <p class="vc-font-suisseIntlLight">To ensure a smooth investing experience, please keep your details up-to-date under the "My Profile" Tab.</p>
+                                    <p class="vc-font-suisseIntlLight">Your first investment will show up here on your portfolio once your share certificate has been issued. A share
+                                    certificate will be issued to you up to 28 days after the capital raise is finalised.</p>
+                                </div>
+                            </aura:if> 
+                        </div>
+                    </div>
+                </div>
+                <aura:set attribute="else">
+                    <div class="slds-grid">
+                        <div class="{!v.cssstring}">
+                            <div class="slds-grid slds-grid_vertical vc--portfolio-header">
+                                <div class="slds-col header--title">
+                                    <span class="vc-font-caxton4" style="color:#000">My Portfolio</span>
+                                </div>
+                                <div class="slds-col current--user">
+                                    <h2 class="vc-font-suisseIntlLight">{!v.currentTimeGreeting}, {!v.currentUser.Name}</h2>
+                                </div>
+                                <div class="slds-col current--user">
+                                    <lightning:formattedRichText value="{!v.description}" />
+                                </div>
+                                <aura:if isTrue="{! equals(v.INVESTMENTCOUNT,0)}">
+                                    <div class="slds-col">
+                                    </div>
+                                    <div class="slds-col investment--status-null">
+                                    <p class="vc-font-suisseIntlLight">
+                                        It looks like you haven’t made your first investment with us yet. Once you do invest, your investments will appear below.  
+                                    </p>
+                                    <p class="vc-font-suisseIntlLight">In the meantime, we have dropped a few of our current investment opportunities below.</p>
+                                </div>
+                                </aura:if>
+                            </div>
+                        </div>
+                         <aura:if isTrue="{! and(notequals(v.stage,'Closed Won'),not(v.isIdVerified))}">
+                            <div class="slds-col slds-size_4-of-12">
+                                <div class="slds-grid slds-grid_vertical vc--id-verification">
+                                    <div class="slds-col slds-float_right slds-p-left_medium">
+                                        <c:verifyNowContainer></c:verifyNowContainer>
+                                    </div>
+                                    <div class="slds-col"></div>
+                                </div>
+                            </div>
+                        </aura:if>  
+                    </div>               
+                </aura:set>
+            </aura:if>
+        </aura:if> 
+        <div class="{! v.isMobile? 'slds-grid slds-grid_vertical' :'slds-grid slds-gutters'}"> 
+            <aura:if isTrue="{! and(notequals(v.totalInvestments,'$0'))}">
+                <div class="slds-col">
+                    <lightning:card class= "{!v.showPersonalInvestments ? 'cardStyling vc-font-suisseIntlLight' : 'cardStylingMiddle vc-font-suisseIntlLight'}" >
+                        <div class= "{!v.showPersonalInvestments ? 'slds-card__footer cardText':'slds-card__footer cardTextMiddle'}">
+                            <div class="vc-font-suisseIntlLight">Total Investments</div>
+                        </div>
+                        <div class= "{!v.showPersonalInvestments ? 'slds-card__footer cardStylingFooter':'slds-card__footer cardStylingFooterMiddle'}">
+                            <div class="vc-number-value">{!v.totalInvestments}</div>
+                        </div>
+                    </lightning:card>
+                </div> 
+            </aura:if>
+            <aura:if isTrue="{! and(notequals(v.personalInvestments,'$0'), v.showPersonalInvestments)}">
+                <div class="slds-col vc-background-transparent">
+                    <lightning:card>
+                        <div  class= "slds-card__footer cardText">
+                            <div class="vc-font-suisseIntlLight">Personal Investments</div>
+                        </div>
+                        <div class="slds-card__footer vc-font-suisseIntlLight" style="text-align:left;">
+                            {!v.numberOfPersonalInvestments} investments made up of
+                            <p style="margin: -10px;"></p>
+                            <div class="vc-number-value">{!v.personalInvestments}</div>
+                        </div>
+                    </lightning:card>
+                </div>
+            </aura:if>
+            <aura:if isTrue="{! and(notequals(v.entitiesInvestments, '$0'),v.showEntitiesInvestments)}">
+                <div class="slds-col vc-background-transparent">
+                    <lightning:card>
+                        <div  class= "slds-card__footer cardText">
+                            <div class="vc-font-suisseIntlLight">Entities</div>
+                        </div>
+                        <div class="slds-card__footer vc-font-suisseIntlLight" style="text-align:left;">
+                            {!v.numberOfEntitiesInvestments} investments made up of
+                            <p style="margin: -10px;"></p>
+                            <div class="vc-number-value">{!v.entitiesInvestments}</div>
+                        </div>
+                    </lightning:card>
+                </div>
+            </aura:if>
+        </div>
+        
+    </aura:if> 
+</aura:component>

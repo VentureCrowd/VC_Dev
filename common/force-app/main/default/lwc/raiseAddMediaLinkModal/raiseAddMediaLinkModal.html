@@ -1,0 +1,47 @@
+<template>
+    <c-core-modal
+    label={label}
+    variation={variation}
+    lwc:ref="coremodal"
+    >
+    <div class="header" slot="header">
+        <h2 class="text--xl">{name}</h2>
+        <hr>
+    </div>
+    <div slot="body">
+        <template lwc:if={isLoading}>
+            <div class="file-loading-spinner">
+                <lightning-spinner variant="brand" size="small"> </lightning-spinner>
+            </div>
+        </template>
+        <template lwc:else>
+            <c-core-form 
+            onsubmit={handleFormSubmit}
+            onchange={handleChange}
+            form-data={formData}
+            lwc:ref="coreForm">
+                <div slot="body">
+                    <c-core-input
+                    name="mediaTitle"
+                    label="Media title"
+                    type="text"
+                    help="Text describing what is at the other end of the link"
+                    limit=255
+                    required
+                    ></c-core-input>
+                    <c-core-input
+                    name="url"
+                    label="URL"
+                    type="url"
+                    help="The link to the media"
+                    limit="255"
+                    placeholder="https://"
+                    required
+                    ></c-core-input>
+                </div>
+            </c-core-form>
+        </template>
+        
+    </div>
+    </c-core-modal>
+</template>

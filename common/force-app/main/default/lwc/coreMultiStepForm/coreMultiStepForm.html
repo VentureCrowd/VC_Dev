@@ -1,0 +1,81 @@
+<!-- coreMultiStepForm.html -->
+<template>
+    <div class="header">
+        <h1 class="text--xxl header-title" lwc:if={title}>
+            {title} 
+           
+            
+            
+        </h1>
+        <slot name="header"></slot>
+    </div>
+    <div class={wrapperClass}>
+        <div class="stepper">
+            <c-core-form-stepper
+                lwc:ref="formStepper"
+                steps={stepperSteps}
+                vertical={vertical}
+                data-id="formStepper"
+            >
+            </c-core-form-stepper>
+        </div>
+        <div class="form-container">
+            <div class="body">
+                <slot name="steps"></slot>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Bottom navigation -->
+    <div class="navigation" data-id="navigation">
+        <div class="previous-button">
+            <c-core-button
+                label={prevbutton}
+                variation="secondary"
+                mode="dark"
+                onbuttonclick={navigatePrev}
+                is-loading={isPrevLoading}
+                lwc:if={isNotFirst}>
+            </c-core-button>
+        </div>
+        
+        <div class="next-button">
+            <template lwc:if={isSaving}>
+                <div class="saving-tile save-container">
+                    <div class="circle-spin-1"></div>
+                    Saving
+                </div>
+            </template>
+            <template lwc:else>
+                <div class="saved-tile save-container">
+                    <c-core-icon
+                    icon-name="savedCheck"
+                    width="20"
+                    height="20"
+                    ></c-core-icon>
+                    Saved
+                </div>
+            </template>
+            <c-core-button
+                label={additionalButton}
+                variation="secondary"
+                onbuttonclick={handleAdditionalButton}
+                is-loading={isAdditionalButtonLoading}
+                lwc:if={additionalButton}>
+            </c-core-button> 
+            <c-core-button
+                label={submitbutton}
+                variation="primary"
+                onbuttonclick={submitForm}
+                lwc:if={isFinal}>
+            </c-core-button>
+            <c-core-button
+                label={nextbutton}
+                variation="primary"
+                onbuttonclick={navigateNext}
+                is-loading={isNextLoading}
+                lwc:else>
+            </c-core-button>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,49 @@
+/* THANK YOU PAGE */
+@media only screen and  (max-width: 767px) {
+    .invest--thank-you .thank-you-heading {
+        margin-top: 50px;
+    }
+}
+.container{
+    padding-top: calc(100vh * 0.15);
+    padding-bottom: calc(100vh * 0.15);
+}
+.boldtext{
+    font-family: "Caxton-2", sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+button{
+    background-color: #000;
+    font-family: "Caxton-2", sans-serif;
+    font-size: 14px;
+    padding: 9px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    border-color: inherit;
+}
+button:hover{
+    background-color: #D95BAA;
+    color: #fff;
+}
+.thank-you-heading{
+    font-family: "SuisseIntl-Bold", sans-serif !important;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.body-heading{
+    font-family: "SuisseIntl-Bold", sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.body-text{
+    font-family: "SuisseIntl-Light", sans-serif;
+    font-size: 14px;
+}
+.thank-you-name{
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+}

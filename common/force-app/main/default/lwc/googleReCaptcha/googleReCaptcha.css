@@ -1,0 +1,20 @@
+iframe {
+   /* height:500px !important; */
+   height: auto !important;
+    width: 100%;
+    overflow:hidden;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    border: 0px;
+    top:0;
+}
+
+iframe[title="recaptcha challenge"] {
+    height: 100% !important;
+}
+
+
+   
+/* iframe::-webkit-scrollbar {  
+    display: none;
+} */

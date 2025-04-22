@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VC Product</fullName>
+                <default>false</default>
+                <label>VC Product - Wholesale</label>
+            </value>
+            <value>
+                <fullName>Property Product</fullName>
+                <default>false</default>
+                <label>Property Product</label>
+            </value>
+            <value>
+                <fullName>CSF Product</fullName>
+                <default>false</default>
+                <label>CSF Product</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>PSP Product</fullName>
+                <default>false</default>
+                <label>PSP Product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

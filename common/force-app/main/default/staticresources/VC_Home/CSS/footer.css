@@ -1,0 +1,216 @@
+/*********************
+footer
+**********************/
+#footer-link p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+footer {
+  background-color: #000;
+  padding: 30px 0px 0px 0px;
+  font-family: 'AvenirNext';
+  color: #fff;
+}
+footer a,
+footer a:active,
+footer a:focus,
+footer a:visited {
+  color: #fff!important;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #8C8D90!important;
+  transition: all 0.2s ease;
+}
+form#footerform input[type="text"] {
+  background-color: #444444;
+  border: 1px solid #2f2f2f;
+  box-sizing: border-box;
+  font-size: 12px;
+  height: 28px;
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 242px;
+  color: #d3d3d3;
+}
+#footer-top {
+  background-color: #505050;
+  padding: 54px 0 70px 0;
+}
+#footer-content {
+  padding: 30px 0 15px 0;
+  background-color: #2f2f2f;
+}
+#footer-content p {
+  color: #909090;
+  font-size: 15px;
+  line-height: 17px;
+  margin: 0 0 14px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+#footer-content h2 {
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+  padding: 0;
+}
+/* columna izquierda */
+#video-frame {
+  position: relative;
+  cursor: pointer;
+}
+#video-frame img {
+  max-width: 100%;
+  height: auto;
+}
+#video-frame .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+#footer-content:hover #video-frame .overlay {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+/* columna central */
+footer .footer-links {
+  padding-top: 10px;
+}
+footer #social-links img {
+  height: 45px;
+  margin: 0 5px;
+}
+footer #social-links a:hover img {
+  transform: scale(1.1);
+}
+footer #social-links i {
+  font-size: 22px;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+footer #follow-title {
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 35px;
+}
+footer #bottom-content {
+  background-color: #444444!important;
+  font-size: 12px;
+}
+footer #bottom-content .copyright {
+  padding: 30px 0;
+}
+footer #bottom-content #social-links {
+  text-align: right;
+  padding-top: 18px;
+}
+footer #slogan-paragraph {
+  color: white;
+  font-style: italic;
+  font-size: 13px;
+  padding-top: 10px;
+}
+/* columna derecha */
+footer .btn-footer {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid #f15a2c;
+  width: 100%;
+  max-width: 215px;
+  padding: 10px 12px!important;
+  margin: 10px 0 0;
+}
+footer .btn-footer:hover {
+  border-color: #f47f5c;
+  color: #fff!important;
+}
+footer .invest-confidence-wrapper {
+  margin-top: 26px;
+}
+footer .invest-confidence-wrapper .footer-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+footer img.grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+}
+footer img.grayscale:hover {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+}
+/* media fixes */
+@media (max-width: 1199px) {
+  #footer-content h2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  footer #bottom-content {
+    text-align: center;
+  }
+  footer #social-links {
+    text-align: center;
+  }
+  footer #bottom-content {
+    padding: 0px 0px 15px;
+    text-align: center;
+  }
+  footer #bottom-content .copyright {
+    padding: 10px 0;
+  }
+  footer #bottom-content #social-links {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  #footer-content {
+    padding: 0px 0px 15px;
+    text-align: center;
+  }
+  #footer-content h2 {
+    font-size: 20px;
+  }
+  footer .footer-title {
+    margin-top: 25px!important;
+  }
+  footer #twitter-widget-0 {
+    display: block!important;
+    margin: auto!important;
+  }
+  footer #social-links {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #footer-content a {
+    font-size: 15px;
+  }
+}

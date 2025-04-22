@@ -1,0 +1,213 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+	<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+	<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+	<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+	<apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+	</head>
+	<!-- Component: Menu -->
+	<c:VC_CF_Menu />
+	<!-- ./Component: Menu -->
+	<!-- Body -->
+	<div id="vc_content__container" class="position-relative page-slug-news-detail">
+		<!-- Hero -->
+		<section class="hero has-parallax-bg">
+			<div class="container">
+				<div class="row text-white pt-5 pb-5 text-center justify-content-center">
+					<div class="col-md-9 headline">
+						<div class="tags-container">
+							<a href="#">Health &amp; Wellness</a>
+							<a href="#">MedTech</a>
+                            
+							<a href="#">Webinar</a>
+                          
+						</div>
+						<h1 class="mt-4">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</h1>
+					</div>
+				</div>
+			</div>
+			<div class="static-bg-overlay"></div>
+			<div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/02/ESN-BG-Blankv2.jpg')"></div>
+		</section>
+		<!-- Post Body -->
+		<section class="post-body py-5">
+			<div class="container">
+				<div class="row">
+					<!-- Body Content -->
+					<div class="col-md-9">
+						<div class="inner-container px-3 px-md-4 py-3">
+							<!-- CONTENT HERE -->
+							<h2>
+
+
+In this webinar, VentureCrowd CEO Steve Maarbani talks to the CEO and Executive Chair of ESN Cleer about the technology, its competitive advantages, and their plans for commercialisation and exit.</h2>
+							
+                            <br/><br/>
+                            
+							<iframe width="850" height="275" src="https://www.youtube.com/embed/enEY26ncBmU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+							<br/>
+							<br/>
+							<br/>
+                            <h1>
+                                Short on time? Here’s the summary:
+                            </h1>
+                          
+                             <p>
+                                 Sadly, many of us will know someone close to us who has died suddenly and unexpectedly from a heart attack. 
+                            </p>
+                          
+                             <p>
+                                 The unfortunate statistics are:  
+                            </p>
+                            
+                            <ul>
+                                <li>Heart failure is one of the largest causes of death globally</li>
+                                <li>1 in 5 people will suffer heart failure during their lifetime</li>
+                                <li>Most cases of heart failure are not detected until symptoms appear and by then it is often too late to properly treat the problem</li>
+                            </ul>
+                         
+                           <p>
+                               ESN Cleer may have the solution to that problem, having developed a patented saliva-based diagnostic that detects the early risk of heart failure with 95% accuracy. The test is designed to be simple to use, affordable and can deliver results within minutes to a matter of days. 
+                            </p> 
+
+<p>
+    The product does not require TGA approval in Australia but is currently going through NATA accreditation – National Association of Testing Australia – this year and then plans to obtain accreditation in the US early next year. 
+                            </p>
+
+<p>
+    The funds being raised will be used to achieve those milestones, which will then position the business to either lock in distribution arrangements or license the technology to a larger pharmaceutical or medical devices organisation to distribute through their own channels.
+                            </p>
+                            
+                            
+                            
+						
+						</div>
+					</div>
+					<!-- Sidebar -->
+					<div class="col-md-3 sidebar px-4 px-md-0">
+						<div class="inner-container py-3">
+							<div class="recent-posts mb-5">
+								<h3 class="mb-2">Recent Posts</h3>
+								<ul>
+									<li>
+										<a href="#">How to invest in the property market without buying a property</a>
+									</li>
+									<li>
+										<a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+									</li>
+									<li>
+										<a href="#">Companies with a social conscience perform better</a>
+									</li>
+									<li>
+										<a href="#">Why gender equality is good for business</a>
+									</li>
+									<li>
+										<a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+									</li>
+								</ul>
+							</div>
+							<div class="archives">
+								<h3 class="mb-2">Archives</h3>
+								<ul>
+									<li>
+										<a href='#'>December 2020</a>
+									</li>
+									<li>
+										<a href='#'>November 2020</a>
+									</li>
+									<li>
+										<a href='#'>October 2020</a>
+									</li>
+									<li>
+										<a href='#'>September 2020</a>
+									</li>
+									<li>
+										<a href='#'>August 2020</a>
+									</li>
+									<li>
+										<a href='#'>January 2020</a>
+									</li>
+									<li>
+										<a href='#'>November 2019</a>
+									</li>
+									<li>
+										<a href='#'>October 2019</a>
+									</li>
+									<li>
+										<a href='#'>September 2018</a>
+									</li>
+									<li>
+										<a href='#'>March 2018</a>
+									</li>
+									<li>
+										<a href='#'>December 2017</a>
+									</li>
+									<li>
+										<a href='#'>August 2017</a>
+									</li>
+									<li>
+										<a href='#'>July 2017</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Post Footer -->
+		<section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'/vc-cf-propertydevelopment'}">
+			<div class="container">
+				<div class="row text-center py-5 text-white">
+					<div class="col-md-12 pt-5 next-post-link">Next Post</div>
+					<div class="col-md-12 pb-5 next-post-title mt-3">
+						<h3>Webinar Recording – Investing in Property Developments for Equity Returns</h3>
+					</div>
+				</div>
+			</div>
+			 
+			<div class="next-post-bg-overlay"></div>
+			<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/02/Park-Ridge-BF-1.jpg')"></div>
+                </a>
+		</section>
+		<div class="social-share-container">
+			<div class="share-links mb-4">
+				<div class="link-container">
+					<a href="#" class="share-linked-in">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="share-trigger">
+				<i class="fa fa-share-alt" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+	<!-- ./Body -->
+	<!-- Component: Footer -->
+	<c:VC_CF_Footer />
+	<!-- ./Component: Footer -->
+	<script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

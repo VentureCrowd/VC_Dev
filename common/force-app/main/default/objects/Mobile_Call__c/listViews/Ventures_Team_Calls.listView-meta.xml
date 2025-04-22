@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ventures_Team_Calls</fullName>
+    <columns>NAME</columns>
+    <columns>Team__c</columns>
+    <columns>Account__c</columns>
+    <columns>Type__c</columns>
+    <columns>Call_Recording__c</columns>
+    <columns>call_notes__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Call - Inbound,Call - Outbound</value>
+    </filters>
+    <filters>
+        <field>Missed_Call__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Team__c</field>
+        <operation>equals</operation>
+        <value>Ventures</value>
+    </filters>
+    <label>Ventures Team Calls</label>
+</ListView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Registration based forecast settlement date workflow rule
+Workflow rule description: This workflow is only for VCPP Record type Product. It will updated the Rego based forecast settlement date field with the following formula Masterplan__r.Forecast_Registration_Date_del__c +21&quot;</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Registration_based_forecast_settlement_dFormula</name>
+        <dataType>Date</dataType>
+        <expression>$Record.Masterplan__r.Forecast_Registration_Date_del__c +21</expression>
+    </formulas>
+    <interviewLabel>Product: Registration based forecast settlement date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Product: Registration based forecast settlement date</label>
+    <migratedFromWorkflowRuleName>Registration based forecast settlement date</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Registration_based_forecast_settlement_d__c</field>
+            <value>
+                <elementReference>Registration_based_forecast_settlement_dFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>VCPP</stringValue>
+            </value>
+        </filters>
+        <object>Product2</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

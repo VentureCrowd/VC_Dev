@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VCPP_Commission_date_validation_settleme</fullName>
+    <active>true</active>
+    <errorConditionFormula>( Sales_Settlement_Commission_Approved__c = FALSE) &amp;&amp; 
+ISCHANGED( Sales_rep_commission_balance_approved__c)</errorConditionFormula>
+    <errorMessage>Sales Settlement Commission Approved needs to be filled before entering a paid date.</errorMessage>
+</ValidationRule>

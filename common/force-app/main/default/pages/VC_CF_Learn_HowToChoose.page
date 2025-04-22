@@ -1,0 +1,330 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_LearnCommonCSS}"/>
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+    
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+     <!-- Body -->
+    
+    <div id="vc_content__container" class="position-relative page-slug-early-stage-securities">
+      <!-- Header -->
+      <section class="header">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-12 text-center text-white">
+              <h4 class="mt-3">Investor Education</h4>
+              <h2 class="mt-4">Due diligence – how to choose?</h2>
+              <div class="prev-next-container mt-4">
+                   <!-- <apex:commandLink onclick="navigate('/investor-education/why-include-ess/'); return false;" styleClass="ml-4" > <i class="fa fa-angle-left" aria-hidden="true"></i></apex:commandLink>
+              	<apex:commandLink onclick="navigate('/investor-education/investment-via-vc/'); return false;" styleClass="ml-4" ><i class="fa fa-angle-right" aria-hidden="true"></i></apex:commandLink>
+                -->
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/why-include-ess/'}" class="mr-4">&lt;</a>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/investment-via-vc/'}" class="ml-4">&gt;</a>
+            
+                   
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="row-bg-overlay"></div>
+        <div class="row-bg" style="background-image: url(https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-invest-education.jpg)"></div>
+      </section>
+
+      <!-- Index -->
+      <section class="index">
+        <div class="container">
+          <div class="row justify-content-center pt-5 pb-3">
+            <div class="col-md-12 col-lg-6">
+              <a href="#consider">What to consider when selecting companies</a>
+              <a href="#customer-problems">Does the company’s product or service solve a customer problem?</a>
+              <a href="#potential-market">How large is the potential market?</a>
+              <a href="#management">How strong is the management team?</a>
+              <a href="#growth-potential">Does the company have strong growth potential?</a>
+              <a href="#marketing-strategy">Does the company have a strong sales and marketing strategy?</a>
+              <a href="#competitive-advantages">What are the company’s competitive advantages?</a>
+              <a href="#value-of-business">How will the funds be used? Will they be used in a way that will increase the value of the business?</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+
+              <!-- Section: Overview -->
+              <div id="consider" class="content-block">
+                <h3>What to consider when selecting companies</h3>
+
+                <p>
+                  Because ‘early-stage’ companies are, as the name suggests, at an early stage of their development, the potential investor is usually considering investing in a
+                  company that has a new product or business idea, but little or no revenue.
+                </p>
+
+                <p>
+                  This means that there is probably little in the way of hard financial data to go on. But although it may be difficult, the more thorough is the ‘due diligence’
+                  you conduct on companies, the more you increase your chances of return.
+                </p>
+
+                <p>A Kauffman Foundation study on US angel-group returns showed that the returns for deals increased with the hours of due diligence invested.</p>
+
+                <p>
+                  The study found that the mean time spent on due diligence was about 20 hours. Returns for deals with less than 20 hours of diligence were around 1.1 times, on
+                  average. Deals with more than 20 hours due diligence had a 5.9 times return; and for more than 60 hours spent on due diligence the return was strikingly higher –
+                  at 7.1 times.
+                </p>
+
+                <p>
+                  To a large extent, the due diligence process involves defining and quantifying the unknown, to delineate the risk of an investment. But there is likely to be no
+                  independent third-party risk assessment, as there is in most other asset classes, so most of the analysis is up to the investor.
+                </p>
+
+                <p>
+                  If there is any hard financial data apart from the business plan – for example, financial statements – analyse the cash flow statement, the profit and loss
+                  statement and the balance sheet. You’re looking for the key revenue and cost drivers, but in these companies the founders themselves may not understand their cost
+                  drivers. Look for the margins, the percentage of revenue that is turned into profit.
+                </p>
+
+                <p>
+                  Identify which costs are fixed, and which are variable. Look at the company’s cost of suppliers: can per-unit costs be lowered by buying in larger volumes? If
+                  there are functions outsourced – for example, marketing, advertising or book-keeping – check to see whether these can be taken back in-house and done online more
+                  efficiently.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="customer-problems" class="content-block">
+                <h3>Does the company’s product or service solve a customer problem?</h3>
+                <p>
+                  This is the critical question the investor must address when validating the company’s business plan. How the company creates value from the market it is
+                  addressing will drive the investor’s returns. Thus the investor has to do quite a lot of work on the company’s product or service to ascertain its market ‘fit’ –
+                  what is the need (or “pain point”) at which it is aimed, and how precisely does it address that problem? And in that market fit, can the product or service be
+                  considered a ‘must have,’ or a luxury?
+                </p>
+                <p>
+                  Identify the specific groups of customers – the market segment – that the company is targeting. Who is going to buy the product? The company needs to show that it
+                  understands those people, segment, their buying preferences and spending behaviour. This cannot be a segment not presently existing: it must be targetable,
+                  therefore it must be identifiable and quantifiable. “Build it and they will come” worked well in the movie, but this is real life.
+                </p>
+                <p>
+                  If there are customers, it is a good idea to talk to them to get an idea of whether the product or service delivers real value. What alternatives do these
+                  customers have: that is, what differentiates this product?
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="potential-market" class="content-block">
+                <h3>How large is the potential market?</h3>
+                <p>
+                  Knowing who the company’s product or service appeals to can give you an idea of how much is currently being spent on meeting the need it addresses. This will of
+                  course vary if the company aspires to sell globally.
+                </p>
+                <p>
+                  Get an understanding from the founders what their market research process was to identify the business opportunities. What are the changing market trends,
+                  demographic shifts or shifting consumer preferences on which they have picked up?
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="management" class="content-block">
+                <h3>How strong is the management team?</h3>
+                <p>
+                  Arguably more important than the hard financial data – or business plan and forecasts –that informs a prospective investment is the “soft” data: the subjective
+                  personal impression that potential investors gain of the company’s founders.
+                </p>
+                <p>
+                  The more emotional, “qualitative” factors to be assessed include: how well do the founders present? Are they passionate? What are the philosophy, values, ethics
+                  and vision on which the business is based? Is their idea impressive, do they explain it well, are they realistic about the chances of success, have they
+                  thoroughly investigated the market opportunity, are they realistic about the risks, do they appear persistent, motivated and likely to work hard?
+                </p>
+                <p>
+                  How realistic are they about their cash needs and the time to deliver their product or service to the market? Do they have the right mix of skill-sets, for
+                  example, have they added marketing expertise to the founders’ product expertise?
+                </p>
+                <p>
+                  How willing are they to give up a significant chunk of their ownership to you as a co-owner with a significant stake in the business – how willing are they to
+                  share information with you? How open are they to taking advice from – or being mentored by – early-stage investors who are prepared to offer their experience to
+                  help the business grow?
+                </p>
+                <p>
+                  As an investor, you have to like and trust your investees, so the emotional ‘fit’ must be right. However, the flipside of this is that you cannot afford to ‘fall
+                  in love’ with the investment because you like the people. You’ve got to be prepared to walk away if the investment is not going to stack up.
+                </p>
+                <p>
+                  If there are other employees, try to get a feel for the company’s corporate culture, the chemistry of the office, the clarity of the division of responsibilities,
+                  the key-person risk: are there critical employees, and if so, what is the likelihood of retaining them? Do they have equity?
+                </p>
+                <p>
+                  It is important to assess the company’s management not only face-to-face, but through reference checks and social media checks. If there are supplier and customer
+                  relationships, talk to them for their impressions on doing business with the company.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="growth-potential" class="content-block">
+                <h3>Does the company have strong growth potential?</h3>
+                <p>
+                  Ideally, the company’s growth potential should inform the business plan, with evidence-backed information on how the company intends to develop its business, and
+                  what its goals are. The future outlook should indicate how the company sees its competitive positioning developing, and most importantly of all, how the business
+                  will ‘scale’ upward, and in turn, how it will strengthen its gross margins and boost bottom-line profitability.
+                </p>
+                <p>
+                  The business plan should envisage how the idea, product or technology can in turn generate multiple products or services. It should also address the competitive
+                  aspects of the business, how it will work to fight off competitors and build on market traction. The business plan should also extend to the acquisition or
+                  development of new businesses.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="marketing-strategy" class="content-block">
+                <h3>Does the company have a strong sales and marketing strategy?</h3>
+                <p>
+                  The business plan should set out the sales and marketing strategy, which will incorporate the strategic planning of the entire interaction with customers: market
+                  research, product development, branding, brand positioning, advertising and promotion.
+                </p>
+                <p>
+                  Sales channels must also be identified. Can the product be sold directly to the customer, or must it pass through retail? What are the competition, pricing and
+                  distribution strategies, to reach this market? Is the product sold one-off, or is there a subscription model? What level of advertising is envisaged? What other
+                  marketing will be undertaken? Does the company have a plan to maximise referrals? Will the staff require sales training?
+                </p>
+                <p>
+                  What will be the customer service (and complaints) procedures? What customer relationship management (CRM) systems will be used? What shipping processes will be
+                  employed?
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="competitive-advantages" class="content-block">
+                <h3>What are the company’s competitive advantages?</h3>
+                <p>
+                  Assessing the company’s competitive advantage involves determining what makes the product or service special in the eyes of potential buyers. Is there a current
+                  solution or offering from other competitors in the market? As an investor, you need to satisfy yourself what differentiates the company’s product or service from
+                  that offered by the competitors. What benefits do the customers derive from using the company’s product or service?
+                </p>
+                <p>
+                  Talk to the trade press, if there is any, for an informed opinion on perceptions of the company’s product in the marketplace: the company may have attained a
+                  “cool” or “prestige” status, which can be a big differentiator. There may be product-review websites where the company is mentioned: investigate these
+                  perceptions.
+                </p>
+                <p>
+                  If the product is a technology, has the concept been proven? Can this be confirmed with data or by objective third-party verification? Is the intellectual
+                  property protected? Does the business plan anticipate being copied – because it probably will be. What does the business plan say about follow-up products?
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="value-of-business" class="content-block">
+                <h3>
+                  How will the funds be used?<br />
+                  Will they be used in a way that will increase the value of the business?
+                </h3>
+                <p>
+                  It is critical to satisfy yourself before any ‘round’ of funding exactly for what the money raised will be used. Will the funding be used to finance growth
+                  activities, including product development, recruiting key staff, launching sales and marketing activity? Or is it earmarked for the founders to pay themselves
+                  salaries?
+                </p>
+                <p>
+                  The company will have working capital requirements, but ideally, as an investor, you would like to see the capital needs and the employment of any funding you
+                  contribute clearly outlined, both in the business plan and in conversations with the founders. The founders’ primary mission is ‘scaling up’ the business –
+                  increasing its value – and this should be the focus of any round of funding. In particular, you must be satisfied that the amount of funding being raised is
+                  enough to meet the next major milestone, and will increase the value of your equity.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+            </div>
+            <!-- ./col-md-6 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="related py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Why should I include ‘early stage securities’ in my investment portfolio?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/why-include-ess/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Due diligence – how to choose?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/due-diligence/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Making an investment via VentureCrowd.</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/investment-via-vc'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+       
+    <!-- ./Body -->
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

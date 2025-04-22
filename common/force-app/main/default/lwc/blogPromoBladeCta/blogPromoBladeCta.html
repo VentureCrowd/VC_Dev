@@ -1,0 +1,23 @@
+<template>
+
+    <section class={getComponentStyleClasses}>
+        <div class="container text-center">
+            <div class="row justify-content-center px-3 px-lg-0">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class={headerStyle}>
+                            {headingText}
+                        </div>
+                        <h1>{descriptionText}</h1>
+
+                        <div class="label">{label}</div>
+                        <div class="button">
+                            <a target={primaryButtonTarget} href={buttonLink} class={buttonStyle}>{buttonLabel}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</template>

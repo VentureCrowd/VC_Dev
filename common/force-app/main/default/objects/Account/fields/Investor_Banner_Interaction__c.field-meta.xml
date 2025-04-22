@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investor_Banner_Interaction__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will track if the investor interact with the button of the new investor portal this field should be deleted after 12 weeks of PIPO. If this field still exist after May 2025 please delete it.</description>
+    <label>Investor Banner Interaction</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

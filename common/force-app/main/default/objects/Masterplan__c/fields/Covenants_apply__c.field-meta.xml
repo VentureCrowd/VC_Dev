@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Covenants_apply__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box if there are covenants in place. If there are then ensure that the covenants document is uploaded to the Master Plan and the Staging Plan</inlineHelpText>
+    <label>Covenants apply</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

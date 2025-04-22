@@ -1,0 +1,19 @@
+/* VEN-184: Apply new site-wide font - SuisseIntl */
+
+
+/* VEN-184: Added additional styling based from bootstrap: .form-control */
+.form-control-bs {
+    background: #FFF;
+    border: 1px solid #7B868C;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+    border-radius: 4px;
+
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    /* font-size: 14px; */
+
+    font-family: "SuisseIntl-Regular", "Montserrat", "sans-serif";
+}

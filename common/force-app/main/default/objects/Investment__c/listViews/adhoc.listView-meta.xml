@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>adhoc</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Investment_Product_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Opportunity_ID__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Investments w/o Opps</label>
+</ListView>

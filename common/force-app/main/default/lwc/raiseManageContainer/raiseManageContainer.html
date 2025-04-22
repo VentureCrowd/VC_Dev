@@ -1,0 +1,81 @@
+<template>
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner" >
+            Loading... 
+           <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    
+    <template lwc:elseif={raiseAccessError}>
+        <div class="error-container" >
+            <svg width="120" height="102" viewBox="0 0 120 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="90" height="85" rx="9.2591" transform="matrix(-1 0 0 1 107 11)" fill="#D95BAA"/>
+                <path d="M18.5308 77.0385C26.5269 75.6423 25.3846 72.9769 25.3846 71.4538V70.4385C23.4808 68.7885 23.2269 66.25 22.4654 63.3308C20.0538 63.3308 19.4192 58.2538 19.4192 57.4923C19.4192 56.7308 19.2923 53.6846 21.8308 53.6846C20.1808 47.2115 20.5615 40.8654 25.0038 40.8654C35.6654 33.5038 49.7538 39.2154 44.4231 53.6846C46.8346 53.6846 46.8346 56.7308 46.8346 57.4923C46.8346 58.2538 46.3269 63.3308 43.7885 63.3308C43.0269 66.25 42.6461 68.6615 40.7423 70.4385V71.3269C40.7423 72.9769 39.6 75.3885 47.5962 76.9115C49.3845 77.2631 51.0642 78.0328 52.4981 79.1578C53.932 80.2829 55.0793 81.7313 55.8462 83.3846H66V25H0V83.3846H10.1538C10.9314 81.7272 12.1001 80.2836 13.5594 79.178C15.0186 78.0725 16.7247 77.3383 18.5308 77.0385Z" fill="#C6BEFA"/>
+                <path d="M0 88.4609H66V101.153H0V88.4609Z" fill="#C6BEFA"/>
+                <circle cx="98" cy="22" r="22" fill="#F3A73B"/>
+                <path d="M90.1426 14.1426L105.464 29.464" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M105.464 14.1426L90.1424 29.464" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+                
+            <div class="content">
+                <h1>Oops! Something doesn’t add up.</h1>
+                <p>It looks like you’re trying to access a page that doesn’t belong to you. Please log in with the correct account or request access via the account owner.</p>
+            </div>
+            <div class="cta">
+                <c-core-button 
+                label="Contact us"
+                onbuttonclick={handleContactUs}
+                variation="black"
+                ></c-core-button>
+            </div>
+        </div>
+    </template>
+    <template lwc:else>
+        <div class="liner" >
+            <div class="raise-mgmt-navigation">
+                <c-core-button 
+                label="My Companies"
+                variation="tertiary"
+                mode="light"
+                onbuttonclick={returnToCompanies}
+                data-id="primary-button"
+                icon="left-chevron" 
+                icon-position="left">
+            </c-core-button>
+            </div>
+            <div class="raise-header">
+                <div class="company-info">
+                    <div class="company-logo">
+                        <img src={companyLogoUrl}/>
+                    </div>
+                    <div class="company-name">
+                        <div class="name">{companyName}</div>
+                        <div class="title">Manage my raise</div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <c-core-button label="View Deal Page" onbuttonclick={handleViewDealPage} variation="primary"></c-core-button>
+                    <c-core-button label="Close Raise" onbuttonclick={handleCloseRaise}  variation="secondary"></c-core-button>
+                </div>
+            </div>
+            <div class="raise-progress">
+                <div class="raise-information">
+                    <h1>Raise Progress</h1>
+                    <p>Launched {raiseLaunchDate}</p>
+                </div>
+                <c-core-progress-bar values={valuesProgressBar}></c-core-progress-bar>
+            </div>
+            <div class="raise-statistics">
+                <!-- KEN TO PUT RAISE STATS HERE -->
+                <c-raise-manage-statistic-cards
+                ids={summaryDetailIds}></c-raise-manage-statistic-cards>
+            </div>
+            <div class="raise-table">
+                <!-- KEN TO PUT RAISE DATA TABLE HERE-->
+                <c-raise-manage-tables
+                record-id={raiseId}></c-raise-manage-tables>
+            </div>
+        </div>
+    </template>
+   
+</template>

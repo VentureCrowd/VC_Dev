@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>b41cb2b1-2a81-4308-830f-7d9c8ac5c37d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-48759e95-6a5c-4fe2-a6ba-4557a5025c6b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Earn 15% p.a. paid monthly or compound for 36 months</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000003p8qo&amp;d=%2Fa%2F5i000000PG36%2FtuW.fhwkdc6dVXc2ToEbs9JVA_Rwo7zsz9fHCSqqako&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fixedAmount</name>
+                    <value>25000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>investUrl</name>
+                    <value>/s/portal/invest-now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>minAmount</name>
+                    <value>250000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Tranche Closed</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/invest/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i00000017ypAAA</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Book a Call</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://calendly.com/louise-delaat/ask-a-customer-relations-advisor-re-carrara</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>One of SEQs strongest growth suburbs</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>targetAmount</name>
+                    <value>7.5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Carrara</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductWithInvestmentDetails</componentName>
+                <identifier>heroBannerProductWithInvestmentDetails</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>b41cb2b1-2a81-4308-830f-7d9c8ac5c37d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>479db08d-aef0-4225-a5d5-ede41f5b12c2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>77354d98-37cd-435b-888a-9bb798198437</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>16395</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-e0680190-c920-4119-86d5-c38b06a0d342</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h2 class=&quot;color-purple mb-4 pt-4&quot;&gt;Key Investment Highlights&lt;/h2&gt;
+    &lt;p class=&quot;lead&quot; id=&apos;KeyInvestmentHighlights&apos;&gt;&lt;/p&gt;
+    
+    &lt;p&gt;VentureCrowd Trust No. 0650 (Carrara Qld Development Pty Ltd) &lt;b&gt;(Fund)&lt;/b&gt; has been established to provide funding for the acquisition and construction of a residential development project located at 17 and 35 Baltimore Ct Carrara Qld 4211 &lt;b&gt;(Property).&lt;/b&gt; &lt;/p&gt;
+    
+    &lt;p&gt;The project will comprise 58 premium architecturally designed townhomes in an exclusive gated community located 8 minutes from the stunning beaches of the Gold Coast and 55 minutes from Brisbane CBD.&lt;/p&gt;
+    &lt;p&gt;Highlights of this investment include:&lt;/p&gt;
+    
+    &lt;ul&gt;
+		&lt;li&gt;Tranche 1 targets 15% p.a.&lt;/li&gt;  
+		&lt;li&gt;Monthly distributions OR compound your interest for a forecast 57.1% ROI in 36 months (our Capital Managers team will note down your preference upon investing)&lt;/li&gt;    
+		&lt;li&gt;Carrara is one of Australia’s highest growth suburbs&lt;/li&gt;
+		&lt;li&gt;High growth location with 37.4% capital growth last year&lt;/li&gt;
+		&lt;li&gt;Strong rental yield at 5.4% p.a., higher than Sydney, Melbourne &amp; Brisbane&lt;/li&gt;
+        &lt;li&gt;Invest in a VentureCrowd managed trust which holds preference shares in the project&lt;/li&gt;
+        &lt;li&gt;80% of the land will be rehabilitated as a public conservation space, planting an estimated 50,000 trees and plants and installing nesting boxes for native birds.&lt;/li&gt;
+        
+    &lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>479db08d-aef0-4225-a5d5-ede41f5b12c2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columnWidth</name>
+                    <value>2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>componentBackgroundColor</name>
+                    <value>rgba(195, 205, 209, 0.2)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>featureValues</name>
+                    <value>[  {&quot;feature&quot;: &quot;15% p.a.&quot;, &quot;value&quot;: &quot;Target (Tranche 1)&quot; }, {&quot;feature&quot;: &quot;Monthly or Compound&quot;, &quot;value&quot;: &quot;Return Distributions&quot; },   { &quot;feature&quot;: &quot;$25,000&quot;, &quot;value&quot;: &quot;Minimum Investment&quot; },   { &quot;feature&quot;: &quot;1.1%&quot;, &quot;value&quot;: &quot;Contribution Fee&quot; }]</value>
+                </componentInstanceProperties>
+                <componentName>investmentFeatures</componentName>
+                <identifier>investmentFeatures</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--page-index p-4&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#KeyInvestmentHighlights&quot;&gt;Key Investment Highlights&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#TheProject&quot;&gt;The Project&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#TheDwellings&quot;&gt;The Dwellings&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#MarketDrivers&quot;&gt;Market Drivers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#FinancialForecast&quot;&gt;Financial Forecast&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#TheFund&quot;&gt;The Fund&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#GreenFuturesInitiative&quot;&gt;Green Futures Initiative&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#Fees&quot;&gt;Fees&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhyVentureCrowd?&quot;&gt;Why VentureCrowd?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#Risks&quot;&gt;Risks&lt;/a&gt;&lt;/li&gt;    
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>77354d98-37cd-435b-888a-9bb798198437</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ae592499-26a5-4eb5-84ee-5033428b565f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2d9f9f9d-0ddf-46d7-8359-b33e923eef03</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;TheProject&apos; class=&quot;color-purple mb-4 pt-4 &quot;&gt;The Project&lt;/h3&gt;
+	&lt;p&gt;The site will be developed into 58 high end, architecturally designed townhomes inside a private gated community. The dwellings will be complemented by communal recreation facilities including pool and outdoor kitchen as well as a large expanse of private conservation area and walking tracks.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Carrara_DPProject1_VentureCrowd.1}&quot; alt=&quot;&quot; style=&quot;width: 821.156px; height: 455.742px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Carrara_DPProject2_VentureCrowd.1}&quot; alt=&quot;&quot; style=&quot;width: 833.836px; height: 227.906px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+	&lt;p&gt;A significant portion of the property (~23.88ha) will be rehabilitated by planting ~50,000 trees and plants, eradicating the area of invasive weeds and installing nesting boxes for native birds, before being transferred to council as public conservation space.&lt;/p&gt;
+	&lt;p&gt;Another 7,993m² will be retained by the development as an environmental covenant area, protecting the existing vegetation for the use and benefit of the residents of the development. It is envisioned that walking trails and quiet spots for relaxing amongst the trees will be incorporated in this area at the same time promoting the area as a fauna habitat.
+&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ae592499-26a5-4eb5-84ee-5033428b565f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0dbdee32-bc16-4093-88ea-75c717daf0d6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ea67f683-3e53-4d02-b290-d1ee0e6def18</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;TheDwellings&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;The Dwellings&lt;/h3&gt;
+    &lt;p&gt;Of the planned 58 homes, 6 will be three bedroom and 52 will be 4 bedroom designs.&lt;/p&gt;
+	&lt;p&gt;All homes will feature a double garage and 2.5 bathrooms. The 4 bed homes also have a multi purpose room. There are 5 different floor plans and the majority will be built in a duplex configuration, with 4 x fourplexes.  
+	&lt;p&gt;To add to the environmental sustainability credentials of this development, it is intended each home will have both solar hot water and solar power as well as an electric car charging point in the garage. We are also investigating the option of creating a private electricity network connecting all of the development’s solar panels to a central large capacity battery for communal use.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Carrara_DPDwellings_VentureCrowd.1}&quot; style=&quot;width: 814.242px; height: 812.227px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>0dbdee32-bc16-4093-88ea-75c717daf0d6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>674b828f-eb2d-4570-80f4-2f782ff5352d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ccb924d7-a5db-41ac-92f4-b7e4fa6685cb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;MarketDrivers&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Market Drivers&lt;/h3&gt;
+	&lt;p&gt;Carrara rates well on all key property market drivers, including over 37.4% capital growth last year, making it one of Australia’s most promising real estate investment locations.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Carrara_DPMD_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>674b828f-eb2d-4570-80f4-2f782ff5352d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f5762036-7a7d-4451-ac4b-68fc3d6c14ee</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1103edda-1f5b-4429-93fa-53859d132c60</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Carrara_DPDwellings2_VentureCrowd.1}&quot; style=&quot;width: 1089.54px; height: 593.648px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;FinancialForecast&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Financial Forecast&lt;/h3&gt;
+    
+	&lt;p&gt;The project is forecasting total development costs of $65,615,501 and net  sale proceeds of $76,814,755. This results in a development profit of $11,199,255 and a project margin of 16.17%.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Carrara_DPFF_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f5762036-7a7d-4451-ac4b-68fc3d6c14ee</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>a3f83729-0510-4dc0-8415-b0824fff9f6c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2f66c821-0582-4d2b-9389-193d73d7884b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;TheFund&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;The Fund&lt;/h3&gt;
+	&lt;p&gt;VentureCrowd Trust No. 0650 (Carrara Qld Development Pty Ltd) (Fund) is structured as an unregistered wholesale unit trust, the trustee of which is VentureCrowd Nominees Pty Ltd (ACN 166 599 140).  Investors will acquire Units in the Fund at an issue price of $1.00 per Unit.&lt;/p&gt;
+	&lt;p&gt;The Trustee will issue three different classes of Units to investors in its capacity as an authorised representative of VentureCrowd Pty Ltd (ACN 166 598 849) under its Australian Financial Services License No.503381. Each class of units will have different rights and will be released at different stages of the project. The Fund will acquire corresponding preference shares in Carrara Qld Development Pty Ltd (ACN 656 386 711), the owner of the Property.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Carrara_DPFund_VentureCrowd.2}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h3 class=&quot;color-black mb-4 pt-4&quot;&gt;Tranche 1 - A Class Units&lt;/h3&gt;
+    
+    &lt;p&gt;The Fund will invest up to $19,500,000 in three tranches and will acquire preference shares in the owner of the Property, Carrara Qld Development Pty Ltd ACN 656 386 711.&lt;/p&gt;
+	&lt;p&gt;The first tranche of $8,500,000 offers investors a target return of 15% p.a. (net of fees) paid monthly in arrears, with an option to reinvest interest payments and compound, on a three year term. Investors who elect to compound their interest are forecast to receive a 57.1% ROI at the expiry of the three year term, while investors who elect monthly payments are forecast to receive a ROI of 45%.&lt;/p&gt;
+	&lt;p&gt;The project will also obtain third party construction finance to finalise the development. The total amount the Fund will invest and the tranches in which that amount is raised may change once the construction loan amount is finalised.&lt;/p&gt;
+	&lt;p&gt;Redemption of the preference shares (and therefore repayment of the units held by investors in the Fund) will either be made from sales proceeds following the payment of the first mortgage construction facility or by refinancing the preference shares on maturity (if required).&lt;/p&gt;
+    
+    
+    
+    
+    &lt;br&gt;&lt;br&gt;
+    &lt;p&gt;&lt;b&gt;Tranche 1 Units - Key Features:&lt;/b&gt;&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Tranche Size: $8,500,000 Class A Units&lt;/li&gt;
+		&lt;li&gt;Target Return: 15% p.a. &lt;/li&gt;
+		&lt;li&gt;Distribution: Paid monthly in arrears OR elect to reinvest interest monthly and compound your interest to the completion of the project for a higher ROI&lt;/li&gt;
+		&lt;li&gt;ROI (monthly distributions): 45%&lt;/li&gt;
+		&lt;li&gt;ROI (compounding): 57.1%&lt;/li&gt;
+		&lt;li&gt;Term: 36 months, however the Fund may redeem units in the Fund earlier than the forecast term if project sales allow&lt;/li&gt;
+	&lt;/ul&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>a3f83729-0510-4dc0-8415-b0824fff9f6c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>85cb4c0b-01dd-407e-9dc8-98cea17772ad</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2ff32452-9cfc-40b9-a1d0-fbaa3d6d9884</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;Fees&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Fees and Expenses&lt;/h3&gt;
+	
+    &lt;p&gt;The fees and expenses payable in connection with the management of the Fund are as follows:&lt;/p&gt;
+    
+    
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Carrara_DPFees_VentureCrowd.1}&quot; style=&quot;width: 674.18px; height: 125.062px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>85cb4c0b-01dd-407e-9dc8-98cea17772ad</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>fef22eb9-30a3-4e8a-a463-0cef99212011</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-a0be585b-2f15-4ee4-b134-92e80a6f20b7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/28W9q10PIYc?rel=0&quot; src=&quot;https://www.youtube.com/embed/28W9q10PIYc?rel=0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;GreenFuturesInitiative&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Green Futures Initiative&lt;/h3&gt;
+    
+	&lt;p&gt;VentureCrowd believes that property development projects should be profitable while also creating dynamic residential communities that simultaneously enhance the health and wellbeing of residents and reduce harmful impacts on the environment.&lt;/p&gt;
+	&lt;p&gt;This project is perfectly aligned with our environmental ethos. The sustainably designed master plan of this residential community considers the environmental, social and economic impacts of the project and the individual dwellings.&lt;/p&gt;
+	&lt;p&gt;Sustainable design principles include the ability to:&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;optimize site potential&lt;/li&gt;
+        &lt;li&gt;minimize non-renewable energy consumption&lt;/li&gt;
+        &lt;li&gt;use environmentally preferable products&lt;/li&gt;
+        &lt;li&gt;protect and conserve water&lt;/li&gt;
+        &lt;li&gt;enhance indoor environmental quality &amp; liveability&lt;/li&gt;
+        &lt;li&gt;optimize operational and maintenance practices&lt;/li&gt;
+        
+    &lt;/ul&gt;
+    
+    &lt;p&gt;Carrara is part of our Green Futures Initiative, with 80% of the land will be rehabilitated as a public conservation space, planting an estimated 50,000 trees and plants and installing nesting boxes for native birds.&lt;/p&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>fef22eb9-30a3-4e8a-a463-0cef99212011</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>12210723-5a1a-4b74-8ae8-15d77c74f8f1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9e929c6e-61b5-430a-887d-88f1fdd5dd0d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;WhyVentureCrowd?&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Why Invest Through VentureCrowd?&lt;/h3&gt;
+	&lt;p&gt;VentureCrowd is the leading digital investment platform for alternative assets. We find and fund the brightest and most innovative startups.&lt;/p&gt;
+
+&lt;p&gt;Our curation and due diligence is rigorous and our track record of success speaks for itself:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;p&gt;&lt;li&gt;&lt;b&gt;$12.9M+ total distributed to investors.&lt;/b&gt;&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;64K+ members&lt;/b&gt; and counting.&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;&lt;b&gt;Over $200,000,000&lt;/b&gt; in capital raised since inception.&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;VentureCrowd is investor-led, which means we only list deals with secured professional external lead investors. Our investors then invest on the same economic terms as professional investors. If you invest in one of our deals you will receive equity or ownership in the company that is raising the capital. Not only will your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt; &lt;a href=&quot;https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t2v00000DGFfOAAX&amp;amount=10000&quot;&gt;Invest now &lt;/a&gt; &lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;If you would prefer to speak to one of our team members about this offer, please: &lt;/p&gt;
+    &lt;ul&gt;
+        &lt;p&gt;&lt;li&gt;email us at hello@venturecrowd.com.au or&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;call us on 1300 039 655&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;Please note, the Fund Manager reserves the right to vary or cancel the Offer at any time, vary the amount raised under the Offer, vary or waive the Minimum Investment and close the Offer, without notice and without giving reasons.
+&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/tBFsGLx1sD4?rel=0&quot; src=&quot;https://www.youtube.com/embed/tBFsGLx1sD4?rel=0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>12210723-5a1a-4b74-8ae8-15d77c74f8f1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>86f8576e-889d-4125-bcab-6876ab37bd48</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-24d85a10-18a4-4ea2-88dc-6a6c74d4498d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>4f4d13c7-653d-4aa5-8378-a1c1ece20ce8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>46a348af-964a-401b-9ce0-480ef69ad34b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>2</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>7f212ce7-6c3b-49db-97e2-bcfcdec16637</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>4b984</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-74521ec5-6aa5-432a-bc80-f836c9505beb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;Risks&apos; class=&quot;mb-4 mt-4&quot;&gt;Risks&lt;/h3&gt;
+	&lt;p&gt;Whilst the directors of the Fund Manager are experienced investment managers and the senior executives of the Development Manager have substantial experience in managing property development projects, there are always risks associated with development and construction which may, either directly or indirectly, result in reduced distributions and/or a loss of some of the capital value of an investment in the Fund. &lt;/p&gt;
+    &lt;p&gt;Before deciding whether to subscribe for Units, you should consider whether an investment in this Fund, the underlying asset of which will be the Property, is suitable for you. If you are in doubt as to whether you should invest, please consult a suitably qualified professional advisor.&lt;/p&gt;
+    &lt;p&gt;The key risks associated with investing in the Fund are set out in the Information Memorandum attached below and include the following:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;a downturn in the general economic and market conditions in South-East Queensland;&lt;/li&gt;
+        &lt;li&gt;unfavourable movements in interest rates, inflation or the unemployment rate;&lt;/li&gt;
+        &lt;li&gt;changes to the law (including tax laws) and accounting rules;&lt;/li&gt;
+        &lt;li&gt;industrial relations disputes and strikes;&lt;/li&gt;
+        &lt;li&gt;natural disasters, including earthquakes, fire and storm;&lt;/li&gt;
+        &lt;li&gt;social unrest, terrorist attack or war in Australia or overseas;&lt;/li&gt;
+        &lt;li&gt;no guarantee of performance or return;&lt;/li&gt;
+        &lt;li&gt;development costs and project expenditure being lower than forecast;&lt;/li&gt;
+        &lt;li&gt;issues and delays with council;&lt;/li&gt;
+        &lt;li&gt;related parties not performing; and&lt;/li&gt;
+        &lt;li&gt;availability of construction funding.&lt;/li&gt;
+         
+    &lt;/ul&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>4f4d13c7-653d-4aa5-8378-a1c1ece20ce8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;Furtherinformation&apos; class=&quot;mb-4 mt-4&quot;&gt;Further information&lt;/h3&gt;
+    
+  
+	&lt;p&gt;The Trust Deed and Information Memorandum contain further information concerning the rights and obligations of an investor, the powers and functions of the Trustee, the manner in which the Fund will be managed and the risks associated with the project.&lt;/p&gt;
+	&lt;p&gt;Investors should read those documents before making a decision to invest and, if required, seek financial advice.&lt;/p&gt;
+	&lt;p&gt;To discuss the opportunity, book a call with one of our team members.&lt;/p&gt;
+    
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>46a348af-964a-401b-9ce0-480ef69ad34b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t5i00000017ypAAA</value>
+                </componentInstanceProperties>
+                <componentName>keyDocument</componentName>
+                <identifier>keyDocument</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>7f212ce7-6c3b-49db-97e2-bcfcdec16637</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-74521ec5-6aa5-432a-bc80-f836c9505beb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>tabsetConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;74521ec5-6aa5-432a-bc80-f836c9505beb&quot;,&quot;activeTab&quot;:&quot;&quot;,&quot;useOverflowMenu&quot;:false,&quot;tabs&quot;:[{&quot;UUID&quot;:&quot;4f4d13c7-653d-4aa5-8378-a1c1ece20ce8&quot;,&quot;tabName&quot;:&quot;Risks&quot;,&quot;tabKey&quot;:&quot;1&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;46a348af-964a-401b-9ce0-480ef69ad34b&quot;,&quot;tabName&quot;:&quot;Further Information&quot;,&quot;tabKey&quot;:&quot;2&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;7f212ce7-6c3b-49db-97e2-bcfcdec16637&quot;,&quot;tabName&quot;:&quot;Key Documents&quot;,&quot;tabKey&quot;:&quot;4b984&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:tabset</componentName>
+                <identifier>forceCommunity_tabset</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>86f8576e-889d-4125-bcab-6876ab37bd48</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-48759e95-6a5c-4fe2-a6ba-4557a5025c6b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;48759e95-6a5c-4fe2-a6ba-4557a5025c6b&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;b41cb2b1-2a81-4308-830f-7d9c8ac5c37d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(65,65,65,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-e0680190-c920-4119-86d5-c38b06a0d342</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;e0680190-c920-4119-86d5-c38b06a0d342&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;479db08d-aef0-4225-a5d5-ede41f5b12c2&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;77354d98-37cd-435b-888a-9bb798198437&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;16395&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>327</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2d9f9f9d-0ddf-46d7-8359-b33e923eef03</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2d9f9f9d-0ddf-46d7-8359-b33e923eef03&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ae592499-26a5-4eb5-84ee-5033428b565f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ea67f683-3e53-4d02-b290-d1ee0e6def18</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ea67f683-3e53-4d02-b290-d1ee0e6def18&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0dbdee32-bc16-4093-88ea-75c717daf0d6&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ccb924d7-a5db-41ac-92f4-b7e4fa6685cb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ccb924d7-a5db-41ac-92f4-b7e4fa6685cb&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;674b828f-eb2d-4570-80f4-2f782ff5352d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1103edda-1f5b-4429-93fa-53859d132c60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1103edda-1f5b-4429-93fa-53859d132c60&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f5762036-7a7d-4451-ac4b-68fc3d6c14ee&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2f66c821-0582-4d2b-9389-193d73d7884b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2f66c821-0582-4d2b-9389-193d73d7884b&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;a3f83729-0510-4dc0-8415-b0824fff9f6c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2ff32452-9cfc-40b9-a1d0-fbaa3d6d9884</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2ff32452-9cfc-40b9-a1d0-fbaa3d6d9884&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;85cb4c0b-01dd-407e-9dc8-98cea17772ad&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-a0be585b-2f15-4ee4-b134-92e80a6f20b7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;a0be585b-2f15-4ee4-b134-92e80a6f20b7&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;fef22eb9-30a3-4e8a-a463-0cef99212011&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9e929c6e-61b5-430a-887d-88f1fdd5dd0d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9e929c6e-61b5-430a-887d-88f1fdd5dd0d&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;12210723-5a1a-4b74-8ae8-15d77c74f8f1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-24d85a10-18a4-4ea2-88dc-6a6c74d4498d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;24d85a10-18a4-4ea2-88dc-6a6c74d4498d&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;86f8576e-889d-4125-bcab-6876ab37bd48&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Invest in a property fund in Carrara</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Carrara | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Carrara_SYH - Carrara</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

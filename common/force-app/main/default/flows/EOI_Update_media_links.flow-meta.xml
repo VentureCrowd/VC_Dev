@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Submit_for_Approval</name>
+        <label>Submit for Approval</label>
+        <locationX>50</locationX>
+        <locationY>3263</locationY>
+        <actionName>submit</actionName>
+        <actionType>submit</actionType>
+        <connector>
+            <targetReference>Is_it_in_Publishing</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>comment</name>
+            <value>
+                <stringValue>This approval was triggered by the customer, please review the EOI.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>submitterId</name>
+            <value>
+                <stringValue>0052v00000glEDkAAM</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>processDefinitionNameOrId</name>
+            <value>
+                <stringValue>EOI_Publish_Approval_Request</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>skipEntryCriteria</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>submit</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Task_To_Publish_EOI</name>
+        <label>Task To Publish EOI</label>
+        <locationX>248</locationX>
+        <locationY>3647</locationY>
+        <actionName>NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <connector>
+            <targetReference>EOI_URL_Pasted_in_Record</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <stringValue>Publish {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Description</name>
+            <value>
+                <stringValue>The EOI {!$Record.Name}, with ID {!$Record.Id} is ready to be published, please schedule some time to Publish it in Experience Cloud and update the URL on the EOI record.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>Get_Elle_s_User.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ActivityDate</name>
+            <value>
+                <elementReference>After7Days</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>NewTask</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>Task to UnPublish EOI from Experience Cloud</description>
+        <name>Unpublish_EOI_from_Exp_Cloud</name>
+        <label>Unpublish EOI from Exp Cloud</label>
+        <locationX>248</locationX>
+        <locationY>4655</locationY>
+        <actionName>NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <stringValue>Please deactivate {!$Record.Name} from Experience Cloud</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Description</name>
+            <value>
+                <stringValue>The EOI {!$Record.Name}, with ID {!$Record.Id} has been requested to be closed by the customer,  please schedule some time to deactivate it in experience cloud.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>Get_Elle_s_User.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ActivityDate</name>
+            <value>
+                <elementReference>After7Days</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>NewTask</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Account Record type in the EOI, to bypass errors</description>
+        <name>Account_RT_in_EOI</name>
+        <label>Account RT in EOI</label>
+        <locationX>380</locationX>
+        <locationY>2231</locationY>
+        <defaultConnector>
+            <targetReference>Update_Related_Person_Record_on_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Is company</defaultConnectorLabel>
+        <rules>
+            <name>Is_Person_Acc</name>
+            <conditionLogic>4 AND (1 OR 2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0122v000001bzMaAAI</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0122v000002VOzgAAG</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account__r.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>0125i0000008TfyAAE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Related_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Elle_s_User</targetReference>
+            </connector>
+            <label>Is Person Acc</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Approve_or_Publish</name>
+        <label>Approve or Publish</label>
+        <locationX>182</locationX>
+        <locationY>3047</locationY>
+        <defaultConnector>
+            <targetReference>Update_Status_PBS</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Publish Task</defaultConnectorLabel>
+        <rules>
+            <name>Approval</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Target_Raise_Amount__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_2BP</targetReference>
+            </connector>
+            <label>Approval</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>EOI_URL_Pasted_in_Record</name>
+        <label>EOI URL Pasted in Record?</label>
+        <locationX>380</locationX>
+        <locationY>3839</locationY>
+        <defaultConnector>
+            <targetReference>Is_it_Published</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>YES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Published_EOI_URL__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Publishing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_to_Published</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Facebook Link Changed?</description>
+        <name>Facebook_Update</name>
+        <label>Facebook Update</label>
+        <locationX>380</locationX>
+        <locationY>1331</locationY>
+        <defaultConnector>
+            <targetReference>Instagram_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Facebook</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Facebook_link__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Facebook_Link</targetReference>
+            </connector>
+            <label>Update Facebook</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Instagram Link Changed?</description>
+        <name>Instagram_Update</name>
+        <label>Instagram Update</label>
+        <locationX>380</locationX>
+        <locationY>1631</locationY>
+        <defaultConnector>
+            <targetReference>Website_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Instagram</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Instagram_link__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Instagram_Link</targetReference>
+            </connector>
+            <label>Update Instagram</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_it_Closed</name>
+        <label>Is it Closed?</label>
+        <locationX>380</locationX>
+        <locationY>4439</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>YES_Closed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EOI_Closed_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_EOI_Close_Date</targetReference>
+            </connector>
+            <label>YES_Closed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_it_in_Publishing</name>
+        <label>Is it in Publishing</label>
+        <locationX>380</locationX>
+        <locationY>3539</locationY>
+        <defaultConnector>
+            <targetReference>EOI_URL_Pasted_in_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_its_in_Publishing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Publishing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Task_To_Publish_EOI</targetReference>
+            </connector>
+            <label>Yes its in Publishing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_it_NOT_Published</name>
+        <label>Is it NOT Published?</label>
+        <locationX>380</locationX>
+        <locationY>2639</locationY>
+        <defaultConnector>
+            <targetReference>is_it_Submitted_to_be_Published</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Not_Published</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not Published</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Approval_Status</targetReference>
+            </connector>
+            <label>Yes-Not Published</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_it_Published</name>
+        <label>Is it Published?</label>
+        <locationX>380</locationX>
+        <locationY>4139</locationY>
+        <defaultConnector>
+            <targetReference>Is_it_Closed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Published</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Published</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_EOI_published_Date</targetReference>
+            </connector>
+            <label>Published</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>is_it_Submitted_to_be_Published</name>
+        <label>is it Submitted to be Published?</label>
+        <locationX>380</locationX>
+        <locationY>2939</locationY>
+        <defaultConnector>
+            <targetReference>Is_it_in_Publishing</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_it_is_Submitted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.EOI_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Submitted to be Published</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Approve_or_Publish</targetReference>
+            </connector>
+            <label>Yes it is Submitted</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Linkedin Link Changed?</description>
+        <name>Linkedin_Update</name>
+        <label>Linkedin Update</label>
+        <locationX>380</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Youtube_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Linkedin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Linkedin_link__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Linkedin_Link</targetReference>
+            </connector>
+            <label>Update Linkedin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Twitter Link Changed?</description>
+        <name>Twitter_Update</name>
+        <label>Twitter Update</label>
+        <locationX>380</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Facebook_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Twitter</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Twitter_X_link__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Twitter_Link</targetReference>
+            </connector>
+            <label>Update Twitter</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Website Link Changed?</description>
+        <name>Website_Update</name>
+        <label>Website Update</label>
+        <locationX>380</locationX>
+        <locationY>1931</locationY>
+        <defaultConnector>
+            <targetReference>Account_RT_in_EOI</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Account_Website_URL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Website_Link__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account</targetReference>
+            </connector>
+            <label>Update Account Website URL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Youtube Link Changed?</description>
+        <name>Youtube_Update</name>
+        <label>Youtube Update</label>
+        <locationX>380</locationX>
+        <locationY>731</locationY>
+        <defaultConnector>
+            <targetReference>Twitter_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_Youtube</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Youtube_link__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Youtube_Link</targetReference>
+            </connector>
+            <label>Update Youtube</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>After7Days</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW() + 7</expression>
+    </formulas>
+    <formulas>
+        <name>Facebook_Link_Update_Rule</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    BEGINS({!$Record.Facebook_link__c}, &apos;https://&apos;), 
+    {!$Record.Facebook_link__c}, 
+    &apos;https://&apos; + {!$Record.Facebook_link__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Instagram_Link_Update_Rule</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    BEGINS({!$Record.Instagram_link__c}, &apos;https://&apos;), 
+    {!$Record.Instagram_link__c}, 
+    &apos;https://&apos; + {!$Record.Instagram_link__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Linkeding_Link_Update_Rule</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    BEGINS({!$Record.Linkedin_link__c}, &apos;https://&apos;), 
+    {!$Record.Linkedin_link__c}, 
+    &apos;https://&apos; + {!$Record.Linkedin_link__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Today</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>Twitter_Link_Update_Rule</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    BEGINS({!$Record.Twitter_X_link__c}, &apos;https://&apos;), 
+    {!$Record.Twitter_X_link__c}, 
+    &apos;https://&apos; + {!$Record.Twitter_X_link__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Youtube_Link_Update_Rule</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    BEGINS({!$Record.Youtube_link__c}, &apos;https://&apos;), 
+    {!$Record.Youtube_link__c}, 
+    &apos;https://&apos; + {!$Record.Youtube_link__c}
+)</expression>
+    </formulas>
+    <interviewLabel>EOI Update media links {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EOI Update media links</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Elle_s_User</name>
+        <label>Get Elle&apos;s User</label>
+        <locationX>380</locationX>
+        <locationY>2531</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_it_NOT_Published</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0052v00000gm7vbAAA</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the account related to the affected EOI Record.</description>
+        <name>Get_Ventures_Company_Account</name>
+        <label>Get Ventures Company Account</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Linkedin_Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update Website link</description>
+        <name>Update_Account</name>
+        <label>Update Account</label>
+        <locationX>248</locationX>
+        <locationY>2039</locationY>
+        <connector>
+            <targetReference>Account_RT_in_EOI</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Website</field>
+            <value>
+                <elementReference>$Record.Website_Link__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Account__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Approval_Status</name>
+        <label>Update Approval Status</label>
+        <locationX>248</locationX>
+        <locationY>2747</locationY>
+        <connector>
+            <targetReference>is_it_Submitted_to_be_Published</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Approval_Status__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_EOI_Close_Date</name>
+        <label>Update EOI Close Date</label>
+        <locationX>248</locationX>
+        <locationY>4547</locationY>
+        <connector>
+            <targetReference>Unpublish_EOI_from_Exp_Cloud</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EOI_Closed_Date__c</field>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_EOI_published_Date</name>
+        <label>Update EOI published Date</label>
+        <locationX>248</locationX>
+        <locationY>4247</locationY>
+        <connector>
+            <targetReference>Is_it_Closed</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EOI_Published_Date__c</field>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update facebook</description>
+        <name>Update_Facebook_Link</name>
+        <label>Update Facebook Link</label>
+        <locationX>248</locationX>
+        <locationY>1439</locationY>
+        <connector>
+            <targetReference>Instagram_Update</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Facebook_link__c</field>
+            <value>
+                <elementReference>Facebook_Link_Update_Rule</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update instagram link</description>
+        <name>Update_Instagram_Link</name>
+        <label>Update Instagram Link</label>
+        <locationX>248</locationX>
+        <locationY>1739</locationY>
+        <connector>
+            <targetReference>Website_Update</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Instagram_link__c</field>
+            <value>
+                <elementReference>Instagram_Link_Update_Rule</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update linkedin Link</description>
+        <name>Update_Linkedin_Link</name>
+        <label>Update Linkedin Link</label>
+        <locationX>248</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Youtube_Update</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Linkedin_link__c</field>
+            <value>
+                <elementReference>Linkeding_Link_Update_Rule</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Related Person Record on the EOI Record.</description>
+        <name>Update_Related_Person_Record_on_Account</name>
+        <label>Update Related Person Record on Account</label>
+        <locationX>468</locationX>
+        <locationY>2339</locationY>
+        <connector>
+            <targetReference>Get_Elle_s_User</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Related_Person_Account__c</field>
+            <value>
+                <elementReference>$Record.Account__r.Related_Person_Account__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Status_2BP</name>
+        <label>Update Status 2BP</label>
+        <locationX>50</locationX>
+        <locationY>3155</locationY>
+        <connector>
+            <targetReference>Submit_for_Approval</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EOI_Status__c</field>
+            <value>
+                <stringValue>Submitted to be Published</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Status_PBS</name>
+        <label>Update Status PBS</label>
+        <locationX>314</locationX>
+        <locationY>3155</locationY>
+        <connector>
+            <targetReference>Is_it_in_Publishing</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EOI_Status__c</field>
+            <value>
+                <stringValue>Publishing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Status_to_Published</name>
+        <label>Update Status to Published</label>
+        <locationX>248</locationX>
+        <locationY>3947</locationY>
+        <connector>
+            <targetReference>Is_it_Published</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>EOI_Status__c</field>
+            <value>
+                <stringValue>Published</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update twitter</description>
+        <name>Update_Twitter_Link</name>
+        <label>Update Twitter Link</label>
+        <locationX>248</locationX>
+        <locationY>1139</locationY>
+        <connector>
+            <targetReference>Facebook_Update</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Twitter_X_link__c</field>
+            <value>
+                <elementReference>Twitter_Link_Update_Rule</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Youtube Link</description>
+        <name>Update_Youtube_Link</name>
+        <label>Update Youtube Link</label>
+        <locationX>248</locationX>
+        <locationY>839</locationY>
+        <connector>
+            <targetReference>Twitter_Update</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Youtube_link__c</field>
+            <value>
+                <elementReference>Youtube_Link_Update_Rule</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Ventures_Company_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0125i000000W4aCAAS</stringValue>
+            </value>
+        </filters>
+        <object>EOI__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>200</triggerOrder>
+</Flow>

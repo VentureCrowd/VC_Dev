@@ -1,0 +1,274 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+      <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+            <div class="col-md-12 headline">
+             <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+              <h1 class="mt-4">Angel Investing Australia</h1>
+            <p class="mt-4">
+                Learn more about angel investing at VentureCrowd and how we can help startups access the funds they need to grow, consolidate and succeed in the market.
+                </p>
+                <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/angel-investing-VC.jpg')"></div>
+      </section>
+
+      <!-- Post Body -->
+      <section class="post-body py-5">
+        <div class="container">
+         
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Angel Investing </h3>
+                <p><span style="font-weight: 400;">Angel investing is a type of investment option which typically applies to startup businesses seeking cash investments. VentureCrowd is at the forefront of a range of exciting investment opportunities which rely on the sourcing of funds from multiple investors. We offer </span><a href="https://www.venturecrowd.com.au/s/property/funds"><span style="font-weight: 400;">property funds</span></a><span style="font-weight: 400;"> for individuals who want to access new development projects like residential developments and commercial developments, too. </span><a href="https://www.venturecrowd.com.au/s/property/companies"><span style="font-weight: 400;">Investment property companies</span></a><span style="font-weight: 400;"> are now able to open options to retail investors – that’s you – alongside sophisticated investors to generate more </span><a href="https://www.venturecrowd.com.au/property"><span style="font-weight: 400;">property investing</span></a><span style="font-weight: 400;"> and more chances of sharing in the wealth that they generate.</span></p>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> 
+How does angel investing work? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Angel investing refers to investments made in startup businesses, offering them the cash they need to launch their business and hopefully gain a foothold within their intended market. Angel investing can be very profitable, capable of offering </span><a href="https://www.venturecrowd.com.au/s/high-yield-investments"><span style="font-weight: 400;">high yield investment</span></a><span style="font-weight: 400;"> opportunities, but it doesn’t come without its risks. New businesses face hefty challenges when they enter the marketplace and most new businesses fail to take off.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Traditionally, angel investors, otherwise known as accredited investors, are individuals with a high net worth. Many startup companies rely on individual investors like these to get them the cash they need to succeed but it’s not always easy finding the founders that entrepreneurs need to back them through the rocky opening stages of launching.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><a href="https://www.venturecrowd.com.au"><span style="font-weight: 400;">Crowdfunding</span></a><span style="font-weight: 400;"> is a way of getting in on the ground floor and becoming part of new startup technology, ideas and investment markets without necessarily being an angel investor.</span></p>
+
+        </div>
+    </div>
+
+        </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                  
+                  <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">When you choose <a href="https://www.venturecrowd.com.au/s/syndicate-investing">syndicate investing</a>, you contribute to a pool of wealth collected from a variety of investors eager to help launch a new business and, hopefully, share in its success and growth. This means that new, risky business ventures can attract a whole range of investor types looking to diversify their investment portfolios to mitigate the risk of putting large </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> investments into single projects or companies. Diversifying means that an investor can spread the risk of their investments over multiple ventures, recouping money potentially lost on failed investments with other </span><a href="https://www.venturecrowd.com.au/s/high-return-investments"><span style="font-weight: 400;">high return investments</span></a><span style="font-weight: 400;">. As a general rule, investors can expect to make 90% of their income on about 10% of their investment portfolio so diversification can be vital to an investor’s continued income generation.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">We take the hassle and the fuss out of finding and sourcing angel investing opportunities, offering pre-vetted options to our members and taking care of the paperwork. We offer you an easy to use online platform from which you can track, manage and maintain your portfolio.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+        </div>
+
+              </div>
+            </div> 
+          </div>
+            
+
+
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3>
+Is angel investing profitable? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Angel investing can be extremely profitable. When it comes to cash investments, often the higher the risk, the higher the return so if the business or project that you have invested in succeeds, you stand to make a considerable profit upon exit from your investment. However, those risks are high for a reason. The term ‘angel investor’ actually comes from the New York theatre scene and the investors who made Broadway shows possible. The risk you assume when you choose this kind of investment opportunity is real; however, when you choose VentureCrowd to source and manage your portfolio, you’re only liable for the money that you have originally invested.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Normally, angel investments will represent no more than 10% of an investor’s total investment portfolio to ensure that any risks assumed can be balanced by other, more conservative, if lower-yielding investments.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+        </div>
+                  
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Typically, innovations in internet and healthcare markets are the most attractive type of investment options, followed by mobile and telecommunications, energy and utilities, electronics and consumer products and services. Profits can also be counted in a range of ways. For example, as an angel investor, you are not only hoping to make money off your initial capital investment, you are also choosing the kinds of businesses that you wish to support and, in a sense, the kind of future you want.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Before you choose any potential investment, it’s always worth considering engaging a professional financial planner who can offer you advice on how to manage your intended investment and help you understand all of the risks associated with making a new investment. If you have found an idea that appeals to you and that you want to become involved with, consider making some cursory enquiries into the market the business is aiming for to understand what other kinds of risks the launch of a new business might face before you commit any investment capital.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+
+
+
+            <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How to get started with angel investing? </h3>
+                  <div class="wpb_wrapper">
+                      
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                              <p><span style="font-weight: 400;">Australia has now passed the legislative framework allowing retail investors – that’s you – to participate in a new Crowd-Sourced Funding (CSF) regime just like the US, Europe, Asia and New Zealand. This type of investing structure may also be called </span><a href="https://www.venturecrowd.com.au/s/syndicate-investing"><span style="font-weight: 400;">syndicate investing</span></a><span style="font-weight: 400;">. Anyone residing in Australia and who is at least 18 years old can now invest in CSF offers made by an investment property company like VentureCrowd. We have already successfully raised </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> for over 4 years from wholesale investors with over $140m raised across 100 successful deals.&nbsp;</span></p>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3>How much money do you need for angel investing? </h3>
+                  <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;"><strong>Looking for investors to back your new idea?</strong> VentureCrowd is an investor-led, co-investment platform, which means our investors invest in your business on the same economic terms as the professional lead investor. A typical campaign will last at least 6 weeks and you gain access to a large and fast-growing crowd of investors. The average investment per investor is about $35k. Fees and charges apply and for more information, please check out our FAQs on our website or get in contact with our friendly team either online or over the phone on 1300 039 655.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Whether you are looking for new investors or considering adding angel investing to your portfolio, we can help. <a href="{!$Label.VC_CF_Register_Symphony}">Register online today.</a></span></p>
+
+        </div>
+    </div>
+
+        </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+            
+        </div>
+      </section>
+
+     
+
+      <div class="social-share-container">
+        <div class="share-links mb-4">
+          <div class="link-container">
+            <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- ./Body -->
+
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+
+</apex:page>

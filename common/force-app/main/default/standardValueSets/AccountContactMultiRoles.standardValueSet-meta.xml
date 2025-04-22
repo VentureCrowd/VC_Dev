@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Accountant</fullName>
+        <default>false</default>
+        <label>Accountant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Manager</fullName>
+        <default>false</default>
+        <label>Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accounts Team Member</fullName>
+        <default>false</default>
+        <label>Accounts Team Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Decision Maker</fullName>
+        <default>false</default>
+        <label>Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Adviser</fullName>
+        <default>false</default>
+        <label>Financial Adviser</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual Investor</fullName>
+        <default>false</default>
+        <label>Individual Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual Trustee</fullName>
+        <default>false</default>
+        <label>Individual Trustee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Joint Director</fullName>
+        <default>false</default>
+        <label>Joint Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Joint Investor</fullName>
+        <default>false</default>
+        <label>Joint Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referrer</fullName>
+        <default>false</default>
+        <label>Referrer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salesperson</fullName>
+        <default>false</default>
+        <label>Salesperson</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Provider</fullName>
+        <default>false</default>
+        <label>Service Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sole Director</fullName>
+        <default>false</default>
+        <label>Sole Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CEO</fullName>
+        <default>false</default>
+        <label>CEO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>COO</fullName>
+        <default>false</default>
+        <label>COO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CFO</fullName>
+        <default>false</default>
+        <label>CFO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Founder</fullName>
+        <default>false</default>
+        <label>Founder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Company Secretary</fullName>
+        <default>false</default>
+        <label>Company Secretary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chair</fullName>
+        <default>false</default>
+        <label>Chair</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+</StandardValueSet>

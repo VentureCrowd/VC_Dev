@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offer_document_approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field indicates whether the offer document has been approved.</description>
+    <inlineHelpText>This Checkbox will also generate the Offer Document and save it to files of this record. Please remember to create a public link with no expiry for that file created. Also please note if a new offer doc is not needed for this deal please do not tick this box.</inlineHelpText>
+    <label>Offer document approved</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

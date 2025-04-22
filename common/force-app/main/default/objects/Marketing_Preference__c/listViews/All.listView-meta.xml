@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Web_Source__c</columns>
+    <columns>Lead__c</columns>
+    <columns>Lead_Email__c</columns>
+    <columns>Account_Email__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>Marketing_Updates_About_Product_OptIn__c</columns>
+    <columns>Marketing_Updates_About_Product_Optout__c</columns>
+    <columns>Regular_Marketing_Communications_Optin_c__c</columns>
+    <columns>Regular_Marketing_Communications_Optout__c</columns>
+    <columns>Investor_Updates_OptIn__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Email__c</field>
+        <operation>equals</operation>
+        <value>glenniswinnett@yahoo.com.au</value>
+    </filters>
+    <label>All</label>
+</ListView>

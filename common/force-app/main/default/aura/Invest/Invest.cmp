@@ -1,0 +1,1347 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="InvestController">
+    <aura:attribute name="formAccept" type="Boolean" default="true" />
+    <aura:attribute name="idInfo" type="String" />
+    <aura:attribute name="UpdatedValue" type="String" />
+    <aura:attribute name="UpdatedQuantity" type="String" />
+    <aura:attribute name="amountCall" type="String" />
+    <aura:attribute name="amount" type="Decimal" />
+    <aura:attribute name="contributionFee" type="Decimal" default="0" />
+    <aura:attribute name="contributionFeeAmount" type="Decimal" default="0" />
+    <aura:attribute name="InvestmentValueAmount" type="Decimal" default="0" />
+    <aura:attribute name="DonationValueAmount" type="Decimal" default="0" />
+    <aura:attribute name="manualAmt" type="Decimal" default="0" />
+    <aura:attribute name="priceInfo" type="String" />
+    <aura:attribute name="totalAmount" type="String" />
+    <aura:attribute name="investingTitle" type="String" />
+    <aura:attribute name="showInestAserror" type="Boolean" default="false" />
+    
+    <aura:attribute name="uInfo" type="Object" />
+    <aura:attribute name="OppDetail" type="Object" />
+    <aura:attribute name="userInfoData" type="Object" />
+    <aura:attribute name="isMobile" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="false" />
+    <aura:attribute name="isBadURL" type="Boolean" default="false" />
+    <aura:attribute name="isInvestHome" type="Boolean" default="false" />
+    <aura:attribute name="isInvestConfirmed" type="Boolean" default="false" />
+    <aura:attribute name="isOppCreationFailure" type="Boolean" default="false" />
+    <aura:attribute name="isGeneralCSFModal" type="Boolean" default="false" />
+    <aura:attribute name="radio41" type="Boolean" default="false" />
+    <aura:attribute name="radio42" type="Boolean" default="false" />
+    <aura:attribute name="radio43" type="Boolean" default="false" />
+    <aura:attribute name="radio44" type="Boolean" default="false" />
+    <aura:attribute name="radio45" type="Boolean" default="false" />
+    <aura:attribute name="notwholesaledirect" type="Boolean" default="true" />
+    <aura:attribute name="radioFail" type="Boolean" default="false" />
+    <aura:attribute name="ourCowSpecialErr" type="Boolean" default="false" />
+    <aura:attribute name="showValue" type="Boolean" default="true" />
+    <aura:attribute name="minDonAmt" type="Boolean" default="false" />
+    <aura:attribute name="isModalOpen" type="boolean" default="false"/>
+    <aura:attribute name="isopenentitymodal" type="boolean" default="false"/>
+    <aura:attribute name="accMembershipmap" type="Object" />
+    <aura:attribute name="account" type="Object" />
+    <aura:attribute name="radioMantoryText" type="String" default="Acceptance of this field is required." />
+    
+    <aura:attribute name="minInvestment" type="Decimal" />
+    <aura:attribute name="maxInvestment" type="Decimal" />
+    <aura:attribute name="unitPrice" type="Decimal" default="1.00" />
+    <aura:attribute name="quantity" type="Integer" />
+    <aura:attribute name="isLessThanMinInvestment" type="Boolean" default="false" />
+    <aura:attribute name="isGreaterThanMaxInvestment" type="Boolean" default="false" />
+    <aura:attribute name="isInvestmentContractModal" type="Boolean" default="false" />
+    <aura:attribute name="isRetail" type="Boolean" default="true" />
+    <aura:attribute name="isWholeSale" type="Boolean" default="false" />
+    <aura:attribute name="gsl" type="Boolean" default="false" />
+    <aura:attribute name="isDownloadPDF" type="Boolean" default="false" />
+    <aura:attribute name="family" type="String" />
+    <aura:attribute name="accountName" type="String" />
+    <aura:attribute name="oppAmount" type="String" />
+    <aura:attribute name="oppAddress" type="String" />
+    <aura:attribute name="tempOppAddress" type="String" />
+    <aura:attribute name="investAsVal" type="String" />
+    <aura:attribute name="investmentEntry" type="String" default="checked" />
+    <aura:attribute name="investmentEntryCheck" type="String" />
+    <aura:attribute name="showInvestmentEntryText" type="Boolean" default="false" />
+    <aura:attribute name="retailMISProd" type="Boolean" default="false" />
+    <aura:attribute name="retailIPO" type="Boolean" default="false" />
+    <aura:attribute name="csfNominee" type="Boolean" default="false" />
+    <aura:attribute name="buyingLabel" type="String" default="Fully paid ordinary shares you are buying" />
+    <aura:attribute name="investingAs" type="String" />
+    <aura:attribute name="productcode" type="String" />
+    <aura:attribute name="investingAsName" type="String" />
+    <aura:attribute name="trustfund" type="String" default="Trust Deed"/>
+    <aura:attribute name="accountOptions" type="List" />
+    <aura:attribute name="relatedAccountList" type="Object" />
+    <aura:attribute name="misRedirectData" type="Object" />
+    <aura:attribute name="contributionfeepercentage" type="Decimal" default="0" />
+    <aura:attribute name="options" type="List" default="[
+                                                        {'label': '$100', 'value': '100'},
+                                                        {'label': '$600', 'value': '600'},
+                                                        {'label': '$2000', 'value': '2000'}
+                                                        ]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />  
+    <!-- <aura:handler name="change" value="{!v.investAsVal}" action="{!c.handleInvesterChange}"/>   -->
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner alternativeText="Loading" size="large" />
+    </aura:if>
+    <aura:if isTrue="{!v.isBadURL}"> invalid Parameters. Bad URL!! </aura:if>
+    <aura:if isTrue="{!v.isOppCreationFailure}">
+        <p>We hit a snag. We are unable to process the application. Please call 1300 039 655 or email us at&nbsp;<a href="mailto:investor@venturecrowd.com.au">investor@venturecrowd.com.au</a> for assistance. Thank you for your patience.
+        </p> 
+    </aura:if>
+    <aura:if isTrue="{!v.isGeneralCSFModal}">
+        <aura:if isTrue="{!v.isRetail}">
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium"
+                     aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <div class="slds-grid" style="margin-bottom: 5px">
+                            <div class="slds-col slds-float_left vc-logo">
+                                <!--<img src="{!$Resource.VCLogoInverted}" />-->
+                                <img src="{!$Resource.VC_NewPortalAssets + '/Assets/Logo/VentureCrowd_Logo_black.jpg'}" />
+                            </div>
+                            <div class="slds-col slds-float_right" style="text-align: right">
+                                <span onclick="{!c.closeGCSF}"><img src="{!$Resource.closeImage}" alt="close" /></span>
+                            </div>
+                        </div>
+                        <span style="font-weight: bold">General Crowd Source Funding (CSF) Risk Warning</span><br />
+                        Crowd-sourced funding is risky. Issuers using this facility include
+                        new or rapidly growing ventures. Investment in these types of
+                        ventures is speculative and carries high risks.
+                        <br />
+                        You may lose your entire investment, and you should be in a position
+                        to bear this risk without undue hardship.
+                        <br />
+                        Even if the company is successful, the value of your investment and
+                        any return on the investment could be reduced if the company issues
+                        more shares.
+                        <br />
+                        Your investment is unlikely to be liquid. This means you are
+                        unlikely to be able to sell your shares quickly or at all if you
+                        need the money or decide that this investment is not right for you.
+                        <br />
+                        Even though you have remedies for misleading statements in the offer
+                        document or misconduct by the company, you may have difficulty
+                        recovering your money.
+                        <br />
+                        There are rules for handling your money. However, if your money is
+                        handled inappropriately or the person operating this platform
+                        becomes insolvent, you may have difficulty recovering your money.
+                        <br />
+                        Ask questions, read all information given carefully, and seek
+                        independent financial advice before committing yourself to any
+                        investment.
+                        <br />
+                        <br />
+                        <span style="font-weight: bold">Cooling-off Rights</span>
+                        <br />
+                        You have the right to withdraw your application under this CSF offer
+                        and to be repaid your application money. If for any reason
+                        (including if you change your mind about investing in the CSF Issuer
+                        company) you wish to withdraw your application, you must do so
+                        within five (5) business days of making your application being the
+                        cooling-off period. You must notify us via your investment dashboard
+                        on the platform or otherwise in writing within five (5) business
+                        days of your application to invest if you wish to withdraw your
+                        application.
+                        <br />
+                        After your withdrawal has been processed, VentureCrowd will refund
+                        the application money to your nominated account as soon as
+                        practicable.
+                        <br />
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </aura:if>
+        <aura:if isTrue="{!v.isWholeSale}">
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium"
+                     aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <div class="slds-grid" style="margin-bottom: 5px">
+                            <div class="slds-col slds-float_left vc-logo">
+                                <!--<img src="{!$Resource.VCLogoInverted}" />-->
+                                <img src="{!$Resource.VC_NewPortalAssets + '/Assets/Logo/VentureCrowd_Logo_black.jpg'}" />
+                            </div>
+                            <div class="slds-col slds-float_right" style="text-align: right">
+                                <span onclick="{!c.closeGCSF}"><img src="{!$Resource.closeImage}" alt="close" /></span>
+                            </div>
+                        </div>
+                        <span style="font-weight: bold">General risk statement</span><br />
+                        <aura:if isTrue="{!v.notwholesaledirect}">
+                            Crowd sourced funding is risky. Issuers using this facility include
+                            new or rapidly growing ventures. Investment in these types of
+                            ventures is speculative and carries high risks.
+                            <br />
+                            You may lose your entire investment, and you should be in a position
+                            to bear this risk without undue hardship.
+                            <br />
+                            Even if the company is successful, the value of your investment and
+                            any return on the investment could be reduced if the company issues
+                            more shares.
+                            <br />
+                            Your investment is unlikely to be liquid. This means you are
+                            unlikely to be able to sell your investment quickly or at all if you
+                            need the money or decide that this investment is not right for you.
+                            <br />
+                            Even though you have remedies for misleading statements in the offer
+                            document or misconduct by the company, you may have difficulty
+                            recovering your money.
+                            <br />
+                            There are rules for handling your money. However, if your money is
+                            handled inappropriately or the person operating the platform on
+                            which this offer is published becomes insolvent, you may have
+                            difficulty recovering your money.
+                            <br />
+                            Ask questions, read all information given carefully, and seek
+                            independent financial advice before committing yourself to any
+                            investment.
+                            <br />
+                            <br />
+                            <aura:set attribute="else">
+                                Issuers using this facility include new or rapidly growing ventures. Investment in these types of ventures is speculative and carries high risks. You may lose your entire investment, and you should be in a position to bear this risk without undue hardship. Even if the venture is successful, the value of your investment and any return on the investment could be reduced if the company or venture issues more shares or securities. 
+                                <br/>
+                                <br/>
+                                Even though you have remedies for misleading statements in the offer document or misconduct by the company, you may have difficulty recovering your money. There are rules for handling your money. However, if your money is handled inappropriately or the person operating the platform on which this offer is published becomes insolvent, you may have difficulty recovering your money.
+                                <br />
+                                <br />
+                                Ask questions, read all information given carefully, and seek independent financial advice before committing yourself to any investment.
+                                <br />
+                                <br />
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!v.notwholesaledirect}">
+                            <span style="font-weight: bold">Investment in an Australian unit trust</span>
+                            <br />
+                            This investment will be made through an Australian unit trust (Unit
+                            Trust). The trustee of the Unit Trust (unless otherwise notified)
+                            will be VentureCrowd Nominees Pty Ltd (ACN 166 599 140) (Trustee).
+                            The Trustee is an authorised representative of VentureCrowd Pty Ltd
+                            (ACN 166 598 849, AFSL 503381)
+                            <br />
+                            When you invest and the deal reaches the targeted raising amount,
+                            you will be issued with units in the Unit Trust. The full terms and
+                            conditions of your investment in this Unit Trust, including in
+                            respect of relevant performance and other fees, are set out in the
+                            Investment Contract which you must download and review prior to your
+                            investment.
+                            <br />
+                            The Trustee will enter into all relevant documentation with the
+                            investee company and will hold the assets of the Unit Trust on trust
+                            for all unitholders.
+                            <br />
+                            <br />
+                        </aura:if>
+                        <span style="font-weight: bold">Australian dollar investment</span>
+                        <br />This investment and all amounts related to this deal (unless
+                        otherwise stated) are expressed in Australian dollars (AUD).
+                        <br />
+                        <br />
+                        <aura:if isTrue="{!v.notwholesaledirect}">
+                            <span style="font-weight: bold">Protection of your investment</span>
+                            <br />
+                            To protect your investment, it is VentureCrowd's policy that, as far
+                            as possible, we are "last money to fund" in the relevant funding
+                            round. This means we do not transfer funds from the Unit Trust to
+                            the investee company until we have confirmation and evidence that
+                            all other external lead investors in the funding round have
+                            transferred their funds to the company.
+                            <br />
+                            In the unlikely event that any issue arises and the funding round
+                            does not proceed, we will refund your investment in full back to
+                            your nominated bank account.
+                            <br />
+                            <br />
+                        </aura:if>
+                        <span style="font-weight: bold">During your investment period</span>
+                        <br />
+                        <aura:if isTrue="{!v.notwholesaledirect}">
+                            During your investment period, you may receive investment updates or
+                            other information from the investee company through the VentureCrowd
+                            platform. You can access this by logging in to your investor
+                            dashboard. VentureCrowd takes care of the hassle of all the
+                            administration of the trust, as well as any correspondence and
+                            communication with the investee company. When a liquidity or exit
+                            event occurs (such as an IPO of the investee company), the Unit
+                            Trust is wound up and the proceeds including any profits are
+                            distributed to you as a unit holder of the trust.
+                            <br />
+                            <br />
+                            <aura:set attribute="else">
+                                During your investment period, you may receive investment updates or other information from the investee company through
+                                the VentureCrowd platform. You can access this by logging in to your investor dashboard. VentureCrowd takes care of the
+                                hassle of all the administration, as well as any correspondence and communication with the investee company until the
+                                securities are registered to you as the holder.
+                                <br />
+                                <br />
+                            </aura:set>
+                        </aura:if>
+                        <aura:if isTrue="{!v.notwholesaledirect}">
+                            <span style="font-weight: bold">Fees</span>
+                            <br />
+                            VentureCrowd may charge upfront or ongoing management fee to the Unit Trust, subject to any specific terms agreed with investors on a case by case basis. VentureCrowd may also receive a performance fee if a profit is made by investors equal to 20% (or such other amount as may be agreed) of any distributions from the Unit Trust after each investor has recovered their initial investment amount, subject to the terms agreed with investors on a case by case basis.
+                            <br />
+                        </aura:if>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </aura:if>
+    </aura:if>
+    <aura:if isTrue="{!v.isInvestmentContractModal}">
+        <aura:if isTrue="{!v.isRetail}">
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium"
+                     aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <aura:if isTrue="{!$Browser.formFactor == 'DESKTOP'}">
+                            <div class="slds-grid" style="margin-bottom: 5px">
+                                <div class="slds-col slds-size_6-of-12 slds-float_left vc-logo">
+                                    <!--<img src="{!$Resource.VCLogoInverted}" />-->
+                                    <img src="{!$Resource.VC_NewPortalAssets + '/Assets/Logo/VentureCrowd_Logo_black.jpg'}" />
+                                </div>
+                                <br />
+                                <br />
+                                <div class="slds-col slds-size_5-of-12 slds-float_right mobilePDFButton generatePDFButton" style="text-align: right; width: 12rem; margin-right:30px;">
+                                    <lightning:button label="Generate PDF" onclick="{!c.generatePDF}" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-12 slds-text-align_center">
+                                    <span style="text-align: center;" onclick="{!c.closeInvestmentContract}"><img class="mobileCloseButton" src="{!$Resource.closeImage}" alt="close"
+                                                                                                                  style="position:fixed" /></span>
+                                </div>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!$Browser.formFactor == 'PHONE' || $Browser.isPhone || $Browser.isTablet || $Browser.isWindowsPhone || $Browser.isIOS || $Browser.isIPad || $Browser.isIPhone || $Browser.isAndroid}">
+                            <div class="slds-grid slds-grid_align-spread">
+                                <!-- Ven 163 changes margin-top: 10px -->
+                                 <div class="slds-col slds-size_8-of-12 slds-float_left vc-logo" style="margin-top: 5px">
+                                    <!--<img src="{!$Resource.VCLogoInverted}" />-->
+                                    <img src="{!$Resource.VC_NewPortalAssets + '/Assets/Logo/VentureCrowd_Logo_black.jpg'}" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-12 slds-float_right">
+                                    <span style="text-align: center;" onclick="{!c.closeInvestmentContract}">
+                                        <img class="mobileCloseButton " src="{!$Resource.closeImage}" alt="close" style="position:fixed" />
+                                    </span>
+                                </div>                                
+                            </div>
+                            <div class="slds-col slds-size_5-of-12 mobilePDFButton" >
+                                <lightning:button label="Generate PDF" onclick="{!c.generatePDF}" />
+                            </div>
+                        </aura:if>
+                        <br />
+                        <div class="uiOutputRichText" linkify="true">
+                            <lightning:formattedRichText  linkify="true" value="{!v.uInfo.Investment_Contract_Text__c}" style="font-size:16px"/>
+                        </div>
+                        <br />
+                        <div>
+                            <span style="font-weight: bold;font-size:16px">Summary of Particulars:</span><br /><br />
+                        </div>
+                        <aura:if isTrue="{!$Browser.formFactor == 'DESKTOP' || 'PHONE' || $Browser.isPhone || $Browser.isTablet || $Browser.isWindowsPhone ||
+                                         $Browser.isIOS || $Browser.isIPad || $Browser.isIPhone || $Browser.isAndroid}">
+                            <aura:if isTrue="{!v.csfNominee}">
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12 " style="font-weight: bold">
+                                        1.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        Applicant
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">{!v.accountName}</div>
+                                </div>
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12" style="font-weight: bold">
+                                        2.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        Investment Amount
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">
+                                        $
+                                        <lightning:formattedNumber value="{!v.InvestmentValueAmount}" />
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12" style="font-weight: bold">
+                                        3.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        Number Of Shares
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">{!v.quantity}</div>
+                                </div>
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12" style="font-weight: bold">
+                                        4.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        Issuer
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Issuer__c}</div>
+                                </div>
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12" style="font-weight: bold">
+                                        5.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        VentureCrowd
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.VentureCrowd__c}</div>
+                                </div>
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12" style="font-weight: bold">
+                                        6.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        Nominee
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Nominee__c}</div>
+                                </div>
+                                <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                    <div class="slds-size_1-of-12" style="font-weight: bold">
+                                        7.
+                                    </div>
+                                    <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                        VentureCrowd Fee
+                                    </div>
+                                    <div class="slds-size_7-of-12 mobileColumnSecond">
+                                        <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.VentureCrowd_Fee_Text__c}</div>
+                                        <!-- <b>Contribution Fee</b> - 1.1% of the Investment Amount, paid at the time of application<br/>
+                                        <b>Management Fee</b> - Nil<br/>
+                                        <b>Off-Market Transfer Fee</b>- $500 per transfer, paid at the time of transfer<br/>
+                                        <b>Performance Fee</b> - 20% of any distribution payable to the Applicant after the Investment Amount has been repaid to the Applicant. -->
+                                    </div>
+                                </div>
+                                <aura:set attribute="else">
+                                    <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                        <div class="slds-size_1-of-12 " style="font-weight: bold">
+                                            1.
+                                        </div>
+                                        <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                            Applicant
+                                        </div>
+                                        <div class="slds-size_7-of-12 mobileColumnSecond">{!v.accountName}</div>
+                                    </div>
+                                    <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                        <div class="slds-size_1-of-12" style="font-weight: bold">
+                                            2.
+                                        </div>
+                                        <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                            Investment Amount
+                                        </div>
+                                        <div class="slds-size_7-of-12 mobileColumnSecond">
+                                            $
+                                            <lightning:formattedNumber value="{!v.InvestmentValueAmount}" />
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                        <div class="slds-size_1-of-12" style="font-weight: bold">
+                                            3.
+                                        </div>
+                                        <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                            Issuer
+                                        </div>
+                                        <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Issuer__c}</div>
+                                    </div>
+                                    <aura:if isTrue="{!v.retailIPO}">
+                                        <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                            <div class="slds-size_1-of-12" style="font-weight: bold">
+                                                4.
+                                            </div>
+                                            <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                                Currency
+                                            </div>
+                                            <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Currency__c}</div>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                                    4.
+                                                </div>
+                                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                                    VentureCrowd
+                                                </div>
+                                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.VentureCrowd__c}</div>
+                                            </div>
+                                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                                    5.
+                                                </div>
+                                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                                    Currency
+                                                </div>
+                                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Currency__c}</div>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </aura:set>
+                            </aura:if>             
+                            
+                        </aura:if>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </aura:if>        
+        <aura:if isTrue="{!v.isWholeSale}">
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium"
+                     aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <aura:if isTrue="{!$Browser.formFactor == 'DESKTOP'}">
+                            <div class="slds-grid slds-grid_align-spread " style="margin-bottom: 5px">
+                                <div class="slds-col slds-size_6-of-12 slds-float_left vc-logo">
+                                    <!--<img src="{!$Resource.VCLogoInverted}" />-->
+                                    <img src="{!$Resource.VC_NewPortalAssets + '/Assets/Logo/VentureCrowd_Logo_black.jpg'}" />
+                                </div>
+                                <br />
+                                <br />
+                                <!--  style="text-align: right; width: 12rem; margin-right:30px;" -->
+                                <div class="slds-col slds-size_5-of-12 slds-float_right slds-text-align_right mobilePDFButton">
+                                    <lightning:button label="Generate PDF" onclick="{!c.generatePDF}" />
+                                </div>
+                                <!-- Ven 163 changes-->
+                                <div class="slds-col slds-size_1-of-12 slds-text-align_center">
+                                    <span style="text-align: center;" onclick="{!c.closeInvestmentContract}">
+                                        <img class="mobileCloseButton" src="{!$Resource.closeImage}" alt="close" style="position:fixed" />
+                                    </span>
+                                </div>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!$Browser.formFactor == 'PHONE' || $Browser.isPhone || $Browser.isTablet || $Browser.isWindowsPhone || $Browser.isIOS || $Browser.isIPad || $Browser.isIPhone || $Browser.isAndroid}">
+                            <div class="slds-grid slds-grid_align-spread">
+                                <div class="slds-col slds-size_8-of-12 slds-float_left vc-logo" style="margin-top: 5px">
+                                    <!--<img src="{!$Resource.VCLogoInverted}" />-->
+                                    <img src="{!$Resource.VC_NewPortalAssets + '/Assets/Logo/VentureCrowd_Logo_black.jpg'}" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-12 slds-float_right">
+                                    <span style="text-align: center;" onclick="{!c.closeInvestmentContract}">
+                                        <img class="mobileCloseButton " src="{!$Resource.closeImage}" alt="close" style="position:fixed" />
+                                    </span>
+                                </div>                                
+                            </div>
+                            <div class="slds-col slds-size_5-of-12 mobilePDFButton" >
+                                <lightning:button label="Generate PDF" onclick="{!c.generatePDF}" />
+                            </div>
+                        </aura:if>
+                        <br />
+                        <div class="uiOutputRichText" linkify="true">
+                            <lightning:formattedRichText  linkify="true" value="{!v.uInfo.Investment_Contract_Text__c}" style="font-size:16px"/>
+                        </div>
+                        <br />
+                        <div>
+                            <span style="font-weight: bold;font-size:16px">Summary of Particulars:</span><br /><br />
+                        </div>
+                        <aura:if isTrue="{!$Browser.formFactor == 'DESKTOP' || 'PHONE' || $Browser.isPhone || $Browser.isTablet || $Browser.isWindowsPhone || $Browser.isIOS || $Browser.isIPad || $Browser.isIPhone || $Browser.isAndroid}">
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    1.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Applicant
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.investingAsName}</div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    2.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Applicant Address
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.oppAddress}</div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    3.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Investment Amount
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">
+                                    $
+                                    <lightning:formattedNumber value="{!v.InvestmentValueAmount}" />
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    4.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Company
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Company__c}</div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    5.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Trust
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">
+                                    {!v.uInfo.Trust_Deed_Name__c}
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    6.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    {!v.trustfund}
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">
+                                    {!v.uInfo.Trust_Deed_Text__c}
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    7.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Trustee
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Trustee__c}</div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    8.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    VentureCrowd
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.VentureCrowd__c}</div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    9.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold;">
+                                    VentureCrowd Group
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">
+                                    {!v.uInfo.VentureCrowd_Group__c}
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    10.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    VentureCrowd Fee
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">
+                                    {!v.uInfo.VentureCrowd_Fee_Text__c}
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    11.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Unitholder Proportion
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">
+                                    {!v.uInfo.Unit_Holder_Proportion__c}
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-box slds-box_xx-small slds-p-around_none" style="font-size:16px">
+                                <div class="slds-size_1-of-12" style="font-weight: bold">
+                                    12.
+                                </div>
+                                <div class="slds-size_4-of-12 mobileColumnFirst" style="font-weight: bold">
+                                    Currency
+                                </div>
+                                <div class="slds-size_7-of-12 mobileColumnSecond">{!v.uInfo.Currency__c}</div>
+                            </div>
+                        </aura:if>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </aura:if>
+    </aura:if>
+    <aura:if isTrue="{!v.isInvestHome}">
+        <div class="slds-grid slds-gutters">
+            <div class="invest--global-container">
+                <div class="slds-grid slds-grid_vertical invest--container">
+                    <div class="slds-col slds-align_absolute-center invest--heading">
+                        <span>You are investing in</span>
+                    </div>
+                    <div class="slds-col slds-align_absolute-center invest--company">
+                        <span>
+                            <img src="{!v.uInfo.DisplayUrl}" alt="productimg" />
+                            <span class="title">{!v.uInfo.Name}</span>
+                        </span>
+                    </div>
+                    <br />
+                    <fieldset class="slds-form-element value--quantity-container">
+                        <div class="slds-form-element__control">
+                            <div class="slds-radio_button-group value--quantity-inner-container">
+                                <span class="slds-button slds-radio_button value--quantity-input">
+                                    <input type="radio" name="example-unique-name-99" id="example-unique-id-101" value="{!v.UpdatedValue}"
+                                           onclick="{!c.handleValue}" checked="true" />
+                                    <label class="slds-radio_button__label" for="example-unique-id-101">
+                                        <span class="slds-radio_faux">Value</span>
+                                    </label>
+                                </span>
+                                <span class="slds-button slds-radio_button value--quantity-input">
+                                    <input type="radio" name="example-unique-name-99" id="example-unique-id-102"
+                                           value="{!v.UpdatedQuantity}" onclick="{!c.handleQuantity}" />
+                                    <label class="slds-radio_button__label" for="example-unique-id-102">
+                                        <span class="slds-radio_faux">Quantity</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>                   
+                    <div class="invest--input-amount">                        
+                        <p class="invest--amount-label">
+                            I want to invest
+                        </p>                        
+                        <div class="invest--amount-field">
+                            <aura:if isTrue="{!v.showValue}">
+                                <lightning:input onkeyup="{!c.handleAmountChange}" style="margin-top: -21px" type="number"
+                                                 class="invest--amount-input" formatter="currency" name="apiName" value="{!v.amount}" currencyCode="$"
+                                                 step="0.01" />
+                                <aura:set attribute="else">
+                                    <lightning:input onkeyup="{!c.handleQuantityChange}" style="margin-top: -21px" type="number"
+                                                     name="apiName" class="invest--amount-input" value="{!v.quantity}" />
+                                </aura:set>
+                            </aura:if>
+                        </div>
+                    </div>                   
+                    <aura:if isTrue="{!v.isLessThanMinInvestment}">
+                        <p style="margin-left: 156px; color: red">
+                            <h1 class="errorMessage">
+                                This deal has a minimum investment amount of $<lightning:formattedNumber value="{!v.minInvestment}"></lightning:formattedNumber>. Please adjust your investment amount.
+                            </h1>
+                        </p>
+                    </aura:if>
+                    <aura:if isTrue="{!v.isGreaterThanMaxInvestment}">
+                        <p style="margin-left: 156px; color: red">
+                            <h1 class="errorMessage">
+                                <aura:if isTrue="{!v.ourCowSpecialErr}">
+                                    As a retail investor, the maximum amount you can invest in this deal is $10,000. Please reach out to our team if any questions.
+                                    <aura:set attribute="else">
+                                        You have exceeded the maximum investment amount of $<lightning:formattedNumber value="{!v.maxInvestment}"></lightning:formattedNumber>. Please adjust your investment amount.
+                                    </aura:set>
+                                </aura:if>
+                            </h1>
+                        </p>
+                    </aura:if>
+                    <aura:if isTrue="{!v.isWholeSale}">
+                        <div class="slds-col invest--securities-heading">
+                            <div class="slds-grid">
+                                <div class="slds-col" style="font-size: 22px;font-family: 'Montserrat';font-weight: 700;size: 26px;line-height: 32px;">
+                                    <span>Securities you are buying</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.isRetail}">
+                        <div class="slds-col invest--securities-heading">
+                            <div class="slds-grid">
+                                <div class="slds-col">
+                                    <span>{!v.buyingLabel}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:if>
+                    <div class="slds-col invest--securities-amount">
+                        <div class="slds-grid">
+                            <div class="slds-col">
+                                <aura:if isTrue="{!v.showValue}">
+                                    <div class="slds-grid slds-grid_vertical">
+                                        <div class="slds-col securities--title" style="font-size: 14px;font-family: 'SuisseIntl-Regular';size: 26px;line-height: 32px;">
+                                            Quantity
+                                        </div>
+                                        <div class="slds-col securities--value" style="font-size: 22px;font-family: 'SuisseIntl-Regular';font-weight: 700;size: 26px;line-height: 32px;">
+                                            <lightning:formattedNumber value="{!v.quantity}"></lightning:formattedNumber>
+                                        </div>
+                                    </div>
+                                    <aura:set attribute="else">
+                                        <div class="slds-grid slds-grid_vertical">
+                                            <div class="slds-col securities--title" style="font-size: 14px;font-family: 'SuisseIntl-Regular';size: 26px;line-height: 32px;">
+                                                Value
+                                            </div>
+                                            <div class="slds-col securities--value" style="font-size: 22px;font-family: 'SuisseIntl-Regular';font-weight: 700;size: 26px;line-height: 32px;">
+                                                <ui:outputCurrency value="{!v.InvestmentValueAmount}" />
+                                            </div>
+                                        </div>
+                                    </aura:set>
+                                </aura:if>
+                            </div>
+                            <div class="slds-col">
+                                <div class="slds-grid slds-grid_vertical">
+                                    <div class="slds-col securities--title" style="font-size: 14px;font-family: 'SuisseIntl-Regular';size: 26px;line-height: 32px;">
+                                        Price
+                                    </div>
+                                    <div class="slds-col securities--value" style="font-size: 22px;font-family: 'SuisseIntl-Regular';size: 26px;line-height: 32px;">
+                                        <ui:outputCurrency value="{!v.unitPrice}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col">
+                                <div class="slds-grid slds-grid_vertical">
+                                    <div class="slds-col securities--title" style="font-size: 14px;font-family: 'SuisseIntl-Regular';size: 26px;line-height: 32px;">
+                                        Contribution Fees
+                                    </div>
+                                    <div class="slds-col securities--value" style="font-size: 22px;font-family: 'SuisseIntl-Regular';size: 26px;line-height: 32px;">
+                                        {!v.contributionFee}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="value--container">
+                        <div class="value--row">
+                            <span class="value--label">Investment Value</span>&nbsp;&nbsp;
+                            <span class="value--cost">
+                                <ui:outputCurrency value="{!v.InvestmentValueAmount}" />
+                            </span>
+                        </div>
+                        <div class="value--row">
+                            <span class="value--label">
+                                Contribution Fees
+                            </span>&nbsp;&nbsp;
+                            <span class="value--cost">
+                                <ui:outputCurrency value="{!v.contributionFeeAmount}" />
+                            </span>
+                        </div>
+                    </div>                    
+                    <aura:if isTrue="{!v.isRetail}">
+                        <div class="slds-col">
+                            <div class="slds-grid slds-grid_vertical">
+                                <div class="slds-col securities--title">
+                                    <h1 class="roundOffMessage" style="font-family:'SuisseIntl-Light';">
+                                        We have rounded your amount down to the nearest fully paid ordinary share.
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:if>                     
+                    <div class="invest--total-payment">
+                        <div class="payment--label">
+                            Total payment
+                        </div>
+                        <div class="payment--amount">
+                            <ui:outputCurrency value="{!v.totalAmount}" />
+                        </div>
+                    </div>                    
+                    <div class="slds-col invest--investing-as">
+                        <div class="invest-as--custom-dropdown">
+                            <div class="label">Investing as</div>
+                            <div class="current-selection" onclick="{!c.openSelectionMenu}">
+                                <div class="image">
+                                    <img src="{!v.userInfoData.SmallPhotoUrl}" alt="productimg" />
+                                </div>
+                                <div class="title">{!v.investingTitle}</div>
+                                <div class="arrow"></div>
+                            </div>
+                            <ul class="expanded-list">
+                                <aura:iteration items="{!v.accountOptions}" var="option">
+                                    <li onclick="{!c.handleListClick}" data-value="{!option.label}" class="{!option.disabled}" data-keyvalue="{!option.value}">
+                                        {!option.label}
+                                    </li>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                        <aura:if isTrue="{!v.showInestAserror}">
+                            <div class="slds-col slds-align_absolute-center errorMessageFinalText">
+                                Please select "Investing as" option. 
+                            </div>
+                        </aura:if>
+                        <div class="slds-select_container custom-select-container">
+                            <div class="custom-select" style="width: 100%">
+                                <select class="slds-select" aura:id="select" id="investment-select" name="Investing as" label="Investing as" onchange="{! c.handleInvesterChange }" value="{!v.investAsVal}">
+                                    <aura:iteration items="{!v.accountOptions}" var="option">
+                                        <option text="{!option.label}" value="{!option.id}"></option>
+                                    </aura:iteration>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <br/>
+                            If you would like to invest with a new entity, please click <a href="/s/portal/my-entities" target="_self">here</a> to create one via your secure
+                            investor portal. <img src="{!$Resource.iconQuestion}" class="more-info-button" alt="More Info" onclick="{! c.openentitymodal }" style="width:14px"/>
+                        </div>
+                    </div>
+                    <div class="slds-col invest--terms">
+                        <div class="slds-grid slds-grid_vertical">
+                            <div class="terms-title">Terms</div>
+                            <div class="terms-subtitle">
+                                Please read and accept the following important documents.
+                            </div>
+                            <aura:if isTrue="{!OR(OR(v.retailMISProd,v.retailIPO),v.csfNominee)}">
+                                <aura:if isTrue="{!v.retailMISProd}">
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-41" data-val="radio41" onchange="{!c.handleRadioChange}" value="radio-41" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-41">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I, <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, have received and read the <a href="{!v.misRedirectData.Finacial_Services_Guide__c}" target="_blank">Financial Services Guide</a> and the <a href="{!v.misRedirectData.General_Warnig_Statement__c}" target="_blank">General Warning Statement</a>
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio41}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-42" data-val="radio42" onchange="{!c.handleRadioChange}" value="radio-42" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-42">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I have received, read and understood the <a href="{!v.misRedirectData.PDS_Part_1__c}" target="_blank">PDS Part 1</a> and <a href="{!v.misRedirectData.PDS_Part_2__c}" target="_blank">PDS Part 2</a>
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio42}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-43" data-val="radio43" onchange="{!c.handleRadioChange}" value="radio-43" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-43">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I have read the <a href="{!v.misRedirectData.TMDD__c}" target="_blank">Target Market Determination Document</a>
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio43}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-44" data-val="radio44" onchange="{!c.handleRadioChange}" value="radio-44" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-44">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I, <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, understand that all investment is subject to risk and returns are not guaranteed. Past performance is not a reliable indicator of future performance. I understand that any information provided to me is general advice only and does not consider my objectives, financial situation or needs. Guardian Securities recommend you read the PDS Part 1 and PDS Part 2 for this offer and seek appropriate financial, taxation and legal advice before making any investment decision.
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio44}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                </aura:if>
+                                <aura:if isTrue="{!v.retailIPO}">
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-41" data-val="radio41" onchange="{!c.handleRadioChange}" value="radio-41" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-41">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I have read and understood the <a href="{!v.uInfo.Prospectus_Document__c}" target="_blank">Prospectus</a> document.
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio41}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-45" data-val="radio45" onchange="{!c.handleRadioChange}" value="radio-45" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-45">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I have read and understood the <a href="{!v.uInfo.Target_Market_Determination__c}" target="_blank">Target Market Determination</a> document.
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio45}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-42" data-val="radio42" onchange="{!c.handleRadioChange}" value="radio-42" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-42">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I have read and understood the <a href="{!v.uInfo.General_Warnig_Statement__c}" target="_blank">General Warning Statement</a>, <a href="{!v.uInfo.General_Risk_Warning__c}" target="_blank">General Risk Warning</a>, <a href="{!v.uInfo.Finacial_Services_Guide__c}" target="_blank">Financial Services Guide</a> and received copies of all documents.
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio42}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-43" data-val="radio43" onchange="{!c.handleRadioChange}" value="radio-43" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-43">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I, <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, understand and agree to the terms within the <a href="" onclick="{!c.openInvestmentContract}">Investment Contract.</a>
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio43}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                </aura:if>
+                                <aura:if isTrue="{!v.csfNominee}">
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-41" data-val="radio41" onchange="{!c.handleRadioChange}" value="radio-41" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-41">
+                                                        <span class="slds-radio_faux"></span>                                    
+                                                        <span class="slds-form-element__label">
+                                                            I have read the
+                                                            <a href="{!v.uInfo.IM_PDS_CSF_Offer__c}" target="_blank">Crowd Sourced Funding (CSF) </a>Offer document
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio41}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>                                    
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-42" value="radio-42" data-val="radio42" onchange="{!c.handleRadioChange}" aria-describedby="error_01" name="CSFCoolOff" checked="" />
+                                                    <label class="slds-radio__label" for="radio-42">
+                                                        <span class="slds-radio_faux"></span>                                    
+                                                        <span class="slds-form-element__label">
+                                                            I have read the <a href="" onclick="{!c.openGCSF}">General Crowd Source Funding (CSF) Risk Warning</a> and understand that Crowd-Sourced funding is risky.
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                            <aura:if isTrue="{!v.radio42}">
+                                                <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                            </aura:if>
+                                        </fieldset>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-43" value="radio-43" data-val="radio43"
+                                                        onchange="{!c.handleRadioChange}" aria-describedby="error_02" name="investContract"
+                                                        checked="" />
+                                                    <label class="slds-radio__label" for="radio-43">
+                                                        <span class="slds-radio_faux"></span>                                    
+                                                        <span class="slds-form-element__label">
+                                                            I have read and understood the <a href="{!v.uInfo.General_Warnig_Statement__c}"  target="_blank"> General Warning Statement (VCPL/GSL)</a> and <a href="{!v.uInfo.Finacial_Services_Guide__c}"  target="_blank">Financial Services Guide (GSL)</a>  and have access to copies of all documents.
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                            <aura:if isTrue="{!v.radio43}">
+                                                <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                            </aura:if>
+                                        </fieldset>
+                                    </div>
+                                    <div class="terms-form">
+                                        <fieldset class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <span class="slds-radio">
+                                                    <input type="radio" id="radio-44" data-val="radio44" onchange="{!c.handleRadioChange}" value="radio-44" aria-describedby="error_03"  checked="" />
+                                                    <label class="slds-radio__label" for="radio-44">
+                                                        <span class="slds-radio_faux"></span>                                
+                                                        <span class="slds-form-element__label">
+                                                            I, <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, understand and agree to the terms within the <a href="" onclick="{!c.openInvestmentContract}">Investment Contract.</a>
+                                                        </span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </fieldset>
+                                        <aura:if isTrue="{!v.radio44}">
+                                            <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                        </aura:if>
+                                    </div>
+                                </aura:if>
+                                <aura:set attribute="else">
+                                    <aura:if isTrue="{!v.isRetail}">
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-41" data-val="radio41" onchange="{!c.handleRadioChange}" value="radio-41" aria-describedby="error_03"  checked="" />
+                                                        <label class="slds-radio__label" for="radio-41">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I have read the
+                                                                <a href="{!v.uInfo.IM_PDS__c}" target="_blank">Crowd Sourced Funding (CSF) Offer document</a>
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                            </fieldset>
+                                            <aura:if isTrue="{!v.radio41}">
+                                                <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                            </aura:if>
+                                        </div>                                    
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-42" value="radio-42" data-val="radio42" onchange="{!c.handleRadioChange}" aria-describedby="error_01" name="CSFCoolOff" checked="" />
+                                                        <label class="slds-radio__label" for="radio-42">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I have read the <a href="{!v.uInfo.General_CSF_Risk_Warning__c}" onclick="{!c.openGCSF}">General Crowd Source Funding (CSF) Risk Warning</a> and understand that Crowd-Sourced funding is risky.
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <aura:if isTrue="{!v.radio42}">
+                                                    <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                                </aura:if>
+                                            </fieldset>
+                                        </div>
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-43" value="radio-43" data-val="radio43"
+                                                            onchange="{!c.handleRadioChange}" aria-describedby="error_02" name="investContract"
+                                                            checked="" />
+                                                        <label class="slds-radio__label" for="radio-43">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I, <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, understand and agree to the terms within the <a href="{!v.uInfo.Investment_Contract__c}" onclick="{!c.openInvestmentContract}">Investment Contract.</a>
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <aura:if isTrue="{!v.radio43}">
+                                                    <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                                </aura:if>
+                                            </fieldset>
+                                        </div>
+                                    </aura:if>
+                                    <aura:if isTrue="{!AND (v.isWholeSale,NOT(v.gsl))}">
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-42" data-val="radio42" onchange="{!c.handleRadioChange}"
+                                                            value="radio-42" aria-describedby="error_01" name="CSFCoolOff" checked="" />
+                                                        <label class="slds-radio__label" for="radio-42">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I have read the <a href="{!v.uInfo.General_CSF_Risk_Warning__c}" onclick="{!c.openGCSF}">General Risk Statement and Other Information </a> and understand that Crowd-Sourced funding is risky.
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <aura:if isTrue="{!v.radio42}">
+                                                    <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                                </aura:if>
+                                            </fieldset>
+                                        </div>
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-43" data-val="radio43" onchange="{!c.handleRadioChange}"
+                                                            value="radio-43" aria-describedby="error_02" name="investContract" checked="" />
+                                                        <label class="slds-radio__label" for="radio-43">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I,
+                                                                <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, understand and
+                                                                agree to the terms within the
+                                                                <a href="{!v.uInfo.Investment_Contract__c}" onclick="{!c.openInvestmentContract}">Investment
+                                                                    Contract</a>
+                                                                <aura:if isTrue="{!v.notwholesaledirect}">
+                                                                    and
+                                                                    <a href="{!v.uInfo.Trust_Deed_Link__c}" target="_blank">{!v.trustfund}.</a>
+                                                                    <aura:set attribute="else">
+                                                                        .
+                                                                    </aura:set>
+                                                                </aura:if>                                    
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <aura:if isTrue="{!v.radio43}">
+                                                    <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                                </aura:if>
+                                            </fieldset>
+                                        </div>
+                                    </aura:if>
+                                    <aura:if isTrue="{!AND (v.isWholeSale,v.gsl)}">
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-42" data-val="radio42" onchange="{!c.handleRadioChange}"
+                                                            value="radio-42" aria-describedby="error_01" name="CSFCoolOff" checked="" />
+                                                        <label class="slds-radio__label" for="radio-42">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I have read the <a href="{!v.uInfo.General_CSF_Risk_Warning__c}" onclick="{!c.openGCSF}">General Risk Statement</a> and the <a href="{!v.uInfo.Information_Memorandum__c}">Information Memorandum</a> and understand that capital is at risk and returns are not guaranteed.
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <aura:if isTrue="{!v.radio42}">
+                                                    <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                                </aura:if>
+                                            </fieldset>
+                                        </div>
+                                        <div class="terms-form">
+                                            <fieldset class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <span class="slds-radio">
+                                                        <input type="radio" id="radio-43" data-val="radio43" onchange="{!c.handleRadioChange}" value="radio-43" aria-describedby="error_02" name="investContract" checked="" />
+                                                        <label class="slds-radio__label" for="radio-43">
+                                                            <span class="slds-radio_faux"></span>                                    
+                                                            <span class="slds-form-element__label">
+                                                                I,
+                                                                <span style="font-weight: bold; color: black">{!v.userInfoData.Name}</span>, understand and agree to the terms within the
+                                                                <a href="{!v.uInfo.Investment_Contract__c}" onclick="{!c.openInvestmentContract}">Investment Contract</a>
+                                                                <aura:if isTrue="{!v.notwholesaledirect}">
+                                                                    and <a href="{!v.uInfo.Trust_Deed_Link__c}" target="_blank">{!v.trustfund}.</a>
+                                                                    <aura:set attribute="else">
+                                                                        .
+                                                                    </aura:set>
+                                                                </aura:if>                                    
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <aura:if isTrue="{!v.radio43}">
+                                                    <span class="errorMessageFinalText">{!v.radioMantoryText}</span>
+                                                </aura:if>
+                                            </fieldset>
+                                        </div>
+                                    </aura:if>                                    
+                                </aura:set>
+                            </aura:if>                            
+                            <div class="terms-footnote">
+                                <aura:if isTrue="{!v.showInvestmentEntryText}">
+                                    *A VentureCrowd team member will be in contact to confirm your
+                                    entity selection and update your investment documentation
+                                    accordingly.
+                                </aura:if>
+                                <br />
+                                <br />
+                                <aura:if isTrue="{!v.isWholeSale}">
+                                    *Note that the terms of your investment via VentureCrowd may
+                                    include a performance fee on the profits of an exit or
+                                    liquidity transaction involving the company. Please read the
+                                    Investment Contract carefully and seek professional advice as
+                                    required before making your investment.
+                                </aura:if>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-align_absolute-center invest--button">
+                        <lightning:button variant="brand" class="capRoundBottom" label="Request to Invest" title="Register action"
+                                          onclick="{! c.handleClick }" />
+                    </div>
+                    <aura:if isTrue="{!v.radioFail}">
+                        <div class="slds-col slds-align_absolute-center errorMessageFinalText">
+                            Please select review and accept all of the above terms before proceeding.
+                        </div>
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.isInvestConfirmed}">
+        <div class="slds-grid slds-gutters">
+            <div class="invest--thank-you">
+                <div class="slds-grid slds-grid_vertical">
+                    <div class="slds-col slds-align_absolute-center thank-you-heading">
+                        Thank you for your interest to invest in
+                    </div>
+                    <div class="slds-col slds-align_absolute-center thank-you-name">
+                        <span>
+                            <img src="{!v.uInfo.DisplayUrl}" alt="productimg" />
+                            {!v.uInfo.Name}
+                        </span>
+                    </div>
+                    <div class="slds-col body-heading" style="text-align: center;">What to expect next</div>
+                    <div class="slds-col body-text" style="text-align: center;">
+                        Keep an eye out for our emails to complete your investment process.
+                    </div>
+                    <div class="slds-col slds-align_absolute-center">
+                        <lightning:button variant="brand" class="capRoundBottom" label="Back to My Portfolio"
+                                          title="Back to Home action" onclick="{! c.handleClickHome }" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.isDownloadPDF}">
+        <iframe
+                src="{!$Site.Prefix+'/GeneratePDFforInvest?amount='+ v.InvestmentValueAmount + '&amp;family=' +v.family + '&amp;id=' +v.idInfo + '&amp;investingAs='+v.investingAs+ '&amp;quantity='+v.quantity}"
+                style="height: 0px; width: 0px" />
+    </aura:if>
+    <aura:if isTrue="{!v.isopenentitymodal}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <div style="text-align: left">
+                        <span id="modal-heading-01" style="font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px; letter-spacing: 0.1px;">Important</span>
+                        <div class="slds-col slds-float_right" style="text-align: right">
+                            <span onclick="{!c.closeGCSF}"><img src="{!$Resource.closeImage}" alt="close" /></span>
+                        </div>
+                    </div>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="font-family: Montserrat;
+                                                                                                     font-style: normal;
+                                                                                                     font-size: 14px;
+                                                                                                     line-height: 24px;
+                                                                                                     letter-spacing: 0.1px;                    
+                                                                                                     color: #0F141E;">
+                    <p>Once you apply to invest with a new entity, our team will reach to you shortly to verify the information submitted.</p>
+                    <p>Once your new entity is verified by our team, please return to this investment opportunity to complete your application.</p>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+</aura:component>

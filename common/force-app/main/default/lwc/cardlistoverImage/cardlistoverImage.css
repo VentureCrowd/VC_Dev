@@ -1,0 +1,27 @@
+.masterHeader{
+    font-weight: 600;
+    height: 80px;
+}
+
+.masterHeaderDescription{
+    height: 90px;
+    /* width: 80%; */
+    /* margin-left:25%; */
+}
+
+.cardOverride {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.imagesize {
+width: 60px;
+height: 60px;
+object-fit: scale-down;
+object-position: right top;
+}

@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>cb6afd22-c5ea-47a6-b72b-49727f70c0c7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1187171d-ba04-43a6-9f98-2ffdb73d9df6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Pre-IPO Equity Investment Opportunity</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000003onUq&amp;d=%2Fa%2F5i000000PFnD%2FViqlfOFxJrsZG_57jEwVy_j6L7Y4X6vtPCSWIs5WQ8w&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>fixedAmount</name>
+                    <value>10000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>investUrl</name>
+                    <value>/s/portal/invest-now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>minAmount</name>
+                    <value>250000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/portal/invest-now?amount=10000&amp;Id=01t2v00000DGFfOAAX</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t2v00000DGFfOAAX</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000003onZM&amp;d=%2Fa%2F5i000000PFnN%2FxmTxnmPco2bD3uTYJTlRVNjvIbDRN33pO1Ag37XXg4I&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Watch Video</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://youtu.be/4cdeJKUw2e8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>targetAmount</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Invest in Neopharma Technologies</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductWithInvestmentDetails</componentName>
+                <identifier>heroBannerProductWithInvestmentDetails</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>cb6afd22-c5ea-47a6-b72b-49727f70c0c7</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>b33c9bc9-4ab1-4404-85bc-244d0dd680bd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>4f872dd3-7f8e-4756-92b8-c049ab169e65</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>16395</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-f70114c6-44a5-47ab-a392-8ece9da93ad1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h2 class=&quot;color-purple mb-4 pt-4&quot;&gt;Key Investment Highlights&lt;/h2&gt;
+    
+    &lt;p class=&quot;lead&quot; id=&apos;KeyInvestmentHighlights&apos;&gt;&lt;/p&gt;
+    
+    &lt;ul&gt;
+		&lt;li&gt;30 cent/share PRE IPO offer.&lt;/li&gt;  
+		&lt;li&gt;Listing anticipated in Q3 2022, with an IPO price target of 50 cents/share.&lt;/li&gt;    
+		&lt;li&gt;Appointed listing Coordinator Norvest Corporate to start the formal IPO process.&lt;/li&gt;
+		&lt;li&gt;Extensive existing product range in large addressable markets.&lt;/li&gt;
+		&lt;li&gt;Covid 19 Antigen testing market currently valued at USD $15 Billion.&lt;/li&gt;
+        &lt;li&gt;Drugs-of-Abuse testing market is presently valued at USD $6 billion. It is estimated will have a US$13.5 Billion projected market value by 2027 (Source: Emergen Research, 18 Jan 2021.)&lt;/li&gt;
+        &lt;li&gt;Ranked in the top 100 Healthcare Technology Companies for 2021 alongside Johnson &amp; Johnson and Abbott (https://thehealthcaretechnologyreport.com/the-top-100-healthcare-technology-companies-of-2021/)&lt;/li&gt;
+        &lt;li&gt;Secured Letter of Authorization with global distribution rights with three leading Medical Device Manufactures with Covid19 Antigen Test kit capacity of 1.5 million units per day.&lt;/li&gt;
+        &lt;li&gt;100% owned and designed innovations with AUS and US patent pending for NEOTEST AB+ the world’s first Covid-19 and Flu AB lollipop duo style test.&lt;/li&gt;
+        &lt;li&gt;Exclusive Distribution Agreement with Covid19Sure, one of the largest resellers of Covid19 Rapid Antigen Test kits in Australia who have also invested directly into Neopharma Technologies Ltd.&lt;/li&gt;
+        &lt;li&gt;Capability Statement from newly appointed distribution partners is for 5,000,000 Covid19 Antigen test kits per week. Distribution to go live upon TGA and US EUA registration.&lt;/li&gt;
+   &lt;/ul&gt;
+  
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/4cdeJKUw2e8&quot; src=&quot;https://www.youtube.com/embed/4cdeJKUw2e8&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>b33c9bc9-4ab1-4404-85bc-244d0dd680bd</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columnWidth</name>
+                    <value>2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>componentBackgroundColor</name>
+                    <value>rgba(195, 205, 209, 0.2)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>featureValues</name>
+                    <value>[  {&quot;feature&quot;: &quot;Pre-IPO&quot;, &quot;value&quot;: &quot;Investment Type&quot; }, {&quot;feature&quot;: &quot;$3 USD&quot;, &quot;value&quot;: &quot;Share Price&quot; },   { &quot;feature&quot;: &quot;$250,000&quot;, &quot;value&quot;: &quot;Minimum Raise&quot; },   { &quot;feature&quot;: &quot;$1,000,000&quot;, &quot;value&quot;: &quot;Maximum Raise&quot; },   { &quot;feature&quot;: &quot;$10,000&quot;, &quot;value&quot;: &quot;Minimum Investment&quot; },   { &quot;feature&quot;: &quot;Wholesale&quot;, &quot;value&quot;: &quot;Offer Type&quot; } ]</value>
+                </componentInstanceProperties>
+                <componentName>investmentFeatures</componentName>
+                <identifier>investmentFeatures</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--page-index p-4&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#KeyInvestmentHighlights&quot;&gt;Key Investment Highlights&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhatisNeopharmaTechnologies&quot;&gt;What is Neopharma Technologies?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#Problemandmarket&quot;&gt;Problem and Market&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#NeopharmaTechnologiesSolution&quot;&gt;Neopharma Technologies Solution&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#CompetitiveAdvantage&quot;&gt;Competitive Advantage&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#GrowthStrategy&quot;&gt;Growth Strategy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#ExitStrategy&quot;&gt;Exit Strategy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#ManagementTeam&quot;&gt;Management Team&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#TheOffer&quot;&gt;The Offer&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#WhyVentureCrowd?&quot;&gt;Why VentureCrowd?&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href=&quot;#Risks&quot;&gt;Risks&lt;/a&gt;&lt;/li&gt;   
+        
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>4f872dd3-7f8e-4756-92b8-c049ab169e65</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c17a75a2-078a-40ba-ae11-d67fd9b138e2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-d58de7a8-ad77-4f5d-9c64-5973d4dd74ef</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;WhatisNeopharmaTechnologies&apos; class=&quot;color-purple mb-4 pt-4 &quot;&gt;What is Neopharma Technologies?&lt;/h3&gt;
+    
+	&lt;p&gt;Neopharma Technologies Ltd participates in the USD$15 billion Covid 19 Antigen test market and the USD$6 billion global drugs-of-abuse testing market.&lt;/p&gt;
+    &lt;p&gt;Neopharma aims to be a global leader in these markets with its already patent approved TamperLoks medical device and patent-pending next-generation Saliva Drug Test NEOSWAB+, as well as its innovative Covid test kits that includes NEOTEST AB+ (first Covid19 Antigen and Flu AB lollipop style saliva test). All of these rapid tests are supported with a fully integrated IT Test Data management platform and smart phone app for the collection of the test data.&lt;/p&gt;
+    &lt;p&gt;Neopharma continues to add to and develop its product range to expand existing relationships and market share in key regions.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.NeopharmaDiagram_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.NeopharmaProducts_VentureCrowd.1}&quot; alt=&quot;&quot; style=&quot;width: 989.766px; height: 614.648px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.NeopharmaSuite_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c17a75a2-078a-40ba-ae11-d67fd9b138e2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c6910beb-1fec-44f2-945c-bc2224d74155</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-c2402ae2-8607-403b-9e83-c26bdc9a0cbe</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;ProblemandMarket&apos; class=&quot;color-purple mb-4 pt-4 &quot;&gt;Problem and Market&lt;/h3&gt;
+	&lt;p&gt;According to the Worldometer, as of 15th February 2022, 414,072,705 people globally are impacted with coronavirus. This surge in cases has led to a rushed implementation of Covid-19 antigen testing. As governments and businesses globally search for less intrusive and fast tests, Neopharma looks to fill this gap now and into the future.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.NeopharmaMarketSize_VentureCrowd.2}&quot; alt=&quot;&quot; style=&quot;width: 862.945px; height: 557.461px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+    &lt;p&gt;&lt;b&gt;Drugs of Abuse Market&lt;/b&gt;&lt;/p&gt;
+
+	&lt;p&gt;“The global drug screening market was valued at USD 3.83 Billion in 2019 and is projected to reach USD 13.56 Billion by 2027, at a CAGR of 17.1% during the forecast period.” (Source: Emergen Research, 18 Jan 2021.)&lt;/p&gt;
+	&lt;p&gt;The Asia Pacific market revenue is expected to expand at the highest CAGR as compared to that of other regions during the forecast period, primarily due to high demand from India and China. The development of advanced drugs and an increase in the number of drug addicts are likely to boost the growth of the market in the region during the forecast period.&lt;/p&gt;
+	&lt;p&gt;Increased use and adoption of the rapid testing devices segment has contributed to these products holding the largest market share of the global drug screening market in 2019.&lt;/p&gt;
+    
+    &lt;p&gt;There are several drivers contributing to the growth in the market, including:&lt;/p&gt;
+    
+    &lt;ul&gt;
+        &lt;li&gt;Rising demand for workplace drug screening tests from employers due to increased awareness on the effects of drug abuse on productivity and safety of employees.&lt;/li&gt;
+        &lt;li&gt;Increasing consumption of illicit drugs creating demand for drugs-of-abuse tests.&lt;/li&gt;
+        &lt;li&gt;High demand for drugs-of-abuse testing screening products from law enforcement agencies.&lt;/li&gt;
+        &lt;li&gt;Government initiatives for creating awareness about illicit drug consumption among students and young adults.&lt;/li&gt;
+        &lt;li&gt;Increase in the number of private and public clinical laboratories offering drug abuse testing services.&lt;/li&gt;
+        &lt;li&gt;Prescription drug abuse, the legalisation of marijuana and other previously illegal drugs.&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;p&gt;(Source: 2017 Transparency Market Research - Drugs of Abuse Testing Market – Global Industry, Size, Share, Growth, Trends and Forecast, 2016–2024.)&lt;/p&gt;
+    
+   
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c6910beb-1fec-44f2-945c-bc2224d74155</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3875f67b-2c7e-48c1-9b0b-e8b0aa76cd92</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-da5f954a-8440-4400-b13a-4d7fab5a3bbc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.NeopharmaSolutionImg_VentureCrowd.1}&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;NeopharmaTechnologiesSolution&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Neopharma Technologies Solution&lt;/h3&gt;
+    
+	&lt;p&gt;Neopharma Technologies aims to be a recognised global leader for Antigen Covid-19 test kits and innovative Drugs-of-Abuse healthcare technologies.&lt;/p&gt;
+	&lt;p&gt;Neopharma has several key technologies to support the fight against the spread of Covid-19 and Drug Epidemics globally:&lt;/p&gt;
+    
+    &lt;ul&gt;
+        &lt;li&gt;NEOTEST, a RFID and QR encoded Antigen Rapid Test Kit.&lt;/li&gt;
+        &lt;li&gt;NEOTEST K+, a QR encoded rapid Antigen Rapid Test Kit (KIDS &amp; ADULTS)&lt;/li&gt;
+        &lt;li&gt;NEOTEST AB+ AUS and US patent pending worlds first Covid19 and Flu AB lollipop style test.&lt;/li&gt;
+        &lt;li&gt;NEOTEST S+ Saliva Based Antigen Test Kit with NEOVAULT and myNEO integration.&lt;/li&gt;
+        &lt;li&gt;NEOTEST N+ Nasal Based Antigen Test Kit with NEOVAULT and myNEO integration.&lt;/li&gt;
+        &lt;li&gt;NEOSWAB a Multi Drug’s of Abuse Saliva Test with NEOVAULT and myNEO integration.&lt;/li&gt;
+        &lt;li&gt;NEOSWAB+ a AUS and US patent pending next generation Multi Drug’s of Abuse Saliva Test lollipop style with NEOVAULT and myNEO integration. &lt;/li&gt;
+        &lt;li&gt;NEOSWAB DA+ a AUS and US patent pending worlds first Drugs and Alcohol Saliva Test lollipop style with NEOVAULT and myNEO integration. &lt;/li&gt;
+    &lt;/ul&gt;
+
+    
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;p&gt;&lt;b&gt;NEOVAULT&lt;/b&gt;&lt;/p&gt;
+	&lt;p&gt;NEOVAULT is a technology platform developed by Neopharma Technologies specifically to safely and securely collect, transfer, store and manage Covid-19 test results.&lt;/p&gt;
+
+    &lt;p&gt;&lt;b&gt;MYNEO&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;NEOVAULT has a supporting smartphone app named myNEO that is a test result image recognition software platform with a digitised Covid Free Certificate.&lt;/p&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Neo_MyNeoimg_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;p&gt;These technologies are fully integrated to identify Covid-19 test results from employees and contractors captured. Results are then able to be shared with HR Managers, Line Managers, and administrators in real-time to ensure the integrity and security of the Covid-19 test result. It then triggers a call to action in alignment with the organization’s workplace policies, ensuring the integrity of the chain-of-custody to protect the workplace from further spread of Covid-19.&lt;/p&gt;
+	
+    &lt;p&gt;&lt;b&gt;Tamperloks&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;TamperLoks drug testing solution is an end-to-end drugs-of-abuse testing and management system. World class patented 3-chamber tamperproof drugs-of-abuse urine testing device.&lt;/p&gt;
+    
+    &lt;p&gt;&lt;b&gt;DataVault&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;Cloud based drugs-of-abuse testing data management and administration system that enables real time recording of drug test data through QR code, images and location data. It utilises advanced AI and Big Data to produce regional data on drugs-of-abuse.&lt;/p&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>fixedAmount</name>
+                    <value>10000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>investUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t2v00000DGFfOAAX</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t2v00000DGFfOAAX</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrollNumber</name>
+                    <value>1200</value>
+                </componentInstanceProperties>
+                <componentName>dealpageSticky</componentName>
+                <identifier>dealpageSticky</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3875f67b-2c7e-48c1-9b0b-e8b0aa76cd92</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>11348cf9-0c8c-4141-9c18-7640084f505c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-82b90a79-af27-4b19-9489-750417aca662</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+   
+    &lt;h3 id=&apos;CompetitiveAdvantage&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Competitive Advantage&lt;/h3&gt;
+
+    &lt;p&gt;The key to success for Neopharma is the strength of its growing number of exclusive distribution partners in addition to the below technology advancements.&lt;/p&gt;
+    
+    
+    &lt;p&gt;&lt;b&gt;Certified and award-winning technology:&lt;/b&gt;&lt;/p&gt;
+    
+    &lt;ul&gt;
+        &lt;li&gt;ISO 13485 certified&lt;/li&gt;
+        &lt;li&gt;USFDA approved drug testing strips&lt;/li&gt;
+        &lt;li&gt;Medical Device Authority Malaysia and Indonesia approved&lt;/li&gt;
+        &lt;li&gt;TamperLoks has TGA and Cofepris approval (pending)&lt;/li&gt;
+   &lt;/ul&gt;
+
+    &lt;p&gt;&lt;b&gt;Innovative Business Model&lt;/b&gt;&lt;/p&gt;
+    
+    &lt;ul&gt;
+        &lt;li&gt;Globally protected intellectual Property&lt;/li&gt;
+        &lt;li&gt;Low-cost unit economics&lt;/li&gt;
+        &lt;li&gt;Secured manufacturer &amp; investor in Malaysia Guppy Plastics&lt;/li&gt;
+        &lt;li&gt;Secured global distribution rights of two leading manufacturers for Covid-19 Rapid Antigen Test Kits with production capacity of 1.5million units per day&lt;/li&gt;
+        &lt;li&gt;Strong commercialisation distribution path with MD Solutions Australasia (now acquired by ASX:EBO); Cekap Malaysia; VSD Malaysia; PT Satya Abai Pharma Indonesia, Medica Orion (Mexico), Covid19Sure. &lt;/li&gt;
+   &lt;/ul&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; alt=&quot;&quot; src=&quot;{!contentAsset.Neo_moodboardimg_VentureCrowd.1}&quot; style=&quot;width: 804.586px; height: 804.586px;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>11348cf9-0c8c-4141-9c18-7640084f505c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>dca3bf44-f8db-4082-bb05-63054995893f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-d5e2e53e-0478-4a0e-bceb-8a4451e402c4</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h3 id=&apos;GrowthStrategy&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Growth Strategy&lt;/h3&gt;
+    
+	&lt;p&gt;Neopharma Technologies Ltd has secured 5 years of global distribution rights with two leading Chinese manufacturers, with a combined manufacturing daily capacity of 1.5 million units for Rapid Antigen Test Kits.&lt;/p&gt;
+    &lt;p&gt;Neopharma Technologies Ltd signed a 5-year exclusive agreement with MD Solutions for the commercial rollout of Neopharma’s TLDV solution for Australasia. As part of the agreement, MD Solutions have funded and managed the TGA application.&lt;/p&gt;
+    &lt;p&gt;Neopharma Technologies Ltd signed a 5-year exclusive agreement with Global Risk Group, trading as Covid19Sure, for its range of Covid19 Test products in AUS and US. They have directly invested in Neopharma Technologies and funded and managed the TGA application for NEOTEST K+. Their capability statement suggests order volumes of 800,000 - 1,000,000 units per week upon TGA approval and a combined 5,000,000 units per week on TGA and US EUA approval. They have a minimum KPI of a 40ft Container (900,000 NEOTEST antigen test kits) per quarter to maintain exclusivity.&lt;/p&gt;
+    &lt;p&gt;Neopharma Technologies Ltd signed a distribution agreement with Indonesian Distributor PT Satya Abadi Pharma (PT SAP). Pre-Covid, PT SAP planned an initial 1.5 million unit P/A purchase order for the Indonesian Universities. Commercial order expected 2022 once university students are back on campus.&lt;/p&gt;
+    &lt;p&gt;NeopharmaTechnologies Ltd signed a distribution agreement with CEKAP technical services for the commercial rollout of Neopharma’s TLDV solution in the Malaysian Oil &amp; Gas sector.&lt;/p&gt;
+    &lt;p&gt;Neopharma Technologies has signed a distribution agreement with Medica Orion for the commercial rollout of the Mexican Market. Medica Orion has funded the Cofepris approval for TamperLoks and is pursuing Emergency Use approval for NEOTEST K+.&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>dca3bf44-f8db-4082-bb05-63054995893f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1320211f-c1da-46b8-b515-10f298b01ee8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-3c561466-7916-4d1b-af83-a58a460f19e8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h3 id=&apos;ExitStrategy&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Exit Strategy&lt;/h3&gt;
+    
+	&lt;p&gt;IPO is scheduled for Q3 2022 listing with the intention to list at a target price of 50 cents per share.&lt;/p&gt;
+	&lt;p&gt;Neopharma Technologies has now appointed listing Coordinator Norvest Corporate to start the formal IPO process. Neopharma Technologies has also moved its share register to Advanced Share Registry ahead of its ASX listing this year and have reserved the code ASX:NEO. Neopharma Technologies have been approached by a number of funding groups with no shortage of interest.&lt;/p&gt;
+
+    &lt;p&gt;&lt;b&gt;Neopharma is a medical device hardware and multi purpose technology provider. Some comparable companies &amp; their valuations are listed below:&lt;/b&gt;&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Neo_ExitStrategy_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1320211f-c1da-46b8-b515-10f298b01ee8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>44e860b6-40d8-41f7-8ae0-e70647ea6ee4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-6e2e123d-eecd-4884-934a-356d5cd1e160</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;ManagementTeam&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Management Team&lt;/h3&gt;
+	
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Neo_ManagementTeam_VentureCrowd.1}&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>44e860b6-40d8-41f7-8ae0-e70647ea6ee4</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f7e4106d-5692-4a55-bedb-1488260e635f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-6a5285dc-3f7a-4564-bfb3-76f62eef1a8b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;TheOffer&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;The Offer&lt;/h3&gt;
+    &lt;p&gt;$0.30 share price&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f7e4106d-5692-4a55-bedb-1488260e635f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1385d69e-5bfb-4395-baf8-b2d68735833c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-05fcdbb4-165b-4138-8451-238e0953fdf8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    &lt;h3 id=&apos;WhyVentureCrowd?&apos; class=&quot;color-purple mb-4 pt-4&quot;&gt;Why Invest Through VentureCrowd?&lt;/h3&gt;
+	&lt;p&gt;VentureCrowd is the leading digital investment platform for alternative assets. We find and fund the brightest and most innovative startups.&lt;/p&gt;
+
+&lt;p&gt;Our curation and due diligence is rigorous and our track record of success speaks for itself:&lt;/p&gt;
+    &lt;ul&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Only digital investment platform in Australia&lt;/b&gt; to have successfully delivered exit returns to investors through equity crowdfunding.&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;&lt;b&gt;63K+ members&lt;/b&gt; and counting.&lt;/li&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;li&gt;&lt;b&gt;Over $162,000,000&lt;/b&gt; in capital raised since inception.&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;VentureCrowd is investor-led, which means we only list deals with secured professional external lead investors. Our investors then invest on the same economic terms as professional investors. If you invest in one of our deals you will receive equity or ownership in the company that is raising the capital. Not only will your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt; &lt;a href=&quot;https://www.venturecrowd.com.au/s/portal/invest-now?Id=01t2v00000DGFfOAAX&amp;amount=10000&quot;&gt;Invest now &lt;/a&gt; &lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;If you would prefer to speak to one of our team members about this offer, please: &lt;/p&gt;
+    &lt;ul&gt;
+        &lt;p&gt;&lt;li&gt;email us at hello@venturecrowd.com.au or&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;call us on 1300 039 655&lt;/li&gt;&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;p&gt;Please note, the Fund Manager reserves the right to vary or cancel the Offer at any time, vary the amount raised under the Offer, vary or waive the Minimum Investment and close the Offer, without notice and without giving reasons.
+&lt;/p&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;sfdcCbVideoContainer&quot;&gt;&lt;iframe class=&quot;sfdcCbVideo&quot; allowfullscreen=&quot;true&quot; width=&quot;100%&quot; title=&quot;Video from https://www.youtube.com/embed/Lb94DsPhuyQ&quot; src=&quot;https://www.youtube.com/embed/Lb94DsPhuyQ&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1385d69e-5bfb-4395-baf8-b2d68735833c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0b507282-c361-44c3-b709-e906b778e308</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ec48b690-a92c-4104-ba42-93eeaff815be</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>fe4535f9-d601-4c15-b69a-5179a003cffe</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab14</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2c03f196-6a25-4f26-8928-7d9aa9614e80</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>4b984</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-c58234df-05e9-4b66-907e-ea32fe4e31f6</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+    
+    &lt;h3 id=&apos;Fees&apos; class=&quot;mb-4 mt-4&quot;&gt;Fees&lt;/h3&gt;
+    
+    
+    &lt;p&gt;1.1% contribution fee&lt;/p&gt;
+    &lt;p&gt;20% performance fee&lt;/p&gt;
+    
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock15</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>fe4535f9-d601-4c15-b69a-5179a003cffe</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>productId</name>
+                    <value>01t2v00000DGFfOAAX</value>
+                </componentInstanceProperties>
+                <componentName>keyDocument</componentName>
+                <identifier>keyDocument</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2c03f196-6a25-4f26-8928-7d9aa9614e80</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-c58234df-05e9-4b66-907e-ea32fe4e31f6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>tabsetConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;c58234df-05e9-4b66-907e-ea32fe4e31f6&quot;,&quot;activeTab&quot;:&quot;&quot;,&quot;useOverflowMenu&quot;:false,&quot;tabs&quot;:[{&quot;UUID&quot;:&quot;fe4535f9-d601-4c15-b69a-5179a003cffe&quot;,&quot;tabName&quot;:&quot;Fees&quot;,&quot;tabKey&quot;:&quot;1&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;2c03f196-6a25-4f26-8928-7d9aa9614e80&quot;,&quot;tabName&quot;:&quot;Key Documents&quot;,&quot;tabKey&quot;:&quot;4b984&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:tabset</componentName>
+                <identifier>forceCommunity_tabset</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>0b507282-c361-44c3-b709-e906b778e308</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1187171d-ba04-43a6-9f98-2ffdb73d9df6</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1187171d-ba04-43a6-9f98-2ffdb73d9df6&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;cb6afd22-c5ea-47a6-b72b-49727f70c0c7&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(65,65,65,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-f70114c6-44a5-47ab-a392-8ece9da93ad1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;f70114c6-44a5-47ab-a392-8ece9da93ad1&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;b33c9bc9-4ab1-4404-85bc-244d0dd680bd&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;4f872dd3-7f8e-4756-92b8-c049ab169e65&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;16395&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>327</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(65,65,65,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-d58de7a8-ad77-4f5d-9c64-5973d4dd74ef</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;d58de7a8-ad77-4f5d-9c64-5973d4dd74ef&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c17a75a2-078a-40ba-ae11-d67fd9b138e2&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-c2402ae2-8607-403b-9e83-c26bdc9a0cbe</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;c2402ae2-8607-403b-9e83-c26bdc9a0cbe&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c6910beb-1fec-44f2-945c-bc2224d74155&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>261</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-da5f954a-8440-4400-b13a-4d7fab5a3bbc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;da5f954a-8440-4400-b13a-4d7fab5a3bbc&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;3875f67b-2c7e-48c1-9b0b-e8b0aa76cd92&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-82b90a79-af27-4b19-9489-750417aca662</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;82b90a79-af27-4b19-9489-750417aca662&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;11348cf9-0c8c-4141-9c18-7640084f505c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-d5e2e53e-0478-4a0e-bceb-8a4451e402c4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;d5e2e53e-0478-4a0e-bceb-8a4451e402c4&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;dca3bf44-f8db-4082-bb05-63054995893f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-3c561466-7916-4d1b-af83-a58a460f19e8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;3c561466-7916-4d1b-af83-a58a460f19e8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1320211f-c1da-46b8-b515-10f298b01ee8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-6e2e123d-eecd-4884-934a-356d5cd1e160</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;6e2e123d-eecd-4884-934a-356d5cd1e160&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;44e860b6-40d8-41f7-8ae0-e70647ea6ee4&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0, 0, 0, 0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-6a5285dc-3f7a-4564-bfb3-76f62eef1a8b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;6a5285dc-3f7a-4564-bfb3-76f62eef1a8b&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f7e4106d-5692-4a55-bedb-1488260e635f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section10</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-05fcdbb4-165b-4138-8451-238e0953fdf8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;05fcdbb4-165b-4138-8451-238e0953fdf8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1385d69e-5bfb-4395-baf8-b2d68735833c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section11</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(195,205,209,0.1)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ec48b690-a92c-4104-ba42-93eeaff815be</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ec48b690-a92c-4104-ba42-93eeaff815be&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0b507282-c361-44c3-b709-e906b778e308&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section12</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>BioTech pre-IPO with indicative NASDAQ listing by Q2 2022. This groundbreaking company developed patent-protected oncology technology.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>EngeneIC pre-IPO | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Neopharma</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

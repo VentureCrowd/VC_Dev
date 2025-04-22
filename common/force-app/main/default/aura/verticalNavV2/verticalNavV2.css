@@ -1,0 +1,88 @@
+.THIS {
+    background-color: #000 !important;
+    width: auto !important;
+}
+
+.THIS .vc-icons {
+    width: 38px;
+    height: 40px;
+}
+
+.THIS .sidebar-footer {
+    position: sticky;
+    top: 400px;
+}
+
+.THIS .slds-col .ui-widget {
+    margin: 16px 0;
+}
+
+.THIS .slds-col.content {
+    width: 1140px;
+}
+
+.THIS .active-anchor {
+    /*background: linear-gradient(98.18deg, #662385 0%, #1D7DA4 33.9%, #02C8C8 100%);*/
+    color: #D95BAA;
+    text-decoration: underline;
+    transition: all 300ms ease;
+    background-color: #000;
+}
+
+.THIS .active-anchor-hover,
+.THIS .vc-menu-label:hover {
+    /*background: linear-gradient(98.18deg, #662385 0%, #1D7DA4 33.9%, #02C8C8 100%);*/
+    color: #D95BAA;
+    background-color: #000;
+}
+
+
+.THIS ul {
+    position: sticky;
+    top: 107px;
+    padding-bottom: 300px;
+}
+
+.THIS ul li {
+    font-size: 18px;
+    font-family: 'gilroysemibold';
+}
+
+.THIS ul li img {
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+
+.THIS ul li a {
+    padding: 10px 20px;
+    margin: 0;
+    display: block;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.THIS ul li a:hover img {
+    margin-right: 15px;
+}
+
+.THIS .button-container a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Caxton-2" !important;
+    font-size: 15px;
+    transition: all 300ms ease;
+    background: transparent;
+}
+
+.THIS .button-container a:hover,
+.THIS .button-container:hover {
+    text-decoration: none;
+    color: #D95BAA;
+    border-color: #D95BAA;
+    background-color: transparent;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Cert_Receipt_Email</fullName>
+    <active>true</active>
+    <description>The emails cant be sent without stage=closed won as the investor record is only created at closed won state</description>
+    <errorConditionFormula>AND (
+(NOT(ISPICKVAL( StageName, &quot;Closed Won&quot;))),
+
+(OR( 
+  
+(Send_Unit_Cert_Email__c = TRUE ))))</errorConditionFormula>
+    <errorMessage>Currently the Unit Cert email can only be sent at the CLOSED WON stage.</errorMessage>
+</ValidationRule>

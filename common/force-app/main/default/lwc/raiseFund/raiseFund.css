@@ -1,0 +1,847 @@
+/*$ Reset the styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*$ Alternate the colors depending on the section */
+.sectionContainer:nth-of-type(odd) {
+    background-color: var(--primary-foreground);
+}
+
+.sectionContainer:nth-of-type(even)  {
+    background-color: #F0F1F2;
+}
+
+/* section:nth-of-type() */
+
+/*? Review this if we are going to still use the gutter */
+lightning-formatted-rich-text {
+    font-size: 16px;
+    font-family: "SuisseIntl-Regular";
+}
+
+header,
+.sectionContainer,
+.section-banner,
+.background-in-container,
+.header-image-container,
+.wrapper-small-bar,
+.topContainer,
+.section-countdown
+{
+    --gutter: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    header,
+    .sectionContainer,
+    .section-banner,
+    .background-in-container,
+    .wrapper-small-bar,
+    .header-image-container,
+    .topContainer ,.section-countdown{
+        --gutter: var(--space-md);
+    }
+}
+
+
+/* @media only screen and (min-width: 769px) {
+    header,
+    .sectionContainer,
+    .section-banner,
+    .background-in-container,
+    .wrapper-small-bar,
+    .header-image-container,
+    .topContainer {
+        --gutter: var(--space-xs);
+    }
+} */
+
+@media only screen and (1001px <= width < 1899px) {
+    header,
+    .sectionContainer,
+    .section-banner,
+    .background-in-container,
+    .header-image-container,
+    .topContainer,
+    .invest-in-container, .section-countdown {
+        --gutter: var(--space-md);
+    }
+    .wrapper-small-bar {
+        padding: var(--space-sm) calc(2 * var(--space-xxl));
+    }
+    
+}
+
+@media only screen and (min-width: 1899px) {
+    header,
+    .sectionContainer,
+    .section-banner,
+    .background-in-container,
+    .header-image-container,
+    .topContainer,
+    .wrapper-small-bar,
+    .invest-in-container,
+    .section-countdown {
+        --gutter: var(--space-xxl);
+    }
+    .wrapper-small-bar {
+        padding: var(--space-sm) calc(2 * var(--space-xxl));
+    }
+}
+
+/*$ This manage the padding of each section */
+.sectionContainer,
+.background-in-container,
+.section-banner{
+
+    /* PPG STYLING */
+    /* padding: calc(1.5* var(--space-xxl)) var(--gutter); */
+    padding: calc(1* var(--space-xxl)) var(--gutter); 
+}
+
+
+
+@media only  screen and (max-width: 768px) {
+    .sectionContainer,
+    .background-in-container,
+    .section-banner {
+       padding: calc(2* var(--space-lg)) calc(3* var(--gutter));
+    }
+
+   
+}
+
+
+
+.section-countdown {
+    background-color: #F0F1F2;
+    padding: 0 var(--gutter);
+}
+/*TODO CHANGE TO WHITE */
+.section-banner {
+    /* PPG STYLING */
+    /* background-color: #fff; */
+    background-color: #fefefe;
+}
+
+/*? Review if we are still going to use this */
+body {
+    background-color: #fff;
+    font-family: "SuisseIntl-Light";
+    color: #000;
+    font-size: 16px;
+}
+
+ul, p {
+    margin: 0 0 0.75rem;
+    padding: 0;
+}
+
+
+li {
+    font-family: "SuisseIntl-Light";
+    list-style-position: inside;
+    font-size: var(--text-md);
+    padding-left: var(--space-sm);
+}
+
+p {
+    font-family: 'SuisseIntl-Light', 'Montserrat';
+}
+
+h2 {
+    /* font-family: 'Caxton-4', 'Montserrat'; */
+    font-size: var(--text-xxxl);
+    margin-bottom: var(--space-md);
+}
+
+strong {
+    font-family: 'SuisseIntl-Bold';
+}
+
+/*! Treat it globally | Review it later with the caxton font */
+h3 {
+    font-family: 'SuisseIntl-Light';
+    font-size: var(--text-xxxl);
+    padding-bottom: var(--space-xs);
+}
+
+a {
+    font-family: 'SuisseIntl-Light';
+    color: var(--primary-background);
+    font-size: var(--text-md);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--tertiary-accent) !important;
+}
+
+
+/*$ Controls the header. */
+.topContainer {
+    color: #000;
+    background: #fff;
+    padding: var(--space-xxl) var(--space-xl);
+    border-bottom: #000 1px solid;
+}
+
+.text-container {
+    padding-bottom: var(--space-lg);
+    /* margin-inline: var(--space-xxl); */
+    padding-inline: calc(1 * var(--space-xxl));
+    max-width: 1920px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .text-container{
+        padding-inline : 0px !important;
+    }
+}
+
+@media only screen and (max-width: 768px ) {
+    .text-container , .wrapper-small-bar{
+        padding-inline: var(--space-xs);
+    }
+}
+
+@media only screen and (769px <= width < 1243px) {
+    .text-container,.wrapper-small-bar {
+        padding-inline: var(--space-xxl) !important;
+    }
+}
+
+/*! Review it if something happensss */
+.topContainer p {
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+/*$ Main Banner Section */
+.company-info-container {
+    flex: 2;
+
+    /* PPG STYLING */
+    box-sizing: border-box;
+    background: #FFF;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: var(--space-xl) calc(0.8* var(--space-xl));
+    box-shadow: 0px 4px 8px 0px rgba(5, 6, 10, 0.04), 0px 8px 24px 0px rgba(5, 6, 10, 0.06);
+    border: 2px solid #E1E2E8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* PPG STYLING */
+.company-info-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.raise-stage {
+    border: 1px solid #05060AB7;
+    padding: var(--space-xs) 20px;
+    border-radius: 10px;
+    color: #05060AB7;
+    font-family: 'SuisseIntl-Bold';
+}
+
+
+.company-info-video {
+    flex: 4;
+    display: flex;
+    /* PPG STYLING */
+    /* justify-content: flex-end; */
+}
+iframe.raisePageVideo {
+    aspect-ratio: 16 / 9;
+    width: 100% ;
+    /* max-width: 1000px; */
+    /* PPG STYLING */
+    border: 2px solid #E1E2E8;
+    border-radius: 20px;
+}
+.company-info-container h1 {
+    /* PPG STYLING */
+    /* font-family: 'Caxton-4', 'Montserrat'; */
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-xxs);
+}
+.company-info {
+    padding-bottom: var(--space-md);
+}
+.company-info p {
+    margin-bottom: var(--space-md);
+}
+.company-logo {
+    max-height: 100px;
+    max-width: 256px;
+    margin-bottom: var(--space-md);
+}
+
+.company-container {
+    display: flex;
+    column-gap: var(--space-md);
+
+    /* PPG STYLING */
+    /* align-items: flex-end; */
+    /* justify-content: space-between; */
+
+    /* PPG STYLING */
+    /* box-sizing: border-box;
+    background: #FFF;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: var(--space-xxl);
+    box-shadow: 0px 4px 8px 0px rgba(5, 6, 10, 0.04), 0px 8px 24px 0px rgba(5, 6, 10, 0.06);
+    border: 2px solid #E1E2E8; */
+}
+
+@media only screen and (max-width: 768px) {
+    .company-container {
+        flex-direction: column;
+        row-gap: var(--space-xl);
+        align-items: normal;
+    }
+}
+
+/*$ Overview Section */
+/** Manage the Overview Images Containers */
+
+.overview-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.overview-section {
+    width: 60%;
+}
+.overview-content {
+    margin: var(--space-lg) 0;
+    justify-content: center;
+}
+.overview-section p {
+    flex: 1;
+    margin: 0;
+}
+
+.overview-values {
+    flex: 2;
+}
+
+.info-company-container {
+    margin-top: var(--space-xl);
+}
+.info-company-container hr {
+    height: 2px;
+}
+
+.overview-content {
+    display: flex;
+}
+
+/* Table section */
+
+.table-section {
+    padding: var(--space-xl);
+    border: 1px solid var(--primary-background);
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.table-section a {
+    display: block;
+    padding: var(--space-xs) 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.table-section a:hover {
+    color: var(--primary-accent);
+}
+
+@media only screen and (max-width: 768px) { 
+    .table-section {
+        display: none;
+    }
+    .overview-section {
+        width: 100%;
+    }
+}
+
+/*$ Section Countdown and Social Icons */
+.wrapper-small-bar {
+    /* padding: var(--space-sm) calc(3 * var(--space-xxl)); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: auto;
+    padding-inline: calc(2* var(--space-xxl));;
+}
+
+.social-media-icons {
+    display: flex;
+    column-gap: var(--space-md);
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-small-bar {
+        display: flex;
+        justify-content: center;
+    }
+    .social-media-icons {
+        display: none;
+    }
+}
+
+/*$ Images Container Problem && Solution Containers*/
+/*! Check this later with more resize stuff */
+.full-image-container {
+    margin-top: var(--space-xxl);
+    display: flex;
+    justify-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    .full-image-container {
+        gap: 48px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .full-image-container {
+        gap: 96px;
+    }
+}
+/* 
+.full-image-container .OverviewImagesContainer {
+    max-width: 256px;
+    max-height: 256px;
+} */
+
+/*? Responsive view */
+
+.halfv-fullh-img {
+    flex: 1;
+}
+.halfv-fullh-img img {
+
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    /* max-height: 30em; */
+}
+
+@media screen and (max-width: 768px) {
+    .full-image-container .halfv-fullh-img {
+        max-width: unset;
+        max-height: unset;
+        overflow: hidden;
+        height: auto;
+    }
+    .halfv-fullh-img img {
+        clip-path: none;
+        width: 100%;
+    }
+}
+
+/*! TODO: WHERE SHOULD I PUT THIS */
+.offer-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: var(--space-md)
+}
+
+@media only screen and (max-width: 768px) {
+    .offer-section {
+        text-align: center;
+    }
+}
+
+.button-wrapper {
+    margin-top: var(--space-lg);
+    display: flex;
+    justify-content: center;
+}
+/*$ This section will handle the section of half text | half image */
+
+.half-text-image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--space-xxl);
+    column-gap: var(--space-xxl);
+}
+
+@media only screen and (max-width: 768px) {
+    .half-text-image {
+        flex-direction: column;
+        row-gap: var(--space-xl);
+        margin-bottom: unset;
+    }
+}
+.half-text-container {
+    /* flex: 1;  */
+    flex: 2;
+}
+
+.half-image-container {
+    flex: 1;
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .half-image-container {
+        flex: unset;
+        text-align: unset;
+    }
+}
+
+.half-image-container img {
+    width: 100%; 
+    /* height: 100%;  */
+    max-width: 100%; 
+}
+
+.differentiation-container .intellectual-p-container {
+    margin-bottom: var(--space-md);
+}
+
+/*$ This section is for the Growth | Capital | Valuation */
+.capital-valuation-wrapper {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .capital-valuation-wrapper {
+        flex-direction: column;
+    }
+}
+
+.growth-container, .capital-r-container, .valuation-container, .funds-container{
+    padding-bottom: var(--space-xl);
+    flex: 1;
+}
+/* Invest In - Section */
+.background-in-container {
+    color: var(--secondary-text-color);
+    background-color: var(--primary-background) !important;
+}
+
+.invest-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-xxl) 0;
+}
+
+/*$ This section handles the management Team and advisors */
+.team-container {
+    display: flex;
+    flex-direction: row;
+}
+.team-info-container {
+    width: 66%;
+}
+
+.member-name-style {
+    font-family: "SuisseIntl-Bold"
+}
+/*$ Media  */
+.media-container {
+    padding-bottom: var(--space-lg);
+}
+.media-container h3 {
+    padding-bottom: var(--space-xs);       
+    font-size: var(--text-xxl);
+}
+
+.media-container a {
+    color: var(--primary-accent);
+}
+
+
+.vc_information {
+    color: var(--secondary-text-color);
+}
+
+/*TODO: Adjust depending on where it sits */
+
+.founders-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xxl);
+}
+
+@media only screen and (max-width: 768px) {
+    .founders-containers {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    /* height: 100px; */
+    margin-right: var(--space-md);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: var(--text-lg);
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-role {
+    margin-bottom: var(--space-md);
+}
+
+.profile-link {
+    color: var(--tertiary-accent);
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
+/*!END _ REPLACE IT */      
+
+/*$ Tabs Section */
+
+.tab-container {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    font-size: var(--text-md);
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+}
+.tab-active {
+    color: #d62090;
+    border-bottom: 3px solid #d62090;
+    font-weight: bold;
+}
+
+.content {
+    margin: var(--space-xl) var(--space-md);
+}
+
+/*$ Document boxes container */
+.document-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-lg);
+    row-gap: var(--space-lg);
+}
+
+@media only screen and (max-width: 768px) {
+    .document-container {
+        grid-template-columns: 1fr;
+    }
+}
+.document-style {
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+    background-color: var(--gray-1);
+    /* border: 2px white solid ; */
+    padding: var(--space-md);
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1141px) {
+    .document-style {
+        flex-wrap: nowrap;
+    }
+}
+
+.alignment-icons {
+    column-gap: var(--space-sm);
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1141px) {
+    .alignment-icons {
+        flex-wrap: nowrap;
+    }
+}
+.document-container p {
+    margin: 0;
+}
+
+
+/*$ Investment Container Change It Later */
+
+.investment-container {
+    display: flex;
+    margin-top: var(--space-xl);
+    /* border: 1px solid #000; */
+    /* width: fit-content; */
+}
+
+.amount-input {
+    border: 1px solid #000;
+    border-right-style: none;
+    padding-inline: var(--space-md);
+    width: 60%; /* Adjust the width as needed */
+    text-align: left; 
+    font-family: 'SuisseIntl-Light';
+
+    /* PPG STYLING */
+    border-radius: 10px 0px 0px 10px;
+}
+
+.invest-button {
+    background-color: #d5679d;
+    color: white;
+    /* border: none; */
+    padding: var(--space-sm);
+    cursor: pointer;
+    width: 40%;
+    font-family: 'SuisseIntl-Light';
+
+    /* PPG STYLING */
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*$ VC information */
+
+.vc-information a {
+    font-size: 16px;
+}
+
+.page-not-live {
+    font-size: var(--text-4xl);
+    font-family: 'SuisseIntl-Light';
+    padding: calc(2 * var(--space-xxl));
+    text-align: center;
+}
+
+/*$ Comment section */ 
+
+.comment-section h2{
+    margin-bottom: 0;
+    font-family: 'SuisseIntl-Light';
+}
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-md);
+}
+
+.file-loading-spinner {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PPG MODAL */
+c-core-modal .bold-title{
+    font-size: var(--text-xxxl);
+    font-family: "SuisseIntl-Bold";
+    margin: 0;
+}
+
+c-core-modal .ea-body {
+    padding: var(--space-lg) 0;
+}
+
+
+.badges{
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+/* .badges{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    column-gap: var(--space-xxl);
+} */
+
+.is-fund-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-md);
+}
+
+/* List items in the dropdown */
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    column-gap: var(--space-xxl);
+}
+
+.dropdown-item:active {
+    background-color: var(--white);
+}
+
+
+.dropdown-item:hover {
+    background-color: var(--white); /* Change background color on hover */
+    color: var(--primary-accent);
+}
+
+/* Arrow styling */
+.arrow {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.dropdown-item:hover .arrow {
+    color: var(--primary-accent);
+}
+
+.terms-and-conditions-fund {
+    padding-top: var(--space-md);
+}
+.terms-and-conditions-fund p {
+    font-size: var(--text-sm);
+}
+
+.documents-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

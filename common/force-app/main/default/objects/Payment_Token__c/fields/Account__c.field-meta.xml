@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>A link to the related account that owns or is associated with the payment token.</description>
+    <inlineHelpText>Use this lookup field to associate the payment token with the correct account. This ensures that the token is linked to the right customer or business entity.</inlineHelpText>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Payment Tokens</relationshipLabel>
+    <relationshipName>Payment_Tokens</relationshipName>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

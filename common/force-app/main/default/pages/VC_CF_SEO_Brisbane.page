@@ -1,0 +1,346 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+                    <div class="col-md-12 headline">
+                        <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+                        <h1 class="mt-4"> 
+                            
+                            Brisbane Property Investment </h1>
+                        <p class="mt-4">
+                            
+                            
+                            Brisbane Property Investment
+                            Simplify the path to reaching your financial goals. Connect with VentureCrowd to get the best out of your Brisbane property investment deal.
+                        </p>
+                        <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-solid"> Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/Brisbane-VC-Property.jpg')"></div>
+        </section>
+        
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                Brisbane Property Investment </h3>
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">Through a Brisbane property investment, you can cleverly diversify your portfolio and get a good return on capital at the same time. Buying an investment property is an opportunity to put your money into something tangible and unlike some other complex investments, you don’t need to be an expert or specialist – you just have to make a smart decision.&nbsp;</span></p>
+                                
+                            </div>
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">Brisbane has a lot to offer in terms of lifestyle. In this current economic climate, many investors are taking advantage of the low mortgage rates and researching the property market in Brisbane for potential future long-term gains.</span></p>
+                                
+                            </div>
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">Any investment decision should be made with due diligence and research. VentureCrowd can help with this as they are a professional </span><a href="https://www.venturecrowd.com.au/"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> model aimed at reducing complexity and guiding you through handpicked </span><a href="https://www.venturecrowd.com.au/s/property/companies"><span style="font-weight: 400;">investment property companies</span></a><span style="font-weight: 400;"> and opportunities. </span><a href="https://www.venturecrowd.com.au/s/property/funds"><span style="font-weight: 400;">Property funds</span></a><span style="font-weight: 400;"> are a great way to gain returns from a Brisbane property investment as they will allow you to get exposure to unique opportunities in real estate offering a steady income and capital growth. Read on to find out how a Brisbane property investment is good for you.</span></p>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>      
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                
+                                Is Brisbane a good property investment? </h3>
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">For many investors, a Brisbane property investment has great appeal as it’s the most affordable market compared to major capital cities such as Sydney and Melbourne. The median house prices are low and properties are set amongst a prime location. Local tourism is increasing and as Australia looks into its own backyard for holidays and staycations, the warmer weather of Queensland is appealing during the cooler months. Furthermore, residents in Brisbane can enjoy the benefits of a strong infrastructure plan to accommodate the city’s growing population.</span></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">So, with the promise of real growth in the Brisbane property game you may be asking “can I double my money with a Brisbane property investment?” </span><span style="font-weight: 400;">Doubling your money, or increasing it to any degree, depends on a few factors such as </span><span style="font-weight: 400;">h</span><span style="font-weight: 400;">ow much you invest</span><span style="font-weight: 400;">, y</span><span style="font-weight: 400;">our timeframe for investment, and the rate of return.</span><span style="font-weight: 400;"> The rate of return will be based on </span><span style="font-weight: 400;">the location and property type you wish to invest in, and therefore research is paramount to your financial success and the ultimate benefit from a </span><a href="https://www.venturecrowd.com.au/s/high-yield-investments"><span style="font-weight: 400;">high yield investment</span></a><span style="font-weight: 400;">.&nbsp;&nbsp;</span></p>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                
+                                What should I look for in an investment property in Brisbane? </h3>
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">Investing in real estate is primarily about capital growth, so choosing a property that is more likely to increase in value should be the foundation behind your decision. Unlike buying shares, buying real estate is negotiable, and with some patience and background knowledge on the area, you might be able to get a Brisbane property investment below its market value. The most important thing to do is research and work out what is selling for in and around the area and you will quickly ascertain if what you are considering is a good deal.</span></p>
+                                            
+                                        </div>
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">It is also important to research the demographics and local amenities in the area. For instance, if you are investing in a family home for renters, find out if it is close to schools and parks and on a quiet street.</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                Where to buy an investment property in Brisbane? </h3>
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">According to the current buyer’s guides, the top investment properties in Brisbane are based on criteria such as buying demand, infrastructure, public transport, local amenities, school catchments, and neighbouring suburbs. Here are some of the top listed suburbs to buy a Brisbane property investment:</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div> 
+                                
+                                <div class="row">
+                                    <!-- Body Content -->
+                                    <div class="col-md-6">
+                                        <div class="inner-container px-3 px-md-4 py-3">
+                                            <ul>
+                                                <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Bridgeman Downs</strong> – This was a previously considered prestige and rural residential suburb but it is now offering a combination of rising rentals in demand and is a key indicator of investment potential.</span></li>
+                                                <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Carina Heights</strong> – A great suburb for first home buyers and investors especially with renovations in mind. The average house price in Carina Heights is becoming higher which is an indication of growth in this area.</span></li>
+                                                <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Everton Park</strong> – Aptly described as the foodie hub, Everton Park offers a café city lifestyle. The area, however, is not located in the CBD.</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="col-md-6">
+                                        <div class="inner-container px-3 px-md-4 py-3">
+                                            <p><span style="font-weight: 400;">Investment options can include:</span></p>
+                                            <div class="nectar-fancy-ul animated-in" data-list-icon="icon-salient-thin-line" data-animation="true" data-animation-delay="0" data-color="accent-color" data-alignment="left"> 
+                                                <ul>
+                                                    <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">1% transaction fee and 20% performance fee payable on exit (this excludes GST)</span></li>
+                                                    <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">Performance fees are not incurred against the principal investment and occur only on a successful exit</span></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <p><span style="font-weight: 400;">For commercial members, investment options include:</span></p>
+                                            <div class="nectar-fancy-ul animated-in" data-list-icon="icon-salient-thin-line" data-animation="true" data-animation-delay="0" data-color="accent-color" data-alignment="left"> 
+                                                <ul>
+                                                    <li style="font-weight: 400; opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">6% on capital raised (excluding GST)</span></li>
+                                                    <li style="font-weight: 400; opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">$4,000 campaign fee (excluding GST)</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                What is the average return on Gold Coast property investment? </h3>
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">It’s free to register on VentureCrowd and generally you can choose how you wish to invest your money. This means that you can choose to support developments and growth opportunities which not only offer you lucrative returns on your investments but also help you feel part of the Gold Coast that you’re helping to build.&nbsp;</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div> 
+                                
+                                <div class="wpb_wrapper">
+                                    <p><strong>Investment options can include:</strong></p>
+                                    <ul>
+                                        <li style="font-weight: 400;"><span style="font-weight: 400;">1% transaction fee and 20% performance fee payable on exit (this excludes GST)</span></li>
+                                        <li style="font-weight: 400;"><span style="font-weight: 400;">Performance fees are not incurred against the principal investment and occur only on a successful exit</span></li>
+                                    </ul>
+                                    <p><strong>For commercial members, investment options include:</strong></p>
+                                    <ul>
+                                        <li style="font-weight: 400;"><span style="font-weight: 400;">6% on capital raised (excluding GST)</span></li>
+                                        <li style="font-weight: 400;"><span style="font-weight: 400;">$4,000 campaign fee (excluding GST)</span></li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                                <div class="wpb_wrapper">
+                                    <ul>
+                                        <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Ferny Grove</strong> – An affordable suburb for investors with a growing interest in the area. The suburb also boasts a local train station for commuters.</span></li>
+                                        <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Keperra</strong> – Another affordable suburb for first home buyers and investors. This is in a convenient location only 10km from the CBD.</span></li>
+                                        <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Loganholme</strong> – This greater Brisbane suburb has seen strong growth and a median house price increase in recent months.</span></li>
+                                    </ul>
+                                    
+                                </div>
+                                
+                                <div class="wpb_wrapper">
+                                    <div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">By conducting thorough research of the area and understanding its potential for future growth, you will be able to break into the property investment scene with informed decisions and a clear plan. VentureCrowd can also assure this.&nbsp;</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">In addition to </span><a href="https://www.venturecrowd.com.au/property/"><span style="font-weight: 400;">property investing</span></a><span style="font-weight: 400;">, VentureCrowd gives investors access to alternative finance from a crowd of both retail and sophisticated investors. Under this model, you will have direct access to alternative equity such as </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> on the same terms as professional lead investors. There is also the option of investing in a </span><a href="https://www.venturecrowd.com.au/s/mortgage-funds"><span style="font-weight: 400;">mortgage fund</span></a><span style="font-weight: 400;"> allowing a secure investment in lending money to a range of borrowers. Get in touch with VentureCrowd to start maximising your portfolio growth.</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <p><span style="font-weight: 400;">You can contact us on <a href="tel:1300039655">1300 039 655</a>, send an email to </span><a href="mailto:hello@venturecrowd.com.au"><span style="font-weight: 400;">hello@venturecrowd.com.au</span></a><span style="font-weight: 400;"> or <a href="https://investor.venturecrowd.com.au/registration/initial_registration">get in touch online</a>. We’d be happy to answer any of your questions.&nbsp;</span></p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="divider-wrap" data-alignment="default"><div style="height: 40px;" class="divider"></div></div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </section>
+        
+        <!-- Post Footer -->
+        <!-- <section class="related">
+<div class="container">
+<div class="row text-center py-5 text-white">
+<div class="col-md-2"></div>
+
+<div class="col-md-8 pb-5 next-post-title mt-3">
+<h3> Be part of something bigger and build your wealth as Australia grows and expands. </h3>
+
+<div class="pt-5 next-post-link"> Join VentureCrowd, one of the fuss-free investment property companies offering ground floor access to lucrative property investment opportunities throughout the country. 
+
+
+</div>
+</div>
+
+
+<div class="col-md-2"></div>
+</div>
+
+
+<div class="row text-center py-5 text-white">
+<div class="col-md-5"></div>
+
+<div class="col-md-2 pb-5">
+
+<a class="button-outline-white" href="{!$Label.Investor_Community_URL}"  > Register Today </a>
+
+</div>
+<div class="col-md-5"></div>
+</div>
+
+</div>
+
+<div class="next-post-bg-overlay"></div>
+<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/Brisbane-VC-Property.jpg')"></div>
+</section>
+-->        
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    
+    
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    
+    </apex:page>

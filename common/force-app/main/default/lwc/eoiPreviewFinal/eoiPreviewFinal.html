@@ -1,0 +1,404 @@
+<template>
+    <!--? Render the text depending of the Statuf of the EOI -->
+    <template if:true={notPublished}>
+        <header class="topContainer">
+            <div class="textContainer">
+                <p>
+                    This is a sneak peek of your expression of interest page &#8211;
+                    your first step in the capital raising journey.
+                </p>
+                <p>
+                    Love what you see and filled all mandatory fields?
+                    Add the final touches, click 'Submit to be published', and
+                    we'll swiftly get you the link to your expression of interest page to dazzle investors!
+                </p>
+                <div class="buttonsContainer">
+                    <button title="Create Now" type="button" onclick={returnToEdit} class="custom-button">Return to
+                        editing</button>
+                    <!-- <button title="Create Now" type="button" onclick={showpopup} class="custom-button">Submit to be published</button> -->
+                </div>
+            </div>
+        </header>
+    </template>
+
+    <template if:true={publishing}>
+        <header class="topContainer">
+            <div class="textContainer">
+                <p>
+                    This is a sneak peek of your expression of interest page
+                    which is currently being reviewed by our team.
+                </p>
+                <p>
+                    We will be in contact with you shortly with the link to the live page
+                    that you will be able to share with your network and garner interest.
+                </p>
+                <div class="buttonsContainer">
+                    <button title="Create Now" type="button" onclick={returnToEdit} class="custom-button">Back to my
+                        companies</button>
+                </div>
+            </div>
+        </header>
+    </template>
+    <!-- <div class="wrapper"> -->
+    <section style={bannerStyle} class="header-image-container">
+        <div class="textContainer video-container">
+            <div class="text-image-container">
+                <!-- Dynamic image source can be handled in JavaScript -->
+                <template if:true={logo}>
+                    <img class="company-logo" src={logo} alt="Company logo" />
+                </template>
+                <h1>Express interest<span class="insert-nbsp"></span>in<br>{eoiData.EOI_Title__c}</h1>                
+                <h2>{eoiData.One_liner_about_business__c}</h2>
+                <button title="Create Now" type="button" onclick={scrollToSection} class="buttonWhite">Register interest
+                    now</button>
+            </div>
+            <div lwc:if={youtubeVideoLink} class="company-info-video">
+                    <iframe class="raisePageVideo" src={youtubeVideoLink} frameborder="0" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--! Delete after -->
+
+    <!--! END -->
+    <!-- ? EOI summary section -->
+    <!-- <section class="sectionContainer greyContainer offerOverview slds-m-around_medium"> -->
+    <!-- TODO: Import the font's from a different and standard way -->
+    <section class="sectionContainer greyContainer offerOverview">
+        <div class="textContainer">
+            <!-- TODO: Grab the information from the backend eoiData.Offer_Overview__c -->
+            <p>{eoiData.Offer_Overview__c}</p>
+            <div class="offerOverviewImages">
+                <!--* Dynamically rendered images can be handled in JavaScript -->
+                <template if:true={SupportingImage1}>
+                    <div class="OverviewImagesContainer">
+                        <img src={SupportingImage1} alt="Picture 2" />
+                    </div>
+                </template>
+
+                <template if:true={SupportingImage2}>
+                    <div class="OverviewImagesContainer">
+                        <img src={SupportingImage2} alt="Picture 2" />
+                    </div>
+                </template>
+
+                <template if:true={SupportingImage3}>
+                    <div class="OverviewImagesContainer">
+                        <img src={SupportingImage3} alt="Picture 3" />
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- TTIIASST-24 - KEN -->
+    <template lwc:if={isFund}>
+        <section class="sectionContainer whiteContainer companyHighlights">
+            <div class="textContainer">
+                <h2>Fund highlights</h2>
+                <ul class="vc-font-suisseIntlRegular custom-list">
+                    <li><strong>Fund Structure: </strong> <span>{eoiData.Fund_Structure__c}</span></li>
+                    <li><strong>Tax Concessions: </strong> <span>{eoiData.Tax_Concessions__c}</span></li>
+                    <li><strong>Investment Objective: </strong> <span>{eoiData.Investment_Objective__c}</span></li>
+                    <li><strong>Investment Strategy: </strong><span>{eoiData.Investment_Strategy__c}</span></li>
+                    <li><strong>Portfolio Size: </strong> <span>{eoiData.Portfolio_Size__c}</span></li>
+                    <li><strong>Investment Period: </strong> <span>{eoiData.Investment_Period__c}</span></li>
+                    <li><strong>Fund Term: </strong> <span>{eoiData.Fund_Term__c}</span></li>
+                </ul>
+
+                <div class="registerButton">
+                    <button title="Create Now" type="button" onclick={scrollToSection} class="special">Register interest
+                        now</button>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!--? Company Highlights section -->
+    <template lwc:elseif={isCompanyHighlightsVisible}>
+        <section class="sectionContainer whiteContainer companyHighlights">
+            <div class="textContainer">
+                <h2>Company highlights</h2>
+                <ul class="vc-font-suisseIntlRegular custom-list">
+                    <li><strong>Problem or opportunity: </strong> <span>{eoiData.Problem_or_opportunity__c}</span></li>
+                    <li><strong>Solution: </strong> <span>{eoiData.Solution__c}</span></li>
+                    <li><strong>Differentiation: </strong> <span>{eoiData.Differentiation__c}</span></li>
+                    <li><strong>Intellectual property: </strong><span>{eoiData.Intellectual_Property__c}</span></li>
+                    <li><strong>Total addressable market: </strong> <span>{eoiData.Total_addressable_market__c}</span></li>
+                    <li><strong>Progress: </strong> <span>{eoiData.Progress__c}</span></li>
+                    <li><strong>Growth plan: </strong> <span>{eoiData.Growth_plan__c}</span></li>
+                </ul>
+
+                <div class="registerButton">
+                    <button title="Create Now" type="button" onclick={scrollToSection} class="special">Register interest
+                        now</button>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!-- ? Team Section -->
+    <template if:true={isTeamVisible}>
+        <section class="sectionContainer greyContainer">
+            <div class="textContainer">
+                <h2>Team</h2>
+                <!--? Founders Section -->
+                <template if:true={isFounderVisible}>
+                    <div class="founders">
+                        <div class="containerTeamCategory">
+                             <!-- TTIIASST-24 - KEN -->
+                            <template lwc:if={isFund}>
+                                <h3>Investment Committee</h3>
+                            </template>
+                            <template lwc:else>
+                                <h3>Founders</h3>
+                            </template>
+                            <div class="teamCards cardFounder">
+                                <template for:each={lstFounders} for:item="member">
+                                    <div class="teamContainer teamContainer_founders" key={member.id}>
+                                        <template if:true={member.Founder_Picture__c}>
+                                            <img class="teamProfileIcon" src={member.Founder_Picture__c} />
+                                        </template>
+                                        <div class="teamInfoContainer">
+                                            <p class="memberNameStyle">{member.Name}</p>
+                                            <p class="memberRoleStyle">{member.Member_Role__c}</p>
+                                            <p class="memberDescriptionStyle">{member.Team_Member_Description__c}</p>
+                                            <template if:true={member.Team_Member_Description__c}>
+                                                <div class="memberUrlStyle">
+                                                    <a href={member.Team_member_Linkedin__c}>LinkedIn</a>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- ? Management Team Section -->
+                <div class="managementTeamAndAdvisors">
+                    <template if:true={isManagementTeamVisible}>
+                        <div class="containerTeamCategory">
+                            <h3>Management team</h3>
+                            <div class="teamCards">
+                                <template for:each={lstManagementTeamMember} for:item="member">
+                                    <div class="teamContainer teamInfoContainer" key={member.id}>
+                                        <div class="teamInfoContainer">
+                                            <p class="memberNameStyle">{member.Name}</p>
+                                            <p class="memberRoleStyle">{member.Member_Role__c}</p>
+                                            <p class="memberDescriptionStyle">{member.Team_Member_Description__c}</p>
+                                            <!-- <template if:true={member.Team_Member_Description__c}>
+                                                <div class="memberUrlStyle">
+                                                    <a href={member.Team_member_Linkedin__c}>LinkedIn</a>
+                                                </div>
+                                            </template> -->
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template if:true={isAdvisorVisible}>
+                        <!-- ? Advisors Section -->
+                        <div class="containerTeamCategory">
+                            <h3>Advisors, ambassadors and key investors</h3>
+                            <div class="teamCards">
+                                <template for:each={lstAdvisor} for:item="member">
+                                    <div class="teamContainer teamInfoContainer" key={member.id}>
+                                        <div class="teamInfoContainer">
+                                            <p class="memberNameStyle">{member.Name}</p>
+                                            <p class="memberRoleStyle">{member.Member_Role__c}</p>
+                                            <p class="memberDescriptionStyle">{member.Team_Member_Description__c}</p>
+                                            <!-- <template if:true={member.Team_Member_Description__c}>
+                                            <div class="memberUrlStyle">
+                                                <a href={member.Team_member_Linkedin__c}>LinkedIn</a>
+                                            </div>
+                                        </template> -->
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <div class="registerButton">
+                    <button title="Create Now" type="button" onclick={scrollToSection} class="special">Register interest
+                        now</button>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!--TODO: Do the section hide or show it depending on the selection / Backend -->
+    <!-- ? Section Intended Raise -->
+    <!-- * If this fields does not contain any value this section will not shown -->
+    <template if:true={isSectionVisible}>
+        <section class="sectionContainer whiteContainer">
+            <div class="textContainer">
+                <h2>Intended raise</h2>
+                <div class="intendedRaise">
+                    <template if:true={isIntendedRaiseVisible}>
+                        <div class="containerGrid1">
+                            <template if:true={eoiData.Company_Stage__c}>
+                                <div>
+                                    <h3>Company stage</h3>
+                                    <p>{eoiData.Company_Stage__c}</p>
+                                </div>
+                            </template>
+
+                            <template if:true={eoiData.Target_Raise_Amount__c}>
+                                <div>
+                                    <h3>Target raise amount</h3>
+                                    <p>$<lightning-formatted-number
+                                            value={eoiData.Target_Raise_Amount__c}></lightning-formatted-number> AUD</p>
+                                </div>
+                            </template>
+
+                            <template if:true={isFund}>
+                                <template if:true={eoiData.First_Close_Amount__c}>
+                                    <div>
+                                        <h3>First Close Amount</h3>
+                                        <p>$<lightning-formatted-number
+                                            value={eoiData.First_Close_Amount__c}></lightning-formatted-number> AUD</p>
+                                    </div>
+                                </template>
+                            </template>
+
+                            <template if:true={eoiData.Minimum_Investment_amount__c}>
+                                <div>
+                                    <h3>Minimum investment amount</h3>
+                                    <p>$<lightning-formatted-number
+                                            value={eoiData.Minimum_Investment_amount__c}></lightning-formatted-number> AUD
+                                    </p>
+                                </div>
+                            </template>
+
+                            <template if:true={eoiData.Planned_used_of_funds__c}>
+                                <div>
+                                    <h3>Planned use of funds</h3>
+                                    <p>{eoiData.Planned_used_of_funds__c}</p>
+                                </div>
+                            </template>
+
+                            <template if:true={eoiData.Raise_Contact_email__c}>
+                                <div>
+                                    <h3>Raise contact</h3>
+                                    <p><a href={mailtoLink}>{eoiData.Raise_Contact_email__c}</a></p>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+
+                    <template if:true={isLeadInvestorVisible}>
+                        <div class="containerGrid2">
+                            <h3>Lead investors</h3>
+                            <template for:each={lstLeadInvestors} for:item="investor">
+                                <div key={investor.Id} class="leadInvestor_container">
+                                    <p class="leadInvestor_name">{investor.Name}</p>
+                                    <p>{investor.Lead_Investor_Bio__c}</p>
+                                    <p>$<lightning-formatted-number
+                                            value={investor.Lead_Investor_Amount__c}></lightning-formatted-number> AUD
+                                    </p>
+
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+                <div class="registerButton">
+                    <button title="Create Now" type="button" onclick={scrollToSection} class="special">Register interest
+                        now</button>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template if:true={isMediaLinksVisible}>
+        <section class="sectionContainer greyContainer">
+            <div class="textContainer">
+                <h2>Media links</h2>
+                <div class="mediaLinks">
+                    <div class="containerGrid1">
+                        <div class="mediaLinkContainer">
+                            <!-- Call the function from the controller to query the media links. -->
+                            <template for:each={lstMediaLinks} for:item="mediaLink">
+                                <div key={mediaLink.Id} class="mediaLink">
+                                    <a href={mediaLink.Media_URL__c}>{mediaLink.Name}</a>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!--* Grab all the icons from Static Resources - SocialMediaIcons -->
+                    <div class="containerGrid2 mediaLinksSocial socialIconsContainer">
+                        <!--* If one field is empty this will not render the icon and the url -->
+                        <!--TODO: Fix company website link -->
+                        <!--? Company website -->
+                        <template if:true={eoiData.Website_link__c}>
+                            <div class="link-container">
+                                <img src={websiteIcon} width="36" height="36" alt="Website icon" />
+                                <a href={websiteLink}>Website</a>
+                            </div>
+                        </template>
+
+                        <!--? Facebook -->
+                        <template if:true={eoiData.Facebook_link__c}>
+                            <div class="link-container">
+                                <img src={facebookIcon} width="36" height="36" alt="Facebook icon" />
+                                <a href={eoiData.Facebook_link__c}>Facebook</a>
+                            </div>
+                        </template>
+
+                        <!--? Instagram -->
+                        <template if:true={eoiData.Instagram_link__c}>
+                            <div class="link-container">
+                                <img src={instagramIcon} width="36" height="36" alt="Instagram icon" />
+                                <a href={eoiData.Instagram_link__c}>Instagram</a>
+                            </div>
+                        </template>
+                        <!--? LinkedIn -->
+                        <template if:true={eoiData.Linkedin_link__c}>
+                            <div class="link-container">
+                                <img src={linkedinIcon} width="36" height="36" alt="LinkedIn icon" />
+                                <a href={eoiData.Linkedin_link__c}>LinkedIn</a>
+                            </div>
+                        </template>
+
+                        <!--? LinkedIn -->
+                        <template if:true={eoiData.Twitter_X_link__c}>
+                            <div class="link-container">
+                                <img src={xIcon} width="36" height="36" alt="LinkedIn icon" />
+                                <a href={eoiData.Twitter_X_link__c}>X (Twitter)</a>
+                            </div>
+                        </template>
+
+                        <!--? Youtube -->
+                        <template if:true={eoiData.Youtube_link__c}>
+                            <div class="link-container">
+                                <img src={youtubeIcon} width="36" height="36" alt="Youtube icon" />
+                                <a href={eoiData.Youtube_link__c}>Youtube</a>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+
+                <div class="registerButton">
+                    <button title="Create Now" type="button" onclick={scrollToSection} class="special">Register interest
+                        now</button>
+                </div>
+            </div>
+        </section>
+    </template>
+    <div class="sectionContainer" data-id="formSection">
+        <!-- OLD EOI LEAD FORM -->
+        <!-- <c-custom-lead-form-e-o-i id-preview={eoiId}></c-custom-lead-form-e-o-i> -->
+
+        <!-- NEW EOI LEAD FORM - KENDRICK KAM PPG -->
+        <c-eoi-lead-form
+        eoi-id={eoiId}
+        eoi-name={eoiData.EOI_Title__c}
+        ></c-eoi-lead-form>
+    </div>
+</template>

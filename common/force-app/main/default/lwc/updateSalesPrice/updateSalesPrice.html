@@ -1,0 +1,26 @@
+<template>
+    <lightning-quick-action-panel header="UPDATE PRICE BOOK">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="text" label="Product Name" value={prodName} disabled></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="number" label="Current List Price" formatter="currency" value={currentSalesPrice} disabled></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="number" label="New List Price" formatter="currency" data-id="newSP" onchange={databinder}></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input type="number" label="Re Enter New List Price" formatter="currency" data-id="renewSP" onchange={databinder}></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <br/>
+                <div class="slds-text-color_destructive slds-align_absolute-center">Please note this is a permanent change and can’t be reversed.</div>
+            </div>
+        </div>        
+    <div slot="footer">
+        <lightning-button variant="neutral" label="Cancel" onclick={handleCancel}></lightning-button>
+        <lightning-button variant="brand" label="Save" class="slds-m-left_x-small" disabled={savebtndisabled} onclick={saverecord}></lightning-button>
+    </div>
+    </lightning-quick-action-panel>
+</template>

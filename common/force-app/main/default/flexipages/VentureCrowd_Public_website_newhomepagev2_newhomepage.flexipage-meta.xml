@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>e1c116f0-d2ea-48ca-be5d-96b4cc132910</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-37914b37-3f5c-4040-b73e-5ef5931b9b00</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentName>vcHeaderGuest</componentName>
+                <identifier>vcHeaderGuest</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Access highly vetted and purpose-driven investments, on the same terms as professional lead investors.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3od&amp;oid=00D2v000000WjFp&amp;lastMod=1629793675000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Join the crowd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/login/SelfRegister?utm_source=home&amp;utm_medium=direct&amp;utm_campaign=home&amp;utm_content=join_top</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>Same Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pg&amp;oid=00D2v000000WjFp&amp;lastMod=1629794440000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Login</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/login/</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>Same Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Invest in ventures and property in just a few minutes.</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>e1c116f0-d2ea-48ca-be5d-96b4cc132910</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f0445bda-49e1-4bb9-bab2-560254febda1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-a5e58575-dd92-4a9c-b2d8-bcd39dcb8764</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeaderText</name>
+                    <value>Why VentureCrowd?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3oi&amp;oid=00D2v000000WjFp&amp;lastMod=1629703070000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Join over 63,000 members investing in impactful opportunities across venture capital, alternative credit and property.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgTitle</name>
+                    <value>Shape The Future</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnLabel</name>
+                    <value>Explore Deals</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnRedirectUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/invest?utm_source=home&amp;utm_medium=direct&amp;utm_campaign=home&amp;utm_content=invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3on&amp;oid=00D2v000000WjFp&amp;lastMod=1629766327000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>Access deals that have undergone a rigorous due diligence process, on the same terms as sophisticated investors.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgTitle</name>
+                    <value>Highly Vetted Investments</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3os&amp;oid=00D2v000000WjFp&amp;lastMod=1629703475000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>We&apos;ve raised over $160,000,000, with a track record of success delivering venture capital exits and property funds returns.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgTitle</name>
+                    <value>Diversified Returns</value>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f0445bda-49e1-4bb9-bab2-560254febda1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1ff6726b-8bd6-4b8b-b602-6a84c31f12bf</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-21922a45-21fc-4c3b-8449-7fcc158a4bdc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>DescriptionText1</name>
+                    <value>&lt;p&gt;4DMedical is a &lt;strong&gt;global medical technology&lt;/strong&gt; company aiming to change the outcome for patients with lung disease by revolutionizing respiratory imaging and ventilation analysis.&lt;/p&gt; &lt;br&gt; &lt;p&gt;VentureCrowd investors were able to invest in the early funding of this MedTech venture, acquiring shares at $0.37. Only 18 months after 4DMedical raised capital through VentureCrowd, they listed on the ASX at $1.50 per share, &lt;strong&gt;delivering a 297% return&lt;/strong&gt; to VentureCrowd investors. &lt;/p&gt; &lt;br&gt; &lt;p&gt;Today, 4DMedical continues to improve global health by providing &lt;strong&gt;unique and non-invasive imaging technologies&lt;/strong&gt; that enable unprecedented insight into pulmonary functioning, critical in the analysis and management of respiratory diseases. &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>DescriptionText2</name>
+                    <value>&lt;p&gt;VentureCrowd enables investors to access &lt;strong&gt;high return property development projects&lt;/strong&gt; at all levels of the capital stack. We’ve built a full-scale property team that includes architects, engineers, developers and development managers with the ability to originate and manage end-to-end property development projects internally. &lt;/p&gt; &lt;br&gt; &lt;p&gt;Our property ventures are different in that they let you invest directly in different stages of property development. This includes the initial equity in the early stages of a project through to preference equity, mezzanine debt, first mortgage loans and property sales in the later stages. This allows us to have complete control over all aspects of the delivery, providing you with the trust that &lt;strong&gt;your investment is in expert hands.&lt;/strong&gt;&lt;/p&gt; &lt;br&gt; &lt;p&gt;Our due diligence is rigorous and our investment platform offers a seamless experience, making it safe and easy to manage your portfolio in one place. &lt;strong&gt;We’ve distributed over $8M in returns to property investors&lt;/strong&gt; and we’re enabling more and more Australians to access the booming property sector. &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>DescriptionText3</name>
+                    <value>&lt;p&gt;VentureCrowd portfolio company Jayride listed on the ASX in January 2018 making it &lt;strong&gt;Australia&apos;s ﬁrst crowd-funded startup exit&lt;/strong&gt;. VentureCrowd investors ﬁrst invested in Series A in December 2015, raising $200K Follow-on rounds in November 2016 and June 2017, raising more than $460K.&lt;/p&gt; &lt;br&gt; &lt;p&gt;Jayride listed on ASX in January 2018 at an issue price that was more than double the Series A investment, delivering a &lt;strong&gt;gross return of 107%&lt;/strong&gt; to VentureCrowd investors who participated in the ﬁrst round.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>DescriptionText4</name>
+                    <value>&lt;p&gt;Nexba is an &lt;strong&gt;Australian FoodTech business&lt;/strong&gt; that has developed a patent-pending Naturally Sugar-Free sweetener formula, has expanded into the UK and is on track for further global expansion.&lt;/p&gt; &lt;br&gt; &lt;p&gt;Through VentureCrowd, Nexba &lt;strong&gt;raised $6M&lt;/strong&gt; in a Series A round at a pre-money valuation of $20M including a syndicate of VentureCrowd members. In FY17 the company had gross revenue of $2.5M with VentureCrowd investors investing at a pre-money valuation of $20M. Since then, VentureCrowd has raised 2 additional rounds of capital for Nexba. &lt;strong&gt;In FY21 the company had grown to $35M gross revenue&lt;/strong&gt; and is forecast to nearly double again in FY22.&lt;/p&gt; &lt;br&gt; &lt;p&gt;Nexba’s naturally sugar-free sweetener formula has &lt;strong&gt;removed over 3 billion grams of sugar&lt;/strong&gt; from consumers’ diets.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL1</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3ox&amp;oid=00D2v000000WjFp&amp;lastMod=1629766643000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL2</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3p2&amp;oid=00D2v000000WjFp&amp;lastMod=1629718635000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL3</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3p7&amp;oid=00D2v000000WjFp&amp;lastMod=1629766718000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL4</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pC&amp;oid=00D2v000000WjFp&amp;lastMod=1629766605000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText1</name>
+                    <value>Success Story: 4DMedical</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText2</name>
+                    <value>Case Study: Property Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText3</name>
+                    <value>Success Story: Jayride</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText4</name>
+                    <value>Success Story: Nexba</value>
+                </componentInstanceProperties>
+                <componentName>homeCarousel</componentName>
+                <identifier>homeCarousel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1ff6726b-8bd6-4b8b-b602-6a84c31f12bf</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>be994174-a41c-4375-af5c-056cdeedd876</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-d80436f4-6a25-4f7a-b599-d2b1f28cd1bb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor page-home&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row pb-5 pt-5&quot;&gt;
+            &lt;br&gt;
+            &lt;div class=&quot;col&quot;&gt;&lt;h3&gt;Australia’s leading digital investment platform for alternative assets&lt;/h3&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                        &lt;img src = &quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pR&amp;oid=00D2v000000WjFp&amp;lastMod=1629775850000&quot; alt=&quot;profile&quot;  /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;strong&gt;Ventures&lt;/strong&gt;: We offer investment opportunities for retail and wholesale investors in pre-vetted high growth private companies, with opportunities across early-stage, follow-on and pre-IPO stages of funding.&lt;/p&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                        &lt;img src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pW&amp;oid=00D2v000000WjFp&amp;lastMod=1629775794000&quot; alt=&quot;portfolio&quot;  /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;strong&gt;Property&lt;/strong&gt;: VentureCrowd provides diversified investment opportunities across property development funds and projects, with access to all stages of a property development including land development (equity), civil works (preferred equity/mezzanine debt), construction (first mortgage loans) and through to property sales.&lt;/p&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                        &lt;img src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pb&amp;oid=00D2v000000WjFp&amp;lastMod=1629775400000&quot; alt=&quot;future&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;strong&gt;Invest online, anytime&lt;/strong&gt;: Our secure platform allows you to manage a diversified portfolio of alternative assets, provoding you with a seamless and easy-to-use experience to monitor your investments online 24/7. Our investor relations team is there to suppor you at any stage of the process. &lt;/p&gt;
+                        &lt;br&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-6 pb-5&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pH&amp;oid=00D2v000000WjFp&amp;lastMod=1629721346000&quot; /&gt;
+                &lt;div class=&quot;image-caption mt-3 text-center&quot;&gt;&lt;img src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUc&amp;oid=00D2v000000WjFp&amp;lastMod=1627369381000&quot; alt=&quot;tick-icon&quot; border=&quot;0&quot;&gt; Every deal is subject to our rigorous curation process&lt;/div&gt;
+            &lt;br&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>be994174-a41c-4375-af5c-056cdeedd876</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c969d621-5c6d-4a59-8aa6-7adfb37bc4c8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-6c278261-2d4b-4855-8de1-5a5875b8eb4b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeaderText</name>
+                    <value>How does it work?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Dark Navy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUh&amp;oid=00D2v000000WjFp&amp;lastMod=1627369540000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Register in a few minutes and we’ll take you through the ID verification process in the platform.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgTitle</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnLabel</name>
+                    <value>Read More</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnRedirectUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/more/how-it-works-2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFVB&amp;oid=00D2v000000WjFp&amp;lastMod=1627371503000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>Invest seamlessly in high growth startups and property. By investing directly through crowdfunding, you’re helping to  shape the future!</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgTitle</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUr&amp;oid=00D2v000000WjFp&amp;lastMod=1627369698000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>Ventures: If the company is successful, then you share in that success. Property: Many investment opportunities yield monthly returns, others also provide profit share returns.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgTitle</name>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c969d621-5c6d-4a59-8aa6-7adfb37bc4c8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>93908650-114d-46cb-8395-d4ef6344aaf8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1a723ec8-17ba-41dc-ba1f-17db75b1a508</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentName>vcProductListLwc</componentName>
+                <identifier>vcProductListLwc</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>93908650-114d-46cb-8395-d4ef6344aaf8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>7f4f2942-783a-4007-bcf0-3b2c305b31c8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ea12c1f2-7fcc-4a5f-b211-3f88220f7f74</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Acess high yield and socially responsible investment opportunities,&lt;br/&gt;  managed by experienced teams with deep funds management expertise.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JOywf&amp;d=%2Fa%2F2v000000ELOS%2F4D5UeLOXCJtTOv0IajzzICB0MuOvjeYLhDqIFtwYRgw&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Start Now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/login/SelfRegister?utm_source=home&amp;utm_medium=direct&amp;utm_campaign=home&amp;utm_content=join_bottom</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>Same Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>We find and fund the future.&lt;br/&gt; A future that is good for investors,  &lt;br/&gt; founders and humanity.</value>
+                </componentInstanceProperties>
+                <componentName>vcBgImageWithText</componentName>
+                <identifier>vcBgImageWithText</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>7f4f2942-783a-4007-bcf0-3b2c305b31c8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>528f7409-aa50-4985-ad59-8d1541b4cd84</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1a11df90-8e20-4145-bfd0-26d642c2cb2c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Column_1</name>
+                    <value>&lt;p&gt;Crowdfunding has changed the way you can raise capital when starting a business venture. Traditionally, if you wanted to raise money to launch a new product or startup business, you would need to pitch your idea to a bank, venture capital firm or another financial institution, or approach a wealthy individual who was interested in &lt;a href=&quot;https://vc-internal.force.com/s/angel-investing/&quot; target=“_blank”&gt;angel investing&lt;/a&gt;.&lt;/p&gt;&lt;p&gt; Crowdfunding is a way for entrepreneurs to raise capital for a new business venture from a large number of individual investors who are willing to invest in your startup or idea. Rather than just finding one or two large investors, crowdfunding involves a ‘crowd’ of investors.&lt;/p&gt; &lt;br&gt; &lt;p&gt; There are a few different types of crowdfunding including donation-based crowdfunding, reward-based crowdfunding and equity crowdfunding. With donation-based crowdfunding, there is no financial gain to those providing the funds. This form of crowdfunding is often used by charities or for fundraising for disaster relief. Reward-based crowdfunding is when you receive a product or service from the startup business rather than money. Equity-based crowdfunding is where investors take equity in a business in exchange for a cash investment. There are several crowdfunding platforms available, each with different goals, guidelines and target markets.                 &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Column_2</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Context</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Header</name>
+                    <value>Crowdfunding Equity Investment Platform in Australia</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Name</name>
+                    <value>Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Column_1</name>
+                    <value>&lt;p&gt; Crowdfunding is a way for entrepreneurs to raise capital for a new business venture from a large number of individual investors who are willing to invest in your startup or idea. Rather than just finding one or two large investors, crowdfunding involves a ‘crowd’ of investors.&lt;/p&gt; &lt;br&gt; &lt;p&gt; There are a few different types of crowdfunding including donation-based crowdfunding, reward-based crowdfunding and equity crowdfunding. With donation-based crowdfunding, there is no financial gain to those providing the funds. This form of crowdfunding is often used by charities or for fundraising for disaster relief. Reward-based crowdfunding is when you receive a product or service from the startup business rather than money. Equity-based crowdfunding is where investors take equity in a business in exchange for a cash investment. There are several crowdfunding platforms available, each with different goals, guidelines and target markets.                 &lt;/p&gt;  &lt;p&gt;VentureCrowd is an equity crowdfunding platform, so rather than receiving a product or simply making a donation, if you invest in one of our deals you will receive equity or ownership in the company that is raising the capital or in the underlying property development asset. VentureCrowd is a multi-asset class crowdfunding platform that provides investors with direct access to handpicked investment opportunities in alternative assets that have traditionally been linked to specialised lenders or institutional investors.&lt;/p&gt; &lt;br&gt; &lt;p&gt;Whether you are an established business owner, an entrepreneur or a property developer, we provide alternative finance from a pool of investors across Australia. Not only will your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Column_2</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Context</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Header</name>
+                    <value>What is crowdfunding?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Name</name>
+                    <value>What is crowdfunding?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Column_1</name>
+                    <value>&lt;p&gt; If you are raising capital and want to set up a crowdfunding campaign, you’ll need a business plan, a financial forecast so your investors know what to expect, and you’ll also need to work out how much money you want to raise. The VentureCrowd platform makes it easy to work collaboratively with our team to launch your campaign. If you are wondering how to set up a crowdfunding account, with our automated self-service platform, setting up a crowdfunding account is very straight forward. Whether you are a new startup looking to raise capital or an investor looking for &lt;a href=&quot;https://vc-internal.force.com/s/high-return-investments&quot; target=“_blank”&gt;high return investment&lt;/a&gt; opportunities, you can register online via our website. And if you have any questions as you go, you can get in contact with us and we’d love to help you.&lt;/p&gt; &lt;br&gt; &lt;p&gt; At VentureCrowd, we offer unrivalled exposure for your project via our leading platform. Your project can be seen by over 50 thousand investors, buyers, partners and contributors through a comprehensive multi-channel digital campaign. And after we receive all the necessary details about your project, there is a very quick turnaround. For example, we should be able to assess your property project within 48 hours. And with a dedicated campaign manager, you will get all the support you need. Through VentureCrowd you’ll have access to a large and fast-growing group of investors. It is the ideal platform to capture the attention of like-minded individuals who care about what you stand for and show them that your venture is worth investing in. We also have a range of helpful campaign services to choose from including PR and Digital Marketing. A funding round typically runs for six weeks. Once the investments have been received and the funding round is closed, we’ll transfer the funds. All the legal documentation will be taken care of via the platform too, so you can get on with making your business a success. &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Column_2</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Context</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Header</name>
+                    <value>How to promote a crowdfunding campaign?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Name</name>
+                    <value>How to promote a crowdfunding campaign?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Column_1</name>
+                    <value>&lt;p&gt; There are many advantages of crowdfunding and using platforms like VentureCrowd. Crowdfunding gives you a wider audience which is not only a great way to raise more capital, but it also streamlines the process and will save you time. You won’t need to approach each investor individually, and you’ll only need one pitch. It is also a good way to refine your ideas as potential investors can provide useful feedback while you are developing your product or business. Your investors are also likely to give you free word-of-mouth advertising. &lt;/p&gt; &lt;br&gt; &lt;p&gt; With over $135M raised across 100 deals from wholesale investors, VentureCrowd has been successfully raising &lt;a href=&quot;/one/one.app#/alohaRedirect/https://vc-internal.force.com/s/venture-capital/&quot; target=“_blank”&gt;venture capital&lt;/a&gt; for over four years. Just like other countries around the world, Australia has now passed legislation to allow retail investors to participate too. This type of investing structure may also be called &lt;a href=&quot;https://vc-internal.force.com/s/syndicate-investing/&quot; target=“_blank”&gt;syndicate investing&lt;/a&gt;. This means that anyone 18 years or above who is residing in Australia can now invest in Crowd-Sourced Funding (CSF) offers. &lt;/p&gt; &lt;br&gt; &lt;p&gt; When it comes to maximising your wealth and getting the most from your financial portfolio, &lt;a href=&quot;https://vc-internal.force.com/s/mortgage-funds/&quot; target=“_blank”&gt;Mortgage Funds&lt;/a&gt; may expand your horizons from just property investing. However, any investment decision should be made with due diligence and research. VentureCrowd can guide you through handpicked &lt;a href=&quot;https://vc-internal.force.com/s/property/companies/&quot; target=“_blank”&gt;investment property companies&lt;/a&gt; and opportunities. You can gain high returns from a &lt;a href=&quot;https://vc-internal.force.com/s/property/brisbane/&quot; target=“_blank”&gt;Brisbane property investment&lt;/a&gt; or an investment in &lt;a href=&quot;https://vc-internal.force.com/s/property/gold-coast/&quot; target=“_blank”&gt;Gold Coast&lt;/a&gt; through our &lt;a href=&quot;https://vc-internal.force.com/s/property/funds/&quot; target=“_blank”&gt;property funds&lt;/a&gt; that will allow you to get exposure to unique opportunities in real estate offering a steady income and capital growth. &lt;/p&gt; &lt;br&gt; &lt;p&gt; VentureCrowd provides opportunities for investing in venture capital in &lt;a href=&quot;https://vc-internal.force.com/s/venture-capital/sydney/&quot; target=“_blank”&gt;Sydney&lt;/a&gt;, &lt;a href=&quot;https://vc-internal.force.com/s/venture-capital/melbourne/&quot; target=“_blank”&gt;Melbourne&lt;/a&gt; and &lt;a href=&quot;https://vc-internal.force.com/s/venture-capital/brisbane&quot; target=“_blank”&gt;Brisbane&lt;/a&gt;. Join Australia’s leading equity crowdfunding platform today and learn more about &lt;a href=&quot;https://vc-internal.force.com/s/high-yield-investments/&quot; target=“_blank”&gt;high yield investment&lt;/a&gt; opportunities! &lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Column_2</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Context</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Header</name>
+                    <value>Is Crowdfunding worth it?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Name</name>
+                    <value>Is Crowdfunding worth it?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>themecolor</name>
+                    <value>Dark Navy</value>
+                </componentInstanceProperties>
+                <componentName>vcHomeFaq</componentName>
+                <identifier>vcHomeFaq</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>528f7409-aa50-4985-ad59-8d1541b4cd84</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-37914b37-3f5c-4040-b73e-5ef5931b9b00</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;37914b37-3f5c-4040-b73e-5ef5931b9b00&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;e1c116f0-d2ea-48ca-be5d-96b4cc132910&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-a5e58575-dd92-4a9c-b2d8-bcd39dcb8764</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;a5e58575-dd92-4a9c-b2d8-bcd39dcb8764&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f0445bda-49e1-4bb9-bab2-560254febda1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>62</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-21922a45-21fc-4c3b-8449-7fcc158a4bdc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;21922a45-21fc-4c3b-8449-7fcc158a4bdc&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1ff6726b-8bd6-4b8b-b602-6a84c31f12bf&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-d80436f4-6a25-4f7a-b599-d2b1f28cd1bb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;d80436f4-6a25-4f7a-b599-d2b1f28cd1bb&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;be994174-a41c-4375-af5c-056cdeedd876&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(15,20,30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>66</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-6c278261-2d4b-4855-8de1-5a5875b8eb4b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;6c278261-2d4b-4855-8de1-5a5875b8eb4b&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c969d621-5c6d-4a59-8aa6-7adfb37bc4c8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>59</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1a723ec8-17ba-41dc-ba1f-17db75b1a508</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1a723ec8-17ba-41dc-ba1f-17db75b1a508&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;93908650-114d-46cb-8395-d4ef6344aaf8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ea12c1f2-7fcc-4a5f-b211-3f88220f7f74</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ea12c1f2-7fcc-4a5f-b211-3f88220f7f74&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;7f4f2942-783a-4007-bcf0-3b2c305b31c8&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(15,20,30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(15, 20, 30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>61</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1a11df90-8e20-4145-bfd0-26d642c2cb2c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1a11df90-8e20-4145-bfd0-26d642c2cb2c&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;528f7409-aa50-4985-ad59-8d1541b4cd84&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>VentureCrowd is Australia&apos;s leading equity crowdfunding investment platform for startups, property development &amp; alternative assets.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Crowdfunding equity investment platform | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>newhomepagev2_newhomepage</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

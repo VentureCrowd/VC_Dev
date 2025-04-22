@@ -1,0 +1,104 @@
+.liner{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    padding-bottom: var(--space-xxl);
+
+}
+
+.raise-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-family: 'SuisseIntl-Regular';
+    font-size: var(--text-lg);
+}
+.title {
+    font-family: 'SuisseIntl-Regular';
+    font-size: var(--text-xxl);
+}
+
+.actions{
+    display: flex;
+    gap: var(--space-md);
+}
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-info {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+/* logo css */
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.raise-progress {
+    padding: var(--space-xl);
+    border-radius: 9px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(1px 0px 10.6px rgba(0, 0, 0, 0.10));
+}
+
+.raise-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.raise-information h1 {
+    font-size: var(--text-lg);
+}
+
+@media screen and (max-width: 490px){
+    .raise-header{
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+}
+
+/* ERROR CONTAINER */
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 500px;
+    margin: auto;
+    margin-top: var(--space-xxl);
+}
+
+.error-container h1 {
+    font-family: 'SuisseIntl-Bold';
+    font-size: var(--text-xxl);
+    text-align: center;
+    padding-bottom: var(--space-md);
+}
+
+.error-container p {
+    text-align: center;
+    padding-bottom: var(--space-md);
+}

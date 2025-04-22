@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trust_Deed_Text__c</fullName>
+    <defaultValue>&apos;The deed entered into by the Trustee (as amended) establishing the Trust, the terms of which are set out in the Schedule to this Investment Contract.&apos;</defaultValue>
+    <description>this field is utilised on the contract modal</description>
+    <inlineHelpText>this field is utilised on the contract modal</inlineHelpText>
+    <label>Trust Deed Text</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<template>
+    <div 
+        class="tooltip-container"
+        onclick={toggleTooltip}
+        onmouseover={handleMouseOver}
+        onmouseleave={handleMouseLeave}
+    >
+        <c-core-icon 
+            icon-name="information" 
+            size={size}>
+        </c-core-icon>
+        <div class="tool-tip" lwc:ref="containerTooltip" data-tooltip role="tooltip">
+            <p>{helpText}</p>
+        </div>
+    </div>
+</template>

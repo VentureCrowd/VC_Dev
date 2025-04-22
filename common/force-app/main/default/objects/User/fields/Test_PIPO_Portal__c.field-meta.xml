@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_PIPO_Portal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is a provisional field to test PIPO Portal. This needs to be deleted after launch of the portal</description>
+    <label>Test PIPO Portal</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

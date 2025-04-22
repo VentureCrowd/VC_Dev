@@ -1,0 +1,215 @@
+p {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: var(--text-lg);
+}
+
+.verification-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-margin {
+    margin-bottom: var(--space-md);
+}
+
+.wrapper-pipo {
+    padding: var(--space-xl) var(--space-xxl);
+}
+
+@media (width >= 0px) and (width <= 600px) {
+    .wrapper-pipo{
+        padding-inline: var(--space-md);
+    }
+}
+
+.welcome-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--space-md);
+}
+
+.welcome-wrapper h2{
+    font-size: 32px;
+    font-family: 'SuisseIntl-Regular';
+}
+
+@media (width >= 0px) and (width <= 600px) {
+    .welcome-wrapper{
+        padding-top: var(--space-lg);
+    }
+}
+.spotlight-wrapper {
+    padding-block: var(--space-md);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+@media (width >= 0px) and (width <= 1228px) {
+    .spotlight-wrapper {
+        grid-template-columns: 1fr;
+        padding-top: var(--space-lg);
+    }
+}
+
+.tooltip-wrapper {
+    display: flex;
+}
+
+.tooltip-wrapper p {
+    font-size: var(--text-xl);
+    font-family: 'SuisseIntl-Light';
+}
+
+.spotlight-wrapper h1 {
+    font-size: var(--text-4xl);
+}
+
+/* Hide the footer in the cards */
+.spotlight-footer {
+    display: none;
+}
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg) 0;
+}
+
+.loading-spinner h1 {
+    margin: 0;
+}
+
+.card-investment-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.card-investment-wrapper h2{
+    font-size: var(--text-lg);
+    font-family: 'SuisseIntl-Light';
+}
+
+.card-investment-wrapper p{
+    color: var(--gray-4);
+}
+
+.investment-opportunities {
+    margin-block: var(--space-xxl);
+}
+
+.footer-cards {
+    display: none;
+}
+
+.cards-container {
+    margin-top: var(--space-lg);
+}
+
+
+.space-xl {
+    margin-top: var(--space-xl);
+}
+
+
+/* Banner styling */
+
+.banner-warning-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 18px;
+    background: #C6BEFA;
+    gap: var(--space-md);
+}
+
+.banner-warning-container .content {
+    display: flex;
+    gap: var(--space-sm);
+    flex-direction: row;
+}
+
+.banner-warning-container .content p{
+    margin: 0px;
+}
+
+.banner-warning-container .content p.bold{
+    font-family: 'SuisseIntl-Bold' !important;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.text-mobile {
+    display: none;
+}
+
+.inactive-investment-link {
+    color: #407FFF;
+    cursor: pointer;
+}
+
+@media (width <= 720px) {
+    .text-mobile {
+        display: block;
+    }
+    .text-desktop {
+        display: none;
+    }
+}
+
+/* Style 2 is for square inside box */
+.banner-style {
+    display: flex;
+    align-items: center;
+    padding: var(--space-md);
+    border: 1px solid var(--primary-accent);
+    gap: var(--space-xs);
+}
+
+@media (width <= 720px) {
+    .banner-style.desktop {
+        display: none;
+    }
+    .banner-style {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (width >= 720px) {
+    .banner-style.mobile {
+        display: none;
+    }
+}
+
+
+
+.information{
+    background: var(--Dove, #F0F1F2);
+}
+
+.banner-style c-core-icon {
+    cursor: pointer;
+    color: #707070;
+}
+
+strong {
+    font-family: 'SuisseIntl-Bold';
+}

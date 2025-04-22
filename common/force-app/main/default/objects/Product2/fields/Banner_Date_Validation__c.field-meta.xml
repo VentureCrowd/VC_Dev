@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banner_Date_Validation__c</fullName>
+    <description>We are going to use this field to sync up the raiseBanners in the website</description>
+    <formula>NOW() &lt; Offer_Close_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>We are going to use this field to sync up the raiseBanners in the website</inlineHelpText>
+    <label>Banner Date Validation</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

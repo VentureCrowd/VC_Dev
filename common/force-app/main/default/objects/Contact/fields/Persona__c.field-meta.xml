@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Persona__c</fullName>
+    <label>Investment Persona (RFM)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The Novice</fullName>
+                <color>#33FFFF</color>
+                <default>false</default>
+                <label>The Novice</label>
+            </value>
+            <value>
+                <fullName>The Wealth Creator</fullName>
+                <color>#33FFFF</color>
+                <default>false</default>
+                <label>The Wealth Creator</label>
+            </value>
+            <value>
+                <fullName>The Sharp Shooter</fullName>
+                <color>#33FFFF</color>
+                <default>false</default>
+                <label>The Sharp Shooter</label>
+            </value>
+            <value>
+                <fullName>The Grand Designers</fullName>
+                <color>#333333</color>
+                <default>false</default>
+                <label>The Grand Designers</label>
+            </value>
+            <value>
+                <fullName>The Conscious Investor</fullName>
+                <color>#333333</color>
+                <default>false</default>
+                <label>The Conscious Investor</label>
+            </value>
+            <value>
+                <fullName>The Lifestyle Maintainer</fullName>
+                <color>#333333</color>
+                <default>false</default>
+                <label>The Lifestyle Maintainer</label>
+            </value>
+            <value>
+                <fullName>Conscious Investor</fullName>
+                <default>false</default>
+                <label>Conscious Investor</label>
+            </value>
+            <value>
+                <fullName>Grand Designer</fullName>
+                <default>false</default>
+                <label>Grand Designer</label>
+            </value>
+            <value>
+                <fullName>Keen Bean</fullName>
+                <default>false</default>
+                <label>Keen Bean</label>
+            </value>
+            <value>
+                <fullName>Sharp Shooter</fullName>
+                <default>false</default>
+                <label>Sharp Shooter</label>
+            </value>
+            <value>
+                <fullName>Wealth Creator</fullName>
+                <default>false</default>
+                <label>Wealth Creator</label>
+            </value>
+            <value>
+                <fullName>ABOUT TO DUMP YOU - VIP</fullName>
+                <default>false</default>
+                <label>ABOUT TO DUMP YOU - VIP</label>
+            </value>
+            <value>
+                <fullName>SOULMATE</fullName>
+                <default>false</default>
+                <label>SOULMATE</label>
+            </value>
+            <value>
+                <fullName>NEW PASSION</fullName>
+                <default>false</default>
+                <label>NEW PASSION</label>
+            </value>
+            <value>
+                <fullName>EX-LOVER</fullName>
+                <default>false</default>
+                <label>EX-LOVER</label>
+            </value>
+            <value>
+                <fullName>ABOUT TO DUMP YOU</fullName>
+                <default>false</default>
+                <label>ABOUT TO DUMP YOU</label>
+            </value>
+            <value>
+                <fullName>BREAKUP</fullName>
+                <default>false</default>
+                <label>BREAKUP</label>
+            </value>
+            <value>
+                <fullName>PLATONIC FRIEND</fullName>
+                <default>false</default>
+                <label>PLATONIC FRIEND</label>
+            </value>
+            <value>
+                <fullName>LOVER</fullName>
+                <default>false</default>
+                <label>LOVER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<!--ErrorToastMessage_CMP-->
+<aura:component implements="lightning:availableForFlowScreens,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+        
+    <aura:attribute name="displayErrorMessage" type="Boolean" access="global"  />
+</aura:component>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Type__c</fullName>
+    <description>This field determines if it is an Invoice or a Bill transaction</description>
+    <inlineHelpText>Invoice is something that has been paid to.
+Bill is something that needs to be paid</inlineHelpText>
+    <label>Transaction Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Bill</fullName>
+                <default>false</default>
+                <label>Bill</label>
+            </value>
+            <value>
+                <fullName>Bank Transaction</fullName>
+                <default>false</default>
+                <label>Bank Transaction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

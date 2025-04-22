@@ -1,0 +1,135 @@
+.wrapper {
+  --circle-size: clamp(2rem, 2vw, 3rem);
+  --spacing: clamp(0.25rem, 2vw, 0.5rem);
+}
+.c-stepper {
+  display: flex;
+}
+@media (width >= 0px) and (width <= 600px) {
+  .c-stepper {
+    flex-direction: column;
+  }
+}
+li {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* text-align: center; */
+}
+li:before {
+  --size: 3rem;
+  content: "";
+  display: block;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background-color: #CFCECC;
+  /* margin: 0 auto 1rem; */
+  margin: 0 0 1rem;
+}
+
+.active:before {
+  background-color: #D95BAA;
+}
+
+.completed:before {
+  background-color: #D95BAA;
+}
+/* Vertical stepper */
+.c-stepper .active:not(:last-child):after {
+  background-color: #D95BAA;
+  border-top: 2px dotted #D95BAA; /* Dotted line */
+}
+
+.c-stepper .completed:not(:last-child):after {
+  background-color: #D95BAA;
+  border-top: 2px dotted #D95BAA; /* Dotted line */
+}
+
+.c-stepper li:not(:last-child):after {
+  content: "";
+  position: relative;
+  top: calc(var(--circle-size) / 2);
+  width: calc(100% - var(--circle-size) - calc(var(--spacing) * 0.5));
+  left: calc(4% + calc(var(--circle-size) / 2 + var(--spacing)));
+  height: 0; /* Set height to 0 as we are using border for the line */
+  border-top: 3px dotted #fff; /* Dotted line */
+  background-color: #CFCECC;
+  order: -1;
+}
+
+.c-stepper__title {
+  font-weight: bold;
+  font-size: clamp(1rem, 4vw, 0.25rem);
+  margin-bottom: 0.5rem;
+}
+.c-stepper__desc {
+  color: #7F7E7E;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  padding-right: var(--spacing);
+}
+
+.c-stepper__subdesc {
+  color: #B5B5B5;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  padding-right: var(--spacing);
+}
+
+
+body {
+  padding: 1rem;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*! Vertical Stepper */
+
+.c-stepper-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+}
+
+.c-stepper-vertical li {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.c-stepper-vertical li:before {
+  content: "";
+  display: block;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.c-stepper-vertical .active:before,
+.c-stepper-vertical .completed:before {
+  background-color: #D95BAA;
+}
+
+.c-stepper-vertical li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  left: calc(var(--circle-size) / 2);
+  top: calc(var(--circle-size));
+  width: 2px;
+  height: 100%;
+  /* background-color: #CFCECC; */
+  border-left: 2px dotted #CFCECC;
+}
+
+.c-stepper-vertical .active:not(:last-child):after,
+.c-stepper-vertical .completed:not(:last-child):after {
+  border-left: 2px dotted #D95BAA;
+  background-color: #D95BAA;
+}

@@ -1,0 +1,43 @@
+/* settings for small mobile devices*/
+@media screen and (max-width:767px) {
+    .mobilemargintop {
+        margin-top: 1.65em;
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+    }
+
+    /* entire group of tiles */
+    .cb-section_row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+
+/* settings for medium-sized mobile devices*/
+@media screen and (min-width: 768px) and (max-width:1180px) {
+
+    /* ea tile settings */
+    .mobilemargintop {
+        margin-top: 1.65em;
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+    }
+}
+
+/* settings for large screen computers*/
+@media screen and (min-width:1200px) {
+
+    /* ea tile settings */
+    .mobilemargintop {
+        margin-top: 1.65em;
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+    }
+
+    /* entire group of tiles */
+    .cb-section_row {
+        width: 100% !important;
+        max-width: 1250px !important;
+    }
+}

@@ -1,0 +1,241 @@
+.sxsw-banner{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 800px){
+    .sxsw-banner{
+        flex-direction: column;
+    }
+}
+
+
+.container-left,.container-right{
+    flex: 1;
+    padding: var(--space-xxl);
+}
+
+.container-left{
+    background: var(--primary-accent);
+}
+@media screen and (max-width: 800px){
+    .container-left{
+        max-height: 450px;
+        height: 100%;
+    }
+}
+
+.container-left .content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.container-left h1{
+    font-size: 80px;
+    color: white;
+    font-family: 'SuisseIntl-Bold' !important;
+}
+@media screen and (max-width: 800px){
+    .container-left h1{
+        font-size: 40px;
+    }
+}
+
+.content {
+    max-width: 450px;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px){
+    .content {
+        max-width: 250px;
+    }
+}
+
+
+.container-right .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.container-right .text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+@media screen and (max-width: 800px){
+    .container-right .text{
+        flex-direction: column-reverse;
+    }
+}
+
+.container-right .text c-core-icon{
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    .container-right .text c-core-icon {
+        position: relative;
+        top: -100px;
+    }
+}
+
+
+.container-right .content .text h2{
+    color: white;
+    font-family: 'SuisseIntl-Medium' !important;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 800px){
+    .container-right .content .text h2{
+        font-size: 22px;
+    }
+}
+
+.container-right .star c-core-icon{
+    color: var(--primary-accent);
+
+}
+
+@media screen and (max-width: 800px) {
+    .container-right .star{
+        position: relative;
+        top: -100px;
+        right: -20px;
+    }
+
+    .container-right .star c-core-icon{
+        color: white;
+     }
+}
+.content .star{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sxsw-button{
+    border-radius: 180px;
+    border: 1.8px solid #FFF;
+    display: inline-flex;
+    padding: 21.6px 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background-color: transparent;
+    font-size: 28px;
+    font-family: 'SuisseIntl-Medium';
+    width: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+    .sxsw-button{
+        display: inline-flex;
+        padding: 12px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        border: 1px solid #FFF;
+        color: var(--White, #FFF);
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* SECOND PART OF THE PAGE */
+
+.sxsw-form-container{
+    background-color: #FFF;
+    padding: var(--space-xxl);
+    width: 100%;
+}
+@media screen and (max-width: 800px){
+    .sxsw-form-container{
+        padding: var(--space-lg);
+    }
+}
+
+.sxsw-content{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxl);
+}
+@media screen and (max-width: 800px){
+    .sxsw-content{
+        max-width: 350px;
+        gap: var(--space-lg);
+    }
+}
+
+.landing-page-description p{
+    font-size: 50px;
+    font-family: 'SuisseIntl-Light';
+    text-align: center;
+}
+@media screen and (max-width: 800px){
+    .landing-page-description p{
+        font-size: 20px;
+    }
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+    background: white;
+    margin: auto;
+    width: 100%;
+    padding: var(--space-xxl);
+    text-align: center;
+}
+
+.footer-logos img{
+    width: 450px;
+}
+@media screen and (max-width: 800px){
+    .footer-logos img {
+        width: 250px;
+    }
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+@media screen and (max-width: 800px){
+    .footer-logos {
+        flex-direction: column;
+    }
+}
+
+.footer-section p{
+    color: #797979;
+    font-size: 16px;
+    font-style: italic;
+}
+@media screen and (max-width: 800px){
+    .footer-section p{
+        font-size: 12px;
+    }
+}
+
+.sxsw-subtext-founder{
+    font-family: 'SuisseIntl-Bold' !important;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px){
+    .sxsw-subtext-founder{
+        font-size: 16px;
+    }
+}

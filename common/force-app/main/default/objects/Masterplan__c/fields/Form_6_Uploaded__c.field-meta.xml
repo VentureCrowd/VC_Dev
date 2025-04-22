@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_6_Uploaded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Please only check this box when the form 6 file for the stage has been uploaded.</inlineHelpText>
+    <label>Form 6 Uploaded</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

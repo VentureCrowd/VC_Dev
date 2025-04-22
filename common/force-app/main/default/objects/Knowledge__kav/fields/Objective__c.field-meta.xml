@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objective__c</fullName>
+    <description>Objective of the knowledge article</description>
+    <inlineHelpText>Please enter the objective of the knowledge article</inlineHelpText>
+    <label>Objective</label>
+    <length>32768</length>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

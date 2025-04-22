@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Transaction_Type__c</columns>
+    <columns>XI_From_Name__c</columns>
+    <columns>XI_Line_Items_Description__c</columns>
+    <columns>Investment_MOP__c</columns>
+    <columns>Investment__c</columns>
+    <columns>Account__c</columns>
+    <columns>Investee_Entity__c</columns>
+    <columns>Status__c</columns>
+    <columns>VC_Entity__c</columns>
+    <columns>Transaction_Amount__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Xero_ID_of_Transaction__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,32 @@
+<template>
+    <div class="stat-container">
+        <div class="summary-statistics">
+            <template for:each={cards} for:item="card">
+                <div class="stat-card" key={card.name}>
+                    <div class="stat-header">
+                        <c-core-icon icon-name={card.iconName}  size="xxxlarge"></c-core-icon>
+                    </div>
+                    <div class="stat-body">
+                        <div class="stat-num">{card.statistic}</div>
+                        <div class="stat-label">{card.label}</div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div class="resource">
+            <div class="text">
+                <div class="title">Need some help with your raise?</div>
+                <div>
+                    You can still access our Capital Raising 101 course 
+                    <br> 
+                    for a refresher on how to manage your campaign.
+                </div>
+                <c-core-button label="Access Resources" onbuttonclick={handleAccessResources} variation="black"></c-core-button>
+                <div>Have further questions? <a href="#">Contact our team</a></div>
+            </div>
+            <div class="image"> 
+                <img src={needHelpImgSrc} />
+            </div>
+        </div>
+    </div>
+</template>

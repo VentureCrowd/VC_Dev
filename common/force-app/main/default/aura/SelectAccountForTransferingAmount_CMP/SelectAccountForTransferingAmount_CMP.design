@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="oppId" label="Opportunity Id" />
+    <design:attribute name="selectedAccId" label="Selected Account Id" />
+    <design:attribute name="TransferAmount" label="Selected Transfer Amount" />
+    <design:attribute name="DateOfApplication" label="Selected Date of Application" />
+    <design:attribute name="OppAmount" label="Selected Opportunity Amount" />
+
+</design:component>

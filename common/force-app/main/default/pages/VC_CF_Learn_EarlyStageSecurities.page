@@ -1,0 +1,319 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_LearnCommonCSS}"/>
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+    
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+    <!-- Body -->
+   
+    
+    <div id="vc_content__container" class="position-relative page-slug-early-stage-securities">
+      <!-- Header -->
+      <section class="header">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-12 text-center text-white">
+              <h4 class="mt-3">Investor Education</h4>
+              <h2 class="mt-4">What are the early stage securities?</h2>
+              <div class="prev-next-container mt-4">
+                 
+               <a href="{!$Label.VC_CF_Public_URL + '/investor-education/investment-via-vc'}" class="mr-4">&lt;</a>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/why-include-ess/'}" class="ml-4">&gt;</a>
+             
+			</div>
+            </div>
+          </div>
+        </div>
+        <div class="row-bg-overlay"></div>
+        <div class="row-bg" style="background-image: url(https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-invest-education.jpg)"></div>
+      </section>
+
+      <!-- Index -->
+      <section class="index">
+        <div class="container">
+          <div class="row justify-content-center pt-5 pb-3">
+            <div class="col-md-12 col-lg-6">
+              <a href="#overview">Overview</a>
+              <a href="#stages-of-growth">Stages of growth of a typical early stage business</a>
+              <a href="#equity-financy">Why do companies seek equity finance?</a>
+              <a href="#accelerate-growth">How do companies spend the money invested to accelerate growth?</a>
+              <a href="#return">How do investors realise a return?</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+
+              <!-- Section: Overview -->
+              <div id="overview" class="content-block">
+                <h3>Overview</h3>
+                <p>
+                  The term ‘early-stage securities’ generally refers to shares, or securities that are convertible into shares, in companies that are at an early stage of their
+                  development.
+                </p>
+                <p>This usually means the company has developed a new product or business idea, but has little (or no) revenue.</p>
+                <p>
+                  Early stage securities are a high-risk high-return growth asset. The benefit of investing in companies at this early stage is that the price of the shares will be
+                  low (relative to more mature companies), allowing early investors to benefit from high levels of growth if the company is successful.
+                </p>
+                <p>
+                  Of course, investing at an early stage is also where the greatest risk resides. For example, the technology may need further development, the management team need
+                  to capable of executing the business plan and the market may not be ready to for the new product or service being developed.
+                </p>
+                <p>To understand the opportunity represented by investing in early stage securities it is important to understand:</p>
+                <ul>
+                  <li>the stages of growth of a typical early stage business</li>
+                  <li>why companies seek equity finance</li>
+                  <li>how companies use the funding to accelerate growth</li>
+                  <li>how you realise a return on your investment</li>
+                </ul>
+                <p>These topics are covered in the following sections.</p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Stages of growth -->
+              <div id="stages-of-growth" class="content-block">
+                <h3>Stages of growth of a typical early stage business</h3>
+
+                <p>Companies go through a series of development stages, which correspond to the types of capital they seek.</p>
+                <h6>Seed Stage – from idea to prototype</h6>
+                <p>At the seed stage, a company typically has an idea, a business plan, and possibly some initial product development or prototype.</p>
+                <p>
+                  At this stage, the main source of funding is often the founders’ personal savings, credit cards, and investment by family, friends, angel investors specialising
+                  in early-stage investing, accelerators and some venture capital firms. Many of these types of investors are <b>VentureCrowd Partners</b>.
+                </p>
+                <p>
+                  The seed stage funding usually enables the company to develop its product or service to the point where it can launch the business and start acquiring customers.
+                </p>
+                <p>The funds invested during this stage are typically up to $200,000.</p>
+                <h6>Early Stage – business development and customer acquisition</h6>
+                <p>
+                  At the early stage, a company has typically launched its business and will begin marketing and acquiring customers. It may also continue developing and making
+                  improvements to its product or service.
+                </p>
+                <p>
+                  At this stage, the main source of funding is often venture capital firms or ‘angel’ investors specialising in early-stage investing. Both kinds of investor often
+                  also bring experience, mentoring and industry contacts that can help the company rapidly grow its business.
+                </p>
+                <p>
+                  This stage of funding primarily covers the company beginning its marketing campaign and starting to sell its product or service to its first customers. The
+                  funding is often used for further product development, initial production (which may involve manufacturing), employment of key staff and initial marketing and
+                  branding.
+                </p>
+                <p>Early stage funding may consist of two ‘rounds’ of funding, known as:</p>
+                <ul>
+                  <li style="font-weight: 400">
+                    Series A, which capitalises the company while it hones its product or service for market, beds down its branding, hires its initial employees and conducts its
+                    initial marketing, and
+                  </li>
+                  <li style="font-weight: 400">
+                    Series B, which is the capital the company uses to operate the business, conduct a serious marketing campaign and work on customer acquisition.
+                  </li>
+                </ul>
+                <p>The investments at this stage are typically $500,000 to $3 million in size.</p>
+                <h6>Expansion Stage – growth, growth, growth</h6>
+                <p>At the expansion stage, the company has typically:</p>
+                <ul>
+                  <li style="font-weight: 400">confirmed that there is a market for its product or service,</li>
+                  <li style="font-weight: 400">confirmed its business model works,</li>
+                  <li style="font-weight: 400">secured a solid base of customers,</li>
+                  <li style="font-weight: 400">succeeded to the point of being cash-flow positive (and often profitable), and</li>
+                  <li style="font-weight: 400">neutralised the major risks that faced the business in the earlier stages.</li>
+                </ul>
+                <p>
+                  This stage of funding is committed to help support and accelerate the company’s growth. At this stage the company will have made some mistakes, received feedback
+                  from the market, adjusted its plans and worked out what it needs to do – and what it needs to spend – to solve any problems that may have been encountered, and
+                  (more importantly) to pursue the opportunities that it has discovered.
+                </p>
+                <p>Normally this is the stage that is most attractive to traditional venture capital firms.</p>
+                <p>
+                  The investments at this stage are typically $5 million – $20 million in size and the valuations of companies at this stage are much higher than they were in the
+                  earlier stages.
+                </p>
+                <p>
+                  VentureCrowd allows you to own an interest in emerging companies <i>before</i> they reach this stage, giving you the benefit of the growth in the value if they
+                  are successful.
+                </p>
+                <h6>Late Stage – preparing for an exit</h6>
+                <p>
+                  At the late stage, the company will be profitable and expanding, and increasingly ready for an ‘exit’, either through a trade sale (the sale of the company to
+                  another company) or an initial public offering (IPO) on the stock market.
+                </p>
+                <p>
+                  An exit is also referred to a ‘liquidity event’, because it is usually the first chance investors get to recover their investment and any capital gain they have
+                  made. &nbsp;
+                </p>
+                <p>
+                  Late stage funding is often known as Series C or Series D funding, and the investments are much larger than the Series A and Series B funding: typically, $20
+                  million-plus.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Equity Financy-->
+              <div id="equity-financy" class="content-block">
+                <h3>Why do companies seek equity finance?</h3>
+
+                <p>Companies can be capitalised through:</p>
+                <ul>
+                  <li style="font-weight: 400">debt – borrowing money, or</li>
+                  <li style="font-weight: 400">equity – issuing shares of the company.</li>
+                </ul>
+                <p>Equity is usually a more attractive source of funding for early stage companies for a number of reasons, including:</p>
+                <ul>
+                  <li style="font-weight: 400">debt needs to be serviced, which requires cash flow which is likely to be lacking at the seed or early stages.</li>
+                  <li style="font-weight: 400">
+                    unlike a bank, shareholders do not expect regular payments. They are speculating that the value of their shares will grow over time as the company develops
+                    through the stages of growth detailed above.
+                  </li>
+                  <li style="font-weight: 400">
+                    banks are often unwilling to lend on the promise of an early stage company’s intellectual property and a business case, whereas equity investors will.
+                  </li>
+                  <li style="font-weight: 400">bank debt is almost always secured on residential property, which the company founder may not have.</li>
+                </ul>
+                <p>
+                  Equity funding is the life-blood of early-stage companies. In return for providing equity funding, and taking the risk associated with investing early,
+                  early-stage investors are able to acquire their interest at a low valuation (relative to mature companies). This allows the investor to capitalise on the high
+                  growth potential if the business is successful.
+                </p>
+                <p>
+                  As the business develops through the growth stages, new investors are likely to provide further funding for equity. As a result, earlier investors may have their
+                  equity interest diluted (made smaller) by later investors but at higher valuations.
+                </p>
+                <p>
+                  It may seem paradoxical that the founders give up large portions of the ownership of their companies, and expose themselves to having their own stake being
+                  diluted with every new round of funding, but they do this because the funding helps the valuation of the company to rise. The portion they retain, even if it
+                  reduces, ideally ends up being worth much more than 100% of the company at the earlier valuations.
+                </p>
+                <p>Proving the business model and getting the business to market requires cash, and the equity investors have it.</p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Accelerate Growth -->
+              <div id="accelerate-growth" class="content-block">
+                <h3>How do companies spend the money invested to accelerate growth?</h3>
+                <p>
+                  Companies that take early-stage investment use it for a variety of purposes, such as product or brand development, renting larger premises, beginning production,
+                  developing their brand, hiring staff with specific required expertise and commencing marketing.
+                </p>
+                <p>
+                  Generally the companies will use the funding &nbsp;in the manner, and to achieve the key milestones, detailed in their information memorandum. It is important
+                  that you read the information memorandum and satisfy yourself about what the capital will be used for.
+                </p>
+                <p>
+                  As the company progresses through the stages of its business plan, it will ideally be increasing sales, number of customers and market share, and building its
+                  competitive position. The business strategy may envisage expanding into other markets or geographical areas, developing innovative products, entering strategic
+                  alliances or acquiring a competitor to gain greater market share.
+                </p>
+                <p>
+                  The management and succession plan should envisage lessening the key-person risk by building the capability of the management team, which should be properly
+                  incentivised to increase the value of the business.
+                </p>
+                <p>
+                  The company should also devote significant time to understanding what drives its customers to use its products or services, and to making these better all the
+                  time. All of these factors work to increase the value of the business.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+              <!-- Section: Return -->
+              <div id="return" class="content-block">
+                <h3>How do investors realise a return?</h3>
+                <p>
+                  Early-stage investors usually realise a return on an ‘exit’, either through a trade sale (the sale of the company to another company) or an initial public
+                  offering (IPO) on the stock market.
+                </p>
+                <p>In a small number of cases the exit may be achieved through a major re-financing or a management buy-out (MBO)/</p>
+                <p>The returns from successful exits from early-stage investments can be very high, but the opportunity is also high risk.</p>
+                <p>
+                  Early stage investing is highly asymmetric and thus more risky than other stages of equity investing. To mitigate this risk early stage investors adopt a
+                  portfolio approach (ie, investing in many different early stage companies to spread the risk) expecting that about 90% of their returns will be generated by about
+                  10% of the portfolio. Therefore the size and diversification of your early-stage investment portfolio are critical to capture the 10% of early stage companies
+                  that might generate 90% of the returns.For more information about the role of early stage securities in a balanced investment portfolio, click <b>here</b>.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+            </div>
+            <!-- ./col-md-6 -->
+          </div>
+        </div>
+      </section>
+
+        <section class="related py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Why should I include ‘early stage securities’ in my investment portfolio?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/why-include-ess/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Due diligence – how to choose?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/due-diligence/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Making an investment via VentureCrowd.</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/investment-via-vc'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+ 
+    <!-- ./Body -->
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

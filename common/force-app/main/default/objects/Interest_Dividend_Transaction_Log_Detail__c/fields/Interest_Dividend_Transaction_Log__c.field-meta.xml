@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Dividend_Transaction_Log__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Interest Dividend Transaction Log</label>
+    <referenceTo>Interest_Dividend_Transaction_Log__c</referenceTo>
+    <relationshipLabel>Interest Dividend Transaction Log Detail</relationshipLabel>
+    <relationshipName>Interest_Dividend_Transaction_Log_Detail</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

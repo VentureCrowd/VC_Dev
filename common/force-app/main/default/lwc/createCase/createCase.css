@@ -1,0 +1,154 @@
+.icon {
+    --sds-c-icon-color-background: #844CEA;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slds-modal__header {
+    padding: 0;
+    margin-top: 20px;
+    border: 0 !important;
+}
+
+.modal--header {
+    background-color: #02C6C6;
+    color: #FFF;
+    font-family: 'Monsterrat';
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal--header h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+}
+
+.modal--header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header--icon {
+    --sds-c-icon-color-background: transparent;
+}
+
+
+.content--container {
+    padding: 20px;
+}
+
+.modal-close-button {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.modal-close-button:hover {
+    transform: rotate(90deg);
+}
+
+.content--desc {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 2ppx;
+    color: #0F141E;
+    margin-bottom: 16px;
+}
+
+.cmbobox-caseoption {
+    padding-bottom: 16px;
+}
+
+.desc-textarea {
+    font-size: 16px;
+}
+
+.submit-container {
+    text-align: right;
+}
+
+.submit-container button {
+    background-color: #844CEA;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-weight: 400;
+    /* added color white */
+    color: #fff;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+
+.submit-container button:hover {
+    background-color: #5D3796;
+}
+
+.input--col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col--content {
+    width: 50%;
+}
+
+.col--content:last-child {
+    margin-left: 20px;
+}
+
+.button.slds-button.slds-button_icon.toastClose.slds-notify__close.slds-button--icon-inverse.slds-button_icon-bare{
+    margin-top: 0 !important;
+}
+:host {
+    --sds-c-textarea-sizing-min-height: 150px;
+}
+@media only screen and  (max-width: 838px) {
+
+    .input--col {
+        display: block;
+    }
+
+    .col--content {
+        width: 100%;
+    }
+
+    .col--content:last-child {
+        margin-left: 0;
+    }
+}
+@media only screen and  (max-width: 1024px) {
+
+    .dropdownDD{
+        left: 75%;
+
+    }
+
+}
+@media only screen and  (min-width: 769px) {
+
+    .dropdownDD{
+        left: 75%;
+    }
+
+}
+
+.buttonDD{
+	margin-top: 0;
+	height: 56px;
+	font-weight: 300;     
+    font-size: 16px;
+
+}
+
+.fix_margin {
+    margin-bottom: 0 !important;
+    margin-top: 0px !important;
+    padding-bottom: 0 !important;
+  }
+
+.slds-truncate{
+    overflow: visible;
+    text-overflow: ellipsis;
+}

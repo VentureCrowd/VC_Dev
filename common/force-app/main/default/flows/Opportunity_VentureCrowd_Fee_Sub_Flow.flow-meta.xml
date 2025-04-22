@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>This workflow is used to calculated the venturecrowd fee on an opportunity based on this formula. Amount_Received__c - Unit_Certificate_Amount__c&quot;</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>VentureCrowd_FeeFormula</name>
+        <dataType>Currency</dataType>
+        <expression>{!Input_Opportunity.Amount_Received__c}  -  {!Input_Opportunity.Unit_Certificate_Amount__c}</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Opportunity: VentureCrowd Fee Sub Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: VentureCrowd Fee Sub Flow</label>
+    <migratedFromWorkflowRuleName>VentureCrowd Fee</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>log_Message</name>
+        <label>log Message</label>
+        <locationX>440</locationX>
+        <locationY>242</locationY>
+        <inputAssignments>
+            <field>Record_details__c</field>
+            <value>
+                <elementReference>Input_Opportunity.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Opportunity: VentureCrowd Fee Sub Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Error</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_VC_Fee</name>
+        <label>Update VC Fee</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <faultConnector>
+            <targetReference>log_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Input_Opportunity.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>VentureCrowd_Fee__c</field>
+            <value>
+                <elementReference>VentureCrowd_FeeFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_VC_Fee</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Input_Opportunity</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:isUrlAddressable,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="ConverttoPersonalAccountController">
+    <aura:handler name="init" value="{!this}" action="{!c.convertToPersonAccount}"/>
+    <aura:attribute type="String" name="recordId"/>
+    <div style="background-color:transparent">
+    <lightning:spinner class="spins" size="large" variant="brand" alternativeText="Loading" />
+	</div>
+    <div>
+        
+    </div>
+
+</aura:component>

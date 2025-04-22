@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monoova_fundsClearedDate__c</fullName>
+    <description>clearance date for funds if applicable. &quot;yyyy-MM-dd&quot; format.</description>
+    <inlineHelpText>clearance date for funds if applicable. &quot;yyyy-MM-dd&quot; format.</inlineHelpText>
+    <label>Monoova fundsClearedDate</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

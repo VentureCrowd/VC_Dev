@@ -1,0 +1,213 @@
+.buttonStyle { 
+    color: #D95BAA; 
+    border-bottom:2px solid #D95BAA;
+    font-family: SuisseIntl-Bold;
+    font-size: 16px;
+}
+.cardStyle { 
+    background: #fff;
+    height: 13.938rem;
+}
+
+.slds-button{ 
+    border-radius: 0px 0px 0px 0px;
+}
+.vc-heading {
+    font-size: 20px;
+}
+.cardHeading {
+    font-family: "SuisseIntl-Regular", sans-serif;
+    font-weight: 800;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 20px;
+    display: block;
+}
+
+.eoiHeading {
+    font-family: "SuisseIntl-Regular", sans-serif;
+    font-weight: 400;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 20px;
+    display: block;
+}
+
+.fix_margin {
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+
+.notAusBasedCompany { 
+    color: #D95BAA;
+}
+
+.title-custom {
+    font-size: 20px;
+}
+
+.box-shadow {
+    -moz-box-shadow: 0 0 1em #ccc;
+    -webkit-box-shadow: 0 0 1em #ccc;
+    box-shadow: 0 0 1em #ccc;
+}
+
+
+
+.slds-lightning-card {
+    --sds-c-card-color-border: var(--primary-foreground);
+}
+
+.wrapper {
+    margin: var(--space-sm);
+}
+
+.button-raise {
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--space-md);
+}
+/*! Delete after everything works correctly */
+/* .grid-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--space-md);
+} */
+
+@media screen and (max-width: 1350px) {
+    .grid-containers {
+        grid-template-columns: 1fr;
+    }
+
+    .box-shadow {
+        width: 67%;
+    }
+}
+/*$ New code based on raise stuff */
+
+* {
+    font-family: "SuisseIntl-Light";
+}
+
+/* New CSS Rebuild */
+.card-container h3 {
+    font-size: var(--text-xxl);
+    font-family: "SuisseIntl-Light";
+}
+
+.card-container h4 {
+    font-size: var(--text-lg);
+    font-family: "SuisseIntl-Bold";
+}
+
+.card-container p {
+    font-size: var(--text-md);
+}
+.card-container {
+    box-shadow: 0px 3.66px 13.634px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid var(--Ash, #CFCECC);
+    display: flex;
+    column-gap: calc( 2 * var(--space-lg));
+    border-radius: 28px;
+    padding: var(--space-xl);
+    margin: var(--space-xl);
+    background-color: #ffffff;
+}
+.progress-containers {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space-lg);
+    flex: 10;
+}
+
+.buttons-container {
+    display: flex;
+    column-gap: var(--space-md);
+}
+
+.logo {
+    display: flex;
+    flex: 2;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+}
+
+.eoi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eoi-information-container {
+    display: flex;
+    flex: 1;
+    row-gap: var(--space-sm);
+    flex-direction: column;
+}
+
+a {
+    color: #0070d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D95BAA;
+}
+
+.status {
+    display: inline-flex;
+    padding: 8px 12px;
+    border: 1px solid var(--Ash, #CFCECC);
+    border-radius: 7px;
+    font-size: 0.875em;
+    align-items: center;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: var(--space-md);
+}
+
+
+.status.live {
+    background: var(--Dove, #F0F1F2);    
+    color: var(--Portal-Grey, #939393);
+}
+
+.status.update{
+    background-color: var(--primary-accent);
+    color: white;
+}
+
+.footer {
+    font-size: var(--text-md);
+    color: #777777;
+}
+
+.chevrons-container {
+    pointer-events: none;
+    margin-top: var(--space-lg);
+}
+
+.slds-path__title{
+    white-space: break-spaces;
+}
+.slds-is-active{
+    background-color: blacks;
+    --slds-c-path-color-background:  black !important;
+}
+.custom-chevron {
+    --lwc-colorBackgroundPathComplete:black;
+    --lwc-colorBackgroundPathActive: black;
+}

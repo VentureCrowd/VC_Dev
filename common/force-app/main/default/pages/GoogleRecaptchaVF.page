@@ -1,0 +1,44 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="false" cache="false" id="pg" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+        <head>
+             
+             <script type='text/javascript'>
+                var verifyCallback = function(response){
+                    let url=window.location.href;
+                    //GOOGLE_CPATCHA_VF_URL
+                    let targeturl='{!$Label.GOOGLE_CPATCHA_VF_URL}';//ui in vf domain or classic
+                    if(url.includes('lightning')){
+                        targeturl='{!$Label.GOOGLE_CPATCHA_LIGHTNING_URL}';//ui in lighnitng domain or lighnitng
+                        }
+                    console.log("url=",url);
+                    //https://plasma-dev-ed--c.ap5.visual.force.com'
+                    //use this if lwc captcha is getting used in lightning experince
+                    //if it is in classic or lwc captcha component getting embeded in Vf us vf url like blwo
+                    // //https://plasma-dev-ed--c.ap5.visual.force.com>> 
+                    //{!$Label.GOOGLE_CPATCHA_LIGHTNING_URL}
+                    parent.postMessage('VALID', targeturl);
+                };
+             
+            var onloadCallback = function() {
+                grecaptcha.render('reCAPTCHAWidget', {
+                    'sitekey' : '{!$Label.GOOGLE_CPATCHA_SITE_KEY}', 
+                    'callback' : verifyCallback
+                });
+            };
+            </script>
+        </head>
+        <body>
+        <form action="?" method="POST">
+          <!--<div class="g-recaptcha" data-sitekey="your_site_key"></div>-->
+            <div id="reCAPTCHAWidget">
+                
+            </div>
+          <br/>
+            <input type="submit" value="Submit" style="display:none"/>
+        </form>
+         
+            <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async="" defer=""></script>
+  </body>
+
+    </html>
+</apex:page>

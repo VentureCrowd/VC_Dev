@@ -1,0 +1,96 @@
+.THIS .imgCSS{
+    max-height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    max-width: 400px;
+}
+.THIS .alignCenter{
+    text-align: center;
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+}
+
+.THIS .investment-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #0F141E;
+    font-family: "Caxton-4", sans-serif !important;
+    text-align: left !important;
+}
+
+.THIS .investment-card .inner-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /*padding: 0 20px;*/
+    background-color: #FFF;
+    height: 100%;
+    border:1px solid #fff;
+}
+
+.THIS .featured-image {
+    width: 100%;
+    height: auto;
+}
+
+.THIS .call-to-action a {
+    display: inline-block;
+    border: 1px solid #fff;
+    background-color:  transparent;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 300ms ease;
+    color: #FFF;
+    font-family: "Caxton-2", sans-serif !important;
+}
+
+.THIS .call-to-action a:hover {
+    color:  #D95BAA ;
+    border-color:#D95BAA;
+    text-decoration: none;
+}
+
+.THIS .view-more {
+    display: inline-block;
+    border: 1px solid #fff;
+    background-color:transparent;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 300ms ease;
+    font-family: "Caxton-2", sans-serif !important;
+}
+
+.THIS .view-more:hover {
+    color:  #D95BAA ;
+    border-color:#D95BAA;
+    text-decoration: none;
+}
+
+
+/* .comm-page-custom-portfolio .cSuggestedInvestments img.imgCSS {
+padding: 0 !important;
+margin: 0 auto;
+border-radius: 8px !important;
+width: 100% !important;
+height: auto !important;
+}
+
+.comm-page-custom-portfolio .cSuggestedInvestments button {
+border-radius: 30px;
+color: #fff;
+background-color: #844cea;
+transition: all 300ms ease;
+font-size: 14px;
+display: inline-block;
+padding: 4px 30px;
+margin-top: 20px;
+}
+.comm-page-custom-portfolio .cSuggestedInvestments button:hover {
+background-color: #5d3796;
+color: #fff;
+} */

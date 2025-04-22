@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_ABN__c</fullName>
+    <description>This field stores the Australian Business Number (ABN).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Australian Business Number (ABN) for this company.</inlineHelpText>
+    <label>ABN</label>
+    <length>11</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

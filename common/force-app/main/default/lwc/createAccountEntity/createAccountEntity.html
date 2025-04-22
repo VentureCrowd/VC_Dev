@@ -1,0 +1,131 @@
+<template>
+    <div class="slds-grid slds-grid_align-spread">
+        <div class="vc-font-suisseIntlRegular">
+            <h2 class="vc-font-suisseIntlRegular vc-heading" >Create a New Entity</h2>
+        </div>
+        <div>
+            <button title="Create Now" type="button" onclick={showpopup} class="special">Create Now</button>
+        </div>
+    </div>
+    <template if:true={popup}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            class="slds-modal slds-fade-in-open">
+            <lightning-spinner alternative-text="Loading" size="medium" if:true={showspinner}></lightning-spinner>
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate vc-font-caxton4">Create a New
+                        Entity</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <!--lightning-combobox name="progress" label="Entity Type" placeholder="Select Entity Type" options={options} onchange={handleChange} required data-id="Shareholder_type__c" value="Company">
+                            </lightning-combobox-->
+                            <div class=" slds-form-element cmbobox-caseoption">
+                                <label class="slds-form-element__label" for="combobox-id-2" id="combobox-label-id-131"
+                                    style="padding-left: 10px;"> Entity Type</label>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-combobox_container">
+                                        <div
+                                            class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open combobox-style">
+                                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                                                role="none">
+                                                <button type="button" onblur={handleShowCaseOptionFalse}
+                                                    onclick={handleShowCaseOption}
+                                                    class="buttonDD slds-input_faux slds-combobox__input slds-grid_vertical-align-center"
+                                                    aria-describedby="error-message-id-49" aria-invalid="true"
+                                                    aria-labelledby="combobox-label-id-130 combobox-id-60-selected-value"
+                                                    id="combobox-id-60-selected-value" aria-controls="listbox-id-1"
+                                                    aria-expanded="false" aria-haspopup="listbox">
+                                                    <span class=" slds-truncate "
+                                                        id="combobox-value-id-98">{caseOption}</span>
+                                                    <span
+                                                        class=" slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right "
+                                                        style="height:100%;">
+                                                        <lightning-icon size="xx-small" icon-name="utility:down">
+                                                        </lightning-icon>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <template if:true={showCaseOptions}>
+                                                <div id="listbox-id-2"
+                                                    class="slds-dropdown slds-dropdown_length-7 slds-dropdown_fluid"
+                                                    role="listbox">
+                                                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                        <template for:each={options} for:item="option">
+                                                            <li role="presentation" class="slds-listbox__item"
+                                                                key={option.id}>
+                                                                <div id={option.id}
+                                                                    onmousedown={handleOnClickCaseOption}
+                                                                    data-value={option.value}
+                                                                    class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                                                                    role="option">
+                                                                    <!-- <div id={option.id} data-id={option.id} onclick={handleShowCaseOption} class="slds-media__figure slds-listbox__option-icon ">{option.label}</div > -->
+                                                                    <div id={option.id} data-value={option.value}
+                                                                        onclick={handleOnClickCaseOption}
+                                                                        class="slds-media__body">
+                                                                        <span id={option.id} data-value={option.value}
+                                                                            onclick={handleOnClickCaseOption}
+                                                                            class="slds-truncate"
+                                                                            title="Country Code">{option.label}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input type="text" label="Entity Name" required data-id="Name"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input type="text" label="Bank Account Name" required
+                                data-id="Bank_Account_Name__c"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input type="text" label="Bank Account Number" required
+                                data-id="Bank_Account_Number__c"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input type="text" label="BSB Number" required data-id="BSB_Number__c"
+                                max-length="6"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input type="number" label="Company ABN numbers" required
+                                data-id="Company_ABN_numbers__c"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input label="TFN" required data-id="TFN_e__c" max-length="20"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin" if:true={showACN}>
+                            <lightning-input type="text" label="ACN" required data-id="ACN__c"></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 fix_margin">
+                            <lightning-input style="padding-left: 10px;" class="helpTextHIN" type="text" label="HIN"
+                                data-id="HIN__c" field-level-help={hinhelptxt}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 fix_margin">
+                            <!-- VEN - 138 Added class="helpText" -->
+                            <!-- <lightning-input-address class="helpText" address-label="Billing Address" street-label="Billing Street" city-label="Billing City" country-label="Billing Country" province-label="Billing State/Province" postal-code-label="Billing PostalCode"
+                                show-address-lookup required field-level-help="Auto fill address">
+
+                            </lightning-input-address> -->
+                            <c-loqate-address label="Billing Address"></c-loqate-address>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close"
+                        onclick={closeppup}>Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={createEntity}>Save</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

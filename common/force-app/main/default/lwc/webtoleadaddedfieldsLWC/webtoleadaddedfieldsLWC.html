@@ -1,0 +1,9 @@
+<template>
+    <div class="">
+        <template if:true={url}>
+            <div style={iframeStyle}>
+                <iframe class="theFrame" src={url} scrolling="no" width="100%" height="5px"></iframe>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,26 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-quick-action-panel header="Take Ownership">
+    <div style="height: 350px !important;">
+    <div class="slds-grid slds-gutters slds-wrap">
+      <div class="slds-col slds-size_1-of-2">
+        <lightning-input label="Requested By" disabled value={defaultVal}></lightning-input>
+      </div>
+      <div class="slds-col slds-size_1-of-2" if:true={showusers}>
+        <c-search-combo-box-general  label="Requested For"  disabled={isSubmitDisabled} onoptselected={optionsel} placeholder="Select User" oninpchange={handinputchange} options={options}>
+        </c-search-combo-box-general>
+      </div>
+      <div class="slds-col slds-size_1-of-1">
+        <div >
+          {bodyMsg}
+        </div>
+        <lightning-input required label="Comments" if:true={showcomment} disabled={isSubmitDisabled} maxlength="210"></lightning-input>
+      </div>
+    </div>
+  </div>
+    <div slot="footer">
+      <lightning-button variant="brand" label="Submit for Approval" class="slds-m-left_x-small" onclick={submitForApproval} disabled={isSubmitDisabled}></lightning-button>
+      <lightning-button variant="neutral" label={CancelLbel} class="slds-m-left_x-small" onclick={cancel}></lightning-button>
+    </div>
+  </lightning-quick-action-panel>
+</template>

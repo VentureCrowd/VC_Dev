@@ -1,0 +1,92 @@
+<!--
+
+-->
+<template>
+    <div class="invest-module-container">
+        <!--BEGIN : Raised to Date Details-->
+        <div class="module-header container">
+            <div class="row pt-4 pb-3 vc-font-suisseIntlLight">
+                <div class="">
+                    {raisedtoDateMessage}
+                </div>
+                <div class="raised-amount">
+                    <span>${totalAmountRaised}</span>
+                </div>
+            </div>
+        </div>
+        <!--END : Raised to Date Details-->
+
+        <!--BEGIN : Progress Bar Indicator-->
+        <div class="module-progress container pb-3 pt-3" if:false={noclosedate}>
+            <div class="row">
+                <div class="col-12">
+                    <div class="progressbar-container">
+                        <div class="progressbar" style={progressBarPercentage}></div>
+                        <!-- <div class={frontEndPercentageClass}>{frontEndPercentage}%</div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row progress-labels mt-3">
+                <div class="col-6 text-start">
+                    Minimum Target ${targetConversionValue}
+                </div>
+                <div class="col-6 text-end raised-percentage">
+                    <span>{frontEndPercentage}%</span>
+                </div>
+            </div>
+        </div>
+        <!--END : Progress Bar Indicator-->
+
+            <!--Start: Invest Now Component-->
+            <template if:true={displayTimer_invest}>
+                <div class="module-input container py-2">
+                    <div class="row g-0 py-3 px-0">
+                        <div class="col-8">
+                                <lightning-input type="number" onchange={handleCurrencyUpdate}  class="vc-input-field"
+                                message-when-range-overflow	={overflowMessage} message-when-range-underflow={underflowMessage}
+                                min={minimumValue} max={maximumValue} required="true"
+                                variant="label-hidden" name="input7" label="Number field with currency formatter" 
+                                value={currencyValue} formatter="currency" step="0.01" data-id="investcomp"></lightning-input>
+                        </div>
+                        <div class="col-4">
+                            <a target="_blank" class="vc-anchor" href={redirectUrl}>
+                                Invest Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!--END: Invest Now Component-->
+
+        <div class="module-timer-display container pb-4 pt-3" if:false={noclosedate}>
+            <template if:true={displayTimer}>
+                <div class="module-timer-heading">
+                    <div class="row px-3">
+                        <div class="col-12 text-center">
+                            CLOSES IN
+                        </div>
+                     </div>
+                </div>
+            </template>
+            <template if:true={displayTimer}>
+                <div class="row px-3">
+                    <div class="col-12 text-center">
+                        <span class="vc-timer">{days}</span><span class="vc-timer-second">d</span>
+                        <span class="vc-timer">{hours}</span><span class="vc-timer-second">h</span>
+                        <span class="vc-timer">{minutes}</span><span class="vc-timer-second">m</span>
+                        <span class="vc-timer">{seconds}</span><span class="vc-timer-second">s</span>
+                    </div>
+                  </div>
+            </template>
+
+            <template if:false={displayTimer}>
+                <div class="row status-closed">
+                <div class="col-12 text-center closed-title">Closed on</div>
+                <div class="col-12 text-center">{frontEndMonth} {frontEndDay}, {frontEndYear} at {frontEndTime} </div>
+                </div>
+            </template>
+
+        </div>
+    </div>
+</template>

@@ -1,0 +1,1585 @@
+
+			div.wpcf7-mail-sent-ok {
+    border: 0px;
+}
+
+.wpcf7 .wpcf7-response-output {
+    background-color: transparent;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.invest-CTA-text-wrapper {
+	min-height:270px;
+}
+
+.hero-segment-custom{
+	height:60vh;
+}
+
+
+
+#header-outer.transparent header#top nav > ul > li > a#menu-button-login {
+    color: #02C8C8!important;
+}
+
+#header-outer[data-lhe="animated_underline"].transparent.dark-slide header#top nav > ul > li > a:after, #header-outer[data-lhe="animated_underline"].transparent:not(.side-widget-open) .midnightHeader.dark header#top nav > ul > li > a:after, #header-outer[data-lhe="animated_underline"].transparent:not(.side-widget-open) .midnightHeader.default header#top nav > ul > li > a:after, #header-outer.dark-slide.transparent:not(.side-widget-open) header#top nav>ul>li[class*="button_bordered"]>a:before {
+    border-color: #28bfcc!important;
+}
+
+#header-outer.transparent header#top nav > ul > li > a#menu-button-register {
+    color: #fff!important;
+}
+
+.sub-menu > .menu-item > a {
+	font-size:13px !important;
+}
+.-main-text-title .wpb_wrapper h5 {
+	font-weight: 400;
+	padding-bottom:25px;
+}
+
+.top-row-main-text-body .wpb_wrapper h1 {
+	font-weight: 100;
+	font-size: 2.5rem;
+	line-height:3rem;
+	padding-bottom:30px
+}
+
+.top-row-main-text-sub {
+	padding-bottom:10px;
+}
+
+.top-row-main-text-tagline .wpb_wrapper h5 {
+	font-weight: 100;
+	
+}
+
+.home-statistic-text h1 {
+  color:black;
+	font-weight: 600;
+	font-size:3rem
+}
+.home-statistic-text p {
+	color:black;
+	font-weight:900;
+	font-size:80%
+}
+
+.invest-CTA-title h1 {
+	font-size: 3.3rem;
+	padding: 5% 0% 5% 0%;
+	line-height:3rem;
+}
+
+.invest-CTA-subheading h2 {
+	font-size: 1.8rem;
+	font-weight:900;
+	
+}
+
+.invest-CTA-description p {
+	font-size: 1.8rem;
+	line-height: 2.5rem
+}
+
+.invest-CTA-button > h6 > span > a{
+	font-size: 1.5rem;
+}
+.invest-CTA-button > h6 > span > a > .arrow {
+	height:500px;
+}
+.menu-item-register-button a {
+  background-color: #02C8C8!important;
+}
+
+.card-row {
+	padding: 0 5% 0 5%;
+}
+.invest-card {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.105) !important;
+}
+
+.invest-card:hover {
+	box-shadow: 0px 10px 38px rgba(0, 0, 0, 0.119701) !important;
+	transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.new-invest-card {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.105) !important;
+	height:600px;
+}
+
+.new-invest-card:hover {
+	box-shadow: 0px 10px 38px rgba(0, 0, 0, 0.119701) !important;
+	transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.new-invest-card .new-invest-card-image
+{
+	width:100% !important;
+	height:225px !important;
+	
+}
+
+.new-invest-card .new-invest-card-subheading h4
+{
+	font-size:15px !important;
+	color: #02c8c8;
+	padding: 10px 20px 10px 20px;
+	font-weight:600;
+	
+	
+}
+
+.new-invest-card .new-invest-card-title h2
+{
+	font-size: 35px;
+	font-weight:100;
+	padding: 0px 20px 15px 20px;
+	
+	
+}
+
+.new-invest-card .new-invest-card-body p
+{
+	font-size:16px !important;
+	line-height:18px;
+
+	
+}
+
+.new-invest-card .new-invest-card-body {
+		padding: 0px 20px 40px 20px;
+}
+
+.new-invest-card .new-invest-card-button {
+	margin: 0px 0px 40px 20px;
+	border-radius:5px !important;
+	position:absolute;
+	bottom:0px;
+	top:auto;
+	
+	
+}
+
+.new-invest-card .new-invest-card-button > span {
+	font-size: 14px;
+	font-weight:600;
+	padding: 3px;
+}
+
+.invest-card .invest-card-image {
+	max-height: 240px;
+	overflow: hidden;
+	
+}
+.invest-card .invest-card-title div {
+	background-image: linear-gradient(to right, #5d3796  , #02c8c8);
+	font-size:1.1rem;
+}
+
+.invest-card .invest-card-bottom-text .wpb_wrapper p {
+	font-size: 0.9rem;
+	padding:1% 0% 1% 0%;
+}
+
+.invest-card .invest-card-description > div > p{
+	line-height:2em;
+	height:7.5rem;
+	max-height:7.5rem;
+	overflow: hidden;
+	padding:3% 0% 3% 0%;
+	
+}
+
+.invest-card .invest-card-description > div > p:hover{
+	overflow: visible;
+}
+
+.invest-card .invest-card-top-section {
+	margin: 0;
+}
+.invest-card .invest-card-top-section::after {
+    border-top: 1px solid #EAEAEA;
+    width: 100%;
+    transform: translateY(-1rem);
+	height:1px;
+}
+
+
+.invest-card .invest-card-button {
+	width:90%;
+	font-size:0.9rem;
+	border-radius: 50px !important;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11);
+	transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: transform 0.1s ease-in-out;
+}
+
+
+.invest-card .invest-card-button:hover {
+	box-shadow:-2px 4px 12px rgba(0, 0, 0, 0.25);
+	transform: translateY(-1px);
+	
+} 
+
+.invest-card .invest-card-type .wpb_wrapper p {
+	font-weight: 900;
+	padding: 0% 0 2% 0;
+	font-size: 1.1rem;
+	height:70px;
+}
+
+.invest-card .invest-card-state h6 {
+	font-size: 0.7rem;
+	font-weight: 900;
+	padding:1% 0% 1% 0%;
+}
+
+.team-member-card {
+	padding:10px;
+}
+.team-member-card .team-member-card-photo{
+	text-align:center;
+	
+}
+.team-member-card .team-member-card-name {
+	color: white;
+	font-size: 20px;
+	margin: 15px 0px 15px 0px
+}
+.team-member-card .team-member-card-title {
+	color:#02C8C8;
+	font-weight:900;
+	font-size:18px;
+	line-height:18px
+}
+.team-member-card .team-member-card-description {
+	color:white;
+	padding-right:10%;
+	font-size:16px;
+	line-height:18px;
+}
+#mortgage-landing-title {
+	font-size:4rem;
+	line-height:3rem;
+	font-weight:700;
+	margin-bottom:50px;
+}
+
+#mortgage-landing-payrate {
+	font-size:1.8rem;
+	font-weight:900;
+	letter-spacing:0.5px;
+	line-height: 2.5rem;
+	padding-right: 20%;
+}
+
+
+#mortgage-fund-name {
+	font-size: 2.2rem;
+	font-weight:900;
+	letter-spacing:0.5px;
+	display: inline-block;
+	margin-top: 1rem;
+	}
+
+
+.mortgage-landing-brief {
+	font-size:20px;
+	letter-spacing:0.3px;
+	padding: 2.5% 15% 5% 0%;
+}
+
+#mortgage-landing-slogan {
+	font-weight:700;
+	font-size:18px;
+	letter-spacing:0.4px;
+}
+
+
+.wpcf7-form > p > label {
+	text-align: left !important;
+}
+
+#mortgage-landing-contactus{
+	margin: auto;
+	max-width: 80%;
+}
+
+
+#mortgage-landing-contactus input {
+	margin-bottom:3.5%;
+	background: white;
+	color:black;
+
+}
+
+
+#mortgage-contact-submit {
+	color:white !important;
+	margin-right: 15px;
+}
+
+#mortgage-landing-invest-btn {
+	font-size:1rem;
+}
+
+
+#mortgage-landing-contactus input::placeholder {
+	opacity:0.5;
+}
+
+.mortgage-fund-invest-button {
+	border-radius:100px !important;
+}
+
+/* Super high yield */
+.glenvale-hero-section::before {
+  content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:linear-gradient(180deg, rgba(213, 122, 233, 0.94) 14.54%, rgba(255, 255, 255, 0) 100%), #F7F6FB;
+	clip-path: polygon(54% 81%, 100% 35%,100% 100%, 0% 100%);
+
+}
+
+.glenvale-hero-section::after {
+  content: "";
+  display: block;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 1;
+	margin-right: -100px;
+  background:#55C6C6;
+	 clip-path: polygon(79% 55%, 90% 55%, 54% 87%, 0% 110%, 0% 98.9%, 54% 80%); 
+	z-index:1;
+
+}
+
+
+#glenvale-landing-title {
+	font-size:70px;
+	line-height:85px;
+	font-weight:700;
+	font-family: Montserrat;
+}
+
+#glenvale-return {
+	font-size: 55px;
+	line-height:67px;
+	letter-spacing:0.5px;
+	display: inline-block;
+	font-family: Montserrat;
+}
+
+.glenvale-brief {
+	font-size: 25px;
+	padding: 5% 10% 0% 0%;
+	font-family: Montserrat;
+}
+
+#glenvale-invest-button{
+	border-radius:100px !important;
+	margin: 5% 0% 1% 0%;
+	font-size:26px;
+	line-height:32px;
+	padding-left:5%;
+	padding-right:5%
+}
+
+#glenvale-slogan {
+	font-size:25px;
+	font-family: Montserrat;
+	
+}
+
+.powered-by-venturecrowd {
+	width:150px !important; 
+}
+
+.glenvale-subheading {
+	font-size: 36px;
+	letter-spacing: 0.01px;
+	line-height:44px;
+	padding-bottom:32px;
+	font-family: Montserrat;
+}
+
+.glenvale-subtext {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+}
+
+.glenvale-heading {
+	font-size: 58px;
+	line-height:71px;
+	font-family: Montserrat;
+}
+
+.glenvale-attribute
+{
+	font-size:22px;
+	font-family: Montserrat;
+	padding-bottom:5%;
+}
+
+.glenvale-property-brief {
+	font-family:Montserrat;
+}
+
+.glenvale-attribute strong {
+	font-family: Montserrat;
+}
+
+.glenvale-rhs-col {
+	margin-left: 0px;
+	height:100%;
+	width:50% !important;
+}
+
+
+.glenvale-lhs-col {
+	width:50% !important;
+}
+
+.glenvale-lhs-text {
+	padding:96px
+}
+
+.glenvale-rhs-text {
+	padding:96px;
+}
+.glenvale-row-header {
+	font-family: "Montserrat";
+	font-weight: 500 !important;
+	padding: 3% !important;
+	width:300px;
+}
+
+.glenvale-col-item {
+	text-align:center !important;
+	width: 200px;
+}
+
+#glenvale-table-header{
+	margin:0;
+	border:none;
+	background-color:white;
+	background: white;
+	font-family: "Montserrat";
+}
+
+#glenvale-table-header th{
+	border:none;
+	text-align:center;
+	background:white;
+}
+
+#glenvale-vc-header  {
+	background:rgba(93, 54, 147, 0.9)!important;
+	border-radius:10px 10px 0px 00px;
+	color:white;
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.14);
+}
+
+.glenvale-soft {
+	opacity:0.5;
+}
+
+#glenvale-table-content{
+	z-index:2;
+	position:relative;
+	border-collapse:separate !important;
+	border-radius:10px !important;
+  -moz-border-radius:10px !important;
+	    border:1px solid rgba(190, 175, 212, 0.31);
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.14);
+}
+
+#glenvale-table-content .glenvale-purple {
+	border:none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glenvale-table-pseudo-header {
+	width:40%;
+}
+#glenvale-table-content .glenvale-white {
+	border:none;
+	border-bottom: 1px solid rgba(93, 54, 147, 0.4);
+}
+
+.glenvale-corner {
+	border-radius:10px;
+}
+
+.glenvale-table-section::before {
+content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:#151C30;;
+	clip-path: polygon(0 68%, 100% 47%, 100% 100%, 0 100%);
+
+}
+
+.glenvale-table-section {
+	margin-bottom: 0px
+}
+
+#glenvale-explanation-section {
+	clip-path: polygon(100% 0, 100% 100%, 51% 86%, 0 100%, 0 0);
+	
+}
+
+.glenvale-timeline {
+	width:100%;
+	object-fit:fill;
+	background-color:white;
+	margin-top:-50px !important;
+	z-index:-1;
+	position:relative;
+}
+
+
+.page-id-16349 .main-content {
+	width:100%;
+	max-width:100%;
+	padding:0px;
+}
+
+.glenvale-tick {
+	width:2rem !important;
+	max-width:90px;
+	vertical-align: middle;
+	margin: 25% 0% 25% 0%;
+	
+	
+}
+
+.glenvale-cross {
+	width:2rem !important;
+	max-width:90px;
+	vertical-align: middle;
+	margin: 25% 0% 0% 0%;
+}
+
+.glenvale-purple {
+	background:#5D3693;
+}
+
+.glenvale-white {
+	background: #FFFFFF;
+}
+
+.glenvale-transparent {
+	background-color:transparent;
+}
+
+.glenvale-infographic {
+	padding:5% 15% 0% 15%;
+	position:relative;
+	z-index:5;
+	
+}
+
+.glenvale-data-subheading {
+	
+	text-align:center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 136.19%;
+	color: rgba(0, 0, 0, 0.6);
+	white-space: nowrap;
+}
+
+.glenvale-data-number {
+	font-size:4rem;
+	padding:50px;
+	
+}
+.glenvale-data-number::after{
+  content: "";
+	text-align:center;
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+  height: 8px;
+  width: 70%;
+  background: linear-gradient(90deg, #5D3693 0%, #3674A9 54.17%, #02C6C6 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.56) 97.87%, rgba(255, 255, 255, 0) 100%);
+}
+
+#glenvale-landing-contactus{
+	margin: auto;
+	max-width: 20%;
+}
+
+#glenvale-landing-contactus input {
+	margin-bottom:32px;
+	background: white;
+	color:black;
+	border-radius:10px;
+	height:48px;
+
+}
+
+#glenvale-landing-contactus input::placeholder {
+	opacity:1;
+	color:#393939;
+}
+
+#glenvale-contact-submit{
+	border-radius:100px !important;
+	margin: 5% 0% 1% 0%;
+	font-size:1.2rem;
+	padding-left: 6%;
+	padding-right: 6%;
+	background-color: rgb(132, 76, 234) !important;
+	text-align: center;
+}
+
+.glenvale-contactus-section::before {
+	  content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:linear-gradient(54.45deg, #5D3693 -0.63%, #3674A9 53.4%, #00E0E0 99.11%);
+clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+
+
+@media only screen and (max-width: 1000px) {
+	
+
+.new-invest-card {
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.105) !important;
+	height:auto;
+}
+
+.new-invest-card:hover {
+	box-shadow: 0px 10px 38px rgba(0, 0, 0, 0.119701) !important;
+	transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.new-invest-card .new-invest-card-image
+{
+	width:100% !important;
+	height:auto !important;
+	
+}
+
+.new-invest-card .new-invest-card-subheading h4
+{
+	font-size:15px !important;
+	color: #02c8c8;
+	padding: 20px 20px 20px 40px;
+	font-weight:600;
+	
+	
+}
+
+.new-invest-card .new-invest-card-title h2
+{
+	font-size: 35px;
+	font-weight:100;
+	padding: 0px 20px 20px 40px;
+	
+	
+}
+
+.new-invest-card .new-invest-card-body p
+{
+	font-size:16px !important;
+	line-height:18px;
+
+	
+}
+
+.new-invest-card .new-invest-card-body {
+		padding: 0px 20px 40px 40px;
+}
+
+.new-invest-card .new-invest-card-button {
+	margin: 0px 0px 40px 40px;
+	border-radius:5px !important;
+	position:relative;
+	
+	
+}
+
+	
+#mortgage-landing-contactus{
+	max-width: 100%;
+}
+	
+.invest-card .invest-card-description > div > p{
+	height: auto;
+	padding:3% 0% 5% 0% !important;
+	
+}
+	
+.invest-card .invest-card-type .wpb_wrapper p {
+	font-weight: 900;
+	padding: 0% 0% 6% 0% !important;
+	font-size: 1.1rem;
+	height:auto;
+}
+	
+	/* MORTGAGE PAGE 1000px */
+/* Super high yield */
+.glenvale-hero-section::before {
+  content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:linear-gradient(180deg, rgba(213, 122, 233, 0.94) 14.54%, rgba(255, 255, 255, 0) 100%), #F7F6FB;
+	clip-path: polygon(54% 81%, 100% 35%,100% 100%, 0% 100%);
+
+}
+
+.glenvale-hero-section::after {
+  content: "";
+  display: block;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 1;
+	margin-right: -100px;
+  background:#55C6C6;
+	 clip-path: polygon(79% 55%, 90% 55%, 54% 87%, 0% 110%, 0% 98.9%, 54% 80%); 
+	z-index:1;
+
+}
+
+
+#glenvale-landing-title {
+	font-size:50px;
+	line-height:60px;
+	font-weight:700;
+	padding-left:5%
+	
+}
+
+#glenvale-return {
+	padding-left:5%;
+	font-size: 40px;
+	line-height:50px;
+	letter-spacing:0.5px;
+	display: inline-block;
+
+}
+
+.glenvale-brief {
+	font-size: 25px;
+	padding: 5% 10% 0% 5%;
+	
+}
+
+#glenvale-invest-button{
+	border-radius:100px !important;
+	margin: 5% 0% 1% 0%;
+	font-size:20px;
+	line-height:20px;
+	padding-left:5%;
+	padding-right:5%;
+	margin-left:5%;
+	
+}
+
+#glenvale-slogan {
+	font-size:25px;
+	padding-left:5%;
+	font-family: Montserrat;
+	
+}
+
+.powered-by-venturecrowd {
+	width:150px ;
+	margin-left:5%;
+}
+
+.glenvale-subheading {
+	font-size: 20px;
+	letter-spacing: 0.01px;
+	line-height:30px;
+	padding-bottom:0px !important;
+	font-family: Montserrat;
+}
+
+.glenvale-subtext {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.glenvale-heading {
+	font-size: 36px !important;
+}
+
+.glenvale-attribute
+{
+	font-size:18px;
+	font-family: Montserrat;
+	padding-bottom:5%;
+}
+
+.glenvale-attribute strong {
+	font-family: Montserrat;
+}
+
+.glenvale-rhs-col {
+	margin-left: 0px;
+	width:100% !important;
+}
+
+
+.glenvale-lhs-col {
+	width:100% !important;
+}
+
+.glenvale-lhs-text {
+	padding:40px 96px 40px 96px;
+}
+
+.glenvale-rhs-text {
+	padding:40px 96px 90px 96px !important;
+} 
+.glenvale-row-header {
+	font-family: "Montserrat";
+	font-weight: 500 !important;
+	padding: 3% !important;
+	width:300px;
+	font-size:12px
+}
+
+.glenvale-col-item {
+	text-align:center !important;
+	width: 200px;
+}
+
+#glenvale-table-header{
+	margin:0;
+	border:none;
+	background-color:white;
+	background: white;
+	font-family: "Montserrat";
+}
+
+#glenvale-table-header th{
+	border:none;
+	text-align:center;
+	background:white;
+}
+
+#glenvale-vc-header  {
+	background:rgba(93, 54, 147, 0.9)!important;
+	border-radius:10px 10px 0px 00px;
+	color:white;
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.14);
+	font-size:12px;
+	line-height:20px;
+	
+}
+
+.glenvale-soft {
+	opacity:0.5;
+	font-size:12px;
+	line-height:20px;
+}
+
+#glenvale-table-content{
+	z-index:2;
+	position:relative;
+	border-collapse:separate !important;
+	border-radius:10px !important;
+  -moz-border-radius:10px !important;
+	    border:1px solid rgba(190, 175, 212, 0.31);
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.14);
+}
+
+#glenvale-table-content .glenvale-purple {
+	border:none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glenvale-table-pseudo-header {
+	width:40%;
+}
+#glenvale-table-content .glenvale-white {
+	border:none;
+	border-bottom: 1px solid rgba(93, 54, 147, 0.4);
+}
+
+.glenvale-corner {
+	border-radius:10px;
+}
+
+.glenvale-table-section::before {
+content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:#151C30;;
+	clip-path: polygon(0 68%, 100% 47%, 100% 100%, 0 100%);
+
+}
+
+.glenvale-table-section {
+	margin-bottom: 0px
+}
+
+#glenvale-explanation-section {
+	clip-path: none;
+	
+}
+
+.glenvale-timeline {
+	width:100%;
+	object-fit:fill;
+	background-color:white;
+	margin-top:-50px !important;
+	z-index:-1;
+}
+
+
+.page-id-16349 .main-content {
+	width:100%;
+	max-width:100%;
+	padding:0px;
+}
+
+.glenvale-tick {
+	width:25px !important;
+	max-width:90px;
+	vertical-align: middle;
+	margin: 50% 0% 25% 0%;
+	
+	
+}
+
+.glenvale-cross {
+	width:25px !important;
+	max-width:90px;
+	vertical-align: middle;
+	margin: 50% 0% 0% 0%;
+}
+
+.glenvale-purple {
+	background:#5D3693;
+}
+
+.glenvale-white {
+	background: #FFFFFF;
+}
+
+.glenvale-transparent {
+	background-color:transparent;
+}
+
+.glenvale-infographic {
+	padding:5% 15% 0% 15%;
+	
+}
+
+.glenvale-data-subheading {
+	
+	text-align:center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 136.19%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.glenvale-data-number {
+	font-size:35px;
+	padding:50px;
+	
+}
+
+.glenvale-data-number::after{
+  content: "";
+	text-align:center;
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  height: 4px;
+  width: 40%;
+  background: linear-gradient(90deg, #5D3693 0%, #3674A9 54.17%, #02C6C6 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.56) 97.87%, rgba(255, 255, 255, 0) 100%);
+}
+
+#glenvale-landing-contactus{
+	margin: auto;
+	max-width: 40%;
+}
+
+#glenvale-landing-contactus input {
+	margin-bottom:32px;
+	background: white;
+	color:black;
+	border-radius:10px;
+	height:48px;
+
+}
+
+#glenvale-landing-contactus input::placeholder {
+	opacity:1;
+	color:#393939;
+}
+
+#glenvale-contact-submit{
+	border-radius:100px !important;
+	margin: 5% 0% 1% 0%;
+	font-size:1.2rem;
+	padding-left: 6%;
+	padding-right: 6%;
+	background-color: rgb(132, 76, 234) !important;
+	text-align: center;
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+	.invest-CTA-title h1 {
+	font-size: 1.8rem;
+	padding: 0% 0% 0% 0%
+}
+	
+.mortgage-contact-text {
+	font-size: 14px;
+	padding: 0% 0 0% 0
+}
+
+.mortgage-contact-title {
+	font-size: 14px;
+	padding: 0% 0 0% 0
+}
+
+.mortgage-contact-number {
+	padding: 0% 0 0% 0
+}
+	
+.hero-segment-custom{
+	height:auto;
+}
+
+.invest-CTA-subheading h2 {
+	font-size: 1.4rem;
+	font-weight:900;
+	
+}
+
+.invest-CTA-description p {
+	font-size: 1.4rem;
+	line-height: 1.8rem
+}
+
+.invest-CTA-button > h6 > span > a{
+	font-size: 1rem;
+}
+	.top-row-main-text-title .wpb_wrapper h5 {
+	font-weight: 400;
+	font-size:0.8em;
+}
+
+.top-row-main-text-body .wpb_wrapper h1 {
+	font-weight: 100;
+	font-size: 2.5rem;
+	line-height:3rem;
+}
+
+.top-row-main-text-tagline .wpb_wrapper h5 {
+	font-weight: 100;
+	font-size:0.8em;
+}
+	
+.invest-card .invest-card-bottom-text .wpb_wrapper p {
+	font-size: 0.9rem;
+}
+
+.invest-card .invest-card-top-section {
+	margin:0;
+	height:100px;
+}
+.invest-card .invest-card-button {
+	width:90%;
+	font-size:0.9rem;
+	border-radius: 50px !important;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11);
+	transition: box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: transform 0.1s ease-in-out;
+}
+
+.invest-card .invest-card-type .wpb_wrapper p {
+	font-weight: 900;
+	padding: 2% 0 2% 0;
+	font-size: 1.1rem;
+}
+
+.invest-card .invest-card-state h6 {
+	font-size: 0.7rem;
+	font-weight: 900;
+}
+
+.invest-card .invest-card-description > div > p{
+	height: auto;	
+
+}
+
+	
+.invest-card-description-col {
+		padding-top: 2.5% !important;
+		padding-bottom: 2.5% !important;
+}
+	
+#mortgage-landing-contactus{
+	max-width: 90%;
+	margin: 10% 0% 0% 0%;
+}
+	
+#mortgage-landing-title {
+	font-size:3rem;
+	line-height:2rem;
+}
+
+#mortgage-landing-payrate {
+	font-size:1.8rem;
+	font-weight:900;
+	line-height:1rem;
+}
+	
+	
+#mortgage-contact-submit {
+	color:white !important;
+
+}
+
+#mortgage-landing-invest-btn {
+	font-size:1rem;
+	
+}
+
+#mortgage-fund-name {
+	font-size: 1.8rem;
+	font-weight:900;
+	letter-spacing:0.5px;
+}
+.mortgage-landing-brief {
+	font-size:1.3rem;
+	line-height:1.4rem;
+	font-weight:100;
+}
+	
+	#mortgage-landing-slogan {
+	font-weight:700	;
+	font-size:1.3rem;
+	letter-spacing:0.4px;
+}
+	
+}
+
+@media only screen and (max-width: 690px) {
+		/* MORTGAGE PAGE 690px */
+/* Super high yield */
+.glenvale-hero-section::before {
+  background:none;
+	clip-path: none
+
+}
+
+.glenvale-hero-section::after {
+  background:none;
+	 clip-path: none;
+}
+
+
+#glenvale-landing-title {
+	font-size:20px;
+	line-height:10px;
+	font-weight:700;
+	padding-left:5%
+	
+}
+
+#glenvale-return {
+	padding-left:5%;
+	font-size: 18px;
+	line-height:10px;
+	letter-spacing:0.5px;
+	display: inline-block;
+
+}
+
+.glenvale-brief {
+	font-size: 15px;
+	padding: 5% 10% 0% 5%;
+	
+}
+
+#glenvale-invest-button{
+	border-radius:100px !important;
+	margin: 5% 0% 1% 0%;
+	font-size:15px;
+	line-height:10px;
+	padding-left:5%;
+	padding-right:5%;
+	margin-left:5%;
+	
+}
+
+#glenvale-slogan {
+	font-size:15px;
+	padding-left:5%;
+	font-family: Montserrat;
+	line-height:18px
+}
+
+.powered-by-venturecrowd {
+	width:100px !important ;
+	margin-left:5%;
+}
+
+.glenvale-subheading {
+	font-size: 18px;
+	letter-spacing: 0.01px;
+	line-height:20px;
+	padding-bottom:0px !important;
+	font-family: Montserrat;
+}
+
+.glenvale-subtext {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.glenvale-heading {
+	font-size: 36px !important;
+}
+
+.glenvale-attribute
+{
+	font-size:15px;
+	font-family: Montserrat;
+	padding-bottom:10%;
+	line-height:20px;
+}
+
+.glenvale-attribute strong {
+	font-family: Montserrat;
+}
+
+.glenvale-rhs-col {
+	margin-left: 0px;
+	width:100% !important;
+}
+
+
+.glenvale-lhs-col {
+	width:100% !important;
+}
+
+.glenvale-lhs-text {
+	padding:40px !important;
+}
+
+.glenvale-rhs-text {
+	padding:40px !important;
+} 
+.glenvale-row-header {
+	font-family: "Montserrat";
+	font-weight: 500 !important;
+	margin:0px !important;
+	
+	padding: 0px 3% 3% 3% !important;
+	width:300px;
+	font-size:10px;
+	line-height:10px;
+}
+
+.glenvale-col-item {
+	text-align:center !important;
+	width: 200px;
+}
+
+#glenvale-table-header{
+	margin:0;
+	border:none;
+	background-color:white;
+	background: white;
+	font-family: "Montserrat";
+}
+
+#glenvale-table-header th{
+	border:none;
+	text-align:center;
+	background:white;
+}
+
+#glenvale-vc-header  {
+	background:rgba(93, 54, 147, 0.9)!important;
+	border-radius:10px 10px 0px 00px;
+	color:white;
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.14);
+	font-size:10px;
+	line-height:10px !important;
+	
+}
+
+.glenvale-soft {
+	opacity:0.5;
+	font-size:10px;
+	line-height:10px !important;
+}
+
+#glenvale-table-content{
+	z-index:2;
+	position:relative;
+	border-collapse:separate !important;
+	border-radius:10px !important;
+  -moz-border-radius:10px !important;
+	    border:1px solid rgba(190, 175, 212, 0.31);
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.14);
+}
+
+#glenvale-table-content .glenvale-purple {
+	border:none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glenvale-table-pseudo-header {
+	width:40%;
+}
+#glenvale-table-content .glenvale-white {
+	border:none;
+	border-bottom: 1px solid rgba(93, 54, 147, 0.4);
+}
+
+.glenvale-corner {
+	border-radius:10px;
+}
+
+.glenvale-table-section::before {
+content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:#151C30;;
+	clip-path: polygon(0 68%, 100% 47%, 100% 100%, 0 100%);
+
+}
+
+.glenvale-table-section {
+	margin-bottom: 0px;
+}
+	
+	.glenvale-vc-table-col-wrap {
+		padding:0px !important;
+	}
+
+#glenvale-explanation-section {
+	clip-path: none;
+	
+}
+
+.glenvale-timeline {
+	width: 100% !important; 
+	object-fit:fill;
+	background-color:white;
+	margin-top: -10px !important;
+	z-index:-1;
+	padding:0px
+}
+
+
+.page-id-16349 .main-content {
+	width:100%;
+	max-width:100%;
+	padding:0px;
+}
+
+.glenvale-tick {
+	width:25px !important;
+	max-width:90px;
+	vertical-align: middle;
+	margin: 50% 0% 25% 0%;
+	
+	
+}
+
+.glenvale-cross {
+	width:25px !important;
+	max-width:90px;
+	vertical-align: middle;
+	margin: 50% 0% 0% 0%;
+}
+
+.glenvale-purple {
+	background:#5D3693;
+}
+
+.glenvale-white {
+	background: #FFFFFF;
+}
+
+.glenvale-transparent {
+	background-color:transparent;
+}
+
+.glenvale-infographic {
+	padding:5px;
+	
+}
+
+.glenvale-data-subheading {
+	
+	text-align:center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 15px;
+	color: rgba(0, 0, 0, 0.6);
+	white-space:normal;
+}
+
+.glenvale-data-number {
+	font-size:25px;
+	padding:20px;
+	
+}
+
+.glenvale-data-number::after{
+  content: "";
+	text-align:center;
+  position: absolute;
+  bottom: 35%;
+  left: 30%;
+  height: 4px;
+  width: 40%;
+  background: linear-gradient(90deg, #5D3693 0%, #3674A9 54.17%, #02C6C6 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.56) 97.87%, rgba(255, 255, 255, 0) 100%);
+}
+
+#glenvale-landing-contactus{
+	margin: auto;
+	max-width: 100%;
+}
+
+#glenvale-landing-contactus input {
+	margin-bottom:32px;
+	background: white;
+	color:black;
+	border-radius:10px;
+	height:48px;
+
+}
+
+#glenvale-landing-contactus input::placeholder {
+	opacity:1;
+	color:#393939;
+}
+
+#glenvale-contact-submit{
+	border-radius:100px !important;
+	margin: 5% 0% 1% 0%;
+	font-size:1.2rem;
+	padding-left: 6%;
+	padding-right: 6%;
+	background-color: rgb(132, 76, 234) !important;
+	text-align: center;
+}
+
+.glenvale-contactus-section::before {
+	  content: "";
+  display: block;
+  position: absolute; /* could also be absolute */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 10;
+  background:linear-gradient(54.45deg, #5D3693 -0.63%, #3674A9 53.4%, #00E0E0 99.11%);
+clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.page-id-16349 .main-content {
+	width:100% !important;
+	max-width:100% !important;
+	padding:0px !important;
+	margin: 0px !important;
+}
+	
+}
+
+@media only screen and (max-width: 500px) {
+#mortgage-contact-submit {
+	font-size: 70%;
+	margin-bottom:10px;
+
+}
+
+#mortgage-landing-invest-btn {
+	font-size: 70%;
+	margin-bottom:10px;
+	
+
+}
+	
+.glenvale-soft {
+	opacity:0.5;
+	font-size:8px;
+	line-height:9px !important;
+	padding:5px;
+}
+#glenvale-vc-header {
+	padding: 5px;
+	font-size:8px;
+}
+	
+}

@@ -1,0 +1,51 @@
+<apex:page showHeader="false" sidebar="false">
+    <div id="vizContainer" style="width: 100%; height: 100vh;"></div>
+    <script src="https://prod-apsoutheast-a.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script>
+        const containerDiv = document.getElementById('vizContainer');
+        const tableauURL = "https://prod-apsoutheast-a.online.tableau.com/t/venturecrowd/views/OpportunityDashboard/OpportunityDashboard";
+
+        const options = {
+            hideTabs: true,
+            hideToolbar: true,
+            width: '100%',
+            height: '100%',
+            onFirstInteractive: function () {
+                console.log("Tableau dashboard loaded successfully.");
+                interceptTableauEvents(viz);
+            }
+        };
+
+        // Initialize Tableau Viz
+        let viz = new tableau.Viz(containerDiv, tableauURL, options);
+
+        /**
+         * Function to intercept Tableau URL actions
+         */
+        function interceptTableauEvents(vizInstance) {
+            vizInstance.addEventListener(tableau.TableauEventName.URL_ACTION, function (event) {
+                event.getUrlAsync().then(function (interceptedURL) {
+                    console.log("Intercepted URL:", interceptedURL);
+
+                    // Force navigation in the current browser window
+                    openInCurrentTab(interceptedURL);
+                }).catch(function (error) {
+                    console.error("Error retrieving URL action:", error);
+                });
+            });
+        }
+
+        /**
+         * Function to open URL in the current browser window/tab
+         */
+        function openInCurrentTab(url) {
+            try {
+                // Force navigation in the top-most tab of the current browser
+                window.top.location.href = url;
+                console.log("Opened URL in the current browser session:", url);
+            } catch (error) {
+                console.error("Failed to navigate to URL:", url, error);
+            }
+        }
+    </script>
+</apex:page>

@@ -1,0 +1,303 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+      <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+            <div class="col-md-12 headline">
+             <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+              <h1 class="mt-4"> High Yield Investments in Australia </h1>
+            <p class="mt-4">
+               Simplify the path to reaching your financial goals with direct access to high yield investment opportunities that help you get the most from your portfolio.
+                </p>
+                <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Register Today </a>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/08/Above-the-clouds-GRAD-v2.jpg')"></div>
+      </section>
+
+      <!-- Post Body -->
+      <section class="post-body py-5">
+        <div class="container">
+         
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> 
+High Yield Investments </h3>
+                
+                  <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">A high yield investment will diversify your portfolio, and if it delivers, you will achieve a higher rate of return </span><span style="font-weight: 400;">– </span><span style="font-weight: 400;">which means you’ll have more cash in your pocket. With our current economic climate in mind, you might be asking if</span> <span style="font-weight: 400;">a high yield investment is a good option now? Well, when it comes to maximising your wealth and getting the most from your financial portfolio, a high yield investment seems like a great option. After all, they can make a lot of money in a short time frame and ultimately, give you the most bang for your buck. However, one needs to be cautious as these types of investments come with relative risk, and as the concept of risk can be daunting for some investors, it’s important to research what you are investing in.</span></p>
+
+        </div>
+    
+
+    
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">While high yield investments can deliver the cash, it’s not as simple as filling up your portfolio with these types of investments alone. A portfolio with just high yield stocks is less certain compared to a diversified program. A portfolio of just high yield investments could experience poor growth over time and subsequently, dividends may struggle to increase if the high yield cannot be sustained. Therefore, it’s important to invest in a range of opportunities and keep your portfolio balanced.&nbsp;</span></p>
+
+        </div>
+    
+
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">VentureCrowd&nbsp;is a professional </span><a href="https://www.venturecrowd.com.au"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> model aimed at reducing complexity and guiding you through access to handpicked high yield investment opportunities that get the most from your portfolio. Read on to find out if high yield investments are for you.</span></p>
+
+        </div>
+    
+
+          </div>        
+              
+            </div>
+          </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> 
+What is a high yield investment? </h3>
+                  <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">For investments, there are two components: yield (income) and growth. Yield is the money you make and growth is the projection or rate of the income increasing over time. As a rule of thumb, investments with a high yield usually have low expected growth, and investments offering a low yield will tend to have high expected growth.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Here are some of the top-rated forms of high yield investments:</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+        </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            <div class="nectar-fancy-ul animated-in" data-list-icon="icon-salient-thin-line" data-animation="true" data-animation-delay="0" data-color="accent-color" data-alignment="left"> 
+<ul>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Startup investments</strong> – The introduction of crowdfunding in startups is gaining popularity and if your investment is at the seed-level, your financial contribution can also bring innovation to the business which is exciting. The <a href="https://www.venturecrowd.com.au/s/high-return-investments">return on your investment</a> will depend on the stage of the startup and of course, how much money you put in.&nbsp;</span></li>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Venture Capital</strong> – There is the option to invest in one or more publicly-traded </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> firms. VentureCrowd focuses on making principal investments and managing funds for seed-stage and early-stage ventures. </span><a href="https://www.venturecrowd.com.au/s/angel-investing"><span style="font-weight: 400;">Angel investing</span></a><span style="font-weight: 400;"> also follows similar principles.</span></li>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>High yield bonds</strong> – Also called ‘junk bonds’ which is a&nbsp;fixed income instrument that represents a loan made by an investor to a borrower. These bonds are considered high yield investments as they pay high-interest rates because there is a greater risk of them defaulting.</span></li>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Initial Public Offering (IPOs)</strong> – This is a type of public offering where shares of a company are sold to investors. An IPO is underwritten by banks that arrange for the shares to be listed on stock exchanges.</span></li>
+</ul>
+ </div>
+        </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                  
+                 <div class="wpb_wrapper">
+            <div class="nectar-fancy-ul animated-in" data-list-icon="icon-salient-thin-line" data-animation="true" data-animation-delay="0" data-color="accent-color" data-alignment="left"> 
+<ul>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Options Investing</strong> – This is basically placing a bet on a stock that it will rise over a certain period of time.&nbsp; Researching the market is paramount if you are interested in making an informed decision.</span></li>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Real Estate Investment Trusts (REITs)</strong> – These trusts are companies that bundle mortgages together and the income earned is from the interest made. A more secure investment could be through investing in a </span><a href="https://www.venturecrowd.com.au/s/mortgage-funds"><span style="font-weight: 400;">mortgage fund</span></a><span style="font-weight: 400;"> as this allows investors to lend their money to a range of borrowers.&nbsp;</span></li>
+<li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;"><strong>Peer to Peer Lending</strong> –&nbsp; This is the process of loaning money without the involvement of banks or credit unions. These loans are often unsecured, and therefore come at a higher risk and subsequently offer a higher yield. </span></li>
+</ul>
+ </div>
+        </div>
+
+              </div>
+            </div> 
+          </div>
+            
+ <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            
+                            <div class="wpb_wrapper">
+            
+    
+<div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+    <div class="wpb_wrapper">
+            <p><strong>Therefore, what is the best low-risk high-yield investment?&nbsp; </strong><span style="font-weight: 400;">There are plenty of great options out there, but if you are prudent and specifically considering safe investments with high yields, then there are several options to explore around Index funds, Fixed Annuities, and common stocks that pay dividends.</span></p>
+
+        </div>
+    </div>
+
+        </div>
+                            
+                        </div>
+                    </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> What is a good average rate of return on High Yield investments? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">The market can bring on many variables from year to year, and in this current economic climate changes are inevitable. High yield investments can bring on varied returns as there is volatility in the investment and it really depends on what has happened historically to forecast the future. Generally, the higher the recent returns, the lower the future returns. High yield investments can typically see an average annual return of six percent.&nbsp;</span></p>
+
+        </div>
+    </div>
+
+        </div>
+              </div>
+            </div>
+
+
+          
+          </div>
+            
+
+            
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> A venture you can count on </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">As an investor, you are part of the changing global investment landscape, so when investing your money, it’s important to understand who you’re working with. VentureCrowd can offer you choice and complete transparency to help drive your portfolio diversification. In addition to high yield investments, VentureCrowd also assists with other investment approaches in </span><a href="https://www.venturecrowd.com.au/s/property/funds"><span style="font-weight: 400;">property funds</span></a><span style="font-weight: 400;">,&nbsp; </span><a href="https://www.venturecrowd.com.au/s/property/companies"><span style="font-weight: 400;">investment property companies</span></a><span style="font-weight: 400;"> and </span><a href="https://www.venturecrowd.com.au/s/syndicate-investing"><span style="font-weight: 400;">syndicate investing</span></a><span style="font-weight: 400;">.</span></p>
+
+        </div>
+    </div>
+
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;"><a href="https://investor.venturecrowd.com.au/registration/initial_registration">Get in touch with VentureCrowd</a> to discuss diversifying your portfolio with high yield investments.</span></p>
+<p><span style="font-weight: 400;">You can contact us on <a href="tel:1300039655">1300 039 655</a>, send an email to </span><a href="mailto:hello@venturecrowd.com.au"><span style="font-weight: 400;">hello@venturecrowd.com.au</span></a><span style="font-weight: 400;"> or <a href="https://investor.venturecrowd.com.au/registration/initial_registration">get in touch online</a>. We’d be happy to answer any of your questions. </span></p>
+
+        </div>
+    
+
+        </div>
+    </div>
+
+        </div>
+                  
+              </div>
+            </div>
+
+          </div>
+
+
+
+        
+
+        </div>
+      </section>
+
+      <!-- Post Footer -->
+    <!--  <section class="related">
+        <div class="container">
+          <div class="row text-center py-5 text-white">
+            <div class="col-md-2"></div>
+
+              <div class="col-md-8 pb-5 next-post-title mt-3">
+                  <h3> Be part of something bigger and build your wealth as Australia grows and expands. </h3>
+
+                <div class="pt-5 next-post-link"> Join VentureCrowd, one of the fuss-free investment property companies offering ground floor access to lucrative property investment opportunities throughout the country. 
+                  
+
+                  </div>
+              </div>
+            
+        
+            <div class="col-md-2"></div>
+          </div>
+
+
+          <div class="row text-center py-5 text-white">
+            <div class="col-md-5"></div>
+
+              <div class="col-md-2 pb-5">
+
+                   <a class="button-outline-white" href="{!$Label.Investor_Community_URL}"  > Register Today </a>
+
+              </div>
+            <div class="col-md-5"></div>
+          </div>
+
+        </div>
+      
+        <div class="next-post-bg-overlay"></div>
+        <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/10/Cornerstone-Village-LT.jpg')"></div>
+      </section> -->
+
+      <div class="social-share-container">
+        <div class="share-links mb-4">
+          <div class="link-container">
+            <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- ./Body -->
+
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+
+</apex:page>

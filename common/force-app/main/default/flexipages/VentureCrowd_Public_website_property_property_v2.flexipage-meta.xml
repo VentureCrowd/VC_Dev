@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>dbec3e08-6dff-476f-927d-5a3a6733d3b4</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-a74c90f2-24cc-4f6a-97db-39880a5d4425</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://www.venturecrowd.com.au/resource/1619750717000/VC_CF_PropertyAssets/img/Stonewood-Estate-Property-GRAD.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Enquire</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.venturecrowd.com.au/s/login/SelfRegister</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pg&amp;oid=00D2v000000WjFp&amp;lastMod=1629794440000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>We provide Retail and Wholesale Property Crowdfunding opportunities for investors and developers. We’re passionate about giving everyone the ability to invest and shape the world in which we live. At VentureCrowd, we find and fund the future. A future that is good for investors, founders and humanity.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Property Investing Australia</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>dbec3e08-6dff-476f-927d-5a3a6733d3b4</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0725a6da-d7a0-4687-82f3-58f31fa1a07c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b95af594-7082-41a8-8ff4-872508838156</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>productType</name>
+                    <value>Property Product</value>
+                </componentInstanceProperties>
+                <componentName>vcProductListLwc</componentName>
+                <identifier>vcProductListLwc</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>0725a6da-d7a0-4687-82f3-58f31fa1a07c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>3bc7b608-bd31-4871-b621-f3ac42d26815</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-dded1a4e-b78b-489a-9e37-fc02b6cb4968</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;container content-container--text-edit&quot;&gt;
+    &lt;div class=&quot;row px-3 px-lg-0&quot;&quot;&gt;
+        &lt;div class=&quot;col-lg-6 mb-4 mb-lg-0&quot;&gt;
+            &lt;h1&gt;Property Investing&lt;/h1&gt;
+            &lt;p&gt;Property investing is a great way to build wealth and through the act of buying, leasing, renovating, and developing investment properties, investors can improve their financial situation and set themselves up for a comfortable, or even early retirement. Putting your money into something tangible and investing in property can be easier to understand than other investments. There is something very rewarding for the investor to physically see their assets and build their financial portfolio at the same time.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;      
+            &lt;p&gt;In this current economic climate, many investors are taking advantage of the low mortgage rates and diving into the property market for long term returns 2020 and beyond. However, investment decisions should be made with due diligence and the right information. VentureCrowd can help with this as they are a professional &lt;a href=&quot;https://www.venturecrowd.com.au/s/crowdfunding-equity-investment-platform&quot;&gt;crowdfunding&lt;/a&gt; model aimed at reducing complexity and guiding you through access to handpicked investment opportunities in alternative assets and investment properties. Getting the basics about property investing is important so you understand how it works and if this is right for you.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>3bc7b608-bd31-4871-b621-f3ac42d26815</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ff9b9948-ad86-4a6b-8205-a619e9ee2f28</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-95d39cbf-a680-4ea4-896d-93641626bf56</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Context</name>
+                    <value>With property crowdfunding, you have numerous investors contributing small amounts to purchase property or property-development projects. This is facilitated by a crowdfunding platform, like VentureCrowd, which vets the investment and development projects and brings the investors together.&lt;/p&gt;  &lt;p&gt;Traditional property investment requires a considerable amount of capital. Pooling funds from numerous investors makes property investment far more affordable. Investors might be able to enter the property market with as little as $100 or $1,000 depending on the platform.&lt;/p&gt;  &lt;p&gt;Investors might receive their share of rental returns if the property is leased and then again receive returns associated with any growth in capital when the property is sold. If it’s a property-development project, the investor may receive their return when the property is fully developed and sold. These are examples of property equity investments. In the case of a crowdfunded property-backed loan investment, your returns will be in the form of interest on the funds you lend/invest.&lt;/p&gt;  &lt;p&gt;VentureCrowd is committed to the democratisation of property investment. We offer wholesale property crowdfunding opportunities for investors and developers, and soon to be retail opportunities too. Find out more about our property fund opportunities here.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Header</name>
+                    <value>What is property crowdfunding?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Name</name>
+                    <value>What is property crowdfunding?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_ShowColumn</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Context</name>
+                    <value>&lt;p&gt;Capital growth and rental yields should be the focus when it comes to investing in property. These can depend on factors like location, property features, local amenities, demand versus supply, and type of property. For generating a steady income, look at vacancy rates, types of in-demand properties, and the median and average rental yields for the area.&lt;/p&gt;  &lt;p&gt;For the prospects of capital growth, research growth-trend indicators for the property, such as median sale prices, demographic data, schools, and amenities. Also consider costs such as mortgage repayments (if you’re investing in the traditional way), strata fees, council fees, insurance, and maintenance costs.&lt;/p&gt;  &lt;p&gt;By investing through VentureCrowd’s platform, you’ll save yourself from having to do exhaustive research and vetting. Our property experts conduct in-depth research and hand-select all property deals. We can assist you as we work to a professional crowdfunding model aimed at reducing complexity. We guide you through access to handpicked investment opportunities in alternative assets and investment properties. Understanding the basics of property investing is important so you know how it works and if this is right for you.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Header</name>
+                    <value>What to look for in an investment property?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Name</name>
+                    <value>What to look for in an investment property?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_ShowColumn</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Column_1</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Column_2</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Context</name>
+                    <value>&lt;p&gt;Successful property investing takes into account a wide range of factors beyond location. What makes a good investment for one person might not be the same for the next person. You’ll want to start by considering your investment goals, such as whether you’re looking for a steady income, capital growth, or both. Take a look at the bigger picture - that is, the big trends. These include population growth, supply and demand, local infrastructure, liveability, vacancy rates, and amenities.&lt;/p&gt;  &lt;p&gt;Population growth means local properties are likely to be popular with both buyers (capital growth) and tenants (rental returns). Stay up to date with any infrastructure and amenities developments in the local area, as these could raise livability. Also, look for properties with desirable features for buyers and tenants. It’s also important to do your research so you’re buying into areas or investing in developments with strong growth potential.&lt;/p&gt;  &lt;p&gt;The Queensland property market is an excellent place to start, and with VentureCrowd, you can take advantage of our promising investment opportunities. Get in touch with our team today to discuss how you can diversify your portfolio with property investing.&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Header</name>
+                    <value>Where to buy an investment property?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Name</name>
+                    <value>Where to buy an investment property?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_ShowColumn</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Column_1</name>
+                    <value>To get started in property investing it is best, to begin with, a checklist and be fully prepared for what’s to come:  Check your finances – calculate your expenses and determine them against your total income and assets. Get pre-approval from your lender or through a mortgage broker Set your goals and determine what success looks like to you. Add value to your property. By adding some aesthetic improvements to the property, you could raise its value through an appraisal. Start budgeting and understand how you spend your money which will plan and prepare you for potential and larger expenses in the future.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Column_2</name>
+                    <value>Research the market. The Queensland property market is also a great place to start. Through VentureCrowd, you can work through options within the &lt;a href=&quot;https://www.venturecrowd.com.au/s/property/brisbane&quot;&gt;Brisbane property investment&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/property/gold-coast&quot;&gt;Gold Coast property investment&lt;/a&gt; scenes. VentureCrowd can set you up with &lt;a href=&quot;https://www.venturecrowd.com.au/s/property/companies&quot;&gt;investment property companies&lt;/a&gt; as they also understand the security and financial benefits of property investing and holding a property portfolio over the long term. Property investing through VentureCrowd is achieved through a simple 4-step process of seeking investment opportunities – begin investing, become an owner and then share in the success. Get in touch with VentureCrowd to discuss diversifying your portfolio with property investing.  You can contact us on &lt;a href=&quot;tel:1300039655&quot; target=&quot;_blank&quot;&gt;1300 039 655&lt;/a&gt;, send an email to &lt;a href=&quot;mailto:hello@venturecrowd.com.au&quot; target=&quot;_blank&quot;&gt;hello@venturecrowd.com.au&lt;/a&gt; or &lt;a href=&quot;https://investor.venturecrowd.com.au/registration/initial_registration&quot;&gt;get in touch&lt;/a&gt; online. We’d be happy to answer any of your questions.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Context</name>
+                    <value>Test tab single paragraph</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Header</name>
+                    <value>How does crowdfunding work in real estate?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Name</name>
+                    <value>How does crowdfunding work in real estate?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_ShowColumn</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>themecolor</name>
+                    <value>Black</value>
+                </componentInstanceProperties>
+                <componentName>vcHomeFaq</componentName>
+                <identifier>vcHomeFaq</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ff9b9948-ad86-4a6b-8205-a619e9ee2f28</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>47ed7e10-e2c2-483f-8677-8b0b14ae4bab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-0cef3644-3627-47a4-bf59-23b169845451</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeaderText</name>
+                    <value>At VentureCrowd we offer</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3oi&amp;oid=00D2v000000WjFp&amp;lastMod=1629703070000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Access a previously untapped source of financing via a pool of investors across Australia.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgTitle</name>
+                    <value>Increased access to fuss-free funding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3on&amp;oid=00D2v000000WjFp&amp;lastMod=1629766327000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>Unrivalled exposure for your project through our leading platform. Increase your visibility to over 10k investors, buyers, partners and contributors to your project.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgTitle</name>
+                    <value>Unprecedented Exposure</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3os&amp;oid=00D2v000000WjFp&amp;lastMod=1629703475000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>48 hour turnaround to assess your project, after we receive all necessary information – there’s no bureaucracy.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgTitle</name>
+                    <value>Save time</value>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pR&amp;oid=00D2v000000WjFp&amp;lastMod=1629775850000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Maintain control of your development and remain the largest shareholder, we let you get on with your job.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgTitle</name>
+                    <value>Maximum project control</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnLabel</name>
+                    <value>Enquire Now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnRedirectUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/about?contactus=true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pW&amp;oid=00D2v000000WjFp&amp;lastMod=1629775794000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>Structure multiple dealoptions to suit your needs, including equity and/or debt.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgTitle</name>
+                    <value>Flexibility</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pb&amp;oid=00D2v000000WjFp&amp;lastMod=1629775400000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>Find like-minded individuals that support your project and engage with stakeholders who care about what you stand for.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgTitle</name>
+                    <value>Community Support</value>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>47ed7e10-e2c2-483f-8677-8b0b14ae4bab</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>db114b67-ccfb-4790-9564-e91b699d5b7a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-59d4f727-bc43-4634-9a74-403a9b79a850</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor page-home&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row pb-5&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Gain returns through a hands-off investment&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;Start or add to your portfolio of real estate investments without the hassle of managing a property development.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Opportunities for every investor&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;Gain exposure to unique real estate asset classes such as residential, commercial and industrial development opportunities. Leverage the know-how of property developers and invest alongside experienced investors.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Convenient and easy-to-use platform&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;Save time and quickly compare available pre-vetted deals on our platform. We negotiate terms on your behalf, handle the paperwork and update you on project progress.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;https://www.venturecrowd.com.au/resource/1619750717000/VC_CF_PropertyAssets/img/kingdom.jpg&quot; /&gt;
+        	&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor page-home&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row pb-5&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+       			&lt;img class=&quot;img-fluid&quot; src=&quot;https://www.venturecrowd.com.au/resource/1619750717000/VC_CF_PropertyAssets/img/k2.jpg&quot;/&gt;
+   			&lt;/div&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Invest smart&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;Support solid investment opportunities with low upfront costs, defined turnaround time and exit strategy.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Limited Liability&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;You can only lose what you invest. No credit history or borrowing capacity checks required.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;&lt;b&gt;Support what you stand for&lt;/b&gt;&lt;/p&gt;
+                        &lt;p&gt;Be part of a project you believe in and invest in the future of yourself and others.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+           
+                &lt;!--div style=&quot;text-align:center&quot;&gt;
+                    &lt;b&gt;&lt;a href=&quot;https://www.venturecrowd.com.au/s/invest&quot; style=&quot;text-decoration:underline;&quot;&gt;GO TO OUR PROPERTY DEALS&lt;/a&gt;&lt;/b&gt;
+                &lt;/div--&gt;
+            
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonName</name>
+                    <value>Learn more</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonRedirectUrl</name>
+                    <value>https://www.venturecrowd.com.au/s/invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>subTitle</name>
+                    <value>See all available retail and wholesale investment opportunities</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Invest with VentureCrowd today</value>
+                </componentInstanceProperties>
+                <componentName>registerNowProductLanding</componentName>
+                <identifier>registerNowProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>db114b67-ccfb-4790-9564-e91b699d5b7a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-a74c90f2-24cc-4f6a-97db-39880a5d4425</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;a74c90f2-24cc-4f6a-97db-39880a5d4425&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;dbec3e08-6dff-476f-927d-5a3a6733d3b4&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>59</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b95af594-7082-41a8-8ff4-872508838156</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b95af594-7082-41a8-8ff4-872508838156&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0725a6da-d7a0-4687-82f3-58f31fa1a07c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-dded1a4e-b78b-489a-9e37-fc02b6cb4968</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;dded1a4e-b78b-489a-9e37-fc02b6cb4968&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;3bc7b608-bd31-4871-b621-f3ac42d26815&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(15,20,30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(15, 20, 30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-95d39cbf-a680-4ea4-896d-93641626bf56</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;95d39cbf-a680-4ea4-896d-93641626bf56&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ff9b9948-ad86-4a6b-8205-a619e9ee2f28&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(255, 255, 255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-0cef3644-3627-47a4-bf59-23b169845451</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;0cef3644-3627-47a4-bf59-23b169845451&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;47ed7e10-e2c2-483f-8677-8b0b14ae4bab&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(247, 247, 247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-59d4f727-bc43-4634-9a74-403a9b79a850</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;59d4f727-bc43-4634-9a74-403a9b79a850&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;db114b67-ccfb-4790-9564-e91b699d5b7a&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>With VentureCrowd, you can get direct access to property investing opportunities that will help you get the most from your portfolio.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Property Investing Australia | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>property_property_v2</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

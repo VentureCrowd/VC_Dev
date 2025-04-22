@@ -1,0 +1,188 @@
+.component-container  {
+  padding-top: clamp(39px,5vw, 5vw);
+  padding-bottom: clamp(71px,5vw, 5vw);
+  position: relative;
+}
+
+.component-container.component-bg-dark-navy {
+  background-color: #0F141E;
+  color: #ffffff;
+}
+
+.component-container.component-bg-gray {
+  background-color: #C3CDD1;
+  color: #7B868C;
+}
+
+.component-container.component-bg-white {
+  background-color: #FFF;
+  color: #7B868C;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #0F141E;
+}
+
+.component-container.component-bg-dark-navy h3 {
+  color: #FFF;
+}
+
+.text-container {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.text-container i {
+  font-family: 'SuisseIntl-Light', 'Montserrat' !important;
+  font-style: inherit;
+}
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider img {
+  border-radius: 10px;
+}
+@media (max-width:992px) {
+
+}
+
+/* .titleText
+{
+  padding-left: 7.5rem;
+} */
+
+.slide {
+  width: 100%;
+  display: none;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0.5;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.controls:hover {
+  background: white;
+  transition: 0.3s;
+}
+
+.controls:active {
+  color: grey;
+}
+
+.dots_con {
+  text-align: center;
+  margin-top: 64px;
+}
+
+@media (max-width:1200px) {
+  .dots_con {
+    margin-top: 34px;
+  }
+
+
+  .left_arrow {
+    left: 0;
+  }
+  
+  .right_arrow {
+    right: 0;
+  }
+
+
+}
+.left_arrow {
+  left: -45px;
+  color: #fff;
+  font-size: 48px !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.right_arrow {
+  font-size: 48px !important;
+  font-weight: 700;
+  right: -45px;
+  color: #fff;
+  cursor: pointer;
+}
+.component-bg-white .right_arrow ,
+.component-bg-white .left_arrow {
+  color: #000;
+}
+
+
+.dot {
+  border-radius: 50%;
+  width: 8px;
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  background: transparent;
+  height: 8px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.active {
+  background: #fff;
+}
+.component-bg-white .dot{
+  background:transparent;
+  border: 1px solid #000;
+  
+}
+
+.component-bg-white .active{
+  background:#000;
+
+}
+
+
+@media (max-width:576px) {
+  .slider {
+      width: 100%;
+  }
+  .controls {
+      font-size: 1em;
+  }
+  .left_arrow {
+    left: -10px;
+    color: #02C6C6;
+    font-size: 48px !important;
+    font-weight: 700;
+  }
+  
+  .right_arrow {
+    font-size: 48px !important;
+    font-weight: 700;
+    right: -10px;
+    color: #02C6C6;
+  }
+}

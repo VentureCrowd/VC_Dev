@@ -1,0 +1,78 @@
+<template>
+    <c-core-modal
+    label={label}
+    variation={variation}
+    lwc:ref="coremodal"
+    >
+    <div class="header" slot="header">
+        <h2 class="text--xl">{name}</h2>
+        <hr>
+    </div>
+    <div slot="body">
+        <template lwc:if={isLoading}>
+            <div class="file-loading-spinner">
+                <lightning-spinner variant="brand" size="small"> </lightning-spinner>
+            </div>
+        </template>
+        <template lwc:else>
+            <c-core-form 
+            onsubmit={handleFormSubmit}
+            onchange={handleChange}
+            form-data={formData}
+            lwc:ref="coreForm">
+                <div slot="body">
+                    <c-core-input
+                    name="name"
+                    label="Full name"
+                    type="text"
+                    limit="255"
+                    required
+                    ></c-core-input>
+                    <c-core-input
+                    name="role"
+                    label="Role"
+                    type="text"
+                    limit="255"
+                    required
+                    lwc:if={displayRoleText}
+                    ></c-core-input>
+                    <c-core-radio
+                    name="role"
+                    label="Role"
+                    type="text"
+                    values={roleOptions}
+                    size="medium"
+                    alignment-position="horizontal"
+                    text-position="horizontal"
+                    required
+                    lwc:else
+                    ></c-core-radio>
+                    <c-core-input
+                    name="description"
+                    label="Bio"
+                    type="textarea"
+                    limit="600"
+                    required
+                    ></c-core-input>
+                    <c-core-input
+                    name="linkedIn"
+                    label="Founder Linkedin URL"
+                    type="url"
+                    limit="255"
+                    placeholder="https://www.linkedin.com/{your-company-LinkedIn-URL}"
+                    ></c-core-input>
+                    <c-core-input
+                    lwc:ref="fileUploadEL"
+                    name="headshot"
+                    label="Headshot"
+                    type="file"
+                    record-id={memberId}
+                    required
+                    ></c-core-input>
+                </div>
+            </c-core-form>
+        </template>
+        
+    </div>
+    </c-core-modal>
+</template>

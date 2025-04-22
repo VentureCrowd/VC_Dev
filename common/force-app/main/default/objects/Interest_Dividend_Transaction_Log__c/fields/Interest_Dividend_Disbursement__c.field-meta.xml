@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Dividend_Disbursement__c</fullName>
+    <label>Interest Dividend Disbursement</label>
+    <referenceTo>Interest_Dividend_Disbursement__c</referenceTo>
+    <relationshipLabel>Interest Dividend Transaction Log</relationshipLabel>
+    <relationshipName>Interest_Dividend_Transaction_Log</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

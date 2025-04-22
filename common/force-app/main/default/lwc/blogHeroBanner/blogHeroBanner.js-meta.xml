@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Hero Banner (Blog)</masterLabel>
+
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="backgroundimageurl" type="String" label="Enter Background image url" placeholder="Image public URL" description="Background Image url" default="https://assets.venturecrowd.vc/uploads/2021/03/tech-hub_TickerTV.jpeg"/>
+            <property name="bannerTitle" type="String" label="Banner Title" placeholder="Title" description="" default="Australia could be a global technology hub"/>
+            <property name="HealthTech" type="Boolean" label="HealthTech" description="To make category visible on hero banner" default="true"/>
+            <property name="FoodTech" type="Boolean" label="FoodTech" description="To make category visible on hero banner" default="true"/>
+            <property name="Renewables" type="Boolean" label="Renewables" description="To make category visible on hero banner" default="false"/>
+            <property name="Lifestyle" type="Boolean" label="Lifestyle" description="To make category visible on hero banner" default="true"/>
+            <property name="Property" type="Boolean" label="Property" description="To make category visible on hero banner" default="false"/>
+            <property name="Crowdfunding" type="Boolean" label="Crowdfunding" description="To make category visible on hero banner" default="false"/>
+            <property name="Invest" type="Boolean" label="Invest" description="To make category visible on hero banner" default="false"/>
+            <property name="News" type="Boolean" label="News" description="To make category visible on hero banner" default="false"/>
+            <property name="PropTech" type="Boolean" label="PropTech" description="To make category visible on hero banner" default="false"/>
+            <property name="PropertyFunds" type="Boolean" label="Property-Funds" description="To make category visible on hero banner" default="false"/>
+            <property name="PropertyResidential" type="Boolean" label="Property-Residential" description="To make category visible on hero banner" default="false"/>
+            <property name="Ventures" type="Boolean" label="Ventures" description="To make category visible on hero banner" default="false"/>
+            <property name="BioTech" type="Boolean" label="BioTech" description="To make category visible on hero banner" default="false"/>
+            <property name="MedTech" type="Boolean" label="MedTech" description="To make category visible on hero banner" default="false"/>
+            <property name="AgTech" type="Boolean" label="AgTech" description="To make category visible on hero banner" default="false"/>
+            <property name="FinTech" type="Boolean" label="FinTech" description="To make category visible on hero banner" default="false"/>
+            <property name="EdTech" type="Boolean" label="EdTech" description="To make category visible on hero banner" default="false"/>
+            <property name="CleanTech" type="Boolean" label="CleanTech" description="To make category visible on hero banner" default="false"/>
+            <property name="ESG" type="Boolean" label="ESG" description="To make category visible on hero banner" default="false"/>
+            <property name="investorHub" type="Boolean" label="Investor Hub" description="To make category visible on hero banner" default="false"/>
+            <property name="web3" type="Boolean" label="Web3" description="To make category visible on hero banner" default="false"/>
+
+            <property name="HealthTechurl" type="String" label="HealthTech URL" placeholder="HealthTech redirection URL" description="HealthTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Healthtech"/>
+            <property name="FoodTechurl" type="String" label="FoodTech URL" placeholder="FoodTech redirection URL" description="FoodTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Healthtech"/>
+            <property name="Renewablesurl" type="String" label="Renewables URL" placeholder="Renewables redirection URL" description="Renewables redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Renewable+Energy"/>
+            <property name="Lifestyleurl" type="String" label="Lifestyle URL" placeholder="Lifestyle redirection URL" description="Lifestyle redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Healthtech"/>
+            <property name="Propertyurl" type="String" label="Property URL" placeholder="Property redirection URL" description="Property redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Healthtech"/>
+            <property name="Crowdfundingurl" type="String" label="Crowdfunding URL" placeholder="Crowdfunding redirection URL" description="Crowdfunding redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Crowdfunding"/>
+            <property name="Investurl" type="String" label="Invest URL" placeholder="Invest redirection URL" description="Invest redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Invest"/>
+            <property name="Newsurl" type="String" label="News URL" placeholder="News redirection URL" description="News redirection URL" default="https://www.venturecrowd.com.au/s/category?category=News"/>
+            <property name="PropTechurl" type="String" label="PropTech URL" placeholder="PropTech redirection URL" description="PropTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=PropTech"/>
+            <property name="PropertyFundsurl" type="String" label="Property-Funds URL" placeholder="Property-Funds redirection URL" description="Property-Funds redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Property+Funds"/>
+            <property name="PropertyResidentialurl" type="String" label="Property-Residential URL" placeholder="Property-Residential redirection URL" description="Property-Residential redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Property+Residential"/>
+            <property name="Venturesurl" type="String" label="Ventures URL" placeholder="Ventures redirection URL" description="Ventures redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Ventures"/>
+            <property name="BioTechurl" type="String" label="BioTech URL" placeholder="BioTech redirection URL" description="BioTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=BioTech"/>
+            <property name="MedTechurl" type="String" label="MedTech URL" placeholder="MedTech redirection URL" description="MedTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=MedTech"/>
+            <property name="AgTechurl" type="String" label="AgTech URL" placeholder="AgTech redirection URL" description="AgTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=AgTech"/>
+            <property name="FinTechurl" type="String" label="FinTech URL" placeholder="FinTech redirection URL" description="FinTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=FinTech"/>
+            <property name="EdTechurl" type="String" label="EdTech URL" placeholder="EdTech redirection URL" description="EdTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=EdTech"/>
+            <property name="CleanTechurl" type="String" label="CleanTech URL" placeholder="CleanTech redirection URL" description="CleanTech redirection URL" default="https://www.venturecrowd.com.au/s/category?category=CleanTech"/>
+            <property name="ESGurl" type="String" label="ESG URL" placeholder="ESG redirection URL" description="ESG redirection URL" default="https://www.venturecrowd.com.au/s/category?category=ESG"/>
+            <property name="investorHuburl" type="String" label="Investor Hub URL" placeholder="ESG redirection URL" description="ESG redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Investor+Hub"/>
+            <property name="web3url" type="String" label="Web3 URL" placeholder="ESG redirection URL" description="ESG redirection URL" default="https://www.venturecrowd.com.au/s/category?category=Web3"/>
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

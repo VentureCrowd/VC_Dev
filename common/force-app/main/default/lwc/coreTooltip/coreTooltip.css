@@ -1,0 +1,55 @@
+.tool-tip {
+    position: absolute;
+    z-index: 1;
+    background: #000B47;
+    box-shadow: 0 1px 18px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    border-radius: 8px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Provide a max width but no fixed width so it can shrink/grow */
+    width: 300px;
+    /* Hidden by default, but still measurable */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity .3s ease;
+}
+
+@media (width <= 720px) {
+    .tool-tip {
+        max-width: 58vw;
+    }
+}
+
+
+.tooltip-container {
+     /* So .tool-tip is absolutely placed relative to container */
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+
+/* Optional text styling */
+.tool-tip p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--white);
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+/* For small screens, ensure it doesn't exceed viewport width minus some padding */
+/* @media (max-width: 768px) {
+    .tool-tip {
+        width: calc(100vw - 20px);
+    }
+} */
+
+c-core-icon {
+    color: var(--tertiary-accent);
+}

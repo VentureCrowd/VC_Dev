@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Quick fix flow here. FM team are updating some records without values this is a fix to ensure the line items still always have values attached.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ExtractedAmount</name>
+        <dataType>String</dataType>
+        <expression>MID(
+    {!Get_Transaction.XI_Line_item_amount__c}, 
+    FIND(&quot;,&quot;, {!Get_Transaction.XI_Line_item_amount__c}) + 1, 
+    LEN({!Get_Transaction.XI_Line_item_amount__c}) - FIND(&quot;,&quot;, {!Get_Transaction.XI_Line_item_amount__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ExtractedAmountCurrency</name>
+        <dataType>Currency</dataType>
+        <expression>VALUE(
+    MID(
+        {!Get_Transaction.XI_Line_item_amount__c}, 
+        FIND(&quot;,&quot;, {!Get_Transaction.XI_Line_item_amount__c}) + 1, 
+        LEN({!Get_Transaction.XI_Line_item_amount__c}) - FIND(&quot;,&quot;, {!Get_Transaction.XI_Line_item_amount__c})
+    )
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Transaction line item: FIX line item value NULL {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Transaction line item: FIX line item value NULL</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Transaction</name>
+        <label>Get Transaction</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Line_item_with_2nd_value</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Transaction__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Transaction__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Line_item_with_2nd_value</name>
+        <label>Update Line item with 2nd value</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Line_item_amount__c</field>
+            <value>
+                <elementReference>ExtractedAmountCurrency</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Transaction</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Line_item_amount__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Transaction_Line_Item__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generatea3d2v000003pFh3AAE</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Stonewood EOI Gen</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR(IF($Site.prefix == &apos;/s&apos;,&apos;/apex/dfsle__gendocumentgenerator&apos;, $Site.Prefix +&apos;/apex/dfsle__gendocumentgenerator&apos;), null, [sId = Application__c.Id, templateId = &apos;a3d2v000003pFh3AAE&apos;, recordId = Application__c.Id, title = &apos;Stonewood EOI Gen&apos;])}</url>
+</WebLink>

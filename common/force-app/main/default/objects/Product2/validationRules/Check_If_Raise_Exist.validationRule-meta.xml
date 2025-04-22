@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_If_Raise_Exist</fullName>
+    <active>true</active>
+    <description>If a Raise exists, this field is not required. Otherwise, the user will need to fill in this field</description>
+    <errorConditionFormula>AND(
+    RecordType.Name &lt;&gt; &quot;Founders&quot;,
+    ISBLANK(Raise__c),
+    ISBLANK(Tile_Banner__c)
+)</errorConditionFormula>
+    <errorDisplayField>Tile_Banner__c</errorDisplayField>
+    <errorMessage>You can not have an empty Tile Banner</errorMessage>
+</ValidationRule>

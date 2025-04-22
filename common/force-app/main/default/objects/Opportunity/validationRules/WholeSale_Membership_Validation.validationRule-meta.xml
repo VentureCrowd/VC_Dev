@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WholeSale_Membership_Validation</fullName>
+    <active>true</active>
+    <description>Checks wholesale membership status of an opp at closed won if the related product is wholesale. (Modified to allow for EIC memberships)</description>
+    <errorConditionFormula>NOT(ISCHANGED(Account_update_date__c)) &amp;&amp;
+AND(
+    RecordType.DeveloperName = &quot;VC&quot;,
+    PRIORVALUE(StageName) &lt;&gt; &quot;Closed Won&quot;,
+    ISPICKVAL(StageName, &quot;Closed Won&quot;),
+    Product_Type__c = &quot;Wholesale&quot;,
+    OR(
+        AND(
+            Associated_Product_Type__c = &quot;VC Product&quot;,
+            NOT(
+                AND(
+                    Membership_Status__c = &quot;Active&quot;,
+                    OR(
+                        Membership__c = &quot;Wholesale&quot;,
+                        Membership__c = &quot;EIC - Start up&quot;
+                    )
+                )
+            ),
+            NOT(EIC_STartup__c)
+        ),
+        AND(
+            Associated_Product_Type__c = &quot;Property Product&quot;,
+            NOT(
+                AND(
+                    Membership_Status__c = &quot;Active&quot;,
+                    OR(
+                        Membership__c = &quot;Wholesale&quot;,
+                        Membership__c = &quot;EIC - Property&quot;
+                    )
+                )
+            ),
+            NOT(EIC_Property__c)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Please review the Membership status of the Contact associated to this opportunity, it appears as if they don&apos;t have an active Wholesale membership.</errorMessage>
+</ValidationRule>

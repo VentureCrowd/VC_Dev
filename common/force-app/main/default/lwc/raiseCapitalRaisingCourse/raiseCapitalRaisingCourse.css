@@ -1,0 +1,181 @@
+.course-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding: var(--space-xxl) 0;
+}
+
+.course-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.course-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-title h1 {
+    font-size: var(--text-xxl);
+    font-family: 'SuisseIntl-Medium';
+}
+
+.course-header .actions {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.course-description {
+    max-width: 80%;
+}
+
+.course-description p{
+    font-family: 'SuisseIntl-Light';
+
+}
+
+.module-card {
+    border-radius: 28px;
+    border: 1px solid var(--Ash, #CFCECC);
+    background: #FFF;
+    box-shadow: 0px 3.66px 13.634px 0px rgba(0, 0, 0, 0.10);
+    padding: var(--space-lg) var(--space-xxl);
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.course-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.module-image {
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+.module-image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 25%;
+}
+
+.module-content {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.module-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-title {
+    font-size: var(--text-lg);
+    font-family: "SuisseIntl-Medium";
+}
+
+.module-footer {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;;
+}
+
+.module-tags {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.module-etc {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.module-etc p{
+    font-size: var(--text-base-size);
+    margin: 0;
+    color: var(--Portal-Grey, #939393);
+}
+
+.module-tag {
+    border-radius: 7px;
+    border: 1px solid var(--Ash, #CFCECC);
+    background: var(--Dove, #F0F1F2);
+    padding: var(--space-xxs) var(--space-xs);
+    color: var(--Portal-Grey, #939393);
+}
+
+.module-body {
+    font-family: 'SuisseIntl-Light';
+}
+
+.progressbar {
+    background: var(--Dove, #F0F1F2);
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    flex: 1;
+  }
+  
+  .progressbar>div {
+    background-color: black;
+    /* width: 40%; */
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
+  }
+
+  .progress-text {
+    font-family: "SuisseIntl-Medium";
+    font-size: var(--text-lg);
+}
+
+.course-progress-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* modal styling */
+
+.modal-course-completed h2 {
+    font-size: var(--text-xl);
+    font-family: 'SuisseIntl-Medium';
+}
+
+
+.modal-course-completed {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+}
+
+.body-modal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+}
+
+.modal-course-completed img {
+    max-width: 59%;
+}

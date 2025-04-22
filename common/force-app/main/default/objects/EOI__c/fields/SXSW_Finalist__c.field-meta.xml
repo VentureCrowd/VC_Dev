@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SXSW_Finalist__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this if the EOI is an SXSW Finalist. This will enable it to be displayed on the SXSW Finalist EOI landing page</description>
+    <inlineHelpText>Check this if the EOI is an SXSW Finalist. This will enable it to be displayed on the SXSW Finalist EOI landing page</inlineHelpText>
+    <label>SXSW Finalist</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

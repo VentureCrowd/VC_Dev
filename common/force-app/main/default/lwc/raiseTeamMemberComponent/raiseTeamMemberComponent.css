@@ -1,0 +1,110 @@
+.header {
+    padding: var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body {
+    padding: var(--space-md);
+}
+
+
+p{
+    margin-bottom: 0;
+}
+
+.title{
+    display: inline;
+    margin-right: 5px;
+    font-family: 'SuisseIntl-Medium';
+}
+
+.help-text{
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-Light";
+    font-size: var(--text-base-size);
+}
+
+.subtext{
+    color: var(--gray-4);
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-light";
+    font-size: var(--text-sm);
+}
+
+c-core-card {
+    padding: var(--space-md);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50% [col-start]);
+}
+
+.title-wrapper {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.profile-image {
+    flex: 1;
+}
+
+.header-text {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: flex-end;
+}
+
+p.name{
+    font-size: var(--text-md);
+    font-family: "SuisseIntl-Medium";
+}
+
+p.role{
+    font-size: var(--text-md);
+    font-family: "SuisseIntl-Light";
+}
+
+p.description{
+    font-size: var(--text-md);
+    font-family: "SuisseIntl-Light";
+}
+
+.file-loading-spinner{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+}
+
+.error-message {
+    color: var(--error-color, #D8000C); /* Providing a default red color if --error-color is not defined */
+    background-color: var(--error-bg-color, #FFD2D2); /* Light red background for high visibility */
+    padding: var(--space-xs); /* Consistent with your spacing theme */
+    border-radius: 5px; /* Keeping consistent with input and textarea style */
+    font-size: var(--text-sm); /* Smaller text to not overpower the main content */
+    margin: var(--space-xs) 0; /* Consistent vertical spacing */
+    border: 1px solid var(--error-border-color, #D8000C); /* Slightly darker border for better definition */
+    font-family: "SuisseIntl-light"; /* Keeping the font consistent with the rest of the form */
+}
+
+.error-message::before {
+    content: "⚠ "; /* Adds a warning icon before the text */
+    font-size: var(--text-md);
+    vertical-align: middle;
+}
+
+
+a.linkedin-link{
+    word-break: break-all;
+}

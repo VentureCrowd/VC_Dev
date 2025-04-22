@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EIC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ RecordType.Name = &apos;Experienced Investor Application Form (Property)&apos;,
+RecordType.Name = &apos;Experienced Investor Application Form (Start-Ups)&apos;),
+  ISPICKVAL(Status__c, &apos;Application Approved&apos;) ,
+  ISBLANK( Date_Validated__c  ))</errorConditionFormula>
+    <errorMessage>Please make sure to fill the Date Validated/Approved field. Thank you</errorMessage>
+</ValidationRule>

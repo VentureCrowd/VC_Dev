@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shareholder_type__c</fullName>
+    <label>Shareholder type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Trust</fullName>
+                <default>false</default>
+                <label>Trust</label>
+            </value>
+            <value>
+                <fullName>Company</fullName>
+                <default>false</default>
+                <label>Company</label>
+            </value>
+            <value>
+                <fullName>SMSF</fullName>
+                <default>false</default>
+                <label>SMSF</label>
+            </value>
+            <value>
+                <fullName>Sole Trader</fullName>
+                <default>false</default>
+                <label>Sole Trader</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

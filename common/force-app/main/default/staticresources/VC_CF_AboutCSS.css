@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+#vc_content__container section.hero {
+  min-height: calc(100vh - 140px);
+}
+#vc_content__container section.hero h1 {
+  font-size: 2.7em;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.hero h1 {
+    font-size: 1.65em;
+  }
+}
+#vc_content__container section.hero p {
+  font-size: 18px;
+}
+#vc_content__container section.hero-spacer {
+  background-color: #0f141e;
+  height: 90px;
+}
+#vc_content__container section.alignment .has-background {
+  background-position: center;
+  background-size: cover;
+}
+#vc_content__container section.alignment .inner-container {
+  width: calc(50vw - 565px);
+  min-width: 575px;
+}
+@media screen and (max-width: 1200px) {
+  #vc_content__container section.alignment .inner-container {
+    min-width: auto;
+    width: 100%;
+  }
+}
+#vc_content__container section.alignment .inner-container h3 {
+  font-family: "gilroysemibold";
+}
+#vc_content__container section.alignment .inner-container p {
+  color: rgba(86, 86, 86, 0.65);
+  font-size: 1.05em;
+  line-height: 1.65em;
+}
+#vc_content__container section.partnerships {
+  background-color: #0f141e;
+}
+#vc_content__container section.partnerships p {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#vc_content__container section.partnerships ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#vc_content__container section.partnerships ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  #vc_content__container section.partnerships ul li {
+    display: block;
+  }
+}
+#vc_content__container section.partnerships ul li img {
+  max-width: 142px;
+}
+#vc_content__container section.contact {
+  background-color: #0f141e;
+}
+#vc_content__container section.contact h3 {
+  font-size: 36px;
+  font-family: "gilroyregular";
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.contact h3 {
+    font-size: 1.65em;
+  }
+}
+#vc_content__container section.contact .contact-form {
+  background-color: #fff;
+}
+#vc_content__container section.contact .contact-form iframe {
+  height: 130px;
+}
+#vc_content__container section.contact .contact-form .slds-card {
+  border: none;
+}
+#vc_content__container section.contact .contact-form .slds-card .slds-form-element {
+  margin-bottom: 2em;
+}
+#vc_content__container section.contact .contact-form .slds-card .slds-form-element .slds-form-element__help {
+  font-family: "gilroyregular";
+}
+#vc_content__container section.contact .contact-form .slds-card .slds-form-element input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc !important;
+  box-shadow: none;
+  border-radius: 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "gilroyregular";
+}
+#vc_content__container section.contact .contact-form .slds-card b {
+  font-size: 19px;
+  margin-bottom: 5px;
+  display: block;
+  font-family: "gilroyregular";
+  color: #000;
+  font-weight: normal;
+}
+#vc_content__container section.contact .contact-form .slds-card select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "gilroyregular";
+}
+#vc_content__container section.contact .contact-form .slds-card textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 14em;
+  border-radius: 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "gilroyregular";
+}
+#vc_content__container section.contact .contact-form .slds-card button.slds-button {
+  background-color: #02c8c8;
+  color: #fff;
+  width: auto;
+  margin: 0em 0 2em 0;
+  font-family: "gilroybold";
+  padding: 13px 30px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 0;
+}
+#vc_content__container section.contact .contact-form .slds-card button.slds-button:disabled {
+  background-color: #929292;
+}
+#vc_content__container section.contact .contact-details {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#vc_content__container section.contact .contact-details h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "gilroysemibold";
+  font-size: 1em;
+}
+#vc_content__container section.contact .contact-details p {
+  color: #fff;
+  font-size: 1.15em;
+}
+#vc_content__container section.contact .contact-details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#vc_content__container section.contact .contact-details ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+#vc_content__container section.contact .contact-details ul li a {
+  font-size: 2em;
+  color: #fff;
+}

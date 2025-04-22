@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMMA_test_no_ren__c</fullName>
+    <description>Counts the number of Membership Renewals related to each membership so that the number of days until the date of membership expiry is not calculated for those investors which have an old expired membership</description>
+    <label>Number of Renewals</label>
+    <summaryForeignKey>Membership_Renewal__c.Membership__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

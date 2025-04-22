@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+#vc_content__container section.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+}
+#vc_content__container section.hero .container {
+  height: calc(100vh - 70px);
+}
+#vc_content__container section.hero .container .row {
+  align-items: center;
+  height: 100%;
+}
+#vc_content__container section.hero h1 {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.hero h1 {
+    font-size: 1.65em;
+  }
+}
+#vc_content__container section.hero h3 {
+  font-size: 1.3em;
+  color: #FFF;
+  display: inline-block;
+  font-weight: 400;
+}
+#vc_content__container section.hero p {
+  color: #999999;
+  line-height: 1.75em;
+  font-size: 1.05em;
+}
+#vc_content__container section.hero a {
+  padding: 10px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.hero a {
+    padding: 10px 28px;
+  }
+}
+#vc_content__container section.hero .parallax-bg-opacity {
+  background-color: #000;
+  opacity: 0.5;
+}
+#vc_content__container section.hero .link-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#vc_content__container section.hero .link-container ul li {
+  display: inline-block;
+}
+#vc_content__container section.hero .link-container ul li a {
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.hero .link-container ul li a {
+    font-size: 1em;
+  }
+}
+#vc_content__container section.hero .link-container ul li a.active {
+  color: #05c5d1;
+}
+#vc_content__container section.hero .link-container ul li a:hover {
+  text-decoration: none;
+}
+#vc_content__container section.hero .link-container ul li:after {
+  display: inline-block;
+  content: "|";
+  font-size: 1.4em;
+  padding-right: 0px;
+  padding-left: 5px;
+}
+#vc_content__container section.hero .link-container ul li:last-child:after {
+  display: none;
+}
+#vc_content__container section.why-venturecrowd {
+  padding-top: calc(100vw * 0.1);
+  padding-bottom: calc(100vw * 0.1);
+  background-color: #0f141e;
+}
+#vc_content__container section.why-venturecrowd h3 {
+  font-size: 46px;
+  font-weight: 400;
+  display: none;
+}
+#vc_content__container section.why-venturecrowd p {
+  color: #999999;
+  line-height: 30px;
+  display: none;
+}
+#vc_content__container section.why-venturecrowd .counter-wrapper {
+  margin-top: 50px;
+}
+#vc_content__container section.why-venturecrowd .counter-wrapper .cell {
+  margin-bottom: 30px;
+}
+#vc_content__container section.why-venturecrowd .counter-wrapper .counter {
+  color: #05c5d1;
+  font-size: 48px;
+  font-weight: 500;
+}
+#vc_content__container section.why-venturecrowd .counter-wrapper .label {
+  color: #b4b4b4;
+}
+#vc_content__container section.why-venturecrowd.theme-purple .counter {
+  color: #dd5cff;
+}
+#vc_content__container section.smith-family {
+  padding-top: calc(100vw * 0.15);
+  padding-bottom: calc(100vw * 0.15);
+  position: relative;
+}
+#vc_content__container section.smith-family .parallax-bg {
+  background-image: url("https://venturecrowd--cm--c.documentforce.com/sfc/dist/version/download/?oid=00D0p0000000N1k&ids=0680p000000cSBh&d=%2Fa%2F0p0000004QFe%2F6pWp0E4DC7z34BWaCTR0e75Ri1jn1.7zVmhJTAxKwMU&asPdf=false");
+  background-size: cover;
+  background-position: top center;
+}
+#vc_content__container section.smith-family .parallax-bg-opacity {
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  z-index: -4;
+}
+#vc_content__container section.smith-family .container {
+  position: relative;
+  z-index: 30;
+}
+#vc_content__container section.smith-family:before {
+  content: "";
+  background: linear-gradient(180deg, #0f141e 0%, rgba(15, 20, 30, 0) 100%);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  opacity: 1;
+}
+#vc_content__container section.smith-family:after {
+  content: "";
+  background: linear-gradient(0deg, #0f141e 0%, rgba(15, 20, 30, 0) 100%);
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  opacity: 1;
+}
+#vc_content__container section.smith-family h2 {
+  font-size: 42px;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.smith-family h2 {
+    font-size: 26px;
+  }
+  #vc_content__container section.smith-family h2 br {
+    display: none;
+  }
+}
+#vc_content__container section.smith-family h4 {
+  font-weight: 400;
+  font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.smith-family h4 {
+    font-size: 20px;
+  }
+}
+#vc_content__container section.smith-family i {
+  color: #fff;
+}
+#vc_content__container section.smith-family .sub-text {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.smith-family .sub-text {
+    font-size: 16px;
+  }
+}
+#vc_content__container section.offers .offer-container .inner-container {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 300ms ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.105);
+}
+#vc_content__container section.offers .offer-container .inner-container:hover {
+  box-shadow: 0px 10px 38px rgba(0, 0, 0, 0.119701) !important;
+}
+#vc_content__container section.offers .offer-container .heading {
+  background-image: linear-gradient(to right, #5d3796, #02c8c8);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+#vc_content__container section.offers .offer-container .hero {
+  min-height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#vc_content__container section.offers .offer-container .details {
+  border-bottom: 1px solid #eaeaea;
+}
+#vc_content__container section.offers .offer-container .details .heading-1 {
+  font-size: 1.2em;
+}
+#vc_content__container section.offers .offer-container .details .heading-2 {
+  font-size: 1.15em;
+}
+#vc_content__container section.offers .offer-container .call-to-action .header {
+  font-size: 1.1em;
+  font-family: "gilroysemibold";
+}
+#vc_content__container section.offers .offer-container .call-to-action .status {
+  text-transform: uppercase;
+  font-family: "gilroysemibold";
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+#vc_content__container section.offers .offer-container .call-to-action .status.status-raising {
+  color: #844cea;
+}
+#vc_content__container section.offers .offer-container .call-to-action .status.status-funded {
+  color: #000;
+}
+#vc_content__container section.offers .offer-container .call-to-action .offer-type {
+  font-size: 0.9em;
+}
+#vc_content__container section.offers .offer-container .call-to-action a {
+  background-color: #844cea;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11);
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-family: "gilroysemibold";
+}
+#vc_content__container section.info-grid h2 {
+  font-family: "gilroyregular";
+  font-size: 2.15em;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.info-grid h2 {
+    font-size: 1.35em;
+  }
+}
+#vc_content__container section.info-grid p {
+  font-size: 1.85em;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.info-grid p {
+    font-size: 1.15em;
+  }
+}
+#vc_content__container section.info-grid a {
+  color: #fff;
+  font-size: 1.35em;
+  font-family: "gilroysemibold";
+}
+#vc_content__container section.info-grid .col-left {
+  background-color: #02c8c8;
+}
+#vc_content__container section.info-grid .col-right {
+  background-color: #0f141e;
+}
+#vc_content__container section.image-hero {
+  background-color: #000;
+}
+#vc_content__container section.partnerships {
+  background-color: #0f141e;
+}
+#vc_content__container section.partnerships p {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#vc_content__container section.partnerships ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#vc_content__container section.partnerships ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  #vc_content__container section.partnerships ul li {
+    display: block;
+  }
+}
+#vc_content__container section.partnerships ul li img {
+  max-width: 142px;
+}
+#vc_content__container section.crowdfunding {
+  background-color: #0f141e;
+}
+#vc_content__container section.crowdfunding h2 {
+  color: #672c8d;
+  background: linear-gradient(to bottom right, #672c8d, #29bec1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #vc_content__container section.crowdfunding h2 {
+    background: none !important;
+  }
+}
+#vc_content__container section.crowdfunding p {
+  font-size: 17px;
+  line-height: 1.85em;
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-group ul {
+  margin: 0;
+  padding: 0;
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-group ul li {
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.crowdfunding .tabbed-content .tab-group ul li {
+    width: 100%;
+  }
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-group ul li a {
+  display: block;
+  font-size: 24px;
+  font-family: "gilroysemibold";
+  color: #add !important;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  padding: 25px 20px;
+  transition: all 300ms ease;
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-group ul li a:hover {
+  text-decoration: none;
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-group ul li a.active-tab {
+  color: #2ac4ea !important;
+  background: linear-gradient(to bottom right, #11161f, #213344);
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-content h3 {
+  font-family: "gilroyregular";
+  font-size: 42px;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.crowdfunding .tabbed-content .tab-content h3 {
+    font-size: 23px;
+  }
+}
+#vc_content__container section.crowdfunding .tabbed-content .tab-content p {
+  font-size: 17px;
+}

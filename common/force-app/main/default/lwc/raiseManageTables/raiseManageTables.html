@@ -1,0 +1,55 @@
+<template>
+    <div class="table-container">
+        <!-- Table header -->
+        <div class="header">
+            <!-- Table tabs -->
+            <div class="table-title">
+                <template for:each={tabs} for:item="tab">
+                    <div key={tab.name} lwc:if={tab.active} class="active-tab">
+                        <div class="tab-item" onclick={handleClickTab} data-id={tab.name}>
+                            {tab.label}
+                        </div>
+                       
+                    </div>
+                    <div key={tab.name} lwc:else class="inactive-tab">
+                        <div class="tab-item" onclick={handleClickTab} data-id={tab.name}>
+                            {tab.label}
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <!-- Save/Loading state -->
+            <div class="save-status">
+                <template lwc:if={isLoading}>
+                    <div class="loading-spinner" lwc:if={isLoading}>
+                        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                    </div>
+                </template>
+                <template lwc:else>
+                    <div class="auto-saved">
+                        Autosaved 
+                        <div class="auto-save-icon">
+                            <c-core-icon icon-name="check" size="large"></c-core-icon>
+
+                        </div>
+                    </div>
+                    
+                </template>
+            </div>
+        </div>
+
+        <!-- Tables -->
+        <div class="table-container-body">
+            <template lwc:if={isOpportunitiesActive}>
+                <c-raise-opportunities-table
+                record-id={recordId}
+                onloadingchange={handleLoadingChange}></c-raise-opportunities-table>
+            </template>
+            <template lwc:if={isLeadsActive}>
+                <c-raise-leads-table
+                record-id={recordId}
+                onloadingchange={handleLoadingChange}></c-raise-leads-table>
+            </template>
+        </div>
+    </div>
+</template>

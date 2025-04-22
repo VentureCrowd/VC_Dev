@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VC_Opportunitys_Account_is_active_or_not</fullName>
+    <active>false</active>
+    <description>Opp Stage can be set to ‘Receipt Issued’ or ‘Closed Won&apos; only if &apos;Active’ check box is true on Account.</description>
+    <errorConditionFormula>AND(Account.Active__c =FALSE,
+ $RecordType.Name= &apos;VC&apos;, 
+
+ (OR(
+(ISPICKVAL(StageName, &apos;Receipt Issued&apos;)),
+ (ISPICKVAL(StageName, &apos;Closed Won&apos;)))
+)
+)</errorConditionFormula>
+    <errorMessage>Account is not active, please make sure that account is active then only stage can be ‘Receipt Issued’ or ‘Closed Won&apos;.</errorMessage>
+</ValidationRule>

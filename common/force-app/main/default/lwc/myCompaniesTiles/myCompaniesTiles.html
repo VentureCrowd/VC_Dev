@@ -1,0 +1,53 @@
+<template>
+    <div class="wrapper liner">
+        <div class="slds-m-bottom_medium"></div>
+        <!-- Created new company button start  -->
+        <c-create-new-company if:true={userHasCompanies} user-has-companies={userHasCompanies} page-header="My Companies"></c-create-new-company>
+        <c-create-new-company if:false={userHasCompanies} user-has-companies={userHasCompanies} page-header="Craft your ‘Expression of interest’"></c-create-new-company>
+        <!-- Created new company button end  -->
+
+        <!-- Into buttons start  -->
+        <div style="margin-top: var(--space-lg)">
+            <div class="slds-col black-background slds-size_12-of-12">
+                <p class="vc-font-suisseIntlLight">Easily manage company details; and edit, preview and track all associated expressions of interest.</p>
+                <p class="vc-font-suisseIntlLight" >An expression of interest is a way for founders to publish information about a funding initiative, and circulate it within a network to gain initial indication of interest from potential investors.</p>
+            </div>
+            <!--! Remove it after approve it -->
+            <!-- <div class="slds-grid slds-size_10-of-12 slds-gutters">
+                <div class="slds-col slds-size_5-of-12 slds-medium-size_2-of-12 slds-large-size_2-of-12">
+                    <button title="FAQs" type="button" class="info-model" onclick={openFaqPage}>FAQs</button>
+                </div>
+                <div class="slds-col slds-size_9-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                    <button title="See example page" type="button" class="info-model" onclick={openSeeExamplePage}>See example page</button>
+                </div>
+            </div> -->
+        </div>
+        <!-- Into buttons end  -->
+
+        <!-- Companies tile start -->
+        <div class="slds-m-top_x-large" if:true={userHasCompanies}>
+            <c-companies-card companies={companies}></c-companies-card>
+        </div>
+        <div class="slds-m-top_x-large slds-grid" if:false={userHasCompanies}>
+            <!-- <div class="slds-col black-background slds-size_1-of-12"></div> -->
+            <div class="slds-col slds-size_12-of-12">
+                <p class="vc-font-suisseIntlLight" style="text-align: center">
+                    You currently have no companies.<br />
+                    Add a company you have founded or you represent and start your capital raising journey today.
+                </p>
+            </div>
+            <!-- <div class="slds-col black-background slds-size_1-of-12"></div> -->
+        </div>
+        <div class="slds-m-top_x-large slds-grid" if:false={userHasCompanies}>
+            <!-- <div class="slds-col black-background slds-size_1-of-12"></div> -->
+            <!--! Delete if it is correctly -->
+            <!-- <div class="slds-col slds-size_12-of-12">
+                <p class="vc-font-suisseIntlRegular vc-heading" style=" text-align: center">
+                    <img alt="Compnay logo" src={companyLogo} class="center" />
+                </p>
+            </div> -->
+            <!-- <div class="slds-col black-background slds-size_1-of-12"></div> -->
+        </div>
+        <!-- Companies tile end  -->
+    </div>
+</template>

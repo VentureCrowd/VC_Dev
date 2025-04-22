@@ -1,0 +1,447 @@
+<!--
+  @description       : 
+  @author            : Mayurkumar Maisuriya
+  @group             : 
+  @last modified on  : 17-05-2021
+  @last modified by  : Mayurkumar Maisuriya
+  Modifications Log 
+  Ver   Date         Author                 Modification
+  1.0   17-05-2021   Mayurkumar Maisuriya   Initial Version
+-->
+<apex:page standardStyleSheets="false" sidebar="false" showHeader="false" applyBodyTag="false" controller="ProductController">
+  <apex:includeLightning />
+  <apex:slds />
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_HomeCSS}" />
+  <apex:stylesheet value="{!$Resource.overrideSLDSvfp}" />
+  <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+  <script>
+
+    // Here 'VfApp' Is Lightning Application Name
+    $Lightning.use("c:UserActionMenuApp", function () {
+      /* 'LcForVf' is Lightning Component Name which we are Displaying In Vf Page 
+       * syntax for create lightning component dynamically :
+       * $Lightning.createComponent(String type, Object attributes, String locator, function callback) */
+      $Lightning.createComponent("c:horizontalNav",
+        {
+          // Set Lightning Component Attributes Property before creating Lightning Component In Visualforce page 
+          /*  textColor : "Red",
+          currentUserName : '{!$User.FirstName} {!$User.LastName}' 
+          isContactUs:isContactUs,
+          usedinComunity:true*/
+
+        },
+        "horizontalNav",
+        function (component) {
+          console.log("component created");
+          // create component Callback, Lightning Component has been Created,
+          // Now you can set more lightning Component attributes here,
+          // and do more cool stuff here
+          //component.set("v.accId" , '{!$CurrentPage.parameters.recId}');
+        });
+    });
+
+  </script>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <!-- <div id="horizontalNav">
+        
+    </div> -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+
+  <!-- Body -->
+  <div id="vc_content__container" class="position-relative page-slug-home">
+    <!-- Hero -->
+    <section class="hero has-parallax-bg">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-md-6 animate-group">
+            <div class="inner-container pr-0 pr-md-4">
+              <h3 class="animate-item-in">JOIN US IN ENABLING THE FUTURE</h3>
+              <h1 class="mb-3 animate-item-in">We find and fund the future.
+                <br />A future that is good for investors, founders and humanity.</h1>
+              <!--User type -->
+              <a class="button-solid animate-item-in mr-3" onclick="ga('send', {hitType: 'event', eventCategory: 'Home', eventAction: 'CTA Button', eventLabel: 'Register'});"
+                href="{!$Label.VC_CF_Register_Symphony}">REGISTER</a>
+              <a class="button-outline-white animate-item-in" onclick="ga('send', {hitType: 'event', eventCategory: 'Home', eventAction: 'CTA Button', eventLabel: 'Invest'});"
+                href="{!$Label.VC_CF_Public_URL + '/invest'}">INVEST</a>
+              <div class="link-container mt-2 mt-md-2">
+                <ul class="pt-0 pt-md-5 pb-5 pb-md-0">
+                  <li>
+                    <a href="{!$Label.VC_CF_Public_URL + '/invest'}" class="active">Investors</a>
+                  </li>
+                  <li>
+                    <a href="{!$Label.VC_CF_Public_URL + '/manage'}">Syndicates</a>
+                  </li>
+                  <li>
+                    <a href="{!$Label.VC_CF_Public_URL + '/raise'}">Founders</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg-opacity"></div>
+      <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/09/Smart-City-smart-touch-GRAD-FV-1.jpg')"></div>
+    </section>
+
+    <!-- Offers -->
+    <section class="offers mb-5">
+      <div class="container mt-5">
+        <div class="row py-5 offer-container">
+          <!-- Apex code to fetch dynamic info from Salesforce into tile starts here -->
+          <apex:repeat value="{!prodListHome}" var="pl">
+            <!-- Tile HTML Div tag starts here-->
+            <!-- START LOOP -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+              <div class="inner-container">
+                <div class="heading text-white py-2">{!pl.Family}</div>
+                <div class="hero text-white" style="background-image: url({!pl.Tile_Banner__c})"></div>
+                <div class="details py-4">
+                  <span class="d-block heading-1 mb-2">
+                    <strong>{!pl.Tile_Heading__c}</strong>
+                  </span>
+                  <!-- <span class="d-block heading-2">Park Ridge, QLD</span> -->
+                </div>
+                <div class="call-to-action px-5 pt-4">
+                  <span class="d-block header pb-4">{!pl.Deal_Description__c}</span>
+                  <a class="mt-1" href="{!pl.Deal_Page_Link__c}">{!pl.Button_Text__c}</a>
+                  <span class="pt-4 pb-3 d-block offer-type">{!pl.Tile_Offer_Type__c}</span>
+                  <span class="d-block status status-raising pb-5">
+                    <!-- {!pl.Fully_Funded__c == FALSE} Raising Now {!pl.Fully_Funded__c == TRUE} Fully Fundaed -->
+
+                    <apex:outputPanel rendered="{!NOT(pl.Fully_Funded__c)}">
+                      Raising Now
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!(pl.Fully_Funded__c)}">
+                      Fully Funded
+                    </apex:outputPanel>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </apex:repeat>
+
+
+          <!-- Apex code to fetch dynamic info from Salesforce into tile Ends here -->
+          <!-- END LOOP -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Show More Button -->
+
+    <section class="offers mb-5">
+      <div class="container">
+        <div class="container mt-5">
+          <div class="col-md-12 text-center">
+            <a class="button-solid" href="{!$Label.VC_CF_Public_URL + '/invest'}">Show more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Grid -->
+    <section class="info-grid">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-left py-4">
+            <div class="inner-container p-2 p-md-5">
+              <h2 class="text-white mb-3">Invest in Ventures</h2>
+              <p>
+                VentureCrowd find and fund the best and brightest startups in Australia. The businesses that are purpose driven and rising
+                up to be the new Australian Economy.
+                <br />
+                <br /> We have both
+                <strong>Retail</strong>
+                <br /> and
+                <strong>Wholesale</strong> opportunities for investors.
+              </p>
+              <a href="{!$Label.VC_CF_Public_URL + '/invest'}" class="has-arrow mt-4">Find out more
+                <span class="arrow">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-right py-4 text-white">
+            <div class="inner-container p-2 p-md-5">
+              <h2 class="mb-3">Invest in Property</h2>
+              <p>
+                Property investment has been the lifeblood for Australians and Australian investors for decades looking for High Growth returns.
+                <br />
+                <br /> Our
+                <strong>property ventures</strong> are different in that they let you invest directly in the early stages development
+                of property projects.
+              </p>
+              <a href="{!$Label.VC_CF_Public_URL + '/invest'}" class="has-arrow mt-4">Find out more
+                <span class="arrow">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Hero -->
+    <section class="why-venturecrowd text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h3>Why VentureCrowd?</h3>
+            <p class="mb-0">VentureCrowd is Australia’s leading digital investment platform for alternative assets.</p>
+            <p>
+              When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so
+              you won’t be investing alone. Here’s a snapshot of our traction so far.
+            </p>
+            <div class="row counter-wrapper">
+              <div class="col-lg-3 cell">
+                <div class="counter">
+                  <span class="digits">61415</span>
+                </div>
+                <div class="label">Total Members</div>
+              </div>
+              <div class="col-lg-6 cell">
+                <div class="counter">$
+                  <span class="digits">144000000</span>
+                </div>
+                <div class="label">Total Raised</div>
+              </div>
+              <div class="col-lg-3 cell">
+                <div class="counter">
+                  <span class="digits">67</span>
+                </div>
+                <div class="label">Portfolio Size</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smith Family -->
+    <section class="smith-family text-center text-white has-parallax-bg">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h2 class="px-0 px-lg-5">1.2 million young Australians live in poverty*,
+              <br/> but you can help!</h2>
+            <div class="sub-text">
+              <i>*ACOSS/UNSW Poverty Overview Report, 2020.</i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="mb-5 px-0 px-lg-5">
+              VentureCrowd is proud to partner with The Smith Family to support their
+              <i>Learning for Life</i> program, and partner program,
+              <i>Kidpreneur</i>.
+            </h4>
+            <a class="button-solid" href="https://startups.venturecrowd.com.au/deal/detail/the_smith_family">Donate Today</a>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg-opacity"></div>
+      <div class="parallax-bg"></div>
+    </section>
+
+    <!-- Partnerships -->
+    <section class="partnerships">
+      <div class="container pt-5">
+        <div class="row text-white text-center pt-5 pb-5 justify-content-center">
+          <div class="col-md-8 col-lg-6 col-xl-10">
+            <h2>Our network partners</h2>
+
+            <ul class="pt-5 mt-5 mb-5 pb-5 animate-in">
+              <li class="mb-4 mb-md-0">
+                <a href="https://scaleinvestors.com.au/">
+                  <img src="https://venturecrowd--cm.file.force.com/sfc/dist/version/download/?oid=00D0p0000000N1k&ids=0680p000000cSDx&d=%2Fa%2F0p0000004QFo%2F7D1ynBEulT7MtdBGgc_.ylrn2GsoQgRit7U5lKVwq8Q&asPdf=false"
+                  /> </a>
+              </li>
+              <li class="mb-4 mb-md-0">
+                <a href="https://www.sydneyangels.net.au/">
+                  <img src="https://assets.venturecrowd.vc/uploads/2018/02/sydney-angels-logo-w.png" /> </a>
+              </li>
+              <li class="mb-2 mb-md-0">
+                <a href="https://events.thesmithfamily.com.au/venturecrowdsmithfamily">
+                  <img src="https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000IR3nf&oid=00D2v000000WjFp&lastMod=1629428223000"
+                  /> </a>
+              </li>
+
+              <li class="mb-3 mb-md-0">
+                <a href="https://clearstate.com.au/">
+                  <img src="https://assets.venturecrowd.vc/uploads/2018/02/clearstate-logo-w.png" /> </a>
+              </li>
+              <li class="mb-3 mb-md-0">
+                <a href="https://www.primefinancial.com.au/">
+                  <img src="https://assets.venturecrowd.vc/uploads/2018/02/prime-logo-w.png" /> </a>
+              </li>
+            </ul>
+
+            <a class="button-outline-white" href="{!$Label.VC_CF_Public_URL + '/more/partners'}">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabbed Content -->
+    <section class="crowdfunding py-5">
+      <div class="container">
+        <div class="row mt-5 tabbed-content text-white">
+          <div class="col-lg-3 mb-5 mb-lg-0 tab-group">
+            <ul>
+              <li class="text-center text-lg-left">
+                <a href="#" class="active-tab" data-tab="tab-content-1">Crowdfunding</a>
+              </li>
+              <li class="text-center text-lg-left">
+                <a href="#" data-tab="tab-content-2">What is crowdfunding?</a>
+              </li>
+              <li class="text-center text-lg-left">
+                <a href="#" data-tab="tab-content-3">How to promote a crowdfunding campaign?</a>
+              </li>
+              <li class="text-center text-lg-left">
+                <a href="#" data-tab="tab-content-4">Is crowdfunding worth it?</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 tab-content">
+            <div class="inner-container ml-lg-4">
+              <div id="tab-content-1" class="tab-content-block active-tab-content animate-in">
+                <h3 class="mb-5">Crowdfunding Equity Investment Platform in Australia</h3>
+                <p>
+                  Crowdfunding has changed the way you can raise capital when starting a business venture. Traditionally, if you wanted to
+                  raise money to launch a new product or startup business, you would need to pitch your idea to a bank, venture
+                  capital firm or another financial institution, or approach a wealthy individual who was interested in
+                  <a href="https://vc-internal.force.com/s/angel-investing/">angel investing</a>. Crowdfunding makes it easier for you to get your idea in front of interested parties
+                  and allow them to invest in your business with a much lower capital outlay.
+                </p>
+              </div>
+              <div id="tab-content-2" class="tab-content-block">
+                <h3 class="mb-5">What is crowdfunding?</h3>
+                <p>
+                  Crowdfunding is a way for entrepreneurs to raise capital for a new business venture from a large number of individual investors
+                  who are willing to invest in your startup or idea. Rather than just finding one or two large investors,
+                  crowdfunding involves a ‘crowd’ of investors. There are a few different types of crowdfunding including
+                  donation-based crowdfunding, reward-based crowdfunding and equity crowdfunding. With donation-based crowdfunding,
+                  there is no financial gain to those providing the funds. This form of crowdfunding is often used by charities
+                  or for fundraising for disaster relief. Reward-based crowdfunding is when you receive a product or service
+                  from the startup business rather than money. Equity-based crowdfunding is where investors take equity in
+                  a business in exchange for a cash investment. There are several crowdfunding platforms available, each
+                  with different goals, guidelines and target markets.
+                </p>
+                <p>
+                  VentureCrowd is an equity crowdfunding platform, so rather than receiving a product or simply making a donation, if you invest
+                  in one of our deals you will receive equity or ownership in the company that is raising the capital or
+                  in the underlying property development asset. VentureCrowd is a multi-asset class crowdfunding platform
+                  that provides investors with direct access to handpicked investment opportunities in alternative assets
+                  that have traditionally been linked to specialised lenders or institutional investors. Whether you are
+                  an established business owner, an entrepreneur or a property developer, we provide alternative finance
+                  from a pool of investors across Australia. Not only will your investment come with lower fees and capital
+                  commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative
+                  equity, property and credit opportunities on the same terms as professional lead investors.
+                </p>
+              </div>
+              <div id="tab-content-3" class="tab-content-block">
+                <h3 class="mb-5">How to promote a crowdfunding campaign?</h3>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>
+                      If you are raising capital and want to set up a crowdfunding campaign, you’ll need a business plan, a financial forecast
+                      so your investors know what to expect, and you’ll also need to work out how much money you want to
+                      raise. The VentureCrowd platform makes it easy to work collaboratively with our team to launch your
+                      campaign. If you are wondering how to set up a crowdfunding account, with our automated self-service
+                      platform, setting up a crowdfunding account is very straight forward. Whether you are a new startup
+                      looking to raise capital or an investor looking for
+                      <a href="https://vc-internal.force.com/s/high-return-investments">high return investment</a> opportunities, you can register online via our website. And if you have
+                      any questions as you go, you can get in contact with us and we’d love to help you.
+                    </p>
+                    <p>
+                      At VentureCrowd, we offer unrivalled exposure for your project via our leading platform. Your project can be seen by over
+                      50 thousand investors, buyers, partners and contributors through a comprehensive multi-channel digital
+                      campaign. And after we receive all the necessary details about your project, there is a very quick
+                      turnaround. For example, we should be able to assess your property project within 48 hours. And with
+                      a dedicated campaign manager, you will get all the support you need. Through VentureCrowd you’ll have
+                      access to a large and fast-growing group of investors. It is the ideal platform to capture the attention
+                      of like-minded individuals who care about what you stand for and show them that your venture is worth
+                      investing in. We also have a range of helpful campaign services to choose from including PR and Digital
+                      Marketing. A funding round typically runs for six weeks. Once the investments have been received and
+                      the funding round is closed, we’ll transfer the funds. All the legal documentation will be taken care
+                      of via the platform too, so you can get on with making your business a success.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-content-4" class="tab-content-block">
+                <h3 class="mb-5">Is Crowdfunding worth it?</h3>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>
+                      There are many advantages of crowdfunding and using platforms like VentureCrowd. Crowdfunding gives you a wider audience
+                      which is not only a great way to raise more capital, but it also streamlines the process and will save
+                      you time. You won’t need to approach each investor individually, and you’ll only need one pitch. It
+                      is also a good way to refine your ideas as potential investors can provide useful feedback while you
+                      are developing your product or business. Your investors are also likely to give you free word-of-mouth
+                      advertising.
+                    </p>
+                    <p>
+                      With over $135M raised across 100 deals from wholesale investors, VentureCrowd has been successfully raising
+                      <a href="https://vc-internal.force.com/s/venture-capital/">venture capital</a> for over four years. Just like other countries around the world, Australia has
+                      now passed legislation to allow retail investors to participate too. This type of investing structure
+                      may also be called
+                      <a href="https://vc-internal.force.com/s/syndicate-investing/">syndicate investing</a>. This means that anyone 18 years or above who is residing in Australia can
+                      now invest in Crowd-Sourced Funding (CSF) offers.
+                    </p>
+                    <p>
+                      When it comes to maximising your wealth and getting the most from your financial portfolio,
+                      <a href="https://vc-internal.force.com/s/mortgage-funds/">Mortgage Funds</a> may expand your horizons from just property investing. However, any investment decision
+                      should be made with due diligence and research. VentureCrowd can guide you through handpicked
+                      <a href="https://vc-internal.force.com/s/property/companies/">investment property companies</a> and opportunities. You can gain high returns from a
+                      <a href="https://vc-internal.force.com/s/property/brisbane/">Brisbane property investment</a> or an investment in
+                      <a href="https://vc-internal.force.com/s/property/gold-coast/">Gold Coast</a> through our
+                      <a href="https://vc-internal.force.com/s/property/funds/">property funds
+                      </a> that will allow you to get exposure to unique opportunities in real estate offering a steady income
+                      and capital growth.
+                    </p>
+                    <p>
+                      VentureCrowd provides opportunities for investing in venture capital in
+                      <a href="https://vc-internal.force.com/s/venture-capital/sydney/">Sydney</a>,
+                      <a href="https://vc-internal.force.com/s/venture-capital/melbourne/">Melbourne</a> and
+                      <a href="https://vc-internal.force.com/s/venture-capital/brisbane">Brisbane</a>. Join Australia’s leading equity crowdfunding platform today and learn more about
+                      <a href="https://vc-internal.force.com/s/high-yield-investments/">high yield investment</a> opportunities!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ./Body -->
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

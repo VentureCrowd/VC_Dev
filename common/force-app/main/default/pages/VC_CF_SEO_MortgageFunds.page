@@ -1,0 +1,354 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+                    <div class="col-md-12 headline">
+                        <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+                        <h1 class="mt-4"> Mortgage Funds in Australia </h1>
+                        <p class="mt-4">
+                            Simplify the path to reaching your financial goals with direct access and opportunities to Mortgage Funds that help you get the most from your portfolio.
+                        </p>
+                        <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Register Today </a>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2019/08/Stonewood-Estate.jpg')"></div>
+        </section>
+        
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                Mortgage Funds </h3>
+                            
+                            
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">Mortgage Funds are gaining popularity in recent years as this form of investment diversifies one’s portfolio, attracts good return rates, and holds mutual benefits to both the lender and borrower.&nbsp; Mortgage Funds are a popular investment choice for all types of investors, including everyday investors, sophisticated investors, wholesale investors, and more recently Self-Managed Super Fund (SMSF) investors.&nbsp;</span></p>
+                                
+                            </div>
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">Mortgage Funds that you see nowadays were introduced in the late nineties. Before this, you might have been familiar with the terms ‘solicitor loans’ or ‘solicitor funds’.&nbsp; This is when borrowers would approach their lawyers for a mortgage loan and then the lawyer would contact one of his clients who invested in mortgages. These days it’s a much more direct and regulated process.</span></p>
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">When it comes to maximising your wealth and getting the most from your financial portfolio, Mortgage Funds may expand your horizons from just </span><a href="https://www.venturecrowd.com.au/property"><span style="font-weight: 400;">property investing</span></a><span style="font-weight: 400;">.&nbsp; However, it’s important to understand your investment, as well as its potential risks and benefits involved.&nbsp;</span></p>
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">As an investor, you are part of the changing global investment landscape. So, when investing your money, it’s important to understand who you’re working with. VentureCrowd can offer you choice and complete transparency to help drive your portfolio diversification. Through a professional </span><a href="https://www.venturecrowd.com.au"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> model, VentureCrowd aims to reduce complexity and guide you through access to handpicked opportunities that get the most from your portfolio. Read on to find out if an investment in Mortgage Funds is for you.</span></p>
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>        
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                What is a Mortgage Fund? </h3>
+                            
+                            <div class="wpb_wrapper">
+                                
+                                
+                                <p><span style="font-weight: 400;">A mortgage secures a loan for a specified property or real estate that the borrower is obligated to pay back in instalments. If the borrower defaults, the property can be sold to recover the costs of the loan. Mortgage creators make money through the fees and interest of the loan.&nbsp;</span></p>
+                                
+                            </div>
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">Mortgage Funds are considered a unit trust that is operated by a Fund Manager and invests in mortgages for properties. In Australia, mortgage funds come in the form of a Managed Investment Scheme (MIS), which is also known as a Mortgage Scheme or a Mortgage Trust. The&nbsp;fund&nbsp;raises money by selling units in the trust and that money is lent out as&nbsp;mortgage&nbsp;loans to a range of borrowers.</span></p>
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">There are many types of mortgage funds offering&nbsp; </span><a href="https://www.venturecrowd.com.au/s/high-return-investments"><span style="font-weight: 400;">high return investments</span></a><span style="font-weight: 400;">,&nbsp; however, the main mortgage funds are pooled funds and contributory or select funds:</span></p>
+                                
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>              
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <div class="wpb_wrapper">
+                                <div class="nectar-fancy-box   has-animation animated-in" data-style="color_box_hover" data-animation="fade-in" data-border="" data-box-color-opacity="1" data-delay="0" data-alignment="center" data-color="extra-color-gradient-2" style="opacity: 1;"><div class="box-inner-wrap"><div class="box-bg"></div> <div class="inner" style="min-height: 200px"><div class="inner-wrap">
+                                    <h3><span style="font-weight: 400;">Pooled funds</span></h3>
+                                    <p><span style="font-weight: 400; font-size: 15px;">This is a fund that pools money together from the investors before it reaches across multiple mortgages. The investor receives a return on their investment yet has no authority into which mortgages the funds are invested. Pooled funds typically provide a lower return and are considered a more passive investment.</span><br/>
+                                    </p></div></div>  </div> </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            
+                            <div class="wpb_wrapper">
+                                <div class="nectar-fancy-box   has-animation animated-in" data-style="color_box_hover" data-animation="fade-in" data-border="" data-box-color-opacity="1" data-delay="0" data-alignment="center" data-color="extra-color-gradient-2" style="opacity: 1;"><div class="box-inner-wrap"><div class="box-bg"></div> <div class="inner" style="min-height: 200px"><div class="inner-wrap">
+                                    <h3><span style="font-weight: 400;">Contributory/Select funds </span></h3>
+                                    <p><span style="font-weight: 400; font-size: 15px;">A contributory mortgage fund or a select mortgage fund goes directly into individual mortgage loans. This means that within the fund, investors can choose mortgages based on risk and other considerations such as loan purpose, location, term, and interest rate. Contributory funds are becoming more popular these days, especially with the introduction of online mortgage fund investment options.</span></p></div></div>  </div> </div>
+                            </div>
+                            
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="inner-container px-3 px-md-4 py-3">
+                        
+                        <div class="wpb_wrapper">
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+How to invest in a mortgage fund? </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                  <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">If you are an investor, you will fund a mortgage on agreed terms within the mortgage fund.&nbsp;Borrowers then take out loans funded by investors and the mortgage funds approve borrowers based on their lending criteria. Borrowers provide real estate security for the loan in the form of a mortgage over their property.</span></p>
+
+        </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> Are mortgage funds a good investment? </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <p><span style="font-weight: 400;">Mortgage funds are going to add a benefit as well as diversification to your financial portfolio. It is definitely something to consider if you are looking for something additional to </span><a href="https://www.venturecrowd.com.au/s/property/companies"><span style="font-weight: 400;">investment property companies</span></a><span style="font-weight: 400;">, and that which offers a relatively </span><a href="https://www.venturecrowd.com.au/s/high-yield-investments"><span style="font-weight: 400;">high yield investment</span></a><span style="font-weight: 400;">. For the investor, mortgage funds offer a fixed and regular income, attract good returns, and provide fixed-term investments which are typically short to medium term. For the borrower, there is a lot less hassle in securing a loan this way rather than through major banks and property settlements are subsequently faster.</span></p>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                       
+                                        
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                 <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3>How secure is a mortgage fund? </h3>
+                        </div>
+                    </div>
+                </div>
+                  <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            
+                            <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">On the whole, mortgage funds are a great and secure investment for you and they offer good returns when the funds are managed well. However, there are some considerations that you will need to be mindful of. Investors need to ensure due diligence has been done to qualify the borrower for a loan.&nbsp; Additionally, investment in mortgage funds should be planned for the long term as the fund may not be able to terminate a property mortgage within a short time frame.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">By conducting thorough research of the area and understanding your investment, you can make informed decisions and put together a clear plan for your financial portfolio. VentureCrowd can provide assurance on this and be with you on your journey to building your financial wealth. We give investors access to alternative finance from a crowd of both retail and sophisticated investors. Under this model, you will have direct access to alternative equity such as </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> on the same terms as professional lead investors. There is also the option to explore </span><a href="https://www.venturecrowd.com.au/s/angel-investing"><span style="font-weight: 400;">angel investing</span></a><span style="font-weight: 400;">. Get in touch with VentureCrowd to start maximising your portfolio.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">You can contact us on <a href="tel:1300039655">1300 039 655</a>, send an email to </span><a href="mailto:hello@venturecrowd.com.au"><span style="font-weight: 400;">hello@venturecrowd.com.au</span></a><span style="font-weight: 400;"> or <a href="https://investor.venturecrowd.com.au/registration/initial_registration">get in touch online</a>. We’d be happy to answer any of your questions.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 40px;" class="divider"></div></div>
+        </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </section>
+        
+        <!-- Post Footer -->
+        <!--  <section class="related">
+<div class="container">
+<div class="row text-center py-5 text-white">
+<div class="col-md-2"></div>
+
+<div class="col-md-8 pb-5 next-post-title mt-3">
+<h3> Be part of something bigger and build your wealth as Australia grows and expands. </h3>
+
+<div class="pt-5 next-post-link"> Join VentureCrowd, one of the fuss-free investment property companies offering ground floor access to lucrative property investment opportunities throughout the country. 
+
+
+</div>
+</div>
+
+
+<div class="col-md-2"></div>
+</div>
+
+
+<div class="row text-center py-5 text-white">
+<div class="col-md-5"></div>
+
+<div class="col-md-2 pb-5">
+
+<a class="button-outline-white" href="{!$Label.Investor_Community_URL}"  > Register Today </a>
+
+</div>
+<div class="col-md-5"></div>
+</div>
+
+</div>
+
+<div class="next-post-bg-overlay"></div>
+<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/10/Cornerstone-Village-LT.jpg')"></div>
+</section> -->
+        
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    
+    
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    
+    </apex:page>

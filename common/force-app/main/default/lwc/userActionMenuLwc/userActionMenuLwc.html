@@ -1,0 +1,71 @@
+<template>
+    <!-- custom menu-->
+
+    <div id="actionMenu" data-index="actionMenu" class="slds-dropdown-trigger slds-dropdown-trigger_click">
+        <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More" onclick={showmenu}>
+       <!-- <svg class="slds-button__icon" aria-hidden="true">
+        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+        </svg>-->
+            <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+            <span class="slds-assistive-text">Show More</span>
+        </button>
+        <div class="slds-dropdown user-action-menu-dropdown">
+            <ul class="slds-dropdown__list actionMenu" role="menu" aria-label="Show More">
+                <span class="username">Hi {name} </span>
+                <li class="slds-dropdown__item menu-item" role="presentation">
+                    <a href={portfoliopageurl} role="menuitem" tabindex="0">
+                    <span class="slds-truncate menu--item" title="My Portfolio"> 
+                        <c-core-icon
+                        icon-name="myPortfolio"
+                        size="xxlarge"></c-core-icon>
+                        My Portfolio</span>
+                    </a>
+                </li>
+                <li class="slds-dropdown__item menu-item" role="presentation">
+                    <a href={profilepageurl} role="menuitem" tabindex="-1">
+                    <span class="slds-truncate menu--item" title="My Profile">  
+                        <c-core-icon
+                        icon-name="myProfile"
+                        size="xxlarge">
+                        </c-core-icon>
+                         My Profile
+                    </span>
+                    </a>
+                </li>
+                <li class="slds-dropdown__item menu-item" role="presentation">
+                    <a href={entitiespageurl} role="menuitem" tabindex="-1">
+                    <span class="slds-truncate menu--item" title="My Entities">  
+                        <c-core-icon
+                        icon-name="myEntities"
+                        size="xxlarge">
+                        </c-core-icon>
+                         My Entities</span>
+                    </a>
+                </li>
+                <li class="slds-dropdown__item menu-item" role="presentation">
+                    <a href={mycompaniespageurl} role="menuitem" tabindex="-1">
+                    <span class="slds-truncate menu--item" title="My Companies"> 
+                        <c-core-icon
+                        icon-name="myCompanies"
+                        size="xxlarge">
+                        </c-core-icon> 
+                        My Companies</span>
+                    </a>
+                </li>
+
+                <li class="slds-dropdown__item item--logout" role="presentation">
+                    <a href={logoutUrl} role="menuitem" tabindex="-1">
+                    <span class="slds-truncate menu--logout" title="Logout">Logout</span>
+                    </a>
+                </li>
+        <!-- <li class="slds-has-divider_top-space" role="separator"></li>
+            <li class="slds-dropdown__item" role="presentation">
+            <a href="#" role="menuitem" tabindex="-1">
+            <span class="slds-truncate" title="Menu Item Four">Menu Item Four</span>
+            </a>
+            </li>-->
+            </ul>
+        </div>
+        </div>
+   
+</template>

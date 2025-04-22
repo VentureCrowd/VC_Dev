@@ -1,0 +1,45 @@
+<template>
+    <section class={getComponentStyleClasses}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4 mb-lg-0 tab-menu">
+                    <ul>
+                        <template if:true={label_Tab_1_Name}>
+                            <li class="text-center text-lg-left">
+                                <a href="#" class="tab-title active" data-tab="1">{label_Tab_1_Name}</a>
+                            </li>
+                        </template>
+                        <template if:true={label_Tab_2_Name}>
+                            <li class="text-center text-lg-left">
+                                <a href="#" class="tab-title vc-font-suisseIntlLight" data-tab="2">{label_Tab_2_Name}</a>
+                            </li>
+                        </template>
+                        <template if:true={label_Tab_3_Name}>
+                            <li class="text-center text-lg-left">
+                                <a href="#" class="tab-title vc-font-suisseIntlLight" data-tab="3">{label_Tab_3_Name}</a>
+                            </li>
+                        </template>
+                        <template if:true={label_Tab_4_Name}>
+                            <li class="text-center text-lg-left">
+                                <a href="#" class="tab-title vc-font-suisseIntlLight" data-tab="4">{label_Tab_4_Name}</a>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="tabset-content">
+                        <!-- Heading -->
+                        <div class="row">
+                            <div class="col-lg-12 mb-4">
+                                <h3 class="tab-heading vc-font-caxton4">{label_Tab_1_Header}</h3>
+                            </div>
+                        </div>
+
+                        <!-- Content Dynamically Rendered Below -->
+                        <div class="row tab-body-content" lwc:dom="manual"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

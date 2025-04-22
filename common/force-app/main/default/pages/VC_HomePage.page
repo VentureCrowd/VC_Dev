@@ -1,0 +1,45 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_ProductLandingCSS}"/>
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <apex:slds />
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Component: Menu -->
+<!-- <c:VC_CF_Menu /> -->
+<!-- ./Component: Menu -->
+    
+
+    <!-- Body -->
+    <!-- /* VEN-124: Error Page White Spaces (Forest) - changes */	 -->
+    <div id="vc_content__container_error">
+      <!-- Hero -->
+      <!-- <img src="{!URLFOR($Asset, 'assets/images/404.png')}" alt="Page Not Found" /> -->
+      <div class="col-md-12 text-center">
+        <img src="https://venturecrowd.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpeg&versionId=0685i0000089oXb&operationContext=DELIVERY&contentId=05T5i00000SmtvT&page=0&d=/a/2v000000EIF8/GHVP6QmJuIY7KJ9tPODF_WW.DR8vRiwq1iR4mYOhIBg&oid=00D2v000000WjFp&dpt=null&viewId="  width="30%" height="30%"/>
+
+        <p>
+            <strong>Whoops! Looks like you have found a page that is no longer here. </strong>
+        </p>
+
+        <p class="return-link text-center">To go back to the homepage, <a style="color: #D95BAA;" target="_self" href="https://www.venturecrowd.com.au">click here</a>.</p>
+
+       </div>
+    </div>
+    <!-- ./Body -->
+    
+<!-- Component: Footer -->
+<!-- <c:VC_CF_Footer myClass="vc_footer__container_error" /> -->
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

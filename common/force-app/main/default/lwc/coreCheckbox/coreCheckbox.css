@@ -1,0 +1,132 @@
+/* Handles the style between the label and the input */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+    gap: var(--space-xs); 
+}
+
+label.font-regular {
+    width: fit-content;
+}
+
+/* .input-wrapper{
+    padding: var(--space-md)
+} */
+
+.font-regular {
+    font-family: "SuisseIntl-Regular";
+}
+
+.font-bold {
+    font-family: "SuisseIntl-Bold";
+}
+
+.font-light {
+    font-family: "SuisseIntl-Light";
+}
+
+/* What is the use of this? @Ken  */
+.subtext{
+    color: var(--gray-4);
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-light";
+    font-size: var(--text-sm);
+  }
+
+input[type="checkbox"] {
+    position: relative;
+    background-color: var(--primary-foreground);
+    /* Border radius for label inputs are 10px - Speak Ken */
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #D9D9D9;
+}
+input[type="checkbox"]:checked:invalid
+input[type="checkbox"]:required:valid {
+    border-color: red;
+}
+input[type="checkbox"]:checked::before {
+    border-color: var(--primary-foreground);
+}
+
+/* Change the default icon the tick icon */
+input[type="checkbox"]:checked {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 8.5L5.58579 12.0858C6.36684 12.8668 7.63316 12.8668 8.41421 12.0858L18.5 2' stroke='%23D85AAA' stroke-width='3'/%3E%3C/svg%3E%0A"); 
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.horizontal-alignment {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.vertical-alignment {
+    display: block;
+    gap: var(--space-md);
+}
+
+/** Handle the size of radio button */
+
+.box{
+    height: var(--text-lg);
+    width: var(--text-lg);
+}
+
+.box.xsmall{
+    height: var(--text-xs);
+    width: var(--text-xs);
+}
+
+.box.small{
+    height: var(--text-sm);
+    width: var(--text-sm);
+}
+
+.box.medium{
+    height: var(--text-md);
+    width: var(--text-md);
+}
+
+.box.large{
+    height: var(--text-lg);
+    width: var(--text-lg);
+}
+
+.box.xlarge{
+    height: var(--text-xl);
+    width: var(--text-xl);
+}
+
+.box.xxlarge{
+    height: var(--text-xxl);
+    width: var(--text-xxl);
+}
+
+
+.box.xxxlarge{
+    height: var(--text-xxxl);
+    width: var(--text-xxxl);
+}
+
+.dark {
+    border: 2px solid var(--primary-foreground);
+}
+
+.light {
+    border: 2px solid var(--primary-text-color);
+}
+
+/* error message styling */
+
+.error-message {
+    color: var(--error-color, #D8000C); /* Providing a default red color if --error-color is not defined */
+    font-size: var(--text-sm); /* Smaller text to not overpower the main content */
+    margin-bottom: var(--space-xs); /* Consistent vertical spacing */
+    font-family: "SuisseIntl-light"; /* Keeping the font consistent with the rest of the form */
+}
+.required-indicator {
+    color:var(--error-color, #D8000C); /* Visually distinct color for required fields */
+}

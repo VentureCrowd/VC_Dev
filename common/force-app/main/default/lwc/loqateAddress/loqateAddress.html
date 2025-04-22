@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-grid slds-gutters slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-1">
+            <lightning-combobox class="countryPicklist" label="Country" options={options} value={cntryVal} type="button" onchange={handlecntrychange}>
+            </lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-1">
+            <c-search-combobox label={label} onoptselected={optionsel} oninpchange={handinputchange}>
+            </c-search-combobox>
+        </div>
+        <div class="slds-col slds-large-size_1-of-2">
+
+        </div>
+        <div class="slds-col slds-size_1-of-1">
+            <lightning-textarea label="Street" data-id="street" required style="font-size: 16px !important;" >
+            </lightning-textarea>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_2-of-3">
+            <lightning-input label="City/Suburb" data-id="city" required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3">
+            <lightning-input label="Zip/Postal Code" data-id="zip" required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-3">
+            <lightning-input label="State/Province" data-id="state" required></lightning-input>
+        </div>
+        <!--div class="slds-col slds-size_1-of-1 slds-large-size_1-of-3">
+            <lightning-input label="Country" data-id="country" required></lightning-input>
+        </div-->
+    </div>
+</template>

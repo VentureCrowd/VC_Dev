@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staging_Plan</fullName>
+    <active>true</active>
+    <label>Staging Plan</label>
+    <picklistValues>
+        <picklist>Listing_Type__c</picklist>
+        <values>
+            <fullName>Exclusive Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Listing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sole Agency</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Rep_payment_structure__c</picklist>
+        <values>
+            <fullName>100%25 at settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 unconditional and 50%25 at settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 unconditional and 50%25 at slab down</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

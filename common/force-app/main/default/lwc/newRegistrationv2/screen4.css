@@ -1,0 +1,139 @@
+/**/
+
+.vc_masterHeading {
+    font-size: 64;
+}
+.vc-align-vertical{
+    align-items: baseline;
+}
+.vc-m-none lightning-input,
+.vc-m-none p {
+    margin-bottom: 0 ;
+}
+
+/**/
+
+
+a,
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+lightning-input,
+lightning-combobox {
+    margin-bottom: 24px;
+}
+
+
+/*$ Import to the new*/
+/*! Small change to test we have to go to the root of the problem */
+.vc_blurBox {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.vc_blurBox2 {
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*$ Impor to the new */
+.slds-custom-error-message {
+    color: #D95BAA;
+    font-size: 12px;
+
+}
+.vc_deskpaddingRight {
+    padding-right: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .vc_column-left {
+        max-width: 655px;
+        margin: auto;
+        padding: 15px 24px 30px;    
+    }
+
+    .vc_column-right {
+        max-width: 430px;
+        margin: auto;
+        padding: 15px 24px;
+        /* padding-top: 450px; */
+    }
+
+    .vc_blurBox2 {
+        max-width: 380px;
+        padding-right: 40px !important;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
+    .vc_column-left,
+    .vc_column_right {
+        /* max-width: 655px; */
+        /* margin: auto; */
+        padding: 145px 24px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1023.5px) {
+    .vc_column-left {
+        margin-bottom: 16px;
+    }
+    .vc-align-baseline {
+        align-items: baseline;
+    }
+    .vc_column-left,
+    .vc_column-right {
+        padding: 24px;
+    }
+}
+
+.vc_radioInput {
+    height: 32px;
+    width: 32px;
+    accent-color: var(--c-secondaryColorBubblegum) !important;
+    cursor: pointer;
+}
+
+.vc-helpText {
+    position: relative;
+    bottom: 5px;
+    left: 8px;
+}
+
+.vc_blankCircle {
+    width: 20px;
+    height: 20px;
+    background: rgba(130, 75, 234, 0.29);
+    border-radius: 50%;
+}
+
+.vc_blankCircle+.vc_blankCircle {
+    margin-left: 16px;
+}
+
+
+.vc_iconSetImage img {
+    display: block;
+}
+
+.vc_iconSetImage {
+    text-align: -webkit-center;
+    display: block;
+}
+
+
+.back-button {
+    padding: 0px;
+    max-width: 8em;
+    border: transparent;
+}
+
+.back-button:hover {
+    filter: invert(56%) sepia(88%) saturate(2441%) hue-rotate(291deg) brightness(92%) contrast(84%);
+}
+/* Can't change it without important */

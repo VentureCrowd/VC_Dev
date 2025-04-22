@@ -1,0 +1,111 @@
+<template>
+    <template if:true={ready}>
+        <div class="spinnerCss">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+    <template if:false={ready}>
+        <footer class={footerclass}>
+            <div class="container">
+                <!-- VEN-104 (Forest) - changed pb-5 to pb-1 -->
+                <div class="row pt-5 pb-1 px-3 px-lg-0">
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Company</h4>
+                        <ul>
+                            <!--  href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" -->
+                            <li><a href="/s/about">About Us</a></li>
+                            <li><a href="/s/about?contactus=true">Contact Us</a></li>
+                            <li><a href="/s/legals">Legals</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Get Started</h4>
+                        <ul>
+                            <li><a href="/s/invest">Invest</a></li>
+                            <li><a href="/s/raise">Raise</a></li>
+                            <li><a href="/s/manage">Manage</a></li>
+                            <li><a href="/s/property">Property</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="/s/more/how-it-works-2">How it works</a></li>
+                            <li><a href="/s/more/faqs">FAQs</a></li>
+                            <li><a href="/s/investor-education">Investor education</a></li>
+                            <li><a href="/s/blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h4>My Account </h4>
+                        <!-- Code to check whether the user is logged in or Not -->
+
+                        <template if:false={isGuest}>
+                            <!-- For loggedin user -->
+                            <ul>
+                                <li><a href="/s/portal/my-portfolio">My Portfolio</a></li> 
+                                <li><a href={profileurl}>My Profile</a></li>
+                                <li><a href="/s/portal/my-entities">My Entities</a></li>
+                            </ul>
+
+                        </template>
+
+                        <template if:true={isGuest}>
+                            <!-- If user is not loggedIn-->
+                            <ul>
+                                <li><a
+                                        href="https://investor.venturecrowd.com.au/login?referer=http://investor.venturecrowd.com.au/investor/dashboard/index">Login</a>
+                                </li>
+                                <li><a
+                                        href="https://investor.venturecrowd.com.au/registration/initial_registration">Register</a>
+                                </li>
+                                <li><a
+                                        href="https://investor.venturecrowd.com.au/login?referer=http://investor.venturecrowd.com.au/investor/dashboard/index">Forgot
+                                        Password</a></li>
+                            </ul>
+                        </template>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright bubble-gumText">
+                <div class="container">
+                    <div class="row align-items-center pt-4 pb-4 px-3 px-lg-0">
+                        <div class="col-12 col-lg-3 text-start mb-4 mb-lg-0 white-logo">
+                            <img src={logo}>
+                        </div>
+                        <div class="col-12 col-lg-6 text-sart text-lg-center mb-4 mb-lg-0 copyright-text"><a
+                                href="/s/legals">Legals</a> | Copyright &copy; {currentYear} VentureCrowd. All Rights Reserved.</div>
+                        <div class="col-12 col-lg-3 text-start text-lg-end">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/VentureCrowdAustralia/ "><img src={fb}></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/vcrowd/?hl=en"><img src={insta}></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.linkedin.com/company/venturecrowd-pty-ltd/"><img src={linkedin}></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row disclaimer pb-4 px-3 px-lg-0">
+                        <div class="col">
+                            <p>The information on this website has been prepared and issued by VentureCrowd Nominees Pty Ltd ABN 36 166 599 140 as a corporate authorised representative (CAR No. 452052) of VentureCrowd Pty Ltd ABN 40 166 598 849 AFSL 503381 (VentureCrowd or we or us). 
+                                The information contained in this website is for general information only and is not intended to provide you with financial advice or take into account your objectives, financial situation or needs. 
+                                You should consider, with your professional adviser, whether the information is suitable for your circumstances.</p>
+                            <p>Please note past investment performance is not a reliable indicator of future investment performance and no guarantee of performance, the return of capital or a particular rate of return is provided. 
+                                While we believe the material in this website is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which can’t be excluded.</p>
+                            <p>Crowd Funding (CSF) Offers are facilitated by VentureCrowd Pty Ltd and involve the provision of a crowdfunding service. 
+                                In deciding whether to acquire securities under a CSF offer, you should first consider the CSF offer document (available at " 
+                                <a c-standardpagefooter_standardpagefooter="" href="/s/invest">Crowdfunding equity investment platform in Australia - VentureCrowd</a>" on this website). </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="vc_top_scroll" class="scroll-to-top bubble-gumText"><a href="#" onclick={topFunction}><img
+                       src={ChevronUp}></img></a></div>
+        </footer>
+    </template>
+</template>

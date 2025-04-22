@@ -1,0 +1,155 @@
+<template>
+    <div class="eoi-lead-form-container">
+        <div class="form-body" data-id="form-container">
+            <template lwc:if={isLoading}>
+                <div class="loading-spinner" data-id="loading-spinner">
+                    <span>Loading</span>
+                    <c-core-loading-spinner></c-core-loading-spinner>
+                </div>
+            </template>
+            <template lwc:else>
+                <c-core-form 
+                    title="Register your interest"
+                    subtitle="You’ll be the first in line to access this exclusive deal."
+                    button-label="Register my interest"
+                    form-data={formData}
+                    onsubmit={handleSubmit}
+                    onchange={handleFormChange}
+                    button-variation="black"
+                    full-width>
+                        <!-- Form Body Slot: Contains All Input Fields -->
+                        <div class="core-form-body" slot="body">
+                            <!-- First Name Input Field -->
+                            <c-core-input 
+                            type="text" 
+                            name="firstName" 
+                            placeholder="First Name"
+                            required>
+                            </c-core-input>
+
+                            <!-- Last Name Input Field -->
+                            <c-core-input 
+                            type="text" 
+                            name="lastName" 
+                            placeholder="Last Name"
+                            required>
+                            </c-core-input>
+                            
+                            <!-- Email Input Field -->
+                            <c-core-input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Email"
+                                required>
+                            </c-core-input>
+
+                            <div class="mobile-input-container">
+                                <!-- Mobile Number Code Input Field -->
+                                <c-core-input 
+                                    class="mobile-code-input"
+                                    type="dropdown" 
+                                    options={phoneNumberCodes}
+                                    value={formData.mobileCode}
+                                    name="mobileCode" 
+                                    required>
+                                </c-core-input>
+                                
+                                <!-- Mobile Number Input Field -->
+                                <c-core-input 
+                                    class="mobile-number-input"
+                                    type="tel" 
+                                    placeholder="Mobile Number" 
+                                    name="mobileNumber" 
+                                    required>
+                                </c-core-input>
+                            </div>
+                        
+
+                            <c-core-input
+                            label="How much would you consider investing?"
+                            name="investmentAmount"
+                            placeholder={minInvestAmt}
+                            minimum-value={minInvestAmt}
+                            type="currency"
+                            required
+                            ></c-core-input>
+                            
+                            <!-- User Type Radio Buttons -->
+                            <c-core-radio
+                                label="Are you an Australian resident?"
+                                name="ausResident"
+                                values={ausResidentOptions}
+                                value={formData.ausResident}
+                                size="medium"
+                                alignment-position="horizontal"
+                                required>
+                            </c-core-radio>
+
+                            <!-- Mobile Number Code Input Field -->
+                            <c-core-input 
+                            label="What kind of investor are you?"
+                            type="dropdown" 
+                            value={formData.investorType}
+                            options={investorOptions}
+                            name="investorType" 
+                            subtext="Wholesale investors must have either a gross income of $250,000 or more per year for the past two years, or Net assets of at least $2.5 million."
+                            required>
+                        </c-core-input>
+                            
+                        </div>
+                    </c-core-form>
+
+                    <div class="eoi-lead-form-footer">
+                        <p>By submitting this form, you're allowing us to keep you in the loop with the latest updates and news about this deal. You can unsubscribe at any time.</p>
+                    </div>
+                </template>
+        </div>
+    </div>
+    <c-core-modal
+    lwc:ref="successModal"
+    variation="primary" 
+    mode="light"
+    show-close-button="True"
+    width="450"
+    hide-open-button>
+        <div class="ea-header" slot="header">
+            <c-core-icon
+                icon-name="tickCircleDone"
+                width="40"
+                height="40"
+            ></c-core-icon>
+            <h2 class="main-title">Thank you for your submission!</h2>
+        </div>
+            
+        <!-- <div class="ea-body" slot="body">
+            <p>{successMessage}</p>
+        </div> -->
+        
+    </c-core-modal>
+
+    <!-- <div class="exclusive-access-container" lwc:ref="modalEl">
+        <c-core-modal
+        variation="primary" 
+        mode="light"
+        show-close-button="True"
+        width="450"
+        hide-open-button
+        >
+            <div class="ea-header" slot="header">
+                <h2 class="main-title">Exclusive early access</h2>
+                <h2 class="bold-title">Invest now!</h2>
+            </div>
+                
+            <div class="ea-body" slot="body">
+                <p>Thanks for registering your interest. We are thrilled to offer you exclusive early access to this investment opportunity.</p>
+            </div>
+            
+            <div slot="footer">
+                <c-core-button
+                label="Invest now"
+                variation="primary"
+                ></c-core-button>
+            </div>
+        </c-core-modal>
+    </div> -->
+</template>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Live_on_VC_or_Closed</name>
+        <label>Live on VC or Closed</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Re_Update_Product</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Take out from VC Website</defaultConnectorLabel>
+        <rules>
+            <name>Live_on_VC</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Live on VC Website</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Product</targetReference>
+            </connector>
+            <label>Make Live on VC Website</label>
+        </rules>
+    </decisions>
+    <description>This flow is designed to update the related product of a raise record once its status is modified to Live on VC Website AND also asynchronously notify Elle that the Tile Banner image needs to be created if the field is empty.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>TaskDueDateTomorrow</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 1</expression>
+    </formulas>
+    <interviewLabel>Raise - Publish on VC Website {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Raise - Publish on VC Website</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Product</name>
+        <label>Get Product</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Live_on_VC_or_Closed</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Product__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Product2</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>This update will trigger the Un-publishing of a Raise Product related tile in the VC website.</description>
+        <name>Re_Update_Product</name>
+        <label>Re-Update Product</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Product.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Publish_on_Community_Site__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Product2</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>This update will trigger the publishing of a Raise Product related tile in the VC website.</description>
+        <name>Update_Product</name>
+        <label>Update Product</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Product.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Deal_Description__c</field>
+            <value>
+                <elementReference>$Record.Form_Company_one_liner__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Publish_on_Community_Site__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tile_Heading__c</field>
+            <value>
+                <elementReference>$Record.Form_Company_Name__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tile_Offer_Type__c</field>
+            <value>
+                <elementReference>$Record.Form_Sector__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Product2</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Product</targetReference>
+        </connector>
+        <filterLogic>1 OR 2</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Live on VC Website</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <object>Raise__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>Email2Elle</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello Elle 👋,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This is a notification to let you know that the Raise {!$Record.Name} status has been updated to &quot;{!$Record.Status__c}&quot;.&lt;/p&gt;&lt;p&gt;However, the system has identified that the Tile Banner image doesn&apos;t exist for the &lt;a href=&quot;https://venturecrowd.lightning.force.com/lightning/r/Product2/{!Get_Product.Id}/view&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;product {!Get_Product.Name}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please generate the image for the Banner tile of the &lt;a href=&quot;https://venturecrowd.lightning.force.com/lightning/r/Product2/{!Get_Product.Id}/view&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;product&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Regards,&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The VentureCrowd Team&lt;/strong&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TaskSubject</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Create Tile Banner for product {!Get_Product.Name}&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>UpdatedTileHeading</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Invest in {!$Record.Form_Company_Name__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>UpdateProductTileBanner</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Create Product &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!Get_Product.Name} &lt;/span&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Tile Banner Field&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

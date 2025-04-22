@@ -1,0 +1,83 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-1">
+                <!--
+                    VEN-184:
+                    * Set search input placeholder to "Start typing to search..."
+                    * Set font-size to 14px (taken from bootstrap: .form-control)
+                -->
+            <!-- <c-search-combobox
+                    font-size="14px"
+                    label=""
+                    oninpchange={handinputchange}
+                    onoptselected={optionsel}
+                    placeholder="Start typing to search...">
+                </c-search-combobox> -->
+            <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-1">
+                <div class=" slds-form-element cmbobox-caseoption countryMargin">
+                    <label class="containerLabel slds-form-element__label" for="combobox-id-2" id="combobox-label-id-131"
+                        style="padding-left: 10px;">Country</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-combobox_container">
+                            <div
+                                class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open combobox-style">
+                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                                    role="none">
+                                    <button type="button" onblur={hideOptions}
+                                        onclick={showOptions}
+                                        class="countryPicklist picklistFont slds-input_faux slds-combobox__input slds-grid_vertical-align-center"
+                                        aria-describedby="error-message-id-49" aria-invalid="true"
+                                        aria-labelledby="combobox-label-id-130 combobox-id-60-selected-value"
+                                        id="combobox-id-60-selected-value" aria-controls="listbox-id-1"
+                                        aria-expanded="false" aria-haspopup="listbox">
+                                        <span class=" slds-truncate picklistOptionFont"
+                                            id="combobox-value-id-98">{chosenCountry}</span>
+                                        <span
+                                            class=" slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right "
+                                            style="height:100%;">
+                                            <lightning-icon size="xx-small" icon-name="utility:down">
+                                            </lightning-icon>
+                                        </span>
+                                    </button>
+                                </div>
+                                <template if:true={showCaseOptions}>
+                                    <div id="listbox-id-2"
+                                        class="slds-dropdown slds-dropdown_length-7 slds-dropdown_fluid"
+                                        role="listbox">
+                                        <ul class="picklistOptionFont slds-listbox slds-listbox_vertical" role="presentation">
+                                            <template for:each={options} for:item="option">
+                                                <li role="presentation" class="slds-listbox__item"
+                                                    key={option.id}>
+                                                    <div id={option.id}
+                                                        onmousedown={handleCountryChange}
+                                                        data-value={option.value}
+                                                        class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                                                        role="option">
+                                                        <div id={option.id} data-value={option.value}
+                                                            onclick={handleCountryChange}
+                                                            class="slds-media__body">
+                                                            <span id={option.id} data-value={option.value}
+                                                                onclick={handleCountryChange}
+                                                                class="slds-truncate"
+                                                                title="Country Code">{option.label}</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-1">
+                <c-search-combobox label="Billing Address" pagestyle="verifPageStyle" onoptselected={optionsel} oninpchange={handinputchange} >
+                </c-search-combobox>
+            </div>
+        </div>
+    </div>
+    <!--<lightning-combobox class="countryPicklist" label="&nbsp;&nbsp;&nbsp;Country" options={options} value={cntryVal} type="button" onchange={handlecntrychange}>
+                    </lightning-combobox>-->
+</template>

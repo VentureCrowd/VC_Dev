@@ -1,0 +1,311 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+
+                            <a href="#">Ticker INVEST</a>
+                            <a href="#">FinTech </a>
+                            <a href="#">Investing</a>
+
+                        </div>
+                        <h1 class="mt-4">Digitising Investment Management</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000HqFVk&oid=00D2v000000WjFp&lastMod=1627438158000');min-height: 51vh; top:-200px !important;"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h2>
+                                VentureCrowd CEO Steve Maarbani spoke to Ticker INVEST about the digitisation of investment management. 
+                            </h2>
+                            <br/>
+                            <br/>
+                            <p>
+                                <span style="font-weight: 400;">Watch the recording of the interview below.</span>
+                            </p>
+                            <div class="fluid-video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/GtNaQIfRf8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h4>Short on time? Here's the summary:</h4>
+                            </div>
+                            <br/>
+                            
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    Digitisation has improved the efficiency and customer experience of many industries - from entertainment to retail. Now, the impact of COVID has accelerated the digitisation of the investment management sector. Today’s segment will look at how technology has changed the way we invest and explore what the future of the investment management sector looks like. 
+                                </li>
+                                
+                            </ul>
+
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h4> How is the investment sector changing and what role is technology playing in that process?<br/></h4>
+                            </div>
+                        <p>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    I think the problem is that the investment sector really hasn’t changed - it hasn’t changed for decades. I received a document just yesterday which still had fax details in it. Most wealth firms are still heavily weighted toward listed equities and have very little understanding about ‘venture capital’ or ‘property development’ opportunities and so their clients just don’t get access to those kinds of investments, and they certainly don’t get it digitally. 
+                                </li>
+                                <li>
+                                    Now, when the core clients were baby boomers, you can get away with that, but what is happening now is that the customer is changing and when the customer changes the industry is forced to change to meet the new needs of that new customer.
+                                </li>
+                                <li>
+                                    Today’s core financial services customer is younger, they are digital natives (born with a smart phone in hand), they are conscious about sustainability issues. They have watched legacy industries destroy the planet and our health, and they have watched innovative startups define the future - whether its Atlassian or Canva, Netflix or Tesla - and they want a part of that.
+                                </li>
+                                <li>
+                                    Eventually all wealth firms will need to understand and be able to advise on alternative investments including venture capital.
+                                </li>
+                                <li>
+                                    And, the role of technology is not just to digitise legacy processes - there’s nothing innovative about that - the real power of technology in the next phase will be to create digital communities of like minded individuals, and then use nuanced data to connect them and to customise messaging and opportunities to suit those people.
+                                </li>
+                            </ul>
+                        </p>
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h4> What do you think are the key macroeconomic factors driving the shift to digital investment management? <br/></h4>
+                            </div>
+                            <p>
+                            
+                                <p>
+                                    There are four main macroeconomic factors that are driving the shift to digital investment management: 
+                                </p>
+                                <p>
+                                    <strong>1.</strong>&nbsp;&nbsp; Growth in popularity of alternative assets, which according to PwC is forecast to grow from AuM of US$ 2.9 trillion in 2017 to US$ 6.9 trillion by 2025, which is a very high CAGR of 11.7%
+                                    <br/>
+                                    <strong>2.</strong>&nbsp;&nbsp; Growth of purpose-driven investments - the next generation of investors wants to do more than grow their wealth, they want to know that their investment dollars are solving global problems.
+                                    <br/>
+                                    <strong>3.</strong>&nbsp;&nbsp; Lack of trust in traditional financial institutions - the financial services industry’s brand value is at an all time low. According to the Edelman Trust Barometer 2020, trust in the financial services industry ranks dead last and it has been there for the last 8 years running. So, the next generation is looking for different options
+                                    <br/>
+                                    <strong>4.</strong>&nbsp;&nbsp; Millennials will be the beneficiaries of the largest intergenerational transfer of wealth in modern history, making them the dominant financial services customer. So what they want is what the industry will need to deliver, and that is more access to purpose-driven alternative investments delivered digitally. 
+                                </p>
+                            
+                        </p>
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h4> What impact do you think has COVID had on this shift and is it likely to continue or revert to the way it was once the pandemic is over? <br/></h4>
+                            </div>
+                            <p>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    What COVID has done is it has forced introspection.  
+                                </li>
+                                <li>
+                                    It has forced us to take a long hard look at our priorities, what we’re doing to the planet, what we’re doing to our own health and wellness, and really challenging the idea that profit at all costs is OK. It’s not.
+                                </li>
+                                <li>
+                                    What we are hearing from our members is that they want to see purpose-driven investment opportunities that are sound financial propositions but that also have a positive impact on the people and the planet, and they want it digitally - three clicks and they’re done.
+                                </li>
+                                <li>
+                                    That’s why VentureCrowd has always been digital first AND one of our key criteria is that every investment opportunity we offer addresses one or more of the United Nations Sustainable Development Goals. 
+                                </li>
+                                <li>
+                                    And I don’t think that’s going to change when we come out of this pandemic.
+                                </li>
+                                <li>
+                                    Conscious investing, delivered digitally, is absolutely here to stay.
+                                </li>
+                            </ul>
+                        </p>
+
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h4> VentureCrowd has been a pioneer in the Australian digital investment space and has now launched its own crowdfunding campaign. Tell us about that and how can investors become an owner in the business?<br/> </h4>
+                            </div>
+                            <p>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    VentureCrowd is a digital investment platform for alternative assets. We curate purpose-driven investment opportunities in venture capital, property development, private credit and funds, AND we make those opportunities available to all investors digitally. 
+                                </li>
+                                <li>
+                                    In FY21, our membership more than doubled to over 62,000 people who invested over $30,000,000 in a range of projects together. 
+                                </li>
+                                <li>
+                                    But the amount we raise is actually less important to us than the results for investors. And the results are - We successfully exited 3 venture capital deals, the most recent delivering a 295% return after listing on the ASX, and paid over $7,500,000 in income distributions to investors across a number of property and venture capital projects.
+                                </li>
+                                <li>
+                                    This year, we will be ramping up our team, increasing dealflow, building the next phase of our technology platform, and planning to open our first office in South East Asia. 
+                                </li>
+                                <li>
+                                    To help fund that, we opened a small $2.5M round which is nearly full, so we’ve extended it this morning to $3M. So, if you’d like to become an owner of VentureCrowd and be part of that journey now you can, all the details are available on the VentureCrowd website.
+                                </li>
+                            </ul>
+                        </p>
+                            <div class="post-body-rich-text text-center mt-5">
+
+                                <h5>We find and fund the future</h5>
+
+                                <h1>Invest with VentureCrowd</h1>
+                                <p>Find out more about who is raising capital on VentureCrowd</p>
+                                <a target="_top" href="{!$Label.VC_CF_Public_URL + '/invest'}">View Offers</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Zega Webinar: Wrapped up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Zega Intelligent Cookware Webinar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">From Capital Raise to Curtain Raise: Inspired Dance Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why millennials are driven to build purpose driven businesses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contactless Ordering: Terminating Payment Terminal Providers?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">April 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">March 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">February 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">January 2021</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <!-- <a href="{! $Label.VC_CF_Public_URL +'/blog/invest-in-property-without-buying'}"> -->
+            <a href="#">
+                <div class="container">
+                    <div class="row text-center py-5 text-white">
+                        <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                        <div class="col-md-12 pb-5 next-post-title mt-3">
+                            <h3>Contactless Ordering: Terminating Payment Terminal Providers?</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-post-bg-overlay"></div>
+                <div class="next-post-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JPx8P&d=%2Fa%2F2v000000ENzt%2FGQSt4mnNfQ.i0J8tURGvFTqYLMBOzZ8RXJUwoiRCZpg&asPdf=false')"></div>
+            </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

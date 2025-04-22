@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRC_Voice_Calls</fullName>
+    <columns>Name</columns>
+    <columns>Team__c</columns>
+    <columns>Type__c</columns>
+    <columns>CallDisposition</columns>
+    <columns>Related_Account__c</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>Missed_Call__c</columns>
+    <columns>IsRecorded</columns>
+    <columns>ToPhoneNumber</columns>
+    <columns>Owner</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Team__c</field>
+        <operation>equals</operation>
+        <value>CRC Team</value>
+    </filters>
+    <label>CRC Voice Calls</label>
+</ListView>

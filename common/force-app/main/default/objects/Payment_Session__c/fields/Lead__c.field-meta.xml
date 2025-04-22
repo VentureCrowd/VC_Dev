@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This shows if there is a lead related to the payment session</description>
+    <inlineHelpText>This shows if there is a lead related to the payment session</inlineHelpText>
+    <label>Related Lead</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Payment Sessions</relationshipLabel>
+    <relationshipName>Payment_Sessions</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

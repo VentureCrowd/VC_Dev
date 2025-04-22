@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Founder_Campaign__c</entityName>
+    <fieldName>Campaign_Stage__c</fieldName>
+    <masterLabel>Founder Campaign Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Time to Wrap it up!! Check if you need any comms sent out or update any internal stakeholder.&lt;/p&gt;</info>
+        <picklistValueName>Campaign Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Related_Raise__c</fieldNames>
+        <fieldNames>True_Amount_to_Raise__c</fieldNames>
+        <fieldNames>Business_Account__c</fieldNames>
+        <info>&lt;p&gt;Looks like the Founder Campaign is progressing! Time to setup the contract for the Founder to sign.&lt;/p&gt;</info>
+        <picklistValueName>Contract</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The Founder is now building their EOI, make sure that any products offered to them are in a Lead or Opportunity.&lt;/p&gt;</info>
+        <picklistValueName>EOI Build</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Marketing_Partner__c</fieldNames>
+        <info>&lt;p&gt;Ok, time to make sure the founder has the right marketing assets.&lt;/p&gt;</info>
+        <picklistValueName>Mkt Assets</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Related_EOI__c</fieldNames>
+        <fieldNames>Related_Raise__c</fieldNames>
+        <info>&lt;p&gt;The Campaign is Brand New, remember to match up the EOI or Raise records as required.&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Founder_Campaign</recordTypeName>
+</PathAssistant>

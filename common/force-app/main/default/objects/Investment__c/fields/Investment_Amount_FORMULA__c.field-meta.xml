@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_Amount_FORMULA__c</fullName>
+    <description>This field will be used in Investor Portal CMS card. Created to Maintain g the currency field format as $ symbol is missing in regular currency field.</description>
+    <externalId>false</externalId>
+    <formula>&quot;$&quot; 
++
+IF(LEN(TEXT(MFLOOR(Investment_Amount__c)))&gt;3,   
+    IF(LEN(TEXT(MFLOOR(Investment_Amount__c)))&gt;6,
+        LEFT(TEXT(MFLOOR(Investment_Amount__c)),LEN(TEXT(MFLOOR(Investment_Amount__c)))-6)+&quot;,&quot;+LEFT(RIGHT(TEXT(MFLOOR(Investment_Amount__c)),6),3)+&quot;,&quot;+RIGHT(TEXT(MFLOOR(Investment_Amount__c)),3),
+        LEFT(TEXT(MFLOOR(Investment_Amount__c)),LEN(TEXT(MFLOOR(Investment_Amount__c)))-3)+&quot;,&quot;+RIGHT(TEXT(MFLOOR(Investment_Amount__c)),3)),
+    TEXT(MFLOOR(Investment_Amount__c)))
++
+IF(MOD(Investment_Amount__c , 1) = 0,&apos;.00&apos;,TEXT(MOD(Investment_Amount__c , 1)))</formula>
+    <label>Investment Amount</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

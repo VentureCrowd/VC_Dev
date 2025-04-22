@@ -1,0 +1,30 @@
+.input-wrapper{
+    padding: var(--space-md);
+}
+
+.icon-wrap {
+    color: var(--icon-color);
+}
+
+.badge-text {
+    font-family: "SuisseIntl-Regular" !important;
+    color: var(--badge-text-color);
+    margin: 0;
+}
+
+.badge-wrap {
+    display: inline-flex;
+    /* padding: 10px 15px; */
+    padding: var(--padding-text);
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    background-color: var(--badge-background-color);
+    border-radius: 86px;
+}
+
+.badge-wrap.default {
+    outline: var(--primary-foreground);
+    color: var(--primary-background);
+    outline: 2px solid var(--primary-background);
+}

@@ -1,0 +1,236 @@
+.sxsw-banner{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 800px){
+    .sxsw-banner{
+        flex-direction: column;
+    }
+}
+
+
+.container-left,.container-right{
+    flex: 1;
+    padding: 180px 80px;
+}
+
+.container-left{
+    background: black;
+    overflow: visible;
+}
+@media screen and (max-width: 800px){
+    .container-left{
+        max-height: 150px;
+        height: 100%;
+        padding: 0px;
+    }
+}
+
+.container-left .content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    color: white;
+    position: relative;
+    left: calc(50vw - 100%);
+    max-width: 180%;
+    width: 180%;
+    overflow: visible;
+}
+@media screen and (max-width: 800px){
+    .container-left .content{
+        max-width: 100vw;
+        margin: auto;
+        position: relative;
+        left: 0;
+        top: 50px;
+        padding: var(--space-xxl);
+        margin-top: -50px;
+    }
+}
+
+
+.container-left h1{
+    font-size: 80px;
+    color: white;
+    font-family: 'SuisseIntl-Bold' !important;
+}
+@media screen and (max-width: 800px){
+    .container-left h1{
+        font-size: 40px;
+    }
+}
+
+.container-left .content p.subtitle{
+    font-size: 40px;
+}
+@media screen and (max-width: 800px){
+    .container-left .content p.subtitle{
+        font-size: 24px;
+    }
+}
+
+.content {
+    max-width: 450px;
+    margin: auto;
+    
+}
+
+@media screen and (max-width: 800px){
+    .content {
+        max-width: 250px;
+    }
+}
+
+
+.container-right .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+
+.container-right .text c-core-icon{
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    .container-right .text c-core-icon {
+        position: relative;
+        top: -100px;
+    }
+}
+
+
+.container-right .content .text h2{
+    color: white;
+    font-family: 'SuisseIntl-Medium' !important;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 800px){
+    .container-right .content .text h2{
+        font-size: 22px;
+    }
+}
+
+.container-right .star c-core-icon{
+    color: var(--Dove, #F0F1F2);;
+    position: relative;
+    bottom: -258px;
+    right: -20px;
+
+}
+@media screen and (max-width: 800px) {
+    .container-right .star c-core-icon{
+        bottom: -224px;
+    }
+}
+
+.content .star{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* SECOND PART OF THE PAGE */
+
+.sxsw-form-container{
+    background-color: #FFF;
+    padding: var(--space-lg);
+    width: 100%;
+    padding-bottom: calc(var(--space-lg) + 100px);
+}
+@media screen and (max-width: 800px){
+    .sxsw-form-container{
+        padding: var(--space-lg);
+    }
+}
+
+.sxsw-content{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+@media screen and (max-width: 800px){
+    .sxsw-content{
+        max-width: 350px;
+        gap: var(--space-lg);
+    }
+}
+
+.landing-page-description p{
+    font-size: 50px;
+    font-family: 'SuisseIntl-Light';
+    text-align: center;
+}
+@media screen and (max-width: 800px){
+    .landing-page-description p{
+        font-size: 20px;
+    }
+}
+
+
+/* CARDS SECTION */
+
+section.sxsw-product-container{
+    background-color: var(--Dove, #F0F1F2);
+    padding: var(--space-xxl);
+    padding-top: calc(var(--space-xxl) + var(--space-lg));
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+@media screen and (max-width: 800px){
+    section.sxsw-product-container{
+        padding-bottom: var(--space-lg);
+        padding: var(--space-lg);
+        gap: var(--space-md);
+    }
+}
+
+.sxsw-cards-container, .sxsw-search-container {
+    max-width: 84em;
+    margin: auto;
+    width: 100%;
+}
+
+.sxsw-search-container c-core-input {
+    width: 50%;
+    display: block;
+    padding-bottom: var(--space-lg);
+}
+@media screen and (max-width: 800px){
+    .sxsw-search-container c-core-input {
+        width: 100%;
+        display: block;
+        padding-bottom: var(--space-md);
+    }
+}
+
+
+p.cards-not-found{
+    font-family: 'SuisseIntl-Light';
+    font-size: 18px;
+    font-style: italic;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--space-lg);
+}
+
+@media screen and (max-width: 800px){
+    .card-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: var(--space-md);
+    }
+}

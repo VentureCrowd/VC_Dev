@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_edit_3_fields</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(
+    ISCHANGED(Redemption_Request__c) || 
+    ISCHANGED(Redemption_Request_Date__c) || 
+    ISCHANGED(NextStep),
+    false,
+    true
+)</errorConditionFormula>
+    <errorMessage>test</errorMessage>
+</ValidationRule>

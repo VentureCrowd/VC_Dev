@@ -1,0 +1,87 @@
+<template>
+    
+    <div class="loading-spinner" lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <template lwc:else>
+        <c-core-toast-message
+        title={errorTitle}
+        body={errorBody}
+        variant="error"
+        >
+            <div slot="body">
+                <ul class="field-error-list">
+                    <template for:each={errorBodyFields} for:item="errorfield">
+                        <li class="field-error-item" key={errorfield.label} data-id={errorfield.label} onclick={handleClickErrorField} >  
+                            {errorfield.label}
+                        </li>
+                    </template>
+                </ul>
+               
+            </div>
+        </c-core-toast-message>
+        <div class="banner-warning-container" lwc:if={showMultipleAcknowledgeBanner}>
+            <div class="content">
+                <p class="bold">Please remember: </p>
+                <p>Do not edit and save simultaneously across devices as data may be lost</p>
+            </div>
+            <div class="actions">
+                <c-core-button
+                label="Acknowledge"
+                variation="black"
+                onbuttonclick={handleAcknowledgeWarningBanner}
+                is-loading={acknowledgeIsLoading}
+                ></c-core-button>
+            </div>
+        </div>
+        <div class="liner">
+       
+            <div class="breadcrumbs wrapper">
+                <c-core-button 
+                label="My Companies"
+                variation="tertiary"
+                mode="light"
+                onbuttonclick={returnToCompanies}
+                data-id="primary-button"
+                icon="left-chevron" 
+                icon-position="left">
+            </c-core-button>
+            </div>
+            <div class="header wrapper">
+                <h1>{title}</h1>
+                <div class="actions">
+                    <c-core-button
+                    label="Preview Deal Page"
+                    variation="black"
+                    onbuttonclick={previewDealpage}
+                    is-loading={isDealPageLoading}>
+                    </c-core-button>
+                </div>
+            </div>
+            <div class="chevron wrapper">
+                <c-core-progress-boxes
+                    values={values}>
+                </c-core-progress-boxes>
+            </div>
+            <div class="raise-form wrapper">
+                <template lwc:if={isRetail}>
+                    <c-raise-form-retail 
+                    form-data={formData} 
+                    record-id={raiseId} 
+                    onerrorsfound={handleErrors}
+                    onclosetoast={closeErrorsToast}
+                    lwc:ref="retailFormEL"></c-raise-form-retail>
+                </template>
+                <template lwc:if={isWholesale}>
+                    <c-raise-form-wholesale
+                    form-data={formData} 
+                    record-id={raiseId} 
+                    onerrorsfound={handleErrors}
+                    onclosetoast={closeErrorsToast}
+                    lwc:ref="wholesaleFormEL"></c-raise-form-wholesale>
+                </template>
+            </div>
+        </div>
+    </template>
+    
+</template>

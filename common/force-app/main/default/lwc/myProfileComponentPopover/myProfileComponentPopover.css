@@ -1,0 +1,50 @@
+.vc-uploadedFileName{
+    color:#D95BAA;
+}
+.buttonDD{
+    /* margin-top: 0 !important; */
+	height: 56px;
+	font-weight: 500;     
+    font-size: 14px;
+    
+}
+
+.centerFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slds-dropdown{
+    left: auto !important;
+    transform: none !important;
+}
+
+/* .customDD {
+    min-width: 82px;
+} */
+
+/* .slds-dropdown{
+    width:150px;
+} */
+
+/* .iti__flag {
+    background-image: url('/resource/inputtel/inputtel/img/flags.png');
+}
+    
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti__flag {
+    background-image: url('/resource/inputtel/inputtel/img/flags@2x.png');
+    }
+}  */
+
+    /* background-image: url('{!URLFOR($Resource.inputtel, 'inputtel/img/flags@2x.png')}'); */
+/* background-image: url('{!URLFOR($Resource.inputtel, 'inputtel/img/flags.png')}'); */
+
+
+/* .iti {
+    height: 55px !important;
+} */

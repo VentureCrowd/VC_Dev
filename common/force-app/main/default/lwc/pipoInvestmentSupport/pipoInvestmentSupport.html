@@ -1,0 +1,163 @@
+<template>
+    <div class="help-hub-container" onclick={handleOutsideClose}>
+        <!-- Dropdown menu button -->
+        <c-core-button
+            icon="secondaryMenu"
+            icon-position="left"
+            label="Investment Support"
+            mode="dark"
+            variation="secondary"
+            onclick={toggleMenu}>
+        </c-core-button>
+
+        <!-- Dropdown Menu - content dynamically changes here -->
+        <div class="help-hub-dropdown-menu" if:true={isMenuOpen}>
+            <!-- Render different content inside the dropdown based on the selected option -->
+
+            <!-- Default content when no option is selected -->
+            <template if:true={isMenuDefault}>
+                <ul>
+                    <li class="dropdown-item" data-option="report_issue" onclick={handleOptionClick}>Report an issue or concern<span class="arrow">→</span></li>
+                    <li class="dropdown-item" data-option="faqs" onclick={handleFaqClick}>Investor FAQs<span class="arrow">→</span></li>
+                    <template lwc:if={pendingInvestment}>
+                        <li lwc:if={ableToRefund} class="dropdown-item" data-option="refund" onclick={handleOptionClick}>Request Refund<span class="arrow">→</span></li>
+                    </template>
+                    <template lwc:else>
+                        <li class="dropdown-item" data-option="general_enquiry" onclick={handleOptionClick}>General Investment enquiries <span class="arrow">→</span></li>
+                        <li class="dropdown-item" data-option="explore_investment" onclick={handleOptionClick}>Explore my investment options<span class="arrow">→</span></li>
+                        <li class="dropdown-item" data-option="how-to" onclick={handleFinancialClick}>Facing financial difficulty? <span class="arrow">→</span></li>
+                    </template>
+                </ul>
+            </template>
+
+            <!-- Request a refund content -->
+            <template if:true={isRequestRefundSelected}>
+                <div class="content-container">
+                    <div class="close-container">
+                        <h2>Request a refund</h2>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xlarge"
+                            onclick={toggleMenu}>
+                        </c-core-icon>
+                    </div>
+                        <div>
+                            <c-core-form
+                            button-label="Request refund"
+                            form-data={formData}
+                            onsubmit={handleRefundRequest}
+                            onchange={handleFormChange}
+                            is-submit-loading={isFormLoading}
+                            button-variation="primary"
+                            left-form-button
+                            padding="0px">
+                                <div class="core-form-header" slot="header">
+                                    <p>Please select your reason for requesting a refund: </p>
+                                </div>
+                                <div class="core-form-body" slot="body">
+                                    <c-core-radio
+                                    name="refundOptions"
+                                    values={values}
+                                    alignment-position="vertical"
+                                    size="large">
+                                    </c-core-radio>
+                                    <c-core-input
+                                        name="refundReason"
+                                        type="text"
+                                        disabled={coreInputState}
+                                        required>
+                                    </c-core-input>                
+                                </div>
+                            </c-core-form>
+                        </div>                
+                </div>
+                <c-core-modal
+                    lwc:ref="coremodal"
+                    onclosebutton={handleModalClose}
+                    disabled={modalDisabled}
+                    hide-open-button>
+                    <div class="header-modal" slot="header">
+                        <h2>Refund request</h2>
+                        <p>We will keep you updated via email on your refund request.</p>
+                    </div>
+                </c-core-modal>
+            </template>
+
+            <!-- General Investment Enquiries -->
+            <template if:true={isGeneralEnquirySelected}>
+                <div class="content-container">
+                    <div class="close-container">
+                        <h2>Got a query about your investment?</h2>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xlarge"
+                            onclick={toggleMenu}>
+                        </c-core-icon>
+                    </div>
+                    <div class="help-hub-options-container">
+                        <p>Our investor relations team is here to help you.</p>
+    
+                        <p>Call us on <a href="tel:1300039655"><strong>1300 039 655</strong></a> and select Option 5 or send us an email via the link below</p>
+                        <c-core-button
+                            label="Contact Us"
+                            variation="primary"
+                            mode="light"
+                            onclick={handleContactUs}>
+                        </c-core-button>
+                    </div>                
+                </div>
+            </template>
+
+            <!-- Explore Investment Options -->
+            <template if:true={isExploreInvestmentSelected}>
+                <div class="content-container">
+                    <div class="close-container">
+                        <h2>Explore investment options</h2>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xlarge"
+                            onclick={toggleMenu}>
+                        </c-core-icon>
+                    </div>
+                    <div class="help-hub-options-container">
+                        <p>You can reach us at any time. We'd love to chat</p>
+    
+                        <p>Call us on <a href="tel:1300039655"><strong>1300 039 655</strong></a> and select Option 5 or email us at <strong>hello@venturecrowd.com.au</strong></p>
+                        <c-core-button
+                            label="Contact Us"
+                            variation="primary"
+                            mode="light"
+                            onclick={handleContactUs}>
+                        </c-core-button>
+                    </div>                
+                </div>
+            </template>
+
+
+            <!-- Report issue and concern -->
+            <template if:true={isReportIssueSelected}>
+                <div class="content-container">
+                    <div class="close-container">
+                        <h2>Report and issue or concern</h2>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xlarge"
+                            onclick={toggleMenu}>
+                        </c-core-icon>
+                    </div>
+                    <div class="help-hub-options-container">
+                        <p>If you are having issues with your portal access, viewing information or anything else to do with our online platform our customer relations team is here to help!</p>
+    
+                        <p>Call us on <a href="tel:1300039655"><strong>1300 039 655</strong></a> and select Option 5 or send us an email via the link below</p>
+                        <c-core-button
+                            label="Contact Us"
+                            variation="primary"
+                            mode="light"
+                            onclick={handleContactUs}>
+                        </c-core-button>
+                    </div>                
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <template if:true={showRecomondedProds}>
+        <div class="slds-align_absolute-center" style="padding-top: 120px; padding-bottom: 70px;    font-family: 'Montserrat';    font-size: 48px;    line-height: 54px;">
+            <h2>
+                {title}
+            </h2>
+        </div>
+        <div class="slds-align_absolute-center" style="font-family: 'Montserrat'; font-size: 16px; line-height: 24px;">
+                {description}
+        </div>
+        <div class="cb-section_row slds-wrap slds-large-nowrap">
+            <section>
+                <div data-is_recs_invests class="row mobilemargintop">
+                    <template if:true={productList_1} for:each={productList_1} for:item="product" for:index="index">
+                        <c-vc-product-lwc class="col-lg-4 item mb-4 mb-lg-4" key={product.Id} product={product} data-is_recs_invests_product={product.Id}></c-vc-product-lwc>
+                    </template>
+                </div>
+            </section>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Holder_Proportion__c</fullName>
+    <defaultValue>&apos;100% minus the VentureCrowd Proportion&apos;</defaultValue>
+    <description>this field is utilised on contract modal</description>
+    <inlineHelpText>this field is utilised on contract modal</inlineHelpText>
+    <label>Unit Holder Proportion</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

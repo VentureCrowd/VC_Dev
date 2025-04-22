@@ -1,0 +1,65 @@
+/* Header */
+.THIS.navigation {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 400;
+    transition: all 300ms ease;
+}
+/* Body Container (With draggable grid system) */
+.THIS.mainContentArea {
+    position: relative;
+    z-index: 120;
+    background-color: #FFF; 
+     /* margin-bottom: 573px; */
+    /* VEN-104 (Forest) - changed from margin-bottom: 573px to margin-bottom: 634px */
+}
+ /* VEN-104 (Forest) - changed from margin-bottom: 945px to margin-bottom: 0px */
+@media screen and (max-width: 993px) {
+    .THIS.mainContentArea {
+         /* VEN-85 (Forest) - Added margin-top: 66px */
+        /* margin-top: 66px; */
+        margin-bottom: 0px;
+    }
+}
+ /* VEN-104 (Forest) - changed from margin-bottom: 1000px to margin-bottom: 0px */
+@media screen and (max-width: 768px) {
+    .THIS.mainContentArea {
+         /* VEN-85 (Forest) - Added margin-top: 66px */
+        /* margin-top: 66px; */
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .THIS.mainContentArea {
+         /* VEN-85 (Forest) - Added margin-top: 66px */
+        /* margin-top: 66px; */
+        margin-bottom: 0px;
+    }
+}
+
+/* Set the content region to be wrapped in a standard width container. HAX :D */
+.THIS.mainContentArea div[data-region-name="content"] > .ui-widget:nth-child(n+2) > .cb-section  > .cb-section_row {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: calc(100vw * 0.03) !important;
+    padding-bottom: calc(100vw * 0.03) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.THIS.mainContentArea div[data-region-name="content"] > .ui-widget > .cb-section  > .cb-section_row  > .cb-section_column {
+    padding: 0 !important;
+    min-height: auto !important;
+}
+@media (min-width: 1200px) {
+    .THIS.mainContentArea div[data-region-name="content"] > .ui-widget:nth-child(n+2) > .cb-section  > .cb-section_row {
+        max-width: 1250px !important;
+    }
+}
+/* Find all elements which have column with of 100% in the section style */
+.THIS.mainContentArea div[data-region-name="content"] > .ui-widget:nth-child(n+2) > .cb-section  > .cb-section_row[style*="max-width: 100%;"] {
+    max-width: 100% !important;
+    padding: 0 !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Referral Partner must ALWAYS be filled in so that the docusign can be sent to someone. Fill this field if you want to docusign to reference the company name instead of the referral partner and choose the correct Docusign Document.</inlineHelpText>
+    <label>Business Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Applications (Business Account)</relationshipLabel>
+    <relationshipName>ApplicationscuLs</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

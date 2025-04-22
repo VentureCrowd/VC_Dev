@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Internal Owner in charge of the EOI and the Account</description>
+    <inlineHelpText>Internal Owner in charge of the EOI and the Account</inlineHelpText>
+    <label>Internal Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>EOI_s1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

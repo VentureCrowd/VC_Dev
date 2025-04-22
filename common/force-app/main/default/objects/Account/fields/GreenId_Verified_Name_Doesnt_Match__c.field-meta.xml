@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GreenId_Verified_Name_Doesnt_Match__c</fullName>
+    <formula>IF(( FirstName  =  GreenID_First_Name__c  &amp;&amp;  MiddleName  =  GreenID_Middle_Name__c  &amp;&amp;  LastName  =  GreenID_Last_Name__c ), false, true)</formula>
+    <label>GreenId Verified Name Doesnt Match</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

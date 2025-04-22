@@ -1,0 +1,269 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+      <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+            <div class="col-md-12 headline">
+             <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+              <h1 class="mt-4">Investment Property Companies Australia</h1>
+            <p class="mt-4">
+                We help investors gain exposure to unique real estate asset classes including residential, commercial and industrial development opportunities.
+                </p>
+                <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-solid"> Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="static-bg-overlay"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/Pimpama-Townhouses.jpg')"></div>
+      </section>
+
+      <!-- Post Body -->
+      <section class="post-body py-5">
+        <div class="container">
+         
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Investment Property Companies </h3>
+                <p><span style="font-weight: 400;">We are VentureCrowd, one of Australia’s most successful investment property companies specialising in sourcing and offering retail investors, just like you, access to simplified investment opportunities in both residential and commercial developments. Our </span><a href="https://www.venturecrowd.com.au/"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> investments are delivered through an easy-to-use online platform. Our investors access curated alternative investment opportunities which have traditionally been available only to institutional or high net worth sophisticated investors.</span></p>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> What do investment property companies do? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <p><span style="font-weight: 400;">We want to ensure that everybody can invest and shape the world we live in. To that end, we provide investors like you access to curated startup and property investment opportunities as well as an easily navigable online platform from which you can track the management of your investments. The kinds of growth opportunities we source and provide include high growth property funds, super </span><a href="https://www.venturecrowd.com.au/s/high-yield-investments"><span style="font-weight: 400;">high yield investment</span></a><span style="font-weight: 400;"> funds as well as retail fund opportunities. With VentureCrowd, you can start or add to your real estate portfolio investments minus the hassle of managing a property development. You get a foot in the door and, if the development is successful, a share in that success.&nbsp;</span></p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+<p><span style="font-weight: 400;">We help investors gain exposure to unique real estate asset classes including residential, commercial and industrial development opportunities. When you choose VentureCrowd, you’re choosing to leverage expert industry know-how from successful property developers as well as the opportunity to invest alongside experienced investors. Our service offers you a quick and easy online platform from which you can compare and research our available pre-vetted investment opportunities. When you have found an investment that interests you and you’re ready to proceed, leave the paperwork to us. We negotiate terms on your behalf and deliver regular updates regarding your project’s progress.&nbsp;</span></p>
+              </div>
+            </div> 
+          </div>
+            
+
+
+
+
+         <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How do investment property companies make money? </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <p><span style="font-weight: 400;">As one of Australia’s investment property companies, we source solid investment opportunities on your behalf making it easier than ever to access pre-vetted opportunities with low upfront costs, defined turnaround time and an exit strategy. It’s free to register on VentureCrowd and generally you can choose how you wish to invest.&nbsp;</span></p>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <p><span style="font-weight: 400;">Investment options can include:</span></p>
+                <div class="nectar-fancy-ul animated-in" data-list-icon="icon-salient-thin-line" data-animation="true" data-animation-delay="0" data-color="accent-color" data-alignment="left"> 
+                    <ul>
+                        <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">1% transaction fee and 20% performance fee payable on exit (this excludes GST)</span></li>
+                        <li style="opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">Performance fees are not incurred against the principal investment and occur only on a successful exit</span></li>
+                    </ul>
+                  </div>
+                  
+                  <p><span style="font-weight: 400;">For commercial members, investment options include:</span></p>
+                  <div class="nectar-fancy-ul animated-in" data-list-icon="icon-salient-thin-line" data-animation="true" data-animation-delay="0" data-color="accent-color" data-alignment="left"> 
+                      <ul>
+                          <li style="font-weight: 400; opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">6% on capital raised (excluding GST)</span></li>
+                          <li style="font-weight: 400; opacity: 1; left: 0px;"><i class="icon-default-style icon-salient-thin-line accent-color"></i> <span style="font-weight: 400;">$4,000 campaign fee (excluding GST)</span></li>
+                      </ul>
+                  </div>
+              </div>
+            </div> 
+          </div>
+
+
+
+            <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> How to structure investments with an investment property company? </h3>
+                  <div class="wpb_wrapper">
+                      
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                              <p><span style="font-weight: 400;">Australia has now passed the legislative framework allowing retail investors – that’s you – to participate in a new Crowd-Sourced Funding (CSF) regime just like the US, Europe, Asia and New Zealand. This type of investing structure may also be called </span><a href="https://www.venturecrowd.com.au/s/syndicate-investing"><span style="font-weight: 400;">syndicate investing</span></a><span style="font-weight: 400;">. Anyone residing in Australia and who is at least 18 years old can now invest in CSF offers made by an investment property company like VentureCrowd. We have already successfully raised </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> for over 4 years from wholesale investors with over $140m raised across 100 successful deals.&nbsp;</span></p>
+                              
+                          </div>
+                      </div>
+                      <div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                              <p><span style="font-weight: 400;">If you are considering registering with us then there are some important things to review before you settle on any of the investment property companies you may be considering, including how things like the business and </span><a href="https://www.venturecrowd.com.au/s/property/funds"><span style="font-weight: 400;">property funds</span></a><span style="font-weight: 400;"> are structured. Always seek professional and independent financial advice from an advisor that you know and trust before committing to a new investment opportunity, especially if you have never invested before. We are always happy to help explain how our investment property operates and how you fit into our overall picture.</span></p>
+                              
+                          </div>
+                      </div>
+                      <div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                              <p><span style="font-weight: 400;">As a general rule, early-stage investors will realise a return on their investment on an ‘exit’. An exit is typically a trade sale (i.e. when a company or property development is sold) or via an initial public offering (IPO) on the stock market. Successful early-stage opportunities can offer very </span><a href="https://www.venturecrowd.com.au/s/high-return-investments"><span style="font-weight: 400;">high return investments</span></a><span style="font-weight: 400;"> and so may look extremely attractive, however, as with all investments they also carry risk. It is worth considering that only 10% of your portfolio reside in these types of assets to manage your investment risk.</span></p>
+                              
+                          </div>
+                      </div>
+                      <div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+                      <div class="wpb_text_column wpb_content_element ">
+                          <div class="wpb_wrapper">
+                              <p><span style="font-weight: 400;">To further mitigate the risk to early-stage investment portfolios, it may be worth considering an investment strategy like spreading your investment capital over many different early-stage companies and to expect about 90% of the returns you make to come from approximately 10% of your portfolio. This means that the diversification of your early-stage investment portfolio is critical in capturing the 10% of early-stage companies which may generate 90% of your returns.</span></p>
+                              
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="row">
+            <!-- Body Content -->
+            <div class="col-md-12">
+              <div class="inner-container px-3 px-md-4 py-3">
+                <!-- CONTENT HERE -->
+                <h3> Is investing with an investment property company worth it? </h3>
+                  <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                          
+                          <div class="wpb_text_column wpb_content_element ">
+                              <div class="wpb_wrapper">
+                                  <p><span style="font-weight: 400;">Joining a CSF regime like VentureCrowd offers investors just like you the opportunity to take a more active role in planning and </span><a href="https://www.venturecrowd.com.au/property"><span style="font-weight: 400;">property investing</span></a><span style="font-weight: 400;"> in Australia’s future. It may also help you to minimise the income tax that you pay throughout the year as well as support your future wealth and financial security.&nbsp;</span></p>
+                                  
+                              </div>
+                          </div>
+                          <div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                              <div class="wpb_wrapper">
+                                  <p><span style="font-weight: 400;">CSF regimes work like ground floor entry schemes which allow retail investors access to large-scale commercial and residential property developments capable of returning very high ROI. However, all investment opportunities come with inherent risks and the general rule of thumb is that the higher the potential return, the higher the investment risk. Before you choose an investment property company to register with, always carefully review opportunities with a professional financial advisor who can help you with building and diversifying your portfolios. You can review our investment FAQs on our website as well as our current investment opportunities in detail.</span></p>
+                                  
+                              </div>
+                          </div>
+                          
+                      </div> 
+                  </div>
+              </div>
+            </div>
+          </div>
+
+            
+        </div>
+      </section>
+
+      <!-- Post Footer -->
+      <section class="related">
+        <div class="container">
+          <div class="row text-center py-5 text-white">
+            <div class="col-md-2"></div>
+
+              <div class="col-md-8 pb-5 next-post-title mt-3">
+                  <h3> Be part of something bigger and build your wealth as Australia grows and expands. </h3>
+
+                <div class="pt-5 next-post-link"> Join VentureCrowd, one of the fuss-free investment property companies offering ground floor access to lucrative property investment opportunities throughout the country. 
+                  
+
+                  </div>
+              </div>
+            
+        
+            <div class="col-md-2"></div>
+          </div>
+
+
+          <div class="row text-center py-5 text-white">
+            <div class="col-md-5"></div>
+
+              <div class="col-md-2 pb-5">
+
+                   <a class="button-outline-white" href="{!$Label.Investor_Community_URL}"  > Register Today </a>
+
+              </div>
+            <div class="col-md-5"></div>
+          </div>
+
+        </div>
+      
+        <div class="next-post-bg-overlay"></div>
+        <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/10/Cornerstone-Village-LT.jpg')"></div>
+      </section>
+
+      <div class="social-share-container">
+        <div class="share-links mb-4">
+          <div class="link-container">
+            <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="link-container">
+            <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- ./Body -->
+
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+
+</apex:page>

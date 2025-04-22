@@ -1,0 +1,54 @@
+.THIS .spanCSS {
+    padding:15px;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 96%;
+/* identical to box height, or 12px */
+
+letter-spacing: 0.1px;
+
+color: #0F141E;
+}
+
+.THIS .spanCSSTile{
+    padding:15px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.1px;
+
+color: #7B868C;
+}
+
+.THIS .footerSocial{
+    background: #0F141E;
+    height: 40px;
+left: 0px;
+top: 281px;
+border-radius: 0px;
+
+}
+
+.THIS .footerSocialSpan{
+    
+    font-style: normal;
+font-weight: 500;
+font-size: 8px;
+line-height: 9px;
+letter-spacing: 0.1px;
+
+color: #FFFFFF;
+}
+
+.THIS .footerAlignment{
+    display:flex;
+    align-items:center;
+}
+
+.THIS .footeranchor{
+    padding:8px;
+}

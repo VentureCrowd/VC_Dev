@@ -1,0 +1,19 @@
+<template>
+    <div class="toast-container" data-id="mcp-trending-toast">
+        <div class="toast show">
+            <div class="toast-icon">
+                <c-core-icon 
+                    icon-name="trending" 
+                    size="xxlarge"
+                ></c-core-icon>
+            </div>
+            <div class="toast-message">This deal is trending! {pageViews} investors viewed in the last {lookbackHours} hours.</div>
+            <div class="toast-close" onclick={closeToast} id="close">
+                <c-core-icon 
+                    icon-name="close" 
+                    size="large"
+                ></c-core-icon>
+            </div>
+        </div>
+    </div>
+</template>

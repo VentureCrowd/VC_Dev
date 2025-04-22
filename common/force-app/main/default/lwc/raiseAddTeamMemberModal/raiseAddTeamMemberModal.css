@@ -1,0 +1,19 @@
+h2{
+    font-size: var(--text-xl);
+}
+
+.header{
+    text-align: center;
+}
+
+.file-loading-spinner{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+  }
+
+c-core-input, c-core-radio{
+    display: block;
+    padding: var(--space-md);
+}

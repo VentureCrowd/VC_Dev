@@ -1,0 +1,40 @@
+<template>
+        <div class="item-container">
+          <template if:true={product}>
+            <!-- Card Category -->
+            <div class="heading text-white py-2 text-center vc-font-suisseIntlLight">{product.Family}</div>
+            <!-- Card Banner Image -->
+            <div class="hero text-white" style={bannerstyle}></div>
+            <div class="details py-4">
+              <span class="d-block heading-1 mb-2 text-center px-4">
+                <!-- Card Main Heading -->
+                <strong class="vc-font-caxton4">{product.Tile_Heading__c}</strong>
+              </span>
+            </div>
+            <div class="call-to-action px-5 pt-4">
+              <div class="limit-header">
+                <!-- Card Description -->
+                <span class="d-block header pb-4 text-center vc-font-suisseIntlLight">{product.Deal_Description__c}</span>
+              </div>
+
+              <template lwc:if={showOfferButton}>
+                <a class="mt-3" href={product.Deal_Page_Link__c}>{product.Button_Text__c}</a>
+              </template>
+              
+              <div class="limit-offer-type">
+                <!-- Card Offer Type -->
+                <span class="pt-4 pb-3 d-block offer-type text-center vc-font-suisseIntlLight">{product.Tile_Offer_Type__c}</span>
+              </div>
+              <!-- Offer Status -->
+              <span class="d-block status status-raising pt-3 pb-5 text-center vc-font-caxton5">
+                  <template if:false={product.Fully_Funded__c}>
+                      Raising Now
+                  </template>
+                  <template if:true={product.Fully_Funded__c}>
+                      Fully Funded
+                  </template>
+              </span>
+            </div>
+          </template>
+        </div>
+</template>

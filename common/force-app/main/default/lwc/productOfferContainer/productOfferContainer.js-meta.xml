@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Product Offer Tiles</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="isEOI" type="Boolean" label="Check if you want to show EOI's OR Leave it unchecked to ONLY show Raise's" description="By default show raise Cards if you want to see EOI's please check this box"/>
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

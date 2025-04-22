@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Won_Validations</fullName>
+    <active>true</active>
+    <description>Cannot moved to closed won without, date banked, Unit Cert Issued Or Unit cert Amount fields filled.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(StageName, &quot;Closed Won&quot;),
+    OR(
+        ISBLANK(Unit_Certificate_Amount__c),
+        ISBLANK(Date_Banked__c),
+        ISBLANK(Unit_Cert_Issued__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>To move this Opportunity to Closed Won, please ensure Unit Certificate Amount, Date Banked, and Unit Certificate Issued are all completed.</errorMessage>
+</ValidationRule>

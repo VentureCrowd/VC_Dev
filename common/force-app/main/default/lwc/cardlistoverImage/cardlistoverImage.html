@@ -1,0 +1,56 @@
+<template>
+    <div style={backgroundImgStyling}>
+        <div class="container">
+            <div class="slds-grid   slds-grid_vertical slds-grid_align-center slds-p-vertical_xx-large">
+                <div class="slds-grid slds-grid_align-center slds-col slds-size_1-of-1">
+                    <div class="slds-col slds-grid_vertical slds-grid_align-center">
+                        
+                        <div class="slds-col slds-container_large ">
+                            <div class="slds-text-heading_large masterHeader slds-text-align_center">
+                                <span class="slds-text-align_center slds-grid_align-center ">
+                                    {masterHeading}
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="slds-col slds-container_medium">
+                            <div class="slds-grid masterHeaderDescription">
+                                <span class="slds-text-align_center slds-grid_align-center ">
+                                    {masterDescription}
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-grid_align-center slds-col slds-size_1-of-1 slds-p-vertical_x-small">
+                    <div class="slds-container_large">
+                        <template for:each={cardsArray} for:item="card" for:index="index"> 
+                            <article class="slds-card " key={card} data-num={index}>
+                                <div class={cardClass}>
+                                    <div class={imageClass} >
+                                        <article class="slds-float_right">
+                                            <img class="imagesize" src={card.imageUrl} alt="" />
+                                        </article>
+                                    </div>
+                                    
+                                    <div class="slds-col slds-size_9-of-12">
+                                        <div class="slds-grid slds-grid_vertical">
+                                            <div class="slds-col slds-p-bottom_medium slds-size_1-of-1 " >
+                                                <span class="heading" >
+                                                    {card.header}
+                                                </span>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-1"  >
+                                                <lightning-formatted-rich-text value={card.description}></lightning-formatted-rich-text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

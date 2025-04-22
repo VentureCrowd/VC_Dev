@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFL_Segment__c</fullName>
+    <label>Email Persona (RFL)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email Magnet</fullName>
+                <default>false</default>
+                <label>Email Magnet</label>
+            </value>
+            <value>
+                <fullName>Casual Clicker</fullName>
+                <default>false</default>
+                <label>Casual Clicker</label>
+            </value>
+            <value>
+                <fullName>New Fan</fullName>
+                <default>false</default>
+                <label>New Fan</label>
+            </value>
+            <value>
+                <fullName>Waning Loyalists</fullName>
+                <default>false</default>
+                <label>Waning Loyalists</label>
+            </value>
+            <value>
+                <fullName>Unsubscribe Urge</fullName>
+                <default>false</default>
+                <label>Unsubscribe Urge</label>
+            </value>
+            <value>
+                <fullName>Forgotten Fan</fullName>
+                <default>false</default>
+                <label>Forgotten Fan</label>
+            </value>
+            <value>
+                <fullName>Ghost Guest</fullName>
+                <default>false</default>
+                <label>Ghost Guest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+        <apiVersion>51.0</apiVersion>
+        <isExposed>true</isExposed>
+        <masterLabel>Promotional Blade (Blog)</masterLabel>
+        <targets>
+                <target>lightning__AppPage</target>
+                <target>lightning__RecordPage</target>
+                <target>lightning__HomePage</target>
+                <target>lightningCommunity__Default</target>
+                <target>lightningCommunity__Page</target>
+        </targets>
+
+        <targetConfigs>
+                <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+                        <property name="headingText" type="String" label="Content Heading Text" default="FEES" />
+                        
+                        <property name="headingTextStyle" type="String" label="Content Heading Text Style" default="h1" datasource="h2,  h3, h4 , h5, h6"/>
+                        <property name="descriptionText" type="String" label="Paragraph Text" default="6% on capital raised from $10K campaign fee" />
+                        <property name="label" type="String" label="Label Text" default="Exclude GST" />
+                        <property name="buttonLabel" type="String" label="Button Label" default="Apply to raise" />
+                        <property name="buttonLink" type="String" label="Button URL" default="" />
+                        <property name="buttonColor" type="String" label="Button Color" datasource="Purple, Teal, Gradient" default="Teal" />
+                        <property name="buttonOpenInSameOrNew" datasource="Same Tab, New Tab" type="String" label="button Redirect Target" placeholder="Behaviour of the Link or URL" />
+
+                        <property name="backgroundColor" type="String" label="Background Color" datasource="White, Gray" default="White" />
+                </targetConfig>
+        </targetConfigs>
+</LightningComponentBundle>

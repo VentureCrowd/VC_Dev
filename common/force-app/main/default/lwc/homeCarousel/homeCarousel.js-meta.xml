@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="RightImageURL1" type="String" label="Enter Background image url 1" placeholder="Image public URL" description="Background Image url 1" default="https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg"/>
+            <property name="titleText1" type="String" label="Title 1" placeholder="Title1" description="Title1" default="Title1"/>
+            <property name="DescriptionText1" type="String" label="Description Content 1" placeholder="Description1" description="Description1" default="Description1"/>
+
+            <property name="RightImageURL2" type="String" label="Enter Background image url 2" placeholder="Image public URL" description="Background Image url 2" default="https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg"/>
+            <property name="titleText2" type="String" label="Title 2" placeholder="Title2" description="Title2" default="Title2"/>
+            <property name="DescriptionText2" type="String" label="Description Content 2" placeholder="Description2" description="Description2" default="Description2"/>
+        
+            <property name="RightImageURL3" type="String" label="Enter Background image url 3" placeholder="Image public URL" description="Background Image url 3" default="https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg"/>
+            <property name="titleText3" type="String" label="Title 3" placeholder="Title3" description="Title3" default="Title3"/>
+            <property name="DescriptionText3" type="String" label="Description Content 3" placeholder="Description3" description="Description3" default="Description3"/>
+        
+            <property name="RightImageURL4" type="String" label="Enter Background image url 4" placeholder="Image public URL" description="Background Image url 4" default="https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg"/>
+            <property name="titleText4" type="String" label="Title 4" placeholder="Title1" description="Title4" default="Title4"/>
+            <property name="DescriptionText4" type="String" label="Description Content 4" placeholder="Description4" description="Description4" default="Description1"/>
+
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Grey, Dark Navy" default="White" />
+        
+            
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

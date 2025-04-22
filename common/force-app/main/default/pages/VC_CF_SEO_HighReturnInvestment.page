@@ -1,0 +1,286 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+                    <div class="col-md-12 headline">
+                        <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+                        <h1 class="mt-4"> 
+                            
+High Return Investments Australia </h1>
+                        <p class="mt-4">
+                            
+                            Simplify the path to reaching your financial goals with direct access to high return investment opportunities that help you get the most from your portfolio.
+                        </p>
+                        <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Register Today </a>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/Future-City-Singapore-DK.jpg')"></div>
+        </section>
+        
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                
+                                
+High Return Investments </h3>
+                            
+                            <div class="wpb_wrapper">
+                                <div class="wpb_wrapper">
+                                   <p><span style="font-weight: 400;">To get the maximum benefit from high return investments, you will need to find investment options and solutions that fit in with your financial goals, time frame, and risk tolerance. A high return investment will diversify your portfolio, and allow you the opportunity to explore a combination of alternative assets such as shares, <a href="https://www.venturecrowd.com.au/property">property investing</a>, and <a href="https://www.venturecrowd.com.au/s/high-yield-investments">high yield investments</a> that will provide a higher rate of return. When thinking of high return investments, it’s important to understand how the investment works, any fees and charges involved, tax implications, risk, and how long you should invest to receive the expected returns. </span></p>
+                                    <p><span style="font-weight: 400;">VentureCrowd&nbsp;is a professional </span><a href="https://www.venturecrowd.com.au"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> model aimed at reducing complexity and guiding you through access to handpicked investment opportunities in alternative assets and higher returns. Read on to find out if high return investments are for you.</span></p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> What are the high risk, high return investments? </h3>
+                            
+                           <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">For the risk-taker, high risk, high return investments are opportunities to earn cash quickly if you’re willing to accept the associated level of risk involved. Such risk is measured by marketplace volatility and detected through the potentially unforeseen swinging pendulum of stock market prices. Therefore, when investing in a product based on its historical and projected returns, it is important that you must also understand its volatility and overall risk. Meaning, some investments may return very well but are also volatile to a sudden market drop.&nbsp;</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Many high-risk investment opportunities fall under the classification of&nbsp;alternative investments and include tangible, as well as financial assets, and private equity. Most of these assets are relatively unknown and can be vulnerable to change yet can also have the potential for real growth.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><strong>So, you might be asking, are high return investments safe? </strong><span style="font-weight: 400;">The answer is yes with a little bit of homework and some guidance. VentureCrowd provides clarity around this and gives investors, entrepreneurs, established business owners, property developers, and lenders access to alternative finance from a crowd of both retail and sophisticated investors. Under this model, anyone residing in Australia, 18 years of age or older can invest and have access to alternative equity on the same terms as professional lead investors. This is investing with simplicity and transparency.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> How to find low risk, high return investments? </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                           
+                            <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">If you are considering safe investments with high returns, then property investment opportunities can offer this outcome. </span><a href="https://www.venturecrowd.com.au/s/property/funds"><span style="font-weight: 400;">Property funds</span></a><span style="font-weight: 400;"> are a great way to </span><span style="font-weight: 400;">gain returns through a low risk, high return investment. They will allow you to get exposure to unique opportunities in real estate classes of residential, commercial, and industrial development that offer a steady income and capital growth. </span><a href="https://www.venturecrowd.com.au/s/property/companies"><span style="font-weight: 400;">Investment property companies</span></a><span style="font-weight: 400;"> also understand the security and financial benefits of investing and holding property portfolio over the long term. Additionally, a </span><a href="https://www.venturecrowd.com.au/s/mortgage-funds"><span style="font-weight: 400;">mortgage fund</span></a><span style="font-weight: 400;"> is considered a secure investment and allows investors to lend their money to a range of borrowers.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 10px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Another consideration for safe high return investments is to explore </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">Venture Capital</span></a><span style="font-weight: 400;"> options. Venture capital is a type of startup financing that investors become a part of for maximising their growth.&nbsp;Although there is an element of risk for investors around venture capital, there is also real potential for earning high returns.&nbsp;</span></p>
+<p><span style="font-weight: 400;">In terms of Venture Capital, VentureCrowd focuses on making principal investments and managing funds for seed-stage and early-stage ventures.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 15px;" class="divider"></div></div>
+        </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                 <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                
+                                Can high return investments double my money? </h3>
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                    
+                                    <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">So, while learning about high return investments, you may wonder “how much return is achievable?”, and if possible, “can </span><span style="font-weight: 400;">high return investments even double my money?”. </span><span style="font-weight: 400;">Investing your money for high returns will always be the end goal but there are several variables such as risk, rate of return, and duration of the time required involved to achieve this. </span><span style="font-weight: 400;">Doubling your money, or increasing it to any degree, depends on three simple factors:</span> <span style="font-weight: 400;">How much you invest</span><span style="font-weight: 400;">, y</span><span style="font-weight: 400;">our timeframe, and the rate of return.</span></p>
+
+        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3>
+Backed by the best
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            
+                            <div class="wpb_wrapper">
+            
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">When investing your money, it’s important to understand who you’re working with. As an investor, you are part of the changing global investment landscape. There is now an opportunity to not only make a profit but have an impact on society and the environment.</span> <span style="font-weight: 400;">VentureCrowd can offer you choice and help reduce the complexity of investing. They offer complete transparency and help drive portfolio diversification through early-stage businesses, premium real estate developments, and alternative debt investments.</span></p>
+
+        </div>
+    </div>
+<div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <p><span style="font-weight: 400;">Investing through VentureCrowd can be achieved through a simple process of seeking investment opportunities, begin investing, become an owner, and then share in the success.</span> <span style="font-weight: 400;"><a href="https://investor.venturecrowd.com.au/registration/initial_registration">Get in touch</a> with VentureCrowd to diversify your portfolio with high return investments.</span></p>
+
+        </div>
+    </div>
+
+        </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                
+               
+                
+            </div>
+        </section>
+        
+        <!-- Post Footer -->
+        <!--  <section class="related">
+<div class="container">
+<div class="row text-center py-5 text-white">
+<div class="col-md-2"></div>
+
+<div class="col-md-8 pb-5 next-post-title mt-3">
+<h3> Be part of something bigger and build your wealth as Australia grows and expands. </h3>
+
+<div class="pt-5 next-post-link"> Join VentureCrowd, one of the fuss-free investment property companies offering ground floor access to lucrative property investment opportunities throughout the country. 
+
+
+</div>
+</div>
+
+
+<div class="col-md-2"></div>
+</div>
+
+
+<div class="row text-center py-5 text-white">
+<div class="col-md-5"></div>
+
+<div class="col-md-2 pb-5">
+
+<a class="button-outline-white" href="{!$Label.Investor_Community_URL}"  > Register Today </a>
+
+</div>
+<div class="col-md-5"></div>
+</div>
+
+</div>
+
+<div class="next-post-bg-overlay"></div>
+<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/10/Cornerstone-Village-LT.jpg')"></div>
+</section> -->
+        
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    
+    
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    
+    </apex:page>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="label_Tab_1_Name" type="String" label="Label: Tab 1" placeholder="Enter label here" description="Label for tab 1" default="Crowdfunding" />
+            <property name="label_Tab_1_Header" type="String" label="Header: Tab 1" placeholder="Enter Tab 1 Header here" description="Header for tab 1" default="Crowdfunding Equity Investment Platform in Australia" />
+            <property name="label_Tab_1_ShowColumn" type="Boolean" label="ShowColumn: Tab 1" description="To decide if we need to show the paragraph or column" default="true" />
+            <property name="label_Tab_1_Context" type="String" label="Context: Tab 1" placeholder="Enter Tab 1 Context here" description="Context for tab 1" default="" />
+            <property name="label_Tab_1_Column_1" type="String" label="Context: Tab 1 : Column_1" placeholder="Enter Tab 1 : Column 1 Context here" description="Context for tab 1 : Column_1" />
+            <property name="label_Tab_1_Column_2" type="String" label="Context: Tab 1 : Column_2" placeholder="Enter Tab 1 : Column 2 Context here" description="Context for tab 1 : Column_2" />
+
+            <property name="label_Tab_2_Name" type="String" label="Label: Tab 2" placeholder="Enter label here" description="Label for tab 2" default="What is crowdfunding?" />
+            <property name="label_Tab_2_Header" type="String" label="Header: Tab 2" placeholder="Enter Tab 2 Header here" description="Header for tab 2" default="What is crowdfunding?" />
+            <property name="label_Tab_2_ShowColumn" type="Boolean" label="ShowColumn: Tab 2" description="To decide if we need to show the paragraph or column" default="true" />
+            <property name="label_Tab_2_Context" type="String" label="Context: Tab 2" placeholder="Enter Tab 2 Context here" description="Context for tab 2" default="" />
+            <property name="label_Tab_2_Column_1" type="String" label="Context: Tab 2 : Column_1" placeholder="Enter Tab 1 : Column 1 Context here" description="Context for tab 1 : Column_1" />
+            <property name="label_Tab_2_Column_2" type="String" label="Context: Tab 2 : Column_2" placeholder="Enter Tab 1 : Column 2 Context here" description="Context for tab 1 : Column_2" />
+
+            <property name="label_Tab_3_Name" type="String" label="Label: Tab 3" placeholder="Enter label here" description="Label for tab 3" default="How to promote a crowdfunding campaign?" />
+            <property name="label_Tab_3_Header" type="String" label="Header: Tab 3" placeholder="Enter Tab 3 Header here" description="Header for tab 3" default="How to promote a crowdfunding campaign?" />
+            <property name="label_Tab_3_ShowColumn" type="Boolean" label="ShowColumn: Tab 3" description="To decide if we need to show the paragraph or column" default="true" />
+            <property name="label_Tab_3_Context" type="String" label="Context: Tab 3" placeholder="Enter Tab 3 Context here" description="Context for tab 3" default="" />
+            <property name="label_Tab_3_Column_1" type="String" label="Context: Tab 3 : Column_1" placeholder="Enter Tab 1 : Column 1 Context here" description="Context for tab 1 : Column_1" />
+            <property name="label_Tab_3_Column_2" type="String" label="Context: Tab 3 : Column_2" placeholder="Enter Tab 1 : Column 2 Context here" description="Context for tab 1 : Column_2" />
+
+            <property name="label_Tab_4_Name" type="String" label="Label: Tab 4" placeholder="Enter label here" description="Label for tab 4" default="Is Crowdfunding worth it?" />
+            <property name="label_Tab_4_Header" type="String" label="Header: Tab 4" placeholder="Enter Tab 4 Header here" description="Header for tab 4" default="Is Crowdfunding worth it?" />
+            <property name="label_Tab_4_ShowColumn" type="Boolean" label="ShowColumn: Tab 4" description="To decide if we need to show the paragraph or column" default="true" />
+            <property name="label_Tab_4_Context" type="String" label="Context: Tab 4" placeholder="Enter Tab 4 Context here" description="Context for tab 4" default="" />
+            <property name="label_Tab_4_Column_1" type="String" label="Context: Tab 4 : Column_1" placeholder="Enter Tab 1 : Column 1 Context here" description="Context for tab 1 : Column_1" />
+            <property name="label_Tab_4_Column_2" type="String" label="Context: Tab 4 : Column_2" placeholder="Enter Tab 1 : Column 2 Context here" description="Context for tab 1 : Column_2" />
+
+            <property name="themecolor" type="String" datasource="White, Grey, Dark Navy, Dark Grey, Black" placeholder="Background Colour" description="Choose The theme color" default="Dark Navy" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

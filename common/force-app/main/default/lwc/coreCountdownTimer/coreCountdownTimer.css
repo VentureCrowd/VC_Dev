@@ -1,0 +1,51 @@
+.timer,
+.countdown {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-sm);
+    align-items: center;
+}
+
+.numbers {
+    font-size: var(--text-xl);
+    font-family: 'SuisseIntl-Bold';
+    padding-bottom: 1.5px;
+}
+
+.countdown {
+    gap: var(--space-lg);
+}
+
+p {
+    font-size: var(--text-md);
+    margin-bottom: 0;
+    font-family: 'SuisseIntl-Light';
+}
+
+@media (max-width: 768px) {
+    .countdown {
+        gap: var(--space-sm);
+    }
+
+    .timer {
+        gap: var(--space-xs);
+    }
+
+    .numbers {
+        font-size: var(--text-lg);
+    }
+
+    p {
+        font-size: var(--text-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .numbers {
+        font-size: var(--text-md);
+    }
+
+    p {
+        font-size: var(--text-xs);
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Defined_Term__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check if investment is for a defined term. If the investment is set to a defined term ensure that you also update the &quot;Maturation Date&quot;.</inlineHelpText>
+    <label>Defined Term</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

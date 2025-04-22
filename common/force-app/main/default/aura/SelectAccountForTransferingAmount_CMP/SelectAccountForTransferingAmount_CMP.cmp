@@ -1,0 +1,131 @@
+<!--SelectAccountForTransferingAmount_CMP-->
+<aura:component controller="TransferingAmountOppController" implements="lightning:availableForFlowScreens,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="options" type="List" default="[
+                                                        {'label': 'New Account', 'value': 'New Account'},
+                                                        {'label': 'Existing Account', 'value': 'Existing Account'}
+                                                        ]"/>
+    <aura:attribute name="options2" type="List" default="[
+                                                         {'label': 'Business Account', 'value': 'VC Business Account'},
+                                                         {'label': 'Person Account', 'value': 'VC Person Account'}
+                                                         ]"/>
+    
+    <aura:attribute name="showHideScreen" type="Boolean" default="true"/>
+    <aura:attribute name="showHideLookup" type="Boolean" default="true"/>
+    <aura:attribute name="selectedValue" type="String" default="New Account"/>
+    
+    <aura:handler name="change" value="{!v.selectedValue}" action="{!c.itemsChange}"/>
+    <aura:handler name="change" value="{!v.selectedAccObj}" action="{!c.AccountChanged}"/>
+    
+    <aura:attribute name="error" type="String" access="global"/>
+    <aura:attribute name="errorNewAcc" type="String" access="global"/>
+    <aura:attribute name="selectedAccId" type="String" access="global"/>
+    <aura:attribute name="TransferAmount" type="String" access="global"/>
+    <aura:attribute name="DateOfApplication" type="String" access="global"/>
+    <aura:attribute name="selectedAccType" type="String" access="global" default="Business Account"/>
+    
+    <aura:attribute name="OppAmount" type="String" access="global" />
+    <aura:attribute name="oppId" type="String" access="global"/>
+    <aura:attribute name="today" type="Date" />
+    
+    <aura:attribute name="selectedAccObj" type="Object" />
+    <aura:attribute name="newAccObj" type="Account" 
+                    default="{ 'sobjectType': 'Account' }"/>
+    
+    <div> 
+        <aura:if isTrue="{! v.showHideScreen}">
+            <div>
+               <p><lightning:formattedText value="{! v.error}" style="color:red;"/></p>
+                <lightning:input type="number" name="input1" label="Transfer Amount" required="true" value="{!v.TransferAmount}"/>
+                <lightning:input type="date" name="input2" label="Application Date" required="true" min="{!v.today}" value="{!v.DateOfApplication}"/>
+                
+                <lightning:radioGroup name="radioGroup"
+                                      label="Select Account Option"
+                                      options="{! v.options }"
+                                      value="{! v.selectedValue }"
+                                      type="radio"/>
+            </div>
+            <div>
+                <aura:if isTrue="{! v.showHideLookup == false}">
+                    <c:customLookupCMP objectAPIName="account" isDisable="{!v.showHideLookup}" IconName="standard:account" selectedRecord="{!v.selectedAccObj}" label="Select Account"/>
+                    <!--<aura:set attribute="else">
+
+                </aura:set>-->
+                </aura:if>
+            </div>
+            <footer class="slds-modal__footer" style="margin: 15px -26px -16px -26px;">
+                <lightning:button label="Cancel"
+                                  title="Cancel"
+                                  onclick="{! c.cancel }"/>
+                <aura:if isTrue="{! v.showHideLookup == false}">
+                    <lightning:button variant="brand" 
+                                      label="Submit"
+                                      title="Submit"
+                                      onclick="{! c.Next }"/>
+                    <aura:set attribute="else" >
+                        <lightning:button variant="brand" 
+                                      label="Next"
+                                      title="Next"
+                                      onclick="{! c.Next }"/>
+                    </aura:set>
+                </aura:if>
+            </footer>
+            <aura:set attribute="else" >
+                <div>
+                    <p><lightning:formattedText value="{! v.errorNewAcc}" style="color:red;"/></p>
+                    
+                    <div>
+                        <lightning:radioGroup name="radioGroup2"
+                                              label="Select Account Type"
+                                              options="{! v.options2 }"
+                                              value="{! v.selectedAccType }"
+                                              type="radio"/>
+                        
+                    </div>
+                    <div>
+                        <aura:if isTrue="{! v.selectedAccType == 'VC Person Account'}">
+                            <lightning:input name="input11" label="Account Name" value="{!v.newAccObj.LastName}"/>
+                            <aura:set attribute="else">
+                                 <lightning:input name="input12" label="Account Name" value="{!v.newAccObj.Name}"/>
+                            </aura:set>
+                        </aura:if>
+                        <!--<lightning:input name="input21" label="ACN" value="{!v.newAccObj.Name}"/>-->
+                        <lightning:input name="input31" label="Phone" required="true" value="{!v.newAccObj.Phone}"/>
+                        <lightning:inputAddress
+                                                addressLabel="Address"
+                                                streetLabel="Street"
+                                                cityLabel="City"
+                                                countryLabel="Country"
+                                                provinceLabel="State"
+                                                postalCodeLabel="PostalCode"
+                                                street="{!v.newAccObj.BillingStreet}"
+                                                city="{!v.newAccObj.BillingCity}"
+                                                country="{!v.newAccObj.BillingCountry}"
+                                                province="{!v.newAccObj.BillingState}"
+                                                postalCode="{!v.newAccObj.BillingPostalCode}"
+                                                
+                                                />
+                    </div>
+                </div>
+                <footer class="slds-modal__footer" style="margin: 15px -26px -16px -26px;">
+                    
+                    <lightning:button label="Cancel"
+                                  title="Cancel"
+                                  onclick="{! c.cancel }"/>
+                    
+                    <lightning:button variant="brand" 
+                                      label="Back"
+                                      title="Back"
+                                      onclick="{! c.Back}"/>
+
+                    <lightning:button variant="brand" 
+                                      label="Submit"
+                                      title="Submit"
+                                      onclick="{! c.Submit }"/>
+
+                </footer>
+            </aura:set>
+        </aura:if>
+        
+    </div>
+</aura:component>

@@ -1,0 +1,118 @@
+<!--
+
+-->
+<template>
+        <div class="lc-popover" style="height: 1000px;width:600px">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <lightning-card  title={title}>
+                        <lightning-icon icon-name="utility:close" onclick={handlePopupClose} slot="actions" alternative-text="Close" title="Close"></lightning-icon>
+                            <div class="lc-title"></div>
+                            <div class="slds-modal__content slds-var-p-around_medium">
+
+                                <!--START: Image Update -->
+                                <template if:true={isUpdateImage}>
+                                    <div style="margin-left:4%">
+                                        <div>
+                                            <lightning-input label="" name="file uploader" onchange={handleFilesChange} type="file"></lightning-input>
+                                        </div><br/>
+                                        <div class="slds-text-body_small vc-uploadedFileName">{fileName}
+                                        </div><br/>
+                                        <div>
+                                            <lightning-button class="slds-m-top--medium" label="Upload File" onclick={handleUploadSave} variant="brand" disabled={isTrue}></lightning-button>
+                                        </div>
+                                    </div><br/><br/>
+                                </template>
+                                <!--END: Image Update -->
+
+                                <!--START: Record edit form for multiple updates-->
+                                <template if:true={isEditRecord}>
+                                    <lightning-record-edit-form record-id={toUpdateRecordId}
+                                        object-api-name={toUpdateObject} onerror={handleError} onsuccess={handleSuccess}
+                                        onsubmit={handleSubmit}>
+                                        <!-- onsuccess={handleSuccess} -->
+                                        <!-- Ven - 138 removed to only show toast message -->
+                                        <!-- <lightning-messages></lightning-messages> -->
+                                        <template for:each={fieldsToEdit} for:item="field">
+                                                <lightning-input-field key={field} field-name={field}>
+                                                </lightning-input-field >
+                                        </template>     
+                                        <!-- <lightning-button class="slds-button slds-button_brand slds-float_right" variant="brand" type="submit" name="save" label="Update">
+                                        </lightning-button>-->
+                                        <button class="slds-button slds-button_brand slds-float_right" onclick={handleSubmit}>Update</button>
+                                    </lightning-record-edit-form>
+                                </template>
+                                <!--END: Record edit form for multiple updates-->
+
+                                <!--START: Mobile Number Update-->
+                                <template if:true={isMobileNumber}>
+                                    Mobile
+                                    <!-- <div class="centerFlex"> -->
+                                    <div class="">
+                                        <div class="slds-grid slds-grid_vertical-align-center">
+                                            <div class="ccClass slds-col slds-size_1-of-5 slds-p-right_medium ">
+                                                <div class=" slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <div class="slds-combobox_container">
+                                                            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                                                                <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right " role="none">
+                                                                    <button type="button" onblur={handleShowCountriesFalse} onclick={handleShowCountries} class="buttonDD slds-input_faux slds-combobox__input slds-grid_vertical-align-center" aria-labelledby="combobox-label-id-130 combobox-id-59-selected-value" id="combobox-id-59-selected-value" aria-controls="listbox-id-1" aria-expanded="false" aria-haspopup="listbox">
+                                                                        <span class=" slds-truncate " id="combobox-value-id-97">{cntrycode}</span>
+                                                                        <span class=" slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right " style="height:100%;">
+                                                                            <lightning-icon size="xx-small" icon-name="utility:down"></lightning-icon>
+                                                                        </span>  
+                                                                    </button>
+                                                                </div>
+                                                            <template if:true={showCountries}>
+                                                                <div id="listbox-id-1" class="customDD slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid " role="listbox" >
+                                                                    <!-- startFlex -->
+                                                                    <!-- onmouseleave={handleShowCountriesFalse} -->
+                                                                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                                        <template for:each={countrycodes} for:item="countries">
+                                                                        <li  role="presentation" class="slds-listbox__item" key={countries.id}>
+                                                                            <div id={countries.id} onmousedown={handleOnClickCountry} data-id={countries.id}
+                                                                                class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option"
+                                                                                >
+                                                                                <div id={countries.id} data-id={countries.id} onclick={handleOnClickCountry} class="slds-media__figure slds-listbox__option-icon ">{countries.id}</div >
+                                                                                <div id={countries.id} data-id={countries.id} onclick={handleOnClickCountry} class="slds-media__body">
+                                                                                    
+                                                                                        <span id={countries.id} data-id={countries.id} onclick={handleOnClickCountry} class="" title="Country Code">{countries.country}</span >
+                                                                                    
+                                                                                </div >
+                                                                            </div>
+                                                                        </li>
+                                                                        </template>
+                                                                    </ul>
+                                                                </div>
+                                                            </template>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pnClass slds-col slds-size_4-of-5">
+                                                <lightning-input type="tel" name="phone1" variant="label-hidden" value={mobileNumberInput} ></lightning-input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                    <!-- </div> -->
+                                    <button class="slds-button slds-button_brand slds-float_right" onclick={handleMobileSubmission}>Update</button>
+                                </template>
+                                <!--END: Mobile Number Update-->
+
+                                
+
+                                <template if:true={showLoadingSpinner}>
+                                    <lightning-spinner alternative-text="Uploading......" size="medium"></lightning-spinner>
+                                </template>
+
+                            </div>
+                    </lightning-card>
+                </div>
+            </section>
+        </div>
+
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        
+</template>

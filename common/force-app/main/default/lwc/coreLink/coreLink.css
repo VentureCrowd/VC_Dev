@@ -1,0 +1,61 @@
+/* WIP To be incorporated into the Button LWC */
+
+.core-button-wrapper{
+    display: inline-block;
+    padding-inline: var(--space-xxs);
+}
+
+.primary,
+.secondary,
+.tertiary {
+    display: flex;
+    column-gap: var(--space-xxs);
+    align-items: center;
+}
+
+/* themes */
+.primary{
+    color: var(--primary-foreground);
+}
+
+.primary:hover{
+    color: var(--primary-accent);
+}
+
+/* Secondary button styling */
+.secondary{
+    color: var(--secondary-foreground);
+}
+.secondary:hover{
+    color: var(--secondary-text-color);
+}
+
+/* Tertiary button styling */
+.tertiary{
+    color: var(--tertiary-accent);
+}
+
+.tertiary:hover{
+    color: var(--primary-accent);
+    /* text-underline-offset: var(--space-sm); */
+    text-decoration: none;
+    border: none;
+}
+
+.accent {
+    /* // used to draw special attention to the button (e.g. destructive actions) */
+    background-color: var(--btn-accent-bg);
+    color: var(--btn-accent-label);
+
+    &:visited {
+        color: var(--btn-accent-label);
+    }
+
+    &:hover {
+        background-color: var(--btn-accent-hover);
+    }
+
+    &:active {
+        background-color: var(--btn-accent-active);
+    }
+}

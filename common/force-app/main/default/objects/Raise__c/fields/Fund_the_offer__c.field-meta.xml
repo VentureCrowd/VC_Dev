@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fund_the_offer__c</fullName>
+    <defaultValue>&quot;This investment opportunity is open for wholesale and pre-approved investors and you can invest from just&quot;</defaultValue>
+    <label>Fund the offer</label>
+    <length>400</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

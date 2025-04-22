@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Investee_Entity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is the relationship to what vehicle the Product needs to be created against and where the investments are going to receive interest or mature.</description>
+    <inlineHelpText>This is the relationship to what vehicle the Product needs to be created against and where the investments are going to receive interest or mature.</inlineHelpText>
+    <label>Related Investee Entity</label>
+    <referenceTo>Investee_Entity__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

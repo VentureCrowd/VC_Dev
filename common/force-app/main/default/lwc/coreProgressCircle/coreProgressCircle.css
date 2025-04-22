@@ -1,0 +1,41 @@
+.wrapper{
+    height: 160px;
+    width: 160px;
+    position: relative;
+    background: transparent;
+}
+
+.outer-circle{
+    border-radius: 50%;
+    /* box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7); */
+    border: 4px solid #939393;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle{
+    border-radius: 50%;
+    /* box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(255,255,255,1), 0px 12px 10px -10px rgba(0,0,0,0.05); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    font-weight: 600;
+    color: #555;
+}
+
+circle{
+    fill: none;
+    stroke: #939393;
+}
+
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}

@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>All</fullName>
+        <default>false</default>
+        <label>All</label>
+    </customValue>
+    <customValue>
+        <fullName>AI</fullName>
+        <default>false</default>
+        <label>AI</label>
+    </customValue>
+    <customValue>
+        <fullName>Agnostic</fullName>
+        <default>false</default>
+        <label>Agnostic</label>
+    </customValue>
+    <customValue>
+        <fullName>AgTech</fullName>
+        <default>false</default>
+        <label>AgTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Arts &amp; Entertainment</fullName>
+        <default>false</default>
+        <label>Arts &amp; Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>B2B Software</fullName>
+        <default>false</default>
+        <label>B2B Software</label>
+    </customValue>
+    <customValue>
+        <fullName>BioTech</fullName>
+        <default>false</default>
+        <label>BioTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Blockchain</fullName>
+        <default>false</default>
+        <label>Blockchain</label>
+    </customValue>
+    <customValue>
+        <fullName>CHARITY</fullName>
+        <default>false</default>
+        <label>CHARITY</label>
+    </customValue>
+    <customValue>
+        <fullName>CleanTech</fullName>
+        <default>false</default>
+        <label>CleanTech</label>
+    </customValue>
+    <customValue>
+        <fullName>ClimateTech</fullName>
+        <default>false</default>
+        <label>ClimateTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer</fullName>
+        <default>false</default>
+        <label>Consumer</label>
+    </customValue>
+    <customValue>
+        <fullName>Cosmetics</fullName>
+        <default>false</default>
+        <label>Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto</fullName>
+        <default>false</default>
+        <label>Crypto</label>
+    </customValue>
+    <customValue>
+        <fullName>DeathTech</fullName>
+        <default>false</default>
+        <label>DeathTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Decentralised Finance</fullName>
+        <default>false</default>
+        <label>Decentralised Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>DeepTech</fullName>
+        <default>false</default>
+        <label>DeepTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Health</fullName>
+        <default>false</default>
+        <label>Digital Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Marketplaces</fullName>
+        <default>false</default>
+        <label>Digital Marketplaces</label>
+    </customValue>
+    <customValue>
+        <fullName>E-Commerce</fullName>
+        <default>false</default>
+        <label>E-Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>EdTech</fullName>
+        <default>false</default>
+        <label>EdTech</label>
+    </customValue>
+    <customValue>
+        <fullName>EnergyTech</fullName>
+        <default>false</default>
+        <label>EnergyTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise Saas</fullName>
+        <default>false</default>
+        <label>Enterprise Saas</label>
+    </customValue>
+    <customValue>
+        <fullName>Entertainment</fullName>
+        <default>false</default>
+        <label>Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>ESGs</fullName>
+        <default>false</default>
+        <label>ESGs</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Office</fullName>
+        <default>false</default>
+        <label>Family Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Funds</fullName>
+        <default>false</default>
+        <label>Financial Funds</label>
+    </customValue>
+    <customValue>
+        <fullName>FinTech</fullName>
+        <default>false</default>
+        <label>FinTech</label>
+    </customValue>
+    <customValue>
+        <fullName>FoodTech</fullName>
+        <default>false</default>
+        <label>FoodTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Gaming</fullName>
+        <default>false</default>
+        <label>Gaming</label>
+    </customValue>
+    <customValue>
+        <fullName>HealthTech</fullName>
+        <default>false</default>
+        <label>HealthTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Impact</fullName>
+        <default>false</default>
+        <label>Impact</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Sciences</fullName>
+        <default>false</default>
+        <label>Life Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics</fullName>
+        <default>false</default>
+        <label>Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>MarTech</fullName>
+        <default>false</default>
+        <label>MarTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Media</fullName>
+        <default>false</default>
+        <label>Media</label>
+    </customValue>
+    <customValue>
+        <fullName>MedTech</fullName>
+        <default>false</default>
+        <label>MedTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Property Development</fullName>
+        <default>false</default>
+        <label>Property Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Property_Development_Equity</fullName>
+        <default>false</default>
+        <label>Property Development Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>Property_Development_First_Mortgage</fullName>
+        <default>false</default>
+        <label>Property Development First Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>Property_Development_Income</fullName>
+        <default>false</default>
+        <label>Property Development Income</label>
+    </customValue>
+    <customValue>
+        <fullName>Property_Development_Second_Mortgage</fullName>
+        <default>false</default>
+        <label>Property Development Second Mortgage</label>
+    </customValue>
+    <customValue>
+        <fullName>PropTech</fullName>
+        <default>false</default>
+        <label>PropTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Commercial</fullName>
+        <default>false</default>
+        <label>Real Estate - Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - General</fullName>
+        <default>false</default>
+        <label>Real Estate - General</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Hospitality</fullName>
+        <default>false</default>
+        <label>Real Estate - Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Industrial</fullName>
+        <default>false</default>
+        <label>Real Estate - Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Residential</fullName>
+        <default>false</default>
+        <label>Real Estate - Residential</label>
+    </customValue>
+    <customValue>
+        <fullName>RegTech</fullName>
+        <default>false</default>
+        <label>RegTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Robotics</fullName>
+        <default>false</default>
+        <label>Robotics</label>
+    </customValue>
+    <customValue>
+        <fullName>Saas</fullName>
+        <default>false</default>
+        <label>Saas</label>
+    </customValue>
+    <customValue>
+        <fullName>SecurityTech</fullName>
+        <default>false</default>
+        <label>SecurityTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Network</fullName>
+        <default>false</default>
+        <label>Social Network</label>
+    </customValue>
+    <customValue>
+        <fullName>SpaceTech</fullName>
+        <default>false</default>
+        <label>SpaceTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports</fullName>
+        <default>false</default>
+        <label>Sports</label>
+    </customValue>
+    <customValue>
+        <fullName>Supply Chain</fullName>
+        <default>false</default>
+        <label>Supply Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainability</fullName>
+        <default>false</default>
+        <label>Sustainability</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology</fullName>
+        <default>false</default>
+        <label>Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecommunications</fullName>
+        <default>false</default>
+        <label>Telecommunications</label>
+    </customValue>
+    <customValue>
+        <fullName>TravelTech</fullName>
+        <default>false</default>
+        <label>TravelTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Venture Capital</fullName>
+        <default>false</default>
+        <label>Venture Capital</label>
+    </customValue>
+    <customValue>
+        <fullName>Web3</fullName>
+        <default>false</default>
+        <label>Web3</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Apparel and Accessories</fullName>
+        <default>false</default>
+        <label>Apparel and Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Services</fullName>
+        <default>false</default>
+        <label>Commercial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Agriculture</fullName>
+        <default>false</default>
+        <label>Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Cannabis</fullName>
+        <default>false</default>
+        <label>Cannabis</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications and Networking</fullName>
+        <default>false</default>
+        <label>Communications and Networking</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Markets/Institutions</fullName>
+        <default>false</default>
+        <label>Capital Markets/Institutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Products and Services (B2C)</fullName>
+        <default>false</default>
+        <label>Consumer Products and Services (B2C)</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Services</fullName>
+        <default>false</default>
+        <label>Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Consumer Products and Services</fullName>
+        <default>false</default>
+        <label>Other Consumer Products and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Transportation</fullName>
+        <default>false</default>
+        <label>Commercial Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Non-Durables</fullName>
+        <default>false</default>
+        <label>Consumer Non-Durables</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Financial Services</fullName>
+        <default>false</default>
+        <label>Other Financial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Products and Services (B2B)</fullName>
+        <default>false</default>
+        <label>Business Products and Services (B2B)</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Asset Management</fullName>
+        <default>false</default>
+        <label>Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Metals</fullName>
+        <default>false</default>
+        <label>Metals</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Banks</fullName>
+        <default>false</default>
+        <label>Commercial Banks</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Horticulture</fullName>
+        <default>false</default>
+        <label>Horticulture</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Products</fullName>
+        <default>false</default>
+        <label>Commercial Products</label>
+    </customValue>
+    <customValue>
+        <fullName>IT Services</fullName>
+        <default>false</default>
+        <label>IT Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Accounting</fullName>
+        <default>false</default>
+        <label>Accounting</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Healthcare Services</fullName>
+        <default>false</default>
+        <label>Other Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Devices and Supplies</fullName>
+        <default>false</default>
+        <label>Healthcare Devices and Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Finance</fullName>
+        <default>false</default>
+        <label>Consumer Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Services (Non-Financial)</fullName>
+        <default>false</default>
+        <label>Services (Non-Financial)</label>
+    </customValue>
+    <customValue>
+        <fullName>Accessories</fullName>
+        <default>false</default>
+        <label>Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction and Engineering</fullName>
+        <default>false</default>
+        <label>Construction and Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Services</fullName>
+        <default>false</default>
+        <label>Energy Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Buildings and Property</fullName>
+        <default>false</default>
+        <label>Buildings and Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Business Products and Services</fullName>
+        <default>false</default>
+        <label>Other Business Products and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy</fullName>
+        <default>false</default>
+        <label>Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Exploration</fullName>
+        <default>false</default>
+        <label>Exploration</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotechnology</fullName>
+        <default>false</default>
+        <label>Biotechnology</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals and Biotechnology</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals and Biotechnology</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurants</fullName>
+        <default>false</default>
+        <label>Restaurants</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Software</fullName>
+        <default>false</default>
+        <label>Application Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Commercial Services</fullName>
+        <default>false</default>
+        <label>Other Commercial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate Services (B2C)</fullName>
+        <default>false</default>
+        <label>Real Estate Services (B2C)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Information Technology</fullName>
+        <default>false</default>
+        <label>Other Information Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Hardware</fullName>
+        <default>false</default>
+        <label>Computer Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>TMT</fullName>
+        <default>false</default>
+        <label>TMT</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile</fullName>
+        <default>false</default>
+        <label>Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>Minerals and Mining</fullName>
+        <default>false</default>
+        <label>Minerals and Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>Information Technology</fullName>
+        <default>false</default>
+        <label>Information Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Brokerage</fullName>
+        <default>false</default>
+        <label>Brokerage</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Agriculture</fullName>
+        <default>false</default>
+        <label>Other Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit and Tax Services (B2C)</fullName>
+        <default>false</default>
+        <label>Audit and Tax Services (B2C)</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit and Tax Services (B2B)</fullName>
+        <default>false</default>
+        <label>Audit and Tax Services (B2B)</label>
+    </customValue>
+    <customValue>
+        <fullName>Therapeutic Devices</fullName>
+        <default>false</default>
+        <label>Therapeutic Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>3D Printing</fullName>
+        <default>false</default>
+        <label>3D Printing</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Supplies and Parts</fullName>
+        <default>false</default>
+        <label>Industrial Supplies and Parts</label>
+    </customValue>
+    <customValue>
+        <fullName>Mortgage Tech</fullName>
+        <default>false</default>
+        <label>Mortgage Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>InsurTech</fullName>
+        <default>false</default>
+        <label>InsurTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Clothing</fullName>
+        <default>false</default>
+        <label>Clothing</label>
+    </customValue>
+    <customValue>
+        <fullName>Production and Refining</fullName>
+        <default>false</default>
+        <label>Production and Refining</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Software</fullName>
+        <default>false</default>
+        <label>Financial Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotels and Leisure</fullName>
+        <default>false</default>
+        <label>Hotels and Leisure</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet Software</fullName>
+        <default>false</default>
+        <label>Internet Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate Technology</fullName>
+        <default>false</default>
+        <label>Real Estate Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals and Gases</fullName>
+        <default>false</default>
+        <label>Chemicals and Gases</label>
+    </customValue>
+    <customValue>
+        <fullName>Entertainment Software</fullName>
+        <default>false</default>
+        <label>Entertainment Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Chemicals</fullName>
+        <default>false</default>
+        <label>Industrial Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Services (B2C Non-Financial)</fullName>
+        <default>false</default>
+        <label>Other Services (B2C Non-Financial)</label>
+    </customValue>
+    <customValue>
+        <fullName>Holding Companies</fullName>
+        <default>false</default>
+        <label>Holding Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>HR Tech</fullName>
+        <default>false</default>
+        <label>HR Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Cybersecurity</fullName>
+        <default>false</default>
+        <label>Cybersecurity</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting Services (B2B)</fullName>
+        <default>false</default>
+        <label>Consulting Services (B2B)</label>
+    </customValue>
+    <customValue>
+        <fullName>LOHAS &amp; Wellness</fullName>
+        <default>false</default>
+        <label>LOHAS &amp; Wellness</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Consumer Durables</fullName>
+        <default>false</default>
+        <label>Other Consumer Durables</label>
+    </customValue>
+    <customValue>
+        <fullName>Footwear</fullName>
+        <default>false</default>
+        <label>Footwear</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction Technology</fullName>
+        <default>false</default>
+        <label>Construction Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials and Resources</fullName>
+        <default>false</default>
+        <label>Materials and Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery Tools (Healthcare)</fullName>
+        <default>false</default>
+        <label>Discovery Tools (Healthcare)</label>
+    </customValue>
+    <customValue>
+        <fullName>Network Management Software</fullName>
+        <default>false</default>
+        <label>Network Management Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Energy</fullName>
+        <default>false</default>
+        <label>Other Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Automation/Workflow Software</fullName>
+        <default>false</default>
+        <label>Automation/Workflow Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Big Data</fullName>
+        <default>false</default>
+        <label>Big Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare Technology Systems</fullName>
+        <default>false</default>
+        <label>Healthcare Technology Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet of Things</fullName>
+        <default>false</default>
+        <label>Internet of Things</label>
+    </customValue>
+    <customValue>
+        <fullName>Artificial Intelligence &amp; Machine Learning</fullName>
+        <default>false</default>
+        <label>Artificial Intelligence &amp; Machine Learning</label>
+    </customValue>
+    <customValue>
+        <fullName>Impact Investing</fullName>
+        <default>false</default>
+        <label>Impact Investing</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet Retail</fullName>
+        <default>false</default>
+        <label>Internet Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Commerce</fullName>
+        <default>false</default>
+        <label>Mobile Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>IT Consulting and Outsourcing</fullName>
+        <default>false</default>
+        <label>IT Consulting and Outsourcing</label>
+    </customValue>
+    <customValue>
+        <fullName>Operating Systems Software</fullName>
+        <default>false</default>
+        <label>Operating Systems Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors/Wholesale</fullName>
+        <default>false</default>
+        <label>Distributors/Wholesale</label>
+    </customValue>
+    <customValue>
+        <fullName>AdTech</fullName>
+        <default>false</default>
+        <label>AdTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Beverages</fullName>
+        <default>false</default>
+        <label>Beverages</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Healthcare</fullName>
+        <default>false</default>
+        <label>Other Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Durables</fullName>
+        <default>false</default>
+        <label>Consumer Durables</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Capital Markets/Institutions</fullName>
+        <default>false</default>
+        <label>Other Capital Markets/Institutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialized Finance</fullName>
+        <default>false</default>
+        <label>Specialized Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Apparel</fullName>
+        <default>false</default>
+        <label>Other Apparel</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil &amp; Gas</fullName>
+        <default>false</default>
+        <label>Oil &amp; Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Infrastructure</fullName>
+        <default>false</default>
+        <label>Infrastructure</label>
+    </customValue>
+    <customValue>
+        <fullName>Media and Information Services (B2B)</fullName>
+        <default>false</default>
+        <label>Media and Information Services (B2B)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Software</fullName>
+        <default>false</default>
+        <label>Other Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Movies</fullName>
+        <default>false</default>
+        <label>Movies</label>
+    </customValue>
+    <customValue>
+        <fullName>Leisure Facilities</fullName>
+        <default>false</default>
+        <label>Leisure Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Manufacturing</fullName>
+        <default>false</default>
+        <label>Advanced Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>B2B Payments</fullName>
+        <default>false</default>
+        <label>B2B Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>Business/Productivity Software</fullName>
+        <default>false</default>
+        <label>Business/Productivity Software</label>
+    </customValue>
+    <customValue>
+        <fullName>AudioTech</fullName>
+        <default>false</default>
+        <label>AudioTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil and Gas Equipment</fullName>
+        <default>false</default>
+        <label>Oil and Gas Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Software Development Applications</fullName>
+        <default>false</default>
+        <label>Software Development Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Music and Entertainment</fullName>
+        <default>false</default>
+        <label>Music and Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Products</fullName>
+        <default>false</default>
+        <label>Food Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Database Software</fullName>
+        <default>false</default>
+        <label>Database Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Space Technology</fullName>
+        <default>false</default>
+        <label>Space Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Equity</fullName>
+        <default>false</default>
+        <label>Private Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Materials</fullName>
+        <default>false</default>
+        <label>Other Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Other IT Services</fullName>
+        <default>false</default>
+        <label>Other IT Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecommunications Service Providers</fullName>
+        <default>false</default>
+        <label>Telecommunications Service Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>Augmented Reality</fullName>
+        <default>false</default>
+        <label>Augmented Reality</label>
+    </customValue>
+    <customValue>
+        <fullName>Cryptocurrency/Blockchain</fullName>
+        <default>false</default>
+        <label>Cryptocurrency/Blockchain</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal Tech</fullName>
+        <default>false</default>
+        <label>Legal Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>CloudTech &amp; DevOps</fullName>
+        <default>false</default>
+        <label>CloudTech &amp; DevOps</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>Autonomous cars</fullName>
+        <default>false</default>
+        <label>Autonomous cars</label>
+    </customValue>
+    <customValue>
+        <fullName>Robotics and Drones</fullName>
+        <default>false</default>
+        <label>Robotics and Drones</label>
+    </customValue>
+    <customValue>
+        <fullName>Wearables &amp; Quantified Self</fullName>
+        <default>false</default>
+        <label>Wearables &amp; Quantified Self</label>
+    </customValue>
+    <customValue>
+        <fullName>Oncology</fullName>
+        <default>false</default>
+        <label>Oncology</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductors</fullName>
+        <default>false</default>
+        <label>Semiconductors</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Tech</fullName>
+        <default>false</default>
+        <label>Marketing Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Nanotechnology</fullName>
+        <default>false</default>
+        <label>Nanotechnology</label>
+    </customValue>
+    <customValue>
+        <fullName>Vertical Market Software</fullName>
+        <default>false</default>
+        <label>Vertical Market Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Climate Tech</fullName>
+        <default>false</default>
+        <label>Climate Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Reality</fullName>
+        <default>false</default>
+        <label>Virtual Reality</label>
+    </customValue>
+    <customValue>
+        <fullName>Esports</fullName>
+        <default>false</default>
+        <label>Esports</label>
+    </customValue>
+    <customValue>
+        <fullName>Micro-Mobility</fullName>
+        <default>false</default>
+        <label>Micro-Mobility</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility Tech</fullName>
+        <default>false</default>
+        <label>Mobility Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Supply Chain Tech</fullName>
+        <default>false</default>
+        <label>Supply Chain Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Pet Technology</fullName>
+        <default>false</default>
+        <label>Pet Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Car-Sharing</fullName>
+        <default>false</default>
+        <label>Car-Sharing</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurant Technology</fullName>
+        <default>false</default>
+        <label>Restaurant Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Reality Car-Sharing</fullName>
+        <default>false</default>
+        <label>Virtual Reality Car-Sharing</label>
+    </customValue>
+    <customValue>
+        <fullName>FemTech</fullName>
+        <default>false</default>
+        <label>FemTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Ridesharing</fullName>
+        <default>false</default>
+        <label>Ridesharing</label>
+    </customValue>
+    <customValue>
+        <fullName>Wearables &amp; Quantified Self Gaming</fullName>
+        <default>false</default>
+        <label>Wearables &amp; Quantified Self Gaming</label>
+    </customValue>
+    <customValue>
+        <fullName>Climate</fullName>
+        <default>false</default>
+        <label>Climate</label>
+    </customValue>
+    <customValue>
+        <fullName>Diversity &amp; Inclusion</fullName>
+        <default>false</default>
+        <label>Diversity &amp; Inclusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Health</fullName>
+        <default>false</default>
+        <label>Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrials</fullName>
+        <default>false</default>
+        <label>Industrials</label>
+    </customValue>
+    <description>Master List of all sectors, collated by sector for Ventures, VC Person sector and sector interested in.</description>
+    <masterLabel>Sectors</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

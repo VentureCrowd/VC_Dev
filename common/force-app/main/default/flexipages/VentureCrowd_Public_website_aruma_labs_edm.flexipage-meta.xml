@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>52d03a52-c438-40f0-988f-4daee5f9cc69</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ceba2b91-9665-4467-8194-d6777108b4a8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Bringing new life to medicine</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IVc0p&amp;oid=00D2v000000WjFp&amp;lastMod=1632181162000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Register your interest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>anchor:web-to-lead-form</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IVc0u&amp;oid=00D2v000000WjFp&amp;lastMod=1632181978000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Play video</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://youtu.be/Qp6rSBFnZ84</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Invest in Aruma Labs</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>52d03a52-c438-40f0-988f-4daee5f9cc69</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ddd1b7e6-8297-4391-9027-752c34247bfc</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-04c63053-8536-4953-9641-930a449f24ab</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;container content-container--text-edit&quot;&gt;
+    &lt;div class=&quot;row px-3 px-lg-0&quot;&quot;&gt;
+        &lt;div class=&quot;col-lg-6 mb-4 mb-lg-0&quot;&gt;
+            &lt;h1&gt;Invest in this high-growth industry&lt;/h1&gt;
+            &lt;p&gt;Aruma Labs is a fully-licensed Australian life sciences company that supplies medicinal cannabis for people living with chronic illness to help them lead better lives. We make medicinal cannabis simple through education, patient support, and by supplying affordable evidenced-based medicines.
+&lt;br&gt;
+&lt;br&gt;
+Australian active patient numbers are growing at a similar trajectory to the first years of Canada’s trailblazing market, with over 60,000 active patients across Australia, using legal medicinal cannabis treatments, up from 35,000 patients in 2020¹. The Australian legal market is projected to expand at a compound annual growth rate (CAGR) of 42.1% from 2020 to 2026, to over 600,000 patients and USD$1 billion in total revenue by 2026².
+
+&lt;br&gt; 
+
+ &lt;/p&gt;
+            &lt;a data-fancybox data-width=&quot;854&quot; data-height=&quot;480&quot; href=&quot;https://www.youtube.com/embed/Qp6rSBFnZ84?rel=0&quot; class=&quot;video-link&quot;&gt;
+                &lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt; Play video&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;h3&gt;About the Offer&lt;/h3&gt;
+            &lt;p&gt;This investment opportunity enables retail investors (any Aussie over 18 years old) to invest directly in a company that is shaping the future. &lt;br&gt;
+  &lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Investment Highlights:&lt;/strong&gt;&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;span&gt;Large addressable market: Global medical cannabis sales of USD$20 billion in 2020, forecasted to grow to USD$55.8 billion by 2025³&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;More than 60,000 patients have been prescribed medical cannabis in Australia, growing over 15x since Q1 2019⁴.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;Licenced by the Office of Drug Control for the cultivation, manufacture and supply of medical cannabis.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;Highly experienced multi-disciplinary team with demonstrated success in building businesses in highly regulated industries on a global scale.&lt;/span&gt;&lt;/li&gt;
+               	&lt;li&gt;&lt;span&gt;Industrial land acquired with Development Approval obtained for construction.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;Attractive upside with public valuations in this sector of between 10-40x revenue⁵.&lt;/span&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;span&gt;Indicative exit through IPO or acquisition within 3-5 years&lt;/span&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ddd1b7e6-8297-4391-9027-752c34247bfc</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>dff14e81-d3be-4175-b5c4-6ae792063a76</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-f16a92fa-bc8c-40b4-9bec-8cb4e4a75123</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Gray</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>leadSourceVal</name>
+                    <value>Database Emails</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>registerBtnLabel</name>
+                    <value>Register My Interest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleSubText</name>
+                    <value>Our VentureCrowd team conducts a rigorous due diligence process before listing any investment opportunity. Register your interest early and we&apos;ll let you know before this deal is publicly available.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Register your Interest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>webSourcePageName</name>
+                    <value>Aruma</value>
+                </componentInstanceProperties>
+                <componentName>webToLeadFormProductlanding</componentName>
+                <identifier>webToLeadFormProductlanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>dff14e81-d3be-4175-b5c4-6ae792063a76</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5dda623d-00fc-4d95-affb-727fd41e701d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fa8f9188-2c8f-4831-9340-3b059aa0bc90</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=0682v00000KhwiA&amp;operationContext=CHATTER&amp;contentId=05T2v00001shwnE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>Australian active patient numbers are growing at a similar trajectory to the first years of Canada’s trailblazing market, with over 45,000 Australians having been prescribed medicinal cannabis across 30+ medical conditions since 2019¹ . At its current trajectory, the Australian market is projected to exceed 600,000 active patients and $1b in total revenue by 2026².</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                    <value>High growth industry</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=0682v00000KhwiJ&amp;operationContext=CHATTER&amp;contentId=05T2v00001shwn1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>Over 50% of Australians live with a chronic illness³. Aruma Labs&apos; mission is to inspire a move beyond the break/fix model to expand treatment options for helping people with chronic medical conditions live happier, healthier lives. When you invest in Aruma Labs, you invest directly in shaping the future, a future that is good for investors, founders and humanity.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                    <value>Bringing new life to medicine</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                    <value>The size of the global medical cannabis market size was predicted at USD  16.47 Bn in 2021. This value is forecasted to grow to USD 46.18 Bn by 2026, with a CAGR of 22.9% during the forecast period (Source: Market Data Forecast, 2021).</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>Why Medicinal Cannabis?</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentCtaProductLanding</componentName>
+                <identifier>currentInvestmentCtaProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeadingText</name>
+                    <value>Why VentureCrowd?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ParagraphText</name>
+                    <value>VentureCrowd is Australia’s leading digital investment platform for alternative assets. When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so you won’t be investing alone. Here’s a snapshot of our traction so far.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Totalmembers</name>
+                    <value>63,000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>TotalmembersLabel</name>
+                    <value>Total Members</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Totalraised</name>
+                    <value>$166,000,000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>TotalraisedsLabel</name>
+                    <value>Total Raised</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Gray</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>highlightColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>portfoliosize</name>
+                    <value>70</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>portfoliosizeLabel</name>
+                    <value>Portfolio Size</value>
+                </componentInstanceProperties>
+                <componentName>whyVentureCrowd</componentName>
+                <identifier>whyVentureCrowd</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCCT&amp;d=%2Fa%2F2v000000EOXy%2FwBrrdkegPezSl87dQ.nxZPfvZNYfahz_Y7zMDnsA_do&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>4DMedical is an Australian health technology SaaS business operating in AUS &amp; the US. VentureCrowd investors acquired shares at $0.37. 4DMedical listed on the  ASX after 18 months at $1.50 per share, delivering a 297% return to VentureCrowd investors who participated in this capital raise.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                    <value>4DMedical</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCCn&amp;d=%2Fa%2F2v000000EOY3%2F9GwKh4YyKYCgKaTGFSA5KKboWRtnTcFp1BszIZcKwyY&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>VentureCrowd portfolio company Jayride listed on the ASX in January 2018 making it Australia&apos;s ﬁrst crowd-funded startup exit. Listed on ASX in January 2018 at an issue price that was more than double the Series A investment, delivering a gross return of 107% to investors.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                    <value>Jayride</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JQCZy&amp;d=%2Fa%2F2v000000EOYS%2FKBAlLP.9FfJqEiAoaP5Hda3ihBdSHSpSKMOhnhOEN8k&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                    <value>VentureCrowd is the only digital investment platform in Australia that has delivered successful exit returns from Equity Crowdfunding.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>Previous Success Stories</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentCtaProductLanding</componentName>
+                <identifier>currentInvestmentCtaProductLanding2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>openVCLogoUrl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2021/03/Open-VClogo_white-300x79.png</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                    <value>https://venturecrowd--cm--c.documentforce.com/sfc/dist/version/download/?oid=00D0p0000000N1k&amp;ids=0680p000000cUTs&amp;d=%2Fa%2F0p0000004QKF%2FIyHBFYBQoyINcgOMCqcGCTRos7ltEjFyUwT1QKvEMsc&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strHeading</name>
+                    <value>70+ Ventures Funded</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>straSupportingCopy</name>
+                    <value>The following are examples of some of the ventures funded through our digital investment platform</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentProductLanding</componentName>
+                <identifier>currentInvestmentProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5dda623d-00fc-4d95-affb-727fd41e701d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>417d553f-901f-48d6-8bf1-09971d81209f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-450b4f7a-7368-4bd1-8354-bbdd505dbb4a</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--disclaimer&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row px-3 px-lg-0&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;p&gt;
+                    &lt;em&gt;¹Freshleaf Anayltics, 2021 – Available at https://www.northernbeachesreview.com.au/story/7400326/approvals-for-medicinal-cannabis-prescriptions-hit-record-high/&lt;/em&gt;&lt;br&gt;
+					&lt;em&gt;²Grandview Research, 2021 – Available at https://www.grandviewresearch.com/industry-analysis/australia-legal-cannabis-market&lt;/em&gt;&lt;br&gt;
+					&lt;em&gt;³Arcview, State of Global Cannabis Market 8th Edition – Available at https://research.arcviewgroup.com/solcm8/&lt;/em&gt;&lt;br&gt;
+                    &lt;em&gt;⁴Freshleaf Anayltics, Australian Medicinal Cannabis Market – Patient, Product and Pricing Analysis – H1 2021 – Available at https://www.freshleafanalytics.com.au&lt;/em&gt;&lt;br&gt;
+                    &lt;em&gt;⁵Market capitilsation and revenue figures for selected ASX-listed cannabis companies as at 5 September 2021. Available at Yahoo Finance https://au.finance.yahoo.com/&lt;/em&gt;&lt;br&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                    
+					&lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt;Legals&lt;/a&gt; | Copyright © 2021 VentureCrowd. All Rights Reserved
+					&lt;br&gt;
+					VentureCrowd Pty Ltd (ABN 40 166 598 849, AFSL 503 381)
+					Important Notice: Capital is at risk and returns are not guaranteed. Past performance is not a reliable indicator of future performance. 
+                    This content is of a general nature only and has been prepared without taking account of your objectives, financial situation or needs. Before acting on this information or making an investment decision, 
+                    you should consider your personal circumstances and consider obtaining financial, taxation and or legal advice which is tailored to your personal circumstances before making an investment decision.
+					&lt;br&gt;
+                    &lt;br&gt;
+                    Please call &lt;a href=&quot;tel:1300039655&quot; target=&quot;_blank&quot;&gt; 1300 039 655 &lt;/a&gt; to get a copy of the PDS.
+                    Please read our &lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt;terms and conditions&lt;/a&gt; and &lt;a href=&quot;https://www.venturecrowd.com.au/s/legals&quot; target=&quot;_blank&quot;&gt; privacy &lt;/a&gt; statement before using the Website.
+					&lt;br&gt;
+                    &lt;br&gt;
+					VentureCrowd Pty Ltd is a Corporate
+                    Authorised Representative #420843 of Guardian Securities Limited, AFSL #240506.
+                  &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>417d553f-901f-48d6-8bf1-09971d81209f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ceba2b91-9665-4467-8194-d6777108b4a8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ceba2b91-9665-4467-8194-d6777108b4a8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;52d03a52-c438-40f0-988f-4daee5f9cc69&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-04c63053-8536-4953-9641-930a449f24ab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;04c63053-8536-4953-9641-930a449f24ab&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ddd1b7e6-8297-4391-9027-752c34247bfc&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-f16a92fa-bc8c-40b4-9bec-8cb4e4a75123</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;f16a92fa-bc8c-40b4-9bec-8cb4e4a75123&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;dff14e81-d3be-4175-b5c4-6ae792063a76&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fa8f9188-2c8f-4831-9340-3b059aa0bc90</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fa8f9188-2c8f-4831-9340-3b059aa0bc90&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5dda623d-00fc-4d95-affb-727fd41e701d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-450b4f7a-7368-4bd1-8354-bbdd505dbb4a</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;450b4f7a-7368-4bd1-8354-bbdd505dbb4a&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;417d553f-901f-48d6-8bf1-09971d81209f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Bringing new life to medicine.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Aruma Labs | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>aruma-labs-edm</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

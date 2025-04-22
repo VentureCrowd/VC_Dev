@@ -1,0 +1,13 @@
+<template>
+    <template if:true={showcomponet}>
+        <h2 class="vc-font-suisseIntlLight">{investmentTile}</h2>
+        <div class="slds-grid slds-wrap vc-tile-wrapper">
+            <template for:each={investmentList} for:item="tile">
+                <div class="slds-size_1-of-1 slds-large-size_1-of-2 slds-p-top_medium vc-tile-elementWrapper" key={tile.invId}>
+                    <c-v-c_current-tile-component tile={tile} >            
+                    </c-v-c_current-tile-component>
+                </div>
+            </template>
+        </div>
+    </template>
+</template>

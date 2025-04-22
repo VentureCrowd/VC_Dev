@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* .progressBar-container {
+    max-width: fit-content;
+} */
+.target-numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: var(--space-xs);
+}
+
+.target-numbers h3 {
+    font-size: var(--text-xxxl);
+    margin-bottom: 0;
+}
+
+.target-numbers p {
+    margin-bottom: 0em;
+}
+
+/*? Controls the text of min target */
+
+.min-target p {
+    font-size: var(--text-base-size);
+}
+
+/*? Handles the base progress bar */
+.progress-bar-base {
+    margin-top: var(--space-xs);
+    position: relative;
+    /* If you want to change the size of the progress bar change this */
+    height: 2em;
+    background-color: var(--gray-3);
+    border-radius: 1.5em;
+}
+/*? Handle the progress bar status */
+.progress-bar-base::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    bottom: .5em;
+    /*? We will set by default a 0 if no values is given */
+    width: calc(var(--width,0));
+    min-width: 2rem;
+    max-width: 100%;
+    background-color: var(--primary-background);
+    border-radius: var(--border-radius);
+    padding: 1em;
+}
+
+
+/*? This handles the progress bar if reach after the target */
+.progress-bar-over {
+    margin-top: var(--space-xs);
+    position: relative;
+    /* If you want to change the size of the progress bar change this */
+    /* width: 450px; */
+    height: 2em;
+    background-color: var(--tertiary-icon-color);
+    border-radius: 1.5em;
+}
+
+.progress-bar-over::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0em;
+    top: 0em;
+    bottom: .5em;
+    /*? We will set by default a 0 if no values is given */
+    width: var(--width);
+    min-width: 2rem;
+    max-width: 100%;
+    background-color: var(--tertiary-accent);
+    /* border-radius: var(--border-radius); */
+    border-radius: 1em 0em 0em 1em;
+    padding: 1em;
+}
+
+
+/*? This handles the Bar indicator */
+.progress-bar-target {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    /* This is the same as the porcentage */
+    left: var(--targetPosition);
+    width: 2px;
+    background-color: white; 
+}
+
+/*? This handles the Raise Target text */
+.progress-bar-over::after {
+    content: 'MINIMUM RAISE TARGET';
+    position: absolute;
+    bottom: -2.5em;
+    left: var(--targetText);
+    /* Find a formula for this */
+    transform: translateX(-50%);
+    color: white;
+    font-size: var(--text-xs);
+}
+
+.target-numbers-over {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: var(--space-xs);
+}
+.target-numbers-over p {
+    font-size: var(--text-md);
+    margin-bottom: 0em;
+}
+
+.target-numbers-over h3 {
+    font-size: var(--text-xxxl);
+    margin-bottom: 0;
+}

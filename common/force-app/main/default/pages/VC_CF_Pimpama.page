@@ -1,0 +1,321 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+                            <a href="#">Crowdfunding</a>
+                            <a href="#">Government</a>
+                            <a href="#">Infrastructure</a>
+                            <a href="#">Property Development</a>
+                            
+                        </div>
+                        <h1 class="mt-4">Pimpama Sports Hub</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/01/banner-pimpama-sports-hub.jpg')"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h4 style="font-weight: 600;" >The <a href="https://www.goldcoast.qld.gov.au/pimpama-sports-hub-51056.html" target="_blank">Pimpama Sports Hub</a> is coming to the northern Gold Coast. With the population expected to more than double by 2036, the City is gearing up to provide a range of sporting and social infrastructure to existing and future residents.</h4>
+                            <br/>
+                            <h4 style="font-weight: 600;"  class="text-background-gradient">
+                                Our goal is to make the northern Gold Coast one of the most liveable and desirable areas of the city. We are committed to delivering this sporting and community hub so it can become a place for residents and visitors to engage in social, cultural, recreational and educational activities like never before.
+                            </h4>
+                            <p class="mt-5">
+                                Pimpama Sports Hub will be built on a 14-hectare site on the corner of Rifle Range and Bull Roads.</p>
+
+<p>
+                                It will provide a state-of-the-art aquatic centre with Olympic standard swimming pool, much needed netball and tennis facilities, and recreational and sporting options for surrounding schools and residents. Multipurpose meeting spaces and a large events park for gatherings such as Carols by Candlelight, markets and outdoor cinema, will also form part of the precinct.
+                            
+
+                            
+                                
+                            </p>    
+                            
+                            <section class="accordion pb-5">
+                              <div class="question expanded" data-id="1">
+                                <div class="header">
+                                  <div class="title">Design</div>
+                                  <div class="icon icon-minus"><span>-</span></div>
+                                </div>
+                                <div class="expandable">
+                                <h3>Design</h3>
+                                  <p>
+The approved masterplan details a balanced mix of community, aquatic, sport and recreational facilities. The masterplan is flexible to initiate change as participation trends change over time.
+                                  </p>
+                                  <p>The bushland aesthetic will be enhanced with walking trails, community parks and a natural watercourse while retaining 30 per cent of the vegetation.</p>
+                                  <p>This new contemporary destination will be Australia’s first 100 per cent energy self-sufficient sporting and community hub with a combination of solar power, battery storage and co-generation systems. The solar power system is 910KW, the battery is 316kWh and the cogeneration system will use natural gas to generate both power and thermal energy to heat the pools. These systems will provide all the power to operate the site and excess power will be exported to the electricity grid.</p>
+                                    <p>On completion there will be internal and external CCTV cameras for security and safety.</p>
+                                    
+                                    
+                                </div>
+                              </div>
+                              
+                            <div class="question" data-id="2">
+                                <div class="header">
+                                  <div class="title">Construction</div>
+                                  <div class="icon icon-plus"><span>+</span></div>
+                                </div>
+                                <div class="expandable">
+                                <h3>Construction</h3>
+                                  <p>
+Vegetation clearing and bulk earthworks will occur between October and December 2019. Terraced levels will be developed early in the project’s construction so they are ready for each of the facilities to be built. Main construction will commence in December 2019.
+                                  </p>
+                                  <p>The City will work closely with the contractor to minimise any impacts to traffic flow. Temporary road closures may occur intermittently to allow for oversized haulage vehicles to deliver materials to the site. There will also be some impacts during construction of the signalised intersection on Rifle Range Road. More information will be available as the project progresses. We will keep nearby residents and road users informed of any changes.</p>
+                                  <p>he contractor appointed to deliver Pimpama Sports Hub will undertake all works within legislated guidelines to manage noise and dust. Most dust impacts will be during bulk earthworks from October to December and will be suppressed with four water trucks spraying recycled water. Construction activity is only expected to create low to medium noise. In the early works, most site access will be via the contractor’s construction compound off Bull Road, opposite Oakwood Street.</p>
+                                    <p>There will be no construction parking on Bull Road or Rifle Range Road. All vehicles will be accommodated on site. A construction entrance and small compound will be located off Bull Road, near the corner of Rifle Range Road. It is expected that after bulk earthworks and as work progresses, construction workers will access the site via the existing Rifle Range Road entry and off Bull Road, opposite Oakwood Street.</p>
+                                    
+                                    
+                                </div>
+                              </div>
+                              
+                          <div class="question" data-id="3">
+                                <div class="header">
+                                  <div class="title">Access</div>
+                                  <div class="icon icon-plus"><span>+</span></div>
+                                </div>
+                                <div class="expandable">
+                                <h3>Access</h3>
+                                  <p>
+
+Construction fencing will be erected around the whole site during construction for the safety of all members of the public. Therefore, there will be no public access to the bushland area.
+                                  </p>
+                                  <p>The main site compound and contractor parking will be accessed off Bull Road opposite Oakwood Street. This access is temporary for the duration of the construction only. Contractors will walk along Bull Road to access the construction site near the corner with Rifle Range Road. Residents are reminded to slow down and take extra care when travelling through the area.</p>
+                                  <p>A new signalised intersection on Rifle Range Road will be the public entry to the site. The new intersection will manage the increased traffic entering and exiting the facility and ensure the safety of all patrons and road users. The intersection currently services the South Coast Restoration Society at the rear of the sports hub.</p>
+                                    <p>There will be no public vehicular entry from Bull Road. The only vehicles accessing the facility from Bull Road will be to service the aquatic centre.</p>
+                                    
+                                    
+                                </div>
+                              </div>
+                              
+                            <div class="question" data-id="4">
+                                <div class="header">
+                                  <div class="title">Jobs</div>
+                                  <div class="icon icon-plus"><span>+</span></div>
+                                </div>
+                                <div class="expandable">
+                                <h3>Jobs</h3>
+                                  <p>
+
+More than 750,000 people annually are projected to utilise the hub. It will provide 409 jobs during construction and contribute more than $161 million into the local economy. Once operational, it will generate more than 42 jobs. Job opportunities will range from pool lifeguard, hospitality, venue management to hub operations and maintenance. There is still a lot to do before these operational jobs are available.
+                                  </p>
+                                  <p>Anyone looking for construction job opportunities or business owners who would like to become a trade suppliers can contact ADCO Constructions Pty Ltd on 07 5581 7747.</p>
+                                  <p>When the facility is close to opening please check the City of Gold Coast <a href="https://erecruit1.mercury.com.au/GoldCoast/" target="_blank">eRecruit</a> site for any positions in the sports hub.</p>
+
+                                </div>
+                              </div>
+                              
+                                                          <div class="question" data-id="5">
+                                <div class="header">
+                                  <div class="title">Transport</div>
+                                  <div class="icon icon-plus"><span>+</span></div>
+                                </div>
+                                <div class="expandable">
+                                <h3>Transport</h3>
+<p>
+The City’s investment in this major community project as well as numerous transport improvements designed to make a real difference to everyday lives of residents, now and into the future. Over the next four years, the City will be spending an unprecedented amount on roads and active transport in the northern Gold Coast corridor.</p>
+<p>As part of the hub, a new signalised intersection will be built on Rifle Range Road to help manage traffic flow and provide safe entry and exit to Pimpama Sports Hub</p>
+<p>View the transport strategy mid-life review to find out more about the road network improvements.</p>
+<p>The City will also continue to assist the Queensland and Australian Governments to:</p>
+<ul>
+<li>expand the Gold Coast’s northern transport system to include additional rail stations, bus services and major road upgrades</li>
+<li>plan for the Coomera Connector.</li>
+</ul>
+
+<p>Major Road projects include:</p>
+<ul>
+<li>Yawalpah Road – upgrade to four lanes and new bridge over rail, Pimpama</li>
+<li>Pimpama Western Service Road – new link between Pacific Springs Drive and Mirambeena Drive, Pimpama</li>
+<li>Christensen Road – Sandy Creek connection, Stapylton</li>
+<li>Goldmine Road upgrade – to improve school access, Ormeau.</li>
+
+</ul>
+
+<p>Intersection upgrades include:</p>
+<ul>
+    
+<li>Days Road and Old Coach Road – intersection upgrade (traffic signals)</li>
+<li>Tillyroen Road / Upper Ormeau Road – new signals, Kingsholme</li>
+<li>Goldmine Road / Lahrs Road – signal upgrade, Ormeau</li>
+<li>Rifle Range Road / Sports facility – new signals, Pimpama</li>
+<li>Days Road and Williamson Road – intersection upgrade (traffic signals)</li>
+
+                                    </ul>
+
+
+                                </div>
+                              </div>
+                             
+                                                          <div class="question" data-id="6">
+                                <div class="header">
+                                  <div class="title">Vegetation</div>
+                                  <div class="icon icon-plus"><span>+</span></div>
+                                </div>
+                                <div class="expandable">
+                                <h3>Vegetation</h3>
+                                  <p>
+The City has designed the Pimpama Sports Hub to enhance the natural bushland aesthetic, to create a vegetation buffer around the site and to preserve the natural watercourse that traverses the land.</p>
+                                 <p>A corridor of trees remains through the middle of the site as there is a natural watercourse that runs through that area. By retaining the trees the project will embrace the natural bushland aesthetic for passive recreation. There are also some significant trees species in this area that will be protected.</p>
+<p>The State Government has approved the management of these trees under the Nature Conservation Act 1992. State and Local Government approvals have been granted to clear the existing vegetation.</p>
+<p>The City has undertaken ecological studies of the flora and fauna and there have been no significant findings of endangered species.</p>
+<p>The Bull Road frontage will feature enhanced parkland, a nature play area and walking tracks for improved access to the site.</p>
+
+
+                                </div>
+                              </div>
+                              
+                              
+                            </section>
+                            
+                            <h6>Original source: <a target="_blank" href="https://www.goldcoast.qld.gov.au/pimpama-sports-hub-51056.html">https://www.goldcoast.qld.gov.au/pimpama-sports-hub-51056.html</a></h6>
+
+                            
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <div class="container">
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                    <div class="col-md-12 pb-5 next-post-title mt-3">
+                        <h3>Goodbye golf days: How tech-savvy millennials are killing investment managers</h3>
+                    </div>
+                </div>
+            </div>
+            <a href="#"></a>
+            <div class="next-post-bg-overlay"></div>
+            <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/01/Screen-Shot-2020-01-22-at-1.28.15-pm.png')"></div>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

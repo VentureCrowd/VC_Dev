@@ -1,0 +1,186 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_ProductLandingCSS}"/>
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+<script type='text/javascript'>
+        //check if url contains contactus 
+        //then hilight sendemail section
+        
+        window.location.hash = '#sendEmail';       
+   
+   
+    
+    
+    
+ 
+ });
+    
+    </script> 
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+</head>
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+     
+
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-product-landing">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container h-100">
+          <div class="row align-items-center h-100 text-white pt-5 pb-5">
+            <div class="col-md-12 animate-group">
+              <div class="logo-wrapper mb-3"><img src="https://assets.venturecrowd.vc/uploads/2021/02/ESN-Cleer-logo-white.png" /></div>
+              <h1 class="animate-item-in">Ordinary Share Offer</h1>
+              <h3 class="mb-4 animate-item-in">Invest in the world-first saliva-based diagnostic can predict heart failure with 95% accuracy.</h3>
+              <p class="mt-2">
+                We'd love to provide you with the opportunity to invest in<br />
+                projects that are good for investors, founders and humanity.
+              </p>
+              <ul class="links mt-5">
+                <li><a class="solid" href="#sendEmail">Register my interest</a></li>
+                <li><a href="https://venturecrowd.secure.force.com/cts/?Id=STRd.rJ5ZZNWVtCGLC2mBPq7JvG09PwhejdPbfCoFmI-">Talk to a specialst</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-bg-opacity"></div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/03/Heart-resize.jpg')"></div>
+      </section>
+
+      <section class="blurb">
+        <div class="container">
+          <div class="row animate-group">
+            <div class="col-lg-6">
+              <h4 class="animate-item-in">
+                Using the latest scientific
+                advancements in nanotechnology,</h4>
+              <p>
+                ESN Cleer’s platform incorporates patent protected biomarkers and established nano-technology to accurately detect early risk of heart failure with over 90% accuracy. The two main products, EHF-Test Kit and EHF-Eswab are expecting FDA approval in the USA by early 2021, and 2022 respectively.  
+              </p>
+              <a class="d-block" data-fancybox="true" data-height="480" data-width="854" href="https://www.youtube.com/watch?v=YnkJNtk6cGU">
+                <i aria-hidden="true" class="fa fa-play"></i>
+                Watch the ESN Cleer on 9News
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <h5>
+                About the Offer</h5>
+              <p>ESN Cleer is raising $2.6 million through the issue of ordinary shares.</p>
+              <strong>The Company and offer has the following key attributes:</strong>
+              <ul>
+                <li><span>Ordinary shares at a $14m pre-money valuation.</span></li>
+                <li><span>Global multi-billion dollar addressable market.</span></li>
+                <li><span>Unique product; no comparable heart failure risk screening test available in the market.</span></li>
+                <li><span>Protected core intellectual property.</span></li>
+                <li><span>Forecasted 2 to 3 years ROI.</span></li>
+                <li><span>Wholesale investment only.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="web-lead">
+        <div class="container" id="sendEmail">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <h3>Register your Interest in ESN Cleer</h3>
+              <p>Register your interest and our team will be in touch.</p>
+              <form id="mortgage-landing-contactus" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type="hidden" name="captcha_settings" value='{"keyname":"Wed_to_Lead_recaptcha","fallback":"true","orgId":"{!$Label.VC_CF_OrgID}","ts":""}'/>
+                <input type="hidden" name="oid" value="{!$Label.VC_CF_OrgID}" />
+                <input type="hidden" name="retURL" value="{!$Label.VC_CF_Public_URL + '/typ'}" />
+                <input placeholder="First Name" id="first_name" maxlength="40" name="first_name" size="20" required="true" type="text" />
+                <input placeholder="Last Name" id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" />
+                <input placeholder="Email" id="email" maxlength="80" name="email" size="20" type="text" required="true" />
+                <input value="+61" placeholder="Mobile" id="mobile" maxlength="40" name="mobile" size="20" type="text" required="true" />
+                <div style="overflow: hidden;"  data-callback="recaptcha_callback" class="g-recaptcha" data-sitekey="{!$Label.GOOGLE_CPATCHA_SITE_KEY}"></div>
+                <br />
+                <input  formtarget="_top" type="submit" name="Submit" value="Register my interest"  disabled="true" class="button"/>
+                
+                <input hidden="true" id="lead_source" name="lead_source" value="Database Emails" />
+                <textarea hidden="" value="ESNCLEER - Landing Page" id="00N2v00000YCAHx" name="00N2v00000YCAHx" type="text" wrap="soft"> ESNCLEER - Landing Page</textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="why-venturecrowd text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h3>Why VentureCrowd?</h3>
+              <p class="mb-0">VentureCrowd is Australia’s leading digital investment platform for alternative assets.</p>
+              <p>
+                When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so you won’t be investing alone. Here’s a
+                snapshot of our traction so far.
+              </p>
+              <div class="row counter-wrapper">
+                <div class="col-lg-3 cell">
+                  <div class="counter"><span class="digits">61415</span></div>
+                  <div class="label">Total Members</div>
+                </div>
+                <div class="col-lg-6 cell">
+                  <div class="counter">$<span class="digits">144000000</span></div>
+                  <div class="label">Total Raised</div>
+                </div>
+                <div class="col-lg-3 cell">
+                  <div class="counter"><span class="digits">67</span></div>
+                  <div class="label">Portfolio Size</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="register-today-cta">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 text-center text-lg-left">
+              <h3>Register <em>Today</em> &amp; Start Investing.</h3>
+              <p>Schedule a call, or call one of our friendly team members today on <a href="tel:1300039655" target="_blank">1300 039 655</a>. We’re here to support you.</p>
+            </div>
+            <div class="col text-center text-lg-right"><a href="{!$Label.VC_CF_Register_Symphony}" class="call-to-action">Register Now</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-notice">
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                Important Notice: Capital is at risk and returns are not guaranteed. Past performance is not a reliable indicator of future performance. This advertisement
+                comprises general information without taking into account your personal objectives, financial situation or needs. You should seek professional advice and read the
+                  Product Disclosure Statement prior to making an investment decision. Please call <a href="tel:1300039655" target="_blank"> 1300 039 655 </a> to get a copy of the PDS. VentureCrowd Pty Ltd is a Corporate
+                Authorised Representative #420843 of Guardian Securities Limited, AFSL #240506.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ./Body -->
+
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

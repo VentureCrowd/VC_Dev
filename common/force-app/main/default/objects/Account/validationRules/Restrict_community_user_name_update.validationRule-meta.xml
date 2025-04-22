@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_community_user_name_update</fullName>
+    <active>true</active>
+    <errorConditionFormula>(($Profile.Name  = &apos;VC Customer Community Login&apos;) || ($Profile.Name  = &apos;VC Investor Community Plus Login&apos;)) &amp;&amp;  (ISCHANGED( Name) || ISCHANGED( Trustee_Name__c))</errorConditionFormula>
+    <errorMessage>To make changes to your already identified name, please reach out to our Customer Support team at investor@venturecrowd.com.au or call 1300 039 655 during business hours. Thank you.</errorMessage>
+</ValidationRule>

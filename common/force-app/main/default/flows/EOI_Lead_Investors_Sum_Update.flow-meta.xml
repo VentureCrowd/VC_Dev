@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Sum all lead amount related to EOI.</description>
+        <name>Add_Amounts</name>
+        <label>Add Amounts</label>
+        <locationX>264</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>LeadInvestorsSUMamounts</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_all_lead_investor_amounts.Lead_Investor_Amount__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_all_lead_investor_amounts</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
+    <interviewLabel>EOI - Lead Investors Sum Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EOI - Lead Investors Sum Update</label>
+    <loops>
+        <description>Loop through all leads related to an EOI.</description>
+        <name>Loop_all_lead_investor_amounts</name>
+        <label>Loop all lead investor amounts</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <collectionReference>Get_All_Lead_Investors</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_Amounts</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_EOI</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Message</name>
+        <label>Log Message</label>
+        <locationX>440</locationX>
+        <locationY>947</locationY>
+        <inputAssignments>
+            <field>Record_details__c</field>
+            <value>
+                <elementReference>$Record.Related_EOI__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Sum Lead investor amount and update EOI Record</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source__c</field>
+            <value>
+                <stringValue>Flow: EOI - Lead Investors Sum Update</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Get leads related to that EOI.</description>
+        <name>Get_All_Lead_Investors</name>
+        <label>Get All Lead Investors</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_all_lead_investor_amounts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Related_EOI__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_EOI_Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>EOI_Lead_Investor__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Lead_Investor_Amount__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get EOI Related to the lead.</description>
+        <name>Get_EOI_Record</name>
+        <label>Get EOI Record</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_All_Lead_Investors</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Related_EOI__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EOI__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update EOI Record with total amount from all looped leads.</description>
+        <name>Update_EOI</name>
+        <label>Update EOI</label>
+        <locationX>176</locationX>
+        <locationY>839</locationY>
+        <faultConnector>
+            <targetReference>Log_Message</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Lead_Investors_SUM__c</field>
+            <value>
+                <elementReference>LeadInvestorsSUMamounts</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Related_EOI__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_EOI_Record</targetReference>
+        </connector>
+        <object>EOI_Lead_Investor__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>LeadInvestorsSUMamounts</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

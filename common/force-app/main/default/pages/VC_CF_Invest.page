@@ -1,0 +1,142 @@
+<apex:page standardStyleSheets="false" sidebar="false" showHeader="false" applyBodyTag="false" controller="ProductController">
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_InvestCSS}" />
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+    
+  <!-- Body -->
+  <div id="vc_content__container" class="position-relative page-slug-invest">
+    <!-- Hero -->
+    <section class="hero has-parallax-bg">
+      <div class="container">
+        <div class="row text-white mt-5 pt-5 pb-5">
+          <div class="col-md-12 animate-group">
+            <div class="inner-container pr-4">
+
+              <h1 class="mb-4 animate-item-in">
+                Invest in ventures and property alongside
+                <strong>thousands of sophisticated investors.</strong>
+              </h1>
+              <p class="mb-5 mb-md-5 animate-item-in text-white">Join the VentureCrowd community to learn more about great investment opportunities.</p>
+              <a style="{!IF((ISPICKVAL($User.UserType,'Guest')), 'display:block;width:205px', 'display:none')}" class="button-solid" href=  "{!$Label.VC_CF_Register_Symphony}">REGISTER NOW</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="parallax-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JOywf&d=%2Fa%2F2v000000ELOS%2F4D5UeLOXCJtTOv0IajzzICB0MuOvjeYLhDqIFtwYRgw&asPdf=false'); min-height: 53vh; top: -170px;">
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="offers mb-5">
+      <div class="container mt-5">
+        <div class="row py-5 offer-container">
+          <!-- Apex code to fetch dynamic info from Salesforce into tile starts here -->
+          <apex:repeat value="{!prodList}" var="pl">
+            <!-- Tile HTML Div tag starts here-->
+            <!-- START LOOP -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-4">
+              <div class="inner-container">
+                <div class="heading text-white py-2">{!pl.Family}</div>
+                <div class="hero text-white" style="background-image: url({!pl.Tile_Banner__c})"></div>
+                <div class="details py-4 px-3">
+                  <span class="d-block heading-1 mb-2">
+                    <strong>{!pl.Tile_Heading__c}</strong>
+                  </span>
+                  <!-- <span class="d-block heading-2">Park Ridge, QLD</span> -->
+                </div>
+                <div class="call-to-action px-5 pt-4">
+                  <span class="d-block header pb-4">{!pl.Deal_Description__c}</span>
+                  <a class="mt-1" href="{!pl.Deal_Page_Link__c}">{!pl.Button_Text__c}</a>
+                  <span class="pt-4 pb-3 d-block offer-type">{!pl.Tile_Offer_Type__c}</span>
+                  <span class="d-block status status-raising pb-5">
+                    <!-- {!pl.Fully_Funded__c == FALSE} Raising Now {!pl.Fully_Funded__c == TRUE} Fully Fundaed -->
+
+                    <apex:outputPanel rendered="{!NOT(pl.Fully_Funded__c)}">
+                      Raising Now
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!(pl.Fully_Funded__c)}">
+                      Fully Funded
+                    </apex:outputPanel>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </apex:repeat>
+          <!-- Apex code to fetch dynamic info from Salesforce into tile Ends here -->
+          <!-- END LOOP -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Funded -->
+    <section class="funded offers">
+      <div class="container">
+        <div class="row heading">
+          <div class="col-md-12 text-center">
+            <h2 class="mb-3">Successful Deals</h2>
+          </div>
+        </div>
+        <!-- Offers -->
+
+        <div class="row py-5 offer-container">
+          <!-- Apex code to fetch dynamic info from Salesforce into tile starts here -->
+          <apex:repeat value="{!successfulDealList}" var="pl">
+            <!-- Tile HTML Div tag starts here-->
+            <!-- START LOOP -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-4">
+              <div class="inner-container">
+                <div class="heading text-white py-2">{!pl.Family}</div>
+                <div class="hero text-white" style="background-image: url({!pl.Tile_Banner__c})"></div>
+                <div class="details py-4 px-3">
+                  <span class="d-block heading-1 mb-2">
+                    <strong>{!pl.Tile_Heading__c}</strong>
+                  </span>
+                  <!-- <span class="d-block heading-2">Park Ridge, QLD</span> -->
+                </div>
+                <div class="call-to-action px-5 pt-4">
+                  <span class="d-block header pb-4">{!pl.Deal_Description__c}</span>
+                  <!-- <a class="mt-1" href="#">{!pl.Button_Text__c}</a> -->
+                  <span  class="pt-4 pb-3 d-block offer-type">{!pl.Tile_Offer_Type__c}</span>
+                  <span class="d-block status status-raising pb-5">
+                    <!-- {!pl.Fully_Funded__c == FALSE} Raising Now {!pl.Fully_Funded__c == TRUE} Fully Fundaed -->
+
+                    <apex:outputPanel rendered="{!NOT(pl.Fully_Funded__c)}">
+                      Raising Now
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!(pl.Fully_Funded__c)}">
+                       Funded
+                    </apex:outputPanel>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </apex:repeat>
+          <!-- Apex code to fetch dynamic info from Salesforce into tile Ends here -->
+          <!-- END LOOP -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- ./Body -->
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

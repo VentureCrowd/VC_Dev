@@ -1,0 +1,16 @@
+<template>
+    <div class="core-button-wrapper">
+            <template lwc:if={iconPositionRight}>
+                <a class={variationClass} href={hyperlink} target={target} rel="noopener noreferrer">{label}
+                    <c-core-icon icon-name={iconName} size={size}></c-core-icon>
+                </a>
+            </template>
+            
+            <template lwc:else>
+                <a class={variationClass} href={hyperlink} target={target} rel="noopener noreferrer">
+                    <c-core-icon icon-name={iconName} size={size}></c-core-icon>
+                    {label}
+                </a>
+            </template>
+    </div>
+</template>

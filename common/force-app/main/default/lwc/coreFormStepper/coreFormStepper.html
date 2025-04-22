@@ -1,0 +1,53 @@
+<template>
+    <div class="form-stepper-vertical" lwc:if={vertical}>
+        <template for:each={steps} for:item="step">
+            <div class="step-wrapper" key={step.index}>
+                <div class="step-number active" lwc:if={step.active}>
+                    {step.index}.
+                </div>
+                <div class="step-number completed" lwc:elseif={step.completed}>
+                    <c-core-icon icon-name="check" size="large"></c-core-icon>
+                </div>
+                <div class="step-number error" lwc:elseif={step.error}>
+                    <c-core-icon icon-name="warning" size="xxxlarge"></c-core-icon>
+                </div>
+                <div class="step-number" lwc:else>
+                    {step.index}.
+                </div>
+
+                <!-- Text conditionals -->
+                <div class="step-desc completed" lwc:if={step.completed}>
+                    <h3 class="text--lg">{step.name}</h3>
+                    <p class="step-desc-text">{step.shortDesc}</p>
+                    <p class="step-eta-text">{step.eta}</p>
+                </div>
+                <div class="step-desc" lwc:else>
+                    <h3 class="text--lg">{step.name}</h3>
+                    <p class="step-desc-text">{step.shortDesc}</p>
+                    <p class="step-eta-text">{step.eta}</p>
+                </div>
+            </div>
+        </template>
+    </div>
+    <div class="form-stepper-wrapper" lwc:else>
+        <ol>
+            <template for:each={steps} for:item="step">
+                <li key={step.name}>
+                        <span class="step-icon" data-last="">
+                            <div class="active" lwc:if={step.active}>
+                                A
+                            </div>
+                            <div class="completed" lwc:if={step.completed}>
+                                C
+                            </div>
+                            <div class="error" if:true={step.error}>
+                                E <!-- Replace 'E' with an actual error icon component -->
+                            </div>
+                        </span>
+                        <div class="step-label" >{step.name}</div>
+
+                </li>
+            </template>
+        </ol>
+    </div>
+</template>

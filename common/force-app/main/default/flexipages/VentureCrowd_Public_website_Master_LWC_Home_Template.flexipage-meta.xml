@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>f926b400-1f2f-40bd-b20e-613e58b027ba</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-18b30b5d-0444-46b3-b822-53719cdfaf0e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentName>vcHeaderGuest</componentName>
+                <identifier>vcHeaderGuest</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>VentureCrowd gives you access to handpicked opportunities on the same terms as professional lead investors.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2020/09/Smart-City-smart-touch-GRAD-FV-1.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Join the crowd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.google.com</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                    <value>Login</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLink</name>
+                    <value>https://www.google.com</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>Join us in finding and funding the future.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Invest in alternative assets in just a few minutes.</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>f926b400-1f2f-40bd-b20e-613e58b027ba</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>08923906-bd90-4442-89da-df3b54027e9f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1609bf68-4a39-4efd-90ea-a803de7e16cb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeaderText</name>
+                    <value>Test</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Grey</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUD&amp;oid=00D2v000000WjFp&amp;lastMod=1627368285000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Only Aussie crowdfunding platform to yield successful exit returns</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgTitle</name>
+                    <value>Launch a deal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnLabel</name>
+                    <value>Read more</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnRedirectUrl</name>
+                    <value>#</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUX&amp;oid=00D2v000000WjFp&amp;lastMod=1627369200000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>60k+ members $150M capital raised</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgTitle</name>
+                    <value>Secure the capital</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUw&amp;oid=00D2v000000WjFp&amp;lastMod=1627369978000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>Australia’s leading multi-asset crowdfunding platform</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgTitle</name>
+                    <value>Deliver on your plan</value>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>08923906-bd90-4442-89da-df3b54027e9f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>406c6408-901f-4556-a83a-2d1cb74ddc03</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-1483ae8d-d80d-4fc6-abd8-4b108943ac13</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>DescriptionText1</name>
+                    <value>&lt;p&gt;(1) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non porttitor turpis. Cras at lorem in ipsum dignissim aliquet eget facilisis metus. Donec sagittis et neque sit amet varius. Aliquam hendrerit bibendum lacus vel euismod. Ut a ex sed neque congue aliquet vel in risus.&lt;/p&gt;&lt;br&gt;&lt;p&gt;(2) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non porttitor turpis. Cras at lorem in ipsum dignissim aliquet eget facilisis metus. Donec sagittis et neque sit amet varius. Aliquam hendrerit bibendum lacus vel euismod. Ut a ex sed neque congue aliquet vel in risus.&lt;/p&gt;&lt;br&gt;&lt;p&gt;(3) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non porttitor turpis. Cras at lorem in ipsum dignissim aliquet eget facilisis metus. Donec sagittis et neque sit amet varius. Aliquam hendrerit bibendum lacus vel euismod. Ut a ex sed neque congue aliquet vel in risus.&lt;/p&gt;&lt;br&gt;Test</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>DescriptionText2</name>
+                    <value>&lt;b &gt;Nullam&lt;/b&gt; bibendum, ligula aliquam condimentum finibus, leo est cursus orci, vitae suscipit metus libero eget ipsum. Sed at ultrices nisl. Mauris viverra purus a purus feugiat, a porta eros iaculis. Nullam bibendum, ligula aliquam condimentum finibus, leo est cursus orci, vitae suscipit metus libero eget ipsum. Sed at ultrices nisl. Mauris viverra purus a purus feugiat, a porta eros iaculis.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>DescriptionText3</name>
+                    <value>Nullam bibendum, &lt;a href=&quot;https://www.google.com&quot;&gt;ligula &lt;/a&gt; aliquam condimentum finibus, leo est cursus orci, vitae suscipit metus libero eget ipsum. Sed at ultrices nisl. Mauris viverra purus a purus feugiat, a porta eros iaculis.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>DescriptionText4</name>
+                    <value>Nullam bibendum, ligula aliquam condimentum finibus, leo est cursus orci, vitae suscipit metus libero eget ipsum. Sed at ultrices nisl. Mauris viverra purus a purus feugiat, a porta eros iaculis. Nullam bibendum, ligula aliquam condimentum finibus, leo est cursus orci, vitae suscipit metus libero eget ipsum. Sed at ultrices nisl. Mauris viverra purus a purus feugiat, a porta eros iaculis.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL1</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL2</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL3</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>RightImageURL4</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText1</name>
+                    <value>Success Stories</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText2</name>
+                    <value>Success Stories 2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText3</name>
+                    <value>Success Stories 3</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText4</name>
+                    <value>Success Stories 4</value>
+                </componentInstanceProperties>
+                <componentName>homeCarousel</componentName>
+                <identifier>homeCarousel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>406c6408-901f-4556-a83a-2d1cb74ddc03</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>718158d3-6e1d-441e-afe8-f61b563698d0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9963b53e-72c3-4649-9359-139edc36b0d5</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor page-home&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row pb-5&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;&lt;h3&gt;Australia’s leading multi-asset class crowdfunding platform&lt;/h3&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row align-items-center&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                        &lt;img src = &quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUX&amp;oid=00D2v000000WjFp&amp;lastMod=1627369200000&quot; alt=&quot;profile&quot;  /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;High growth private companies&lt;/p&gt;
+                        &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                        &lt;img src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUw&amp;oid=00D2v000000WjFp&amp;lastMod=1627369978000&quot; alt=&quot;portfolio&quot;  /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;Diversified property development funds and projects&lt;/p&gt;
+                        &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item mb-5&quot;&gt;
+                    &lt;div class=&quot;image-container me-3&quot;&gt;
+                        &lt;img src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUD&amp;oid=00D2v000000WjFp&amp;lastMod=1627368285000&quot; alt=&quot;future&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text-container&quot;&gt;
+                        &lt;p&gt;Alternative credt&lt;/p&gt;
+                        &lt;a href=&quot;#&quot;&gt;Read more&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;img class=&quot;img-fluid&quot; src=&quot;https://assets.akcelo.com/vc/uploads/2018/02/venturecrowd-how-it-works-2.jpg&quot; /&gt;
+                &lt;div class=&quot;image-caption mt-3 text-center&quot;&gt;&lt;img src=&quot;https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUc&amp;oid=00D2v000000WjFp&amp;lastMod=1627369381000&quot; alt=&quot;tick-icon&quot; border=&quot;0&quot;&gt; Every deal is subject to our rigorous curation process&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>718158d3-6e1d-441e-afe8-f61b563698d0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>c092eed4-0e80-4fdb-a719-33a8f9713995</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-623ef459-c4c7-4c0a-a589-a804ede4ce09</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>HeaderText</name>
+                    <value>How does it work?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>Dark Navy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUh&amp;oid=00D2v000000WjFp&amp;lastMod=1627369540000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>firstImgFooterText</name>
+                    <value>Register in a few minutes and we’ll take you through the ID verification process in the platform.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>footerBtnLabel</name>
+                    <value>Read More</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFVB&amp;oid=00D2v000000WjFp&amp;lastMod=1627371503000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondImgFooterText</name>
+                    <value>Invest seamlessly in high growth startups and property, via the payment method you choose. By investing directly through crowdfunding, you’re helping to  shape the future!</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImg</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000HqFUr&amp;oid=00D2v000000WjFp&amp;lastMod=1627369698000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>thirdImgFooterText</name>
+                    <value>Ventures: If the company is successful, then you share in that success. Property: Many investment opportunities yield monthly returns, others also provide profit share returns.</value>
+                </componentInstanceProperties>
+                <componentName>threeUpHome</componentName>
+                <identifier>threeUpHome2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>c092eed4-0e80-4fdb-a719-33a8f9713995</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>4b8c2a1c-9c7d-454f-b140-f63c8d3fe520</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-580a114d-baf5-4a46-8bf9-e3c92bcc7c11</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentName>vcProductListLwc</componentName>
+                <identifier>vcProductListLwc</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>4b8c2a1c-9c7d-454f-b140-f63c8d3fe520</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>7bf47ba4-e6c9-4cf9-ab7f-e803630bc25f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-92f6eb40-aa65-4e1f-9b87-e34ff3996e30</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>Our secure platform enables you to easily acesss&lt;br/&gt; high yield and socially responsible investment opportunities,&lt;br/&gt;  managed by experienced teams with deep funds management expertise.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000JOywf&amp;d=%2Fa%2F2v000000ELOS%2F4D5UeLOXCJtTOv0IajzzICB0MuOvjeYLhDqIFtwYRgw&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                    <value>Start Now</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                    <value>https://www.google.com</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>Same Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>We find and fund the future.&lt;br/&gt; A future that is good for investors,  &lt;br/&gt; founders and humanity.</value>
+                </componentInstanceProperties>
+                <componentName>vcBgImageWithText</componentName>
+                <identifier>vcBgImageWithText</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>7bf47ba4-e6c9-4cf9-ab7f-e803630bc25f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2b3c7db3-15b1-43c7-8e76-596c14478c99</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-6b883c11-4de7-48ee-a981-19ef8db9806c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Header</name>
+                    <value>Crowdfunding Equity Investment Platform in Australia</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_Name</name>
+                    <value>Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_1_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Header</name>
+                    <value>What is crowdfunding?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_Name</name>
+                    <value>What is crowdfunding?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_2_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Header</name>
+                    <value>How to promote a crowdfunding campaign?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_Name</name>
+                    <value>How to promote a crowdfunding campaign?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_3_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Header</name>
+                    <value>Is Crowdfunding worth it?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_Name</name>
+                    <value>Is Crowdfunding worth it?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label_Tab_4_ShowColumn</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>themecolor</name>
+                    <value>Dark Navy</value>
+                </componentInstanceProperties>
+                <componentName>vcHomeFaq</componentName>
+                <identifier>vcHomeFaq</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2b3c7db3-15b1-43c7-8e76-596c14478c99</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-18b30b5d-0444-46b3-b822-53719cdfaf0e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;18b30b5d-0444-46b3-b822-53719cdfaf0e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;f926b400-1f2f-40bd-b20e-613e58b027ba&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1609bf68-4a39-4efd-90ea-a803de7e16cb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1609bf68-4a39-4efd-90ea-a803de7e16cb&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;08923906-bd90-4442-89da-df3b54027e9f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>62</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-1483ae8d-d80d-4fc6-abd8-4b108943ac13</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;1483ae8d-d80d-4fc6-abd8-4b108943ac13&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;406c6408-901f-4556-a83a-2d1cb74ddc03&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>60</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9963b53e-72c3-4649-9359-139edc36b0d5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9963b53e-72c3-4649-9359-139edc36b0d5&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;718158d3-6e1d-441e-afe8-f61b563698d0&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(15,20,30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>66</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-623ef459-c4c7-4c0a-a589-a804ede4ce09</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;623ef459-c4c7-4c0a-a589-a804ede4ce09&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;c092eed4-0e80-4fdb-a719-33a8f9713995&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>59</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-580a114d-baf5-4a46-8bf9-e3c92bcc7c11</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;580a114d-baf5-4a46-8bf9-e3c92bcc7c11&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;4b8c2a1c-9c7d-454f-b140-f63c8d3fe520&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-92f6eb40-aa65-4e1f-9b87-e34ff3996e30</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;92f6eb40-aa65-4e1f-9b87-e34ff3996e30&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;7bf47ba4-e6c9-4cf9-ab7f-e803630bc25f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(15,20,30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(15, 20, 30)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>61</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-6b883c11-4de7-48ee-a981-19ef8db9806c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;6b883c11-4de7-48ee-a981-19ef8db9806c&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2b3c7db3-15b1-43c7-8e76-596c14478c99&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>_Master_LWC_Home-Template</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>_Master_LWC_Home-Template</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

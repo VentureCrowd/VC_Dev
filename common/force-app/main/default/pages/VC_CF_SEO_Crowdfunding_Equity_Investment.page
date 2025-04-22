@@ -1,0 +1,228 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+                    <div class="col-md-12 headline">
+                        <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+                        <h1 class="mt-4">
+                            
+Crowdfunding Equity Investment
+Platform in Australia</h1>
+                        <p class="mt-4">
+                            Crowdfunding has changed the way you can raise capital when starting a business venture.
+                        </p>
+                       <!-- <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-solid"> Enquire Now</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://source.unsplash.com/collection/422400/daily')"></div>
+        </section>
+        
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+Crowdfunding  </h3>
+                            <p><span style="font-weight: 400;">Crowdfunding has changed the way you can raise capital when starting a business venture. Traditionally, if you wanted to raise money to launch a new product or startup business, you would need to pitch your idea to a bank, venture capital firm or another financial institution, or approach a wealthy individual who was interested in </span><a href="{!$Label.VC_CF_Public_URL + '/vc-cf-seo-angel-investing'}"><span style="font-weight: 400;">angel investing</span></a><span style="font-weight: 400;">. Crowdfunding makes it easier for you to get your idea in front of interested parties and allow them to invest in your business with a much lower capital outlay.</span></p>  
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> What is Crowdfunding?
+ </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <p><span style="font-weight: 400;">Crowdfunding is a way for entrepreneurs to raise capital for a new business venture from a large number of individual investors who are willing to invest in your startup or idea. Rather than just finding one or two large investors, crowdfunding involves a ‘crowd’ of investors. There are a few different types of crowdfunding including donation-based crowdfunding, reward-based crowdfunding and equity crowdfunding. With donation-based crowdfunding, there is no financial gain to those providing the funds. This form of crowdfunding is often used by charities or for fundraising for disaster relief. Reward-based crowdfunding is when you receive a product or service from the startup business rather than money. Equity-based crowdfunding is where investors take equity in a business in exchange for a cash investment. </span></p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                           <p><span style="font-weight: 400;">There are several crowdfunding platforms available, each with different goals, guidelines and target markets. VentureCrowd is an equity crowdfunding platform, so rather than receiving a product or simply making a donation, if you invest in one of our deals you will receive equity or ownership in the company that is raising the capital or in the underlying property development asset. VentureCrowd is a multi-asset class crowdfunding platform that provides investors with direct access to handpicked investment opportunities in alternative assets that have traditionally been linked to specialised lenders or institutional investors. Whether you are an established business owner, an entrepreneur or a property developer, we provide alternative finance from a pool of investors across Australia. Not only will your investment come with lower fees and capital commitments, but it will also come with reduced deal complexity, and you’ll have access to alternative equity, property and credit opportunities on the same terms as professional lead investors.</span></p>
+                        </div>
+                    </div> 
+                </div>
+                
+                
+                   <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> How to promote a Crowdfunding Campaign?
+ </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                           <p><span style="font-weight: 400;">If you are raising capital and want to set up a crowdfunding campaign, you’ll need a business plan, a financial forecast so your investors know what to expect, and you’ll also need to work out how much money you want to raise. The VentureCrowd platform makes it easy to work collaboratively with our team to launch your campaign. If you are wondering how to set up a crowdfunding account, with our automated self-service platform, setting up a crowdfunding account is very straight forward. Whether you are a new startup looking to raise capital or an investor looking for investment opportunities, you can register online via our website. And if you have any questions as you go, you can get in contact with us and we’d love to help you.&nbsp;</span></p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                        <p><span style="font-weight: 400;">At VentureCrowd, we offer unrivalled exposure for your project via our leading platform. Your project can be seen by over 50 thousand investors, buyers, partners and contributors through a comprehensive multi-channel digital campaign. And after we receive all the necessary details about your project, there is a very quick turnaround. For example, we should be able to assess your property project within 48 hours. And with a dedicated campaign manager, you will get all the support you need. Through VentureCrowd you’ll have access to a large and fast-growing group of investors. It is the ideal platform to capture the attention of like-minded individuals who care about what you stand for and show them that your venture is worth investing in. We also have a range of helpful campaign services to choose from including PR and Digital Marketing. A funding round typically runs for six weeks. Once the investments have been received and the funding round is closed, we’ll transfer the funds. All the legal documentation will be taken care of via the platform too, so you can get on with making your business a success.&nbsp;</span></p>   
+                        </div>
+                    </div> 
+                </div>
+                
+                   <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> Is Crowdfunding worth it?
+ </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <p><span style="font-weight: 400;">There are many advantages of crowdfunding and using platforms like VentureCrowd. Crowdfunding gives you a wider audience which is not only a great way to raise more capital, but it also streamlines the process and will save you time. You won’t need to approach each investor individually, and you’ll only need one pitch. It is also a good way to refine your ideas as potential investors can provide useful feedback while you are developing your product or business. Your investors are also likely to give you free word-of-mouth advertising.&nbsp;</span></p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                         <p><span style="font-weight: 400;">With over $135M raised across 100 deals from wholesale investors, VentureCrowd has been successfully raising capital for over four years. Just like other countries around the world, Australia has now passed legislation to allow retail investors to participate too. This means that anyone 18 years or above who is residing in Australia can now invest in Crowd-Sourced Funding (CSF) offers. Join Australia’s leading equity crowdfunding platform today and learn more about great investment opportunities!</span></p>
+                        </div>
+                    </div> 
+                </div>
+                
+               
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </section>
+        
+        <!-- Post Footer -->
+    <!--    <section class="related">
+            <div class="container">
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-2"></div>
+                    
+                    <div class="col-md-8 pb-5 next-post-title mt-3">
+                        <h3>Learn how Venture Crowd can help you achieve your investment goals using property funds </h3>
+                        
+                        <div class="pt-5 next-post-link"> 
+                            <div class="wpb_wrapper">
+                                <p>
+                                    Explore our current opportunities along with our investing FAQs.
+                                    Feel free to give us a call on 1300 039 655 or Register today.
+                                </p>
+                                
+                            </div> 
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-2"></div>
+                </div>
+                
+                
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-5"></div>
+                    
+                    <div class="col-md-2 pb-5">
+                        
+                        <a class="button-outline-white" href="{!$Label.Investor_Community_URL}"  > Register Today </a>
+                        
+                    </div>
+                    <div class="col-md-5"></div>
+                </div>
+                
+            </div>
+            
+            <div class="next-post-bg-overlay"></div>
+            <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/Future-Connected-Signage-DK.jpg')"></div>
+        </section> -->
+        
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    
+    
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    
+    </apex:page>

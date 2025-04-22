@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="strHeading" type="String" label="Heading" description="" default="Current venture capital investments" />
+            <property name="straSupportingCopy" type="String" label="Supporting Copy" description="" default="The following are examples of current VentureCrowd venture capital investments." />
+            <property name="openVCLogoUrl" type="String" label="Open VC Logo Url" description="" default="https://assets.venturecrowd.vc/uploads/2021/03/Open-VClogo_white-300x79.png" />
+            <property name="productLogoUrl" type="String" label="Product Logo Url" description="" default="https://assets.venturecrowd.vc/uploads/2021/03/Invested.png" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

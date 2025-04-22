@@ -1,0 +1,48 @@
+.icon{
+    height: var(--text-lg);
+    width: var(--text-lg);
+}
+
+.icon-wrapper {
+    width: fit-content;
+}
+
+.icon.xsmall{
+    height: var(--text-xs);
+    width: var(--text-xs);
+}
+
+.icon.small{
+    height: var(--text-sm);
+    width: var(--text-sm);
+}
+
+.icon.medium{
+    height: var(--text-md);
+    width: var(--text-md);
+}
+
+.icon.large{
+    height: var(--text-lg);
+    width: var(--text-lg);
+}
+
+.icon.xlarge{
+    height: var(--text-xl);
+    width: var(--text-xl);
+}
+
+.icon.xxlarge{
+    height: var(--text-xxl);
+    width: var(--text-xxl);
+}
+
+
+.icon.xxxlarge{
+    height: var(--text-xxxl);
+    width: var(--text-xxxl);
+}
+
+svg {
+    overflow: visible;
+}

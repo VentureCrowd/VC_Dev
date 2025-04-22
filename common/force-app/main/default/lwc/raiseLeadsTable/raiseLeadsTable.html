@@ -1,0 +1,12 @@
+<template>
+    <c-core-data-table
+    lwc:ref="ELTable"
+    record-id={recordId}
+    columns={columns}
+    page-size={pageSize}
+    picklist-fields={picklistFields}
+    apex-method={apexGetRecords}
+    update-method={apexUpdateRecord}
+    object-name={objectName}
+    ></c-core-data-table>
+</template>

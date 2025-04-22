@@ -1,0 +1,41 @@
+<template>
+    <section class={getComponentStyleClasses}>
+      <div class="container text-center">
+        <div class="row px-3 px-lg-0">
+            <div class="col-md-12 heading">
+              <h3 class="mb-4">{strContentHeading}</h3>
+              <p class="mb-5">{strBodyCopy}</p>
+              <div class="logo"><img src={productLogoUrl}/></div>
+            </div>
+          </div>
+          <div class="row tiles px-3 px-lg-0">
+            <div class="col-lg-6 cell text-white mb-5 mb-lg-0">
+                <div class="inner-container" style={tile_1_Style}>
+                  <a target={opensInSameOrNewTab} href={Investment_Tile_1_URL} style={tile_1_url_Style}>
+                    <div class="title">{Investment_Tile_1_Headline}</div>
+              <div class="post-body">
+                {Investment_Tile_1_Body}
+              </div>
+              </a>
+              <div class="tile-bg-opacity"></div>
+              <div class="tile-bg" style={tile_1_Style}></div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 cell text-white">
+                  <div class="inner-container" style={tile_2_Style}>
+                    <a target={secondaryLinkTarget} href={Investment_Tile_2_URL} style={tile_2_url_Style}>
+                      <div class="title">{Investment_Tile_2_Headline}</div>
+                <div class="post-body">
+                  {Investment_Tile_2_Body}
+                </div>
+                </a>
+                <div class="tile-bg-opacity"></div>
+                <div class="tile-bg" style={tile_2_Style}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</template>

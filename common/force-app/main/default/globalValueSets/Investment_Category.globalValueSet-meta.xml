@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Investment</fullName>
+        <default>false</default>
+        <label>Investment</label>
+    </customValue>
+    <customValue>
+        <fullName>Contribution Fee Raised</fullName>
+        <default>false</default>
+        <label>Contribution Fee Raised</label>
+    </customValue>
+    <customValue>
+        <fullName>Contribution Fee Paid</fullName>
+        <default>false</default>
+        <label>Contribution Fee Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>Unit Trust Setup</fullName>
+        <default>false</default>
+        <label>Unit Trust Setup</label>
+    </customValue>
+    <customValue>
+        <fullName>Transfer to Deal</fullName>
+        <default>false</default>
+        <label>Transfer to Deal</label>
+    </customValue>
+    <customValue>
+        <fullName>Campaign Fee</fullName>
+        <default>false</default>
+        <label>Campaign Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest VCN to Savings</fullName>
+        <default>false</default>
+        <label>Interest VCN to Savings</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Savings to VCN</fullName>
+        <default>false</default>
+        <label>Interest Savings to VCN</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Collected</fullName>
+        <default>false</default>
+        <label>Interest Collected</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Bounce Back</fullName>
+        <default>false</default>
+        <label>Interest Bounce Back</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Paid</fullName>
+        <default>false</default>
+        <label>Interest Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>Donation</fullName>
+        <default>false</default>
+        <label>Donation</label>
+    </customValue>
+    <customValue>
+        <fullName>Success Fee</fullName>
+        <default>false</default>
+        <label>Success Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund Mgmt Fee</fullName>
+        <default>false</default>
+        <label>Fund Mgmt Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund Expense Recovery</fullName>
+        <default>false</default>
+        <label>Fund Expense Recovery</label>
+    </customValue>
+    <customValue>
+        <fullName>Loan</fullName>
+        <default>false</default>
+        <label>Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank Fee</fullName>
+        <default>false</default>
+        <label>Bank Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>BPAY Fee</fullName>
+        <default>false</default>
+        <label>BPAY Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Redemption</fullName>
+        <default>false</default>
+        <label>Capital Redemption</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual Fees</fullName>
+        <default>false</default>
+        <label>Annual Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Redemption - Return Investment (Inflow)</fullName>
+        <default>false</default>
+        <label>Capital Redemption - Return Investment (Inflow)</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Redemption - Liability Reduction (Outflow)</fullName>
+        <default>false</default>
+        <label>Capital Redemption - Liability Reduction (Outflow)</label>
+    </customValue>
+    <customValue>
+        <fullName>Capital Profit</fullName>
+        <default>false</default>
+        <label>Capital Profit</label>
+    </customValue>
+    <customValue>
+        <fullName>Interest Payout</fullName>
+        <default>false</default>
+        <label>Interest Payout</label>
+    </customValue>
+    <customValue>
+        <fullName>Performance Distribution</fullName>
+        <default>false</default>
+        <label>Performance Distribution</label>
+    </customValue>
+    <customValue>
+        <fullName>Establishment Fee</fullName>
+        <default>false</default>
+        <label>Establishment Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Capitalized Interest Paid</fullName>
+        <default>false</default>
+        <label>Capitalized Interest Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>Capitalized Interest Collected</fullName>
+        <default>false</default>
+        <label>Capitalized Interest Collected</label>
+    </customValue>
+    <masterLabel>Investment Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

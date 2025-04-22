@@ -1,0 +1,7 @@
+<aura:component implements="forceCommunity:themeLayout">
+	<ltng:require styles="/resource/overrideSLDSvfp" />
+     
+    
+    {!v.body}
+    
+</aura:component>

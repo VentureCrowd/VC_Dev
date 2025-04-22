@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+#vc_content__container section.hero {
+  min-height: 100vh;
+}
+#vc_content__container section.hero h1 {
+  font-size: 2.7em;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.hero h1 {
+    font-size: 1.65em;
+  }
+}
+#vc_content__container section.hero h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+#vc_content__container section.hero a {
+  padding: 10px 40px;
+}
+#vc_content__container section.partnerships {
+  background-color: #f7f7f7;
+}
+#vc_content__container section.partnerships .tiles .inner-container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+}
+#vc_content__container section.partnerships .tiles .inner-container .logo,
+#vc_content__container section.partnerships .tiles .inner-container .desc,
+#vc_content__container section.partnerships .tiles .inner-container .call-to-action {
+  position: relative;
+  z-index: 2;
+}
+#vc_content__container section.partnerships .tiles .inner-container .call-to-action a {
+  color: #fff;
+  font-family: "gilroysemibold";
+  display: inline-block;
+}
+#vc_content__container section.partnerships .tiles .inner-container .call-to-action a:hover {
+  text-decoration: none;
+}
+#vc_content__container section.partnerships .tiles .inner-container .desc {
+  font-size: 1.05em;
+  line-height: 1.95em;
+}
+#vc_content__container section.partnerships .tiles .inner-container .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  background-color: #000000;
+  z-index: 1;
+}
+#vc_content__container section.partnerships .tiles .partner-1 .bg-overlay {
+  opacity: 0.6;
+}
+#vc_content__container section.partnerships .tiles .partner-2 .bg-overlay {
+  opacity: 0.4;
+}
+#vc_content__container section.partnerships .tiles .partner-3 .bg-overlay {
+  opacity: 0.5;
+}
+#vc_content__container section.partner-program p {
+  font-size: 1.05em;
+  line-height: 1.95em;
+}
+#vc_content__container section.partner-program .upper .col-bg {
+  background-color: #05c5d1;
+}
+#vc_content__container section.partner-program .upper .col-bg h3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  font-family: "gilroyregular";
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.partner-program .upper .col-bg h3 {
+    position: static;
+    padding: 70px 0;
+  }
+}
+#vc_content__container section.partner-program .upper .inner-container {
+  padding: 6vw !important;
+}
+#vc_content__container section.partner-program .lower h4 {
+  font-family: "gilroysemibold";
+}
+#vc_content__container section.partner-program .lower .inner-container {
+  padding: 6vw !important;
+}
+#vc_content__container section.partner-program .lower .col-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 280px;
+}
+#vc_content__container section.access {
+  position: relative;
+}
+#vc_content__container section.access .container {
+  z-index: 3;
+  position: relative;
+}
+#vc_content__container section.access .container h2 {
+  font-size: 4em;
+}
+@media screen and (max-width: 768px) {
+  #vc_content__container section.access .container h2 {
+    font-size: 2em;
+  }
+}
+#vc_content__container section.access .container p {
+  font-family: "gilroysemibold";
+  font-size: 1.15em;
+}
+#vc_content__container section.access .container .desc {
+  font-size: 1.1em;
+  line-height: 1.75em;
+}
+#vc_content__container section.access .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+#vc_content__container section.access .bg-opacity {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: #005e89;
+  background: linear-gradient(135deg, #005e89 0%, #018c70 100%);
+  opacity: 0.8;
+}
+#vc_content__container section.contact {
+  background-color: #fafafa;
+}
+#vc_content__container section.contact p {
+  font-size: 1.1em;
+}
+#vc_content__container section.contact .form-container {
+  background-color: #fff;
+}
+#vc_content__container section.contact iframe {
+  height: 130px;
+}
+#vc_content__container section.contact #sendEmail {
+  background-color: #fff;
+  padding: 20px 40px;
+  max-width: 600px;
+  margin: 0;
+  text-align: left;
+}
+#vc_content__container section.contact #sendEmail .slds-card {
+  border: none;
+  background-color: transparent;
+}
+#vc_content__container section.contact #sendEmail .slds-card .slds-form-element {
+  margin-bottom: 2em;
+}
+#vc_content__container section.contact #sendEmail .slds-card .slds-form-element .slds-form-element__help {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+#vc_content__container section.contact #sendEmail .slds-card .slds-form-element input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc !important;
+  box-shadow: none;
+  border-radius: 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+#vc_content__container section.contact #sendEmail .slds-card b {
+  font-size: 19px;
+  margin-bottom: 5px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-weight: normal;
+  text-align: left;
+}
+#vc_content__container section.contact #sendEmail .slds-card select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+#vc_content__container section.contact #sendEmail .slds-card textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 14em;
+  border-radius: 0;
+  color: #000;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+#vc_content__container section.contact #sendEmail .slds-card button.slds-button {
+  background-color: #02c8c8;
+  color: #fff;
+  width: auto;
+  margin: 0em 0 2em 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  padding: 13px 30px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 0;
+}
+#vc_content__container section.contact #sendEmail .slds-card button.slds-button:disabled {
+  background-color: #929292;
+}

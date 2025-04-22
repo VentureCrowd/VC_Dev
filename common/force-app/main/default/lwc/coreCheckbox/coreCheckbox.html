@@ -1,0 +1,83 @@
+<template>
+    <template lwc:if={verticalRight} >
+            <div class="vertical-alignment input-wrapper">
+                <div key={item.id} for:each={values} for:item="item" class="checkbox-container">
+                    <input type ="checkbox"
+                            name ={name}
+                            data-id={item.id}
+                            value ={item.value}
+                            class={variationClass}
+                            checked ={item.checked}
+                            onchange ={handleOnChange}/>
+                    <label class="checkmark" for={item.id}>{item.label}</label>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={verticalLeft} >
+        <div class="vertical-alignment input-wrapper">
+            <div key={item.id} for:each={values} for:item="item" class="checkbox-container">
+                <label class={fontStyle} for={item.id}>{item.label}</label>
+                <input type ="checkbox"
+                        name ={name}
+                        data-id={item.id}
+                        value ={item.value}
+                        class={variationClass}
+                        checked ={item.checked}
+                        onchange ={handleOnChange}/>
+            </div>
+        </div>
+    </template>
+    
+    <template lwc:if={horizontalRight}>
+        <div class="horizontal-alignment input-wrapper" style={alignmentStyle}>
+            <div key={item.id} for:each={values} for:item="item" class="checkbox-container">
+                <input type ="checkbox"
+                        name ={name}
+                        value ={item.value}
+                        data-id={item.id}
+                        class={variationClass}
+                        checked ={item.checked}
+                        onchange ={handleOnChange}/>
+                <label class={fontStyle} for={item.id}>{item.label}</label>
+            </div>
+        </div>
+    </template>
+
+    <template lwc:if={horizontalLeft}>
+        <div class="horizontal-alignment input-wrapper" style={alignmentStyle}>
+            <div key={item.id} for:each={values} for:item="item" class="checkbox-container">
+                <label class={fontStyle} for={item.id}>{item.label}</label>
+
+                <input type ="checkbox"
+                        name ={name}
+                        value ={item.value}
+                        data-id={item.id}
+                        class={variationClass}
+                        checked ={item.checked}
+                        onchange ={handleOnChange}/>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- Subtext display (this is additional description text underneath the field) -->
+    <template if:true={subtext}>
+        <div class="subtext">
+            {subtext}
+        </div>
+    </template>
+
+    
+
+    <!-- Error message -->
+    <template if:true={displayErr}>
+        <template for:each={errorMessage} for:item="message">
+            <div class="error-message" key={message}>
+                {message}
+            </div>
+        </template>
+        
+    </template>
+
+</template>

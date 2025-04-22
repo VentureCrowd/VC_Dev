@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fully_Funded_Closed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box only when the deal is closed to further investments. This can be after being fully funded, oversubscribed or under subscribed.</inlineHelpText>
+    <label>Fully Funded Closed</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

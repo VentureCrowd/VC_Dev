@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tile_Banner__c</fullName>
+    <description>This tile banner will be used to be displayed in the Website.
+This tile banner URL will also be synched up with the Product Tile Banner Field.</description>
+    <inlineHelpText>This tile banner will be used to be displayed in the Website, please create and update the URL in this field for the Tile Banner.</inlineHelpText>
+    <label>Tile Banner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

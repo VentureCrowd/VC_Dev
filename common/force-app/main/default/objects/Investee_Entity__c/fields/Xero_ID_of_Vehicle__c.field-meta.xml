@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Xero_ID_of_Vehicle__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds the Xero ID of the Transaction</inlineHelpText>
+    <label>Xero ID of Vehicle</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

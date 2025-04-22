@@ -1,0 +1,52 @@
+<aura:component controller="SendEmailController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="name" type="String" />
+    <aura:attribute name="email" type="String" />
+    <aura:attribute name="helptext" type="String" />
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="buttondisabled" type="Boolean" default="true" />
+    <aura:attribute name="emailinfo" type="SendEmailController.EmailData" default="{}" />
+    <aura:attribute name="showspinner" type="Boolean" default="false" />
+    <aura:attribute name="showSuccess" type="Boolean" default="false" />
+	 <aura:attribute name="showError" type="Boolean" default="false" />
+    <aura:attribute name="isContactUs" type="Boolean" default="false" />
+    <aura:attribute name="usedinComunity" type="Boolean" default="true" />
+    
+    
+    <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+    
+    <aura:attribute name="options" type="List" default="[{'label': 'SELECT ONE', 'value': 'SELECT ONE'},
+                                                        {'label': 'Investing', 'value': 'Investing'},
+                                                        {'label': 'Raising capital', 'value': 'Raising capital'},
+                                                        {'label': 'Listing a property', 'value': 'Listing a property'},
+                                                        {'label': 'Private Syndicate Platform (PSP)', 'value': 'Private Syndicate Platform (PSP)'},
+                                                        {'label': 'Other', 'value': 'Other'}]"/>
+    <lightning:card>
+        <aura:if isTrue="{!v.showspinner}">
+            <lightning:spinner/>
+        </aura:if>
+        
+       
+        <b>Your Name*</b>
+        <lightning:input aura:id="name" variant="label-hidden"  required="true" type="text" value="{!v.name}"/>
+        <b>Your Email*</b>
+        <lightning:input aura:id="filed" variant="label-hidden" required="true" type="email" value="{!v.email}"/>
+        <b>What can we help you with*</b>
+        <lightning:combobox aura:id="filed" variant="label-hidden" required="true" options="{!v.options}" value="{!v.helptext}"/>
+        <b>Your Message*</b>
+        <lightning:textarea aura:id="filed" name="input1" required="true" variant="label-hidden" value="{!v.message}" />
+        <c:googleReCaptcha onverifycapthca="{!c.verifycapthca}" usedincomunity="{!v.usedinComunity}"></c:googleReCaptcha>
+        
+        <!--<lightning:input variant="label-hidden" type="text-area" value="{!v.emailinfo.message}"/>-->
+         <aura:if isTrue="{!v.showSuccess}">
+            <b>Success! Thanks for your enquiry, we’ll be in touch with you soon.</b>
+            <br/>
+        </aura:if>
+        <aura:if isTrue="{!v.showError}">
+            <b style="color:red;">Please provide all values</b>
+            <br/>
+        </aura:if>
+        <br/>
+        <lightning:button label="SEND MESSAGE" onclick="{!c.sendEmail}" disabled="{!v.buttondisabled}"></lightning:button>
+        <b> *Required field</b>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <!-- Left Section -->
+            <property name="strContentHeading" type="String" label="Content Heading" description="" default="VentureCrowd partnerships" />
+            <property name="strBodyCopy" type="String" label="Body Copy" description="" default="VentureCrowd has a strong network of partners that focus on curating impact investing opportunities and managing funds for seed stage and early stage ventures, as well as property funds and projects." />
+            <!-- <property name="productLogoUrl" type="String" label="Product Logo Url" description="" default="https://assets.venturecrowd.vc/uploads/2021/03/VCPP_logo.png" /> -->
+
+            <!-- Tile 1 Atts -->
+            <property name="Investment_Tile_1_BGImageURL" type="String" label="Investment Tile 1 Background ImageURL" description="" default="" />
+            <property name="Investment_Tile_1_Headline" type="String" label="Investment Tile 1 Headline" description="" default="" />
+            <property name="productLogoUrl1" type="String" label="Product Icon Tile 1" description="" default="" />
+            <property name="Investment_Tile_1_Body" type="String" label="Investment Tile 1 Body" description="" default="Uniseed supports innovations that solve market problems and create a positive impact for our community. Uniseed invests over a broad range of technology sectors and has exited ten investments, to date. Uniseed invests in researchers, technologies and businesses that will change the world for the better." />
+            <property name="Investment_Tile_1_URL" type="String" label="Investment Tile 1 URL" description="" default="" />
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Gray" default="White" />
+            <property name="openInSameOrNew" datasource="Same Tab, New Tab" type="String" label="Link Target 1" placeholder="Behaviour of the Link or URL" description=""/>
+
+            <!-- Tile 2 Atts -->
+            <property name="Investment_Tile_2_BGImageURL" type="String" label="Investment Tile 2 Background ImageURL" description="" default="" />
+            <property name="Investment_Tile_2_Headline" type="String" label="Investment Tile 2 Headline" description="" default="" />
+            <property name="productLogoUrl2" type="String" label="Product Icon Tile 2" description="" default="https://assets.venturecrowd.vc/uploads/2018/02/sydney-angels-logo-w.png" />
+            <property name="Investment_Tile_2_Body" type="String" label="Investment Tile 2 Body" description="" default="A not-for-profit angel investment membership organisation. That supports the early-stage ecosystem by running processes and events that connect our investing members with promising early-stage companies." />
+            <property name="Investment_Tile_2_URL" type="String" label="Investment Tile 2 URL" description="" default="" />
+            <property name="secondaryLinkSameOrNew" datasource="Same Tab, New Tab" type="String" label="Link Target 2" placeholder="Behaviour of the Link or URL" description=""/>
+           
+            <!-- Tile 3 Atts -->
+            <property name="Investment_Tile_3_BGImageURL" type="String" label="Investment Tile 3 Background ImageURL" description="" default="" />
+            <property name="Investment_Tile_3_Headline" type="String" label="Investment Tile 3 Headline" description="" default="" />
+            <property name="productLogoUrl3" type="String" label="Product Icon Tile 3" description="" default="" />
+            <property name="Investment_Tile_3_Body" type="String" label="Investment Tile 3 Body" description="" default="Homecorp Property Group is an established leader in residential urban property development and master planned communities.Homecorp has developed, sold and completed 18 major residential housing projects, grossing more than $1.5 billion in sales." />
+            <property name="Investment_Tile_3_URL" type="String" label="Investment Tile 3 URL" description="" default="" />
+            <property name="linkSameOrNew" datasource="Same Tab, New Tab" type="String" label="Link Target 3" placeholder="Behaviour of the Link or URL" description=""/>
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

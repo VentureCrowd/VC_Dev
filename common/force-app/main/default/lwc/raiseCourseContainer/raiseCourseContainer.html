@@ -1,0 +1,82 @@
+<template>
+    <template lwc:if={showFeesLocked}>
+        <div class="encouragement-popup modal">
+            <div class="modal-content">
+                <div class="lock-icon">
+                    <c-core-icon
+                    icon-name="lock" 
+                    size="xxxlarge">
+                    </c-core-icon>
+                </div>
+                <div class="modal-text">
+                    <p class="title">Oops, looks like you need to pay your fees!</p>
+                    <p>Once your establishment fee is paid and processed you will gain access to our Capital Raising 101 course and be able to kick start your raise.</p>
+                    <p>Already paid your establishment fee? Please keep in mind, fees can take up to one business day to process. </p>
+                    <p>If you have any questions please reach out <a href="mailto:ventures@venturecrowd.com.au">ventures@venturecrowd.com.au</a></p>
+                </div>
+              </div>
+        </div>
+    </template>
+
+    <template lwc:if={showWelcome}>
+        <div class="encouragement-popup modal">
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src={courseUnlockedImgUrl}/>
+                </div>
+                <div class="modal-text">
+                    <p class="title">Welcome to our Capital Raising 101 course!</p>
+                    <p>This course has been designed to equip you with everything you need to know about building a successful raise campaign so that your company can grow.</p>
+                </div>
+                <c-core-button
+                label="Lets do this!" 
+                variation="primary"
+                mode="light"
+                onbuttonclick={handleUnlockCourse}>
+                </c-core-button>
+              </div>
+        </div>
+    </template>
+
+
+
+    <div class="loading-spinner" lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <template  lwc:else>
+        <div class="liner">
+            <div class="breadcrumbs wrapper">
+                <c-core-button 
+                label="My Companies"
+                variation="tertiary"
+                mode="light"
+                onbuttonclick={returnToCompanies}
+                data-id="primary-button"
+                icon="left-chevron" 
+                icon-position="left">
+            </c-core-button>
+            </div>
+            <div class="header wrapper">
+                <h1>{title}</h1>
+                <div class="actions">
+                    <c-core-button
+                    label="Manage Live Expression of Interest"
+                    variation="secondary"
+                    onbuttonclick={navigateToEOI}>
+                    </c-core-button>
+                </div>
+            </div>
+            <div class="chevron wrapper">
+                <c-core-progress-boxes
+                    values={stepperValues}>
+                </c-core-progress-boxes>
+            </div>
+            <div class="raise-form wrapper">
+            <c-raise-capital-raising-course
+            learning-data={courseData}>
+            </c-raise-capital-raising-course>
+            </div>
+        </div>
+    
+    </template>
+</template>

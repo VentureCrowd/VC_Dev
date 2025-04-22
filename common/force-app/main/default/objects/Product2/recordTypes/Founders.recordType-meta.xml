@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Founders</fullName>
+    <active>true</active>
+    <description>Founder Products</description>
+    <label>Founders</label>
+    <picklistValues>
+        <picklist>AFSL_Licence__c</picklist>
+        <values>
+            <fullName>GSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agreement_Type__c</picklist>
+        <values>
+            <fullName>EOI Listing Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friends %26 Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Pro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bathrooms__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bedrooms__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carport_Spaces__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Compounding_Frequency__c</picklist>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fortnightly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currency__c</picklist>
+        <values>
+            <fullName>AUD</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Deal_Partner__c</picklist>
+        <values>
+            <fullName>Adrian Bunter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BlueChilli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearstate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sydney Angels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uniseed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Distribution_Type__c</picklist>
+        <values>
+            <fullName>Accruing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interest Paid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Energy_Efficiency_Star_Rating__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ensuites__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>Founder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Garage_Spaces__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Listing_Authority__c</picklist>
+        <values>
+            <fullName>Conjunctional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exclusive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale by Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set Sale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Living_Areas__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Open_Parking_Spaces__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Property_Partner__c</picklist>
+        <values>
+            <fullName>Homecorp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LJ Hooker Helensvale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Property_Type__c</picklist>
+        <values>
+            <fullName>Acreage%2FSemi Rural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apartment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>House and Land Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retirement Living</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rural Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviced Apartment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Townhouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit Block</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Villa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Ordinary Shares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Type__c</picklist>
+        <values>
+            <fullName>Fixed Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Annum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Rep_payment_structure__c</picklist>
+        <values>
+            <fullName>100%25 at settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 unconditional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 unconditional and 50%25 at slab down</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector_Personas__c</picklist>
+        <values>
+            <fullName>ARE Auckland Real Estate Management - property and Asset managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Designers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Just Launchers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Investors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prosperity Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Investors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharp Shooters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale%2FSophisticated Investors</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector__c</picklist>
+        <values>
+            <fullName>Agriculture and Farming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art and Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking and Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction and Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense and Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy and Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment and Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental and Waste Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food and Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare and Pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality and Tourism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Technology %28IT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing and Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonprofit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail and E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport and Fitness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation%2C Logistics and Mobility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Fund - Multi Stage as per IM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property - Debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property - Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property - Preference Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Bridging Round</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - IPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Pre-IPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Pre-Seed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Seed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Series A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Series B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventures - Series C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>State__c</picklist>
+        <values>
+            <fullName>ACT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Expression Of Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reserved for Display Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reserved for Put and Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reserved for builder house and land package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold Out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Term_Expiry__c</picklist>
+        <values>
+            <fullName>12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undefined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Toilets__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>CIF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSF Nominee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSF Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSP Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail IPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail MIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vest</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Interest__c</picklist>
+        <values>
+            <fullName>A Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G Class Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinary Units</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Interest_n__c</picklist>
+        <values>
+            <fullName>Convertible Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interests in a Limited Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinary Shares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preference Shares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promissory Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAFE Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secured Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Deductible Donation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Units in a MIS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>yielding__c</picklist>
+        <values>
+            <fullName>Capitalised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compounding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributions owing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No distributions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

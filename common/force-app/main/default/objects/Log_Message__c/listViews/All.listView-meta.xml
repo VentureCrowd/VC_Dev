@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Application__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Record_details__c</columns>
+    <columns>Status_Code__c</columns>
+    <columns>Source_Function__c</columns>
+    <columns>Type__c</columns>
+    <columns>Source__c</columns>
+    <columns>Stack_Trace__c</columns>
+    <columns>log_message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Error</value>
+    </filters>
+    <label>All</label>
+</ListView>

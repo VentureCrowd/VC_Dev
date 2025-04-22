@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Audience__c</fullName>
+    <label>Target Audience</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Wholesale</fullName>
+                <default>false</default>
+                <label>All Wholesale</label>
+            </value>
+            <value>
+                <fullName>All Retail</fullName>
+                <default>false</default>
+                <label>All Retail</label>
+            </value>
+            <value>
+                <fullName>EOI Leads</fullName>
+                <default>false</default>
+                <label>EOI Leads</label>
+            </value>
+            <value>
+                <fullName>Open Opportunities</fullName>
+                <default>false</default>
+                <label>Open Opportunities</label>
+            </value>
+            <value>
+                <fullName>High RFM - Wholesale</fullName>
+                <default>false</default>
+                <label>High RFM - Wholesale</label>
+            </value>
+            <value>
+                <fullName>High RFM - Retail</fullName>
+                <default>false</default>
+                <label>High RFM - Retail</label>
+            </value>
+            <value>
+                <fullName>High RFL - Wholesale</fullName>
+                <default>false</default>
+                <label>High RFL - Wholesale</label>
+            </value>
+            <value>
+                <fullName>High RFL - Retail</fullName>
+                <default>false</default>
+                <label>High RFL - Retail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

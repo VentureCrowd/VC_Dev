@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <!-- <property name="webToLeadFormId" type="String" label="Web To lead Form Id" default="" />
+            <property name="webToLeadFormName" type="String" label="Web To lead Form Name" default="" /> -->
+            <property name="webSourcePageName" type="String" label="Web Source" 
+                    default="ESNCLEER - Landing Page" />
+
+            <property name="leadSourceVal" type="String" label="Lead Source" 
+            datasource="Australian Financial Review, Database Emails,  Facebook CPC, Google AdWords, LinkedIn, Newscorp, Others, 9 News"
+                    default="Australian Financial Review" />
+
+            <property name="titleText" type="String" label="Title" placeholder="A title" description="" default="Register your Interest"/>
+            <property name="titleSubText" type="String" label="Subtitle" placeholder="A subtitle" description="" default="Register your interest and our team will be in touch"/>
+            
+            <property name="registerBtnLabel" type="String" label="register Button Label" placeholder="" description="" default="Register My Interest"/>
+
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Gray, Pink" default="White" />
+            <property name="highlightColor" type="String" label="Highlight Color" datasource="Teal, Pink" description="This is the colour of the accents and link colours" default="Teal" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

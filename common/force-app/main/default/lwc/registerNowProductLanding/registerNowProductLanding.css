@@ -1,0 +1,57 @@
+.component-container {
+    padding-top: calc(100vw * 0.1);
+    padding-bottom: calc(100vw * 0.1);
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 2em;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #000;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    padding: 14px 30px;
+    transition: all 300ms ease;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #000;
+    font-family: "Caxton-2";
+    border-radius: 30px;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: #D95BAA !important;
+    border: 2px solid #D95BAA;
+}
+
+/* Background Colors */
+.component-container.bg-white {
+    background-color: #FFF;
+}
+
+.component-container.bg-black {
+    background-color: #000;
+}
+
+.component-container.bg-gray {
+    background-color: #F0F1F2;
+}
+
+.accent-pink .button {
+    background-color: #dd5cff;
+    border: 2px solid #dd5cff;
+}
+
+.accent-pink .button:hover {
+    color: #dd5cff;
+}

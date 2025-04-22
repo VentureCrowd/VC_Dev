@@ -1,0 +1,157 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_SyndicatesCSS}"/>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-syndicates">
+      <!-- Hero -->
+      <section class="hero has-parallax-bg">
+        <div class="container">
+          <div class="row text-white mt-0 mt-md-5 py-2 py-md-5">
+            <div class="col-md-12">
+              <h1 class="mb-4 mt-5 animate-in">
+                <strong>Manage your investors </strong>with Private Syndicate Platform (PSP). VentureCrowd provides companies, syndicates and investors with an online platform to
+                aggregate investments when raising capital.
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/06/Solar-Field-GRAD.jpg')"></div>
+      </section>
+
+      <!-- Companies -->
+      <section class="companies">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-12 text-center my-0 my-md-5">
+              <h4 class="mb-4">Companies</h4>
+              <h3 class="mb-4">PSP provides companies an online deal platform, aggregated investment vehicle and private registry service when raising capital</h3>
+              <p class="mb-5">(includes shareholder documentation &amp; communication, share transfer and record)</p>
+              <a class="button-solid" href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}">Apply to raise</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Grid -->
+      <section class="info-grid py-0 pb-5 py-md-5">
+        <div class="container">
+          <div class="row align-items-center row-top">
+            <div class="col-lg-6 mb-5 mb-lg-0 animate-in" data-animation="slide" data-animation-direction="left"><img src="https://assets.venturecrowd.vc/uploads/2018/02/psp-ipad-hero-2.png" /></div>
+            <div class="col-lg-6">
+              <div class="inner-container">
+                <div class="item mb-5">
+                  <h3>Simplify the Register</h3>
+                  <p>A special purpose trust managed by our trustee and nominees. Only one entity appears on the company capitalisation table.</p>
+                </div>
+                <div class="item mb-5">
+                  <h3>Cost Effective</h3>
+                  <p>Access PSP at a fraction of the typical costs associated with aggregating and managing investors into an investment vehicle.</p>
+                </div>
+                <div class="item mb-5">
+                  <h3>Investor Verification</h3>
+                  <p>KYC &amp; AML company obligations are satisfied via the platform as investors register.</p>
+                </div>
+                <div class="item mb-5">
+                  <h3>Documentation</h3>
+                  <p>For both Companies and Investors the relevant legal documentation and associated records are generated via the platform and made accessible online.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center row-bottom">
+            <div class="col-lg-6">
+              <div class="inner-container">
+                <div class="item mb-5">
+                  <h3>
+                    Communications</h3>
+                  <p>Communications with investors are made easy and managed via the platform in a secure and personalised fashion.</p>
+                </div>
+                <div class="item mb-5">
+                  <h3>Corporate Actions</h3>
+                  <p>
+                    Associated updates to investors, register, documents and communications to both the company and investors are all managed via the single platform.</p>
+                </div>
+                <div class="item mb-5">
+                  <h3>Time</h3>
+                  <p>Associated overheads in managing the company register are released.</p>
+                </div>
+                <div class="item mb-5">
+                  <h3>Analytics and Insights</h3>
+                  <p>Report on investor actions and engagement with the company portal via VentureCrowd.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 animate-in" data-animation="slide" data-animation-direction="right"><img src="https://assets.venturecrowd.vc/uploads/2018/02/psp-ipad-hero-1.png" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Syndicates -->
+      <section class="syndicates has-parallax-bg">
+        <div class="container">
+          <div class="row align-items-center text-white py-5">
+            <div class="col-md-6 col-left animate-in">
+              <h4 class="mb-5">SYNDICATES</h4>
+              <h3 class="mb-5">PSP extends to investor groups and syndicates</h3>
+              <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-solid mb-5 mb-md-0">Enquire now</a>
+            </div>
+            <div class="col-md-6 col-right">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="item mb-5">
+                    <div class="title mb-3">Simple</div>
+                    <p>Investors receive a simple, secure and private registration for their investment.</p>
+                  </div>
+                  <div class="item mb-5">
+                    <div class="title mb-3">Secure</div>
+                    <p>
+                      The VentureCrowd PSP is built and managed to internationally recognised standards, in addition, the platform is subject to a regular penetration testing
+                      program.
+                    </p>
+                  </div>
+                  <div class="item mb-5">
+                    <div class="title mb-3">Account</div>
+                    <p>Investors can view their investment in the company, portfolio and update personal details via an easy to use online platform.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="item mb-5">
+                    <div class="title mb-3">Investor Updates</div>
+                    <p>Communications from the company are managed via the VentureCrowd platform and delivered in a clear and uniform fashion.</p>
+                  </div>
+                  <div class="item mb-5">
+                    <div class="title mb-3">Deal Access</div>
+                    <p>Investors gain access to VentureCrowd’s curated alternative asset investment opportunities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/syndicate_shrunk-1.png')"></div>
+      </section>
+    </div>
+    <!-- ./Body -->
+    
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

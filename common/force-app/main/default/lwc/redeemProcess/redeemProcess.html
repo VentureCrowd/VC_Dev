@@ -1,0 +1,73 @@
+<template>
+    <div class="slds-box slds-theme_default">
+    <div class="slds-grid slds-gutters slds-wrap">
+        <div if:false={isLoaded}>
+            <lightning-spinner 
+                alternative-text="Loading..." variant="brand">
+            </lightning-spinner>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input type="toggle" label="Redeem Amount/Quantity" message-toggle-active="Quantity"
+                data-id="toggle" onchange={handchange} message-toggle-inactive="Value">
+            </lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input type="Date" label="Date of Application" value={AppliedDate} onchange={handledateChnge}></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+            <template if:true={amountError}>
+                <div class="slds-form-element slds-has-error">
+                    <div class="slds-form-element__control">
+                        <lightning-input type="number" class="amountFld" label="Available to Redeem ($)" value={calculatedAmount} formatter="currency" step="any" disabled={disableamount} onchange={handleAmtChnge}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-form-element__help" id="error-message-id-49">{amountErrorMessage}</div>
+                </div>
+            </template>
+            <template if:false={amountError}>
+                <lightning-input type="number" class="amountFld" label="Available to Redeem ($)" value={calculatedAmount} formatter="currency" step="any" disabled={disableamount} onchange={handleAmtChnge}>
+                            </lightning-input>
+            </template>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+            <template if:true={qtyError}>
+                <div class="slds-form-element slds-has-error">
+                    <div class="slds-form-element__control">
+                        <lightning-input type="number" class="qtyFld" label="Available to Redeem (#)" value={calculatedQuantity} disabled={disableQuantity} onchange={handleQtyChnge}></lightning-input>
+                    </div>
+                    <div class="slds-form-element__help" id="error-message-id-50">{qtyErrorMessage}</div>
+                </div>
+            </template>
+            <template if:false={qtyError}>
+                <lightning-input type="number" class="qtyFld" label="Available to Redeem (#)" value={calculatedQuantity} disabled={disableQuantity} onchange={handleQtyChnge}></lightning-input>
+            </template>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input type="number"  label="Original Investment Price ($)" formatter="currency" value={itemUnitPrice} read-only="true"></lightning-input>
+       </div>
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input type="number"   label="Current Invested Price ($)" value={itemListPrice} read-only="true"></lightning-input>
+        </div>
+
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input type="number"  label="Original Invested Amount ($)" formatter="currency" value={OriginalInvestedAmount} read-only="true"></lightning-input>
+       </div>
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input type="number"   label="Original Invested Holding (#)" value={OriginalInvestedQuantity} read-only="true"></lightning-input>
+        </div>
+        
+    </div>  
+</div>
+<div>
+    <footer class="slds-modal__footer">
+        <lightning-button class="slds-m-top_small"   name="Previous" label="Previous" onclick={previousScreen}>
+        </lightning-button>
+        <lightning-button class="slds-m-top_small" variant="brand" name="Proceed" label="Proceed" onclick={handleRedeem}>
+        </lightning-button>
+
+    </footer>
+</div>
+
+
+</template>

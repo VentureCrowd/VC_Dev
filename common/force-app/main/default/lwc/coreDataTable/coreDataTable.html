@@ -1,0 +1,76 @@
+<template>
+        <div class="core-table-container">
+            <div class="loading-spinner" lwc:if={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+            </div>
+            <div class="core-table-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <template for:each={columns} for:item="column">
+                                <th key={column.fieldName}>
+                                    <div class="col-header">
+                                        {column.label}
+                                        <template if:true={column.sortable}>
+                                            <c-core-icon icon-name="sort" size="medium" data-field-name={column.fieldName} onclick={handleSort}></c-core-icon>
+                                        </template>
+                                    </div>
+                                </th>
+                            </template>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template lwc:if={noData}>
+                            <div class="no-data">
+                                No records found
+                            </div>
+                        </template>
+                        <template for:each={data} for:item="row" lwc:else>
+                            <tr key={row.Id}>
+                                <template for:each={row.cols} for:item="column">
+                                    <td key={column.fieldName} style={column.colWidth}>
+                                        <template lwc:if={column.isInput}>
+                                            <c-core-input
+                                            name={column.inputName}
+                                            value={column.value}
+                                            selected-option={column.value}
+                                            type={column.inputType}
+                                            record-id={column.recordId}
+                                            options={column.inputSelectOpts}
+                                            onchange={handleInputChange}
+                                            ></c-core-input>
+                                        </template>
+                                        <div lwc:else>
+                                            {column.value}
+                                        </div>
+
+                                    </td>
+                                </template>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+               
+                <div class="button-prev">
+                    <c-core-button 
+                    label="Previous" 
+                    onbuttonclick={handlePrevious} 
+                    variation="black"
+                    lwc:if={showPrevious}
+                    ></c-core-button>
+                </div>
+                <div class="button-next">
+                    <c-core-button 
+                    label="Next" 
+                    onbuttonclick={handleNext} 
+                    variation="black"
+                    lwc:if={showNext}
+                    ></c-core-button>
+                </div>
+               
+            </div>
+        </div>
+            
+</template>

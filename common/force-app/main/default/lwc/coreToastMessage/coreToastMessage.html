@@ -1,0 +1,33 @@
+<template>
+    <div class={containerClass}>
+        <div class="content">
+            <div class='icon-container'>
+                <c-core-icon
+                icon-name={iconName}
+                width="50"
+                height="50"
+                ></c-core-icon>
+            </div>
+            <div class="text">
+                <div class="title">
+                    <h2>
+                        {title}
+                    </h2>
+                </div>
+                <div class="body">
+                    <slot name="body"></slot>
+                </div>
+            </div>
+        </div>
+        <slot name="actions">
+            <div class="close-action">
+                    <c-core-icon
+                    icon-name="close"
+                    size="xx-large"
+                    onclick={handleClose}
+                    >
+                    </c-core-icon>
+            </div>
+        </slot>
+    </div>
+</template>

@@ -1,0 +1,42 @@
+<template>
+    <section class="hero">
+        <div class="container">
+            <div class="row py-0 py-lg-5 align-items-center">
+                <div class="col-md-12 py-0 py-lg-5">
+                    <p class="mb-0">Category</p>
+                    <h1> {currentcategory} </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <template if:true={newsBlogList} for:each={newsBlogList} for:item="newsBlog"
+                    for:index="index">
+                    <div class="article col-lg-3 col-sm-6 mb-4" key={newsBlog.Id}>
+                        <div class="inner-container">
+                            <a href={newsBlog.Navigation_url__c} class="post-link">
+                                <div class="featured-image">
+                                    <div class="meta">
+                                        {newsBlog.News_Category__c}
+                                    </div>
+                                    <img src={newsBlog.Newsbg_Url__c} class="img-fluid" alt="" title=""/>
+                                </div>
+                                
+                                <div class="post-body p-5">
+                                    <div class="date">
+                                        {newsBlog.fromattedDate}
+                                    </div>
+                                    <h3 class="title my-3">{newsBlog.News_Label__c}</h3>
+                                    <div class="excerpt">{newsBlog.News_Descriptions__c}</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+</template>

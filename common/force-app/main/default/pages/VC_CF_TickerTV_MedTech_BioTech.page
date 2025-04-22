@@ -1,0 +1,316 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section  class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+
+                            <a href="#">Ticker INVEST</a>
+                            <a href="#">MedTech</a>
+                            <a href="#">BioTech</a>
+                        </div>
+                        <h1 class="mt-4">The Growth of MedTech and BioTech in Australia</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JOMiG&d=%2Fa%2F2v000000EJpl%2FuVTIyv6eS8N8PTYypx0DfxZOhtsKAKyQ.zApylaDNYQ&asPdf=false');min-height: 77vh;"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h2>VentureCrowd CEO Steve Maarbani spoke to Ticker INVEST about the growth of Medtech and Biotech
+                                in Australia.</h2>
+
+                            <p>
+                                <strong>
+                                    Watch the recording of the interview below.</strong>
+                            </p>
+                            <div class="fluid-video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/TQ2FlSo62xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                            
+
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h2>Short on time? Here's the summary:</h2>
+                            </div>
+
+                            <br/>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    <b>Biotech</b> Biotech is short for biotechnology, which is technology that utilizes
+                                    <b>biological</b> systems and living organisms to develop or create different products.
+
+
+                                </li>
+                                <li> It includes things like producing new drugs, gene therapy, and molecular diagnosis.
+                                </li>
+                                <li>
+                                    The COVID vaccine is a good example of Biotech and which is a very important topic for Australia and the world.
+                                </li>
+
+                            </ul>
+
+                            <p>
+                                <strong>
+                                    Why Australia is well suited to become a medtech and biotech leader.
+                                </strong>
+                            </p>
+
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    Australia has a long and proud history as a global leader in medical innovation.
+                                </li>
+                                <li>
+                                    <b>Australia</b> is considered to be among the
+                                    <b>top 5 countries for Biotechnology</b> in the world ahead of countries like the United
+                                    Kingdom and Germany.
+                                </li>
+                                <li>
+                                    Some of the more well known examples of Australian medical innovation that have become globally relevant are the pacemaker,
+                                    the cochlear implant, and spray-on skin for burn victims, which were all invented in
+                                    Australia.
+                                </li>
+                                <li>
+                                    We also have some of the best research universities in the world including the University of Queensland, Sydney and Melbourne
+                                    - as well as the globally recognised CSIRO, and scores of other medical research organisations
+                                    working on the development of new medical and biotechnologies every day. </li>
+                                <li>
+                                    There are some very strong venture capital firms investing in these innovations as are we at VentureCrowd. </li>
+                                <li>
+                                    The government is right behind this sector with a number of very supportive tax and policy measures. </li>
+                                <li>
+                                    Industry, research, and government support are creating really fertile ground for the growth of the biotech and medtech sectors
+                                    into the future, which is great news for the country and also great news for investors.
+                                    </li>
+                            </ul>
+
+                            <p>
+                                <strong>
+                                    How the government is incentivising investment into biotech and medtech.</strong>
+                            </p>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    There are a number of government programs - at the state and federal levels - designed to fuel the biotech and medtech sectors.
+                                </li>
+                                <li>
+                                    There are too many to list them all now, but some of the highlights are: </li>
+                                <li>
+                                    <b>Early stage innovation company</b> (ESIC) tax concessions which provide a 20% tax deduction
+                                    for investors when they invest in early stage innovation companies and when you sell
+                                    your investment it is capital gains tax free. The majority of biotech and medtech companies
+                                    at the early stages will be eligible for this tax concession, so that’s definitely worth
+                                    looking out for.
+                                </li>
+                                <li>
+                                    There’s also the PatentBox program which was announced in this week’s budget, which reduces tax on income earned from new
+                                    medical and biotech patents developed in Australia to 17%.
+                                </li>
+                                <li>
+                                    There are also R&amp;D tax concessions and a number of grants available at both the national and the state levels. </li>
+                                <li>
+                                    In addition to that, the Commonwealth government has also established the
+                                    <b>BioMedical Translation Fund</b> which is a $500 million fund which co-invests into biotech
+                                    alongside private venture capital funds.
+                                </li>
+                                <li>
+                                    There’s no doubt Australia is well placed to continue to be a global leader in medtech and biotech and through the recent
+                                    budget, the government continues to be very supportive of that vision.
+                                </li>
+                            </ul>
+
+                            <p>
+                                <strong>
+                                    Industry standouts.</strong>
+                            </p>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    Two examples of Australian companies we think are standouts are ESN Cleer and Cardihab.
+                                </li>
+                                <li>
+                                    <b>ESN</b> Cleer is a heart failure diagnostic device company.
+                                </li>
+                                <li>
+                                    Its technology enables patients to predict and prevent heart failure with over 90% accuracy.
+                                </li>
+                                <li>
+                                    It is patent protected and is currently raising money to fund its planned roll out in the US later this year.
+                                </li>
+                                <li>
+                                    <b>Cardihab</b> is a digital health company that supports patients at risk of, or living
+                                    with, heart disease. </li>
+                                <li>
+                                    It provides cardiac rehabilitation on your phone, which means a very important healthcare service is available to more people
+                                    more cost effectively and, because it is digital, more flexible.
+                                </li>
+                                <li>
+                                    There are some very strong investors in the company including UniSeed, CSIRO and Artesian.
+                                </li>
+                                <li>
+                                    The company is currently raising money to ramp up sales in Australia.
+                                </li>
+                                <li>
+                                    Both ESN Cleer and Cardihab are featured on the VentureCrowd platform, so if investors are interested they can find the details
+                                    on the VentureCrowd website.
+                                </li>
+                            </ul>
+
+
+                           
+                            <h4>
+                                Find out more about VentureCrowd’s investment opportunities
+
+                            </h4>
+                            <br/>
+                            <div class="post-body-rich-text text-left mt-5">
+                                <a target="_top" href="https://www.venturecrowd.com.au/s/invest" style="margin-top: -20px;">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'/blog/invest-in-property-without-buying'}">
+                <div class="container">
+                    <div class="row text-center py-5 text-white">
+                        <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                        <div class="col-md-12 pb-5 next-post-title mt-3">
+                            <h3>How to invest in the property market without buying a property</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-post-bg-overlay"></div>
+                <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/03/Propertyv3.jpg')"></div>
+            </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

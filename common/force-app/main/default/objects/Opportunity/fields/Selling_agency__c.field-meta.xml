@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selling_agency__c</fullName>
+    <label>Selling agency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VCPP</fullName>
+                <default>false</default>
+                <label>VCPP</label>
+            </value>
+            <value>
+                <fullName>HomeCorp</fullName>
+                <default>false</default>
+                <label>HomeCorp</label>
+            </value>
+            <value>
+                <fullName>Colin Moore</fullName>
+                <default>false</default>
+                <label>Colin Moore</label>
+            </value>
+            <value>
+                <fullName>LJ Hooker Aspley</fullName>
+                <default>false</default>
+                <label>LJ Hooker Aspley</label>
+            </value>
+            <value>
+                <fullName>LJ Hooker Gold Coast</fullName>
+                <default>false</default>
+                <label>LJ Hooker Gold Coast</label>
+            </value>
+            <value>
+                <fullName>Colliers Toowoomba</fullName>
+                <default>false</default>
+                <label>Colliers Toowoomba</label>
+            </value>
+            <value>
+                <fullName>Pascal Pierre</fullName>
+                <default>false</default>
+                <label>Pascal Pierre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,278 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-seo-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-left justify-content-center">
+                    <div class="col-md-12 headline">
+                        <!-- <div class="tags-container"><a href="#">Concious Investing</a><a href="#">Ticker INVEST</a></div>-->
+                        <h1 class="mt-4"> 
+                            Syndicate Investing Australia </h1>
+                        <p class="mt-4">
+                            
+                            Syndicate Investing Australia
+                            Crowdfunding equity investment platform, VentureCrowd, provides opportunities for syndicate investing, allowing individuals to pool resources into a single investment.
+                        </p>
+                        <a href="{!$Label.VC_CF_Register_Symphony}" class="button-solid"> Register Today </a>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/04/Indoor-FoodTech-GRAD.jpg')"></div>
+        </section>
+        
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                
+                                Syndicate Investing </h3>
+                            
+                            <div class="wpb_wrapper">
+                                <div class="wpb_wrapper">
+                                    <p><span style="font-weight: 400;">Are you interested in finding out more about syndicate investing? VentureCrowd provides syndicates, companies, and investors with an online private syndicate platform (PSP) to aggregate investments when raising capital. VentureCrowd is an equity </span><a href="https://www.venturecrowd.com.au"><span style="font-weight: 400;">crowdfunding</span></a><span style="font-weight: 400;"> platform, so rather than receiving a product or simply making a donation, investors will receive equity or ownership in the company that is raising the capital or in the underlying property development.</span><span style="font-weight: 400;"><br/>
+                                        </span></p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> What is a syndicate investment? </h3>
+                            
+                            <div class="wpb_wrapper">
+                                <p><span style="font-weight: 400;">A syndicate investment is where a group of individuals or businesses pool their resources to make one single investment, often in a property or group of properties. Syndicate investing allows individual investors to co-invest with others to lessen the risk and invest in something bigger and better than they would otherwise be able to do.&nbsp;</span></p>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> What are the advantages of syndicate investment? </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">There are several benefits of syndicate investing. By being able to invest with smaller amounts of capital makes it easier to diversify your investments by spreading your investment across different syndicates which helps minimise the risks. For investors, it allows them to discover investment opportunities in startups and property that they may not have otherwise discovered or been able to afford to invest in. If you have less experience as an investor, investing in a syndicate allows you to tap into the knowledge and experience of others with who you are co-investing with and they can provide you with valuable advice. One advantage for startups involved in syndicate investing is that it allows them access to more capital and it also means rather than negotiating with different investors they can raise their money through one body.&nbsp;</span></p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                 <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3> 
+                                
+                                What should you consider before a syndicate investment? </h3>
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <p><span style="font-weight: 400;">There are many factors that you’ll need to consider before investing in a syndicate. Firstly, you’ll need to look at your financial situation and see how much money you can afford to invest. This will depend on your savings, expenses, income, and other debt amongst other things. You’ll need to then work out the time period you would like to invest your money for and what your end goals are. Once you have determined this, you’ll be in a better position to look at the different syndicate investing opportunities that are available and choose the financial strategy that is best for your situation. Other factors to consider include the level of risk you are willing to take, how the investment is structured, the experience of the property syndicate management team and whether they have undertaken the appropriate due diligence.</span></p>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h3>What does a property syndicate invest in?
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-12">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <div class="wpb_wrapper">
+                                
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">As the name suggests, a property syndicate is a syndicate that invests in real estate. The pooling of capital into </span><a href="https://www.venturecrowd.com.au/s/property/funds"><span style="font-weight: 400;">property funds</span></a><span style="font-weight: 400;"> means investors have the opportunity to invest in a property that may otherwise be unaffordable for them to invest directly. From commercial, industrial, retail properties or residential properties to a single property or group of properties, there are many different </span><a href="https://www.venturecrowd.com.au/property"><span style="font-weight: 400;">property investing</span></a><span style="font-weight: 400;"> opportunities available.&nbsp;</span></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">Using an online platform such as VentureCrowd makes this assessment process much easier and you’ll have greater confidence that you’ll be investing in a quality investment. To be able to raise capital through VentureCrowd, a company or property developer needs to first have its own external professional lead investor. VentureCrowd doesn’t just allow any syndicate investment to be listed on the platform, but each deal is subject to a rigorous curation process and we only work with companies that have undergone due diligence.</span></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">As an investor, you’ll receive a private registration for your investment that will give you secure access to an easy to use online platform. Here you’ll be able to view your portfolio. Communication from the company you have invested in will be delivered clearly via the platform. Investors will also have access to other curated alternative asset investment opportunities. As a company looking to raise capital, you’ll be able to access PSP at a fraction of the costs that are usually associated with aggregating and managing investors into an investment vehicle. And whether you are a company or an investor, the related legal documentation and associated records will be generated via the platform and made available online.&nbsp;</span></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">If you would like to be involved in syndicate investing, crowdfunding equity investment platform VentureCrowd provides syndicates, investors, and companies with a Private Syndicate Platform (PSP) to aggregate investments when raising capital. Our online platform is built to internationally recognised standards and is subjected to a regular penetration testing program. Supporting the most exciting property developments, startups, and high growth companies, VentureCrowd, focuses on making principal investments and managing funds for early-stage and seed-stage ventures. With over $140M raised across 100 deals from wholesale investors, VentureCrowd has been successfully raising </span><a href="https://www.venturecrowd.com.au/s/venture-capital"><span style="font-weight: 400;">venture capital</span></a><span style="font-weight: 400;"> for over 4 years, and with Australia passing legislation to allow retail investors to participate as well, now anyone residing in Australia, 18 years of age or older can invest in CSF offers. Whether you need </span><a href="https://www.venturecrowd.com.au/s/venture-capital/sydney"><span style="font-weight: 400;">venture capital venture in Sydney</span></a><span style="font-weight: 400;">, </span><a href="https://www.venturecrowd.com.au/s/venture-capital/brisbane"><span style="font-weight: 400;">venture capital in Brisbane</span></a><span style="font-weight: 400;"> or </span><a href="https://www.venturecrowd.com.au/s/venture-capital/melbourne"><span style="font-weight: 400;">venture capital in Melbourne</span></a><span style="font-weight: 400;">, VentureCrowd can help.</span></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="divider-wrap" data-alignment="default"><div style="height: 12px;" class="divider"></div></div>
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <p><span style="font-weight: 400;">If you would like any further information about syndicate investing or would like to find out more about VentureCrowd, you can contact us on <a href="tel:1300039655">1300 039 655</a>, send an email to </span><a href="mailto:hello@venturecrowd.com.au"><span style="font-weight: 400;">hello@venturecrowd.com.au</span></a><span style="font-weight: 400;"> or get in touch online. We’d be happy to answer any of your questions.</span></p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                
+               
+                
+            </div>
+        </section>
+        
+        <!-- Post Footer -->
+        <!--  <section class="related">
+<div class="container">
+<div class="row text-center py-5 text-white">
+<div class="col-md-2"></div>
+
+<div class="col-md-8 pb-5 next-post-title mt-3">
+<h3> Be part of something bigger and build your wealth as Australia grows and expands. </h3>
+
+<div class="pt-5 next-post-link"> Join VentureCrowd, one of the fuss-free investment property companies offering ground floor access to lucrative property investment opportunities throughout the country. 
+
+
+</div>
+</div>
+
+
+<div class="col-md-2"></div>
+</div>
+
+
+<div class="row text-center py-5 text-white">
+<div class="col-md-5"></div>
+
+<div class="col-md-2 pb-5">
+
+<a class="button-outline-white" href="{!$Label.VC_CF_Public_URL}"  > Register Today </a>
+
+</div>
+<div class="col-md-5"></div>
+</div>
+
+</div>
+
+<div class="next-post-bg-overlay"></div>
+<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/10/Cornerstone-Village-LT.jpg')"></div>
+</section> -->
+        
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    
+    
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    
+    
+    </apex:page>

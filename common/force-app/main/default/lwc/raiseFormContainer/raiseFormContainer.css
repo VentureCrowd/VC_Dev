@@ -1,0 +1,71 @@
+.wrapper{
+    padding: 0 var(--space-xxl);
+}
+
+
+.raise-form.wrapper {
+    padding-bottom: var(--space-xxl);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    font-size: var(--text-xxxl);
+}
+
+
+.breadcrumbs{
+    padding-bottom: var(--space-lg);
+    padding-top: var(--space-lg);
+}
+
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+}
+
+.chevron.wrapper{
+    padding-top: var(--space-xl);
+}
+
+ul.field-error-list{
+    list-style: disc;
+    padding-left: var(--space-md);
+}
+
+li.field-error-item{
+    cursor: pointer;
+}
+
+/* Banner styling */
+
+.banner-warning-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #C6BEFA;
+}
+
+.banner-warning-container .content {
+    display: flex;
+    gap: var(--space-sm);
+    flex-direction: row;
+}
+
+.banner-warning-container .content p{
+    margin: 0px;
+}
+
+.banner-warning-container .content p.bold{
+    font-family: 'SuisseIntl-Bold' !important;
+}

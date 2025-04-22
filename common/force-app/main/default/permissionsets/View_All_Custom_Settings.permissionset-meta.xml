@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This PS is created for SMS Magic app to fun correctly. Due to new SF SP release 2020, The integration broke</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>View All Custom Settings</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewAllCustomSettings</name>
+    </userPermissions>
+</PermissionSet>

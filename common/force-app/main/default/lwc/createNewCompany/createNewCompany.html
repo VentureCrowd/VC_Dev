@@ -1,0 +1,66 @@
+<template>
+    <div class="slds-grid slds-wrap slds-grid_align-spread">
+        <div class="slds-medium-size_8-of-12">
+            <h2 class="vc-font-suisseIntlRegular vc-heading">{pageHeader}</h2>
+        </div>
+        <!-- button to create new company -->
+        <div class="slds-medium-size_4-of-12 slds-text-align_right slds-col_bump-left">
+            <button title="Create Now" type="button" onclick={showpopup} class="special">Create new company</button>
+        </div>
+    </div>
+    <!-- Create new company model start -->
+    <template if:true={popup}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <lightning-spinner alternative-text="Loading" size="small" if:true={showspinner}></lightning-spinner>
+            <!-- create new company form start here-->
+            <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <h2 class="vc-font-suisseIntlRegular vc-heading">We're keen to hear more about your company</h2>
+                    <p style="font-size: 18px">Once we gain a bit more information we can help you get started in creating an expression of interest page to garner interest in your company.</p>
+                    <div>
+                        <div class="slds-col slds-size_2-of-2">
+                            <lightning-input data-id="Name" name="Name" class="fix_margin" type="text" label="Full legal name of company*" required onchange={handleChange}></lightning-input>
+                            <div>
+                                <fieldset class="slds-form-element">
+                                    <label>Is your company registered in Australia?*</label>
+                                    <div class="slds-form-element__control">
+                                        <span class="slds-radio" style="display: inline-block">
+                                            <input type="radio" id="radio-59" value="yes" name="default" checked onchange={handleRadioSelection} />
+                                            <label class="slds-radio__label" for="radio-59">
+                                                <span class="slds-radio_faux"></span>
+                                                <span class="slds-form-element__label">Yes</span>
+                                            </label>
+                                        </span>
+                                        <span class="slds-radio" style="display: inline-block">
+                                            <input type="radio" id="radio-60" value="no" name="default" onchange={handleRadioSelection} />
+                                            <label class="slds-radio__label" for="radio-60">
+                                                <span class="slds-radio_faux"></span>
+                                                <span class="slds-form-element__label">No</span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <div if:true={notAusBasedCompany}>
+                                        <p class="notAusBasedCompany">We currently only raise capital for companies registered in Australia.</p>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <lightning-input data-id="Website" name="Website" class="fix_margin" type="text" label="Company website*" required onchange={handleChange}></lightning-input>
+                            <lightning-combobox data-id="Sector__c" name="Sector__c" class="countryPicklist fix_margin" label="Sector*" options={sectorOptions} value={sectorValue} type="button" onchange={handleChange}></lightning-combobox>
+                            <lightning-input data-id="ACN__c" name="ACN__c" max-length="14" class="fix_margin" type="text" label="ABN*" required onchange={handleChange}></lightning-input>
+                        </div>
+                        <!-- save and cancel button  -->
+                        <div class="slds-no-flex">
+                            <div class="slds-text-align_right">
+                                <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeppup}>Cancel</button>
+                                <button class="slds-button slds-button_brand" onclick={createCompany} disabled={disableSaveBtn}>Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- create new company form ends here-->
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+    <!-- Create new company model end -->
+</template>

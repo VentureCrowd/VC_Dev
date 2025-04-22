@@ -1,0 +1,17 @@
+<design:component >
+    <design:attribute name="nextButtonLabel1" label="Next Button Label 1" default="Next"/>
+    <design:attribute name="nextButtonLabel2" label="Next Button Label 2" default="Next"/>
+
+    <design:attribute name="nextButtonClass1" label="Next Button Class 1" default="slds-button_brand"/>
+    <design:attribute name="nextButtonClass2" label="Next Button Class 2" default="slds-button_brand"/>
+    <design:attribute name="showNextButton1" label="Show Next Button 1?" default="true"/>
+    <design:attribute name="showNextButton2" label="Show Next Button 2?" default="false"/>
+    <design:attribute name="previousButtonLabel" label="Previous Button Label" default="Previous"/>
+    <design:attribute name="previousButtonClass" label="Previous Button Class" default="slds-button_neutral"/>
+    <design:attribute name="showPreviousButton" label="Show Previous Button?" default="false"/>
+    
+    <design:attribute name="buttonLocation" label="Button Location? (left, middle, right)" default="right"/>
+    <design:attribute name="buttonClick" label="Button Click (for output use only)" />
+    <design:attribute name="onFinalPage" label="On Final Page?" default="false"/>
+
+</design:component>

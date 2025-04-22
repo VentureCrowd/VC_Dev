@@ -1,0 +1,125 @@
+<template>
+    <!-- Section for header -->
+    <div class="sxsw-header">
+        <c-sxsw-navbar></c-sxsw-navbar>
+    </div>
+    <div class="sxsw-container">
+        <div class="sxsw-banner">
+            <div class="container-left">
+                <div class="content">
+                    <h1>
+                        INVEST IN THE FUTURE
+                    </h1>
+                    <p class="subtitle">
+                        Discover Game-Changing Startups Poised for Global Impact
+                    </p>
+                    
+                    <template lwc:if={isMobileView}>
+                        <c-core-icon
+                        icon-name="sxswArrow"
+                        height="100"
+                        width="50"
+                        onclick={handleScrollToEOIs}
+                        ></c-core-icon>
+                    </template>
+                    <template lwc:else>
+                        <c-core-icon
+                        icon-name="sxswArrow"
+                        height="130"
+                        width="50"
+                        onclick={handleScrollToEOIs}
+                        ></c-core-icon>
+                    </template>
+
+                </div>
+            </div>
+            <div class="container-right" style={backgroundStyle}>
+                <div class="content">
+                    <div class="star">
+                        <template lwc:if={isMobileView}>
+                            <c-core-icon
+                            icon-name="sxswStar"
+                            height="88"
+                            width="88"
+                            no-pointer
+                            ></c-core-icon>
+                        </template>
+                        <template lwc:else>
+                            <c-core-icon
+                            icon-name="sxswStar"
+                            height="159"
+                            width="159"
+                            no-pointer
+                            ></c-core-icon>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="sxsw-product-container" data-id="sxsw-product-container">
+            <div class="sxsw-search-container">
+                <!-- <c-core-search></c-core-search> -->
+                 <c-core-input
+                 name="productSearch"
+                 type="text"
+                 placeholder="Search for a startup"
+                 onchange={handleSearchChange}
+                 value={searchValue}
+                 disabled={isLoading}
+                 icon-name="utility:search"
+                 icon-position="right">
+                </c-core-input>
+            </div>
+            <div class="sxsw-cards-container">
+                <div class="investment-wrapper">
+                    <template lwc:if={isLoading}>
+                        <c-core-loading-spinner></c-core-loading-spinner>
+                    </template>
+                    <template lwc:else>
+                        <template lwc:if={cardExists}>
+                            <div class="card-grid">
+                                <template for:each={productCards} for:item="card">
+                                    <div class="sxsw-product-card" key={card.id}>
+                                        <c-product-offer-card
+                                            company-name={card.tileHeading}
+                                            company-one-liner={card.companyOneLiner}
+                                            banner-url={card.bannerURL}
+                                            industry-type={card.industryType}
+                                            investment-type={card.investmentType}
+                                            logo-url={card.logoURL}
+                                            status={card.statusMessage}
+                                            deal-page-link={card.dealPageLink}
+                                            is-eoi
+                                            banner-auto={card.bannerAuto}>
+                                        </c-product-offer-card>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                        <template lwc:else>
+                            <p class="cards-not-found"> No EOI's found. </p>
+                        </template>
+                    </template>
+                </div>
+
+                
+            </div>
+        </section>
+        
+        <div class="sxsw-form-container" data-id="formContainer">
+            <div class="sxsw-content">
+                <c-core-lead-form
+                data-id="sxsw-form-ele"
+                form-title="JOIN VENTURECROWD"
+                form-subtext="Fuel Innovation as an Investor or Founder"
+                button-label="Get Started"
+                success-message="Thank you for submitting your interest in VentureCrowd!"
+                onleadcreated={handleLeadCreated}
+                onleadnotcreated={handleLeadNotCreated}
+                ></c-core-lead-form>
+             </div>
+            
+        </div>
+    </div>
+</template>

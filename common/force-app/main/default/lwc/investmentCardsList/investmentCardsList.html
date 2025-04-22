@@ -1,0 +1,13 @@
+<template>
+    <h2 class="slds-text-heading_medium slds-p-bottom_small">Pending Investments ({numerator}/{denominator})</h2>
+    <div class="slds-grid slds-gutters slds-wrap">
+        <template if:true={showinvlst} for:each={showinvlst} for:item="inv" for:index="index">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-2 slds-m-bottom_medium" key={inv.Id}>
+                <c-investment-card investment={inv}> </c-investment-card>
+            </div>
+        </template>
+    </div>
+    <template if:true={showMore}>
+        <button class="slds-button slds-button_brand" onclick={showmorerec}>Show More</button>
+    </template>
+</template>

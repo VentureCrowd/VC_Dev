@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRC_Eligible_Commission__c</fullName>
+    <formula>Case(StageName, 
+&quot;Why Appt Set Pending&quot; , 0, 
+&quot;Decision Appt Set Pending&quot;,  CRC_Assigned__r.CRC_Commission__c ,
+&quot;Closing Pending&quot;, CRC_Assigned__r.CRC_Commission__c, 
+&quot;Application Received&quot;, CRC_Assigned__r.CRC_Commission__c, 
+&quot;Receipt Issued&quot;, CRC_Assigned__r.CRC_Commission__c,
+&quot;Closed Lost&quot;, 0, 
+&quot;Closed Won&quot;, CRC_Assigned__r.CRC_Commission__c, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CRC Eligible Commission</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

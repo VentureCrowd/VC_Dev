@@ -1,0 +1,149 @@
+<template>
+    <lightning-spinner alternative-text="Processing" size="large" if:true={showspinner}></lightning-spinner>
+    <div class="slds-box">
+        <div class="slds-text-heading_large slds-align_absolute-center">Investing Product</div>
+        <div class="slds-grid slds-gutters" style=" padding:70px">
+            <div class="slds-col slds-size_1-of-2">
+                <c-dynamic-lookup-search-l-w-c record-label="Name" object-api-name="Product2"
+                    icon-name="standard:products" selected-value={selectedProductValue}
+                    onproductchange={handleProductChange} selected-record-id={selectedProductId} rec-id={recordId}>
+                </c-dynamic-lookup-search-l-w-c>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="toggle" label="Select an option to invest" message-toggle-active="Value"
+                            data-id="toggle" onchange={handchange} message-toggle-inactive="Quantity">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="toggle" label="Total Payment includes Contribution Fee?"
+                            message-toggle-active="Yes" if:true={showContFee} data-id="contributionfee"
+                            onchange={handchange} message-toggle-inactive="No">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" label="Investment Amount" value={amount} onblur={handchange}
+                            formatter="currency" data-id="invAmnt" step=".01" disabled={disableamount}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" label="Quantity" value={quantity} onblur={handchange}  data-id="invQty"
+                            disabled={disablequantity}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" label="Sales Price" value={salePrice} onblur={handchange}
+                            formatter="currency" data-id="salprice" step=".01">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" label="Investor Contribution Fee" formatter="percent-fixed"
+                            maxlength="3" data-id="InvesterFee" onblur={handchange}
+                            value={InvestorContributionFeeFinal}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="toggle" label="Would you like to Donate to the Smith Family?"
+                            message-toggle-active="Yes" data-id="toggletrust" onchange={handchange}
+                            message-toggle-inactive="No">
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" label="Donation Amount" value={donationAmount}
+                            onchange={handchange} data-id="donationAmount" formatter="currency" step=".01"
+                            >
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-2" style="background: #16325c;">
+                <div class="slds-text-color_inverse-weak">
+                    <div class="slds-text-heading_medium slds-align_absolute-center">ORDER ESTIMATE</div>
+                    <br/>
+                    <br/>
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                        aria-label="Example table of Opportunities with vertical borders">
+                        <!-- <thead>
+                            <tr class="slds-line-height_reset">
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Opportunity Name">Header-1</div>
+                                </th>
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" title="Account Name">Header-2</div>
+                                </th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr class="slds-hint-parent">
+                                <th data-label="QUANTITY" scope="row">Quantity (#)</th>
+                                <td>
+                                    <lightning-formatted-number minimum-fraction-digits=0 maximum-fraction-digits=0 value={finQuantity}>
+                                    </lightning-formatted-number>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <th data-label="QUANTITY" scope="row">Investment Value</th>
+                                <td>
+                                    $<lightning-formatted-number minimum-fraction-digits=2 maximum-fraction-digits=2 value={finOrdrValue} >
+                                    </lightning-formatted-number>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <th data-label="QUANTITY" scope="row">Contribution Fees</th>
+                                <td>
+                                    $<lightning-formatted-number minimum-fraction-digits=2 maximum-fraction-digits=2 value={totalContributionFee} >
+                                    </lightning-formatted-number>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <th data-label="QUANTITY" scope="row">Donation</th>
+                                <td>
+                                    $<lightning-formatted-number minimum-fraction-digits=2 maximum-fraction-digits=2 value={finalDonation} >
+                                    </lightning-formatted-number>
+                                </td>
+                            </tr>
+                            <tr class="slds-hint-parent">
+                                <th data-label="QUANTITY" scope="row">Total Payment</th>
+                                <td>
+                                    $<lightning-formatted-number minimum-fraction-digits=2 maximum-fraction-digits=2 value={finalTotalPayment} >
+                                    </lightning-formatted-number>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-button variant="brand" label="Proceed" title="Proceed" onclick={handleInvestNow}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </div>
+    <template if:true={showModal}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <!-- <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Modal/PopUp Box header LWC
+                    </h2>
+                </header> -->
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p>
+                        <b>You've requested to alter the Contribution fee. Please provide a reason before submitting the request for authorization.</b>
+                    </p>
+                    <lightning-input type="text" label="Contribution Fee Approval Comment" onchange={handchange} value={approvalcomment}  data-id="approvalcomment"></lightning-input>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_brand" onclick={closeModal} title="OK" disabled={okdisabled}>OK</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

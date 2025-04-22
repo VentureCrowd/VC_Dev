@@ -1,0 +1,164 @@
+<template>
+    <!-- Main container for the component -->
+    <div class="add-edit-founders">
+        <!-- Spinner for loading indication -->
+        <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+        <!-- Section for displaying information about adding founders -->
+        <div>
+            <h4 class="vc-font-size_25 slds-var-m-top_large slds-var-p-bottom_medium">
+                <b class="vc-font-caxton7">Founders*</b>
+            </h4>
+            <span>*It is mandatory to add at least one founder to be shown on the expression of interest page.</span>
+        </div>
+        <!-- Button to open the modal for adding a profile -->
+        <button class="info-model create-update-eoi-button secondary slds-var-m-top_medium" onclick={openAddModel}>
+            <label>Add profile</label>
+        </button>
+        <!-- Modal for adding a profile -->
+        <template if:true={isAddModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container slds-var-p-bottom_large">
+                    <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Add profile</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input class="eoi-slds-input" type="text" label="Full name*" name="Name" maxlength="80" required onchange={handleChange}></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Role*" name="Member_Role" maxlength="100" required onchange={handleChange} class="eoi-slds-input create-update-eoi-input" placeholder="e.g. Founder and Chief Executive Officer."></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control slds-var-p-bottom_medium">
+                            <label for="add-founder-bio">Bio*</label>
+                            <div class="slds-var-p-bottom_x-small">Write a summary of the individual's credibility, past or current roles and/or achievements.</div>
+                            <textarea id="add-founder-bio" name="Team_Member_Description" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required></textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="url" label="Founder's LinkedIn URL*" name="Team_member_Linkedin" required onchange={handleChange} class="eoi-slds-input create-update-eoi-input" maxlength="255" placeholder="https://www.linkedin.com/."></lightning-input>
+                        </div>
+                        <!--$ New one when you add a new founder -->
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-combobox
+                                class="vc-combobox-2 eoi-slds-combobox"
+                                name="Order"
+                                type="picklist"
+                                label="Order to be shown*"
+                                placeholder="Please select one"
+                                options={FounderLength}
+                                onchange={handleChange}>
+                            </lightning-combobox>
+                        </div>
+                        <div>
+                            <c-image-uploader onfilesubmit={handleFileSubmit} file-name="Founder" file-label="Headshot*" dimensions="300x300px" ratio="1:1 (square)"></c-image-uploader>
+                            <div if:true={imgUrl} class="slds-m-top_x-small"><img src={imgUrl}/ alt="founder image" style="max-width: 250px; max-height: 250px"></div>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeAddModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={handleAddFounder} disabled={disableSaveBtn}>
+                                <label>Save</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <!-- Modal for editing a profile -->
+        <template if:true={isEditModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 class="slds-modal__title slds-hyphenate">Edit profile</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input class="eoi-slds-input" type="text" label="Full name*" name="Name" value={advisorToUpdate.Name} maxlength="80" required onchange={handleChange}></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Role*" name="Member_Role" value={advisorToUpdate.Member_Role} maxlength="100" required onchange={handleChange} class="eoi-slds-input create-update-eoi-input" placeholder="e.g. Founder and Chief Executive Officer."></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control slds-var-p-bottom_medium">
+                            <label for="edit-founder-bio">Bio*</label>
+                            <div class="slds-var-p-bottom_x-small">Write a summary of the individual's credibility, past or current roles and/or achievements.</div>
+                            <textarea id="edit-founder-bio" name="Team_Member_Description" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required>{advisorToUpdate.Team_Member_Description}</textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="url" label="Founder's LinkedIn URL*" name="Team_member_Linkedin" value={advisorToUpdate.Team_member_Linkedin} required onchange={handleChange} class="eoi-slds-input create-update-eoi-input" maxlength="255" placeholder="https://www.linkedin.com/"></lightning-input>
+                        </div>
+                        <!-- New one -->
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-combobox
+                                class="vc-combobox-2 eoi-slds-combobox"
+                                name="Order"
+                                type="picklist"
+                                label="Order to be shown*"
+                                value={advisorToUpdate.Order}
+                                placeholder="Please select one"
+                                options={FounderLength}
+                                onchange={handleChange}>
+                            </lightning-combobox>
+                        </div>
+                        <div>
+                            <c-image-uploader onfilesubmit={handleFileSubmit} file-name="Founder" file-label="Headshot*" dimensions="300x300px" ratio="1:1 (square)"></c-image-uploader>
+                            <div if:true={imgUrl} class="slds-m-top_x-small"><img src={imgUrl}/ alt="founder image" style="max-width: 250px; max-height: 250px"></div>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeEditModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={handleUpdateFounder} disabled={disableUpdateBtn}>
+                                <label>Update</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <!-- Displaying the list of team members -->
+        <div if:true={showTeam} class="slds-var-m-top_x-large">
+            <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+            <template if:true={hasFounder} for:each={advisorList} for:item="item">
+                <div key={item.Id} class="slds-var-m-top_x-large">
+                    <div class="demo-only slds-size_2-of-4">
+                        <div class="slds-media slds-media_responsive">
+                            <div class="slds-media__body">
+                                <div>
+                                    <span class="vc-font-size_18"><b>{item.Name}</b></span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <span class="vc-font-size_18">{item.Member_Role}</span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <span class="vc-font-size_18">{item.Team_Member_Description}</span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <a href={item.Team_member_Linkedin} class="slds-text-link create-update-eoi-help-link" target="_blank">{item.Team_member_Linkedin}</a>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <img src={item.urLink} style="max-width: 250px; max-height: 250px" />
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleEditFounder}>Edit</label>
+                                    </button>
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleRemoveFounder}>Remove</label>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

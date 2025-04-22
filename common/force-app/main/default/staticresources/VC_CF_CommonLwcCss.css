@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1250px;
+  }
+
+  .content-container--html-editor {
+    padding-right: 24px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body * {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Caxton-4";
+}
+
+p {
+  font-family: 'SuisseIntl-Light';
+  font-size: 16px;
+}
+
+p strong,
+p b {
+  font-family: 'SuisseIntl-Bold';
+}
+
+/* .color-purple {
+  color: #844CEA;
+} */
+
+.contentRegion .ui-widget {
+  margin-bottom: 0 !important;
+}
+
+/* Content Expansion */
+.cb-section_row {
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.cb-section_column {
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.body.isPageWidthFixed-true {
+  width: 100% !important;
+  max-width: 100% !important;
+  z-index: 800;
+  position: relative;
+  background-color: white;
+  margin-bottom: 365px !important;
+  margin-top: 70px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .body.isPageWidthFixed-true {
+    margin-bottom: 581px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body.isPageWidthFixed-true {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+/* BLOCK: Text Edit */
+.content-container--text-edit {
+  padding-top: calc(100vw * 0.05);
+  padding-bottom: calc(100vw * 0.05);
+}
+
+.content-container--text-edit h1 {
+  color: #000;
+  font-size: 30px !important;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.content-container--text-edit h3 {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.content-container--text-edit p {
+  margin-bottom: 1em;
+}
+
+.content-container--text-edit a.video-link {
+  margin-bottom: 1em;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+  transition: all 300ms ease;
+}
+
+.content-container--text-edit a.video-link i {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  padding: 20px 23px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 1.45em;
+  margin-right: 25px;
+  transition: all 300ms ease;
+}
+
+.content-container--text-edit a.video-link:hover i {
+  transform: scale(1.2);
+  background-color: #D95BAA;
+}
+
+.content-container--text-edit a.video-link:hover {
+  color: #D95BAA;
+  text-decoration: none;
+}
+
+.content-container--text-edit ul {
+  list-style: none !important;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+.content-container--text-edit ul li {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.content-container--text-edit ul li:before {
+  content: "" !important;
+  display: inline-block;
+  width: 17px;
+  height: 1px;
+  margin-top: 0.6em;
+  background-color: #000;
+}
+
+.content-container--text-edit ul li span {
+  flex: 1;
+  display: inline-block;
+  margin-left: 14px;
+  font-size: 16px;
+}
+
+/* BLOCK: Disclaimer */
+.content-container--disclaimer {
+  padding-top: calc(100vw * 0.05);
+  padding-bottom: calc(100vw * 0.05);
+  background-color: #000;
+}
+
+.content-container--disclaimer p {
+  color: #e6e6e6;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 2em;
+}
+
+/* BLOCK: Page Index */
+.content-container--page-index {
+  border: 1px solid #C3CDD1;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.content-container--page-index ul {
+  padding: 0 !important;
+  margin: 0;
+  list-style: none;
+}
+
+.content-container--page-index ul li {
+  padding: 0 !important;
+  margin: 5px 0;
+  font-family: 'Caxton-Light';
+}
+
+.content-container--page-index ul li:before {
+  display: none;
+}
+
+.content-container--page-index ul li a {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  text-decoration-line: underline;
+  color: #000;
+  font-family: 'Caxton-Light';
+}
+
+/* .content-container--page-index ul li a:hover {
+  color: #5d3796;
+} */
+
+/* BLOCK: HTML Editor */
+/* .content-container--html-editor {
+  padding-right: 24px;
+} */
+
+.content-container--html-editor a {}
+
+.content-container--html-editor h2 {
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+}
+
+.content-container--html-editor h3 {
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  line-height: 37px !important;
+  letter-spacing: 0.1px;
+  font-family: "Caxton-4" !important;
+  color: #000 !important;
+}
+
+.content-container--html-editor p.lead {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  letter-spacing: 0.1px;
+  color: #000;
+  margin-bottom: 1em !important;
+}
+
+.content-container--html-editor p {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: #000;
+  margin-bottom: 1.5em !important;
+  font-family: 'SuisseIntl-Light' !important;
+}
+
+.content-container--html-editor ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 0 1.5em 35px !important;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: #000;
+}
+
+.content-container--html-editor ul li {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: #000;
+  position: relative;
+  font-family: 'SuisseIntl-Light' !important;
+}
+
+.content-container--html-editor ul li b {
+  font-family: 'SuisseIntl-Bold' !important;
+}
+
+.content-container--html-editor ul li:before {
+  content: '' !important;
+  background-color: #000;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  padding: 0;
+  margin-left: -15px !important;
+}
+
+/* BLOCK: Tabs @override */
+.uiTabset--default {
+  background-color: transparent !important;
+}
+
+.forceCommunityTabset>.uiTabBar .uiTabItem .tabHeader {
+  font-size: 18px !important;
+}
+
+/* General page fixes (No idea what the hell im doing. Shit is janky as hell) */
+/*.siteforceContentArea .ui-widget:nth-child(n+2) .cb-section > .cb-section_row {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: calc(100vw * 0.03) !important;
+  padding-bottom: calc(100vw * 0.03) !important;
+}
+
+@media (min-width: 1200px) {
+.siteforceContentArea .ui-widget:nth-child(n+2) .cb-section > .cb-section_row {
+      max-width: 1250px !important;
+  }
+}*/

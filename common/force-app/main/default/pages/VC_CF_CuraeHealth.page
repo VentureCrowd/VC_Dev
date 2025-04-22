@@ -1,0 +1,229 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+	<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+	<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+	<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+	<apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+	<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous" />
+	</head>
+	<!-- Component: Menu -->
+	<c:VC_CF_Menu />
+	<!-- ./Component: Menu -->
+	<!-- Body -->
+	<div id="vc_content__container" class="position-relative page-slug-news-detail">
+		<!-- Hero -->
+		<section class="hero has-parallax-bg">
+			<div class="container">
+				<div class="row text-white pt-5 pb-5 text-center justify-content-center">
+					<div class="col-md-9 headline">
+						<div class="tags-container">
+							<a href="#">MedTech</a>
+							<a href="#">Webinar</a>
+						</div>
+						<h1 class="mt-4">Webinar Recording: Sinking your teeth into Pre IPO investing with digital dentistry with Curae Health</h1>
+					</div>
+				</div>
+			</div>
+			<div class="static-bg-overlay"></div>
+			<div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/CuraeHealth_Webinar-Banner.jpg')"></div>
+		</section>
+		<!-- Post Body -->
+		<section class="post-body py-5">
+			<div class="container">
+				<div class="row">
+					<!-- Body Content -->
+					<div class="col-md-9">
+						<div class="inner-container px-3 px-md-4 py-3">
+							<!-- CONTENT HERE -->
+							<h2 class="mb-5">Pre IPO investing has historically been lucrative for investors wishing to generate returns with a shorter pathway to liquidity. Curae Health’s $5M Convertible Note raise is now live – learn about how Curae Health are changing the face of dentistry and their pathway to IPO.</h2>
+							<p class="mb-4">
+                   With the pandemic dominating international news this year, medical technology has been in the limelight. Globally, financing levels into Medtech companies more than doubled to $57 billion between July 2019 and June 2020. In Australia, the pharmaceutical and medical products market has grown to be Australia’s largest manufacturing export at ~$8.2 billion. Add to that, Government initiatives investing billions in reinforcing the health system and the fast-tracking of plans to turn Australia into an Asia-Pacific hub for medical technology and pharmaceutical companies and it is clear that this is a good time to be looking at MedTech opportunities.
+               </p>
+							<p>
+                      In the Dental Services industry, digital technology is fundamentally changing clinical practice and patient care. The problem with dentistry is that the majority of the industry has been slow to adapt, so while the majority of dental practices take their time to adopt digital workflows Curae Health is pioneering the delivery of digital technology and digital workflows in dentistry. And that’s what makes this business so interesting.
+                  </p>
+							<p class="mb-4">
+                            
+                      Malcolm is the CEO of Curae Health and formerly a Board member of Maven Dental, assisting Maven Dental to grow from start-up to owning 87 dental practices across Australia with 1,000 staff and $140M revenue.
+                      </p>
+							<strong>The discussion covered:</strong>
+							<ol>
+								<li>Malcolms experience at Maven Dental</li>
+								<li>Curae Healths history</li>
+								<li>Dental Industry Snapshot</li>
+								<li>The market and what is driving growth</li>
+								<li>Innovation in the Dental industry</li>
+								<li>The purpose of the capital raise</li>
+								<li>Curae Healths 5 year plan</li>
+								<li>The IPO</li>
+								<li>The Convertible Note and this investment opportunity</li>
+								<li>The use of funds and the drive towards the IPO</li>
+							</ol>
+							<div class="fluid-video-wrapper">
+								<iframe width="850" height="275" src="https://www.youtube.com/embed/CvmFKewrHyE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+							</div>
+							<h3 class="text-background-gradient mt-5">On the panel</h3>
+							<p>
+								<strong>Steve Maarbani &amp; Malcolm Lean</strong>, CEO of Curae Health and formerly a Board member of Maven Dental, assisting Maven Dental grow from start up to owning 87 dental practices across Australia with 1,000 staff and $140M revenue.
+							</p>
+							<div class="row">
+								<div class="col-md-4">
+									<img src="https://assets.venturecrowd.vc/uploads/2020/11/CuraeHealth_Malcolm-1-500x500.png" class="hover-shadow img-fluid" />
+								</div>
+								<div class="col-md-8"><span class="mobile-close"></span><h2>Malcolm Lean</h2><div class="title">CEO of Curae Health</div><div class="team-desc">An accountant by trade having done my time with KPMG in NZ and the UK. I have experience at the CFO / CEO level and also in corporate governance. My finance and senior management positions give me a well rounded, commercially focused background. <div class="bottom_meta"><a href="https://www.linkedin.com/in/malcolm-lean-8585a723/" target="_blank"><i class="icon-default-style fa fa-linkedin"></i></a></div></div></div>
+							</div>
+                            <br/>
+                            <div class="row">
+								
+								<div class="col-md-4">
+									<img src="https://assets.venturecrowd.vc/uploads/2020/11/CuraeHealth_Steve-1-500x500.png" class="hover-shado img-fluid" />
+								</div>
+                                <div class="col-md-8">
+									<span class="mobile-close"></span>
+									<h2>Steven Maarbani </h2>
+                                    <div class="title">CEO of VentureCrowd</div> <br/>
+									<div class="team-desc">Steven is a corporate lawyer and former PWC partner specialising in venture capital, funds management and financial services. He has advised on many of Australia's leading VC funds and co-founded VentureCrowd.
+										<div class="bottom_meta">
+											<a href="https://www.linkedin.com/in/stevenmaarbani/" target="_blank">
+												<i class="icon-default-style fa fa-linkedin"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+							<div class="post-body-rich-text text-center mt-5">
+								<div class="gradient-divider"></div>
+								<h3>Register Below</h3>
+								<h1>Want to learn more?</h1>
+								<p>If you’d like to know more about Curae Health then click the button below to register your interest.</p>
+								<a href="#">Register Today</a>
+							</div>
+						</div>
+					</div>
+					<!-- Sidebar -->
+					<div class="col-md-3 sidebar px-4 px-md-0">
+						<div class="inner-container py-3">
+							<div class="recent-posts mb-5">
+								<h3 class="mb-2">Recent Posts</h3>
+								<ul>
+									<li>
+										<a href="#">How to invest in the property market without buying a property</a>
+									</li>
+									<li>
+										<a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+									</li>
+									<li>
+										<a href="#">Companies with a social conscience perform better</a>
+									</li>
+									<li>
+										<a href="#">Why gender equality is good for business</a>
+									</li>
+									<li>
+										<a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+									</li>
+								</ul>
+							</div>
+							<div class="archives">
+								<h3 class="mb-2">Archives</h3>
+								<ul>
+									<li>
+										<a href='#'>December 2020</a>
+									</li>
+									<li>
+										<a href='#'>November 2020</a>
+									</li>
+									<li>
+										<a href='#'>October 2020</a>
+									</li>
+									<li>
+										<a href='#'>September 2020</a>
+									</li>
+									<li>
+										<a href='#'>August 2020</a>
+									</li>
+									<li>
+										<a href='#'>January 2020</a>
+									</li>
+									<li>
+										<a href='#'>November 2019</a>
+									</li>
+									<li>
+										<a href='#'>October 2019</a>
+									</li>
+									<li>
+										<a href='#'>September 2018</a>
+									</li>
+									<li>
+										<a href='#'>March 2018</a>
+									</li>
+									<li>
+										<a href='#'>December 2017</a>
+									</li>
+									<li>
+										<a href='#'>August 2017</a>
+									</li>
+									<li>
+										<a href='#'>July 2017</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Post Footer -->
+		<section class="related">
+			<a href="{! $Label.VC_CF_Public_URL +'/blog/meet-the-founders-behind-superdraft'}">
+				<div class="container">
+					<div class="row text-center py-5 text-white">
+						<div class="col-md-12 pt-5 next-post-link">Next Post</div>
+						<div class="col-md-12 pb-5 next-post-title mt-3">
+							<h3>Superdraft takes off! Meet the Founders making it happen.</h3>
+						</div>
+					</div>
+				</div>
+				<div class="next-post-bg-overlay"></div>
+				<div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/11/Superdraft-blogpost-BG.jpg')"></div>
+			</a>
+		</section>
+		<div class="social-share-container">
+			<div class="share-links mb-4">
+				<div class="link-container">
+					<a href="#" class="share-linked-in">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="link-container">
+					<a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="share-trigger">
+				<i class="fa fa-share-alt" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+	<!-- ./Body -->
+	<!-- Component: Footer -->
+	<c:VC_CF_Footer />
+	<!-- ./Component: Footer -->
+	<script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

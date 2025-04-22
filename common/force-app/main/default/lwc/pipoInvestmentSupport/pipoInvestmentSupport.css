@@ -1,0 +1,155 @@
+/* General container padding */
+
+/* Container for the button and the dropdown */
+.help-hub-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Dropdown menu */
+.help-hub-dropdown-menu {
+    position: absolute;
+    /* right: 0; */
+    top: 100%; /* Position directly below the button */
+    margin-top: var(--space-md);
+    background-color: white;
+    box-shadow: 0px 0.714px 10.714px 0px rgba(0, 0, 0, 0.10);
+    width: fit-content; /* Allow it to adapt to its content */
+    min-width: 24vw;
+    padding: var(--space-lg);
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .help-hub-dropdown-menu {
+        min-width: 71vw;
+    }
+}
+
+/* List items in the dropdown */
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    column-gap: var(--space-xxl);
+}
+
+.dropdown-item:active {
+    background-color: var(--white);
+}
+
+.dropdown-item:last-child {
+    border-bottom: none; /* Remove the border from the last item */
+}
+
+.dropdown-item:hover {
+    background-color: var(--white); /* Change background color on hover */
+    color: var(--primary-accent);
+}
+
+/* Arrow styling */
+.arrow {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.dropdown-item:hover .arrow {
+    color: var(--primary-accent);
+}
+
+/* Responsive media queries */
+
+/* For small screens (up to 600px width) */
+@media (max-width: 600px) {
+    /* Adjust button size */
+    .help-hub-btn {
+        font-size: 0.875rem; /* Slightly smaller text on small screens */
+        padding: 8px 16px;
+    }
+
+    /* Make the dropdown menu full-width */
+    .help-hub-dropdown-menu {
+        /* width: 100%; Full width on small screens */
+        /* left: 0; */
+        /* right: 0; Center-align by setting both left and right to 0 */
+        padding: 15px;
+    }
+
+    /* Ensure items inside dropdown also fit */
+    .dropdown-item {
+        font-size: 0.875rem; /* Slightly smaller text */
+        padding: 10px 15px;
+    }
+}
+
+/* For medium screens (up to 1024px width) */
+@media (max-width: 1024px) {
+    .help-hub-btn {
+        font-size: 0.95rem;
+        padding: 9px 18px;
+    }
+
+    /* .help-hub-dropdown-menu {
+        /* width: 80%; Slightly reduce width 
+    } */
+
+    .dropdown-item {
+        padding: 12px 18px;
+    }
+}
+
+
+/* Styles for the dropdown content */
+.content-container {
+    padding: var(--space-md);
+}
+
+.content-container h2 {
+    margin-bottom: 10px;
+    font-size: var(--text-xl);
+}
+
+.content-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-container li {
+    margin-bottom: 10px;
+}
+
+c-core-icon {
+    cursor: pointer;
+}
+
+c-core-icon:hover {
+    color: black;
+}
+
+.close-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-lg);
+}
+
+.help-hub-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.header-modal h2 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+}
+
+.core-form-header p {
+    margin-bottom: 0px;
+}

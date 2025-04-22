@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>040f3ab5-1534-4b07-8c02-15cce9713360</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8f6a6df2-f487-486b-8c79-2ea9cfc3b3ec</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i000005rdXh&amp;d=%2Fa%2F5i000000PSRO%2FfAtcdUfvhTnYW7uKyqQhvGM6iKuehg07su8ny8c_akI&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>Frequently Asked Questions</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>040f3ab5-1534-4b07-8c02-15cce9713360</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>ea9e18f3-a95c-46bc-ad4f-78f4a949d796</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>174bdf52-e928-4a74-8925-9d6ef1f3975b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>d9c69</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-fa4a75a4-4d11-486b-aca9-fdd375df2295</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+   &lt;br&gt;
+    &lt;h1 id=&apos;I-want-to-invest-in-a-wholesale-offer-or-invest-in-a-CSF-Offer&apos; class=&quot;color-Black mb-2 pt-2 &quot;&gt;I want to invest in a wholesale offer or invest over AUD $10,000 in a CSF Offer. What do I need?&lt;/h1&gt;
+
+
+
+	&lt;p&gt;To invest more than AUD$10,000 in a single CSF offer, or participate in any of the wholesale offers on VentureCrowd, you need to be classified as a wholesale investor.&lt;/p&gt;
+
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;_______________________________________________________&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+
+    &lt;p&gt;&lt;b&gt;So how do you register as a wholesale investor with VentureCrowd?&lt;/b&gt;&lt;/p&gt;
+	&lt;p&gt;A wholesale investor is required to meet the &lt;a href=&quot;https://asic.gov.au/regulatory-resources/financial-services/financial-product-disclosure/certificates-issued-by-a-qualified-accountant/&quot; target=&quot;_blank&quot;&gt;legislative requirements as set by ASIC&lt;/a&gt; in order to undertake an investment. The Corporations Regulations prescribe the asset and income criteria that must be met before you can be issued a certificate by a qualified accountant (not VentureCrowd). A person is only eligible to be the subject of a certificate if they have:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;a gross income of $250,000 or more per annum in each of the previous two years or;&lt;/li&gt;
+        &lt;li&gt;net assets of at least $2.5 million (reg 6D.2.03 and reg 7.1.28)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;If you believe you are a wholesale investor, please get a &lt;a href=&quot;https://asic.gov.au/regulatory-resources/financial-services/financial-product-disclosure/certificates-issued-by-a-qualified-accountant/&quot; target=&quot;_blank&quot;&gt;qualified accountant&lt;/a&gt; to issue you with a wholesale certificate. Once you have this, please email &lt;a href=&quot;mailto:hello@venturecrowd.com.au&quot; target=&quot;_blank&quot;&gt;hello@venturecrowd.com.au&lt;/a&gt; to be in touch with one of the amazing team members who will walk you through the next steps of the registration.&lt;/p&gt;
+
+	&lt;p&gt;Don&apos;t think this sounds like you? That&apos;s okay, you can still invest AUD$10,000 in any of the Retail CSF offers listed on the VentureCrowd platform, or see information regarding Experienced Investor Requirements.&lt;/p&gt;
+
+                                                                                     
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>ea9e18f3-a95c-46bc-ad4f-78f4a949d796</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--page-index p-4&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#I-want-to-invest-in-a-wholesale-offer-or-invest-in-a-CSF-Offer&quot;&gt;I want to invest in a wholesale offer or invest over AUD $10,000 in a CSF Offer&lt;/a&gt;&lt;/li&gt;
+  &lt;br&gt;    
+        &lt;li&gt;&lt;a href=&quot;#investor-type&quot;&gt;What sort of investor am I?&lt;/a&gt;&lt;/li&gt;
+  &lt;br&gt;
+        &lt;li&gt;&lt;a href=&quot;#eoi&quot;&gt;What is the difference between an Expression of Interest (EOI) and an Investment?&lt;/a&gt;&lt;/li&gt;
+  &lt;br&gt;
+        &lt;li&gt;&lt;a href=&quot;#incomplete-investment&quot;&gt;Incomplete Investment: How do I check if my investment is &apos;complete&apos;?&lt;/a&gt;&lt;/li&gt;
+
+        
+    &lt;/ul&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>174bdf52-e928-4a74-8925-9d6ef1f3975b</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>aee5e677-81f3-4d9f-af4d-200d3d18a8a1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9aec58c7-b64d-4d9d-a175-f92b67ec94c2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+   &lt;br&gt;&lt;br&gt;
+    &lt;h1 id=&apos;investor-type&apos; class=&quot;color-Black mb-2 pt-2 &quot;&gt;What sort of investor am I?&lt;/h1&gt;
+
+
+
+	&lt;p&gt;Retail, wholesale, trust, SMSF or company... your questions answered!&lt;/p&gt;
+
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;_______________________________________________________&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+
+    &lt;p&gt;If you are participating in a Wholesale offer, CSF offer or direct listing, there are different ways to invest that depend on the accreditation you hold.&lt;/p&gt;
+    
+    &lt;p&gt;&lt;b&gt;Retail Investor&lt;/b&gt;
+	&lt;p&gt;Most investors are Retail investors and will usually invest in CSF offers via VentureCrowd. The minimum requirements to be regarded as a retail investor is:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Be over the age of 18 years of age.&lt;/li&gt;
+        &lt;li&gt;Not exceeded $10,000 worth of investments in one single offer/company in any 12-month period.&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;p&gt;&lt;b&gt;Wholesale Investor&lt;/b&gt;
+	&lt;p&gt;An investor is required to meet the &lt;a href=&quot;https://asic.gov.au/regulatory-resources/financial-services/financial-product-disclosure/certificates-issued-by-a-qualified-accountant/&quot; target=&quot;_blank&quot;&gt;legislative requirements as set by ASIC&lt;/a&gt; in order to undertake an investment in a wholesale offer. The Corporations Regulations prescribe the asset and income criteria that must be met before you can be issued a wholesale investor certificate. A person is only eligible to be the subject of a certificate if they have:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;a gross income of $250,000 or more per annum in each of the previous two years or;&lt;/li&gt;
+        &lt;li&gt;net assets of at least $2.5 million (reg 6D.2.03 and reg 7.1.28)&lt;/li&gt;
+    &lt;/ul&gt;
+        &lt;p&gt;If you believe you are a wholesale investor, please get a &lt;a href=&quot;https://asic.gov.au/regulatory-resources/financial-services/financial-product-disclosure/certificates-issued-by-a-qualified-accountant/&quot; target=&quot;_blank&quot;&gt;qualified accountant&lt;/a&gt; to issue you with a wholesale certificate. Once you have this, please email &lt;a href=&quot;mailto:hello@venturecrowd.com.au&quot; target=&quot;_blank&quot;&gt;hello@venturecrowd.com.au&lt;/a&gt; to be in touch with one of the amazing team members who will walk you through the next steps of the registration.&lt;/p&gt;
+
+    &lt;p&gt;&lt;b&gt;Experienced Investor Requirements&lt;/b&gt;&lt;/p&gt;
+	&lt;p&gt;If an investor does not meet the requirements as per Wholesale Investor above but has an extensive record of private and venture investments, they can apply for an Experienced Investor Certification (EIC). An approved EIC allows investors to invest in Wholesale offers. To apply, please email &lt;a href=&quot;mailto:hello@venturecrowd.com.au&quot; target=&quot;_blank&quot;&gt;hello@venturecrowd.com.au&lt;/a&gt; to be in touch with one of the amazing team members who will walk you through the registration.&lt;/p&gt;
+
+	&lt;p&gt;We will ask for all of your current and previous investment experience to be listed on this form. The Fund Manager will consider your application and be back in touch with the outcome.&lt;/p&gt;
+
+    &lt;p&gt;&lt;b&gt;Investing under an Entity&lt;/b&gt;&lt;/p&gt;
+	&lt;p&gt;Investments can also be made under a Company, SMSF or Trust. Entity details can be registered through your VentureCrowd account. Register for an account &lt;a href=&quot;https://www.venturecrowd.com.au/s/&quot; target=&quot;_blank&quot;&gt;HERE&lt;/a&gt;. An entity requires founding documents or trust deeds, and as such, the verification process of this will be different to that of an individual making an investment. Once your entity documents have been verified and added to your account,  you can easily choose between investing under your entity or personal account for each investment.&lt;/p&gt;
+        
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>aee5e677-81f3-4d9f-af4d-200d3d18a8a1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>d96a0019-b870-4cf1-b087-3c2a01b5fb12</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9778304e-808a-41e2-a423-a6fb0120b200</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+   &lt;br&gt;&lt;br&gt;
+    &lt;h1 id=&apos;eoi&apos; class=&quot;color-Black mb-2 pt-2 &quot;&gt;What is the difference between an Expression of Interest (EOI) and an Investment?&lt;/h1&gt;
+
+
+
+	&lt;p&gt;You registered your EOI, so why are you being asked to complete your investment?&lt;/p&gt;
+
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;_______________________________________________________&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+
+    &lt;p&gt;Most of the investment offers listed on VentureCrowd will compose of two distinct phases starting with an #1 EOI phase and followed by an #2 Investment phase.&lt;/p&gt;
+    
+    &lt;p&gt;&lt;b&gt;#1 EOI Phase&lt;/b&gt;
+		&lt;p&gt;An EOI allows you to review the initial information provided and assess your interest in the offer. If you are interested to learn more about the offer and keep up to date with when it launches, always register your EOI. More information is in the form of email updates leading up to the launch of the offer, and Key Document/s provided once the offer launches #2 The Investment stage.&lt;/p&gt;
+		&lt;p&gt;A completed EOI does not create an investment obligation or contract/binding agreement in any manner. This comes in #2 Investment Phase.&lt;/p&gt;
+   		&lt;p&gt;An EOI also provides you with peace of mind and unique investment opportunities before they open up to the greater market. Your EOI gives you an exclusive first bite of the investment apple.&lt;/p&gt;
+		&lt;p&gt;Registering your EOI can be particularly important for deals that will reach their maximum target quickly, as, once the offer is open, investors will secure their allocation on a first come first served basis.&lt;/p&gt;
+		&lt;p&gt;Once the offer&apos;s maximum target is reached, or they are ‘fully funded”, no more applications to invest will be accepted. If you haven’t already invested, you will miss out. Communication will be via email, so keep an eye on your inbox as well as the VentureCrowd website.&lt;/p&gt;
+    &lt;p&gt;If you don&apos;t want to miss out, make sure you express your interest!&lt;/p&gt;
+
+    
+    &lt;p&gt;&lt;b&gt;#2 Investment Phase&lt;/b&gt;
+	&lt;p&gt;The investment phase is where you make an application and actually transfer funds. You do not need to complete an EOI to invest in a new offer through VentureCrowd, but it does mean you will be notified first.&lt;/p&gt;
+	&lt;p&gt;It is easy to know if you have made an application and completed your investment by logging into your profile and making sure there is a pending application ready to be paid.&lt;/p&gt;
+
+	&lt;p&gt;An investment can be undertaken at any point in the investment phase while still open.  Due Diligence will be undertaken on investors to qualify that the minimum requirements are met (where needed).&lt;/p&gt;
+	&lt;p&gt;A unitholder or shareholder certificate is issued to investors up to 28 days after the deal closes (not when you initially make your investment), confirming the transaction. During this period your investment will still stay pending.&lt;/p&gt;
+&lt;br&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>d96a0019-b870-4cf1-b087-3c2a01b5fb12</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>cc46011d-5bfd-4e14-8696-48e83d00a9dd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-374de699-3cb6-41ee-bdfa-dc51a5b2e752</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+   &lt;br&gt;&lt;br&gt;
+    &lt;h1 id=&apos;incomplete-investment&apos; class=&quot;color-Black mb-2 pt-2 &quot;&gt;Incomplete Investment: How do I check if my investment is &apos;complete&apos;?&lt;/h1&gt;
+
+
+
+	&lt;p&gt;Quick guide to ensure you have completed everything you need to in order to secure your investment.&lt;/p&gt;
+
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;_______________________________________________________&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;content-container--html-editor&quot;&gt;
+
+
+    &lt;p&gt;If you have completed an EOI, you will still need to return to the VentureCrowd platform and complete your investment. Below outlines what steps you need to take:&lt;/p&gt;
+    
+    &lt;p&gt;1. Go to the relevant offer page and click “INVEST NOW”&lt;/p&gt;
+    &lt;p&gt;2. Complete an investment application via the investment page&lt;/p&gt;
+    &lt;p&gt;3. Update your profile or entity details with all required information (ie: bank details, address, provide supporting ID documents etc). 
+	Make sure you have already completed these details, this information will be kept in your profile and will not be required again.&lt;/p&gt;
+	&lt;p&gt;4. VentureCrowd will send you an email containing the BPay details unique to your investment application. If you can&apos;t find the email, don&apos;t worry, you can log onto your VentureCrowd profile and find the pending investment and payment details there. If you don&apos;t see this, please try again and contact &lt;a href=&quot;mailto:hello@venturecrowd.com.au&quot; target=&quot;_blank&quot;&gt;hello@venturecrowd.com.au&lt;/a&gt;
+    &lt;p&gt;5. Transfer investment funds to VentureCrowd using the unique BPay payment details. Make sure these details are correct!&lt;/p&gt;
+	&lt;p&gt;6. Note: Funds paid through the BPay system take two business days to clear and reflect on our system. VentureCrowd will send you a receipt confirming your investment once your payment is reflected on our system. So once you have paid, wait two days before checking. Its just the way the banks work.&lt;/p&gt;
+	&lt;p&gt;7. Up to 28 days after the offer is closed, share certificates or unitholder certificates will be issued to you and uploaded to your portal.&lt;/p&gt;
+    &lt;br&gt;
+
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>cc46011d-5bfd-4e14-8696-48e83d00a9dd</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8f6a6df2-f487-486b-8c79-2ea9cfc3b3ec</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8f6a6df2-f487-486b-8c79-2ea9cfc3b3ec&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;040f3ab5-1534-4b07-8c02-15cce9713360&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-fa4a75a4-4d11-486b-aca9-fdd375df2295</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;fa4a75a4-4d11-486b-aca9-fdd375df2295&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;ea9e18f3-a95c-46bc-ad4f-78f4a949d796&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;9&quot;,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;174bdf52-e928-4a74-8925-9d6ef1f3975b&quot;,&quot;columnName&quot;:&quot;Column 2&quot;,&quot;columnKey&quot;:&quot;d9c69&quot;,&quot;columnWidth&quot;:&quot;3&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9aec58c7-b64d-4d9d-a175-f92b67ec94c2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9aec58c7-b64d-4d9d-a175-f92b67ec94c2&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;aee5e677-81f3-4d9f-af4d-200d3d18a8a1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9778304e-808a-41e2-a423-a6fb0120b200</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9778304e-808a-41e2-a423-a6fb0120b200&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;d96a0019-b870-4cf1-b087-3c2a01b5fb12&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-374de699-3cb6-41ee-bdfa-dc51a5b2e752</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;374de699-3cb6-41ee-bdfa-dc51a5b2e752&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;cc46011d-5bfd-4e14-8696-48e83d00a9dd&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>Find out the answers to your investing questions.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Frequently Asked Questions | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>FAQ</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

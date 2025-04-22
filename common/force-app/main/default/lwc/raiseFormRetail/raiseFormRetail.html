@@ -1,0 +1,1380 @@
+<template>
+    <template lwc:if={showHalfWayPopup}>
+        <div class="encouragement-popup modal">
+            <div class="modal-content">
+                <img src={halfWayPopupImage}/>
+                <div class="modal-text">
+                    <p class="title">You're over half way completed!</p>
+                    <p>We are so excited to see you progressing with your raise application and you are now over half way finished.</p>
+                    <p>You can already access a <a href={previewDealPageURL}>preview of your compelling deal page</a> that will be shared with potential and existing investors, turning interest into action.</p>
+                </div>
+                <c-core-button
+                label="Continue" 
+                variation="primary"
+                mode="light"
+                onbuttonclick={handleClosePopup}>
+                </c-core-button>
+              </div>
+        </div>
+    </template>
+    <template lwc:if={showEndPopup}>
+        <div class="encouragement-popup modal">
+            <div class="modal-content">
+                <img src={endPopupImage}/>
+                <div class="modal-text">
+                    <p class="title">Almost there!</p>
+                    <p>Hooray, you have now completed everything that is going to be included in your deal page. You can still <a href={previewDealPageURL}>access the preview</a> to make sure you are happy with it.</p>
+                    <p>Only one more step to go to complete the application before it is submitted for review by our ventures team!</p>
+                </div>
+                <c-core-button
+                label="Continue" 
+                variation="primary"
+                mode="light"
+                onbuttonclick={handleClosePopup}>
+                </c-core-button>
+              </div>
+        </div>
+    </template>
+    <div class="loading-spinner" lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <template lwc:else>
+        <c-core-multi-step-form
+        title="Raise Information"
+        onsubmit={handleData}
+        onchange={handleChange}
+        onrequestnextstep={handleNext}
+        is-next-loading={isNextLoading}
+        onrequestpreviousstep={handlePrev}
+        is-prev-loading={isPrevLoading}
+        form-data={formData}
+        nextbutton="Save & Continue"
+        prevbutton="Back"
+        submitbutton="Review"
+        additional-button="Preview raise page"
+        is-additional-button-loading={isDealPageLoading}
+        onadditionalbuttonevent={handleAdditionalButton}
+        vertical
+        onerrorsfound={handleErrorsFound}
+        current-step-index={currentStep}
+        is-saving={isSaving}
+        lwc:if={dataRetrieved}
+        >
+            <div slot="header">
+                <p class="form-desc">The information filled in here will form your Deal Page and offer document where investors will 
+                    be able to read about your company and investment offering. 
+                    You can preview your deal page at any time throughout filling out the form. 
+                </p>
+            </div>
+            <div slot="steps">
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> About </div>
+                        <div class="step-desc"> Generic information about your company</div>
+                        <div class="step-eta">Approx 15 mins</div>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="companyFullName"
+                        label="Company's Full Name"
+                        type="text"
+                        limit="255"
+                        help="This is a brand name or the name customers know the company by."
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="companyOneLiner"
+                        label="Company one liner"
+                        type="text"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="255"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>This is a catchy one liner about the company's purpose and mission.</p>
+                                <c-core-link 
+                                label="How do I write a company one-liner?"
+                                hyperlink={helpTextMapping.oneLiner}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="companyWebsite"
+                        label="Company website"
+                        type="url"
+                        help=" "
+                        placeholder="www."
+                        limit="255"
+                        required
+                        ></c-core-input>
+                        <c-core-radio
+                        label="Is your company registered in Australia?"
+                        name="resgisteredAus"
+                        values={yesNoOptions}
+                        size="medium"
+                        help=" "
+                        alignment-position="horizontal"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required-value="true"
+                        required>
+                        </c-core-radio>
+                        <c-core-input
+                        name="sector"
+                        label="Sector"
+                        type="dropdown"
+                        options={sectorOptions}
+                        help=" "
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="abn"
+                        label="ABN"
+                        type="number"
+                        help=" "
+                        limit=11
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        ></c-core-input>
+                    </div>
+                    <div class="address-inputs">
+                        <c-core-input
+                        name="companyStreetAddress"
+                        label="Company Address"
+                        type="text"
+                        help="Street Address"
+                        limit="255"
+                        required
+                        ></c-core-input>
+                        <div class="sub-details">
+                            <c-core-input
+                            name="companySuburb"
+                            label=""
+                            type="text"
+                            help="Suburb"
+                            required
+                            class="suburb"
+                            ></c-core-input>
+                            <c-core-input
+                            name="companyState"
+                            label=""
+                            type="dropdown"
+                            help="State"
+                            options={stateOptions}
+                            limit="255"
+                            required
+                            class="state"
+                            ></c-core-input>
+                            <c-core-input
+                            name="companyPostcode"
+                            label=""
+                            type="number"
+                            help="Postcode"
+                            limit="4"
+                            required
+                            class="postcode"
+                            ></c-core-input>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="acn"
+                        label="Australian Company Number (ACN)"
+                        type="text"
+                        help=" "
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="9"
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="companyLogoId"
+                        label="Company Logo"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Upload image (required)"
+                        subtext="JPEG/PNG/WEBP, min dimensions 150x150px"
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="supportingImages"
+                        label="Supporting Images"
+                        type="file"
+                        record-id={recordId}
+                        help="You must upload 3 supporting images of your company's offering or product this will help potential investors visualise your company."
+                        subtext="JPEG/PNG/WEBP, min dimensions 150x150px"
+                        minimum-value="3"
+                        file-text="Upload images (required)"
+                        multiple
+                        required
+                        ></c-core-input>
+                        <c-core-input
+                        name="heroImageId"
+                        label="Hero Image"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Upload image (required)"
+                        subtext="JPEG/PNG/WEBP, min dimensions 150x150px"
+                        required
+                        ></c-core-input>
+                    </div>
+                    <c-raise-media-links
+                    record-id={recordId}>
+                    </c-raise-media-links>
+                    <div class="inputs social-links">
+                        <c-core-input
+                        name="instagramUrl"
+                        label="Instagram"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.instagram.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="linkedinUrl"
+                        label="LinkedIn"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.linkedin.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="twitterUrl"
+                        label="Twitter (X)"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.twitter.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="facebookUrl"
+                        label="Facebook"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.facebook.com/"
+                        ></c-core-input>
+                        <c-core-input
+                        name="videoUrl"
+                        label="Pitch video"
+                        type="url"
+                        placeholder="https://www.youtube.com/"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Share the link to a video explaining your company, offering or raise.</p>
+                                <c-core-link 
+                                label="The Importance of a high-quality Pitch Video"
+                                hyperlink={helpTextMapping.pitchVideo}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="youtubeUrl"
+                        label="Youtube"
+                        type="url"
+                        help=" "
+                        placeholder="https://www.youtube.com/"
+                        ></c-core-input>
+                    </div>
+                    <div class="inputs-nocol">
+                        <c-core-alert 
+                        type="information">
+                            <div class="alert-body" slot="body">
+                                Need a quick recap before you start drafting the hard stuff?
+                                <c-core-link 
+                                label="Watch our Capital Raising Narrative guidance video."
+                                hyperlink={helpTextMapping.guidanceVideo}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                             </div>
+                        </c-core-alert>
+                        <c-core-input
+                        name="companyOverview"
+                        label="Company Overview"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Provide an 
+                                <c-core-link 
+                                label="overview of the company and its story"
+                                hyperlink={helpTextMapping.companyOverview}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                  to spark the interest of a potential investor.
+                                </p>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="problemOrOpp"
+                        label="Problem or Opportunity"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="problem or opportunity the company is addressing."
+                                hyperlink={helpTextMapping.problem}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="solution"
+                        label="Solution"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="solution and how it addresses this problem."
+                                hyperlink={helpTextMapping.solution}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <c-core-input
+                        name="differentiation"
+                        label="Differentiation"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe how the company is
+                                <c-core-link 
+                                label="different to existing solutions."
+                                hyperlink={helpTextMapping.differentiation}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>      
+                        </c-core-input>
+                            
+                        <c-core-input
+                        name="intellectualProperty"
+                        label="Intellectual Property"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="company's intellectual property"
+                                hyperlink={helpTextMapping.intellectualProperty}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                 and its unique value as an asset.
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <c-core-input
+                        name="totalAddressableMarket"
+                        label="Total Addressable Market"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe the 
+                                <c-core-link 
+                                label="problem or marketing opportunity"
+                                hyperlink={helpTextMapping.totalAddMarket}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                 the company is addressing.
+                                </p>
+                            </div>  
+                        </c-core-input>
+                        <c-core-input
+                        name="progress"
+                        label="Progress"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Describe how the 
+                                <c-core-link 
+                                label="company has performed so far."
+                                hyperlink={helpTextMapping.progress}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>  
+                        </c-core-input>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> 
+                                Structure and Strategy
+                        </div>
+                        <div class="step-desc"> Information on your team and socials/media </div>
+                        <div class="step-eta">Approx 60 mins</div>
+                    </div>
+                    <div class="inputs-nocol">
+                        <c-raise-team-member-component
+                        raise-id={recordId}
+                        section-title="Founder/s"
+                        helptext="It is mandatory to add at least one founder to be shown on the expression of interest page."
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        category="Founder"
+                        required-members="1"
+                        required
+                        ></c-raise-team-member-component>
+                        <hr>
+                        <c-raise-team-member-component
+                        raise-id={recordId}
+                        section-title="Directors and management team"
+                        helptext="Add profiles of individuals who are part of the leadership or management team. Include details of their skills and experience of each director and senior manager that are relevant to their role/position in your company."
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        category="Management Team"
+                        required-members="1"
+                        required
+                        >
+                            <div slot="body" class="team-member-body-slot">
+                                <c-core-alert 
+                                type="information">
+                                    <div class="alert-body" slot="body">
+                                        When you describe your team, 
+                                        it's important to include not just the founders but all key members of the team 
+                                        and the advisory board that collectively have the skills and attributes necessary 
+                                        to execute your plan. If you don't yet have those people, we suggest filling those gaps 
+                                        before you launch your raise. 
+                                        <c-core-link 
+                                        label="Learn more"
+                                        hyperlink={helpTextMapping.directors}
+                                        icon="externalLink"
+                                        size="medium"
+                                        variation="tertiary"
+                                        target="_blank"
+                                        ></c-core-link>
+                                    </div>
+                                </c-core-alert>
+                            </div>
+                        </c-raise-team-member-component>
+                        <hr>
+                        <c-raise-team-member-component
+                        raise-id={recordId}
+                        section-title="Advisors, ambassadors and key investors"
+                        category="Advisors"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Add profiles of individuals who are
+                                <c-core-link 
+                                label="advisors, ambassadors and/or key investors of the company."
+                                hyperlink={helpTextMapping.advisors}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>                              
+                        </c-raise-team-member-component>
+
+                        <c-core-radio
+                        label="I have consent from the individuals listed to publish their names in association with this raise."
+                        name="consentToIndividuals"
+                        values={yesNoOptions}
+                        size="medium"
+                        help=" "
+                        alignment-position="horizontal"
+                        text-position="horizontal"
+                        required-value="true"
+                        required>
+                        </c-core-radio>
+
+                        <c-core-input
+                        name="raiseManagerContact"
+                        label="Raise manager contact"
+                        type="email"
+                        limit="255"
+                        help="Provide a contact email which potential investors can contact with questions about the raise."
+                        required
+                        ></c-core-input>
+
+                        <!-- Growth plan -->
+                        <c-core-input
+                        name="growthPlan"
+                        label="Growth plan"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                <c-core-link 
+                                label="Summarise the key initiatives of your plan for growth"
+                                hyperlink={helpTextMapping.growthPlan}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                in the next phase of your company.
+                                </p>
+                            </div>      
+                        </c-core-input>
+                        <c-core-input
+                        name="growthPlanFileId"
+                        error-label="Growth Plan File"
+                        type="file"
+                        file-type="document"
+                        record-id={recordId}
+                        file-text="Supporting document upload (required)"
+                        required
+                        ></c-core-input>
+
+                        <!-- Business Strategy -->
+                        <c-core-input
+                        name="businessStrategy"
+                        label="Business strategy"
+                        type="textarea"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                <c-core-link 
+                                label="Share your company's objectives and strategy"
+                                hyperlink={helpTextMapping.bussStrategy}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                to achieve these, along with your expected timeframes.
+                                </p>
+                            </div>      
+                        </c-core-input>
+                        <c-core-input
+                        name="businessStrategyFileId"
+                        type="file"
+                        file-type="document"
+                        record-id={recordId}
+                        file-text="Supporting document upload (required)"
+                        required
+                        ></c-core-input>
+
+                        <!-- Business model -->
+                        <c-core-input
+                        name="businessModel"
+                        label="Business model"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                <c-core-link 
+                                label="Share how you propose to make money"
+                                hyperlink={helpTextMapping.bussModel}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                and generate income or capital growth.
+                                </p>
+                            </div>      
+                        </c-core-input>
+                        <c-core-input
+                        name="businessModelFileId"
+                        type="file"
+                        file-type="document"
+                        record-id={recordId}
+                        file-text="Supporting document upload (required)"
+                        required
+                        ></c-core-input>
+
+                        <!-- Org structure -->
+                        <c-core-input
+                        name="orgStructure"
+                        label="Organisation structure"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                Provide a
+                                <c-core-link 
+                                label="description of your organisational structure."
+                                hyperlink={helpTextMapping.orgStructure}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>      
+                        </c-core-input>
+                        <c-core-input
+                        name="orgStructureFileId"
+                        type="file"
+                        file-type="document"
+                        record-id={recordId}
+                        file-text="Supporting document upload (required)"
+                        required
+                        ></c-core-input>
+
+                        <c-core-radio
+                        label="Proprietary company corporate governance obligations"
+                        name="proprietaryCompany"
+                        values={yesNoOptions}
+                        size="medium"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        alignment-position="horizontal"
+                        text-position="horizontal"
+                        required>
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Is your company currently a 
+                                <c-core-link 
+                                label="proprietary company or will you become one following a successful CSF offer?"
+                                hyperlink={helpTextMapping.propCompany}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>     
+                        </c-core-radio>
+                        <c-core-radio
+                        label="Public company corporate governance concessions"
+                        name="publicCompany"
+                        values={yesNoOptions}
+                        size="medium"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        alignment-position="horizontal"
+                        text-position="horizontal"
+                        required>
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                <c-core-link 
+                                label="Is your company an eligible public company?"
+                                hyperlink={helpTextMapping.publicCompany}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                </p>
+                            </div>   
+                        </c-core-radio>
+
+                        <!-- Financial statements -->
+                        <c-core-input
+                        name="financialInformation"
+                        label="Financial Information"
+                        type="textarea"
+                        help="Please update the date on the below template summary of your financial statements. *This copy will appear in your offer document*"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        ></c-core-input>
+                        <p class="help-text">
+                            Upload a copy of the following statements for the last full financial year 
+                            <c-core-link 
+                            label="financials statements as required by ASIC."
+                            hyperlink={helpTextMapping.financialInfo}
+                            icon="externalLink"
+                            size="medium"
+                            variation="tertiary"
+                            target="_blank"
+                            ></c-core-link>
+                        </p>
+                        <p class="help-text bold">
+                            Profit and loss statement, Balance sheet, Statement of changes in equity and Cash flow statement.
+                        </p>
+                        <div class="inputs">
+                            
+                            <c-core-input
+                            name="financialInformationFileId"
+                            error-label="Financial Information File"
+                            type="file"
+                            file-type="document"
+                            record-id={recordId}
+                            file-text={financialFileRequired.text}
+                            minimum-value="1"
+                            multi-limit="4"
+                            multiple
+                            required={financialFileRequired.required}
+                            ></c-core-input>
+
+                            <c-core-input
+                            name="financialInformationUrl"
+                            label=""
+                            type="url"
+                            limit="255"
+                            placeholder="Add link to data room (optional)"
+                            ></c-core-input>
+                        </div>
+
+                        <c-core-input
+                        label="Capital structure"
+                        name="capitalStructureFileId"
+                        type="file"
+                        record-id={recordId}
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        file-text="Upload capital structure (required)"
+                        file-type="document"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Include
+                                <c-core-link 
+                                label="details of your company's debt and equity capital structure"
+                                hyperlink={helpTextMapping.capitalStructure}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link>
+                                , including all classes of issued shares, options and other securities, if any.
+                                </p>
+                            </div>   
+                        </c-core-input>
+
+                        <c-core-input
+                        name="debtFunding"
+                        label="Debt funding and other sources of funding"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Include 
+                                    <c-core-link 
+                                    label="details of the key terms of any debt financing"
+                                    hyperlink={helpTextMapping.debtFunding}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    and upload any relevant documents.
+                                </p>
+                            </div>
+                        </c-core-input>
+                        <c-core-input
+                        name="debtFundingFileId"
+                        error-label="Debt Funding File"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Supporting document upload (required)"
+                        file-type="document"
+                        required
+                        ></c-core-input>
+
+
+                        <c-core-input
+                        name="fundsRaisedToDate"
+                        label="External funds raised to date"
+                        type="textarea"
+                        limit="1200"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    <c-core-link 
+                                    label="Include any external funds raise to date"
+                                    hyperlink={helpTextMapping.externalFunds}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="legalOrDisciplanryActions"
+                        label="Legal or disciplinary actions against company"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    <c-core-link 
+                                    label="Share any enforceable undertakings, criminal or civil penalties and/or convictions"
+                                    hyperlink={helpTextMapping.legal}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    relating to your company or it's leadership.
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="risksFacingBusiness"
+                        label="Risks facing the business"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Describe the
+                                    <c-core-link 
+                                    label="main risks facing your company's business."
+                                    hyperlink={helpTextMapping.risks}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="materialAgreementsFileId"
+                        label="Material agreements"
+                        type="file"
+                        file-type="document"
+                        record-id={recordId}
+                        file-text="Upload material agreements (optional)"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Include any 
+                                    <c-core-link 
+                                    label="material agreements"
+                                    hyperlink={helpTextMapping.materialAgreements}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    essential to the operation, performance or future prospects of your company. 
+                                </p>
+                            </div>
+                        </c-core-input>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> Intended Raise </div>
+                        <div class="step-desc"> Financial details aboutyour company to date </div>
+                        <div class="step-eta">Approx 80 mins</div>
+                    </div>
+                    <div class="inputs">
+                        <c-core-input
+                        name="stage"
+                        label="Stage"
+                        type="dropdown"
+                        options={stageOptions}
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    What
+                                    <c-core-link 
+                                    label="stage of raising"
+                                    hyperlink={helpTextMapping.stage}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    capital are you at?
+                                </p>
+                            </div>
+                        </c-core-input>
+                    </div>
+                    <div class="inputs-nocol">
+                         <!-- Use of funds -->
+                         <c-core-input
+                         name="plannedUseOfFunds"
+                         label="Use of funds"
+                         type="textarea"
+                         limit="1200"
+                         required
+                         >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    It is important to clearly explain to investors the amount of money you are raising and what you’re planning to do with it. 
+                                    Provide an outline of key initiatives which will be funded by the capital and support company growth.
+                                    <c-core-link 
+                                    label="How much should I raise?"
+                                    hyperlink={helpTextMapping.plannedUseOfFunds}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+                         <c-core-input
+                         name="plannedUseOfFundsFileId"
+                         error-label="Planned Use of Funds File"
+                         type="file"
+                         record-id={recordId}
+                         file-text="Supporting document upload (optional)"
+                         file-type="document"
+                         ></c-core-input>
+                         <div class="alert-container">
+                            <c-core-alert 
+                            type="warning">
+                                <div class="alert-body" slot="body">
+                                    Please note: Once close date is set and confirmed, dates can't be changed. Dates are approximate and need to consider 
+                                    time for Capital Raising 101 course completion and VentureCrowd review times. Take this into consideration when selecting 
+                                    offer launch and closure dates.
+                                </div>
+                            </c-core-alert>
+                        </div>
+                    </div>    
+                    <div class="inputs">
+                       
+                        <c-core-input
+                        name="offerLaunchDate"
+                        label="Offer launch date"
+                        type="date"
+                        placeholder="DD/MM/YYYY"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Launch date refers to when your deal is live to the public and everyone can invest if they meet the requirements. 
+                                    
+                                </p>
+                                <c-core-link 
+                                    label="Learn more"
+                                    hyperlink={helpTextMapping.launchDate}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="offerCloseDate"
+                        label="Offer close date"
+                        type="date"
+                        compare-date={formData.offerLaunchDate}
+                        placeholder="DD/MM/YYYY"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    The close date refers to the date investors will no longer be able to invest in your offering.
+                                </p>
+                                <c-core-link 
+                                label="Learn more"
+                                hyperlink={helpTextMapping.closeDate}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link> 
+                            </div>
+                        </c-core-input>
+                       
+                        
+                        <c-core-input
+                        name="investProductType"
+                        label="Investment Product Type"
+                        type="dropdown"
+                        options={investProductTypeOptions}
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        disabled
+                        >
+                        <div class="help-text" slot="helptext">
+                            <p>
+                                <c-core-link 
+                                label="What is on offer for your investors?"
+                                hyperlink={helpTextMapping.productType}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link> 
+                            </p>
+                        </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="valuation"
+                        label="Valuation"
+                        type="currency"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>What is your pre-money valuation for this raise?
+                                    <c-core-link 
+                                    label="How to Value your Company."
+                                    hyperlink={helpTextMapping.valuation}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>  
+                        </c-core-input>
+
+                        <c-core-input
+                        name="numberOfShares"
+                        label="Number of shares on issue"
+                        type="number"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>What is the
+                                    <c-core-link 
+                                    label="total number of shares"
+                                    hyperlink={helpTextMapping.numShares}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    on offer?
+                                </p>
+                            </div>  
+                        </c-core-input>
+
+                        <c-core-input
+                        name="sharePrice"
+                        label="Share price"
+                        type="currency"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        disabled
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>We've calculated your 
+                                    <c-core-link 
+                                    label="share price based on your valuation and number of shares on issue."
+                                    hyperlink={helpTextMapping.sharePrice}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>  
+                        </c-core-input>
+                    </div>
+                    <div class="inputs-nocol">
+                        <c-core-input
+                        name="rightsAssociatedWithShares"
+                        label="Rights associated with shares"
+                        type="textarea"
+                        limit="1200"
+                        subtext="Requirement for ASIC for the CSF offer document"    
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>Include a description or summary of the key rights associated with all securities on issue and of the key provisions that deal with the rights and liabilities of thesecurities contained in the company's constitution and any current or proposed shareholder agreements (if applicable).
+                                    You may wish to upload  
+                                    <c-core-link 
+                                    label="a full description of the rights or key provisions"
+                                    hyperlink={helpTextMapping.rights}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    at the end of this form in the annexure to include in key documents on your deal page.
+                                     Also consider providing a copy of your company constitution and/or any shareholder agreements.
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="detailsOfPreviousCsfOffers"
+                        label="Details of previous CSF offers"
+                        type="textarea"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        limit="1200"
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Describe any
+                                    <c-core-link 
+                                    label="previous CSF offers (if any)"
+                                    hyperlink={helpTextMapping.prevCsf}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                    in the last 12 months below
+                                </p>
+                            </div>
+                        </c-core-input>
+                    </div>
+                    <div class="inputs">
+
+
+                        <c-core-input
+                        name="minTarget"
+                        label="Minimum target"
+                        type="currency"
+                        help=""
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    <c-core-link 
+                                    label="Implications for not meeting minimum target"
+                                    hyperlink={helpTextMapping.minTarget}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="maxTarget"
+                        label="Maximum target"
+                        type="currency"
+                        subtext="Requirement for ASIC for the CSF offer document"
+                        minimum-value={minTarget}
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    <c-core-link 
+                                    label="What should my maximum target be?"
+                                    hyperlink={helpTextMapping.maxTarget}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="minInvestAmount"
+                        label="Minimum investment amount"
+                        type="currency"
+                        help="Must be at least $250."
+                        minimum-value="250"
+                        required
+                        ></c-core-input>
+
+                        <c-core-input
+                        name="keyDocumentsFileId"
+                        label="Company Constitution upload"
+                        type="file"
+                        record-id={recordId}
+                        help=""
+                        file-text="File upload (required)"
+                        file-type="document"
+                        multi-limit="1"
+                        minimum-value="1"
+                        multiple
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Please add your
+                                    <c-core-link 
+                                    label=" Company Constitution"
+                                    hyperlink={helpTextMapping.keyDocs}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <!-- New Field - Added by Cesar -->
+                        <c-core-input
+                        name="shareholderAgreementFileId"
+                        label="Shareholder Rights Agreement upload"
+                        type="file"
+                        record-id={recordId}
+                        help=""
+                        file-text="File upload (required)"
+                        file-type="document"
+                        multi-limit="1"
+                        minimum-value="1"
+                        multiple
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Please add your
+                                    <c-core-link 
+                                    label="Shareholder Rights Agreement."
+                                    hyperlink={helpTextMapping.keyDocs}
+                                    icon="externalLink"
+                                    size="medium"
+                                    variation="tertiary"
+                                    target="_blank"
+                                    ></c-core-link> 
+                                </p>
+                            </div>
+                        </c-core-input>
+
+                        <c-core-input
+                        name="pitchDeckFileId"
+                        label="Pitch deck upload"
+                        type="file"
+                        record-id={recordId}
+                        file-text="Upload document (requried)"
+                        file-type="document"
+                        required
+                        >
+                            <div class="help-text" slot="helptext">
+                                <p>
+                                    Upload your company pitch deck, your file should not exceed 3MB. 
+                                </p>
+
+                                <c-core-link 
+                                label="Learn more about pitch decks and access templates."
+                                hyperlink={helpTextMapping.pitchDeck}
+                                icon="externalLink"
+                                size="medium"
+                                variation="tertiary"
+                                target="_blank"
+                                ></c-core-link> 
+                            </div>
+                        </c-core-input>
+                    </div>
+
+                </div>
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-title"> Finalise </div>
+                        <div class="step-desc"> Information specifically about the upcoming raise </div>
+                        <div class="step-eta">Approx 10 mins</div>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Communication with Investors</p>
+                        </div>
+                        <p>VentureCrowd's platform provides a comments section for you to engage with Investor questions, and it is your responsibility to engage with these communications.</p>
+                        <hr>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Accuracy of data provided</p>
+                        </div>
+                        <p>I confirm all of the information I have provided in the previous form is true and correct, and contains all material information relevant to the company and the offer.</p>
+                        <hr>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Risk warning</p>
+                        </div>
+                        <p>I acknowledge the below risk warning will feature in Section 1 of my CSF offer document. This is the mandatory wording prescribed under the Corporations Regulations 2001 (Corporations  Regulations) (reg 6D.3A.03).  </p>
+                        
+                        <div class="information-text-body">
+                            Crowd-sourced funding is risky. Issuers using this facility include new or rapidly growing ventures. Investment in these types of ventures is speculative 
+                            and carries high risks. You may lose your entire investment, and you should be in a position to bear this risk without undue hardship. Even if 
+                            the company is successful, the value of your investment and any return on the investment could be reduced if the company issues more shares. 
+                            Your investment is unlikely to be liquid. This means you are unlikely to be able to sell your shares quickly or at all if you need the money or decide that this investment is not right for you. 
+                            Even though you have remedies for misleading statements in the offer document or misconduct by the company, you may have difficulty recovering your money. There are rules for handling your money. 
+                            However, if your money is handled inappropriately or the person operating the platform on which this offer is published becomes insolvent, you may have difficulty recovering your money. 
+                            Ask questions, read all information given carefully, and seek independent financial advice before committing yourself to any investment.
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="field-title">
+                            <p>Cooling off period</p>
+                        </div>
+                        <p>
+                            I understand there is a cooling off period that applies and acknowledge that the description below will features in the CSF offer document so investors know they can withdraw their application under a CSF offer within five days of their application.
+                        </p>
+                        
+                        <div class="information-text-body">
+                            You have the right to withdraw your application under this Offer and to be repaid your application money. If you wish to withdraw your application for any reason (including if you change your mind about investing in the Company), 
+                            you must do so within five business days of making your application (the Cooling-off Period). 
+                            You must withdraw your application via the Intermediary's platform as follows: [insert the method or instructions for withdrawing offers, as specified by the Intermediary] After your withdrawal has been processed, 
+                            the Intermediary will refund the application money
+                            to your nominated account as soon as practicable.
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <c-core-checkbox
+                    name="termsAndConditions"
+                    error-label="Terms and conditions"
+                    values={termsAndConditionsOptions} 
+                    mode="light"
+                    size="xlarge"
+                    text-position="right"
+                    alignment-position="horizontal"
+                    required>
+                </c-core-checkbox>
+                </div>
+            </div>
+        </c-core-multi-step-form>
+    </template>
+</template>

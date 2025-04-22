@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is a field that will be managed from a flow perspective, and will be used for the approval process and the display in the record indicating if it is locked or not.</description>
+    <inlineHelpText>This is a field that will be managed from an automated flow, and will be used for the approval process and the display in the record indicating if it is locked or not.</inlineHelpText>
+    <label>Approval Status</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

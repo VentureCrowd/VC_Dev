@@ -1,0 +1,40 @@
+<template>
+    <div class="cards-container" lwc:ref="investments">
+        <div key={card.OpportunityId} for:each={_investmentsDetails} for:item="card">
+            <template lwc:if={isEoi}>
+                <c-pipo-investment-card
+                    product-name={card.EoITitle}
+                    investor-name={userName}
+                    price={card.InvestAmount}
+                    logo-url={card.companyLogoEOI}
+                    cursor="default">
+                </c-pipo-investment-card>
+            </template>
+            <template lwc:else>
+                <c-pipo-investment-card
+                product-name={card.ProductName}
+                investor-name={card.AccountName}
+                last-interest={card.BadgeStyle}
+                price={card.Amount}
+                logo-url={card.ProductLogo}
+                investment-status={investmentStatus}
+                investment-date={card.InvestmentDate}
+                investment-id={card.investmentId}
+                onbuttonclick={handleInvestmentDetail}
+                card-bg-color={card.backgroundColor}
+                cursor="pointer">
+                </c-pipo-investment-card>
+            </template>
+        </div>
+        
+        <div class="show-more-button" lwc:if={showMoreButton}>
+            <c-core-button
+                is-loading={loadingButton}
+                label="Show more"
+                variation="secondary"
+                mode="light"
+                onclick={handleShowMore}>
+            </c-core-button>
+        </div> 
+    </div>
+</template>

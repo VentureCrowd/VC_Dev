@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="HeaderText" type="String" label="Header Text" default="How does it work?" />
+
+            <property name="firstImg" type="String" label="First Image Url" default="https://assets.venturecrowd.vc/uploads/2018/01/launch-deal-icon.svg" />
+            <property name="secondImg"  type="String" label="Second Image Url" default="https://assets.venturecrowd.vc/uploads/2018/01/secure-capital-icon.svg" />
+            <property name="thirdImg" type="String" label="Third Image Url" default="https://assets.venturecrowd.vc/uploads/2018/01/deliver-plan-icon.svg" />
+
+            <property name="firstImgTitle" type="String" label="First Image Title" default="" />
+            <property name="secondImgTitle"  type="String" label="Second Image Title" default="" />
+            <property name="thirdImgTitle" type="String" label="Third Image Title" default="" />
+
+            <property name="firstImgFooterText" type="String" label="First Image Footer Text" default="" />
+            <property name="secondImgFooterText"  type="String" label="Second Image Footer Text" default="" />
+            <property name="thirdImgFooterText" type="String" label="Third Image Footer Text" default="" />
+
+            <property name="footerBtnLabel" type="String" label="Footer Button Label" default="Read More"/>
+            <property name="footerBtnRedirectUrl" type="String" label="Footer Button Redirect URL" default=""/>
+
+            <property name="backgroundColor" type="String" label="Background Color" datasource="White, Grey, Dark Navy,Black" default="White" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

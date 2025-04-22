@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Published_Status_Without_URL</fullName>
+    <active>false</active>
+    <description>Prevent_Published_Status_Without_URL</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(EOI_Status__c, &quot;Published&quot;),
+    ISBLANK( Published_EOI_URL__c)
+)</errorConditionFormula>
+    <errorMessage>We hit a Snag!! You can&apos;t change the status to Published because there is no Published EOI URL determined in the record, please go to the Track/Manage tab of the Record and update the field.</errorMessage>
+</ValidationRule>

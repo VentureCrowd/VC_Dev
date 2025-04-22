@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Total_addressable_market__c</fullName>
+    <description>This field indicates the total addressable market for the company’s product or service.</description>
+    <inlineHelpText>Specify the total addressable market for your product or service.</inlineHelpText>
+    <label>Total addressable market</label>
+    <length>1200</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

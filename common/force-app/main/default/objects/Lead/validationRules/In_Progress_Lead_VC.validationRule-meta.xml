@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Progress_Lead_VC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+($RecordType.Name= &apos;VC&apos;),
+ISPICKVAL( Status , &apos;Converted&apos; ),
+
+OR(
+(ISBLANK( Background_information__c ))
+
+))</errorConditionFormula>
+    <errorMessage>Please fill in background information on the &quot;In Progress&quot; stage before moving to converted.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+{
+  "packageDirectories": [
+    {
+      "path": "common/force-app",
+      "default": true,
+      "package": "CommonUtils"
+    },
+    { "path": "registration/force-app","default": false, "package": "Registration" },
+    { "path": "tilegrid/force-app",    "default": false, "package": "TileGrid"     }
+  ],
+  "name": "VC_Dev",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "63.0"
+}

@@ -1,0 +1,104 @@
+<template>
+    <!-- FOR DESKTOP -->
+    <template if:false={isMobile}>
+        <div class="container">
+            <div class="slds-grid ">
+                <div class="slds-col slds-size_2-of-4">
+                    <div class="column1 slds-p-right_xx-large">
+                        <div class="slds-p-right_xx-large">
+                            <p class="slds-text-heading_small slds-m-bottom_x-large" style="color:#7455a6;font-size: 14px;">
+                                <span>QUICK LINKS</span>
+                            </p>
+                            <ul class="">
+                                <template for:each={tablist} for:item="tab" for:index="index">
+                                        <li class="lightning-layout slds-grid_vertical-align-center"  data-num={index} onclick={handletabclick} key={tab}>
+                                            <article class="slds-grid_vertical-align-center">
+                                                <header class="slds-media slds-media_center slds-has-flexi-truncate slds-grid_vertical-align-center">
+                                                    <div class="slds-media__figure">
+                                                        <lightning-icon class="" icon-name="utility:forward" size="medium" alternative-text="open" title="">
+                                                        </lightning-icon>
+                                                    </div>
+                                                    <div class="slds-media__body"> 
+                                                        <text class="slds-text-heading_medium">
+                                                            <b>{tab}</b>
+                                                        </text>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_2-of-4">
+                    <lightning-formatted-rich-text value={tabcontenttodisplay}></lightning-formatted-rich-text>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- EXPANDABLE VIEW / MOBILE VIEW  -->
+    <template if:true={isMobile}>
+        <div class="container">
+            <div class="slds-grid slds-wrap ">
+                <div class="column1">
+                    <div class="">
+                        <p class="slds-text-heading_small slds-m-bottom_x-large" style="color:#7455a6;font-size: 14px;">
+                            <span>QUICK LINKS</span>
+                        </p>
+                        <ul class="">
+                            <template for:each={tablist} for:item="tab" for:index="index">
+                                    <li class="lightning-layout slds-grid_vertical-align-center"  data-num={index} onclick={handletabclick} key={tab}>
+                                        <div class="slds-size_1-of-1">
+                                            <article class="slds-grid_vertical-align-center" data-num={index}>
+                                                <header class="slds-media slds-media_center slds-has-flexi-truncate slds-grid_vertical-align-center">
+                                                    <div class="slds-media__figure">
+                                                        <lightning-icon class="buttonIcon" icon-name="utility:forward" data-num={index} size="small" alternative-text="open" title="">
+                                                        </lightning-icon>
+                                                    </div>
+                                                    <div class="slds-media__body"> 
+                                                        <text class="slds-text-heading_medium">
+                                                            <b>{tab}</b>
+                                                        </text>
+                                                    </div>
+                                                </header>
+                                            </article>
+                                        </div>
+                                        <div class="slds-size_1-of-1 tabContents">
+                                            <div class="tabContent" data-id={index}>
+                                                <lightning-formatted-rich-text value={tabcontenttodisplay}></lightning-formatted-rich-text>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+</template>
+
+                        <!-- <ul>
+                            <template for:each={tablist} for:item="tab" for:index="index">
+                                <li class="lightning-layout slds-grid_horizontal-align-center"  data-num={index} onclick={handletabclick} key={tab}>
+                                    <article class="slds-grid_vertical-align-center">
+                                        <lightning-layout>
+                                            <lightning-layout-item padding="around-small"><lightning-icon class="" icon-name="utility:forward" size="medium" alternative-text="open" title=""></lightning-icon></lightning-layout-item>
+                                            <lightning-layout-item padding="around-small"><p class="tabName">{tab}</p></lightning-layout-item>
+                                        </lightning-layout>
+                                    </article>
+                                </li>
+                            </template>
+                            
+                        </ul> -->
+                    
+                        <!-- <ul class="slds-list_vertical">
+                            <template for:each={tablist} for:item="tab" for:index="index">
+                                <li class="slds-list_horizontal"  data-num={index} onclick={handletabclick} key={tab}>
+                                    <lightning-icon class="" icon-name="utility:forward" size="medium" alternative-text="open" title=""></lightning-icon>
+                                    <div class="slds-text-heading_small">{tab}</div>
+                                </li>
+                            </template>
+                        </ul> -->

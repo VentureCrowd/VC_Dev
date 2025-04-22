@@ -1,0 +1,14 @@
+<template>
+    <div class={cardClass}>
+        <div class="core-card-header">
+            <slot name="title">
+            </slot>
+        </div>
+        <div class="core-card-body">
+            <slot name="body"></slot>
+        </div>
+        <div lwc:if={renderFooter} class="core-card-footer">
+            <slot name="footer"></slot>
+        </div>
+    </div>
+</template>

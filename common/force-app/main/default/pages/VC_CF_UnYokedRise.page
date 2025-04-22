@@ -1,0 +1,239 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+    
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+              crossorigin="anonymous" />
+    </head>
+    
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container"><a href="#">Crowdfunding</a><a href="#">Startups</a><a href="#">Vuenture Capital</a></div>
+                        <h1 class="mt-4">Unyoked raise $1.2 million in just two hours</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/08/Unyoked-cabin-at-dawn-GRAD-Ext-2.jpg')"></div>
+        </section>
+        
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h2>
+                                Case Study: Unyoked </h2>
+                            <p><i><a href="https://www.unyoked.co/">Unyoked</a> looks to <a href="https://www.venturecrowd.com.au/">VentureCrowd</a> to raise $1.2 million in just two hours</i></p>
+                            <p><i><span style="font-weight: 400;"><a href="https://www.unyoked.co/">Unyoked</a>, a Sydney-based small cabin start-up that’s part of the eco-tourism movement, last year raised $1.2 million in two hours via VentureCrowd. The Series A funding round closed in June 2019, with key investors including</span></i><i><span style="font-weight: 400;"> co-founder of Luxury Escapes, <a href="https://www.linkedin.com/in/adam-schwab-64b439a/">Adam Schwab</a>.</span></i></p> <br/><br/>
+                            <div >
+                                <img width="850" height="590" src="https://assets.venturecrowd.vc/uploads/2020/09/Unyoked3_by_Luisa-Brimble-1172.jpg"  />
+                                <h6>
+                                    Six New Off-the-Grid Unyoked Cabins Have Popped Up Around NSW and Vic |&nbsp;<a href="https://concreteplayground.com/sydney/travel-leisure/six-new-unyoked">concreteplayground.com</a>
+                                    
+                                </h6>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <h2>The Journey</h2>
+                            <p><span style="font-weight: 400;"><a href="https://www.unyoked.co/">Unyoked</a> was founded in March 2017, by twin brothers <a href="https://www.linkedin.com/in/chriskgrant/">Chris</a> and <a href="https://www.linkedin.com/in/cameron-k-l-grant-3bba1156/">Cam Grant</a>. They describe their company as being an antidote to modern life, providing an experience of escapism to travellers seeking to rent out their range of private cabins.</span></p>
+                            <p><span style="font-weight: 400;">With 10 cabins in NSW, 10 in Victoria, and one in Queensland, the start-up is growing across Australia; offering an affordable and eco-friendly escape from reality. With no Wi-Fi or TV, Unyoked instead provides guests with creative creature comforts, including negroni-making kits, yoga mats and books in order to enable its customers to disconnect.</span></p>
+                            <p><span style="font-weight: 400;">Adopting a similar business model to companies like Getaway in the United States, where landowners host cabins on their property and receive a percentage of the profit made from guest stays, Unyoked additionally donates a percentage of its profits </span><span style="font-weight: 400;">to charity partner the</span><a href="https://www.fnpw.org.au/about"> <span style="font-weight: 400;">Foundation for National Parks &amp; Wildlife</span></a><span style="font-weight: 400;">; an NGO which aims to protect Australia’s wildlife and wilderness.</span></p>
+                            <p><span style="font-weight: 400;">In 2019, Cam</span><a href="https://www.smh.com.au/business/small-business/the-antidote-to-modern-life-tiny-house-startup-started-by-twin-brothers-is-spreading-its-wings-across-australia-20190604-p51udi.html"> <span style="font-weight: 400;">told the Sydney Morning Herald</span></a> <span style="font-weight: 400;">that he sees Unyoked growing into a global network of cabins that make the wilderness accessible; a combination which he believes is appealing to travellers seeking a unique, local experience.</span></p>
+                            
+                            <h2 class="text-background-gradient mt-5">
+                                “We see it as the antidote to modern life and being able to provide little sanctuaries in reach of major cities around Australia."
+                            </h2>  
+                            <br/>
+                            <br/>
+                            
+                            <div >
+                                <img width="850" height="590" src="https://assets.venturecrowd.vc/uploads/2020/09/unyoked-cam-chris-grant.jpg"  />
+                                <h6 class="title" style="text-align: center;">Unyoked, tiny houses and escapism |&nbsp;<a href="https://eatdrinkplay.com/maker-creator-chris-cameron-grant/">eatdrinkplay.com</a></h6>
+                            </div>
+                            <div>
+                                
+                                <br/>
+                                
+                                
+                                <h2>Opportunities, challenges and future growth</h2>
+                                <p><span style="font-weight: 400;">With long customer waiting lists, the brothers revealed that <a href="https://www.unyoked.co/">Unyoked</a> had made more than $300,000 profit from only six cabins in 2019, thanks to an occupancy rate of more than 95 per cent. In November 2019, Unyoked said it was targeting annual recurring revenues of over $25 million by 2022.</span></p>
+<p><span style="font-weight: 400;">Whether or not these targets will be greatly impacted by COVID-19 is currently unknown, but with more Australians holidaying closer to home this year, the market opportunity is certainly there. Unyoked has also shown its commitment to navigating the crisis</span><a href="https://unplug.unyoked.co/covid19-response"> <span style="font-weight: 400;">through the release of an official response</span></a><span style="font-weight: 400;"> to the pandemic, highlighting increased cleaning standards, flexible cancellation policies and the facilitation of remote working across its team.</span></p>
+                                
+                                
+                                <br/>
+                                <br/>
+                                	<p><span style="font-weight: 400;"><a href="https://www.venturecrowd.com.au/">VentureCrowd</a> CEO <a href="https://www.linkedin.com/in/stevenmaarbani/">Steven Maarbani</a> believes that</span><a href="https://www.venturecrowd.com.au/the-rise-of-conscious-investment-will-fuel-the-businesses-of-the-future/"> <span style="font-weight: 400;">capital will be different, better, stronger</span></a><span style="font-weight: 400;">, and more conscious in the post COVID-19 world, and that Unyoked is in a great position to reap the rewards from this movement.</span></p>
+<blockquote><p>
+    <strong>“They have essentially created a market segment that did not exist before, and the strong demand for the product indicates the company’s growth has only just begun.”</strong>
+</p></blockquote>
+                                
+                                
+                                <div >
+                                    <img width="850" height="590" src="https://assets.venturecrowd.vc/uploads/2020/09/Wild-Turkey-Unyoked.jpg"  />
+                                    <h6 class="title" style="text-align: center;">Matthew McConaughey and Wild Turkey Team up with Unyoked | <a href="https://manofmany.com/lifestyle/travel/matthew-mcconaughey-and-wild-turkey-team-up-with-unyoked-to-build-cabin-down-under">manofmany.com</a></h6>
+                                </div>
+                                
+                                
+                                <br/>
+                                <br/>
+                                
+                                <p><span style="font-weight: 400;">One surprising supporter to emerge in support of Unyoked after their fundraise</span><span style="font-weight: 400;"> was Hollywood actor <strong>Matthew McConaughey</strong>. In his capacity as Creative Director at Liquor brand Wild Turkey, the actor committed to co-designing an eco-friendly cabin called ‘</span><a href="https://www.unyoked.co/xwt"><span style="font-weight: 400;">The Reserve</span><span style="font-weight: 400;">’</span></a><span style="font-weight: 400;">, located in the Central Coast Hinterland NSW. It was launched in December 2019 and can be rented via their website.</span></p>
+<p><span style="font-weight: 400;">Unyoked and McConaughey’s shared purpose in creating the cabin was the want for Australians to simultaneously protect, enjoy, preserve and reconnect with the wild.</span></p>
+                                
+                                <p><span style="font-weight: 400;">In a 2019</span><a href="https://www.businessinsider.com/matthew-mcconaughey-launched-150-a-night-eco-cabin-in-australia-2019-11?r=AU&amp;IR=T"> <span style="font-weight: 400;">statement to Business Insider Australia</span></a><span style="font-weight: 400;">, </span><span style="font-weight: 400;">McConaughey said:</span></p>
+<blockquote><p>
+<span style="font-weight: 400;">“My hope now is that The Reserve will inspire Australians to reconnect with nature as an antidote to the frenetic pace of life.”</span>
+</p></blockquote>
+<p><span style="font-weight: 400;">Since closing its Series A fundraising round, Unyoked has begun plans to use this funding to expand its business and open new cabins Australia-wide. It plans on continuing this momentum by targeting Queensland, eastern Tasmania and the ACT.</span></p>
+<p>
+    
+                                <span style="font-weight: 400;"><a href="https://www.unyoked.co/">Unyoked</a>Don’t be surprised if you see an  cabin pop up somewhere near you very soon.</span></p>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <a href="{! $Label.VC_CF_Public_URL +'/blog/evergen-raises-6m'}">
+            <div class="container">
+                <div class="row text-center py-5 text-white">
+                    <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                    <div class="col-md-12 pb-5 next-post-title mt-3">
+                        <h3>Nexba raises $6M: Series A Round</h3>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="next-post-bg-overlay"></div>
+            <div class="next-post-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2020/09/Nexba-Cover.jpg')"></div>
+                 </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+    </apex:page>

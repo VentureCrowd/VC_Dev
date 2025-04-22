@@ -1,0 +1,61 @@
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    transition: all 300ms ease;
+}
+
+.background:before {
+    content: '';
+    background-color: #0a0a0a;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover .background {
+    transform: scale(1.1);
+}
+
+.container {
+    position: relative;
+    z-index: 200;
+}
+
+.row {
+    min-height: 300px;
+    align-items: center;
+    align-content: center;
+}
+
+.link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 32px;
+}

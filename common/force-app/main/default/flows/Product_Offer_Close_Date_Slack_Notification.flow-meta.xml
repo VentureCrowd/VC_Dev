@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Sack_Message_for_Venture_Products</name>
+        <label>Sack Message for Venture Products</label>
+        <locationX>578</locationX>
+        <locationY>1284</locationY>
+        <actionName>slackPostMessage</actionName>
+        <actionType>slackPostMessage</actionType>
+        <connector>
+            <targetReference>Get_Products_with_Expiring_Offer_Close_Date_in_One_Day</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Log_Message_3</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>slackAppIdForToken</name>
+            <value>
+                <stringValue>A03269G3DNE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackWorkspaceIdForToken</name>
+            <value>
+                <stringValue>T0104K5EL2U</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackConversationId</name>
+            <value>
+                <stringValue>C08850QP59A</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackMessage</name>
+            <value>
+                <elementReference>SlackMessage2</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackPostMessage</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Sack_Message_for_Venture_Products1</name>
+        <label>Sack Message for Venture Products</label>
+        <locationX>666</locationX>
+        <locationY>2832</locationY>
+        <actionName>slackPostMessage</actionName>
+        <actionType>slackPostMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>slackAppIdForToken</name>
+            <value>
+                <stringValue>A03269G3DNE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackWorkspaceIdForToken</name>
+            <value>
+                <stringValue>T0104K5EL2U</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackConversationId</name>
+            <value>
+                <stringValue>C08850QP59A</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackMessage</name>
+            <value>
+                <elementReference>SlackMessage4</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackPostMessage</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Slack_Message_for_Property_Products</name>
+        <label>Send Slack Message for Property Products</label>
+        <locationX>50</locationX>
+        <locationY>1284</locationY>
+        <actionName>slackPostMessage</actionName>
+        <actionType>slackPostMessage</actionType>
+        <connector>
+            <targetReference>Get_Products_with_Expiring_Offer_Close_Date_in_One_Day</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Log_Message_2</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>slackAppIdForToken</name>
+            <value>
+                <stringValue>A03269G3DNE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackWorkspaceIdForToken</name>
+            <value>
+                <stringValue>T0104K5EL2U</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackConversationId</name>
+            <value>
+                <stringValue>C088F616KSM</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackMessage</name>
+            <value>
+                <elementReference>Slack_Message</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackPostMessage</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Slack_Message_for_Property_Products1</name>
+        <label>Send Slack Message for Property Products</label>
+        <locationX>402</locationX>
+        <locationY>2832</locationY>
+        <actionName>slackPostMessage</actionName>
+        <actionType>slackPostMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>slackAppIdForToken</name>
+            <value>
+                <stringValue>A03269G3DNE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackWorkspaceIdForToken</name>
+            <value>
+                <stringValue>T0104K5EL2U</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackConversationId</name>
+            <value>
+                <stringValue>C088F616KSM</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackMessage</name>
+            <value>
+                <elementReference>SlackMessage3</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>slackPostMessage</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Product_Owner_Name</name>
+        <label>Assign Product Owner Name</label>
+        <locationX>798</locationX>
+        <locationY>684</locationY>
+        <assignmentItems>
+            <assignToReference>ProductOwnerDisplayName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProductOwnerFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Product_Type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Product_Owner_name12</name>
+        <label>Assign Product Owner name</label>
+        <locationX>886</locationX>
+        <locationY>2232</locationY>
+        <assignmentItems>
+            <assignToReference>ProductOwnerDisplayNameOne</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProductOwnerFormulaOne</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Product_Type1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Property_Products_Text</name>
+        <label>Update Property_Products_Text</label>
+        <locationX>666</locationX>
+        <locationY>900</locationY>
+        <assignmentItems>
+            <assignToReference>PropertyProductsText</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>PropertyProductsTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Property_Products_Text1</name>
+        <label>Update Property_Products_Text</label>
+        <locationX>754</locationX>
+        <locationY>2448</locationY>
+        <assignmentItems>
+            <assignToReference>PropertyProductTextOne</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>PropertyProductOnedayTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_One_Day_Expiry_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Ventures_Products_Text</name>
+        <label>Update Ventures Products  Text</label>
+        <locationX>930</locationX>
+        <locationY>900</locationY>
+        <assignmentItems>
+            <assignToReference>VentureProductsText</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>VentureProductsTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Ventures_Products_Text1</name>
+        <label>Update Ventures Products  Text</label>
+        <locationX>1018</locationX>
+        <locationY>2448</locationY>
+        <assignmentItems>
+            <assignToReference>VentureProductTexOne</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>VentureProductOneDayTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_One_Day_Expiry_Products</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Expiring_Products</name>
+        <label>Check Expiring Products</label>
+        <locationX>930</locationX>
+        <locationY>1908</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_1_Day_Expiry_Products</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OneDayProducts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Through_One_Day_Expiry_Products</targetReference>
+            </connector>
+            <label>Has 1- Day Expiry Products</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Expiry_Products_for_3_days</name>
+        <label>Check Expiry Products for 3 days</label>
+        <locationX>930</locationX>
+        <locationY>360</locationY>
+        <defaultConnector>
+            <targetReference>Get_Products_with_Expiring_Offer_Close_Date_in_One_Day</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_3_Day_Expiry_Products1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AllProducts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Through_Products</targetReference>
+            </connector>
+            <label>Has 3-Day Expiry Products</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Any_Products_Exists</name>
+        <label>Check if Any Products Exists</label>
+        <locationX>578</locationX>
+        <locationY>1176</locationY>
+        <defaultConnector>
+            <targetReference>Get_Products_with_Expiring_Offer_Close_Date_in_One_Day</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>Did_we_collect_any_Property_Products</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PropertyProductsText</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Slack_Message_for_Property_Products</targetReference>
+            </connector>
+            <label>Did we collect any Property Products ?</label>
+        </rules>
+        <rules>
+            <name>Did_we_Collect_any_Ventures_Products</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VentureProductsText</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sack_Message_for_Venture_Products</targetReference>
+            </connector>
+            <label>Did we Collect any Ventures Products ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Any_Products_Exists1</name>
+        <label>Check if Any Products Exists</label>
+        <locationX>666</locationX>
+        <locationY>2724</locationY>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>Did_we_collect_any_Property_Products1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>PropertyProductTextOne</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Slack_Message_for_Property_Products1</targetReference>
+            </connector>
+            <label>Did we collect any Property Products ?</label>
+        </rules>
+        <rules>
+            <name>Did_we_Collect_any_Ventures_Products1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VentureProductTexOne</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sack_Message_for_Venture_Products1</targetReference>
+            </connector>
+            <label>Did we Collect any Ventures Products ?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Product_Type</name>
+        <label>Check Product Type</label>
+        <locationX>798</locationX>
+        <locationY>792</locationY>
+        <defaultConnector>
+            <targetReference>Update_Ventures_Products_Text</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Ventures Product</defaultConnectorLabel>
+        <rules>
+            <name>Property_Product</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Products.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Property Product</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Property_Products_Text</targetReference>
+            </connector>
+            <label>Property Product</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Product_Type1</name>
+        <label>Check Product Type</label>
+        <locationX>886</locationX>
+        <locationY>2340</locationY>
+        <defaultConnector>
+            <targetReference>Update_Ventures_Products_Text1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Ventures Product</defaultConnectorLabel>
+        <rules>
+            <name>Property_Product1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Products.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Property Product</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Property_Products_Text1</targetReference>
+            </connector>
+            <label>Property Product</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>OneDayCal</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 1</expression>
+    </formulas>
+    <formulas>
+        <name>OneDayFromTodayEnd</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TODAY() + 2) - (1 / 86400)</expression>
+    </formulas>
+    <formulas>
+        <name>OneDayFromTodayStart</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TODAY() + 1)</expression>
+    </formulas>
+    <formulas>
+        <name>ProductOwnerFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    {!Loop_Through_Products.Product_Owner_Active_Status__c} = TRUE, 
+    {!ProductOwnerName}, 
+    &quot;Inactive Owner&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProductOwnerFormulaOne</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!Loop_Through_One_Day_Expiry_Products.Product_Owner_Active_Status__c} = TRUE, 
+    {!ProductOwnerName}, 
+    &quot;Inactive Owner&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>threeDaysCal</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 3</expression>
+    </formulas>
+    <formulas>
+        <name>ThreeDaysFromTodayEnd</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TODAY() + 4) - (1 / 86400)</expression>
+    </formulas>
+    <formulas>
+        <name>ThreeDaysFromTodayStart</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TODAY() + 3)</expression>
+    </formulas>
+    <interviewLabel>Product : Offer Close Date Slack Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Product : Offer Close Date Slack Notification</label>
+    <loops>
+        <name>Loop_Through_One_Day_Expiry_Products</name>
+        <label>Loop Through One Day Expiry Products</label>
+        <locationX>666</locationX>
+        <locationY>2016</locationY>
+        <collectionReference>OneDayProducts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Product_Owner_Name1</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Check_if_Any_Products_Exists1</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Through_Products</name>
+        <label>Loop Through Products</label>
+        <locationX>578</locationX>
+        <locationY>468</locationY>
+        <collectionReference>AllProducts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Product_Owner_Name</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Check_if_Any_Products_Exists</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Log_Message</name>
+        <label>Log Message</label>
+        <locationX>1458</locationX>
+        <locationY>360</locationY>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Product: Offer Close Date Slack Notification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Message_2</name>
+        <label>Log Message 2</label>
+        <locationX>314</locationX>
+        <locationY>1392</locationY>
+        <inputAssignments>
+            <field>Record_details__c</field>
+            <value>
+                <elementReference>Loop_Through_Products.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Product: Offer Close date Slack Notification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source__c</field>
+            <value>
+                <stringValue>Send Slack Message for Property Products</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Log_Message_3</name>
+        <label>Log Message 3</label>
+        <locationX>842</locationX>
+        <locationY>1392</locationY>
+        <inputAssignments>
+            <field>Record_details__c</field>
+            <value>
+                <elementReference>Loop_Through_Products.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Function__c</field>
+            <value>
+                <stringValue>Product: Offer Close date Slack Notification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source__c</field>
+            <value>
+                <stringValue>Send Slack Message for Property Products</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>log_message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Log_Message__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Assign_Product_Owner_Name1</name>
+        <label>Assign Product Owner Name</label>
+        <locationX>886</locationX>
+        <locationY>2124</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Product_Owner_name12</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Through_One_Day_Expiry_Products.Product_Owner__c</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>ProductOwnerName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Product_Owner_Name</name>
+        <label>Get Product Owner Name</label>
+        <locationX>798</locationX>
+        <locationY>576</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Product_Owner_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Through_Products.Product_Owner__c</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>ProductOwnerName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Products_with_Expiring_Offer_Close_Date_in_One_Day</name>
+        <label>Get Products with Expiring Offer Close Date in One Day</label>
+        <locationX>930</locationX>
+        <locationY>1800</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Expiring_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Offer_Close_Date__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>OneDayFromTodayStart</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Offer_Close_Date__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>OneDayFromTodayEnd</elementReference>
+            </value>
+        </filters>
+        <object>Product2</object>
+        <outputReference>OneDayProducts</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Type__c</queriedFields>
+        <queriedFields>Product_Owner__c</queriedFields>
+        <queriedFields>Offer_Close_Date__c</queriedFields>
+        <queriedFields>Return_Type__c</queriedFields>
+        <queriedFields>Sector__c</queriedFields>
+        <queriedFields>Type_of_Interest_n__c</queriedFields>
+        <queriedFields>Status__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>Product_Owner_Active_Status__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Products_with_Expiring_Offer_Close_Date_in_three_Days</name>
+        <label>Get Products with Expiring Offer Close Date in three Days</label>
+        <locationX>930</locationX>
+        <locationY>252</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Expiry_Products_for_3_days</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Log_Message</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Offer_Close_Date__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>ThreeDaysFromTodayStart</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Offer_Close_Date__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>ThreeDaysFromTodayEnd</elementReference>
+            </value>
+        </filters>
+        <object>Product2</object>
+        <outputReference>AllProducts</outputReference>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>Offer_Close_Date__c</queriedFields>
+        <queriedFields>Type__c</queriedFields>
+        <queriedFields>Product_Owner__c</queriedFields>
+        <queriedFields>Return_Type__c</queriedFields>
+        <queriedFields>Sector__c</queriedFields>
+        <queriedFields>Type_of_Interest_n__c</queriedFields>
+        <queriedFields>Status__c</queriedFields>
+        <queriedFields>Product_Owner_Active_Status__c</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>804</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Products_with_Expiring_Offer_Close_Date_in_three_Days</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2025-01-28</startDate>
+            <startTime>10:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>PropertyProductOnedayTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Product Name: {!Loop_Through_One_Day_Expiry_Products.Name}
+Product Type: {!Loop_Through_One_Day_Expiry_Products.Type__c}
+Product Owner: {!ProductOwnerDisplayNameOne}
+Status: {!Loop_Through_One_Day_Expiry_Products.Status__c}
+Product Link: https://venturecrowd.lightning.force.com/lightning/r/Product2/{!Loop_Through_One_Day_Expiry_Products.Id}/view
+----------------------------------------------------------------------------------------------------------------------------------</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PropertyProductsTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Product Name: {!Loop_Through_Products.Name}
+Product Type: {!Loop_Through_Products.Type__c}
+Product Owner: {!ProductOwnerDisplayName}
+Status: {!Loop_Through_Products.Status__c}
+Product Link: https://venturecrowd.lightning.force.com/lightning/r/Product2/{!Loop_Through_Products.Id}/view
+----------------------------------------------------------------------------------------------------------------------------------</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Slack_Message</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>**🚨Offer Close Date Alert🚨  **
+The following Property products are expiring in 3 days:
+{!PropertyProductsText}
+Take action to extend the dates or review marketing communications.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SlackMessage2</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>**🚨Offer Close Date Alert🚨  **
+The following Venture products are expiring in 3 days:{!VentureProductsText}
+Take action to extend the dates or review marketing communications.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SlackMessage3</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>🚨 **High Priority: Offer Close Date Alert** 🚨  
+The following Property products are expiring in 1 day:
+{!PropertyProductTextOne}
+Action required: Extend the date or update marketing communications immediately.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SlackMessage4</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>🚨 **High Priority: Offer Close Date Alert** 🚨  
+The following Venture products are expiring in 1 day:
+{!VentureProductTexOne}
+Action required: Extend the date or update marketing communications immediately.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>VentureProductOneDayTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Product Name: {!Loop_Through_One_Day_Expiry_Products.Name}
+Product Type: {!Loop_Through_One_Day_Expiry_Products.Type__c}
+Product Owner: {!ProductOwnerDisplayNameOne}
+Status: {!Loop_Through_One_Day_Expiry_Products.Status__c}
+Product Link: https://venturecrowd.lightning.force.com/lightning/r/Product2/{!Loop_Through_One_Day_Expiry_Products.Id}/view
+----------------------------------------------------------------------------------------------------------------------------------</text>
+    </textTemplates>
+    <textTemplates>
+        <name>VentureProductsTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Product Name: {!Loop_Through_Products.Name}
+Product Type: {!Loop_Through_Products.Type__c}
+Product Owner: {!ProductOwnerDisplayName}
+Status: {!Loop_Through_Products.Status__c}
+Product Link: https://venturecrowd.lightning.force.com/lightning/r/Product2/{!Loop_Through_Products.Id}/view
+----------------------------------------------------------------------------------------------------------------------------------</text>
+    </textTemplates>
+    <variables>
+        <name>AllProducts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Product2</objectType>
+    </variables>
+    <variables>
+        <name>currentItem_Filter_Expiring_Products</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Product2</objectType>
+    </variables>
+    <variables>
+        <name>OneDayProducts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Product2</objectType>
+    </variables>
+    <variables>
+        <name>productId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProductOwnerDisplayName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProductOwnerDisplayNameOne</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProductOwnerName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>PropertyProductsText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>PropertyProductTextOne</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>storeOfferCloseDate</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>storeProductName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>storeProductType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VentureProductsText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VentureProductTexOne</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

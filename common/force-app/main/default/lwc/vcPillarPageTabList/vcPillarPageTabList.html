@@ -1,0 +1,61 @@
+<template>
+    <div class="container slds-p-vertical_xx-large">
+        <template if:false={isMobile}>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2 slds-p-right_xx-large">
+                    <div class="slds-grid_vertical slds-p-right_xx-large">
+                        <div class="quicklinks slds-col slds-size_1-of-1 slds-text-heading_small slds-m-bottom_x-large" >
+                            <span>QUICK LINKS</span>
+                        </div>
+
+                        <template for:each={tablist} for:item="tab" for:index="index">
+                            <div class="tab-card slds-col slds-size_1-of-1 slds-m-vertical_small" key={tab} data-num={index} onclick={handletabclick}>
+                                <div class="tab-height slds-grid slds-grid_vertical-align-center " key={tab} data-num={index}>
+                                    <div class="slds-col slds-size_1-of-7 slds-align_absolute-center">
+                                        <lightning-icon class="" icon-name="utility:forward" size="medium" alternative-text="" title=""></lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-7 ">
+                                        <text class="slds-text-heading_medium ">
+                                            <b>{tab}</b>
+                                        </text>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-grid_vertical-align-center slds-grid">
+                    <lightning-formatted-rich-text value={tabcontenttodisplay}></lightning-formatted-rich-text>
+                </div>
+            </div>
+        </template>
+        <template if:true={isMobile}>
+            <div class="slds-grid slds-grid_vertical">
+                <div class="quicklinks slds-col slds-size_1-of-1 slds-text-heading_small slds-m-bottom_x-large" >
+                    <span>QUICK LINKS</span>
+                </div>
+
+                <template for:each={tabPkgArray} for:item="tab" for:index="index">
+                    <div class="tab-card slds-col slds-size_1-of-1 slds-m-vertical_x-small" key={tab} data-num={index}>
+                        <div class="tab-height slds-grid slds-grid_vertical-align-center " key={tab} data-num={index} onclick={handletabclick}>
+                            <div class="slds-col slds-size_1-of-7 slds-align_absolute-center">
+                                <lightning-icon class="tab-icon" icon-name="utility:chevronright" size="medium" alternative-text="" title=""></lightning-icon>
+                            </div>
+                            <div class="slds-col slds-size_6-of-7">
+                                <text class="slds-text-heading_medium ">
+                                    <b>{tab.tabName}</b>
+                                </text>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content slds-hide slds-col slds-size_1-of-1 slds-m-bottom_small" key={tab} data-num={index}>
+                        <lightning-formatted-rich-text value={tab.tabContent}></lightning-formatted-rich-text>
+                    </div>
+                </template>
+
+            </div>
+        </template>
+    </div>
+</template>

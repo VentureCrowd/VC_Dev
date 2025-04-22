@@ -1,0 +1,83 @@
+.summary-statistics{
+    display: flex;
+    gap: var(--space-md);
+    flex: 1;
+}
+.resource {
+    border-radius: 10px;
+    background: var(--Lavender, #C6BEFA);
+    padding: var(--space-lg);
+    flex: 1;
+    position: relative;
+}
+
+.stat-card {
+    border-radius: 12px;
+    background: var(--White, #FFF);
+    box-shadow: 1px 0px 10.6px 0px rgba(0, 0, 0, 0.10);
+    flex: 1;
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:490px){
+    .stat-card {
+        overflow: auto;
+        padding: var(--space-md)
+    }
+}
+
+.stat-container {
+    display: flex;
+    gap: var(--space-md);
+}
+
+@media screen and (max-width:490px){
+    .stat-container {
+        flex-direction: column;
+    }
+}
+
+.stat-num {
+    font-size: var(--text-xxxl);
+    color: var(--Neutral-20, #53545D);
+    font-family: "SuisseIntl-Medium";
+}
+
+.stat-label {
+    color: var(--Neutral-20, #53545D);
+    font-size: var(--text-md);
+}
+
+@media screen and (max-width: 490px){
+    .stat-label {
+        font-size: var(--text-sm);
+    }
+}
+
+.stat-header {
+    color: #939393;
+}
+
+.title {
+    font-size: var(--text-xl);
+    font-family: "SuisseIntl-Medium";
+}
+
+
+
+.image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}

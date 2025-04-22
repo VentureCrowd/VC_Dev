@@ -1,0 +1,224 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+    <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+    <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+    <apex:stylesheet value="{!$Resource.VC_CF_NewsDetailCSS}" />
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" />
+    </head>
+    <!-- Component: Menu -->
+    <c:VC_CF_Menu />
+    <!-- ./Component: Menu -->
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-news-detail">
+        <!-- Hero -->
+        <section  class="hero has-parallax-bg">
+            <div class="container">
+                <div class="row text-white pt-5 pb-5 text-center justify-content-center">
+                    <div class="col-md-9 headline">
+                        <div class="tags-container">
+
+                            <a href="#">Ticker INVEST</a>
+                            <a href="#">Arts &amp; Entertainment</a>
+                            <a href="#">Digital Media</a>
+                        </div>
+                        <h1 class="mt-4">From Capital Raise to Curtain Raise: Inspired Dance Media</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="static-bg-overlay"></div>
+            <div class="parallax-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JPNlO&d=%2Fa%2F2v000000EMPp%2Fya.635OYDXAY03VeWMZTQayAYsr1uoepe8eBnPoLZMs&asPdf=false');min-height: 77vh;"></div>
+        </section>
+        <!-- Post Body -->
+        <section class="post-body py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Body Content -->
+                    <div class="col-md-9">
+                        <div class="inner-container px-3 px-md-4 py-3">
+                            <!-- CONTENT HERE -->
+                            <h4 style="font-weight: 400;font-size: 1.4rem;"><strong>VentureCrowd</strong> CEO Steve Maarbani spoke to Ticker INVEST about dance-based digital content and events company <a href="https://startups.venturecrowd.com.au/deal/detail/inspired_dance_media_2">Inspired Dance Media.</a></h4>
+                            <br/><br/>
+                            <p><span style="font-weight: 400;">Watch the recording of the interview below.</span></p>
+                            <div class="fluid-video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/swxy97QH1yo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                           
+                            <div class="post-body-rich-text text-left mt-5">
+
+                                <h2>Short on time? Here's the summary:</h2>
+                            </div>
+                           <br/>
+                            <ul class="p-rich_text_list p-rich_text_list__bullet" data-stringify-type="unordered-list" data-indent="0">
+                                <li>
+                                    <strong>VentureCrowd</strong> sees lots of investment opportunities every week, and one of our favourites in the Arts &amp; Entertainment sector right now is a company called <a href="https://startups.venturecrowd.com.au/deal/detail/inspired_dance_media_2">Inspired Dance Media</a>, a new media company specialising in dance-based digital content and events, including running Australia’s leading Dance Film Festival.
+
+                                </li>
+                                <li> 
+                                    Ambassadors include Todd McKenny, Kelly Abbey, Dean Perry (who created <a href="https://www.tapdogs.com/"> Tap Dogs</a>) and Jason Gilkinson (Dancing with the Stars / So You Think You Can Dance in Australia and USA) so it’s backed by some of Australia’s leading entertainment talent.
+
+                                </li>
+                                <li>
+                                    Last year it launched in Sydney with over 90 submissions from all over the world.                                </li>
+                                <li>
+                                    This year, the festival will grow to screenings in Sydney, Melbourne &amp; Brisbane as it makes plans for London and New York in 2022, as well as building its digital distribution capability.
+                                </li>
+                                <li>
+                                    The content is stunning - no one is doing this, and it’s going to be very exciting to watch this company grow.
+                                </li>
+                                <li>
+                                    Their capital raise was oversubscribed on the first day. It is currently oversubscribing, so if you want to get involved head to the VentureCrowd website.                                </li>
+                                <li>
+                                    For investors looking to back companies in the arts and entertainment industries, an experienced management team is the most important thing.
+                                </li>
+                                <li>
+                                    Investors should only invest in things they understand and believe in. 
+                                </li>
+                                <li>
+                                    Investors should  always diversify. Don’t put all your eggs in one basket. Work out how much you want to invest this year in high-growth projects and invest that across a number of different companies.
+                                </li>
+                            </ul>
+
+                            
+
+                            <div class="post-body-rich-text text-center mt-5">
+                                
+                                <h5>We find and fund the future</h5>
+
+                                <h1>Invest with VentureCrowd</h1>
+                                <p>Find out more about who is raising capital on VentureCrowd</p>
+                                <a href="https://startups.venturecrowd.com.au/deal/detail/inspired_dance_media_2">View Offers</a>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar px-4 px-md-0">
+                        <div class="inner-container py-3">
+                            <div class="recent-posts mb-5">
+                                <h3 class="mb-2">Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">How to invest in the property market without buying a property</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Using the UN Sustainable Development Goals to guide conscious investment decisions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Companies with a social conscience perform better</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Why gender equality is good for business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinar Recording – ESN Cleer: A first to market, heart-failure diagnostic device</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="archives">
+                                <h3 class="mb-2">Archives</h3>
+                                <ul>
+                                    <li>
+                                        <a href='#'>December 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>January 2020</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>November 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>October 2019</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>September 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>March 2018</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>December 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>August 2017</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'>July 2017</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Post Footer -->
+        <section class="related">
+            <!-- <a href="{! $Label.VC_CF_Public_URL +'/blog/invest-in-property-without-buying'}"> -->
+                <a href="#">
+                <div class="container">
+                    <div class="row text-center py-5 text-white">
+                        <div class="col-md-12 pt-5 next-post-link">Next Post</div>
+                        <div class="col-md-12 pb-5 next-post-title mt-3">
+                            <h3>Why millennials are driven to build purpose driven businesses</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-post-bg-overlay"></div>
+                <div class="next-post-bg" style="background-image: url('https://venturecrowd.file.force.com/sfc/dist/version/download/?oid=00D2v000000WjFp&ids=0682v00000JPP3A&d=%2Fa%2F2v000000EMPz%2Fr1YTs3F57.YamPeLx5meqI1itMP1Lb60hdLkTkjAhFk&asPdf=false')"></div>
+            </a>
+        </section>
+        <div class="social-share-container">
+            <div class="share-links mb-4">
+                <div class="link-container">
+                    <a href="#" class="share-linked-in">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Facebook_URL}" class="share-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_Twitter_URL}" class="share-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <a href="{!$Label.VC_CF_LinkedIn_URL}" class="share-google-plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="share-trigger">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- ./Body -->
+    <!-- Component: Footer -->
+    <c:VC_CF_Footer />
+    <!-- ./Component: Footer -->
+    <script src="{!$Resource.VC_CF_CommonJS}"></script>
+</apex:page>

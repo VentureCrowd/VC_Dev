@@ -1,0 +1,95 @@
+.component-container {
+    padding-top: calc(100vw * 0.1);
+    padding-bottom: calc(100vw * 0.1);
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 1em;
+    font-size: 28px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+/* DISABLE THE FUCKING SLDS BS */
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #05c5d1;
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    transition: all 300ms ease;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.disablebutton {
+    background-color: #a5aaaa !important;
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 30px;
+    transition: all 300ms ease;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Background Colors #ce80c4 */
+.component-container.bg-white {
+    background-color: #FFF;
+}
+
+.component-container.bg-black {
+    background-color: #000;
+}
+.component-container.bg-pink {
+    background-color: #f6eef5;
+}
+
+.component-container.bg-gray {
+    background-color: rgb(247 247 247);
+}
+
+/* Accent Colors */
+.accent-teal button {
+    background-color: #02c8c8;
+}
+
+.accent-pink button {
+    background-color: #dd5cff;
+}
+
+.accent-purple button {
+    background-color: #dd5cff;
+}
+
+.row1 {
+    width:100%; 
+    display: flex;
+}
+
+.text-center {
+    text-align: left!important;
+}

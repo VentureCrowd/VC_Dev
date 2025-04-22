@@ -1,0 +1,162 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <!-- Tile Companies with EOI start here -->
+        <!-- <template for:each={lstCompaniesWithEOI} for:item="item" for:index="index">
+            <div key={item.companyId} class="slds-p-bottom_small slds-p-left_small slds-size_1-of-2">
+                <article class="slds-col cardStyle slds-p-around_xx-small">
+                    <header class="slds-card__header slds-grid">
+                        <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span class="cardHeading">{item.companyName}</span>
+                                </h2>
+                            </div>
+                            <div class="slds-no-flex">
+                                <button class="slds-button buttonStyle" onclick={handleEditCompany} data-id={item.companyId}>Edit Company</button>
+                            </div>
+                        </div>
+                    </header>
+                    <footer class="slds-card__footer slds-grid slds-p-top_xx-large">
+                        <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span class="eoiHeading">Expression of interest</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div if:true={item.isPublished} class="slds-media__body slds-text-align_right">
+                                <button class="slds-button slds-p-right_xx-small buttonStyle" onclick={manageEoi} data-id={item.eoiId}>Manage</button>
+                            </div>
+                            <div if:false={item.isPublished} class="slds-media__body slds-text-align_right">
+
+                                <button if:false={item.isSubmittedToPublished} class="slds-button slds-p-right_xx-small buttonStyle" onclick={editEoi} data-id={item.eoiId}>Edit</button>
+                                <button class="slds-button slds-p-right_xx-small buttonStyle" onclick={previewEoi} data-id={item.eoiId}>Preview</button>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="slds-path slds-m-top_medium">
+                        <div class="slds-grid slds-path__track">
+                            <div class="slds-grid slds-path__scroller-container">
+                                <div class="slds-path__scroller">
+                                    <div class="slds-path__scroller_inner">
+                                        <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal" aria-labelledby="slds-path__stage-name">
+                                            <template for:each={item.eoiStatus} for:item="step">
+                                                <li class={step.className} key={step.key} role="presentation">
+                                                    <a aria-selected="true" class="slds-path__link" role="option" tabindex="0">
+                                                        <span class="slds-path__stage">
+                                                            <span class="slds-assistive-text">{step.value}</span>
+                                                        </span>
+                                                        <span class="slds-path__title">{step.value}</span>
+                                                    </a>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </template> -->
+
+        <template for:each={lstCompaniesWithEOI} for:item="item" for:index="index">
+            <div key={item.companyId} class="slds-p-bottom_small slds-p-left_small slds-size_1-of-2 slds-max-small-size_2-of-2 slds-small-size_2-of-2 slds-medium-size_2-of-2 slds-large-size_1-of-2">
+                <lightning-card variant="base">
+                  <div slot="title">
+                    <strong>{item.companyName}</strong>
+                  </div>
+                  <div slot="actions">
+                    <div class="slds-no-flex">
+                        <button class="slds-button buttonStyle" onclick={handleEditCompany} data-id={item.companyId}>Edit Company</button>
+                    </div>
+                  </div>
+                  <div slot="footer">
+                    <lightning-progress-indicator current-step={item.status} type="path" variant="base">
+                        <template for:each={item.eoiStatus} for:item="step">
+                            <lightning-progress-step  label={step.value} title={step.value} value={step.value} key={step.value}></lightning-progress-step>
+                        </template>
+                    </lightning-progress-indicator>
+                  </div>
+                  <div >
+                    <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <br><br><br>
+                        <div class="slds-media__figure">
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span class="eoiHeading slds-m-left_large">Expression of interest</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div if:true={item.isPublished} class="slds-media__body slds-text-align_right">
+                            <button class="slds-button slds-m-right_large buttonStyle" onclick={manageEoi} data-id={item.eoiId}>Manage</button>
+                        </div>
+                        <div if:false={item.isPublished} class="slds-media__body slds-text-align_right">
+                            <button if:false={item.isSubmittedToPublished} class="slds-button slds-p-right_xx-small buttonStyle" onclick={editEoi} data-id={item.eoiId}>Edit</button>
+                            <button class="slds-button slds-m-right_large buttonStyle" onclick={previewEoi} data-id={item.eoiId}>Preview</button>
+                        </div>
+                    </div>
+                  </div>
+                </lightning-card>
+            </div>
+        </template>
+
+        <!-- Tile Companies with EOI ends here -->
+
+        <!-- Edit company start here -->
+        <template if:true={isEditModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 class="slds-modal__title slds-hyphenate">Update company details</h1>
+                    </div>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <div class="slds-col slds-size_2-of-2">
+                            <lightning-input disabled data-id="Name" name="Name" value={companyToUpdate.companyName} class="fix_margin" type="text" label="Full legal name of company*" required onchange={handleChange}></lightning-input>
+                            <lightning-input data-id="Website" name="Website" value={companyToUpdate.website} class="fix_margin" type="url" label="Company website*" required onchange={handleChange}></lightning-input>
+                            <div>
+                                <fieldset class="slds-form-element">
+                                    <label>Is your company registered in australia?*</label>
+                                    <div class="slds-form-element__control">
+                                        <span class="slds-radio" style="display: inline-block">
+                                            <input type="radio" id="radio-59" value="yes" name="default" checked onchange={handleRadioSelection} />
+                                            <label class="slds-radio__label" for="radio-59">
+                                                <span class="slds-radio_faux"></span>
+                                                <span class="slds-form-element__label">Yes</span>
+                                            </label>
+                                        </span>
+                                        <span class="slds-radio" style="display: inline-block">
+                                            <input type="radio" id="radio-60" value="no" name="default" onchange={handleRadioSelection} />
+                                            <label class="slds-radio__label" for="radio-60">
+                                                <span class="slds-radio_faux"></span>
+                                                <span class="slds-form-element__label">No</span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <div if:true={notAusBasedCompany}>
+                                        <p class="notAusBasedCompany">We currently only raise capital for companies registered in Australia.</p>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <br />
+                            <div>
+                                <lightning-combobox data-id="Sector__c" name="Sector__c" class="countryPicklist fix_margin" label="Sector" options={sectorOptions} value={companyToUpdate.sector} type="button" onchange={handleChange}></lightning-combobox>
+                            </div>
+                            <lightning-input data-id="ACN__c" name="ACN__c" class="fix_margin" type="text" label="ABN*" value={companyToUpdate.ABN} required onchange={handleChange}></lightning-input>
+                        </div>
+                        <hr />
+                        <div class="slds-no-flex">
+                            <div class="slds-float_right">
+                                <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeEditModel}>Cancel</button>
+                                <button class="slds-button slds-button_brand" onclick={updateCompany}>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+    </div>
+</template>

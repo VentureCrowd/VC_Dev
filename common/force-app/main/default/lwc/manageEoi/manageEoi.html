@@ -1,0 +1,254 @@
+<template>
+    <template lwc:if={showspinner}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    <template lwc:elseif={eoiAccessError}>
+        <div class="error-container" >
+            <svg width="120" height="102" viewBox="0 0 120 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="90" height="85" rx="9.2591" transform="matrix(-1 0 0 1 107 11)" fill="#D95BAA"/>
+                <path d="M18.5308 77.0385C26.5269 75.6423 25.3846 72.9769 25.3846 71.4538V70.4385C23.4808 68.7885 23.2269 66.25 22.4654 63.3308C20.0538 63.3308 19.4192 58.2538 19.4192 57.4923C19.4192 56.7308 19.2923 53.6846 21.8308 53.6846C20.1808 47.2115 20.5615 40.8654 25.0038 40.8654C35.6654 33.5038 49.7538 39.2154 44.4231 53.6846C46.8346 53.6846 46.8346 56.7308 46.8346 57.4923C46.8346 58.2538 46.3269 63.3308 43.7885 63.3308C43.0269 66.25 42.6461 68.6615 40.7423 70.4385V71.3269C40.7423 72.9769 39.6 75.3885 47.5962 76.9115C49.3845 77.2631 51.0642 78.0328 52.4981 79.1578C53.932 80.2829 55.0793 81.7313 55.8462 83.3846H66V25H0V83.3846H10.1538C10.9314 81.7272 12.1001 80.2836 13.5594 79.178C15.0186 78.0725 16.7247 77.3383 18.5308 77.0385Z" fill="#C6BEFA"/>
+                <path d="M0 88.4609H66V101.153H0V88.4609Z" fill="#C6BEFA"/>
+                <circle cx="98" cy="22" r="22" fill="#F3A73B"/>
+                <path d="M90.1426 14.1426L105.464 29.464" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <path d="M105.464 14.1426L90.1424 29.464" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+                
+            <div class="content">
+                <h1>Oops! Something doesn’t add up.</h1>
+                <p>It looks like you’re trying to access a page that doesn’t belong to you. Please log in with the correct account or request access via the account owner.</p>
+            </div>
+            <div class="cta">
+                <c-core-button 
+                label="Contact us"
+                onbuttonclick={handleContactUs}
+                variation="black"
+                ></c-core-button>
+            </div>
+        </div>
+    </template>
+    <template lwc:else>
+        <div class="margin-lg slds-p-bottom_medium">
+            <div class="slds-col vc-primary-bg-color slds-p-bottom_small">
+               <div class="vc_text-color_black">
+                 <c-core-button 
+                     label="My companies"
+                     variation="tertiary"
+                     mode="light"
+                     onbuttonclick={returnToCompanies}
+                     data-id="primary-button"
+                     icon="left-chevron" 
+                     icon-position="left">
+                 </c-core-button>
+                 <div class="slds-m-bottom_medium">
+                     <span class="my-companies-style">{companyAccountName}</span>
+                 </div>
+                 <div>
+                     <p class="slds-m-bottom_none font-size-xxxl">Manage expression of interest</p>
+                 </div>
+                 <div class="slds-p-top_medium">
+                     <p class="new-vc-font-size_16 vc-font-suisseIntlLight slds-m-bottom_none">
+                         This page provides a list of interested individuals with contact details, engagement numbers, and a downloadable comprehensive list for streamlined outreach. It also offers a total investment interest estimate, empowering you to assess the financial traction of your fundraising campaign and make informed decisions for the next stages.
+                     </p>
+                 </div>
+               </div>
+            </div>
+         </div>
+         <div>
+             <!-- <article class="slds-card slds-col slds-size_11-of-12"> -->
+                 <div class="slds-slds-modal__content margin-lg">
+                     <div class="slds-grid slds-wrap slds-gutters heading-class">
+                         <header class="slds-media slds-media_center slds-has-flexi-truncate slds-p-around_medium">
+                             <div class="slds-media__body">
+                                 <p class="slds-text-title_bold slds-m-bottom_none font-size-xl">Publish date: {endDate}</p>
+                             </div>
+                         </header>
+                         <c-raise-preraise-modal companyid={companyId}></c-raise-preraise-modal>
+                         <div class="eoi-header-dropdown">
+                             <lightning-formatted-text class="font-size-md" value="More actions"></lightning-formatted-text>
+                             <!-- created dropdown arrow here using utility:chevrondown , onClick of that arrow we show acitons -->
+                             <lightning-icon icon-name="utility:chevrondown" alternative-text="Info!" onclick={openActions} variant="info" class="slds-m-left_medium"
+                                 title="info variant small" size="small"></lightning-icon>
+                             <div class="more-options">
+                                 <!-- All actions -->
+                                 <div if:true={showActions} class="more-options-model">
+                                     <lightning-menu-item onclick={viewLivePage} value="MenuItemOne" label="View Live Page"></lightning-menu-item>
+                                     <lightning-menu-item onclick={copyPageUrl} value="MenuItemTwo" label="Copy page URL"></lightning-menu-item>
+                                     <lightning-menu-item onclick={requestEdit} value="MenuItemThree" label="Request edits"></lightning-menu-item>
+                                     <lightning-menu-item onclick={closeEoi} value="MenuItemFour" label="Close permanently"></lightning-menu-item>
+                                 </div>
+                             </div>
+                         </div>
+                        
+                     </div>
+                     <div class="slds-m-top_medium">
+                         <div class="slds-grid slds-wrap">
+                             <div class="slds-size_12-of-12 slds-large-size_4-of-12">
+                                 <!-- Content for the first item -->
+                                 <div class="slds-m-bottom_x-large slds-p-around_small boxcolor">
+                                     <div class="investment-wrapper">
+                                         <p class="slds-text-title_bold slds-m-bottom_none new-vc-font-size_16">Value of Investment Interest</p>
+                                         <!-- REMOVED BY KKAM on 18/11/2024 -->
+                                         <!-- <span class="slds-text-body_small">Based on low investment range</span> -->
+                                         <p class="margin-top-xxs new-vc-font-size_36 common-text-prop slds-m-top_x-smal slds-m-bottom_none">${valueOfInvestmentInterest}</p>
+                                     <div if:true={showProgress}>
+                                         <div class="slds-p-top_medium">
+                                             <div class="slds-progress-bar" style="height:1rem;border-radius:0.9375rem;" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" role="progressbar">
+                                                 <span class="slds-progress-bar__value custom-progress-bar" style={dynamicProgress} >
+                                                     <span class="slds-assistive-text">Progress: {eoiProgress}%</span>
+                                                 </span>
+                                             </div>
+                                             <div class="margin-top-lg">
+                                                 <div class="slds-grid slds-grid_vertical-align-center">
+                                                     <div class="slds-col">
+                                                         <p class="slds-text-title_bold slds-m-top-medium slds-m-bottom_none new-vc-font-size_14">Raise target</p>
+                                                         <p>${targetRaise}</p>
+                                                     </div>
+                                                     <div class="slds-col slds-text-align_right">
+                                                         <p class="slds-text-title_bold font-size-xl">{eoiProgress}%</p>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="slds-p-around_small boxcolor">
+                                 <div class="investment-wrapper">
+                                     <p class="slds-text-title_bold slds-m-bottom_none new-vc-font-size_16">Leads expressed interest</p>
+                                     <p class="font-size-xxxl common-text-prop slds-m-top_x-smal slds-m-bottom_none">{leadsExpressedInterest}</p>
+                                 </div> 
+                             </div>
+                             </div>
+                             <div class="slds-size_12-of-12 slds-large-size_8-of-12 custom-slds-p-left_large">
+                                 <!-- Content for the second item -->
+                                 <div class="slds-p-around_small">
+                                     <div class="slds-p-left_xx-small">
+                                         <div class="slds-grid slds-grid_vertical-align-center">
+                                             <div class="slds-col">
+                                                 <p class="slds-text-title_bold slds-m-bottom_none new-vc-font-size_16">Interested leads</p>
+                                             </div>
+                                             <div class="slds-col slds-text-align_right">
+                                                 <button title="Download List" type="button" onclick={downloadList} class="btn-view-live-page">
+                                                     <lightning-icon icon-name="utility:download" class="slds-m-right_x-small" size="x-small"></lightning-icon>
+                                                     Download list
+                                                 </button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div if:true={havingInterestedLeads} class="slds-var-m-top_medium">
+                                     <!-- lightning-datatable to show interestedLeads -->
+                                     <lightning-datatable
+                                         data={interestedLeads}
+                                         columns={columns}
+                                         key-field="Id"
+                                         hide-checkbox-column="true"
+                                     ></lightning-datatable>
+                                 </div>
+                                 <!-- this lightning-datatable will be shown if no leads are there -->
+                                 <div if:false={havingInterestedLeads} class="vc_blurBox2 boxcolor">
+                                     <lightning-datatable
+                                         columns={columns}
+                                         key-field="Id"
+                                         hide-checkbox-column="true"
+                                     ></lightning-datatable>
+                                     <div class="slds-m-top_xx-large slds-text-align_center slds-p-bottom_xx-large">
+                                         <p>No Current Expressions of Interest.</p>
+                                         <p>
+                                             Check out our <span><a target="_blank" href="https://www.venturecrowd.com.au/s/learn/faq/founder-portal">FAQs</a></span> to gain some tips on how to garner interest and share your Expression of interest page.
+                                         </p>
+                                         
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             <!-- </a rticle> -->
+         </div>
+     
+         <!-- / info / confirm popup start here  -->
+     
+         <div if:true={showRequestEditPopup}>
+             <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                   <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"  onclick={closePopup}>
+                      <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                         <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#close"></use>
+                      </svg>
+                      <span class="slds-assistive-text">Cancel and close</span>
+                   </button>
+                   <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                     <p>Want to <b>make edits</b> to the information on your live Expression of interest page?</p>
+                     <h1>
+                         You can request edits by emailing us what you would like changed to <span class="common-color">ventures@venturecrowd.com.au</span>  and we will update your page.
+                     </h1>
+                     <br>
+                     <h1>
+                         Changes will be reviewed and applied in the coming business days. Please ensure the information accurately reflects your company's story and value proposition.
+                     </h1>
+                   </div>
+                </div>
+             </section>
+             <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+         </div>
+         <!-- / info / confirm popup ends here  -->
+     
+         <!-- close eoi popup start here -->
+         <div if:true={showCloseEoiPopup} class="more-options-model">
+             <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open slds-modal_small">
+                <div class="slds-modal__container">
+                   <!-- <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closePopup}>
+                      <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                         <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#close"></use>
+                      </svg>
+                      <span class="slds-assistive-text">Cancel and close</span>
+                   </button> -->
+                   <!-- <div class="slds-modal__header">
+                      <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Confirm close of live expression of interest page</h1>               
+                     </div> -->
+                   <div class="slds-modal__content slds-p-around_medium">
+                     <header class="slds-card__header slds-grid">
+                         <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                             <div class="slds-media__body">
+                                 <span class="cardHeading slds-modal__title slds-hyphenate">Confirm close of live expression of interest page</span>
+                             </div>
+                             <div class="slds-no-flex">
+                                 <lightning-icon icon-name="utility:close" size="small" alternative-text="close" title="close" onclick={closePopup}></lightning-icon>
+                             </div>
+                         </div>
+                         
+                     </header>
+                     <hr style="width: 98%; margin-top: 20px; height:2px;" />
+     
+                     <fieldset class="slds-form-element">
+                         <div class="slds-form-element__control">
+                             <div class="slds-checkbox">
+                                 <input type="checkbox" name="checkbox1" id="checkbox-unique-id-80" value="" onclick={handleCheck}/>
+                                 <label class="slds-checkbox__label" for="checkbox-unique-id-80">
+                                 <span class="slds-checkbox_faux"></span>
+                                 <span >I confirm I want to permanently close {companyAccountName} expression of interest page.</span>
+                                 </label>
+                             </div>
+                             <div class="slds-checkbox">
+                                 <input type="checkbox" name="checkbox2" id="checkbox-unique-id-81" value="" onclick={handleCheck}/>
+                                 <label class="slds-checkbox__label" for="checkbox-unique-id-81">
+                                 <span class="slds-checkbox_faux"></span>
+                                 <span >I understand I will still be able to access the ‘Manage’ page to track progress whilst page was live and have view only access of the page.</span></span>
+                                 </label>
+                             </div>
+                         </div>
+                     </fieldset>
+                   </div>
+                   <div class="slds-modal__footer">
+                      <span if:true={showConfirmSubmitMessage} class="slds-float_left common-color">You must agree to all terms before submitting.</span>
+                      <button title="Submit" type="button" onclick={handleCloseEOI} class="btn-view-live-page">Submit</button>
+                   </div>
+                </div>
+             </section>
+             <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+          </div>
+         <!-- close eoi popup ends here -->
+    </template>
+    
+ </template>

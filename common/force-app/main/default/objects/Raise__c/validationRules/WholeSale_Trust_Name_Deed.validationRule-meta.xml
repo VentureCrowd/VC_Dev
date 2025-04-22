@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WholeSale_Trust_Name_Deed</fullName>
+    <active>true</active>
+    <description>If the Raise is Wholesale, then the Trust Deed Name field needs to be filled by the Funds Management Team.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL( Form_Investment_type__c , &quot;Wholesale&quot;),
+    ISBLANK( Trust_Deed_Name__c ),
+    OR(
+        ISPICKVAL( Status__c , &quot;Live&quot;),
+        ISPICKVAL(Status__c, &quot;Live on VC Website&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>Ask Funds Management to set the Trust Deed Name so that the product get&apos;s created with that name.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Sub_status_in_Progress</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &apos;In Progress&apos;),        
+    ISPICKVAL(Lead_Sub_Status__c, &quot;&quot;),          
+    OR(                                       
+        $RecordType.Name = &apos;Ventures&apos;,
+        $RecordType.Name = &apos;Founders&apos;,
+        $RecordType.Name = &apos;VC&apos;
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Lead_Sub_Status__c</errorDisplayField>
+    <errorMessage>Please select the lead sub status</errorMessage>
+</ValidationRule>

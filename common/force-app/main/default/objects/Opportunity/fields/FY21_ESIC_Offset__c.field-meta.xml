@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FY21_ESIC_Offset__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Generate FY21 ESIC Offset determination for unitholders</inlineHelpText>
+    <label>FY21 ESIC Offset</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

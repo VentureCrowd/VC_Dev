@@ -1,0 +1,127 @@
+<template>
+     <!-- Lead Investor Section -->
+    <div class="add-edit-lead-investor">
+         <!-- Display a spinner while loading data -->
+        <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+        <!-- Header and introduction -->    
+        <div>
+            <h4 class="vc-font-suisseIntlMedium vc-font-size_16 slds-var-m-top_large slds-var-p-bottom_medium">
+                Lead investors
+            </h4>
+            <span>Are there any lead investors attached to this intended raise? If yes, add them below.</span>
+        </div>
+        <!-- Button to add a new lead investor -->
+        <button class="info-model create-update-eoi-button secondary slds-var-m-top_medium" onclick={openAddModel}>
+            <label>Add lead investor</label>
+        </button>
+         <!-- Add Lead Investor Modal -->
+        <template if:true={isAddModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                 <!-- Spinner for Add Lead Investor Modal -->
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                     <!-- Modal Header -->
+                    <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Add lead investor</h1>
+                    </div>
+                    <!-- Modal Content -->
+                    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Lead investor name*" name="Name" required onchange={handleChange} class="create-update-eoi-input" maxlength="80"></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="number" formatter="currency" label="Lead investor amount*" name="Lead_Investor_Amount__c" placeholder="$" required onchange={handleChange} class="create-update-eoi-input" maxlength="18"></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control">
+                            <label for="add-lead-investor-bio">Lead investor bio</label>
+                            <textarea id="add-lead-investor-bio" data-id="Lead_Investor_Bio__c" name="Lead_Investor_Bio__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="200" required></textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 200 characters</div>
+                        </div>
+                        <hr />
+                        <!-- Buttons to Save or Cancel -->
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeAddModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={addLeadInvestor} disabled={disableSaveBtn}>
+                                <label>Save</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- Backdrop for the modal -->
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <!-- Edit Lead Investor Modal -->
+        <template if:true={isEditModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                 <!-- Spinner for Edit Lead Investor Modal -->
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                     <!-- Modal Header -->
+                    <div class="slds-modal__header">
+                        <h1 class="slds-modal__title slds-hyphenate">Update lead investor</h1>
+                    </div>
+                    <!-- Modal Content -->
+                    <div class="slds-modal__content slds-var-p-around_large">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Lead investor name*" name="Name" value={leadInvestorToUpdate.Name} required onchange={handleChange} maxlength="80" class="create-update-eoi-input"></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Lead investor amount*" name="Lead_Investor_Amount__c" value={leadInvestorToUpdate.Lead_Investor_Amount__c} required onchange={handleChange} maxlength="18" class="create-update-eoi-input"></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control">
+                            <label for="edit-lead-investor-bio">Lead investor bio</label>
+                            <textarea id="edit-lead-investor-bio" data-id="Lead_Investor_Bio__c" name="Lead_Investor_Bio__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="200" required>{leadInvestorToUpdate.Lead_Investor_Bio__c}</textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 200 characters</div>
+                        </div>
+                        <hr />
+                        <!-- Buttons to Update or Cancel -->
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeEditModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={updateLeadInvestor} disabled={disableUpdateBtn}>
+                                <label>Update</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Backdrop for the modal -->
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+         <!-- Display Lead Investors -->
+        <div if:true={showRecords} class="slds-var-m-top_x-large">
+            <template if:true={hasLeadInvestor} for:each={leadInvestorsLst} for:item="item">
+                <div key={item.Id} class="slds-var-m-top_x-large">
+                    <div class="demo-only slds-size_2-of-4">
+                        <div class="slds-media slds-media_responsive">
+                            <div class="slds-media__body">
+                                <div>
+                                    <span><b>{item.Name}</b></span>
+                                </div>
+                                <div class="slds-var-m-top_small">
+                                    <!-- <span>{item.Lead_Investor_Amount__c}</span> -->
+                                    <span>$<lightning-formatted-number value={item.Lead_Investor_Amount__c}></lightning-formatted-number> AUD</span>
+                                </div>
+                                <div class="slds-var-m-top_small">
+                                    <span>{item.Lead_Investor_Bio__c}</span>
+                                </div>
+                                <div class="slds-var-m-top_small">
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={editLeadInvestor}>Edit</label>
+                                    </button>
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={removeLeadInvestor}>Remove</label>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

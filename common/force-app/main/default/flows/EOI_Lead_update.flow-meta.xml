@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_1</name>
+        <label>Assignment 1</label>
+        <locationX>264</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>SUM_MIN_INV</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Add_all_Min_Investments.Min_Investment__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CountLeads</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_all_Min_Investments</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>UpdateMinInvestment</name>
+        <dataType>Currency</dataType>
+        <expression>CASE(TEXT({!$Record.Investment_Amount__c}),
+    &quot;$250 to $500&quot;, 250,
+    &quot;$500 to $1,000&quot;, 500,
+    &quot;$1,000 to $2,000&quot;, 1000,
+    &quot;$1,000 to $3,000&quot;, 1000,
+    &quot;$2,000 to $5,000&quot;, 2000,
+    &quot;$3,000 to $5,000&quot;, 3000,
+    &quot;$3,000 to $5,000&quot;, 3000,
+    &quot;$5,000 to $8,000&quot;, 5000,
+    &quot;$8,000 to $10,000&quot;, 8000,
+    &quot;$10,000 to $20,000&quot;, 10000,
+    &quot;$5,000 to $10,000&quot;, 5000,
+    &quot;$10,000 to $25,000&quot;, 10000,
+    &quot;$20,000 to $50,000&quot;, 20000,
+    &quot;$25,000 to $50,000&quot;, 25000,
+    &quot;$50,000 to $100,000&quot;, 50000,
+    &quot;$100,000 to $200,000&quot;, 100000,
+    &quot;$100,000 to $250,000&quot;, 100000,
+    &quot;$250,000 to $500,000&quot;, 250000,
+     &quot;$200,000+&quot;, 200000,
+    &quot;$500,000 +&quot;, 500000,
+    0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>EOI Lead update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EOI Lead update</label>
+    <loops>
+        <name>Add_all_Min_Investments</name>
+        <label>Add all Min Investments</label>
+        <locationX>176</locationX>
+        <locationY>647</locationY>
+        <collectionReference>Get_Related_Leads</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assignment_1</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_EOI</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_EOI</name>
+        <label>Get EOI</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Related_Leads</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Related_EOI__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EOI__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Leads</name>
+        <label>Get Related Leads</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_all_Min_Investments</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Related_EOI__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_EOI.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_EOI</name>
+        <label>Update EOI</label>
+        <locationX>176</locationX>
+        <locationY>947</locationY>
+        <inputAssignments>
+            <field>Leads_expressed_interest__c</field>
+            <value>
+                <elementReference>CountLeads</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Value_of_investment_interest__c</field>
+            <value>
+                <elementReference>SUM_MIN_INV</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Related_EOI__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Min_Investment</name>
+        <label>Update Min Investment</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Get_EOI</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Min_Investment__c</field>
+            <value>
+                <elementReference>UpdateMinInvestment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Min_Investment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Investment_Amount__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0125i0000008svKAAQ</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>CountLeads</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>SUM_MIN_INV</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

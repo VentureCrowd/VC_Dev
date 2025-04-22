@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fund_Portfolio</fullName>
+    <active>true</active>
+    <businessProcess>Fund Portfolio</businessProcess>
+    <label>Fund Portfolio</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Approval Required</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_back_required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Type__c</picklist>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Class_of_Unit__c</picklist>
+        <values>
+            <fullName>A Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convertible Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited Partnership Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinary Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinary Shares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordinary Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promissory Note</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closed_Won_Stages__c</picklist>
+        <values>
+            <fullName>Fully Redeemed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Redeemed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rollover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currency__c</picklist>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Founder_Interest__c</picklist>
+        <values>
+            <fullName>EOI Listing Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend %26 Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscription</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Founder_status__c</picklist>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unqualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Investment_Range__c</picklist>
+        <values>
+            <fullName>%24100%2C000 to %24250%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2425%2C000 to %2450%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24250%2C000 to %24500%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%245%2C000 to %2420%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2450%2C000 to %24100%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24500%2C000 %2B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Manual Nurturing %26 Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Ads</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Added to hotlist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already Invested in this product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Another real estate agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting other Development Results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bought another property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM - Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM- Dasp-Didn%E2%80%99t like the project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-No Trust - does not understand the model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-Personal reasons%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-Location based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-No Trust - does not understand the model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-Timing not quite right -but still interested%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-time waster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COVID - 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSF Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can%27t decide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Before Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Couldn%27t get finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dasp Lost tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Cancelled %28customer refunded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does Not Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t have enough in SMSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IFS Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invested Elsewhere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Offer on Lot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Deposit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Phone Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Trust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overpriced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passive Researcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project not suitable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up SMSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Waster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing not right</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too risky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsubscribed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasp lost tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>company rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reasons__c</picklist>
+        <values>
+            <fullName>%28G%29 Lost tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GP%29 Lost tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already Invested in this product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting other Development Results</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bought another property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM- Dasp-Didn%E2%80%99t like the project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-No Trust - does not understand the model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Dasp-Personal reasons%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-Wasp-No Trust - does not understand the model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-Location based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-Timing not quite right -but still interested%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM-wasp-time waster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can%27t decide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Before Appointment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim they did not book</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claims they never clicked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Couldn%27t get finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dasp Lost tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does Not Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Don%27t have enough in SMSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invested Elsewhere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Just looking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Deposit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Phone Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Trust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not enough commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in a position for 1 month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in a position for 2 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in a position for 3 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in a position indefinitely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the right configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the right location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the right price point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not the right yield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overpriced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSP Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passive Researcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project not suitable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration Delays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set up SMSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Waster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing not right</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too risky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wasp lost tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>company rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Off_Market_Transfer__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Redeemed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products_Interested_In__c</picklist>
+        <values>
+            <fullName>Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listing a Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mortgage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Syndicate Platform %28PSP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raising Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venture Capital Investing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Enquiry__c</picklist>
+        <values>
+            <fullName>2nd Home Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Home Buyer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner Occupier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Selling_agency__c</picklist>
+        <values>
+            <fullName>Colin Moore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HomeCorp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LJ Hooker Aspley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LJ Hooker Gold Coast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VCPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Stage__c</picklist>
+        <values>
+            <fullName>Contract Executed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Unconditional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOI Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOI Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>CSF Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSP Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

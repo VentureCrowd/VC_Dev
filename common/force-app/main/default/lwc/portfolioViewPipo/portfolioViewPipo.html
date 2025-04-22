@@ -1,0 +1,217 @@
+<template>
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner">
+            <h1>Loading</h1>
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    <template lwc:else>
+        <div lwc:if={showBanner} class="banner-warning-container" >
+            <div class="content">
+                <p class="text-desktop">Hi {userName}, welcome to your new investor portal—designed to make tracking and managing your investments easier!</p>
+                <p class="text-mobile">Hi {userName}, welcome to your new investor portal!</p>
+            </div>
+            <div class="actions">
+                <c-core-button
+                label="Take the tour"
+                variation="black"
+                icon="arrowRight"
+                icon-position="right"
+                icon-size="small"
+                onbuttonclick={handleTourButtonClick}
+                ></c-core-button>
+                <c-core-button
+                variation="solo-icon"
+                icon="cross-2"
+                icon-size= "large"
+                icon-position="right"
+                onbuttonclick={handleCloseBannerButton}>
+                </c-core-button>
+            </div>
+        </div>
+
+        <div class="wrapper-pipo">
+            
+            <div class="banner-margin">
+                <c-core-alert lwc:if={showUserVerification} type="warning">
+                    <div class="verification-container" slot="body">
+                        <p>ID verification required</p>
+                        <c-core-button
+                            label="Get verified"
+                            mode="light"
+                            variation="primary"
+                            onclick={handleVerificationNav}>
+                        </c-core-button>
+                    </div>
+                </c-core-alert>
+
+                <div lwc:if={handleCsfBanner} class="banner-style desktop">
+                        <p>Direct CSF Retail investments not under VentureCrowd Nominees (Trustee) sit in <strong>Inactive Investments. </strong>
+                            These are inactive as the shareholding is with the CSF company you invested in, not VentureCrowd. Please contact the CSF company directly for updates.</p>
+                        <c-core-icon
+                            icon-name="cross"
+                            size="xxlarge"
+                            onclick={handleCloseCSFBanner}>
+                        </c-core-icon>
+                </div>
+
+                <div lwc:if={handleCsfBanner} class="banner-style mobile">
+                    <template lwc:if={isExpanded}>
+                        <p>Direct CSF Retail investments not under VentureCrowd Nominees (Trustee) sit in <strong>Inactive Investments. </strong>
+                            These are inactive as the shareholding is with the CSF company you invested in, not VentureCrowd. Please contact the CSF company directly for updates.</p>
+                    </template>
+                    <template lwc:else>
+                        <p>Direct CSF Retail investments not under VentureCrowd Nominees (Trustee) sit in Inactive Investments. <a onclick={handleFindOutText} class="inactive-investment-link">Find out more</a></p>
+                    </template>
+                    <c-core-icon
+                        icon-name="cross"
+                        size="xxlarge"
+                        onclick={handleCloseCSFBanner}>
+                    </c-core-icon>
+                </div>
+            </div>
+
+            <!-- Welcome message -->
+            <section class="welcome-wrapper">
+                <h2>Welcome, {userName}!</h2>
+                <c-pipo-help-hub> </c-pipo-help-hub>
+            </section>
+
+            <!-- Spotlight cards -->
+            <!-- If there are no investments do not render anything otherwise render the spotlight -->
+            <template lwc:if={noInvestments}></template>
+            <template lwc:else>
+                <section class="spotlight-wrapper">
+                    <c-core-card hide-footer wrapping="md" mode="gray" shadow>
+                        <div slot="title">
+                            <h1>{activeInvestmentsLength}</h1>
+                        </div>
+                        <div slot="body">
+                            <div class="tooltip-wrapper">
+                                <p>Number of investments</p>
+                                <c-core-tooltip 
+                                help-text="Current number of active investments in your portfolio. This excludes any EOIs, pending, redeemed or inactive investments. This is updated monthly so may not be 100% accurate." 
+                                size="medium"></c-core-tooltip>                        
+                            </div>
+                        </div>
+                    </c-core-card>
+                    
+                    <c-core-card hide-footer wrapping="md" mode="gray" shadow>
+                        <div slot="title">
+                            <h1>${totalAmountInvested}</h1>
+                        </div>
+                        <div slot="body">
+                            <div class="tooltip-wrapper">
+                                <p>Total invested (active)</p>
+                                
+                                <c-core-tooltip 
+                                help-text="The current total amount invested in all of your active investments. This is updated in monthly cycles so may not be 100% accurate." 
+                                size="medium"></c-core-tooltip>                        
+                            </div>
+                        </div>
+                    </c-core-card>
+                    
+                    <c-core-card hide-footer wrapping="md" mode="gray" shadow>
+                        <div slot="title">
+                            <h1>${portfolioValue}</h1>
+                        </div>
+                        <div slot="body">
+                            <div class="tooltip-wrapper">
+                                <p>Portfolio value</p>
+                                <c-core-tooltip 
+                                help-text="The current value of your active investments combined. This is updated in monthly cycles so may not be 100% accurate. Please refer to our unit pricing policy as to how we price your holdings." 
+                                size="medium"></c-core-tooltip>                        
+                            </div>
+                        </div>
+                    </c-core-card>
+                </section>
+            </template>
+                
+            <!-- Personal Investments -->
+            <section class="cards-container">
+                <c-pipo-tabs
+                    lwc:ref="coretabs"
+                    total-active-investments={activeInvestmentsLength}
+                    total-pending-investments={pendingInvestmentsLength}
+                    total-expressions-investments={eoiLength}
+                    total-inactive-investments={closedInvestmentsLength}
+                    oninactivetab={handleInactiveTab}>
+                    <template lwc:if={noInvestments}>
+                        <div slot="active-investments" class="card-investment-wrapper space-xl">
+                            <p>It looks like you don’t have any active investments at the moment. Once you make an investment, your investments will appear here.
+                                If you’ve invested in a CSF retail deal, please note that your investment is managed under a different nominee structure and can be found under <a onclick={handleClickInactiveInvestment} class="inactive-investment-link">Inactive Investments.</a></p>
+                        </div>
+                    </template>
+
+                    <template lwc:else>
+                        <div slot="active-investments" class="card-investment-wrapper space-xl">
+                            <template lwc:if={activePersonalInvestments}>
+                                <h2 lwc:if={renderActivePersonalIText}>My personal Investments</h2>
+                                <c-pipo-investment-card-container
+                                    investments-details={activePersonalInvestments}
+                                    user-name={userName}
+                                    investment-status="active"
+                                    onloadmore={handleLoadMore}
+                                    loading-button={buttonLoading}
+                                    show-more-button={showMoreButton}>
+                                </c-pipo-investment-card-container>
+                            </template>
+                            <!-- Entities Investments -->
+                            <template lwc:if={activeEntitiesInvestments}>
+                                <h2 lwc:if={renderActiveEntitiesText}>My entity investments</h2>
+                                <c-pipo-investment-card-container
+                                    investments-details={activeEntitiesInvestments}
+                                    is-entity={isEntity}
+                                    investment-status="active"
+                                    onloadmore={handleLoadMoreEntities}
+                                    loading-button={entitiesButtonLoading}
+                                    show-more-button={showMoreEntitiesButton}>
+                                </c-pipo-investment-card-container> 
+                            </template>
+                        </div>
+                    </template>
+                    <div slot="pending-investments" class="card-investment-wrapper space-xl">
+                            <template lwc:if={pendingInvestments}>
+                            <c-pipo-investment-card-container
+                                investments-details={pendingInvestments}
+                                investment-status="pending">
+                            </c-pipo-investment-card-container>
+                        </template>
+                        <template lwc:else>
+                            <p>It looks like you don't have any pending investments.</p>
+                        </template>
+                    </div>
+                    <!-- Expressions of interest -->
+                    <div slot="eoi" class="card-investment-wrapper space-xl">
+                        <template lwc:if={eoiCards}>
+                            <c-pipo-investment-card-container
+                                investments-details={eoiCards}
+                                user-name={userName}
+                                is-eoi={isEOI}>
+                            </c-pipo-investment-card-container>
+                        </template>
+                        <template lwc:else>
+                            <p>It looks like you don't have any EOIs.</p>
+                        </template>
+                    </div>
+                    <!-- Inactive investments -->
+                    <div slot="inactive-investments" class="card-investment-wrapper space-xl">
+                        <template lwc:if={closedInvestments}>
+                            <c-pipo-investment-card-container
+                                investments-details={closedInvestments}
+                                user-name={userName}>
+                            </c-pipo-investment-card-container>
+                        </template>
+                        <template lwc:else>
+                            <p>It looks like you don't have any inactive investments.</p>
+                        </template>
+                    </div>
+                </c-pipo-tabs>
+            </section>
+            <section class="investment-opportunities">
+                <h2>Check out our latest investment opportunities</h2>
+                <c-product-offer-container></c-product-offer-container>
+            </section>
+        </div>
+    </template>
+</template>

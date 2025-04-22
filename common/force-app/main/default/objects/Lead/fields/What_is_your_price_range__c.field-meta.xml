@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_is_your_price_range__c</fullName>
+    <label>What is your price range?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$200K - $300K</fullName>
+                <default>false</default>
+                <label>$200K - $300K</label>
+            </value>
+            <value>
+                <fullName>$300K - $400K</fullName>
+                <default>false</default>
+                <label>$300K - $400K</label>
+            </value>
+            <value>
+                <fullName>$400k-$500k</fullName>
+                <default>false</default>
+                <label>$400k-$500k</label>
+            </value>
+            <value>
+                <fullName>$500k-$600k</fullName>
+                <default>false</default>
+                <label>$500k-$600k</label>
+            </value>
+            <value>
+                <fullName>$600K - $700K</fullName>
+                <default>false</default>
+                <label>$600K - $700K</label>
+            </value>
+            <value>
+                <fullName>$700K - $800K</fullName>
+                <default>false</default>
+                <label>$700K - $800K</label>
+            </value>
+            <value>
+                <fullName>$800K - $1M</fullName>
+                <default>false</default>
+                <label>$800K - $1M</label>
+            </value>
+            <value>
+                <fullName>$1M +</fullName>
+                <default>false</default>
+                <label>$1M +</label>
+            </value>
+            <value>
+                <fullName>$170k - $180k</fullName>
+                <default>false</default>
+                <label>$170k - $180k</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

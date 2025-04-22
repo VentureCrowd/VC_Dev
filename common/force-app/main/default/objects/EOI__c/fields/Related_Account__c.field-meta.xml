@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Account__c</fullName>
+    <description>if the field &quot;Related_Person_Account__c&quot; is empty then it says &quot;YES&quot; otherwise &quot;NO&quot;</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Related_Person_Account__c), &quot;NO&quot;, &quot;YES&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is a calculated field that will be used for the dashboard and tracking of the EOI</inlineHelpText>
+    <label>Related Account</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ventures_Persona__c</fullName>
+    <label>Ventures Persona</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Founder</fullName>
+                <default>false</default>
+                <label>Founder</label>
+            </value>
+            <value>
+                <fullName>CFO</fullName>
+                <default>false</default>
+                <label>CFO</label>
+            </value>
+            <value>
+                <fullName>CTO</fullName>
+                <default>false</default>
+                <label>CTO</label>
+            </value>
+            <value>
+                <fullName>CMO</fullName>
+                <default>false</default>
+                <label>CMO</label>
+            </value>
+            <value>
+                <fullName>Updates Contact</fullName>
+                <default>false</default>
+                <label>Updates Contact</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Venture Capital Fund Manager</fullName>
+                <default>false</default>
+                <label>Venture Capital Fund Manager</label>
+            </value>
+            <value>
+                <fullName>Event Coordinator</fullName>
+                <default>false</default>
+                <label>Event Coordinator</label>
+            </value>
+            <value>
+                <fullName>Referal Partner</fullName>
+                <default>false</default>
+                <label>Referal Partner</label>
+            </value>
+            <value>
+                <fullName>Accelerator Partner</fullName>
+                <default>false</default>
+                <label>Accelerator Partner</label>
+            </value>
+            <value>
+                <fullName>Media/Marketing Partner</fullName>
+                <default>false</default>
+                <label>Media/Marketing Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

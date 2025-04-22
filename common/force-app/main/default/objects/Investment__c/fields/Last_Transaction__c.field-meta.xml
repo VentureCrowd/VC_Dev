@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Transaction__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is a lookup field that gets updated through a flow to get the last transaction associated with this investment</description>
+    <inlineHelpText>This is a lookup field that gets updated through a flow to get the last transaction associated with this investment</inlineHelpText>
+    <label>Last Transaction</label>
+    <referenceTo>Transaction__c</referenceTo>
+    <relationshipLabel>Investments</relationshipLabel>
+    <relationshipName>Investments</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

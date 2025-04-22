@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>what_best_describes_you__c</fullName>
+    <label>what best describes you?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Downsizer</fullName>
+                <default>false</default>
+                <label>Downsizer</label>
+            </value>
+            <value>
+                <fullName>first_home_buyer</fullName>
+                <default>false</default>
+                <label>First Home Buyer</label>
+            </value>
+            <value>
+                <fullName>investor</fullName>
+                <default>false</default>
+                <label>Investor</label>
+            </value>
+            <value>
+                <fullName>owner_occupier</fullName>
+                <default>false</default>
+                <label>Owner Occupier</label>
+            </value>
+            <value>
+                <fullName>upsizer</fullName>
+                <default>false</default>
+                <label>Upsizer</label>
+            </value>
+            <value>
+                <fullName>Second Home Buyer</fullName>
+                <default>false</default>
+                <label>Second Home Buyer</label>
+            </value>
+            <value>
+                <fullName>Downsize</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Downsize</label>
+            </value>
+            <value>
+                <fullName>invest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>invest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Manual Nurturing &amp; Outreach</fullName>
+        <default>false</default>
+        <label>Manual Nurturing &amp; Outreach</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media &amp; PR</fullName>
+        <default>false</default>
+        <label>Media &amp; PR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paid Ads</fullName>
+        <default>false</default>
+        <label>Paid Ads</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Organic</fullName>
+        <default>false</default>
+        <label>Organic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Out Of Home</fullName>
+        <default>false</default>
+        <label>Out Of Home</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media Organic</fullName>
+        <default>false</default>
+        <label>Social Media Organic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </standardValue>
+</StandardValueSet>

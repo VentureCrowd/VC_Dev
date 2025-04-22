@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>1850f107-d57f-44a7-b8a5-d5c903605330</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-9982d445-79c5-486b-8840-92494931bf33</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>AgTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>AgTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=AgTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>BioTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=BioTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>CleanTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=CleanTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfunding</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Crowdfundingurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Crowdfunding</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESG</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>ESGurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=ESG</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>EdTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=EdTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FinTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=FinTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>FoodTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>HealthTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Invest</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Invest</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyle</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Lifestyleurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>MedTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=MedTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>News</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Newsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=News</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTech</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropTechurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=PropTech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Property</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFunds</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyFundsurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Funds</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidential</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>PropertyResidentialurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Property+Residential</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Propertyurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Healthtech</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewables</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Renewablesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Renewable+Energy</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Ventures</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Venturesurl</name>
+                    <value>https://www.venturecrowd.com.au/s/category?category=Ventures</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0685i0000089GsB&amp;d=%2Fa%2F5i000000PX9b%2F8uRrYrvr58xNYzNTiC1dZSr0hL7qeSzlhcm3c1CaLWo&amp;asPdf=false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bannerTitle</name>
+                    <value>How is AI being used for impact?</value>
+                </componentInstanceProperties>
+                <componentName>blogHeroBanner</componentName>
+                <identifier>blogHeroBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>1850f107-d57f-44a7-b8a5-d5c903605330</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>651f5272-967e-4203-823d-8b12e9ff6997</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>6b0cd</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-7d2eb72b-4bee-4567-b458-8f7f22aca178</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;How is AI being used for impact?&lt;/h1&gt;
+&lt;br&gt;
+&lt;p&gt;Recent developments in artificial intelligence (AI) have captured the world’s attention—from students writing papers at university to investors looking for breakthrough technology. But how is AI being used for good in the world and what are investors looking for in AI companies?&lt;/p&gt;
+
+&lt;p&gt;This article sheds light on the opportunities and challenges of investing in AI for social and environmental impact and highlights AI’s potential to create positive change in the world.&lt;/p&gt;
+
+&lt;p&gt;AI has the potential to create a significant impact on a variety of global problems, including climate change, healthcare, sustainable development, disaster response, humanitarian aid and transportation. Below we’ve outlined some of the use cases for AI in some of our key investment areas: climatetech, healthtech, proptech, edtech, foodtech and finance.
+&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>651f5272-967e-4203-823d-8b12e9ff6997</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5e5f3ec4-bfa3-4a9e-9733-423b73b33563</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-994e2e7b-b3dc-441f-8e6b-cbe09d9d3aae</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;AI and Healthcare&lt;/h1&gt;
+&lt;br&gt;
+&lt;p&gt;From technology that helps to diagnose illness to apps that help patients procure the correct medication, AI is proving useful across the spectrum of healthcare management and treatment.&lt;/p&gt;
+&lt;p&gt;In fact, it&amp;rsquo;s argued that sometimes AI does a better job at distinguishing and diagnosing illness than doctors who have trained for years. Recently, ChatGPT infamously passed&amp;nbsp;&lt;a href=&quot;https://amp.abc.net.au/article/101840938&quot;&gt;all three&amp;nbsp;US medical licensing exams&lt;/a&gt; (USMLE).&lt;/p&gt;
+&lt;p&gt;AI is being used to improve efficiency, speed up diagnosis, and enhance patient experience as well as reduce medical errors, and provide decision support to both clinicians and patients.&lt;/p&gt;
+&lt;p&gt;AI can process much more data at much faster rates than human beings, making it an excellent tool for clinicians and with advances in generative AI, investors predict the technology will go well beyond its current capabilities.&lt;/p&gt;
+
+&lt;p&gt;Experts predict the market value of AI in global healthcare will reach&amp;nbsp;&lt;a href=&quot;https://neoteric.eu/blog/10-examples-of-artificial-intelligence-in-healthcare-that-will-powerfully-transform-your-business/&quot;&gt;$23.85 billion USD by 2025&amp;nbsp;&lt;/a&gt;with a 39.8% CAGR between 2018 and 2026.&lt;/p&gt;
+
+&lt;p&gt;Natural Language Processing (NLP) is also being used to speed up clinicial trials. Machine learning can analyse images from X-rays and MRIs to find minute and often missed changes and connections and provide crucial data to clinicians and patients. Deep learning is used for abnormality discovery and innovative medical devices can assist with disease prevention and management.&lt;/p&gt;
+&lt;h3&gt;Some examples of startups in this space include:&amp;nbsp;&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://harrison.ai/&quot;&gt;harrison.ai&lt;/a&gt; uses state-of-the-art AI and partners with best-in-class healthcare specialists. Through joint ventures, they&amp;rsquo;re creating products to tackle seemingly unsolvable healthcare challenges.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;Early-stage Australian startup&amp;nbsp;&lt;a href=&quot;https://www.medadata.com.au/&quot;&gt;Medadata&lt;/a&gt; employs AI to assist clinicians in making accurate, personalised prescribing choices.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.tempus.com/&quot;&gt;Tempus&lt;/a&gt; uses data and AI to predict treatment effectiveness, identify potentially life-saving clinical trials and speed up diagnosis to help clinicians make more informed treatment decisions.&amp;nbsp;&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.corti.ai/&quot;&gt;Corti&lt;/a&gt; uses AI to power and improve patient engagement.&amp;nbsp;&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5e5f3ec4-bfa3-4a9e-9733-423b73b33563</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>2440a1bf-89d3-4552-8f21-3f2a4333b1cb</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b4261d5f-3075-4f0c-8c8b-b5961df7aac0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;AI and Proptech&lt;/h1&gt;
+&lt;br&gt;
+&lt;p&gt;Overall, AI is helping to improve efficiency, enhance customer service and increase revenue for the proptech industry. AI is used in anything from building operations to real estate loan approvals. Drones can be used to safely inspect buildings and large, inaccessible structures such as dam walls and stadiums. The data gathered from drone inspections can be used to create digital twins and AI can be used to analyse historical data and pinpoint problems, saving companies potentially millions and making buildings safer.&lt;/p&gt;
+&lt;p&gt;AI can help monitor and analyse energy use, collect and use data for marketing in real estate, speed up tenant approvals, find suitable investment properties for buyers and more.&lt;/p&gt;
+&lt;h3&gt;Examples of AI in Proptech&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;AI startup&amp;nbsp;&lt;a href=&quot;https://overwrite.ai/&quot;&gt;Overwrite&lt;/a&gt; is helping real estate agents write compelling marketing content for their listings.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;While not specifically for property, recently launched&amp;nbsp;&lt;a href=&quot;https://www.fallbackai.com/&quot;&gt;Fallback.ai&lt;/a&gt; is revolutionising follow-up messages for salespeople.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.zillow.com/&quot;&gt;Zillow&lt;/a&gt; is an AI-powered property sales platform matching customers to their ideal next home in minutes.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>2440a1bf-89d3-4552-8f21-3f2a4333b1cb</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>0d048d12-d628-4e1f-9627-28dfc8706eb0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-12de9dd1-c869-4f96-bb83-6039eb1ab2c8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;AI and Edtech&lt;/h1&gt;
+&lt;br&gt;
+&lt;p&gt;AI is being used in edtech in several ways, including personalised learning, content creation, and data analysis. Personalised learning uses AI algorithms to adapt the learning experience to the individual student&amp;apos;s needs and preferences. Content creation is being automated using AI, allowing for the development of new and interactive educational materials. Data analysis is also being used to track student progress and identify areas where they may need additional support. AI is also employed in virtual and augmented reality, enabling students to interact with simulations and digital environments.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.unesco.org/en/digital-education/artificial-intelligence&quot; target=&quot;_blank&quot;&gt;UNESCO&lt;/a&gt; states that AI has the potential to transform access to quality education for people all over the world. The organisation&amp;rsquo;s mandate is that people should always be at the heart of any AI technology used to learning, work and sustainable development.&lt;/p&gt;
+&lt;p&gt;ChatGPT is quickly gaining traction with everyone, and I mean everyone&amp;ndash;from marketers and coders and university and school students. The tool has caused so much concern that universities and schools are scrambling to find new assessment solutions so that students don&amp;rsquo;t become too reliant on this tool to pass their subjects. Some universities are calling for an outright ban but this would be near to impossible to police. Text created by generative AI is difficult to detect. However, OpenAI has recently suggested they will&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://techcrunch.com/2022/12/10/openais-attempts-to-watermark-ai-text-hit-limits/&quot; target=&quot;_blank&quot;&gt;digitally watermark&lt;/a&gt; the content created on ChatGPT.&lt;/p&gt;
+&lt;p&gt;As a writing tool, it&amp;rsquo;s a huge step up from previous AI models. In fact, by way of experiment, this article was generated using ChatGPT for some of the initial copy.&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;Examples of AI in Education&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;VentureCrowd portfolio company&amp;nbsp;&lt;a href=&quot;https://www.venturecrowd.com.au/s/lp/elladex-eoi&quot;&gt;Elladex&lt;/a&gt; is using AI to personalise professional women&amp;rsquo;s learning needs and experiences via their super-app. Elladex is about to raise a seed round via VentureCrowd.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.century.tech/&quot;&gt;Century Tech&lt;/a&gt; combines learning science, AI and neuroscience to&amp;nbsp;enable personalised learning in schools and colleges.&amp;nbsp;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.memrise.com/&quot;&gt;Memrise&lt;/a&gt;&amp;nbsp;uses AI and videos of native speakers to optimise learning a language. The platform has over 60 million users.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>0d048d12-d628-4e1f-9627-28dfc8706eb0</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>9c7a3366-64ca-4945-ba42-04e4f4eb9122</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-8f941b63-08d3-4b8c-91ec-2f1a148709a8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2&gt;AI and Foodtech&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;In food technology, AI is proving useful in operations, supply chain and food production. It can be used to reduce food production contamination, improve food transportation and service quality. With the help of satellite data and IoT sensors, AI can improve farming and food security by monitoring crop yields, detecting diseases, pests, soil conditions and other environmental impacts. It can also be used to analyse food trends and even create new recipes.&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;Examples of AI in Foodtech include:&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://aipalette.com/&quot;&gt;AI Pallete&lt;/a&gt; enables product developers to spot food trends in real-time.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Innovative Swiss startup&amp;nbsp;&lt;a href=&quot;https://www.stopfakefood.com/&quot;&gt;Stop Fake Food&lt;/a&gt; fights food counterfeiting, product adulteration, ingredient substitution, package mislabeling and outright fraud.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://trellis.ai/&quot;&gt;Trellis&lt;/a&gt; is the source of truth across the food production supply chain, helping farmers through to manufacturers optimise production.&amp;nbsp;&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>9c7a3366-64ca-4945-ba42-04e4f4eb9122</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>218b2705-cbb5-4a84-8cf6-29e5dc576d15</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b09b31b2-c322-435d-8363-239f225ba96e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2&gt;AI and Finance&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;We, of course, can&amp;rsquo;t leave out AI&amp;rsquo;s use in finance as that ties everything together.&amp;nbsp;The AI banking market size is predicted to reach&amp;nbsp;&lt;a href=&quot;https://www.alliedmarketresearch.com/ai-in-banking-market-A11871&quot;&gt;$64.03 billion by 2030&lt;/a&gt;, growing at a CAGR of 32.6% from 2021 to 2030.&amp;nbsp;AI is being used in finance to speed up loan approvals, conduct algorithmic trading, optimise investor portfolios by identifying patterns and trends in different verticals, risk management and market predictions, sentiment analysis and fraud detection.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Most of the major banks are looking to implement AI across their different business functions. Recently, Australian Big 4 bank,&amp;nbsp;&lt;a href=&quot;https://www.itnews.com.au/news/westpac-partners-with-ai-company-rich-data-co-589865&quot;&gt;Westpac&lt;/a&gt;, announced it was using AI to approve small business loans faster. Other banks are doing similar things, partnering with AI startups to bring more functionality to their businesses.&lt;/p&gt;
+&lt;h3&gt;Examples of AI in Finance:&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://web.meetcleo.com/&quot;&gt;Cleo&lt;/a&gt; is an AI-powered money management and education app aimed at consumers.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://vise.com/&quot;&gt;Vise&lt;/a&gt; uses AI to help asset managers optimise and personalise their customers&amp;rsquo; portfolios.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://numer.ai/&quot;&gt;Numerai&lt;/a&gt; helps traders by providing up-to-date data on the stock market powered by AI.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>218b2705-cbb5-4a84-8cf6-29e5dc576d15</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>b9aa4a48-6930-44d1-9af9-61f472b8f290</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-55c80f79-0577-4a6d-bc29-886a9489326f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h2&gt;Shaping the Future of AI for Impact&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;AI will be a powerful tool for creating positive social and environmental impact, and impact investing provides a way for investors to help create change and align their values with their financial goals.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;However, AI adoption does not come without its challenges. For instance, job evolution is a significant issue. The onus will be on industry and policymakers to find a balance in how human resources evolves alongside AI development for increased efficiency and productivity. Educational institutions will also need to evolve to prepare for a different kind of workforce in the future.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Investors, entrepreneurs, and policymakers can play a crucial role in shaping the future of AI for social and environmental impact by supporting companies and projects that are transparent, accountable and aligned with the United Nations Sustainable Development Goals.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;By taking a more strategic and responsible approach to investing in AI, we can harness its power to create measurable change and contribute to a more sustainable future for all.&lt;/p&gt;
+&lt;p&gt;ps: just for fun, we used ChatGPT to help structure this article.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>b9aa4a48-6930-44d1-9af9-61f472b8f290</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>df174f71-b902-461d-a639-80000d0c8d8c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-20f706c3-29db-437e-9a4a-e9874970a947</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>currentBlogSeqNumber</name>
+                    <value>67</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>nextPostButtonLabel</name>
+                    <value>Next Post</value>
+                </componentInstanceProperties>
+                <componentName>blogNextPost</componentName>
+                <identifier>blogNextPost</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>df174f71-b902-461d-a639-80000d0c8d8c</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-9982d445-79c5-486b-8840-92494931bf33</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;9982d445-79c5-486b-8840-92494931bf33&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;1850f107-d57f-44a7-b8a5-d5c903605330&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-7d2eb72b-4bee-4567-b458-8f7f22aca178</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;7d2eb72b-4bee-4567-b458-8f7f22aca178&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;651f5272-967e-4203-823d-8b12e9ff6997&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;6b0cd&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-994e2e7b-b3dc-441f-8e6b-cbe09d9d3aae</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;994e2e7b-b3dc-441f-8e6b-cbe09d9d3aae&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5e5f3ec4-bfa3-4a9e-9733-423b73b33563&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b4261d5f-3075-4f0c-8c8b-b5961df7aac0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b4261d5f-3075-4f0c-8c8b-b5961df7aac0&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;2440a1bf-89d3-4552-8f21-3f2a4333b1cb&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-12de9dd1-c869-4f96-bb83-6039eb1ab2c8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;12de9dd1-c869-4f96-bb83-6039eb1ab2c8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;0d048d12-d628-4e1f-9627-28dfc8706eb0&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-8f941b63-08d3-4b8c-91ec-2f1a148709a8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;8f941b63-08d3-4b8c-91ec-2f1a148709a8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;9c7a3366-64ca-4945-ba42-04e4f4eb9122&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b09b31b2-c322-435d-8363-239f225ba96e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b09b31b2-c322-435d-8363-239f225ba96e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;218b2705-cbb5-4a84-8cf6-29e5dc576d15&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(247,247,247)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>50</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-55c80f79-0577-4a6d-bc29-886a9489326f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;55c80f79-0577-4a6d-bc29-886a9489326f&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;b9aa4a48-6930-44d1-9af9-61f472b8f290&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section8</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-20f706c3-29db-437e-9a4a-e9874970a947</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;20f706c3-29db-437e-9a4a-e9874970a947&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;df174f71-b902-461d-a639-80000d0c8d8c&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section9</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                    <value>&lt;meta  content=&quot;img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0c&amp;d=%2Fa%2F2v000000EOmQ%2FKCCFrgcG78X_tu_YOVX0bOYS45s309TyAgFYYq9vnYw&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0E&amp;d=%2Fa%2F2v000000EOmU%2FLwXLgYtmSgOYWhfk4w5TH3zOz9T9_DskjRTYsLbXoUE&amp;asPdf=false; img-src &apos;self&apos; https://venturecrowd--c.documentforce.com/sfc/dist/version/download/?oid=00D2v000000WjFp&amp;ids=0682v00000KAS0d&amp;d=%2Fa%2F2v000000EOmP%2FNocYy10C9fFRf3CJlXiYwcwrv1qQAf5BsYzdrZ9SBuI&amp;asPdf=false&quot;&gt;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>The race is on to refine generative AI, and with investor confidence growing as the market improves, investors are keenly looking for the next tech unicorn in the AI space.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>AI for Impact | VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>How is AI being used for impact</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

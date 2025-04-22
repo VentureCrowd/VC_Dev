@@ -1,0 +1,19 @@
+@media (min-width:1025px) { /*Desktop Break point*/
+.THIS.slds-spinner_container {
+    top: 30% !important;
+    bottom: 30% !important;
+    background-color:transparent;
+    }
+}   
+    .THIS .spins::after {
+    position: absolute;
+    content: 'Please wait while contact is converting to Personal Account';
+    width: 100%;
+    text-align: center;
+    top: calc(50% + 3em);
+    font-weight: bold;
+	}
+	
+	.THIS .spins{
+    	background-color:transparent
+	}

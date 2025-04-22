@@ -1,0 +1,259 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false">
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_ProductLandingCSS}" />
+  <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+  <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+  <!-- Script to make the google re-captcha disbale and enable -->
+
+  <script>
+    function timestamp() {
+      var response = document.getElementById("g-recaptcha-response");
+      if (response == null || response.value.trim() == "") {
+        var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+        elems["ts"] = JSON.stringify(new Date().getTime());
+        document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+      }
+    }
+    setInterval(timestamp, 500);
+  </script>
+  <script type="text/javascript">
+
+    function recaptcha_callback() {
+
+      $('.button').prop("disabled", false);
+    }
+  </script>
+
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+
+  <!-- Body -->
+  <div id="vc_content__container" class="position-relative page-product-landing">
+    <!-- Hero -->
+    <section class="hero has-parallax-bg">
+      <div class="container h-100">
+        <div class="row align-items-center h-100 text-white pt-5 pb-5">
+          <div class="col-md-12 animate-group">
+            <div class="logo-wrapper mb-3">
+              <img src="https://assets.venturecrowd.vc/uploads/2021/03/zega-logo.png" />
+            </div>
+            <h3 class="mb-4 animate-item-in">
+              Own part of the $59 billion
+              <br /> global home cooking market
+            </h3>
+            <p class="lead">Invest before 30 June to secure a 20% tax deduction
+              <br/> and other rewards, including a FREE Zega!
+            </p>
+            <!-- <p class="mt-2">Invest in the future of home cooking.</p> -->
+            <ul class="links mt-5">
+              <li>
+                <a href="https://startups.venturecrowd.com.au/deal/detail/retail_offer_zega_6">Learn More </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg-opacity"></div>
+      <div class="parallax-bg" style="background-image: url('https://assets.venturecrowd.vc/uploads/2021/03/Screen-Shot-2021-03-10-at-2.02.15-pm.png')"></div>
+    </section>
+
+    <section class="blurb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Your opportunity to invest in the future of home cooking is here.</h4>
+            <p>
+              Zega Intelligent Cookware is set to revolutionise the $59 billion home cooking market with app-enabled cookware that does
+              the cooking for you, made by the creators of the globally best-selling Magic Bullet.
+            </p>
+            <p>With its patented double-wall thermal insulator design and innovative smart control technology, Zega is unique
+              in the market and a unique opportunity to invest in the booming Smart Home category.</p>
+            <p>
+              <strong>Invest today, in the kitchens of tomorrow.</strong>
+            </p>
+
+            <div>
+              <a style="color:white;" href="https://startups.venturecrowd.com.au/deal/detail/retail_offer_zega_6" class="button-solid">
+                Learn More</a>
+              <br/>
+            </div>
+            <br/>
+            <br/>
+            <h4>Tax incentives &amp; other rewards</h4>
+            <p>
+              <strong>Tax incentives</strong>
+            </p>
+            <p>Zega is an early stage innovation company (ESIC), which means when you invest before 30 June you:</p>
+            <ul>
+              <li>
+                Secure a 20% tax deduction in this financial year, and
+              </li>
+              <li>
+                Pay no capital gains tax when your shares are sold (provided you hold your shares for more than 12 months and less than 10
+                years).
+              </li>
+            </ul>
+            <p>Find out more about the ESIC program
+              <a href="https://www.ato.gov.au/Business/Tax-incentives-for-innovation/In-detail/Tax-incentives-for-early-stage-investors/">HERE.</a>
+            </p>
+
+            <p>
+              <strong>Rewards with your investment</strong>
+            </p>
+            <p>But wait, there’s more:</p>
+            <ul>
+              <li>
+                Invest $500 or more in Zega and receive 50% off a Zega of your choice.
+              </li>
+              <li>
+                Invest $1000 or more in Zega and receive a FREE Zega of your choice.
+              </li>
+            </ul>
+            <p>Now open to everybody for the first time, invest in this exciting new invention from as little as $250, exclusively
+              through VentureCrowd.
+              <br/> To learn more via email today fill in the below form.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="web-lead">
+      <div class="container" id="sendEmail">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3>Register your Interest</h3>
+            <p>Leave your details and one of our team memebers will get in touch.</p>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+              <input type="hidden" name="captcha_settings" value='{"keyname":"Wed_to_Lead_recaptcha","fallback":"true","orgId":"{!$Label.VC_CF_OrgID}","ts":""}'
+              />
+              <input type="hidden" name="oid" value="{!$Label.VC_CF_OrgID}" />
+              <input type="hidden" name="retURL" value="{!$Label.VC_CF_Public_URL + '/typ'}" />
+              <input placeholder="First Name" id="first_name" maxlength="40" name="first_name" size="20" required="true" type="text" />
+              <input placeholder="Last Name" id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" />
+              <input placeholder="Email" id="email" maxlength="80" name="email" size="20" type="text" required="true" />
+              <input value="+61" placeholder="Mobile" id="mobile" maxlength="40" name="mobile" size="20" type="text" required="true" />
+              <div style="overflow: hidden;" data-callback="recaptcha_callback" class="g-recaptcha" data-sitekey="{!$Label.GOOGLE_CPATCHA_SITE_KEY}"></div>
+              <br />
+
+              <input hidden="true" id="lead_source" name="lead_source" value="9 News" />
+              <textarea hidden="true" value="ZEGA-CSF - Landing Page" id="00N2v00000YCAHx" name="00N2v00000YCAHx" type="text" wrap="soft">ZEGA-CSF - Landing Page</textarea>
+              <input formtarget="_top" type="submit" name="Submit" value="Register my interest" disabled="true" class="button" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="why-venturecrowd text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h3>Why VentureCrowd?</h3>
+            <p class="mb-0">VentureCrowd is Australia’s leading digital investment platform for alternative assets.</p>
+            <p>
+              When you invest with VentureCrowd, you join a large crowd of members who are finding and funding the future together, so
+              you won’t be investing alone. Here’s a snapshot of our traction so far.
+            </p>
+            <div class="row counter-wrapper">
+              <div class="col-lg-3 cell">
+                <div class="counter">
+                  <span class="digits">61415</span>
+                </div>
+                <div class="label">Total Members</div>
+              </div>
+              <div class="col-lg-6 cell">
+                <div class="counter">$
+                  <span class="digits">144000000</span>
+                </div>
+                <div class="label">Total Raised</div>
+              </div>
+              <div class="col-lg-3 cell">
+                <div class="counter">
+                  <span class="digits">67</span>
+                </div>
+                <div class="label">Portfolio Size</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="current-capital-investments">
+      <div class="container text-center text-white">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Current venture capital investments</h2>
+            <p>The following are examples of current VentureCrowd venture capital investments.</p>
+          </div>
+          <div class="col-md-12">
+            <img src="https://assets.venturecrowd.vc/uploads/2021/03/Open-VClogo_white-300x79.png" />
+          </div>
+          <div class="col-md-12 logos">
+            <img class="img-fluid" src="https://venturecrowd.file.force.com/servlet/servlet.ImageServer?id=0152v00000IR3nk&oid=00D2v000000WjFp&lastMod=1629428737000"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="register-today-cta theme-black">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 text-center text-lg-left">
+            <h3>Register
+              <em>Today</em> &amp; Start Investing.</h3>
+          </div>
+          <div class="col text-center text-lg-right mt-5 mt-lg-0">
+            <a href="{!$Label.VC_CF_Register_Symphony}" class="call-to-action">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-notice">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              Important Notice: Capital is at risk and returns are not guaranteed. Past performance is not a reliable indicator of future
+              performance. Any advice on this webpage is general advice only and has been prepared without considering your
+              objectives, financial situation or needs. You should not rely on any advice contained on this webpage and before
+              making any investment decision we recommend that you consider whether it is appropriate to your situation and
+              seek appropriate financial, taxation and legal advice. You should read the available offer document for the
+              product before making any investment decision. Issued by VentureCrowd Capital Pty Ltd ACN 147 162 294 a corporate
+              authorised representative of VentureCrowd Pty Ltd ABN 40 166 598 849 under AFSL No: 503381.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ./Body -->
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

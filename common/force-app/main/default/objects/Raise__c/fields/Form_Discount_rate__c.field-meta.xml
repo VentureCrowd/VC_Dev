@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Discount_rate__c</fullName>
+    <description>Please insert the discount rate that applies to SAFE notes.</description>
+    <inlineHelpText>Please insert the discount rate that applies to these notes.</inlineHelpText>
+    <label>Discount rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

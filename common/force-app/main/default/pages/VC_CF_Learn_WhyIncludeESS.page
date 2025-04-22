@@ -1,0 +1,561 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" id="pg" cache="false" docType="html-5.0">
+<apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
+<apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}"/>
+<apex:stylesheet value="{!$Resource.VC_CF_LearnCommonCSS}"/>
+<link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}"/> 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+</head>
+    
+
+<!-- Component: Menu -->
+<c:VC_CF_Menu />
+<!-- ./Component: Menu -->
+
+    <!-- Body -->
+    <div id="vc_content__container" class="position-relative page-slug-why-include-ess">
+      <!-- Header -->
+      <section class="header">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-12 text-center text-white">
+              <h4 class="mt-3">Investor Education</h4>
+              <h2 class="mt-4">Why include early stage securities?</h2>
+              <div class="prev-next-container mt-4">
+                  <!-- <apex:commandLink onclick="navigate('/investor-education/early-stage-securities'); return false;" styleClass="ml-4" > <i class="fa fa-angle-left" aria-hidden="true"></i></apex:commandLink>
+              	<apex:commandLink onclick="navigate('/investor-education/due-diligence'); return false;" styleClass="ml-4" ><i class="fa fa-angle-right" aria-hidden="true"></i></apex:commandLink> -->
+                  <a href="{!$Label.VC_CF_Public_URL + '/investor-education/early-stage-securities'}" class="mr-4">&lt;</a>
+				<a href="{!$Label.VC_CF_Public_URL + '/investor-education/due-diligence'}" class="ml-4">&gt;</a>
+			
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-bg-overlay"></div>
+        <div class="row-bg" style="background-image: url(https://assets.venturecrowd.vc/uploads/2018/02/venturecrowd-invest-education.jpg)"></div>
+      </section>
+
+      <!-- Index -->
+      <section class="index">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-8">
+              <div class="row justify-content-center pt-5 pb-3">
+                <div class="col-md-4">
+                  <a href="#traditional">Traditional V Alternative</a>
+                  <a href="#classes">The asset classes</a>
+                  <a href="#cash">Cash</a>
+                  <a href="#fixed-interest">Fixed interest</a>
+                  <a href="#shares">Shares</a>
+                  <a href="#property">Property</a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#alternative">Alternative investments</a>
+                  <a href="#infrastructure">Infrastructure</a>
+                  <a href="#commodities">Commodities</a>
+                  <a href="#hedge-funds">Hedge funds</a>
+                  <a href="#art">Art/collectibles</a>
+                  <a href="#equity">Private equity</a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#allocation">Asset Allocation</a>
+                  <a href="#risk-return">Risk and return</a>
+                  <a href="#diversification">Diversification</a>
+                  <a href="#correlation">Correlation</a>
+                  <a href="#early-stage-securities">Role of early stage securities</a>
+                  <a href="#key-message">Key message</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+
+              <!-- Section -->
+              <div id="traditional" class="content-block">
+                <h3 class="my-4">Traditional versus alternative investments</h3>
+                <p>
+                  For retail investors, the options when deciding where to invest have typically been the traditional asset classes of cash, fixed-interest, equity (shares) and
+                  property.
+                </p>
+                <p>
+                  These ‘traditional’ asset classes are either accessible directly, as in buying them straight-out in the investor’s own name, like shares; or indirectly through
+                  managed funds, which pool investors’ money and the investors own a number of units proportional to their invested amount.
+                </p>
+              </div>
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+
+              <!-- Section -->
+              <div id="classes" class="content-block">
+                <h3 class="my-4">The asset classes</h3>
+                <p>An asset class is a category of investment. The major asset classes are:</p>
+              </div>
+
+              <!-- Section -->
+              <div id="cash" class="content-block">
+                <h3 class="my-4">Cash</h3>
+                <p>
+                  Cash includes money in bank savings accounts and term deposits, as well as investments in bank bills and similar securities. Cash investments provide stable,
+                  low-risk income in the form of regular interest payments. Cash is a very defensive asset class, being low-risk in terms of return volatility: but cash earns a low
+                  return that is fully taxable, and there is no capital growth.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="fixed-interest" class="content-block">
+                <h3 class="my-4">Fixed interest</h3>
+                <p>
+                  Fixed-interest (or fixed-income) investments include government bonds (issued by the Commonwealth of Australia), semi-government bonds (issued by the state or
+                  territory governments) and corporate bonds (issued by companies). In buying bonds you lend money to the government or the company, and it undertakes to pay you
+                  the regular interest payments at an agreed interest rate (or coupon) for an agreed period of time, and to return your initial investment at the end of the term.
+                </p>
+                <p>
+                  Commonwealth government bonds are safer than state or territory bonds, which in turn are safer than corporate bonds. But the safety of a bond depends on whether
+                  you will be able to hold it to maturity. If at any time you want to sell it on the bond market, because bond prices fluctuate you may incur a capital loss (or
+                  gain.)
+                </p>
+
+                <p>
+                  Bond prices move inversely to interest rates: if the economy is slowing, the Reserve Bank of Australia (RBA) will usually lower interest rates to stimulate
+                  borrowing, spending and economic growth. Bond prices usually rise, making bonds a sound defensive asset in a weak economic environment.
+                </p>
+
+                <p>
+                  The fixed-interest asset class also contains credit investments, which some investors see as an asset class in its own right. ‘Credit’ is associated mostly with
+                  corporate credit risk. The term covers corporate investment-grade bonds (those rated BBB- or higher), corporate high-yield bonds, corporate loans – instruments
+                  that carry the ‘credit’ risk of the credit quality of the issuing company.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="shares" class="content-block">
+                <h3 class="my-4">Shares</h3>
+                <p>
+                  A share represents part ownership of a company: returns are made up of capital growth as well as income from dividends. Shares are generally bought and sold on a
+                  stock exchange. You can choose to invest in Australian shares, global shares or a mix of both. Shares are generally considered a long-term investment, to allow
+                  the compounding of retained earnings, with a time frame of five to seven years, but may be traded over holding periods measured in the hours, being generally very
+                  easy to buy and sell, in any amount.
+                </p>
+                <p>
+                  Shares are the most volatile of the major asset classes in terms of standard deviation (variability around an average), but over the long term tend to be the
+                  best-performing asset class, garnering the equity risk premium, which holds that over the long term, shares will outperform the risk-free rate, which is the
+                  return on cash/treasury bills (or commonwealth government bonds.)
+                </p>
+                <p>
+                  Investors demand this premium to invest in the more risky asset of equities, and they generally receive it, although the equity risk premium is not guaranteed
+                  over any and all timeframes of sharemarket investment. Moreover, the equity risk premium refers to the market benchmark return, and cannot be relied upon in terms
+                  of individually selected stocks or portfolios.
+                </p>
+                <p>
+                  In the Australian context the long-term return of the highest-quality dividend paying stocks is augmented by the tax benefits of franking credits on company
+                  dividends, which flow from companies’ Australian-derived income. These generally add more than 1% to the after-tax return from Australian shares for Australian
+                  investors.
+                </p>
+                <p>
+                  But in the short term, the sharemarket can be highly volatile, and dramatic falls in share prices (and the market indices) are possible. Between February 2007 and
+                  November 2009 the main Australian market, the S&amp;P/ASX 200 Index, lost 52% of its value.
+                </p>
+                <p>
+                  Shares are considered a ‘growth’ asset for long-term wealth creation, with some income from dividends along the way. (In recent years, the income from fully
+                  franked dividends rom blue-chip shares like the major banks and Telstra has become a very competitive income source for many investors, particularly self-managed
+                  superannuation funds, or SMSFs, which benefit hugely from the tax concessions in the super environment.)
+                </p>
+                <p>
+                  Australian investors can also easily buy international shares, although this introduces currency risk into the investment proposition. The currency factor can
+                  either magnify, lower or wipe out completely any gains on the shares, as well as either worsen, lessen or erase losses on the shares.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="property" class="content-block">
+                <h3 class="my-4">Property</h3>
+                <p>
+                  Many Australians invest directly in property by buying the house they live in, or a house to rent out for extra income, but it’s also possible to buy commercial
+                  buildings such as offices, shops and warehouses directly. Investors can also buy units in a real estate investment trust (REIT) that is listed on the stock
+                  exchange, and share in the ownership of very large diversified portfolios of commercial, retail, hotel and industrial property – Australian and international –
+                  with the instant liquidity of the stock market.
+                </p>
+                <p>
+                  Direct unlisted property is also available through unlisted property trusts and syndicates, although these are much less liquid than REITs (which for many
+                  investors is precisely the attraction). Property is considered a ‘growth’ asset for long-term wealth creation, with some income from rent along the way.
+                </p>
+
+                <h4 class="my-4">Australian Direct Property Annual Total Returns to 31 December 2013</h4>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Period (years)</th>
+                        <th scope="col">Retail (% a year)</th>
+                        <th scope="col">Office (% a year)</th>
+                        <th scope="col">Industrial (% a year)</th>
+                        <th scope="col">Composite Property (% a year)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>20</td>
+                        <td>11</td>
+                        <td>9.6</td>
+                        <td>11.6</td>
+                        <td>10.3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- ./ table -->
+
+                <i>Source: IPD/PCA/Atchison Consultants</i>
+              </div>
+
+              <!-- Section -->
+              <div id="alternative" class="content-block">
+                <h3 class="my-4">Alternative investments</h3>
+                <p>
+                  Over the last two decades, the menu of available investments has grown significantly, as exposures created initially for institutional investors have filtered
+                  down to the retail arena. A variety of so-called “alternative assets” has emerged, offering investments that show little (or preferably, no) correlation with the
+                  mainstream asset classes – particularly the sharemarket.
+                </p>
+                <p>
+                  Low correlation means a return profile that does not move in concert with that of the sharemarket, and shows some independence from it. Investors wanting a
+                  well-diversified portfolio do not want all of the components of a portfolio rising or falling in value together – so the low correlation of alternative assets is
+                  highly sought.
+                </p>
+                <p>
+                  The move to alternative investments was pioneered late last century by the big US university endowment funds, which manage money on behalf of institutions such as
+                  Harvard, Yale and Stanford universities. These funds began to diversify beyond stocks and bonds into investments such as hedge funds, private equity and “real
+                  assets” (real estate and managed timberland).
+                </p>
+                <p>
+                  Some of the alternative asset classes are defensive and low-risk, generating relatively stable income streams and showing low volatility – for example,
+                  infrastructure – while others are high-risk, high-volatility and potentially high-return, for example, venture capital.
+                </p>
+                <p>The assets termed ‘alternative’ range across several main kinds:</p>
+              </div>
+
+              <!-- Section -->
+              <div id="infrastructure" class="content-block">
+                <h3 class="my-4">Infrastructure</h3>
+                <p>
+                  Infrastructure covers the huge fixed assets that enable essential services to be provided, such as electric power, gas, water and sewerage; roads, railways,
+                  ports, airports and telecommunications installations. The sector can be extended to social infrastructure, including hospitals, schools, parks and sporting
+                  facilities. Infrastructure assets generate a long-term cash flow with a high yield and little volatility. They are long-term cash flow generators.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="commodities" class="content-block">
+                <h3 class="my-4">Commodities</h3>
+                <p>
+                  In recent years, investors have begun to look to commodities as a way to potentially gain enhanced portfolio diversification, protection against inflation, and
+                  equity-like returns. While not quite a fully-fledged separate asset class, commodities investments – usually based on futures market indices, such as the Goldman
+                  Sachs Commodity Index and the Dow Jones IAG index – have opened up exposures to different risk factors than the typical risk factors affecting other asset
+                  classes, and the potential for uncorrelated returns. Because commodity prices are among the direct drivers of inflation, commodities are often considered one of
+                  the few real assets that can protect against rising inflation.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="hedge-funds" class="content-block">
+                <h3 class="my-4">Hedge funds</h3>
+                <p>
+                  These are managed funds that can invest across many different markets, with maximum flexibility and unrestricted mandates, so they can make money regardless of
+                  what the share and bond markets are doing. The terms ‘hedge fund’ and ‘absolute-return’ fund are virtually interchangeable, because hedge fund managers are not
+                  concerned with how the market is performing: they are seeking a positive return, above a market-independent benchmark such as the official cash rate or the
+                  inflation rate.
+                </p>
+                <p>
+                  Hedge fund managers back their skill to generate returns independent of the performance of traditional assets, using a wide range of strategies across all kinds
+                  of asset classes. The returns from absolute-return funds are often described as “skill-based” returns.
+                </p>
+                <p>There are at least 14 distinct hedge fund strategies, but the basic strategies include:</p>
+                <ul>
+                  <li>Long/short: going long (buying) in under-valued securities and short (selling) in over-valued securities, particularly shares.</li>
+                  <li>
+                    Market-neutral, a simultaneous long/short strategy that tries to take matching long and short positions in different stocks, to increase the return from making
+                    good stock selections, while stripping-out the returns from the movement of the broader stock market.
+                  </li>
+                  <li>Global macro: investing on the basis of economic and political events, analysis and forecasts.</li>
+                  <li>
+                    Tactical asset allocation: researching, identifying and exploiting anomalies in different industries, currencies and stock markets, and leveraging into them,
+                    using derivatives;
+                  </li>
+                  <li>
+                    Event-driven: taking advantage of market reactions (specifically, over-reactions) to specific situations, for example takeovers, debt defaults, credit
+                    downgrades (even natural disasters)
+                  </li>
+                </ul>
+                <p>
+                  The major perceived attractions of hedge funds are their ability to generate returns in a manner that does not rely on the normal investment cycles, using
+                  proprietary trading strategies, and their low correlation to normal market movements. They are considered to smooth out the volatility of a wider portfolio of
+                  conventional asset classes, despite being intrinsically volatile themselves.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="art" class="content-block">
+                <h3 class="my-4">Art/collectibles</h3>
+                <p>
+                  Investment in art and other collectible items such as coins, stamps and wine is occasionally mooted as a non-correlated alternative asset, because the valuation
+                  of these assets is not driven by the same factors as the traded investment markets of shares, bonds or property. In theory, art’s lack of correlation with the
+                  traditional assets makes it an excellent tool for portfolio diversification. But the problem for non-experts investing in these assets is the subjectivity of
+                  valuation, and the potential illiquidity.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="equity" class="content-block">
+                <h3 class="my-4">Private equity</h3>
+                <p>
+                  Investment in private companies that are not listed on a stock exchange is known as ‘private equity,’ or ‘private capital.’ This capital could fund the company’s
+                  start-up – in which case it is termed ‘venture capital’ – or it could fund ongoing operations, new product development, strategic expansion or restructuring, in
+                  which case it is usually called ‘private equity.’
+                </p>
+                <p>
+                  In theory, venture capital and private equity are on a continuum in terms of the stage of a company’s development when investments are made. Venture capital is
+                  often made pre-revenue – as the term suggests, before a company has generated any revenue – while private equity typically seeks to restructure an already
+                  profitable (or hitherto profitable, but struggling) company and take it to sale, either in a trade sale or an initial public offering (IPO) on the stock market.
+                </p>
+                <p>
+                  A specialised form of venture capital is ‘early-stage’ venture capital, which is a pre-revenue stage of investment that helps company founders move from an idea
+                  to getting their product or service to the market. ‘Early-stage’ equity investment usually funds the company moving to the market, beginning to sell its product
+                  or service to its first customers. This funding may also cover product development, initial production (which may involve manufacturing), employment of key staff
+                  and initial marketing and branding.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="allocation" class="content-block">
+                <h3 class="my-4">Asset Allocation</h3>
+                <p>
+                  Asset allocation is the process of building an investment portfolio using the available asset classes, to achieve a balance of capital growth, income and risk
+                  that depends on the investor’s needs, expectations and risk appetite. The asset allocation applies actual percentages to the concept of diversification.
+                </p>
+                <p>
+                  The basis of asset allocation is that different investments (asset classes) have different levels of risk and return: historically, the riskier an asset is, the
+                  higher is its average return over time. Risk is usually measured by volatility, or standard deviation, a statistical measure of the dispersion of returns relative
+                  to the average: however, after the global financial crisis (GFC) of the late 2000s, risk is also considered in terms of the likelihood of losing money, that is,
+                  the extent of the maximum loss of value that can reasonably be expected in an asset class.
+                </p>
+                <p>
+                  Academic research consistently shows that the asset allocation of a portfolio plays a much bigger role in a portfolio’s performance than the individual assets
+                  chosen for it – the asset allocation typically accounts for about 90% of portfolio performance on a risk-adjusted basis.
+                </p>
+              </div>
+
+              <!-- Section -->
+              <div id="risk-return" class="content-block">
+                <h3 class="my-4">Risk and return</h3>
+                <p>
+                  As the potential return of an investment rises, so does the level of risk being run, and so does the level of uncertainty of the outcome. These observed
+                  principles give rise to the paradox of risk, which is that an investor can only make the high returns essential to creating wealth by running relatively high
+                  risk.
+                </p>
+                <p>
+                  Put another way, an investor could invest their money in cash, and have low risk and a low level of uncertainty about the outcome of the investment – but not
+                  create as much wealth as the next investor, who invested in riskier shares. In the context of creating wealth for one’s family and retirement, that in fact
+                  becomes an unacceptable risk.
+                </p>
+                <p>
+                  The risk-return profile of each asset class is markedly different. Here are the ten-year risk-return figures for a range of asset classes, as calculated by
+                  Morningstar.
+                </p>
+
+                <div class="table-responsive-xl">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">Australian shares</th>
+                        <th scope="col">Global shares (hedged)</th>
+                        <th scope="col">Australian REITs</th>
+                        <th scope="col">Global REITs (hedged)</th>
+                        <th scope="col">Australian Fixed interest</th>
+                        <th scope="col">Global Fixed interest (hedged)</th>
+                        <th scope="col">Cash</th>
+                        <th scope="col">Infrastructure (hedged)</th>
+                        <th scope="col">Commodities</th>
+                        <th scope="col">Hedge Funds</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Ten-year return (% a year)</th>
+                        <td>9.6</td>
+                        <td>4.4</td>
+                        <td>2.5</td>
+                        <td>8.4</td>
+                        <td>6.4</td>
+                        <td>7.5</td>
+                        <td>4.9</td>
+                        <td>11.7</td>
+                        <td>1.2</td>
+                        <td>3.8</td>
+                      </tr>
+                      <tr>
+                        <th>Ten-year standard deviation (% a year)</th>
+                        <td>13.7</td>
+                        <td>11.6</td>
+                        <td>18.4</td>
+                        <td>21.9</td>
+                        <td>2.7</td>
+                        <td>2.8</td>
+                        <td>0.4</td>
+                        <td>12.6</td>
+                        <td>14.0</td>
+                        <td>11.2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- ./ table -->
+              </div>
+
+              <!-- Section -->
+              <div id="diversification" class="content-block">
+                <h3 class="my-4">Diversification</h3>
+                <p>
+                  Diversification is the process by which a portfolio is spread across different investments, which as the term suggests are diverse, and driven by different
+                  factors. The object is twofold: to pick up on different sources of return, to maximise the likelihood of the portfolio increasing in value; and also, to lessen
+                  the overall risk of the portfolio by increasing the chance of at least some portion of the portfolio performing well even if the majority of it is down.
+                </p>
+                <p>
+                  Every investment in a portfolio should either be a source of return, or have a diversifying effect, away from the main component of the portfolio, which is
+                  usually equities.
+                </p>
+                <p>
+                  Diversification should be put in place both across and within asset classes. Not only should you have a good mix of shares, bonds, property and alternative-asset
+                  exposures, each ‘bucket’ of your portfolio should be diversified. Your share investments should be spread across different stocks representing a range of
+                  industries, not just mining and banking. Your bond investments should have a range of maturities. Your property holdings should include at least another sector –
+                  commercial, retail or industrial – in addition to your residential property exposure. If you have absolute-return equity funds, it’s a good idea to balance these
+                  with infrastructure ‘real-asset’ investment.
+                </p>
+                <p>
+                  The other element of diversification that works well for Australian investors is investment outside Australia. For example, in shares, global investment can give
+                  your portfolio an interest in sectors that the Australian market does not have – for example, information technology, global industrials, global pharmaceuticals
+                  and telecommunications.
+                </p>
+                <p>
+                  Overseas investment exposes the investor to currency risk, but even this can be viewed as another layer of diversification: giving the portfolio exposure to
+                  currencies other than the Australian dollar
+                </p>
+              </div>
+              <!-- Section -->
+              <div id="correlation" class="content-block">
+                <h3 class="my-4">Correlation</h3>
+                <p>
+                  Diversification works because of correlation, which measures the degree to which investments or asset classes tend to rise or fall in value together. If two
+                  investments have a correlation of 1, they are perfectly correlated and always move in the same direction. Conversely, two investments with a correlation of zero
+                  always move in opposite directions.
+                </p>
+                <p>
+                  Most Australian investment portfolios have their heaviest investment weighting in shares, Australian and global. Ideally, those investors want a counter-balance
+                  in their portfolio of an investment holding that is not correlated with shares and will not fall when shares do.
+                </p>
+                <p>
+                  Typically, the simplest correlation strategy is to combine bonds with shares, because bonds show a negative correlation with shares. But adding different asset
+                  classes to the portfolio brings different correlations into play: a portfolio should be constructed to tap into a range of return sources, with several components
+                  showing low correlation to the traded markets of shares and bonds, to smoothe out the long-term return profile.
+                </p>
+              </div>
+              <!-- Section -->
+              <div id="early-stage-securities" class="content-block">
+                <h3 class="my-4">Role of early stage securities</h3>
+                <p>
+                  Early-stage securities has benefits as a low-correlation portfolio diversifier – the earlier the stage is the investment made, the more benefits the investment
+                  adds in terms of correlation (but with correspondingly higher risk.) While early-stage securities is also an equity investment, it is made at a different stage to
+                  private equity (and listed shares) and can be uncorrelated to these for long periods of time. Correlation can be considered to be enhanced because an early-stage
+                  investment is not liquid until an exit, which may take several years.
+                </p>
+                <p>
+                  The benefits of having early-stage securities in a diversified investment portfolio is as a source of return – because the expected return on a successful exit is
+                  very high. A November 2007 study published by the US-based Kauffman Foundation, titled Returns to Angel Investors in Groups, found the average return of US
+                  ‘angel’ (early-stage or venture capital) investments since 1987 was 2.6 times the investment in 3.5 years, or approximately 27% Internal Rate of Return (IRR).
+                </p>
+                <p>
+                  However, the risk of such investments was also clearly indicated by the Kaufman study, which found that 52% of all of the investment ‘exits’ returned less than
+                  the capital the angel had invested in the venture, while 7% of the exits achieved returns of more than ten times the money invested. This 7% of exits accounted
+                  for 75% of the total investment dollar returns. Early-stage investors thus should expect that half of the portfolio will fail, and less than 10% of exits will
+                  generate more than 75% of the total return. Thus, portfolio size, diversification and thorough due-diligence on investment candidates are critical for in a
+                  portfolio of early-stage investments, so as to capture the successful investment returns.
+                </p>
+              </div>
+              <!-- Section -->
+              <div id="key-message" class="content-block">
+                <h3 class="my-4">Key message</h3>
+                <p>
+                  Early-stage securities offer the opportunity for higher-than-average returns. A properly diversified investment portfolio includes a 5-10% allocation in
+                  alternatives, and this component could well include early-stage securities. Risks can be managed if a sound risk mitigation strategy is in place.
+                </p>
+              </div>
+
+              <!-- Divider -->
+              <div class="divider py-5">
+                <div class="separator"></div>
+              </div>
+              <!-- ./Divider -->
+            </div>
+            <!-- ./col-md-6 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="related py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Why should I include ‘early stage securities’ in my investment portfolio?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/why-include-ess/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Due diligence – how to choose?</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/due-diligence/'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-4 item">
+              <div class="inner-container h-100 text-center p-5">
+                <p>Making an investment via VentureCrowd.</p>
+                <a href="{!$Label.VC_CF_Public_URL + '/investor-education/investment-via-vc'}" class="has-arrow mt-3"
+                  >Learn more <span class="arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+   
+    <!-- ./Body -->
+<!-- Component: Footer -->
+<c:VC_CF_Footer />
+<!-- ./Component: Footer -->
+
+<script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

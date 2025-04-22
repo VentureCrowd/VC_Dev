@@ -1,0 +1,349 @@
+<apex:page standardStyleSheets="false" showHeader="false" applyBodyTag="false" controller="ProductController">
+  <apex:stylesheet value="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <apex:stylesheet value="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+  <apex:stylesheet value="{!URLFOR($Resource.VC_CF_GlobalAssets,'css/fonts.css')}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_CommonCSS}" />
+  <apex:stylesheet value="{!$Resource.VC_CF_PropertyCSS}" />
+  
+  <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.VC_CF_Favicon)}" />
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  </head>
+
+  <!-- Component: Menu -->
+  <c:VC_CF_Menu />
+  <!-- ./Component: Menu -->
+
+  <!-- Body -->
+  <div id="vc_content__container" class="position-relative page-slug-property">
+    <!-- Hero -->
+    <section class="hero has-parallax-bg">
+      <div class="container h-100">
+        <div class="row align-items-center text-white pt-5 pb-5 animate-group">
+          <div class="col-md-8">
+            <h1 class="mb-5 mt-0 mt-md-5 animate-item-in">Property Investing Australia</h1>
+            <p style="margin-bottom: 45px;">
+              <strong>We provide Retail and Wholesale Property Crowdfunding opportunities for investors and developers.</strong>
+              We’re passionate about giving everyone the ability to invest and shape the world in which we live. At VentureCrowd,
+              we find and fund the future. A future that is good for investors, founders and humanity.
+            </p>
+
+            <h3 class="mb-3 animate-item-in">Current VentureCrowd Property opportunities are:</h3>
+            <ul class="animate-item-in">
+              <li>
+                <!--https://akcelo.atlassian.net/browse/VC-1188 -->
+               <!--  <a href="https://startups.venturecrowd.com.au/deal/detail/first_mortgage_investment" target="_top"> -->
+                <a href="/s/invest/property/fmf-glenvale" target="_top">
+                  <u>First Mortgage Fund (Glenvale) </u>
+                </a> – Earn 12% p.a. paid monthly secured by first mortgage</li>
+              <li>
+                <a href="/s/invest/property/shyf-albany-creek" target="_top">
+                  <u>Super High Yield Fund (Albany Creek)</u>
+                </a> – 12% p.a. paid monthly plus 50% project profit share</li>
+              
+                <!--https://akcelo.atlassian.net/browse/VC-1188 
+                <li>
+                <a target="_top" href="/s/invest/property/hgpf-park-ridge">
+                 <u>High Growth Property Fund (Park Ridge)</u>
+                </a> – an Equity Investment with a forecasted return of 30.47% ROE</li> -->
+                
+                <!-- https://akcelo.atlassian.net/browse/VC-1176
+                <li>
+                <a href="/s/invest/property/shyf-oxenford" target="_top">
+                  <u>Super High Yield Fund (Oxenford)</u>
+                </a> - Fixed 12% net return p.a. paid monthly</li> -->
+
+            </ul>
+            <a href="https://investor.venturecrowd.com.au/registration/initial_registration" class="button-outline-white mt-5">Enquire Today</a>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg" style="background-image: url('{!URLFOR($Resource.VC_CF_PropertyAssets,'img/Stonewood-Estate-Property-GRAD.jpg')}')"></div>
+    </section>
+
+    <!-- Offers -->
+    <section  class="offers mb-5">
+      <div class="container mt-5">
+        <div class="row py-5 offer-container">
+          <apex:repeat value="{!prodListProperty}" var="pl">
+           
+            <div class="col-lg-4 text-center mb-4 mb-lg-4">
+              <div class="inner-container">
+                <div class="heading text-white py-2">{!pl.Family}</div>
+                <div class="hero text-white" style="background-image: url({!pl.Tile_Banner__c})"></div>
+                <div class="details py-4 px-3">
+                  <span class="d-block heading-1 mb-2">
+                    <strong>{!pl.Tile_Heading__c}</strong>
+                  </span>
+                 
+                </div>
+                <div class="call-to-action px-5 pt-4">
+                  <span class="d-block header pb-4">{!pl.Deal_Description__c}</span>
+                  <a class="mt-1" href="{!pl.Deal_Page_Link__c}">{!pl.Button_Text__c}</a>
+                  <span class="pt-4 pb-3 d-block offer-type">{!pl.Tile_Offer_Type__c}</span>
+                  <span class="d-block status status-raising pb-5">
+                   
+
+                    <apex:outputPanel rendered="{!NOT(pl.Fully_Funded__c)}">
+                      Raising Now
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!(pl.Fully_Funded__c)}">
+                      Fully Funded
+                    </apex:outputPanel>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </apex:repeat>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Investing -->
+
+    <section class="investing pt-lg-5 pb-lg-5">
+      <div class="container pt-2 pt-lg-5 pb-lg-5">
+        <div class="row pt-5 pt-lg-5 pb-lg-5">
+          <div class="col-md-12">
+            <h2 style = "margin-top: -105px;" class="mb-5">Property Investing</h2>
+          </div>
+          <div class="col-md-6">
+            <p class="mr-5">
+              Property investing is a great way to build wealth and through the act of buying, leasing, renovating, and developing investment
+              properties, investors can improve their financial situation and set themselves up for a comfortable, or even
+              early retirement. Putting your money into something tangible and investing in property can be easier to understand
+              than other investments. There is something very rewarding for the investor to physically see their assets and
+              build their financial portfolio at the same time.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              In this current economic climate, many investors are taking advantage of the low mortgage rates and diving into the property
+              market for long term returns 2020 and beyond. However, investment decisions should be made with due diligence
+              and the right information. VentureCrowd can help with this as they are a professional
+              <a target="_top" href="https://www.venturecrowd.com.au/s/crowdfunding-equity-investment-platform">crowdfunding</a> model aimed at reducing complexity and guiding you through access to handpicked investment
+              opportunities in alternative assets and investment properties. Getting the basics about property investing
+              is important so you understand how it works and if this is right for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-lg-5 tabbed-content">
+          <div class="col-lg-3 mb-5 mb-lg-0 tab-group">
+            <ul>
+              <li class="text-center text-lg-left">
+                <a target="_top" href="#" class="active-tab" data-tab="tab-content-1">Is property investing risky?</a>
+              </li>
+              <li class="text-center text-lg-left">
+                <a target="_top" href="#" data-tab="tab-content-2">What are the advantages of property investing?</a>
+              </li>
+              <li class="text-center text-lg-left">
+                <a target="_top" href="#" data-tab="tab-content-3">Can we make good money with property investing?</a>
+              </li>
+              <li class="text-center text-lg-left">
+                <a target="_top" href="#" data-tab="tab-content-4">How do I start property investing?</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 tab-content">
+            <div class="inner-container ml-lg-4">
+              <div id="tab-content-1" class="tab-content-block active-tab-content">
+                <h3 class="mb-5">Is property investing risky?</h3>
+                <p>
+                  Property investing can be seen as less risky than other forms of investment. However, there will inevitably be an element
+                  of risk involved and therefore, consideration should be made for the vulnerability to damage and unforeseen
+                  weather scenarios. As property is a tangible asset, there is the risk that your investment property is
+                  exposed to natural disasters and fire. Your investment may also face damage caused by tenants, instances
+                  of robbery and other forms of vandalism that may require you to cover the costs at your expense. Additionally,
+                  rental income may not cover your mortgage while interest rates may increase.
+                </p>
+              </div>
+              <div id="tab-content-2" class="tab-content-block">
+                <h3 class="mb-5">What are the advantages of property investing?</h3>
+                <p>
+                  Property investing has several advantages. Real estate is a physical asset and unlike some other complex investments, you
+                  do not need to be a specialist and have a comprehensive technical knowledge on the subject matter. There
+                  is also the opportunity for capital growth. If your investment property increases in value, then you will
+                  also benefit from a capital gain when you decide to sell. From a cash standpoint, you will earn rental
+                  income if your investment property is tenanted, and you can also offset most property costs and expenses
+                  against the rental income, including any interest on the loan used to buy the property.
+                </p>
+              </div>
+              <div id="tab-content-3" class="tab-content-block">
+                <h3 class="mb-5">Can we make good money with property investing?</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>
+                      Property investing can indeed become a
+                      <a target="_top" href="https://www.venturecrowd.com.au/s/property/funds">high yield investment</a> for you if you have the right information and support on where to start.
+                      VentureCrowd can provide clarity around this and gives investors, entrepreneurs, established business
+                      owners, property developers, and lenders access to alternative finance from a crowd of both retail
+                      and sophisticated investors. Property investing under this model will give you direct access to alternative
+                      equity on the same terms as professional lead investors.
+                      <a target="_top" href="https://www.venturecrowd.com.au/s/property/funds">Property funds</a> are a great way to gain returns from property investing. They will allow you to
+                      get exposure to unique opportunities in real estate classes of residential, commercial and industrial
+                      development that offer a steady income and capital growth.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Additionally, a
+                      <a target="_top" href="https://www.venturecrowd.com.au/s/mortgage-funds">mortgage fund</a> is considered a secure investment and allows investors to lend their money to a range
+                      of borrowers. Making good money from property investing can be achieved in two ways: rental income
+                      and capital growth. Rental income puts money directly into your bank account, while the other relies
+                      on properties increasing in value. If your investment property is held for the long term and increases
+                      in value, you will also make a gain from this as you, the investor, owns the property and its subsequent
+                      value. The challenge for every investor is treating growth and income as an extra, rather than making
+                      a decision on which strategy suits their circumstances in the interim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-content-4" class="tab-content-block">
+                <h3 class="mb-5">How do I start property investing?</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>To get started in property investing it is best, to begin with, a checklist and be fully prepared for
+                      what’s to come:</p>
+                    <ul>
+                      <li>Check your finances – calculate your expenses and determine them against your total income and assets.</li>
+                      <li>Get pre-approval from your lender or through a mortgage broker</li>
+                      <li>Set your goals and determine what success looks like to you.</li>
+                      <li>Add value to your property. By adding some aesthetic improvements to the property, you could raise
+                        its value through an appraisal.</li>
+                      <li>Start budgeting and understand how you spend your money which will plan and prepare you for potential
+                        and larger expenses in the future.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <p>
+                      Research the market. The Queensland property market is also a great place to start. Through VentureCrowd, you can work through
+                      options within the
+                      <a href="https://www.venturecrowd.com.au/s/property/brisbane">Brisbane property investment</a> and
+                      <a target="_top" href="https://www.venturecrowd.com.au/s/property/gold-coast">Gold Coast property investment</a> scenes. VentureCrowd can set you up with
+                      <a target="_top" href="https://www.venturecrowd.com.au/s/property/companies">investment property companies</a> as they also understand the security and financial benefits of property
+                      investing and holding a property portfolio over the long term. Property investing through VentureCrowd
+                      is achieved through a simple 4-step process of seeking investment opportunities – begin investing,
+                      become an owner and then share in the success. Get in touch with VentureCrowd to discuss diversifying
+                      your portfolio with property investing.
+                    </p>
+                    <p>You can contact us on
+                      <a href="tel:1300039655" target="_blank"> 1300 039 655</a>, send an email to
+                      <a href="mailto:hello@venturecrowd.com.au" target="_blank">hello@venturecrowd.com.au</a> or
+                      <a target="_top" href="https://investor.venturecrowd.com.au/registration/initial_registration">get in touch</a> online. We’d be happy to answer any of your questions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="offer has-parallax-bg pt-5 pb-5">
+      <div class="container pt-5 pb-5 text-white">
+        <div class="row pt-5 pb-5 animate-group">
+          <div class="col-md-12">
+            <h3 class="mb-5 animate-item-in">At VentureCrowd we offer</h3>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-0 animate-item-in">
+            <h4 class="mb-4">Increased access to fuss-free funding</h4>
+            <ul class="mb-4">
+              <li>Access a previously untapped source of financing via a pool of investors across Australia.</li>
+            </ul>
+            <h4 class="mb-4">Unprecedented Exposure</h4>
+            <ul class="mb-4">
+              <li>
+                Unrivalled exposure for your project through our leading platform. Increase your visibility to over 10k investors, buyers,
+                partners and contributors to your project.
+              </li>
+            </ul>
+            <h4 class="mb-4">Save time</h4>
+            <ul class="mb-4">
+              <li>48 hour turnaround to assess your project, after we receive all necessary information – there’s no bureaucracy.</li>
+            </ul>
+            <a href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}" class="button-outline-white mt-5">ENQUIRE NOW</a>
+          </div>
+          <div class="col-md-6 animate-item-in">
+            <h4 class="mb-4">Maximum project control</h4>
+            <ul class="mb-4">
+              <li>Maintain control of your development and remain the largest shareholder, we let you get on with your job.</li>
+            </ul>
+            <h4 class="mb-4">Flexibility</h4>
+            <ul class="mb-4">
+              <li>Structure multiple dealoptions to suit your needs, including equity and/or debt.</li>
+            </ul>
+            <h4 class="mb-4">Community Support</h4>
+            <ul class="mb-4">
+              <li>Find like-minded individuals that support your project and engage with stakeholders who care about what you
+                stand for.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg-opacity"></div>
+      <div class="parallax-bg" style="background-image: url('{!URLFOR($Resource.VC_CF_PropertyAssets,'img/kingdom-towers-deal-tile-banner.jpg')}')"></div>
+    </section>
+
+    <!-- Info Grid -->
+    <section class="info-grid container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 cell pt-5 pb-5">
+          <div class="inner-container margin-left pr-0 pr-lg-5 pt-5 pb-5 mr-0 mr-lg-5 animate-in">
+            <h4 class="mb-4">Gain returns through a hands-off investment</h4>
+            <ul class="mb-4">
+              <li>Start or add to your portfolio of real estate investments without the hassle of managing a property development.</li>
+            </ul>
+            <h4 class="mb-4">Opportunities for every investor</h4>
+            <ul class="mb-4">
+              <li>
+                Gain exposure to unique real estate asset classes such as residential, commercial and industrial development opportunities.
+                Leverage the know-how of property developers and invest alongside experienced investors.
+              </li>
+            </ul>
+            <h4 class="mb-4">Convenient and easy-to-use platform</h4>
+            <ul class="mb-4">
+              <li>
+                Save time and quickly compare available pre-vetted deals on our platform. We negotiate terms on your behalf, handle the paperwork
+                and update you on project progress.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 cell d-none d-lg-block" style="background-image: url('{!URLFOR($Resource.VC_CF_PropertyAssets,'img/kingdom.jpg')}')"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 cell d-none d-lg-block" style="background-image: url('{!URLFOR($Resource.VC_CF_PropertyAssets,'img/k2.jpg')}')"></div>
+        <div class="col-12 col-lg-6 cell pt-5 pb-5" style="background-image: url('{!URLFOR($Resource.VC_CF_PropertyAssets,'img/teal-background-no-circle.jpg')}');">
+          <div class="inner-container margin-right pl-0 pl-lg-5 pt-5 pb-5 ml-0 ml-lg-5 animate-in">
+            <h4 class="mb-4">Invest smart</h4>
+            <ul class="mb-4">
+              <li>Support solid investment opportunities with low upfront costs, defined turnaround time and exit strategy. </li>
+            </ul>
+            <h4 class="mb-4">Limited liability</h4>
+            <ul class="mb-4">
+              <li>You can only lose what you invest. No credit history or borrowing capacity checks required. </li>
+            </ul>
+            <h4 class="mb-4">Support what you stand for</h4>
+            <ul class="mb-4">
+              <li>Be part of a project you believe in and invest in the future of yourself and others. </li>
+            </ul>
+            <a href="{!$Label.VC_CF_Public_URL + '/invest'}" class="button-outline mt-5">GO TO OUR PROPERTY DEALS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ./Body -->
+
+
+  <!-- Component: Footer -->
+  <c:VC_CF_Footer />
+  <!-- ./Component: Footer -->
+
+  <script src="{!$Resource.VC_CF_CommonJS}"></script>
+
+</apex:page>

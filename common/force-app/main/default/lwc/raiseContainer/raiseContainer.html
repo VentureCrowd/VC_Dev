@@ -1,0 +1,14 @@
+<template>
+    <template lwc:if={isFund}>
+        <c-raise-fund
+        record-id={recordId}
+        is-preview={isPreview}>
+        </c-raise-fund>
+    </template>
+    <template lwc:elseif={isVenturesRaise}>
+        <c-raise-ventures
+            record-id={recordId}
+            is-preview={isPreview}>
+        </c-raise-ventures>
+    </template>
+</template>

@@ -1,0 +1,126 @@
+<template>
+    <div class="add-edit-advisor">
+        <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+        <div>
+            <h4 class="vc-font-size_25 slds-var-m-top_xx-large slds-var-p-bottom_medium">
+                <b class="vc-font-caxton7">Advisors, ambassadors and key investors</b>
+            </h4>
+            <div>Add profiles of individuals who are advisors, ambassadors and/or key investors of the company.</div>
+            <div>Please ensure you have consent to publish the individual's association with the company.</div>
+        </div>
+        <button class="info-model create-update-eoi-button secondary slds-var-m-top_medium" style="border: 1px solid black; color: black" onclick={openAddModel}>
+            <label>Add profile</label>
+        </button>
+        <template if:true={isAddModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Add profile</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Full name*" name="Name" required onchange={handleChange} maxlength="80"></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Role*" name="Member_Role__c" required onchange={handleChange} placeholder="e.g. Founder and Chief Executive Officer." class="create-update-eoi-input" maxlength="100"></lightning-input>
+
+                            <!-- <label for="role-checkbox-group" class="slds-var-p-bottom_small input-label mandatory">Role*</label>
+
+                        <div id="role-checkbox-group" class="slds-grid role-checkbox-group">
+                            <div class="slds-col">
+                                <lightning-input type="checkbox" label="Advisor" checked={advisorCheckbox} onchange={handleCheckboxChange}></lightning-input>
+                            </div>
+                            <div class="slds-col">
+                                <lightning-input type="checkbox" label="Ambassador" checked={ambassadorCheckbox} onchange={handleCheckboxChange}></lightning-input>
+                            </div>
+                            <div class="slds-col">
+                                <lightning-input type="checkbox" label="Key investor" checked={keyInvestorCheckbox} onchange={handleCheckboxChange}></lightning-input>
+                            </div>
+                        </div> -->
+                        </div>
+                        <div class="slds-form-element__control">
+                            <label for="add-advisor-bio">Bio*</label>
+                            <div class="slds-var-p-bottom_x-small">Write a summary of the individual's credibility, past or current roles and/or achievements.</div>
+                            <textarea id="add-advisor-bio" data-id="Team_Member_Description__c" name="Team_Member_Description__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required></textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeAddModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={addAdvisor} disabled={disableSaveBtn}>
+                                <label>Save</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <template if:true={isEditModelOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="Loading" size="small" if:true={showSpinner}></lightning-spinner>
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h1 class="slds-modal__title slds-hyphenate">Edit profile</h1>
+                    </div>
+                    <div class="slds-modal__content slds-var-p-around_large">
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Full name*" name="Name" value={advisorToUpdate.Name} required onchange={handleChange} maxlength="80"></lightning-input>
+                        </div>
+                        <div class="slds-var-p-bottom_medium">
+                            <lightning-input type="text" label="Role*" name="Member_Role__c" value={advisorToUpdate.Member_Role__c} maxlength="100" required onchange={handleChange} placeholder="e.g. Founder and Chief Executive Officer." class="create-update-eoi-input"></lightning-input>
+                        </div>
+                        <div class="slds-form-element__control">
+                            <label for="edit-advisor-bio">Bio*</label>
+                            <div class="slds-var-p-bottom_x-small">Write a summary of the individual's credibility, past or current roles and/or achievements.</div>
+                            <textarea id="edit-advisor-bio" data-id="Team_Member_Description__c" name="Team_Member_Description__c" class="slds-textarea create-update-eoi-textarea" onchange={handleChange} oninput={handleChange} maxlength="600" required>{advisorToUpdate.Team_Member_Description__c}</textarea>
+                            <div class="slds-var-p-top_x-small field-max-length-text">Max 600 characters</div>
+                        </div>
+                        <hr />
+                        <div class="slds-text-align_right">
+                            <button class="slds-button slds-button_neutral cancel-or-save-or-update-button" aria-label="Cancel and close" onclick={closeEditModel}>
+                                <label>Cancel</label>
+                            </button>
+                            <button class="slds-button slds-button_brand cancel-or-save-or-update-button" onclick={updateAdvisor} disabled={disableUpdateBtn}>
+                                <label>Update</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        </template>
+        <div if:true={showTeam} class="slds-var-m-top_x-large">
+            <template if:true={hasAdvisor} for:each={advisorList} for:item="item">
+                <div key={item.Id} class="slds-var-m-top_x-large">
+                    <div class="demo-only slds-size_2-of-4">
+                        <div class="slds-media slds-media_responsive">
+                            <div class="slds-media__body">
+                                <div>
+                                    <span><b>{item.Name}</b></span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <span>{item.Member_Role__c}</span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <span>{item.Team_Member_Description__c}</span>
+                                </div>
+                                <div class="slds-var-m-top_x-small">
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleEditAdvisor}>Edit</label>
+                                    </button>
+                                    <button class="slds-button edit-or-remove-button">
+                                        <label data-id={item.Id} onclick={handleRemoveAdvisor}>Remove</label>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

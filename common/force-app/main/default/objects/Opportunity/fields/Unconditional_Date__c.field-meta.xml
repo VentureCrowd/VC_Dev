@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unconditional_Date__c</fullName>
+    <inlineHelpText>The date the Lawyers have confirmed that the contract is unconditional. 
+Ensure that you save the unconditional confirmation in the file for this opportunity.</inlineHelpText>
+    <label>Unconditional Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

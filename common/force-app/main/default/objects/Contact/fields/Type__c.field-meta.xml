@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+            <value>
+                <fullName>Bank</fullName>
+                <default>false</default>
+                <label>Bank</label>
+            </value>
+            <value>
+                <fullName>Charity</fullName>
+                <default>false</default>
+                <label>Charity</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Conveyancer</fullName>
+                <default>false</default>
+                <label>Conveyancer</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Development Manager</fullName>
+                <default>false</default>
+                <label>Development Manager</label>
+            </value>
+            <value>
+                <fullName>Financial Adviser</fullName>
+                <default>false</default>
+                <label>Financial Adviser</label>
+            </value>
+            <value>
+                <fullName>Fund Manager</fullName>
+                <default>false</default>
+                <label>Fund Manager</label>
+            </value>
+            <value>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+                <label>Integrator</label>
+            </value>
+            <value>
+                <fullName>Investor</fullName>
+                <default>false</default>
+                <label>Investor</label>
+            </value>
+            <value>
+                <fullName>Mortgage Broker</fullName>
+                <default>false</default>
+                <label>Mortgage Broker</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Press</fullName>
+                <default>false</default>
+                <label>Press</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Real Estate Agent</fullName>
+                <default>false</default>
+                <label>Real Estate Agent</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <label>Reseller</label>
+            </value>
+            <value>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+                <label>Service Provider</label>
+            </value>
+            <value>
+                <fullName>Special Purpose Vehicle</fullName>
+                <default>false</default>
+                <label>Special Purpose Vehicle</label>
+            </value>
+            <value>
+                <fullName>Trustee Company</fullName>
+                <default>false</default>
+                <label>Trustee Company</label>
+            </value>
+            <value>
+                <fullName>Venture Capital Business</fullName>
+                <default>false</default>
+                <label>Venture Capital Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

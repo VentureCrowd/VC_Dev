@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cornerstone_Village_Stock_List</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Masterplan__c</columns>
+    <columns>Status__c</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.CUSTOMER_PRODUCT_ID</field>
+        <operation>contains</operation>
+        <value>CSV</value>
+    </filters>
+    <label>Cornerstone Village Stock List</label>
+</ListView>

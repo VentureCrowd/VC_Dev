@@ -1,0 +1,60 @@
+<template>
+    <div class="form-wrapper" style={getFormStyle}>
+        <div class="form-header">
+            <h1  lwc:if={title} class="text--xxl">{title}</h1>
+            <p lwc:if={subtitle}>{subtitle}</p>
+            <slot name="header"></slot>
+        </div>
+        <div class="form-body">
+            <slot name="body">
+                <!-- Some Input -->
+            </slot>
+        </div>
+            
+            <div class="form-footer">
+                <div class="actions" style={getFooterStyle}>
+
+                    <!-- SLOT FOR FOOTER ACTIONS -->
+                    
+
+                    <template lwc:if={refresh}>
+                        <c-core-button 
+                        label="Refresh"
+                        variation="secondary"
+                        mode="light"
+                        onbuttonclick={refreshForm}>
+                        </c-core-button>
+                    </template>
+                    <template lwc:if={hideButton}></template>
+                    <template lwc:else>
+                        <template lwc:if={fullWidth}>
+                            <c-core-button 
+                            label={buttonLabel}
+                            variation={buttonVariation}
+                            mode="light"
+                            onbuttonclick={submitForm}
+                            is-loading={isSubmitLoading}
+                            style="width:100%"
+                            full-width
+                            disabled={disableSubmit}>
+                            </c-core-button>
+                        </template>
+                        <template lwc:else>
+                            <c-core-button 
+                            label={buttonLabel}
+                            variation={buttonVariation}
+                            mode="light"
+                            onbuttonclick={submitForm}
+                            is-loading={isSubmitLoading}
+                            disabled={disableSubmit}
+                            >
+                            </c-core-button>
+                        </template>
+                    </template>
+                    <slot name="footer">
+                    </slot>
+                   
+                </div>
+            </div>
+    </div>
+</template>

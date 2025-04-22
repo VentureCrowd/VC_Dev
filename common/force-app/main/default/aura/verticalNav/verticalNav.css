@@ -1,0 +1,111 @@
+.THIS {
+    width: 100%;
+    height:100%;
+    color:black;
+    font-size:small;
+    background-color: var(--Dove, #F0F1F2);
+}
+
+.THIS .vc-icons {
+    width: 38px;
+    height: 40px;
+}
+
+.THIS .sidebar-footer {
+    position: sticky;
+    top: 400px;
+}
+
+.THIS .slds-col .ui-widget {
+    margin: 16px 0;
+}
+
+.THIS .slds-col.content {
+    width: 1140px;
+}
+
+.THIS .active-anchor{
+    text-decoration: underline;
+    transition: all 300ms ease;
+    background-color: #ffffff;
+
+}
+
+.THIS .active-anchor.active-anchor-hover {
+    background-color: #ffffff;
+    color: #D95BAA;
+}
+
+.THIS .vc-menu-label{
+    margin: auto 0;
+}
+
+.THIS .active-anchor-hover{
+    color: #D95BAA;
+    background-color: var(--Dove, #F0F1F2);
+}
+
+
+
+
+.THIS ul {
+    position: sticky;
+    top: 107px;
+    padding-bottom: 300px;
+}
+
+.THIS ul li {
+    font-size: 18px;
+    margin: 0px 20px;
+}
+
+.THIS ul li img {
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+
+.THIS ul li a img {
+    color: black;
+}
+
+.THIS ul li a {
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    border: none;
+    transition: all 300ms ease;
+    border-radius: 6px;
+    font-size: var(--text-sm);
+}
+
+.THIS ul li a:hover{
+    color: #D95BAA;
+    background: transparent;
+}
+
+.THIS ul li a:hover img {
+    fill: #D95BAA;    
+    background: transparent;
+}
+
+.THIS .button-container a {
+        text-align: center;
+        width: 100%;
+        display: block;
+        border: 1px solid var(--primary-text-color);
+        border-radius: 30px;
+        padding: 10px 20px;
+        color: var(--primary-text-color);
+        font-size: 15px;
+        transition: all 300ms ease;
+        background: transparent;
+    }
+
+.THIS .button-container a:hover,
+.THIS .button-container:hover {
+    text-decoration: none;
+    color: #D95BAA;
+    border-color: #D95BAA;
+    background-color: transparent;
+}

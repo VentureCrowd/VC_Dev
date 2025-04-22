@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Investment__c</fullName>
+    <description>To Calculate Total Investment</description>
+    <label>Total Investment</label>
+    <summarizedField>Investment__c.Investment_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Investment__c.Process_Fund_Disbursement__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Investment__c.Stage__c</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Investment__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,74 @@
+:host {
+    --lwc-formLabelFontSize: 1rem;
+    --slds-c-modal-color-border: #d9d9d9;
+    display: block;
+}
+
+.image-uploader * {
+    font-family: 'SuisseIntl-Light';
+}
+
+.image-uploader label {
+    font-family: 'SuisseIntl-Medium';
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem 0 0;
+    margin-bottom: 0.125rem;
+}
+
+.image-uploader .upload-or-update-image {
+    background-color: #f6f6f6;
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem;
+}
+
+.image-uploader button>label {
+    cursor: pointer;
+    font-family: 'SuisseIntl-Light';
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.image-container {
+    width: 182px;
+    /* Set a fixed width for the container */
+    height: 182px;
+    /* Set a fixed height for the container */
+    overflow: hidden;
+    /* Ensure that the image doesn't overflow the container */
+}
+
+button.info-model {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    width: 100%;
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    transition: all 300ms ease;
+    background-color: #000;
+    border-color: inherit;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+button.create-update-eoi-button {
+    padding: 10px 30px;
+    width: auto;
+}
+
+button.create-update-eoi-button>label {
+    font-family: "Caxton-2", "Montserrat", sans-serif !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+button.create-update-eoi-button.secondary {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}

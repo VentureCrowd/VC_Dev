@@ -1,0 +1,166 @@
+<!--  sldsValidatorIgnore -->
+<template>
+    
+    <div style="position:fixed;z-index:10;bottom:10%;right:20px">
+        <lightning-icon class="icon" icon-name="standard:question_feed" alternative-text="Want to craete a Case ?" title="Any Doubts?" onclick={iconClicked}></lightning-icon>
+    </div>
+    <template if:true={showModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <div class="modal--header">
+                        <div class="left">                        
+                            <lightning-icon class="header--icon" icon-name="standard:question_feed"></lightning-icon>
+                            <h3>Enquiry</h3>
+                        </div>
+                        <div class="modal-close-button" onclick={closemodal}>
+                            <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path
+                                d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                fill="currentColor"
+                            ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </header>
+                <div class="slds-modal__content" id="modal-content-id-1">
+                    
+                    <div class="content--container">
+                        <div class="content--desc">Please write your enquiry out below and we’ll get back to you as soon as possible via email</div>
+                        <div class="input--col">
+                            <div class="col--content">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-1 fix_margin" >
+                                <lightning-input variant="label-hidden" disabled={isLoggedinUser} value={FirstName} placeholder="First Name" required data-id="FirstName" onchange={databinder} pattern="^[a-zA-Z]+$"  message-when-pattern-mismatch="You have entered an invalid format."></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="col--content">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-1 fix_margin">
+                                <lightning-input variant="label-hidden" disabled={isLoggedinUser} value={LastName} placeholder="Last Name" required data-id="LastName" onchange={databinder} pattern="^[a-zA-Z]+$"  message-when-pattern-mismatch="You have entered an invalid format."></lightning-input>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <div class="input--col">
+                            <div class="col--content">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-1 fix_margin">
+                                <lightning-input class="custom-style-error" variant="label-hidden" disabled={isLoggedinUser} value={Email} placeholder="Email" required type="email" data-id="Email" onchange={databinder}></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col--content">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-3 fix_margin">
+                                        <!--<lightning-combobox class="buttonDD" label="" value={cntrycode} options={countrycodes} onchange={databinder} style="width:70px" data-id="cntrycode" variant="label-hidden"></lightning-combobox>-->
+                                        <div class=" slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <div class="slds-combobox_container">
+                                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right " role="none">
+                                                            <button type="button" onblur={handleShowCountriesFalse} onclick={handleShowCountries} class="buttonDD slds-input_faux slds-combobox__input slds-grid_vertical-align-center" aria-labelledby="combobox-label-id-130 combobox-id-59-selected-value" id="combobox-id-59-selected-value" aria-controls="listbox-id-1" aria-expanded="false" aria-haspopup="listbox">
+                                                                <span class=" slds-truncate " id="combobox-value-id-97">{cntrycode}</span>
+                                                                <span class=" dropdownDD slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right " style="height:100%;">
+                                                                    <lightning-icon size="xx-small" icon-name="utility:down"></lightning-icon>
+                                                                </span>  
+                                                            </button>
+  
+                                                        </div>
+                                                        <template if:true={showCountries}>
+                                                        <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                                <template for:each={countrycodes} for:item="countries">
+                                                                <li  role="presentation" class="slds-listbox__item" key={countries.id}>
+                                                                    <div id={countries.id} onmousedown={handleOnClickCountry} data-id={countries.id}
+                                                                        class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                                        <div id={countries.id} data-id={countries.id} onclick={handleOnClickCountry} class="slds-media__figure slds-listbox__option-icon ">{countries.id}</div >
+                                                                        <div id={countries.id} data-id={countries.id} onclick={handleOnClickCountry} class="slds-media__body">
+                                                                            
+                                                                                <span id={countries.id} data-id={countries.id} onclick={handleOnClickCountry} class="slds-truncate" title="Country Code">{countries.country}</span >
+                                                                            
+                                                                        </div >
+                                                                    </div>
+                                                                </li>
+                                                                </template>
+                                                            </ul>
+                                                        </div>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-3 fix_margin">
+                                        <lightning-input class="mobile" variant="label-hidden" type="text" value={mobilePhone} message-when-pattern-mismatch="Invalid Mobile Number" pattern="^(\d{9,10}){1}$" placeholder="Mobile number" data-id="mobile" onchange={databinder} required></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class=" slds-form-element cmbobox-caseoption" >
+                            <div class="slds-form-element__control">
+                                <div class="slds-combobox_container">
+                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right " role="none">
+                                            <button type="button" onblur={handleShowCaseOptionFalse} onclick={handleShowCaseOption} class="buttonDD slds-input_faux slds-combobox__input slds-grid_vertical-align-center" aria-describedby="error-message-id-49" aria-invalid="true" aria-labelledby="combobox-label-id-130 combobox-id-60-selected-value" id="combobox-id-60-selected-value" aria-controls="listbox-id-1" aria-expanded="false" aria-haspopup="listbox">
+                                                
+                                                <span class=" slds-truncate " id="combobox-value-id-98" >{caseOption}</span>
+                                                <span class="dropdownDD1 slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right " style="height:100%;">
+                                                    <lightning-icon size="xx-small" icon-name="utility:down"></lightning-icon>
+                                                </span>  
+                                            </button>
+
+                                        </div>
+                                        <template if:true={showCaseOptions}>
+                                        <div id="listbox-id-2" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                <template for:each={caseoptions} for:item="option">
+                                                <li  role="presentation" class="slds-listbox__item" key={option.id}>
+                                                    <div id={option.id} onmousedown={handleOnClickCaseOption} data-value={option.value}
+                                                        class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small" role="option">
+                                                        <!-- <div id={option.id} data-id={option.id} onclick={handleShowCaseOption} class="slds-media__figure slds-listbox__option-icon ">{option.label}</div > -->
+                                                        <div id={option.id} data-value={option.value} onclick={handleOnClickCaseOption} class="slds-media__body">
+                                                            
+                                                                <span id={option.id} data-value={option.value} onclick={handleOnClickCaseOption} class="slds-truncate" title="Country Code">{option.label}</span >
+                                                            
+                                                        </div >
+                                                    </div>
+                                                </li>
+                                                </template>
+                                            </ul>
+                                        </div>
+                                        </template>
+                                    </div>
+                                    <template if:true={completeVisibility}>
+                                        <span style="color:red">Complete this field.</span>
+                                        </template>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                        <!-- <lightning-combobox placeholder="What is this regarding?" options={caseoptions} variant="label-hidden" required data-id="Subject" onchange={databinder} style="li: 56px;"></lightning-combobox> -->
+                        
+                        <div class="textarea--container fix_margin">
+                            <lightning-textarea class="desc-textarea" placeholder="Describe your Enquiry"  variant="label-hidden" max-length="32000" required data-id="Description" onchange={databinder} ></lightning-textarea>
+                        </div>
+                        <div class="submit-container">
+                            <button onclick={submitCase}>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

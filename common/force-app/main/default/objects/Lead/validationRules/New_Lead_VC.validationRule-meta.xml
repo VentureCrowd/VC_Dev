@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Lead_VC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+($RecordType.Name= &apos;VC&apos;),
+ISPICKVAL( Status , &apos;In progress&apos; ),
+
+OR(
+(ISBLANK( FirstName )),
+(ISBLANK( LastName )),
+(ISBLANK( MobilePhone )),
+(ISBLANK( Email )),
+(ISPICKVAL( Number_of_Attempts__c, &apos;--None--&apos; )),
+(ISBLANK( Web_Source__c))
+
+))</errorConditionFormula>
+    <errorMessage>Please fill in key fields in &quot;New&quot; Stage before moving to &quot;In Progress&quot;</errorMessage>
+</ValidationRule>

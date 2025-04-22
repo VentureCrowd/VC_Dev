@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Partner__c</fullName>
+    <label>Deal Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Uniseed</fullName>
+                <default>false</default>
+                <label>Uniseed</label>
+            </value>
+            <value>
+                <fullName>Scale</fullName>
+                <default>false</default>
+                <label>Scale</label>
+            </value>
+            <value>
+                <fullName>Sydney Angels</fullName>
+                <default>false</default>
+                <label>Sydney Angels</label>
+            </value>
+            <value>
+                <fullName>BlueChilli</fullName>
+                <default>false</default>
+                <label>BlueChilli</label>
+            </value>
+            <value>
+                <fullName>Clearstate</fullName>
+                <default>false</default>
+                <label>Clearstate</label>
+            </value>
+            <value>
+                <fullName>Dominet</fullName>
+                <default>false</default>
+                <label>Dominet</label>
+            </value>
+            <value>
+                <fullName>Adrian Bunter</fullName>
+                <default>false</default>
+                <label>Adrian Bunter</label>
+            </value>
+            <value>
+                <fullName>Homecorp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Homecorp</label>
+            </value>
+            <value>
+                <fullName>LJ Hooker Helensvale</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LJ Hooker Helensvale</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

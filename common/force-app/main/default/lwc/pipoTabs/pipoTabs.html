@@ -1,0 +1,71 @@
+<template>
+    <div class="tab-container">
+        <!-- Dropdown Button for Mobile -->
+        <div class="dropdown-container" onclick={toggleDropdown}>
+            <div class="mobile-label-badge">
+                <span class="active-label">{activeTabLabel}</span>
+                <span class="badge">{activeBadgeTotalInvestments}</span>
+            </div>
+            <c-core-icon
+                icon-name="arrowDown">
+            </c-core-icon>
+        </div>
+
+<!-- Tab Headers for Desktop -->
+<div class="tab-header" if:false={isDropdownVisible}>
+    <div class={activeClassActive} data-tab="active" onclick={selectTab}>
+        <span class="tab-label">Active</span>
+        <span class="badge">{totalActiveInvestments}</span>
+    </div>
+    <div class={activeClassPending} data-tab="pending" onclick={selectTab}>
+        <span class="tab-label">Pending</span>
+        <span class="badge">{totalPendingInvestments}</span>
+    </div>
+    <div class={activeClassExpressions} data-tab="expressions" onclick={selectTab}>
+        <span class="tab-label">Expressions of interest</span>
+        <span class="badge">{totalExpressionsInvestments}</span>
+    </div>
+    <div class={activeClassInactive} data-tab="inactive" onclick={selectTab}>
+        <span class="tab-label">Inactive investments</span>
+        <span class="badge">{totalInactiveInvestments}</span>
+    </div>
+</div>
+
+
+        <!-- Dropdown Content for Mobile -->
+        <div class="dropdown-content" if:true={isDropdownVisible}>
+            <div class="tab" data-tab="active" onclick={selectTab}>
+                <span class="tab-label active-label">Active</span>
+                <span class="badge active-label">{totalActiveInvestments}</span>
+            </div>
+            <div class="tab" data-tab="pending" onclick={selectTab}>
+                <span class="tab-label">Pending</span>
+                <span class="badge">{totalPendingInvestments}</span>
+            </div>
+            <div class="tab" data-tab="expressions" onclick={selectTab}>
+                <span class="tab-label">Expressions of interest</span>
+                <span class="badge">{totalExpressionsInvestments}</span>
+            </div>
+            <div class="tab" data-tab="inactive" onclick={selectTab}>
+                <span class="tab-label">Inactive investments</span>
+                <span class="badge">{totalInactiveInvestments}</span>
+            </div>
+        </div>
+
+        <!-- Tab Content (This section can be populated dynamically based on selected tab) -->
+        <div class="tab-content">
+            <template if:true={isActiveTab}>
+                <slot name="active-investments"></slot>
+            </template>
+            <template if:true={isPendingTab}>
+                <slot name="pending-investments"></slot>
+            </template>
+            <template if:true={isExpressionsTab}>
+                <slot name="eoi"></slot>
+            </template>
+            <template if:true={isInactiveTab}>
+                <slot name="inactive-investments"></slot>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,49 @@
+.media-links-wrapper{
+    padding: var(--space-md);
+}
+
+.input-label{
+    font-size: var(--text-md);
+    font-weight: 400;
+}
+
+.input-label p{
+    display: inline;
+    margin-right: 5px;
+    font-family: 'SuisseIntl-Medium';
+}
+
+.help-text {
+    margin: var(--space-xs) 0;
+    font-family: "SuisseIntl-Light";
+}
+
+.content-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-md);
+}
+
+.media-link p{
+    margin: 0;
+    color: var(--Portal-Grey, #939393);
+    font-family: "Suisse Int'l";
+    font-size: var(--text-base-size);
+    font-style: italic;
+}
+
+
+.file-loading-spinner{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+  }

@@ -1,0 +1,85 @@
+.eoi-lead-form-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+@media screen and (max-width: 459px) {
+    .eoi-lead-form-container {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+.core-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.mobile-input-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+c-core-input.mobile-code-input{
+    flex: 3;
+}
+
+c-core-input.mobile-number-input{
+    flex: 7;
+}
+
+.eoi-lead-form-footer p {
+    padding: var(--space-md);
+    font-size: var(--text-sm);
+    color: #707070;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-xl);
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.exclusive-access-container .ea-header .main-title{
+    font-size: var(--text-xxxl);
+    font-family: "SuisseIntl-Light";
+}
+
+.exclusive-access-container .ea-header .bold-title{
+    font-size: var(--text-xxxl);
+    font-family: "SuisseIntl-Bold";
+}
+
+.exclusive-access-container .ea-body {
+    padding: var(--space-lg) 0;
+}
+
+h2.main-title {
+    font-family: 'SuisseIntl-Bold';
+    font-size: var(--text-xl);
+}
+
+.ea-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-direction: column;
+    padding-bottom: var(--space-md);
+}
+
+.ea-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.ea-body p{
+    text-align: center;
+}

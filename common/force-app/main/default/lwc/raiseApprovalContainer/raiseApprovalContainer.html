@@ -1,0 +1,290 @@
+<template>
+    
+    <div class="loading-spinner" lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </div>
+    <div class="liner" lwc:else>
+        <div class="breadcrumbs wrapper">
+            <c-core-button 
+            label="My Companies"
+            variation="tertiary"
+            mode="light"
+            onbuttonclick={returnToCompanies}
+            data-id="primary-button"
+            icon="left-chevron" 
+            icon-position="left">
+        </c-core-button>
+        </div>
+        <div class="header wrapper">
+            <h1>{title}</h1>
+            <div lwc:if={raiseDetails.eoi} class="actions">
+                <c-core-button
+                label="Manage Live Expression of Interest"
+                variation="secondary"
+                mode="light"
+                onbuttonclick={manageEoi}>
+                </c-core-button>
+            </div>
+        </div>
+        <div class="chevron wrapper">
+            <c-core-progress-boxes
+                values={values}>
+            </c-core-progress-boxes>
+        </div>
+        <!--* Form Starts here -->
+        <div class="raise-form wrapper">
+            <!--? Here -->
+            <div class="checkbox-form">
+                <c-core-form
+                hide-button
+                title="Before you finish..."
+                onchange={handleChange}
+                form-data={formData}
+                lwc:ref="coreForm">
+                    <div slot="header">
+                        <p>
+                            We want to make sure you understand a few things before you submit so you can get the most out of your capital raise:
+                        </p>
+                    </div>
+                    <div class="formBody" slot="body">
+                        <hr>
+                        <div class="checkbox-container">
+                            <span class="text-container">
+                                <p>Do you agree to VentureCrowds's fees and understand the                                    
+                                    <c-core-link 
+                                        label="amazing benefits"
+                                        hyperlink={helpTextMapping.amazingBenefits}
+                                        icon="externalLink"
+                                        size="medium"
+                                        target="_blank"
+                                        variation="tertiary">
+                                    </c-core-link> that come with them?</p>
+                            </span>
+                            <c-core-checkbox
+                            name="benefits"
+                            flex-position="right"
+                            font-family="light"
+                            values={checkBoxValue}
+                            mode="light"
+                            required
+                            text-position="left"
+                            size="xlarge"
+                            alignment-position="horizontal">
+                            </c-core-checkbox>
+                        </div>
+                        <hr>
+                        
+                        <div class="checkbox-container">
+                            <span class="text-container">
+                                <p>After paying your fees, do you agree to follow VentureCrowd’s 
+                                    <c-core-link 
+                                        label="Capital Raising 101 guidance and understand your responsibilities"
+                                        hyperlink={helpTextMapping.capitalRaise101}
+                                        icon="externalLink"
+                                        size="medium"
+                                        target="_blank"
+                                        variation="tertiary">
+                                    </c-core-link>for the success of your raise campaign?</p>
+                            </span>
+                            <c-core-checkbox
+                            name="fees"
+                            flex-position="right"
+                            font-family="light"
+                            values={checkBoxValue}
+                            mode="light"
+                            text-position="left"
+                            size="large"
+                            alignment-position="horizontal"
+                            required>
+                            </c-core-checkbox>
+                        </div>
+                        <hr>
+
+                        <div class="checkbox-container">
+                            <span class="text-container">
+                                <p>Have you provided access to all of the following                                     
+                                    <c-core-link 
+                                        label="financial items"
+                                        hyperlink={helpTextMapping.keyDocuments}
+                                        icon="externalLink"
+                                        size="medium"
+                                        target="_blank"
+                                        variation="tertiary">
+                                    </c-core-link> for your raise? </p>
+                                <template lwc:if={isRetail}>
+                                    <ol>
+                                        <li>Company valuation</li>
+                                        <li>Share price</li>
+                                        <li>Documentation on your capital, business and organisational structure</li>
+                                        <li>Financial statements</li>
+                                    </ol>
+                                </template>
+
+                                <template lwc:elseif={isWholesale}>
+                                    <ol>
+                                        <li>Company valuation and related information</li>
+                                        <li>Documentation on your use of funds and company plans</li>
+                                        <li>Financial statements</li>
+                                        <li>Pitch deck</li>
+                                    </ol>
+                                </template>
+                            </span>
+                            <c-core-checkbox
+                            name="financialItems"
+                            flex-position="right"
+                            font-family="light"
+                            values={checkBoxValue}
+                            mode="light"
+                            text-position="left"
+                            size="large"
+                            alignment-position="horizontal"
+                            required>
+                            </c-core-checkbox>
+                        </div>
+                        <hr>
+                        
+                        <template lwc:if={isRetail}>
+                            <div class="checkbox-container">
+                                <span class="text-container">
+                                    <p>I understand my CSF Offer Document will be automatically generated based on the information I have provided. 
+                                        If I discover that the CSF Offer Document is defective in any way, I will notify VentureCrowd as soon as practicable.</p>
+                                </span>
+                                <c-core-checkbox
+                                name="informationCompanyRetail"
+                                flex-position="right"
+                                font-family="light"
+                                values={checkBoxValue}
+                                mode="light"
+                                text-position="left"
+                                size="large"
+                                alignment-position="horizontal"
+                                required>
+                                </c-core-checkbox>
+                            </div>
+                            <hr>
+                        </template>
+
+                        <div class="checkbox-container">
+                            <span class="text-container">
+                                <p>I confirm that I have read and understood ASIC RG 261 Crowd-sourced funding: Guide for companies.</p>
+                            </span>
+                            <c-core-checkbox
+                            name="AllinformationCompany"
+                            flex-position="right"
+                            font-family="light"
+                            values={checkBoxValue}
+                            mode="light"
+                            text-position="left"
+                            size="large"
+                            alignment-position="horizontal"
+                            required>
+                            </c-core-checkbox>
+                        </div>
+                        <hr>
+
+                        <div class="checkbox-container">
+                            <span class="text-container">
+                                <p>Do you agree to the 
+                                    <c-raise-tcs-pdf
+                                    raise-id ={raiseId}
+                                    onclick={recordClick}
+                                    label ="terms and conditions"
+                                    icon = "externalLink"
+                                    size = "medium"
+                                    lwc:ref="raisePdfEL"
+                                    icon-position = "right">
+                                    </c-raise-tcs-pdf> of this agreement?</p>
+                            </span>
+                            <c-core-checkbox
+                            name="tcs"
+                            flex-position="right"
+                            font-family="light"
+                            values={checkBoxValue}
+                            mode="light"
+                            text-position="left"
+                            size="large"
+                            alignment-position="horizontal"
+                            required>
+                            </c-core-checkbox>
+                        </div>
+                        <hr>
+
+                        <div class="checkbox-container">
+                            <span class="text-container">
+                                <p>I have previewed my Deal page (wow it looks incredible!) and I understand there are no edits once this is finalised</p>
+                                <p><c-core-link 
+                                    label="Preview Deal Page"
+                                    onclick={previewRaisePage}
+                                    icon="externalLink"
+                                    size="medium"
+                                    target="_blank"
+                                    variation="tertiary">
+                                </c-core-link></p>
+                            </span>
+                            <c-core-checkbox
+                            name="previewedDealPage"
+                            flex-position="right"
+                            font-family="light"
+                            values={checkBoxValue}
+                            mode="light"
+                            text-position="left"
+                            size="large"
+                            alignment-position="horizontal"
+                            required>
+                            </c-core-checkbox>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div slot="footer" class="footer">
+                        <c-core-button 
+                        label="Back to Form"
+                        variation="secondary"
+                        mode="light"
+                        onbuttonclick={returnToForm}
+                        disabled={buttonDisabled}>
+                        </c-core-button>
+
+                        <c-core-modal
+                            onmodalbutton={submitForm}
+                            show-close-button= "False"
+                            label="Submit"
+                            disabled={disableButton}>
+
+                            <div class="modal-raise-submitted" slot="header">
+                                <c-core-icon
+                                    icon-name="tickCircleDone"
+                                    size="xxxlarge">
+                                </c-core-icon>
+                                <h2>Raise successfully submitted!</h2>
+                            </div>
+
+                            <div class="body-modal" slot="body">
+                                <h3>What's next?</h3>
+
+                                <p>Your <strong>establishment fee</strong> invoice will be sent to your email within the next working day.Please check your inbox for further information.</p>
+                                <p>Once establishment fee is paid and processed you will gain immediate access to our <strong>Capital Raising 101</strong> course and be able to continue with the capital raise application.
+                                    <c-core-link
+                                        label="Check out some of the benefits of the course."
+                                        target="_blank"
+                                        hyperlink={helpTextMapping.amazingBenefits}
+                                        variation="tertiary">
+                                    </c-core-link></p>
+                                <p>If you have not received your invoice, please contact us at <a href="mailto:ventures@venturecrowd.com.au"> ventures@venturecrowd.com.au</a></p>
+
+                                <c-core-button
+                                    label="My companies"
+                                    mode="dark"
+                                    variation="secondary"
+                                    onbuttonclick={returnToCompanies}>
+                                    
+                                </c-core-button>
+                            </div>
+                        
+                        </c-core-modal>
+                    </div>
+                </c-core-form>
+            </div>
+        </div>
+    </div>
+</template>

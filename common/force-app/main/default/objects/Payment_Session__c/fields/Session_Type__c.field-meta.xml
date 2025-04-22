@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Session_Type__c</fullName>
+    <label>Session Type</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Portal User</fullName>
+                <default>false</default>
+                <label>Portal User</label>
+            </value>
+            <value>
+                <fullName>Guest User</fullName>
+                <default>false</default>
+                <label>Guest User</label>
+            </value>
+            <value>
+                <fullName>Admin User</fullName>
+                <default>false</default>
+                <label>Admin User</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

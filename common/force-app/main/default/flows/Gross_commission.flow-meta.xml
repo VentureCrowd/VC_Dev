@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Migrated from the: Gross commission workflow rule
+Workflow rule description: This workflow is for a VCPP opportunity when the selling agency is specified. Baed on this the Gross commission field is updated with the following formula: Total_Product_Price__c * Invested_Product_ADMIN_FIELD__r.Masterplan__r.Gross_Sales_Commission__c&quot;</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Gross_commissionFormula</name>
+        <dataType>Currency</dataType>
+        <expression>$Record.Total_Product_Price__c * $Record.Invested_Product_ADMIN_FIELD__r.Masterplan__r.Gross_Sales_Commission__c</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Opportunity: Gross commission {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: Gross commission</label>
+    <migratedFromWorkflowRuleName>Gross commission</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Gross_commission_n__c</field>
+            <value>
+                <elementReference>Gross_commissionFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7)</filterLogic>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>VCPP</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>HomeCorp</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Colin Moore</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>LJ Hooker Aspley</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>LJ Hooker Gold Coast</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Colliers Toowoomba</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Selling_agency__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pascal Pierre</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

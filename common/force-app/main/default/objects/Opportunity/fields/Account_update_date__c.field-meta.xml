@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_update_date__c</fullName>
+    <inlineHelpText>This field will capture the last time the related accounts email or investment opt in status was updated from the account. This relates to the &quot;Account: Update related opps&quot; Flow</inlineHelpText>
+    <label>Account update date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

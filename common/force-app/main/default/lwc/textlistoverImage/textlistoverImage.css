@@ -1,0 +1,60 @@
+.masterHeader{
+    font-weight: 600;
+    height: 80px;
+}
+
+.masterHeaderDescription{
+    height: 90px;
+    /* width: 80%; */
+    /* margin-left:25%; */
+}
+
+.div-2 {
+    border-radius: 5px;
+    background-color: #ffffff;
+   /* padding: 1% 6% 1% 0; */
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);   
+}
+
+.description {
+    font-size: 13px;
+}
+
+.imagesize {
+    width: 60px;
+    height: 60px;
+    object-fit: scale-down;
+    object-position: right top;
+    }
+
+@media (max-width: 767.98px) { 
+    .circle {
+        font: 18px Arial, sans-serif;
+        width: 2.5em;
+        height: 2.5em;
+        box-sizing: initial;
+        background: #fff;
+        border: 2px solid rgb(90,194,207);
+        color: rgb(90,194,207);
+        text-align: center;
+        border-radius: 50%;    
+        line-height: 2.5em;
+        box-sizing: content-box;
+    }
+ }
+
+@media (min-width: 767.99px) {
+    .circle {
+        font: 26px Arial, sans-serif;
+        width: 2.5em;
+        height: 2.5em;
+        box-sizing: initial;
+        background: #fff;
+        border: 2px solid rgb(90,194,207);
+        color: rgb(90,194,207);
+        text-align: center;
+        border-radius: 50%;    
+        line-height: 2.5em;
+        box-sizing: content-box;
+    }
+}

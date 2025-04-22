@@ -1,0 +1,91 @@
+<apex:component Controller="VC_CF_MenuCOntroller">
+    <apex:includeLightning />
+    <apex:slds />
+    <apex:attribute name="myClass" description="Test" type="String"  />
+
+    <!-- Footer -->
+    <footer id="vc_footer__container" class="{!myClass}">
+      
+      <div class="container">
+        <!-- /* VEN-124: Error Page White Spaces (Forest) - changes */	 -->
+        <div class="row pt-5 pb-1">
+          <div class="col-lg-3 col-md-6">
+            <h4>Company</h4>
+            <ul >
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/about'}">About Us</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/about?contactus=true'}">Contact Us</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/legals'}">Legals</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4>Get Started</h4>
+            <ul>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/invest'}">Invest</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/raise'}">Raise</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/manage'}">Manage</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/property'}">Property</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4>Learn</h4>
+            <ul>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/more/how-it-works-2'}">How it works</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/more/faqs/'}">FAQs</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/investor-education'}">Investor education</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Public_URL + '/blog'}">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4>My Account</h4>
+            <ul  style="{!IF((ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">
+              <li><a target="_top" href="{!$Label.vc_cf_login_sy}" >Login</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Register_Symphony}">Register</a></li>
+              <li><a target="_top" href="{!$Label.VC_CF_Forgotpassword}">Forgot Password</a></li>
+            </ul>
+             
+		    <ul  style="{!IF(NOT(ISPICKVAL($User.UserType,'Guest')), 'display:block', 'display:none')}">
+                  
+                  <li><a target="_top" href="{!$Label.Investor_Community_URL + ''}">My Portfolio </a></li>
+                  <li><a target="_top" href="{!$Label.Investor_Community_URL + '/profile/' + $User.Id}">My Profile </a></li>
+                  <li><a target="_top" href="{!$Label.Investor_Community_URL + '/my-entities'}">My Entities </a></li>
+           </ul> 
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row align-items-center pt-4 pb-4">
+            <div class="col-11 col-lg-6 text-sart mb-4 mb-lg-0 copyright-text"><a
+              href="/s/legals">Legals</a> | Copyright &copy; 2020 VentureCrowd. All Rights Reserved.</div>
+            <div class="col-12 col-md-9 text-left mb-4 mb-md-0">
+              <p></p>
+              <p>The information on this website has been prepared and issued by VentureCrowd Nominees Pty Ltd ABN 36 166 599 140 as a corporate authorised representative (CAR No. 452052) of VentureCrowd Pty Ltd ABN 40 166 598 849 AFSL 503381 (VentureCrowd or we or us). 
+                The information contained in this website is for general information only and is not intended to provide you with financial advice or take into account your objectives, financial situation or needs. 
+                You should consider, with your professional adviser, whether the information is suitable for your circumstances.</p>
+            <p>Please note past investment performance is not a reliable indicator of future investment performance and no guarantee of performance, the return of capital or a particular rate of return is provided. 
+                While we believe the material in this website is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which can’t be excluded.</p>
+            <p>Crowd Funding (CSF) Offers are facilitated by VentureCrowd Pty Ltd and involve the provision of a crowdfunding service. 
+                In deciding whether to acquire securities under a CSF offer, you should first consider the CSF offer document (available at 
+                <a c-standardpagefooter_standardpagefooter="" href="/s/invest">Crowdfunding equity investment platform in Australia - VentureCrowd</a> on this website). </p>
+            </div>
+            <div class="col-12 col-md-3 text-left text-md-right">
+              <ul>
+                <li>
+                  <a target="_blank" href="{!$Label.VC_CF_Twitter_URL}"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a target="_blank" href="{!$Label.VC_CF_Facebook_URL}"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a target="_blank" href="{!$Label.VC_CF_LinkedIn_URL}"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+                </li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+    <!-- ./Footer -->
+    <div id="vc_top_scroll"><a href="#"><i class="fa fa-angle-up"></i></a></div>
+</apex:component>

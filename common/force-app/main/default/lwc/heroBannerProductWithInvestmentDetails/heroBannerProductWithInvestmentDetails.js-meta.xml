@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Hero Banner with Invest Now Widget</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+            <property name="backgroundimageurl" type="String" label="Enter Background image url" placeholder="Image public URL" description="Background Image url" default="https://assets.venturecrowd.vc/uploads/2020/09/Smart-City-smart-touch-GRAD-FV-1.jpg"/>
+            <property name="productLogo" type="String" label="Enter Product Logo url" placeholder="Image public URL" description="Background Image url" default="https://assets.venturecrowd.vc/uploads/2021/02/ESN-Cleer-logo-white.png"/>
+
+            <property name="titleText" type="String" label="Title Content" placeholder="Title" description="" default="Title"/>
+            <property name="IntroText" type="String" label="Introduction Content" placeholder="Intoduction" description="" default="Introduction"/>
+            <property name="summaryText" type="String" label="Summary Content" placeholder="Summary" description="" default="Summary"/>
+
+
+            <property name="primaryButtonLabel" type="String" label="Primary Button Label" placeholder="Label" description="Primary Button" default="CTA - Primary"/>
+            <property name="primaryButtonColor" type="String" datasource="Teal, Pink, Purple, Ghost, White" label="Primary Button Colour" placeholder="CTA - Primary Color" description="" default="Teal" />
+            <property name="primaryButtonLink" type="String" label="Primary Button URL" placeholder="Same Page Section Name or URL" description="Links url for Primary Button"/>
+            <property name="primaryButtonSameOrNew" datasource="Same Tab, New Tab" type="String" label="Primary Link Target" placeholder="Behaviour of the Link or URL" description=""/>
+
+            <property name="secondaryButtonLabel" type="String" label="Secondary Button Label" placeholder="Label" description="Secondary Button" default="CTA - Secondary"/>
+            <property name="secondaryButtonColor" type="String" datasource="Teal, Pink, Purple, Ghost, White" label="Secondary Button Colour" placeholder="CTA - Secondary Color" description="" default="Ghost"/>
+            <property name="secondaryButtonLink" type="String" label="Secondary Button URL" placeholder="Same Page Section Name or URL" description="Links url for Secondary Button"/>
+            <property name="secondaryButtonSameOrNew" datasource="Same Tab, New Tab" type="String" label="Secondary Link Target" placeholder="Behaviour of the Link or URL" description=""/>
+            <property name="productId" type="String" label="Product Id"  description="Id of the Product" />
+            <property name="fixedAmount" type="Integer" label="Initial Amount($)"  description="Intial Amount" />
+            <property name="fixedAmountCent" type="Integer" label="Initial Amount(cents)"  description="Intial Amount" />
+            <property name="investUrl" type="String" label="Invest Now URL"  description="Invest Now URL" />
+            <property name="minAmount" type="Integer" label="Minimum Amount($)"  description="Minimum Amount" />
+            <property name="minAmountCent" type="Integer" label="Minimum Amount(cents)"  description="Minimum Amount" />
+            <property name="targetAmount" type="String" label="Target Amount"  description="Target Amount" />
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

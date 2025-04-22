@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>70bb8b15-6c6b-4bc3-a7c2-53c0ff2533c1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-ef3c5752-5d37-4a7e-b9bf-5572e1cfeaba</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2021/02/Updated_SF-BG.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Ghost</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogo</name>
+                    <value>https://venturecrowd--c.documentforce.com/servlet/servlet.ImageServer?id=0152v00000IR3pg&amp;oid=00D2v000000WjFp&amp;lastMod=1629794440000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonColor</name>
+                    <value>Purple</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryButtonSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>summaryText</name>
+                    <value>VentureCrowd’s mission is to find and fund the future, together. That means finding extraordinary people and supporting them to do extraordinary things.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>The Smith Family Partnership</value>
+                </componentInstanceProperties>
+                <componentName>heroBannerProductLandingPage</componentName>
+                <identifier>heroBannerProductLandingPage</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>70bb8b15-6c6b-4bc3-a7c2-53c0ff2533c1</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5503c680-383c-415b-ac37-463b37f2dc0f</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-294f6ae4-c090-4bb1-bba6-3290f394bec8</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;container content-container--text-edit&quot;&gt;
+    &lt;div class=&quot;row px-3 px-lg-0&quot;&quot;&gt;
+        &lt;div class=&quot;col-lg-6 mb-4 mb-lg-0&quot;&gt;
+            &lt;h1&gt;Currently in Australia, 1.2 million children and young people live in poverty*. Any one of these kids has the potential to change the planet, if only they had the opportunity.&lt;/h1&gt;
+            &lt;p style=&quot;color: #b8b8b8&quot;&gt;&lt;i&gt;*ACOSS/UNSW Poverty Overview Report, 2020.&lt;/i&gt;&lt;/p&gt;
+            &lt;p&gt;VentureCrowd and The Smith Family are firm believers that providing educational support is key to breaking the cycle of poverty, so that young Australians can build better futures for themselves and reach their potential. That’s why VentureCrowd has partnered with The Smith Family to support their Learning for Life program and partner program, Kidpreneur.&lt;/p&gt;                            
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;      
+            &lt;img class=&quot;img-fluid&quot; src=&quot;https://assets.akcelo.com/vc/uploads/2021/01/maxresdefault.jpg&quot; style=&quot;padding-bottom: 20px&quot;&gt;
+            &lt;p&gt;&lt;a data-fancybox data-options=&apos;{&quot;smallBtn&quot;: true}&apos; data-width=&quot;854&quot; data-height=&quot;480&quot; href=&quot;https://www.youtube.com/watch?v=C46TLK8wZgU&quot; class=&quot;video-link&quot;&gt;
+    		&lt;i class=&quot;fa fa-play&quot;&gt;&lt;/i&gt;Watch Brook&apos;s Story&lt;/a&gt;&lt;/p&gt;      
+            &lt;p style=&quot;color: #b8b8b8 ; font-size: 12px&quot;&gt;&lt;i&gt;Brooke grew up in extreme hardship. Without support, she would have missed out on learning opportunities that defined her career. Hear how she found the courage to believe in herself.&lt;/i&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5503c680-383c-415b-ac37-463b37f2dc0f</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>feff1a02-f9e4-4b5d-92d5-15930adf91f2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-b9f5cf8a-fa02-498c-a0c6-c8a7de2fda0e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_BGImageURL</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2020/12/Sarah-classrooms-737x415.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Body</name>
+                    <value>program provides Australian children in need with financial support for school essentials, personal support for the                   family and child, and access to additional learning and mentoring programs. Donate directly to The Smith Family’s  program through VentureCrowd.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_Headline</name>
+                    <value>Learning for Life</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_1_URL</name>
+                    <value>https://startups.venturecrowd.com.au/deal/detail/the_smith_family</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_BGImageURL</name>
+                    <value>https://assets.akcelo.com/vc/uploads/2020/12/tower-bridge.jpg</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Body</name>
+                    <value>The Smith Family’s partner program, Kidpreneur is an immersive, teacher-led program where primary school children use a project-based approach to build                   their very own micro-business. Donate directly to the Kidpreneur program through VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_Headline</name>
+                    <value>Kidpreneur</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>Investment_Tile_2_URL</name>
+                    <value>https://startups.venturecrowd.com.au/deal/detail/the_smith_family</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                    <value>White</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>openInSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>productLogoUrl</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>secondaryLinkSameOrNew</name>
+                    <value>New Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strBodyCopy</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>strContentHeading</name>
+                    <value>Make a Difference</value>
+                </componentInstanceProperties>
+                <componentName>currentInvestmentCtaProductLanding</componentName>
+                <identifier>currentInvestmentCtaProductLanding</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>feff1a02-f9e4-4b5d-92d5-15930adf91f2</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>5e7de304-93e9-4a96-a414-0043e939d421</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-f7a6e5e9-7b12-415d-bce7-11ac55887e22</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;container content-container--text-edit&quot;&gt;
+&lt;h1&gt;A Message from the CEO&lt;/h1&gt;
+			&lt;br&gt;      
+    &lt;div class=&quot;row px-3 px-lg-0&quot;&quot;&gt;
+        &lt;div class=&quot;col-lg-6 mb-4 mb-lg-0&quot;&gt;
+                                    
+            &lt;p&gt;&lt;strong&gt;As the first son of migrant parents, I know what it is like to struggle financially. I also know, without a doubt, that education changed my life.&lt;/strong&gt;&lt;/p&gt;            &lt;p&gt;VentureCrowd and The Smith Family are firm believers that providing educational support is key to breaking the cycle of poverty, so that young Australians can build better futures for themselves and reach their potential. That’s why VentureCrowd has partnered with The Smith Family to support their Learning for Life program and partner program, Kidpreneur.&lt;/p&gt;                            
+			&lt;p&gt;VentureCrowd exists to support Australian entrepreneurialism and the first step on that journey to success is quality education for every single child, regardless of their background.&lt;/p&gt;                                             
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;    
+            &lt;p&gt;Australia is a country of innovation and is brimming with talent that comes from very diverse backgrounds.&lt;/p&gt;                              
+            &lt;p&gt;The Kidpreneur program recognises that potential starts with imagination and needs to be nurtured early. If we can inspire the entrepreneurial creativity of children to truly imagine what is possible, then Australia as a whole will be reaping the rewards for years to come.&lt;/p&gt;
+            &lt;p&gt;The alignment between VentureCrowd and The Smith Family is a perfect fit and I am excited for this partnership to be the bedrock of VentureCrowd’s commitment to supporting the communities in which we operate.&lt;/p&gt;
+			&lt;strong&gt;&lt;p&gt;VentureCrowd CEO,&lt;/strong&gt;
+            &lt;a href=&quot;https://www.linkedin.com/in/stevenmaarbani/&quot; style=&quot;font-size: 17px&quot;&gt;Steve Maarbani&lt;/a&gt;&lt;/p&gt;                             
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>5e7de304-93e9-4a96-a414-0043e939d421</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>7a19724f-af4a-40e0-91a6-1041b851772d</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-2e754504-23d6-478c-896c-4994222b4643</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>IntroText</name>
+                    <value>All donations of $2 and over are tax deductible. The Smith Family is unable to issue receipts for any donations directly, as all donations are collected by VentureCrowd and transferred to The Smith Family.  Venture Crowd is collecting donations for The Smith Family between 1/2/21 and 31/12/22. All donations made by Venture Crowd customers will be collected and transferred to The Smith Family every 30 Days. VentureCrowd Pty Ltd is authorised by The Smith Family (Level 9, 117 Clarence St, Sydney 2001, Ph: 1300 326 459) to fundraise on its behalf in ACT, NSW, NT, Qld, SA, Vic, WA and Tas. All funds raised will go directly to The Smith Family to help Australians in need.  The Smith Family is not responsible for the content of any communication received from VentureCrowd as a result of making a donation.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundimageurl</name>
+                    <value>https://venturecrowd--cm--c.documentforce.com/servlet/servlet.ImageServer?id=0150p000000MH2w&amp;oid=00D0p0000000N1k&amp;lastMod=1636937187000</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonColor</name>
+                    <value>Teal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonLink</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>primaryButtonSameOrNew</name>
+                    <value>Same Tab</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleText</name>
+                    <value>Steve Maarbani, CEO of VentureCrowd and Judy Barraclough, Deputy Chief Executive Officer of The Smith Family</value>
+                </componentInstanceProperties>
+                <componentName>vcBgImageWithText</componentName>
+                <identifier>vcBgImageWithText</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>7a19724f-af4a-40e0-91a6-1041b851772d</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-ef3c5752-5d37-4a7e-b9bf-5572e1cfeaba</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;ef3c5752-5d37-4a7e-b9bf-5572e1cfeaba&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;70bb8b15-6c6b-4bc3-a7c2-53c0ff2533c1&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-294f6ae4-c090-4bb1-bba6-3290f394bec8</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;294f6ae4-c090-4bb1-bba6-3290f394bec8&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5503c680-383c-415b-ac37-463b37f2dc0f&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgb(255,255,255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgb(255, 255, 255)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-b9f5cf8a-fa02-498c-a0c6-c8a7de2fda0e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;b9f5cf8a-fa02-498c-a0c6-c8a7de2fda0e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;feff1a02-f9e4-4b5d-92d5-15930adf91f2&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-f7a6e5e9-7b12-415d-bce7-11ac55887e22</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;f7a6e5e9-7b12-415d-bce7-11ac55887e22&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;5e7de304-93e9-4a96-a414-0043e939d421&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-2e754504-23d6-478c-896c-4994222b4643</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;2e754504-23d6-478c-896c-4994222b4643&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;7a19724f-af4a-40e0-91a6-1041b851772d&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>300</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>customHeadTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                    <value>VentureCrowd’s mission is to find and fund the future, together. That means finding extraordinary people and supporting them to do extraordinary things.</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>The Smith Family Partnership - VentureCrowd</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>smith-family-partnership_smith-family-partnership_v2</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

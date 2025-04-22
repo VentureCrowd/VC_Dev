@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Internal_Profiles_only</name>
+        <label>Internal Profiles only</label>
+        <locationX>1087</locationX>
+        <locationY>365</locationY>
+        <defaultConnectorLabel>External</defaultConnectorLabel>
+        <rules>
+            <name>Internal</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CRC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compliance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CM</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Contracts Admin</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Executive Team</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Finance</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Funds Manager</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Head Of Capital</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Investor Relations</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Marketing Team</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>VCPP Profile</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ventures</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Look_up_Profiles_for_deactivation</targetReference>
+            </connector>
+            <label>Internal</label>
+        </rules>
+    </decisions>
+    <description>Checks if the user profile is internal or not</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>QualifiesForAutoDeactivationFieldFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>If (ISBLANK({!varProfileCMDTRecord}), false, true)</expression>
+    </formulas>
+    <interviewLabel>User: qualify/disqualify {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User: qualify/disqualify auto-deactivation process</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Look_up_Profiles_for_deactivation</name>
+        <label>Look up Profiles for deactivation</label>
+        <locationX>1269</locationX>
+        <locationY>370</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Qualifies_for_Deactivation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Profile_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Profile_Name__c</elementReference>
+            </value>
+        </filters>
+        <object>Profiles_for_Deactivation__mdt</object>
+        <outputAssignments>
+            <assignToReference>varProfileCMDTRecord</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Qualifies_for_Deactivation</name>
+        <label>Qualifies for Deactivation</label>
+        <locationX>1271</locationX>
+        <locationY>520</locationY>
+        <inputAssignments>
+            <field>Qualifies_for_Auto_Deactivation__c</field>
+            <value>
+                <elementReference>QualifiesForAutoDeactivationFieldFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>969</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Internal_Profiles_only</targetReference>
+        </connector>
+        <filterFormula>ISNEW() ||
+ISCHANGED( {!$Record.ProfileId} ) ||
+(ISCHANGED({!$Record.IsActive}) &amp;&amp; {!$Record.IsActive})</filterFormula>
+        <object>User</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>InternalProfiles</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;System Administrator,Analytics Cloud Integration User,Analytics Cloud Security User,B2BMA Integration User,CM,Compliance,Contracts Admin,CRC,Executive Team,Finance,Funds Manager,Head Of Capital,Investor Relations,Marketing Team,Sales Insights Integration User,Standard User,VCPP Profile,Ventures&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>currentItemFromSourceCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>User</objectType>
+    </variables>
+    <variables>
+        <name>varProfileCMDTRecord</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

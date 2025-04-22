@@ -1,0 +1,46 @@
+<template>
+    <div class="card">
+        <template lwc:if={investmentType}>
+            <div class="header">
+                <h3 class="title">{investmentType}</h3>
+            </div>                
+        </template>
+        <template lwc:if={isEoi}>
+            <div class="image-container-auto" style={backgroundStyle}>
+                <div class="image-wrapper-auto">
+                    <img src={logoUrl} alt="Banner" class="background-image-auto"/>
+
+                </div>
+                <p class="banner-text">Express your interest in <strong>{companyName}</strong></p>
+            </div>
+        </template>
+        <template lwc:elseif={bannerAuto}>
+            <div class="image-container-auto" style={backgroundStyle}>
+                <div class="image-wrapper-auto">
+                    <img src={logoUrl} alt="Banner" class="background-image-auto"/>
+                </div>
+                <p class="banner-text">Invest in <strong>{singleCompanyName}</strong></p>
+            </div>
+        </template>
+
+        <template lwc:else>
+            <div class="image-container">
+                <img src={bannerUrl} alt="Banner" class="background-image"/>
+            </div>
+        </template>
+        <div class="content">
+            <h2>{companyName}</h2>
+            <p>{companyOneLiner}</p>
+            <c-core-button
+                onclick={handleOfferButton}
+                label="View Offer"
+                variation="secondary"
+                mode="dark">
+            </c-core-button>
+            <p class="industry">{industryType}</p>
+        </div>
+        <div class="footer">
+            <p class="status">{status}</p>
+        </div>
+    </div>
+</template>

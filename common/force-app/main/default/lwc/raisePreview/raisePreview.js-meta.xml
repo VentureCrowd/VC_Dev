@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Raise Preview</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="isPreview" type="Boolean" label="Preview Mode" description="Keep unchecked for EOI Publish versions"/>
+            <property name="recordId" type="String" label="Record Id" description="Record Id of the raise {!recordId}"/>
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

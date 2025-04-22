@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conversion_Validation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(Founder_Interest__c), 
+    &quot;🔴 No Products added to Founder Interest, please select products&quot; &amp; BR(),
+
+    /* If Subscription is included */
+    IF(INCLUDES(Founder_Interest__c, &quot;Subscription&quot;),
+        &quot;✅ You&apos;re good to convert the Subscription Product&quot; &amp; 
+
+        /* EOI Listing Fee */
+        IF(INCLUDES(Founder_Interest__c, &quot;EOI Listing Fee&quot;),
+            IF(ISBLANK(Related_EOI__c), 
+                BR() &amp; &quot;⁉️ Add a related EOI to convert the EOI Listing Fee&quot;,
+                IF(
+                    OR(TEXT(Related_EOI__r.EOI_Status__c) = &quot;Not Published&quot;, TEXT(Related_EOI__r.EOI_Status__c) = &quot;Submitted to be Published&quot;),
+                    BR() &amp; &quot;⁉️ Wait for the EOI to be approved before converting the EOI Listing Fee&quot;,
+                    &quot;&quot;
+                )
+            ),
+        &quot;&quot;) &amp;
+
+        /* Pro/Premium */
+        IF(OR(INCLUDES(Founder_Interest__c, &quot;Pro&quot;), INCLUDES(Founder_Interest__c, &quot;Premium&quot;)),
+            IF(ISBLANK(Related_EOI__c),
+                BR() &amp; &quot;⁉️ Add a related EOI to convert the Pro/Premium Product&quot;,
+                IF(
+                    OR(TEXT(Related_EOI__r.EOI_Status__c) = &quot;Not Published&quot;, TEXT(Related_EOI__r.EOI_Status__c) = &quot;Submitted to be Published&quot;),
+                    BR() &amp; &quot;⁉️ Ensure the EOI has reached at least 30% of its desired raise before converting&quot;,
+                    &quot;&quot;
+                )
+            ),
+        &quot;&quot;) &amp;
+
+        /* Friends &amp; Family */
+        IF(INCLUDES(Founder_Interest__c, &quot;Friends &amp; Family&quot;),
+            IF(ISBLANK(Related_Raise__c),
+                BR() &amp; &quot;⁉️ Add a related Raise to convert the Friends &amp; Family Product&quot;,
+                &quot;&quot;
+            ),
+        &quot;&quot;), 
+    &quot;&quot; /* Closing IF for Subscription */
+    ) &amp;
+
+    /* If Subscription is NOT included, handle other cases */
+    IF(
+        AND(NOT(INCLUDES(Founder_Interest__c, &quot;Subscription&quot;)), INCLUDES(Founder_Interest__c, &quot;EOI Listing Fee&quot;)),
+        IF(ISBLANK(Related_EOI__c), 
+            &quot;‼️ Add a Related EOI to convert the EOI Listing Fee Product&quot; &amp; BR(),
+            IF(
+                OR(TEXT(Related_EOI__r.EOI_Status__c) = &quot;Not Published&quot;, TEXT(Related_EOI__r.EOI_Status__c) = &quot;Submitted to be Published&quot;),
+                &quot;‼️ EOI not yet approved to be published&quot; &amp; BR(),
+                &quot;✅ You&apos;re good to convert the EOI Listing Fee Product&quot; &amp; BR()
+            )
+        ),
+    &quot;&quot;) &amp;
+
+    IF(
+        AND(NOT(INCLUDES(Founder_Interest__c, &quot;Subscription&quot;)), OR(INCLUDES(Founder_Interest__c, &quot;Pro&quot;), INCLUDES(Founder_Interest__c, &quot;Premium&quot;))),
+        IF(ISBLANK(Related_EOI__c), 
+            &quot;‼️ Add a Related EOI to convert Pro/Premium Products&quot; &amp; BR(),
+            IF(
+                OR(TEXT(Related_EOI__r.EOI_Status__c) = &quot;Not Published&quot;, TEXT(Related_EOI__r.EOI_Status__c) = &quot;Submitted to be Published&quot;),
+                &quot;‼️ Avoid conversion, EOI not approved to be published&quot; &amp; BR(),
+                IF(
+                    ISBLANK(Related_Raise__c),
+                    &quot;‼️ Add the related Raise to convert these products into an opportunity&quot; &amp; BR(),
+                    &quot;✅ You&apos;re good to convert the Pro/Premium Products&quot; &amp; BR()
+                )
+            )
+        ),
+    &quot;&quot;) &amp;
+
+    IF(
+        AND(NOT(INCLUDES(Founder_Interest__c, &quot;Subscription&quot;)), INCLUDES(Founder_Interest__c, &quot;Friends &amp; Family&quot;)),
+        IF(ISBLANK(Related_Raise__c), 
+            &quot;⁉️ Add a related Raise before converting Family &amp; Friends&quot; &amp; BR(),
+            &quot;✅ You&apos;re good to go with the Friends &amp; Family Product&quot; &amp; BR()
+        ),
+    &quot;&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Conversion Validation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

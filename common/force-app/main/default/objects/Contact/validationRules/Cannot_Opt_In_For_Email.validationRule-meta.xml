@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Opt_In_For_Email</fullName>
+    <active>true</active>
+    <errorConditionFormula>HasOptedOutOfEmail = TRUE &amp;&amp;  Email_Opt_In__c = TRUE</errorConditionFormula>
+    <errorDisplayField>Email_Opt_In__c</errorDisplayField>
+    <errorMessage>A user cannot be both opted in and out for emails.</errorMessage>
+</ValidationRule>

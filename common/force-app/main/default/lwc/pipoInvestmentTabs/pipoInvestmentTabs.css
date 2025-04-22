@@ -1,0 +1,168 @@
+.tab-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: var(--text-md);
+}
+
+.tab.active {
+    font-weight: bold;
+    color: var(--primary-accent); /* Pink for active tab */
+    border-bottom: 2px solid var(--primary-accent); /* Pink underline for active tab */
+}
+
+.tab-label {
+    margin-right: 8px;
+}
+
+
+.badge {
+    background-color: #333; /* Default black badge */
+    color: white;
+    border-radius: 50%;
+    font-size: var(--text-xs);
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px 1px;
+}
+
+.active .badge {
+    background-color: var(--primary-accent); /* Pink for Active tab badge */
+}
+
+.dropdown-container {
+    display: flex;
+    padding: 10px 20px;
+    font-size: var(--text-md);
+    position: relative; /* Required for positioning the pseudo-elements */
+    cursor: pointer;
+    gap: var(--space-md);
+}
+
+.dropdown-container::before,
+.dropdown-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px; /* Thickness of the "border" */
+}
+
+.dropdown-container::before {
+    left: 0;
+    width: 80%; /* Primary accent for the first 10% */
+    background-color: var(--primary-accent);
+}
+
+.dropdown-container::after {
+    left: 80%; /* Starting point after the first 10% */
+    width: 90%; /* Remaining 90% */
+    background-color: #ccc; /* Default or secondary color */
+}
+
+.dropdown-icon {
+    margin-left: auto;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+@media (width >= 768px) {
+    /* Hide this in desktop */
+    .tab-header-mobile {
+        display: none;
+    }
+}
+
+@media (width <= 768px) {
+    .tab-header {
+        display: none;
+    }
+    
+    .tab-header-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    .active-label {
+        color: var(--primary-accent); /* Pink for active tab */
+    }
+
+    .active-badge {
+        background-color: var(--primary-accent);
+        color: var(--white);
+    }
+
+    .badge.active-label {
+        color: var(--white);
+    }
+}
+
+.tab-desktop-container {
+    display: flex;
+}
+
+
+
+
+/* File CSS */
+
+.file-wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-block: var(--space-lg);
+    gap: var(--space-xl);
+}
+
+.file-name {
+    color: var(--tertiary-accent);
+}
+
+.file-wrapper a p, .file-wrapper p {
+    font-size: 18px;
+}
+
+.tab-help-text {
+    margin-top: var(--space-lg);
+    color: var(--gray-4);
+}
+
+.loading-spinner{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg) 0;
+}

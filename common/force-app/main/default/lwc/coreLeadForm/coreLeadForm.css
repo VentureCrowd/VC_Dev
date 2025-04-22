@@ -1,0 +1,114 @@
+.core-form-body{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    
+}
+
+c-core-form{
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+.core-lead-form {
+    max-width: 900px;
+    background: black;
+    color: white;
+    padding: var(--space-xl);
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-top: 100px
+}
+@media screen and (max-width: 800px) {
+    .core-lead-form {
+        max-width: 400px;
+        padding: var(--space-md);
+        border-radius: 8px;
+        gap: var(--space-md);
+        margin-top: 45px
+    }
+}
+
+.core-lead-form .Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.core-lead-form h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'SuisseIntl-Bold' !important;
+    max-width: 700px;
+}
+@media screen and (max-width: 800px) {
+    .core-lead-form h1 {
+        font-size: 30px;
+        max-width: 250px;
+    }
+}
+
+.core-lead-form h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'SuisseIntl-Regular' !important;
+}
+@media screen and (max-width: 800px) {
+    .core-lead-form h2 {
+        font-size: 15px;
+        max-width: 185px;
+    }
+}
+
+.image-container{
+    text-align: center;
+}
+
+.image-container img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Ensure the height and width are equal */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+@media screen and (max-width: 800px) {
+    .image-container img {
+        width: 90px; /* Adjust the size as needed */
+        height: 90px; /* Ensure the height and width are equal */
+    }
+}
+
+.img{
+    margin-top: -140px;
+}
+@media screen and (max-width: 800px) {
+    .img{
+        margin-top: -60px
+    }
+}
+
+
+.submitted-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitted-content p {
+    font-family: 'SuisseIntl-Medium';
+    font-size: 18px;
+}
+
+.submitted-content{
+    text-align: center;
+}
+
+.loading-spinner-container {
+    text-align: center;
+    padding: var(--space-xxl);
+}

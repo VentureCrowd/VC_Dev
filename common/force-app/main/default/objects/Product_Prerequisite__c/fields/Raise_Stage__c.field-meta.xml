@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raise_Stage__c</fullName>
+    <label>Raise Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Seed</fullName>
+                <default>false</default>
+                <label>Pre-Seed</label>
+            </value>
+            <value>
+                <fullName>SEED</fullName>
+                <default>false</default>
+                <label>SEED</label>
+            </value>
+            <value>
+                <fullName>SERIES A</fullName>
+                <default>false</default>
+                <label>SERIES A</label>
+            </value>
+            <value>
+                <fullName>SERIES B</fullName>
+                <default>false</default>
+                <label>SERIES B</label>
+            </value>
+            <value>
+                <fullName>SERIES C</fullName>
+                <default>false</default>
+                <label>SERIES C</label>
+            </value>
+            <value>
+                <fullName>Series C+</fullName>
+                <default>false</default>
+                <label>Series C+</label>
+            </value>
+            <value>
+                <fullName>SERIES D</fullName>
+                <default>false</default>
+                <label>SERIES D</label>
+            </value>
+            <value>
+                <fullName>Pre-IPO</fullName>
+                <default>false</default>
+                <label>Pre-IPO</label>
+            </value>
+            <value>
+                <fullName>IPO</fullName>
+                <default>false</default>
+                <label>IPO</label>
+            </value>
+            <value>
+                <fullName>Bridging</fullName>
+                <default>false</default>
+                <label>Bridging</label>
+            </value>
+            <value>
+                <fullName>ORDINARY EQUITY</fullName>
+                <default>false</default>
+                <label>ORDINARY EQUITY</label>
+            </value>
+            <value>
+                <fullName>PREF EQUITY, EARLY STAGE</fullName>
+                <default>false</default>
+                <label>PREF EQUITY, EARLY STAGE</label>
+            </value>
+            <value>
+                <fullName>PREF EQUITY, LATE STAGE</fullName>
+                <default>false</default>
+                <label>PREF EQUITY, LATE STAGE</label>
+            </value>
+            <value>
+                <fullName>SECOND MORTGAGE</fullName>
+                <default>false</default>
+                <label>SECOND MORTGAGE</label>
+            </value>
+            <value>
+                <fullName>SECONDARY MARKET</fullName>
+                <default>false</default>
+                <label>SECONDARY MARKET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

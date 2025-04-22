@@ -1,0 +1,83 @@
+<template>
+    <article class="slds-card">
+        <div class=" slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-1">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-3 product-image">
+                        <img src={investment.Investment_Product_Image__c} style="border-radius: 50%;height:50px;">
+                    </div>
+                    <div class="slds-col slds-size_2-of-3 product-name">
+                        <div>{investment.Investment_Product_Name__c}</div>
+                        <div>{investment.Investment_Product_Type__c}</div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <lightning-icon icon-name="utility:question" size="xx-small"
+                            style="float: right; cursor:pointer" onclick={showModalpop}></lightning-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_2-of-3">
+                        <div style="float: left;">
+                            <div class="label">
+                                Application Status
+                            </div>
+                            <div class="application-status">
+                                {investment.Investment_Status__c}
+                            </div>
+                            <div class="application-process-text">
+                                <lightning-icon icon-name="utility:info_alt" size="xx-small"></lightning-icon>
+                                Investment Application Process
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <div style="float: right;">
+                            <lightning-button label="Details" variant="neutral" onclick={navigateToRecordViewPage}>
+                            </lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <template if:true={showModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <div class="slds-clearfix">
+                        <div class="slds-float_left">
+                            About the Investment Application Process
+                        </div>
+                        <div class="slds-float_right">
+                            <lightning-icon icon-name="utility:close" alternative-text="Close"
+                                class="slds-m-left_xx-small" title="Close" style="float:right" onclick={closemodal}>
+                            </lightning-icon>
+                        </div>
+                    </div>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p>Thank you for your recent application to invest via VentureCrowd. If you have verified your ID through this portal, you
+                    will receive an automated email with BPAY details to complete your transaction. Please ensure prompt payment after
+                    submitting your investment application, we cannot guarantee your application request until the funds are received. Your
+                    investment offer will move from “pending” to your portfolio once we’ve received and confirmed the funds, which may take
+                    1-3 business days.</p>
+                    <br/>
+                    <p>
+                    If you have not verified your ID, please follow the simple instructions in your portal and you’ll be able to complete
+                    the payment process after that step.</p><br />
+                    <p>                    
+                    Once the investment offer is closed, you will receive a share certificate confirming your ownership in this company.
+                    </p>
+                </div>
+                <footer class="slds-modal__footer">
+
+                    <button class="slds-button slds-button_brand" onclick={closemodal}>Close</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Investment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Please check this box if this opportunity is the first investment and is a referred investor.</inlineHelpText>
+    <label>First Investment?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

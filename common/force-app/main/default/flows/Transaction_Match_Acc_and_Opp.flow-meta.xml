@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Finds and updates related account and investment to the transaction record</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ExtractInvestmentID</name>
+        <dataType>String</dataType>
+        <expression>LEFT(
+    {!$Record.Investment_MOP__c},
+    FIND(&quot; - &quot;, {!$Record.Investment_MOP__c}) - 1
+)</expression>
+    </formulas>
+    <formulas>
+        <name>LastHyphenPosition</name>
+        <dataType>Number</dataType>
+        <expression>IF(CONTAINS({!$Record.Investment_MOP__c}, &quot; - &quot;), 
+   FIND(
+     &quot; - &quot;, 
+     {!$Record.Investment_MOP__c}, 
+     LEN({!$Record.Investment_MOP__c}) - LEN(SUBSTITUTE({!$Record.Investment_MOP__c}, &quot; - &quot;, &quot;&quot;)) + 1
+   ), 
+   0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>MOPWithoutDate</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!LastHyphenPosition} &gt; 0, 
+  LEFT({!$Record.Investment_MOP__c}, {!LastHyphenPosition} - 1), 
+  {!$Record.Investment_MOP__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Transaction: Match Acc and Opp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Transaction: Match Acc and Opp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Investment_record</name>
+        <label>Get Investment record</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Transaction</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Opportunity.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Opportunity__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Investment__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Opportunity</name>
+        <label>Get Opportunity</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Investment_record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Opportunity_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>MOPWithoutDate</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Transaction</name>
+        <label>Update Transaction</label>
+        <locationX>176</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>Get_Opportunity.Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Investment__c</field>
+            <value>
+                <elementReference>Get_Investment_record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Investment_MOP__c</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>M-</stringValue>
+            </value>
+        </filters>
+        <object>Transaction__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

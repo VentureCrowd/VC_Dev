@@ -1,0 +1,28 @@
+@media screen and  (max-width: 959px) {
+
+    .THIS .x700{display:block !important;}
+    .THIS .x290{display:none !important;}
+
+}
+
+
+ @media screen and  (max-width: 479px) {
+
+    .THIS .x700{display:none !important;}
+    .THIS .x290{display:block !important;}
+
+}
+
+/* Ven 127 4/11 */
+.THIS.navigation {
+    /* top: 0;
+    left: 0;
+    right: 0;
+    position: fixed; */
+    z-index: 400;
+    transition: all 300ms ease;
+}
+
+.THIS .wrapper{
+    background-color: var(--secondary-background);
+}

@@ -1,0 +1,123 @@
+/* settings unique for very small devices */
+@media screen and (min-width: 320px) {
+    .hero {
+        min-height: 260px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+/* settings unique for regular devices */
+@media screen and (max-width: 393px) {
+    .hero {
+        min-height: 210px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 35% center;
+    }
+}
+
+/* settings unique for Galaxy Fold */
+@media screen and (max-width: 280px) {
+    .hero {
+        min-height: 260px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 30% center;
+    }
+}
+
+.item-container {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 300ms ease;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 11%);
+}
+
+.item-container:hover {
+    box-shadow: 0px 10px 38px rgb(0 0 0 / 12%) !important;
+}
+
+.heading {
+    /* background-image: linear-gradient(to right, #5d3796, #02c8c8); */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: #000;
+    text-transform: capitalize;
+}
+
+.details {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.details .heading-1 {
+    font-size: 1.2em;
+    max-height: 23.39px;
+}
+
+.call-to-action {}
+
+.limit-header {
+    height: 45.44px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.limit-offer-type {
+    height: 41.44px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.call-to-action .header {
+    font-size: 1.1em;
+    line-height: 1.25em;
+    max-height: 2.5em
+        /* font-weight: 700; */
+
+}
+
+.call-to-action a {
+    font-family: "Caxton-2";
+    /* font-size: 24px; */
+    color: #FFFFFF;
+    background-color: #000000;
+
+    /* background-color: #844cea; */
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 11%);
+    display: block;
+    padding: 15px 20px;
+    /* color: #fff; */
+    text-align: center;
+    /* font-weight: 700; */
+    font-size: 1.1em;
+}
+
+.call-to-action a:hover {
+    background-color: #D95BAA;
+    text-decoration: none;
+}
+
+.call-to-action .offer-type {
+    font-size: 1.1em;
+    line-height: 20px;
+}
+
+.call-to-action .status {
+    color: #1B1B1B;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 1em;
+}

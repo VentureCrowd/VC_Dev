@@ -1,0 +1,21 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="ConvertRecordType">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div>
+        <div class="slds-text-longform">
+            <p class="slds-text-heading_small ">To Successfully convert the Account to a Person Account, please make sure the records meets the below criteria</p>
+            
+            <ul class="slds-list--vertical slds-has-inline-block-links">
+                <li class="slds-list__item"> For each intended Person Account, one (and only one) Contact record exists under the Account record.</li>
+                <li class="slds-list__item"> The Account and Contact have the same record owner.</li>
+                <li class="slds-list__item"> The Account and Contact have the same currency values (if applicable).</li>
+                <li class="slds-list__item"> The Parent Account field on the Account and the Reports To field of the Contact are both blank.</li>
+                <li class="slds-list__item"> The Account is not set as the Parent Account of any other Account records.</li>
+                <li class="slds-list__item"> The Contact is not set as the Reports To of any other Contact records.</li>
+            </ul>
+        </div>
+        <div class="slds-m-top_small">
+            <lightning:button variant="brand" label="Confirm" title="confirm" onclick="{! c.confirmConversion }" />
+        </div>
+    </div>
+</aura:component>

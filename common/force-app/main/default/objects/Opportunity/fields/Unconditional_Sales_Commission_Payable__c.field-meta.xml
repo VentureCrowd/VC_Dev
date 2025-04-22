@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unconditional_Sales_Commission_Payable__c</fullName>
+    <defaultValue>0</defaultValue>
+    <inlineHelpText>This field is to only be filled in with a % if the sales rep is to be paid it at unconditional</inlineHelpText>
+    <label>Unconditional Sales Commission Payable %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

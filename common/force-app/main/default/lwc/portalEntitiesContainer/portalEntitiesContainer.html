@@ -1,0 +1,56 @@
+<template>
+    <template lwc:if={isLoading}>
+        <div class="loading-spinner">
+            <h1>Loading</h1>
+            <c-core-loading-spinner></c-core-loading-spinner>
+        </div>
+    </template>
+    <div class="ent-container" lwc:else>
+        <template lwc:if={noEntities}>
+            <div class="no-entities">
+                <h1>You currently have no registered entities</h1>
+                <p class="disclaimer">
+                     <span class="disclaimer-text">
+                        All investments on the VentureCrowd platform can be made in your personal capacity 
+                        (i.e. Investments will be held in your own name), 
+                        or through an entity that you control (Trusts and/or Companies)
+                     </span>
+                </p>
+            </div>
+        </template>
+        <template for:each={entities} for:item="ent">
+            <div class="ent-card" key={ent.id} data-id={ent.id}>
+                <c-core-card>
+                    <div class="ent-card-title" slot="title">
+                        <h1>{ent.name}</h1>
+                        <c-core-button
+                        data-id={ent.id}
+                        label="View more"
+                        onclick={navigateToRecordDetail}></c-core-button>
+                    </div>
+                    <div class="ent-card-body" slot="body">
+                        <div class="card-details">
+                            <div class="acc-name">
+                                <div class="field-name">Account Name</div>
+                                <p>{ent.name}</p>
+                            </div>
+                            <div class="acc-bsb">
+                                <div class="field-name">BSB</div>
+                                <p>{ent.bsb}</p>
+                            </div>
+                            <div class="acc-num">
+                                <div class="field-name">Account Number</div>
+                                <p>{ent.accNumber}</p>
+                            </div>
+                        </div>
+                        <c-core-button
+                        data-id={ent.id}
+                        label="View more"
+                        onclick={navigateToRecordDetail}></c-core-button>
+                    </div>
+                </c-core-card>
+            </div>
+        </template>
+    </div>
+   
+</template>
