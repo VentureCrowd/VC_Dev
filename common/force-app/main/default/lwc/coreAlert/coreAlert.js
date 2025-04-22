@@ -26,6 +26,7 @@ export default class CoreAlert extends LightningElement {
     _types={
         'warning': 'warning',
         'information' : 'information',
+        'pending' : 'clockCircle'
     }
     /**
      * The type of alert. Defaults to 'neutral'.
