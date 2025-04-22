@@ -1,12 +1,12 @@
 {
   "packageDirectories": [
+    { "path": "registration/force-app","default": true, "package": "Registration" },
     {
       "path": "common/force-app",
-      "default": true,
+      "default": false,
       "package": "CommonUtils"
     },
-    { "path": "registration/force-app","default": false, "package": "Registration" },
-    { "path": "tilegrid/force-app",    "default": false, "package": "TileGrid"     }
+    { "path": "tilegrid/force-app",    "default": false, "package": "TileGrid"}
   ],
   "name": "VC_Dev",
   "namespace": "",
