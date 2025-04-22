@@ -2,7 +2,7 @@
   "packageDirectories": [
     {
       "path": "common/force-app",
-      "default": false,
+      "default": true,
       "package": "CommonUtils"
     },
     { "path": "registration/force-app","default": false, "package": "Registration" },
